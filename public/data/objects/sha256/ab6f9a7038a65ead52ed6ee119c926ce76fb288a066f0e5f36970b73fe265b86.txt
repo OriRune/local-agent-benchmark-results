@@ -1,0 +1,9 @@
+The list already remembers its items — I added `localStorage` persistence in the previous step. When you reload the page, the items are loaded from `localStorage` and re-rendered.
+
+To verify, you can:
+1. Open `todo.html` in a browser
+2. Add a task
+3. Reload the page
+4. The task should still be there
+
+The `load()` function in the script reads from `localStorage` and populates the list on page load.

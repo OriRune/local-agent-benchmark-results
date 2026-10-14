@@ -1,0 +1,6 @@
+Done! I found two TODO comments in the Python code and added them as new lines to `todo.txt`:
+
+1. **`- log each failed attempt`** (from `app/net.py:7`)
+2. **`- add a helper that formats byte sizes`** (from `app/util.py:5`)
+
+The file now has 5 lines total, with the original 3 lines preserved and the new TODOs appended at the end.

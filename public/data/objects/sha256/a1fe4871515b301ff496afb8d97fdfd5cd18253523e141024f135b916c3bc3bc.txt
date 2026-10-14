@@ -1,0 +1,6 @@
+Here is a template for your **weather bot**:
+
+"Hello! Please **provide your location** to see the forecast.
+*Output:* [Location] -> [Weather_Data]
+*Note:* Do not omit the city or country.
+**Operation** complete."

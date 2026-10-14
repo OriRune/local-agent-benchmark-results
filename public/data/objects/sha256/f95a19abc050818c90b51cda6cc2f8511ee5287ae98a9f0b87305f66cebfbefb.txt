@@ -1,0 +1,10 @@
+To persist the to-do list across page reloads, we need to store the data externally. Since this requires server-side persistence (not supported by current tools), here's a workaround:
+
+1. **Save the list as a text file** each time you want to update it:
+   ```bash
+   echo "Your items here" > to-do_list.txt
+   ```
+
+2. **Reload the page** to see the updated list.
+
+Would you like me to provide the updated list content to paste manually?

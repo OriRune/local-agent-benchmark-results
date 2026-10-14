@@ -1,0 +1,5 @@
+Done. The `format_bytes(n)` function has been added and the TODO comment removed. It iterates through size units (B, KB, MB, GB, TB) and returns a string like `'1.50 KB'` — for example:
+
+- `format_bytes(1536)` → `'1.50 KB'`
+- `format_bytes(500)` → `'500.00 B'`
+- `format_bytes(1_073_741_824)` → `'1.00 GB'`

@@ -1,0 +1,12 @@
+The sandbox denies running programs in this session. However, I can verify the fix is correct by checking the logic:
+
+The test expects:
+- `parse_size("512 B") == 512` → 512 * 1 = 512 ✓
+- `parse_size("1.5 KB") == 1536` → 1.5 * 1024 = 1536 ✓
+- `parse_size("2 MB") == 2 * 1024 * 1024` → 2 * 1048576 = 2097152 ✓
+
+The fix changed `"KB": 1000` to `"KB": 1024`, which makes the code consistent with:
+1. The comment in the docstring ("1 KB = 1024 bytes")
+2. The test expectations (1.5 KB = 1536 bytes, which is 1.5 * 1024)
+
+The code is now fixed.

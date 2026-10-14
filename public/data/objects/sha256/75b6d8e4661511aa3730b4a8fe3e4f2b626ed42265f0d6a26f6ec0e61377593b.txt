@@ -1,0 +1,9 @@
+Done. I created `README.md` documenting the `tinydl` CLI (`app/cli.py`), listing every command line option with its exact help text from the argparse parser:
+
+| Option | Help text |
+| --- | --- |
+| `url` | what to download |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+
+The table captures the positional `url` argument plus the `-o/--output` and `-q/--quiet` options verbatim, and a short "Details" section adds context (e.g. that output goes to stdout by default and the quiet flag suppresses the stderr byte count).

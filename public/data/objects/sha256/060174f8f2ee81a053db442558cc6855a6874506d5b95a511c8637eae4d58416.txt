@@ -1,0 +1,6 @@
+I've successfully created the README.md file for the project. The README lists all command line options of the CLI:
+
+1. **`url`** - Required positional argument, the URL to download from
+2. **`-o` / `--output`** - Optional, file to write downloaded content to (default: stdout)
+3. **`-q` / `--quiet`** - Optional, suppresses progress output
+4. **`--timeout`** - Optional, sets timeout in seconds for network requests (default: 20)

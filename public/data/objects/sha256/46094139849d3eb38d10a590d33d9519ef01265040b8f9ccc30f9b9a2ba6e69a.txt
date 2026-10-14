@@ -1,0 +1,7 @@
+I have examined the project files. The CLI is defined in `app/cli.py`. It has three command line options:
+
+1. `url` (positional argument): help text "what to download"
+2. `-o`, `--output`: help text "file to write (default: stdout)"
+3. `-q`, `--quiet`: help text "no progress output"
+
+I should create a README.md that lists these options with their help texts. Let me write this file.

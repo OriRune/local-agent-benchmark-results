@@ -1,0 +1,3 @@
+
+
+The error indicates that pytest is not installed in the sandbox environment. Since the test_units.py file likely relies on pytest to run, this package must be installed in your actual Python environment outside this tool's sandbox. You'll need to install pytest there (e.g., via `pip install pytest`) to properly execute the tests. I cannot install packages within this sandbox.

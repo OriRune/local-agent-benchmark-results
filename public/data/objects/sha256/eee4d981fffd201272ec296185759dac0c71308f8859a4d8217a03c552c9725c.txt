@@ -1,0 +1,8 @@
+The most recent git commit (2c46982, authored today at 14:57) changed the download timeout in `app/config.py`:
+
+```python
+TIMEOUT_S = 10  # before
+TIMEOUT_S = 20  # after
+```
+
+Summary: The commit raises the download timeout from 10 to 20 seconds. Only 1 file was changed (1 line modified).

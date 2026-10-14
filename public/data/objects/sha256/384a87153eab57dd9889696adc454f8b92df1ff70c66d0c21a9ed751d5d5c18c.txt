@@ -1,0 +1,5 @@
+Done. I've added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function formats byte values into human-readable sizes:
+- `< 1024` bytes → "X B"
+- `1024-1024*1024` bytes → "X.X KB"
+- `1024*1024-1024*1024*1024` bytes → "X.X MB"
+- Larger values → "X.X GB"

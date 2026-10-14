@@ -1,0 +1,21 @@
+One possible solution is $(6 - 2) \times (2 + 4)$.
+Calculation:
+1. $6 - 2 = 4$
+2. $2 + 4 = 6$
+3. $4 \times 6 = 24$
+
+Another solution is $6 \times 4 \times 2 / 2$.
+Calculation:
+1. $6 \times 4 = 24$
+2. $24 \times 2 = 48$
+3. $48 / 2 = 24$
+
+Another solution is $6 \times 4 + 2 - 2$.
+Calculation:
+1. $6 \times 4 = 24$
+2. $24 + 2 = 26$
+3. $26 - 2 = 24$
+
+I will provide the first one as it is a standard arithmetic expression.
+
+<answer>(6 - 2) * (2 + 4)</answer>

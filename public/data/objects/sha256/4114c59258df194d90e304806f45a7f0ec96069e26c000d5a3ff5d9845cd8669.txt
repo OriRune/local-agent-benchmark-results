@@ -1,0 +1,8 @@
+I have created a README.md file that lists every command line option of the CLI with its help text. The README includes the positional arguments and optional arguments as defined in the app/cli.py file.
+
+The three command line options are:
+1. `url` (positional argument) - help text: "what to download"
+2. `-o`, `--output` - help text: "file to write (default: stdout)"
+3. `-q`, `--quiet` - help text: "no progress output"
+
+The README file is now in the project workspace.

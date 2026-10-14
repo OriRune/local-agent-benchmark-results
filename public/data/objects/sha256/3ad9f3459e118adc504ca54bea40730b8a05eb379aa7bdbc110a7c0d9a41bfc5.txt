@@ -1,0 +1,30 @@
+# T4
+
+**Result:** fail · done · 3 steps · 0 calls · 6 s
+
+## user
+
+Create a file hello.txt containing exactly this line: hello from the local agent
+
+## assistant
+
+{{"name": "write_file", "arguments": {"path": "hello.txt", "content": "hello from the local agent"}}
+
+
+## user (nudge)
+
+Your last reply contained a tool call in the wrong format, so nothing was run. Call the tool again with its arguments as a JSON object.
+
+## assistant
+
+{{"name": "write_file", "arguments": {"path": "hello.txt", "content": "hello from the local agent"}}
+
+
+## user (nudge)
+
+Your last reply contained a tool call in the wrong format, so nothing was run. Call the tool again with its arguments as a JSON object.
+
+## assistant
+
+{{"name": "write_file", "arguments": {"path": "hello.txt", "content": "hello from the local agent"}}
+

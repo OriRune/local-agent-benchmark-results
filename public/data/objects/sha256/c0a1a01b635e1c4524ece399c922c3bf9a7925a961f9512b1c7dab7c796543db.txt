@@ -1,0 +1,9 @@
+**Error code `E-4471`, on line 2417.**
+
+That's the only `ERROR` entry in `data/events.log`:
+
+```
+2417  ERROR code=E-4471 disk quota exceeded while saving part 7
+```
+
+The rest of the file is `INFO request ok` lines, with a handful of `WARN slow response` lines (e.g. lines 97, 194, 291, 388, 485) — those carry no error code.

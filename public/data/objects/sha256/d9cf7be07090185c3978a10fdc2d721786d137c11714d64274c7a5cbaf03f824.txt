@@ -1,0 +1,10 @@
+I've written the `README.md`. It documents the `tinydl` CLI and lists every command line option with its help text:
+
+- **`url`** (positional) — "what to download"
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+- **`-h`, `--help`** — "show this help message and exit"
+
+The help text is taken directly from the `add_argument(..., help=...)` calls in `app/cli.py` (plus the standard `-h/--help` line that `argparse` always adds). Since the sandbox blocks running programs, I reconstructed the help output from the source rather than executing `--help`.
+
+Note: I couldn't verify the exact `--help` formatting by running it (the sandbox disallows executing programs), so the layout is derived from the source. If you'd like, I can adjust the wording or add more project context.

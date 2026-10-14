@@ -1,0 +1,5 @@
+README.md has been written. It lists every CLI option defined in `app/cli.py`:
+
+- **`url`** — positional argument: *what to download*
+- **`-o, --output`** — file to write (default: stdout)
+- **`-q, --quiet`** — no progress output

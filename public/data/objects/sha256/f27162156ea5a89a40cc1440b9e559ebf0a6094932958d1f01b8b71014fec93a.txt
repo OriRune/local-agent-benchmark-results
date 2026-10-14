@@ -1,0 +1,4 @@
+{
+  "answer": "TF-IDF (Term frequency-Inverse document frequency) features are extracted from text using a classical sparse vectorizer (HashingVectorizer was also tested but showed no significant performance gain).",
+  "evidence": ["8"]
+}

@@ -1,0 +1,1 @@
+[{"args":{"content":"#!/bin/bash\n\n# Open Chrome with google.com loaded\ngoogle-chrome google.com &\n\n# Open a text editor (gedit)\ngedit &\n\n# Open file manager showing [private-home]/Documents/llama.cpp\nnautilus [private-home]/Documents/llama.cpp &\n","path":"open_workspace.sh"},"name":"write_file","result":"created open_workspace.sh (10 lines)","status":"ok"}]

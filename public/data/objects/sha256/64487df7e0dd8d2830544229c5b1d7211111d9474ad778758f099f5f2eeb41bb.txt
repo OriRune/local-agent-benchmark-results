@@ -1,0 +1,1 @@
+I need to locate the file containing "MAX_RETRIES" to make this change. Could you confirm which file or folder I should search in? The setting might be in a configuration file like config.py, settings.json, or similar.

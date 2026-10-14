@@ -1,0 +1,24 @@
+Here is the shortest path from `*` to `#` in the given grid:
+
+```
+<answer>right right down down down right right down down down right</answer>
+```
+
+### Explanation:
+1. Start at `*` (row 1, column 0).
+2. Move **right** twice to reach (1, 2).
+3. Move **down** three times to reach (4, 2).
+4. Move **right** twice to reach (4, 4).
+5. Move **down** three times to reach (7, 4).
+6. Move **right** once to reach (7, 5), arriving at `#`.
+
+### Path visualization:
+```
+O X X O O #
+* → → X X O O O
+O O O X X O
+X O O X X O
+O X O O X O → → →
+O X O O X O → → → → →
+O X X O O # ← (destination)
+```

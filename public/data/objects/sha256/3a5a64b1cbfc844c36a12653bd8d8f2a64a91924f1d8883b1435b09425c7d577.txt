@@ -1,0 +1,1 @@
+{"answer": "Text features are extracted using a classical sparse vectorizer based on Term frequency-Inverse document frequency (TF-IDF). Additionally, standard local features such as part-of-speech tags, previous and next words, substrings, shapes, and regex expressions are used, along with POS Tagging and Shallow Parsing for pre-processing.", "evidence": [3, 5, 8]}

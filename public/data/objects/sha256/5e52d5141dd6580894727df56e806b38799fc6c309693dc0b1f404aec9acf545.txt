@@ -1,0 +1,1 @@
+I couldn't find any error codes in data/events.log using that pattern. Would you like me to try a different search pattern or look at the file's contents directly?

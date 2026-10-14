@@ -1,0 +1,3 @@
+Your to-do list already remembers its items when you reload the page. This is achieved using the browser's `localStorage`, which saves the list of tasks whenever you add, edit, or delete an item. When you reload the page, the list is restored from `localStorage`.
+
+If you encounter any issues with the list not remembering items, it might be due to your browser's privacy settings or cache. In that case, you can try clearing your browser's cache or checking your privacy settings to ensure that `localStorage` is not being blocked.

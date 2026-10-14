@@ -1,0 +1,9 @@
+I've examined the current files and folders in your working directory. Based on the listing, there are several relevant files:
+
+- app/net.py
+- app/cli.py
+- app/units.py
+- app/config.py
+- app/util.py
+
+Since you mentioned a disk quota issue in `app/net.py`, it might be helpful to review or clean up that file or its contents. Would you like to proceed with editing or modifying any specific file, or would you prefer a different action?

@@ -1,0 +1,10 @@
+Done. I created `README.md` for the project.
+
+Since the sandbox blocks running programs, I derived the help text directly from the `argparse` definitions in `app/cli.py` (which I read first to avoid guessing). The README documents every command-line option of the `tinydl` CLI with its exact help text:
+
+- `url` (positional) — "what to download"
+- `-o`, `--output` — "file to write (default: stdout)"
+- `-q`, `--quiet` — "no progress output"
+- `-h`, `--help` — the built-in "show this help message and exit"
+
+It also includes the usage line, a notes section explaining each option's behavior (e.g. that `-q` is a flag that suppresses the stderr byte-count summary), and a few runnable examples.

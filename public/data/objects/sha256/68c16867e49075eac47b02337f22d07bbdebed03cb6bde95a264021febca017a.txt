@@ -1,0 +1,3 @@
+
+
+The probability of rolling 25 or higher with the given dice is $\boxed{\dfrac{1}{60}}$.

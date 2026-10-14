@@ -1,0 +1,3 @@
+```json
+{"name": "edit_file", "arguments": {"path": "config.py", "old_text": "MAX_RETRIES = 3", "new_text": "MAX_RETRIES = 5"}}
+```

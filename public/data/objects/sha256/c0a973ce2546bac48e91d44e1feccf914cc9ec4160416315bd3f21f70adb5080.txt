@@ -1,0 +1,6 @@
+I've successfully found all TODO comments in the Python files and added them to todo.txt. The file now contains:
+
+- The existing TODO items (write README, add proxy support, tag the release)
+- The new TODO items found in Python code:
+  - `# TODO: log each failed attempt` (from app/net.py)
+  - `# TODO: add a helper that formats byte sizes` (from app/util.py)

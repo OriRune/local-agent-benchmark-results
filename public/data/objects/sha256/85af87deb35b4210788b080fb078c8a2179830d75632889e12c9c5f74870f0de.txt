@@ -1,0 +1,10 @@
+```json
+{
+  "answer": "The features extracted from text include **TF-IDF (Term Frequency-Inverse Document Frequency) vectorized features** from web page titles and excerpts, leveraging a bag-of-words technique for classification. The text is clustered based on distributional similarity, and the data is annotated using DBpedia instances for training classifiers (PER, ORG, LOC).",
+
+  "evidence": [
+    "[5]",
+    "[8]"
+  ]
+}
+```

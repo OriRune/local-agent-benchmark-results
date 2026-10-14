@@ -1,0 +1,13 @@
+The puzzle provides several clues. Let's analyze step by step:
+
+- House 3 has Bob.
+- Arnold is in House 2 and is the British person.
+- The Dane is Alice (from clue 4).
+- The dog owner is the Dane (from clue 5), so Alice must own a dog.
+- Arnold loves a cat (from clue 6).
+- Therefore, Alice (Dane) has a dog.
+- Since the dog is with the Dane, Alice must be the Dane in House 1.
+
+Thus, the person in House 1 is Alice.
+
+<answer>Alice</answer>

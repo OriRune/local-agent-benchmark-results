@@ -1,0 +1,15 @@
+I've created the README.md file with a comprehensive list of all CLI options from the `cli.py` file. The README includes:
+
+1. **Project description** - A simple command-line tool for downloading files
+2. **Installation instructions**
+3. **Usage syntax**
+4. **Complete command-line options table** with:
+   - `url` - the required positional argument
+   - `-o, --output` - file to write (default: stdout)
+   - `-q, --quiet` - no progress output
+   - `--help` - standard help option
+5. **Usage examples**
+6. **Configuration settings** from `app/config.py`
+7. **License information**
+
+The help text for each option is taken directly from the `argparse` definitions in `cli.py`.

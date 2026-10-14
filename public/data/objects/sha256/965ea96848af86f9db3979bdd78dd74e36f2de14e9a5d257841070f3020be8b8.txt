@@ -1,0 +1,6 @@
+**Fixed.** The issue was in `app/units.py` line 2: the `KB` unit was set to `1000` instead of `1024`.
+
+- **Before:** `"KB": 1000` — so `parse_size("1.5 KB")` returned `1500`, but the test expected `1536` (1.5 × 1024).
+- **After:** `"KB": 1024` — now `parse_size("1.5 KB")` correctly returns `1536`, matching the test's expectation.
+
+This also aligns with the module's own docstring: *"Sizes use 1024-based units: 1 KB = 1024 bytes."*

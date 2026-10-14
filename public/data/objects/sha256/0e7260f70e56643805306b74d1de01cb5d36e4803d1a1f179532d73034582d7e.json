@@ -1,0 +1,1 @@
+{"changes":[{"after":"b'hello from the local agent'","before":null,"path":"[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/e248df547173f2a0108e4411-bf77a75c09/workspace/project/hello.txt","time":1791732297.9135036,"tool":"write_file"}],"origin_note":"Recorded change evidence, not a reconstructed starting workspace.","turn_changes":[1]}

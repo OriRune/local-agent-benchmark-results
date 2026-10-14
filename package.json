@@ -1,0 +1,44 @@
+{
+  "name": "agent-benchmark-results",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "types:generate": "node scripts/generate-types.mjs",
+    "contracts:check": "node scripts/check-contracts.mjs",
+    "check": "npm run contracts:check && astro check",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build": "npm run data:validate && astro build",
+    "preview": "astro preview",
+    "data:import": "node scripts/import-data.mjs",
+    "data:validate": "node scripts/validate-data.mjs",
+    "scan:dist": "node scripts/scan-dist.mjs",
+    "package:site": "node scripts/package-site.mjs",
+    "deployment:check": "node scripts/deployment-config.mjs",
+    "data:withdraw": "node scripts/withdraw-evidence.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "7.0.1",
+    "ajv": "8.20.0",
+    "astro": "7.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.64.0",
+    "@types/node": "24.0.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "json-schema-to-typescript": "16.0.0",
+    "typescript": "6.0.3",
+    "ultrahtml": "1.7.0",
+    "vitest": "5.0.3"
+  }
+}

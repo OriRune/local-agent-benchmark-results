@@ -1,0 +1,10 @@
+Based on the code in `app/net.py`, I can calculate the total sleep time:
+
+The `fetch` function loops through `MAX_RETRIES` attempts (which is 3):
+- Attempt 0: sleeps for `2^0 = 1` second
+- Attempt 1: sleeps for `2^1 = 2` seconds  
+- Attempt 2: sleeps for `2^2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**
+
+The formula for the sum of a geometric series is `2^N - 1`, where N is the number of attempts. With MAX_RETRIES = 3, the total is `2^3 - 1 = 7` seconds.

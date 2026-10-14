@@ -1,0 +1,4 @@
+The release date mentioned in `notes.md` is **14 October** (2026, based on the context of the planning notes from September 2026).
+
+It's found on line 8 under the "2026-09-16" section:
+> "The release is planned for 14 October."

@@ -1,0 +1,29 @@
+To address this issue, I will first identify the failing test in the `tests/test_units.py` file. I will then read the contents of the file to understand the context of the failing test and the code it is testing. After that, I will make the necessary changes to the code to fix the failing test.
+
+1. Identify the failing test:
+I will use the `grep` tool to search for the failing test in the `tests/test_units.py` file.
+
+```
+grep -i "assert" tests/test_units.py
+```
+
+2. Read the contents of the failing test:
+I will use the `read_file` tool to read the contents of the failing test.
+
+```
+read_file tests/test_units.py
+```
+
+3. Make the necessary changes to the code:
+Based on the contents of the failing test, I will make the necessary changes to the code to fix the failing test. I will use the `edit_file` tool to replace the failing code with the fixed code.
+
+```
+edit_file tests/test_units.py
+```
+
+4. Verify the fix:
+I will rerun the failing test to verify that it now passes.
+
+```
+run tests/test_units.py
+```

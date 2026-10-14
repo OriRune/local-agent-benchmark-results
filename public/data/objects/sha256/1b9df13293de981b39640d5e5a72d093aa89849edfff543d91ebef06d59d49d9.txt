@@ -1,0 +1,14 @@
+Now I have everything needed to work it out.
+
+**The retry loop:** `for attempt in range(MAX_RETRIES)` runs `attempt = 0, 1, 2` (i.e. 3 attempts). On each failed attempt it sleeps `2 ** attempt` seconds.
+
+**Sleeps when every attempt fails:**
+- attempt 0 → sleep 2⁰ = 1 s
+- attempt 1 → sleep 2¹ = 2 s
+- attempt 2 → sleep 2² = 4 s
+
+(The sleep after the last attempt is not reached, because the loop exits and raises "giving up" instead.)
+
+**Total = 1 + 2 + 4 = 7 seconds.**
+
+So if every attempt fails, `fetch` sleeps **7 seconds** before it gives up. (`MAX_RETRIES` is 3 and `TIMEOUT_S` is 20, but the timeout isn't part of the sleep total.)

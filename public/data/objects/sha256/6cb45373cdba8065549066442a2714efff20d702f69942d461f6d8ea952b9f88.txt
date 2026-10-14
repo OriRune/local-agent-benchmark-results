@@ -1,0 +1,2 @@
+A very special island is inhabited only by heros and villains. Heros always tell the truth, and villains always lie. You meet 3 inhabitants: Olivia, Oliver, and Benjamin. "Benjamin is a villain or Benjamin is a hero" - Olivia. "Olivia is a hero and Olivia is a villain," Oliver claimed. Benjamin said that Olivia is a hero. So who is a hero and who is a villain? (Format your answer like: "Olivia is a hero/villain, Oliver is a hero/villain, and Benjamin is a hero/villain")
+Put your final answer, in the requested format, inside <answer>...</answer>.

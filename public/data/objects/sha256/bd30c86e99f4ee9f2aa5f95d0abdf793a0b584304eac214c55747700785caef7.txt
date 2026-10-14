@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The text features extracted include term frequency-inverse document frequency (TF-IDF) and bag-of-words techniques, which are used to perform clustering and classification of text associated with a given term.",
+ "evidence": [
+  "8"
+ ]
+}
+```

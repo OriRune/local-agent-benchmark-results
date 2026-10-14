@@ -1,0 +1,6 @@
+
+I'll try again:
+
+<tool_call>
+{"name": "edit_file", "arguments": {"path": "tests/test_units.py", "old_text": "5	    assert parse_size(\"512 B\") == 512\n6	    assert parse_size(\"1.5 KB\") == 1536\n7	    assert parse_size(\"2 MB\") == 2 * 1024 * 1024", "new_text": "5	    assert parse_size(\"512 B\") == 512\n6	    assert parse_size(\"1.5 KB\") == 1536\n7	    assert parse_size(\"2 MB\") == 2 * 1024 * 1024"}}
+<tool_call>

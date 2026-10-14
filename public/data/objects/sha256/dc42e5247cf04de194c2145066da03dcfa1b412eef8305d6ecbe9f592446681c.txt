@@ -1,0 +1,9 @@
+```json
+{
+  "name": "list_dir",
+  "arguments": {
+    "path": ".",
+    "sort": "size"
+  }
+}
+```

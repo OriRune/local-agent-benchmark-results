@@ -1,0 +1,5 @@
+The to-do list is already set up to remember your items when you reload the page.
+
+I have implemented **`localStorage`** in the JavaScript, which saves the list of tasks to your browser's storage. This means that when you close the browser and reopen `todo.html`, your tasks will still be there.
+
+No changes were necessary, as the functionality you requested is already present in the file.

@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The authors use approximately 11,529,432 segmented words from Chinese Wikipedia articles for training the embeddings.",
+  "evidence": [12]
+}
+```

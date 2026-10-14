@@ -1,0 +1,9 @@
+The test in `tests/test_units.py` fails because of an incorrect unit conversion factor in `app/units.py`.
+
+Specifically, the `UNITS` dictionary defines `"KB"` as `1000`, but the test expects `1.5 KB` to equal `1536` (which is $1.5 \times 1024$). The docstring also correctly states that the module uses 1024-based units, making the `1000` value a bug.
+
+**The fix:**
+Change `UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}` 
+to `UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}`.
+
+I could not run the tests to verify the fix because the `run` tool was denied in this environment.

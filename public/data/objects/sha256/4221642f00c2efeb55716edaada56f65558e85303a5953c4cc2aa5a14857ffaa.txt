@@ -1,0 +1,10 @@
+The README.md has been created successfully. Here's what it contains:
+
+**CLI Documentation**
+- Lists all command line options in a table format
+- Includes short and long option names
+- Shows help text from the source code
+- Adds a usage example
+- Mentions the store_true action for quiet option
+
+Would you like me to make any adjustments to the README content or add additional information?

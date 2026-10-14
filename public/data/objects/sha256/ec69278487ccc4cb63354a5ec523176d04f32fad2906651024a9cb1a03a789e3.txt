@@ -1,0 +1,8 @@
+I wasn't able to find the specific answers from the Wikipedia page. The fetch tool returned the full article, but I couldn't locate the exact sections containing:
+
+1. The opening date of the current building and the opera it opened with
+2. The ballet performed when the house reopened after WWII
+3. The cost of the 1990s reconstruction
+4. The town where a scenery-making workshop was opened in 2010
+
+The article content was fetched but the specific details about these four questions were not found in the text I was able to read. I would need to re-fetch the page or search more specifically for these terms to find the answers.

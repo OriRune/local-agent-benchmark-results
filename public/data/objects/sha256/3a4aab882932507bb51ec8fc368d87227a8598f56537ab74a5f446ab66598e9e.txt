@@ -1,0 +1,12 @@
+I have created a shell script named `open_apps.sh` in the current directory.
+
+This script uses the following commands:
+1.  `google-chrome "https://www.google.com" &`: Opens Google Chrome with Google.com loaded in the background.
+2.  `nano &`: Opens the `nano` text editor in the background.
+3.  `nautilus "[private-home]/Documents/llama.cpp" &`: Opens the file manager (`nautilus`) to the specified directory in the background.
+
+You can run this script by making it executable and then running it:
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```

@@ -1,0 +1,4 @@
+{
+  "answer": "finance specific BLSTM word embedding model",
+  "evidence": [1]
+}

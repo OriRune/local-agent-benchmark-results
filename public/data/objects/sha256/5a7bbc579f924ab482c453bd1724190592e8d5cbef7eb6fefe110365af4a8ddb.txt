@@ -1,0 +1,32 @@
+The grid is provided as follows:
+```
+O O O X O O O X O
+X X O O O X O X X
+O O O O O O O O O
+X O O O O O O O O
+O X O O O O O O X
+O O O O O O O O X
+O O X X O O X O X
+O X O O X O X * #
+```
+
+Let's locate the starting point `*` and the destination `#`.
+The grid has 8 rows and 9 columns.
+Row 7 (the last row) is: `O X O O X O X * #`
+The characters are indexed from 0 to 8.
+- Index 7 is `*` (Start).
+- Index 8 is `#` (Destination).
+
+The coordinates are:
+- Start: (7, 7)
+- Destination: (7, 8)
+
+We need to find the shortest path from (7, 7) to (7, 8).
+The destination is immediately to the right of the start.
+Let's check if the move is valid.
+- The cell to the right of `*` is `#`.
+- The destination is reachable directly.
+
+Therefore, the shortest path consists of a single move to the right.
+
+<answer>right</answer>

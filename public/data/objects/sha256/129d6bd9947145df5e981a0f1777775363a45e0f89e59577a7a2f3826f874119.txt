@@ -1,0 +1,13 @@
+Here's the calculation from the code.
+
+In `app/net.py`, `fetch` loops `for attempt in range(MAX_RETRIES)`, and after each failed attempt it sleeps `2 ** attempt` seconds. With `MAX_RETRIES = 3`, the attempts are `attempt = 0, 1, 2`, so the sleeps are:
+
+- attempt 0 → 2⁰ = 1 s
+- attempt 1 → 2¹ = 2 s
+- attempt 2 → 2² = 4 s
+
+It sleeps only *between* attempts (after a failure), not after the final give-up, so there are 3 sleeps total.
+
+**Total sleep = 1 + 2 + 4 = 7 seconds.**
+
+(Note: this is sleep time only — it doesn't include the ~20 s network timeouts that elapse while each fetch attempt itself fails.)

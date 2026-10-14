@@ -1,0 +1,7 @@
+I've created a `README.md` for the project that lists every CLI option from `app/cli.py` with its help text:
+
+- **`url`** — what to download (positional argument)
+- **`-o, --output`** — file to write (default: stdout)
+- **`-q, --quiet`** — no progress output
+
+The README is placed at the project root and follows the standard argparse format used in the codebase.

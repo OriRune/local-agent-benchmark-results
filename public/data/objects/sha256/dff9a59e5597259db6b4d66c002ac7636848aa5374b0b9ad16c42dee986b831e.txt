@@ -1,0 +1,36 @@
+## Setting Up the Dependency Graph
+
+Each prerequisite (a, b) means course **a** depends on course **b** (b must come first).
+
+| Course | Depends on |
+|--------|-----------|
+| 0 | 4 |
+| 1 | 4 |
+| 2 | 3 |
+| 3 | (none) |
+| 4 | 2 |
+| 5 | 3 |
+| 6 | 1 |
+| 7 | 3, 2 |
+
+## Checking for Cycles
+
+Let me trace the dependency chains:
+
+- **3** → no dependencies ✓
+- **2** → 3 ✓
+- **4** → 2 → 3 ✓
+- **0** → 4 → 2 → 3 ✓
+- **1** → 4 → 2 → 3 ✓
+- **5** → 3 ✓
+- **7** → 3, 2 → 3 ✓
+- **6** → 1 → 4 → 2 → 3 ✓
+
+## Topological Order
+
+A valid ordering exists:
+$$3 \rightarrow 2 \rightarrow 4 \rightarrow 0, 1 \rightarrow 5, 7 \rightarrow 6$$
+
+Since there are **no cycles**, all courses can be completed.
+
+<answer>True</answer>

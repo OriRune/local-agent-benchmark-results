@@ -1,0 +1,21 @@
+I have created a shell script named `open_tools.sh` in the current directory. This script will open Google Chrome with google.com, a text editor (using `gedit`, which is common on Linux Mint), and the file manager showing the specified directory.
+
+To use it:
+1. Make the script executable: `chmod +x open_tools.sh`
+2. Run the script: `./open_tools.sh`
+
+```bash
+#!/bin/bash
+
+# 1. Open Chrome with google.com
+# If google-chrome is not your command, you might need to use google-chrome-stable
+google-chrome https://google.com &
+
+# 2. Open a text editor
+# gedit is common on Linux Mint. Change to mousepad or another editor if preferred.
+gedit &
+
+# 3. Open the file manager showing [private-home]/Documents/llama.cpp
+# xdg-open will open the directory in your default file manager (e.g., Nautilus, Nemo, Thunar)
+xdg-open [private-home]/Documents/llama.cpp &
+```

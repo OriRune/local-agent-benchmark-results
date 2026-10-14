@@ -1,0 +1,7 @@
+The test `tests/test_units.py` failed because the `UNITS` dictionary in `app/units.py` defined `KB` as 1000 bytes instead of 1024 bytes, which contradicted the docstring and the expected behavior in the test.
+
+I have updated `app/units.py` to use 1024 for `KB`.
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```

@@ -1,0 +1,1 @@
+I searched the folder one level up and did not find a file named `proxy.ini`. Could you please confirm the exact location of the project folder you are referring to, or if the file might be named differently?

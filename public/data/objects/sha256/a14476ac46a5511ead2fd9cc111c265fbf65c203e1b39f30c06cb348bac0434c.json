@@ -1,0 +1,1 @@
+[{"args":{"command":"pytest tests/test_units.py"},"execution":{"backend":"linux","category":"unsupported","detail":"pytest is not installed on this PC","duration_seconds":0,"executed":false,"exit_code":null,"output_truncated":false,"termination":"denied"},"name":"run","result":"error: pytest is not installed on this PC","status":"error"}]

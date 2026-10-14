@@ -1,0 +1,1 @@
+[{"args":{"path":".."},"name":"list_dir","result":"[outside the working folder: read-only]\nproject/\nshared-config/","status":"ok"},{"args":{"path":"proxy.ini"},"name":"read_file","result":"error: no such file: proxy.ini","status":"error"}]

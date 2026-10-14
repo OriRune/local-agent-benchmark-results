@@ -1,0 +1,8 @@
+```json
+{
+  "answer": "The paper uses 11,529,432 segmented words after applying the jieba toolkit for word segmentation and filtering stopwords.",
+  "evidence": [
+    "12"
+  ]
+}
+```

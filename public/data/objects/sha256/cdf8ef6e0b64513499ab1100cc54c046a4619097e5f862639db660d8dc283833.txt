@@ -1,0 +1,1 @@
+The bot uses the *output object* `o` to store the forecast data. The *option* `o` accepts the user's location input. The *object* `o` is then formatted for the final output.

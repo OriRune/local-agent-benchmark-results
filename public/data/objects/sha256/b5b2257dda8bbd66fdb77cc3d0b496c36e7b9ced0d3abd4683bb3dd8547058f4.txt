@@ -1,0 +1,11 @@
+| Day | India Itinerary | China Itinerary |
+| :--- | :--- | :--- |
+| 1 | Arrive in Delhi; Visit Red Fort & Chandni Chowk | Arrive in Beijing; Visit Tiananmen Square |
+| 2 | Explore Qutub Minar & Humayun’s Tomb | Tour the Forbidden City |
+| 3 | Travel to Agra; Visit Taj Mahal at sunset | Visit the Great Wall of China (Badaling) |
+| 4 | Visit Agra Fort & Fatehpur Sikri | Explore the Summer Palace |
+| 5 | Travel to Jaipur; Visit Hawa Mahal | Travel to Xi'an; Visit Terracotta Warriors |
+| 6 | Explore Amber Fort & City Palace | Visit Xi'an City Wall & Muslim Quarter |
+| 7 | Return to Delhi; Departure | Return to Beijing; Departure |
+
+*******

@@ -1,0 +1,30 @@
+## Setting Up the Grid
+
+Let me index cells as (row, col):
+
+```
+     col0 col1 col2 col3 col4 col5
+row0:  X    O    X    O    O    O
+row1:  O    O    O    O    O    #
+row2:  O    O    X    O    O    O
+row3:  O    O    O    *    O    X
+row4:  X    X    O    X    O    O
+row5:  X    X    O    O    X    O
+```
+
+- **Start:** (3,3)
+- **Destination:** (1,5)
+
+## BFS Search
+
+The Manhattan distance is |3−1| + |5−3| = **4**, so the shortest possible path is 4 moves.
+
+Tracing from start (3,3):
+- **up** → (2,3) = O ✓
+- **up** → (1,3) = O ✓
+- **right** → (1,4) = O ✓
+- **right** → (1,5) = # ✓
+
+This reaches the destination in exactly 4 moves, which equals the theoretical minimum.
+
+<answer>up up right right</answer>

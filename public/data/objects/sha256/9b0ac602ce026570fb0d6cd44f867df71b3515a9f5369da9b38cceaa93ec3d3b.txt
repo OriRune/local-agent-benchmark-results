@@ -1,0 +1,7 @@
+The persistence is already in place — the code uses `localStorage` to save and load tasks. Here's how it works:
+
+- **On load**: `tasks = JSON.parse(localStorage.getItem('todos') || '[]');` — if no saved tasks exist, it starts empty.
+- **On every change** (add, edit, delete, toggle): `save()` is called, which writes the current `tasks` array back to `localStorage`.
+- **On reload**: The `tasks` are read from `localStorage` again, so your list is fully restored.
+
+The app is ready to use — just open `todo.html` in a browser, add some tasks, reload the page, and they'll still be there.

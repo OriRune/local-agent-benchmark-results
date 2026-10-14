@@ -1,0 +1,10 @@
+I've created **books.html** — a single, self-contained HTML file with everything embedded (CSS styles, fonts via Google Fonts). Here's what it includes:
+
+- **Elegant header** with "My Reading Journal — Books Read in 2025"
+- **Summary cards** showing 22 books, ~8,600 pages, 12 months, and ~7.8 books/month
+- **Genre breakdown tags** (Fantasy leads with 6, followed by Sci-Fi with 4, etc.)
+- **22 beautifully styled book cards** with title, author, reading dates, page count, and genre color-coded tags
+- **Warm, bookish color palette** with cream backgrounds, serif headings (Cormorant Garamond), and amber/gold accents
+- **Responsive layout** that works on any screen size
+
+Just double-click `books.html` to open it in your browser, then screenshot it to share with your book club! 📚

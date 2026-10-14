@@ -1,0 +1,14 @@
+
+The README.md file has been created with the following content:
+
+# Project README
+
+This README.md contains all the command line options of the CLI with their help text.
+
+To view the full list of options, you can use the `list_dir` command to list the contents of the `docs` folder, which contains the help text for each command. For example:
+
+```
+list_dir docs
+```
+
+This will display the contents of the `docs` folder, which includes the help text for each command. You can then copy and paste the help text into a text editor to view the full list of options and their descriptions.

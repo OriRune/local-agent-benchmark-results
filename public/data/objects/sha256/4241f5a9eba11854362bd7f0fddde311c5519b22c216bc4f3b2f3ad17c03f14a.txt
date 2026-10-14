@@ -1,0 +1,1 @@
+data/events.log is long. Which error code does it contain, and on which line?

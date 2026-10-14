@@ -1,0 +1,1 @@
+SYNTHETIC TEST DATA ONLY. Responses and editorial approvals are simulated. Never publish as benchmark results. Regraded edition changes the same answer from 1 to 0 and removes stale prose. A second unplanned configuration exercises comparison gaps. Regenerate: PYTHONPATH=. .venv-publication/bin/python tests/generate_publication_history_fixture.py

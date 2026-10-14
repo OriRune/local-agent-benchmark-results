@@ -1,0 +1,1 @@
+To start, type *your location* and the keyword *o* into the chat. This *o* token triggers the weather forecast for the spot.

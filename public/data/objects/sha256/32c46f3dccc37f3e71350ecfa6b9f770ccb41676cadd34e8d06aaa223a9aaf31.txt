@@ -1,0 +1,14 @@
+Wrote `README.md` in the project root.
+
+What it contains, taken from `app/cli.py` (`build_parser`, prog `tinydl`):
+
+- `url` — "what to download" (positional, required)
+- `-o`, `--output OUTPUT` — "file to write (default: stdout)"
+- `-q`, `--quiet` — "no progress output"
+- `-h`, `--help` — argparse's built-in "show this help message and exit"
+
+I listed the options as a table plus usage line and examples, and added a short note on the retry/timeout behaviour from `app/config.py` (`MAX_RETRIES = 3`, `TIMEOUT_S = 20`).
+
+One caveat: I could not run the CLI to capture argparse's real `--help` output (the sandbox blocked running programs), so the wording for `-h/--help` is argparse's standard text rather than verified output. The other help strings are copied verbatim from the source.
+
+Also, I left a leftover helper I had used for that attempt, now renamed `_tmp_help.py.old` — say if you want it removed (I can't delete files).

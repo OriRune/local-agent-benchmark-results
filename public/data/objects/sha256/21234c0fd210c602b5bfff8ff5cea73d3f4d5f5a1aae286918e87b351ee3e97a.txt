@@ -1,0 +1,1 @@
+The most recent git commit information isn't directly available in the files I can access. The logs in `data/events.log` show HTTP request activity but no git commit details. Would you like me to search for git-related files or commit messages in other files?

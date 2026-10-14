@@ -1,0 +1,9 @@
+{
+"answer": "The paper does not train a model; it uses a dictionary-based tagging mechanism with an occupation dataset gathered from various sources and a names dataset comprising 5,453 male and 6,990 female names from the CMU repository.",
+"evidence": [
+"12",
+"13",
+"18",
+"19"
+]
+}

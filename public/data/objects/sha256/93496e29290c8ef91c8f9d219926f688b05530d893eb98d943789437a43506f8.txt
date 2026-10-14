@@ -1,0 +1,3 @@
+The calculations confirm that with the given stage 1 propellant of 36,000 kg, the total delta-v with 0 kg of stage 2 propellant is already 10,392 m/s, which exceeds the required 9,400 m/s. Adding propellant to stage 2 only increases the total delta-v further. Therefore, stage 2 does not need any propellant.
+
+ANSWER: 0 kg

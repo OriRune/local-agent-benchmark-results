@@ -1,0 +1,27 @@
+The file has been modified. Let me verify the fix is correct by checking the logic:
+
+The original code (before fix):
+```python
+"""Byte-size parsing. Sizes use 1024-based units: 1 KB = 1024 bytes."""
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+
+def parse_size(text):
+    number, unit = text.split()
+    return int(float(number) * UNITS[unit.upper()])
+```
+
+The test expects:
+```python
+assert parse_size("2 MB") == 2 * 1024 * 1024
+```
+
+This means:
+- 2 MB = 2 * 1024 * 1024 = 2,092,144 bytes
+
+The current buggy code produces:
+- 2 MB = 2 * 1048576 = 2,097,144 bytes (incorrect - should be 2,092,144)
+- 1 MB = 1048576 bytes (incorrect)
+
+The fix is to change line 2 from `1024 ** 2` to `1024 * 1024` and line 3 from `1024 ** 3` to `1024 * 1024 * 1024`.
+
+The fix has been applied. The issue was on line 2 where `1024 ** 2` should be `1024 * 1024`.

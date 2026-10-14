@@ -1,0 +1,1 @@
+The test was failing because the parse_size function treated KB as 1000 bytes instead of 1024 bytes, despite the code comment indicating 1024-based units. I fixed the UNITS dictionary in app/units.py by changing "KB": 1000 to "KB": 1024. The test should now pass.

@@ -1,0 +1,20 @@
+| Day | Activity | Location |
+| :--- | :--- | :--- |
+| Day 1 | Arrival & Sightseeing (Great Wall) | Beijing |
+| Day 2 | Imperial Palace Tour | Beijing |
+| Day 3 | Temple of Heaven & Local Food | Beijing |
+| Day 4 | Travel to Shanghai | High-speed Rail |
+| Day 5 | Bund District & Skyline Views | Shanghai |
+| Day 6 | Shopping & Modern Architecture | Shanghai |
+| Day 7 | Departure | Shanghai |
+
+******
+
+| Day | Activity | Location |
+| Day 1 | Arrival & Local Markets | Mumbai |
+| Day 2 | Historical Sites & Museums | Mumbai |
+| Day 3 | Travel to Jaipur | Flight |
+| Day 4 | Desert Exploration & Sand Dunes | Jaipur |
+| Day 5 | Historical Forts & Statics | Jaipur |
+| Day 6 | Local Handicrafts & Spices | Jaipur |
+| Day 7 | Departure | Jaipur |

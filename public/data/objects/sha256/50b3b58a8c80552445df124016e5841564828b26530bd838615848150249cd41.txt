@@ -1,0 +1,19 @@
+Based on the clues provided, we can deduce the arrangement of the houses as follows:
+
+1.  **House Assignments:**
+    *   Clue 1 states **Bob** is in House 3.
+    *   Clue 2 states **Arnold** is in House 2.
+    *   Since there are only three houses and three people, the remaining person, **Alice**, must be in House 1.
+
+2.  **Nationalities:**
+    *   Clue 3 states Arnold is the **Brit**.
+    *   Clue 4 states the **Dane** is Alice. Since Alice is in House 1, House 1 is occupied by the Dane.
+    *   (This leaves Bob as the Chinese person, though not strictly necessary to answer the specific question).
+
+3.  **Animals:**
+    *   Clue 6 states the **Cat** lover is Arnold.
+    *   Clue 5 states the **Dog** owner is the Dane (Alice).
+
+The question asks for the name of the person who lives in House 1. Based on the deduction in step 1, that person is Alice.
+
+<answer>Alice</answer>

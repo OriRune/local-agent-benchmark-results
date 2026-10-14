@@ -1,0 +1,1 @@
+The **README.md** file has been created and contains a comprehensive list of all command line options for the CLI, along with their help text. This documentation can be referenced by users and contributors to understand the available options and their usage.

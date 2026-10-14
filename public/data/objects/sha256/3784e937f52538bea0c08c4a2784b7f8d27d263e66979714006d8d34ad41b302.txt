@@ -1,0 +1,9 @@
+In `app/net.py`, `fetch` loops over `range(MAX_RETRIES)` and sleeps `2 ** attempt` seconds after each failed attempt. With `MAX_RETRIES = 3` (from `app/config.py`), the attempts are 0, 1, and 2 — and every failure sleeps before the loop moves on (including the last one, right before the `RuntimeError` is raised).
+
+So the sleeps are:
+
+- attempt 0 → 2⁰ = 1 s
+- attempt 1 → 2¹ = 2 s
+- attempt 2 → 2² = 4 s
+
+Total: **1 + 2 + 4 = 7 seconds** of sleeping before it gives up. (The 20 s `TIMEOUT_S` is the per‑request timeout, not a sleep, so it isn't counted here.)

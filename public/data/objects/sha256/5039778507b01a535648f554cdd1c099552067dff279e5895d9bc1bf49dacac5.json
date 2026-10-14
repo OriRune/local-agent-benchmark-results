@@ -1,0 +1,1 @@
+[{"args":{"path":".","pattern":"fetch*"},"name":"find_files","result":"no files match fetch*","status":"ok"},{"args":{"case_sensitive":false,"glob":"*","path":".","pattern":"fetch"},"name":"grep","result":"app/cli.py:5: from app.net import fetch\napp/cli.py:18:     data = fetch(args.url, get=_get)\napp/net.py:6: def fetch(url, get):","status":"ok"}]

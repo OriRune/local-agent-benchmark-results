@@ -1,0 +1,5 @@
+UNANSWERABLE  
+Wait, but the user said to return only the shortest supported answer. Since the instruction says to return only the shortest supported answer or UNANSWERABLE. Since the answer is UNANSWERABLE because ACB isn't mentioned, so the answer is UNANSWERABLE. But the user said "exactly UNANSWERABLE if not given". Since the question is about ACB which isn't in the passage, so the answer is UNANSWERABLE. So the final answer should be just "UNANSWERABLE".
+</think>
+
+UNANSWERABLE

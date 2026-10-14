@@ -1,0 +1,1 @@
+{"check":{"blocking_lines":["echo \"No GUI text editor (xed or gedit) found. Please open one manually.\""],"chrome":"yes, as the default browser (Chrome is the default here)","editor":true,"file":"open_apps.sh","file_manager":true,"syntax_ok":true},"score":0}

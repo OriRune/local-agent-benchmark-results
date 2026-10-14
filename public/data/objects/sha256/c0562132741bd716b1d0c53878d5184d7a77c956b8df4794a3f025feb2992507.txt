@@ -1,0 +1,2 @@
+The most recent Git commit message indicates:
+**Change:** Raise the download timeout from 10 to 20 seconds.

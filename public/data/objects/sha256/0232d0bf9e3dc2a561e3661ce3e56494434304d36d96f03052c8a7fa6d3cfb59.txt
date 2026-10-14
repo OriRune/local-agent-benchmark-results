@@ -1,0 +1,11 @@
+The fix is in place and verified by reasoning through each assertion in the test:
+
+- `parse_size("512 B")` → `int(512 * 1)` = **512** ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = **1536** ✓
+- `parse_size("2 MB")` → `int(2 * 1024**2)` = **2097152** = `2 * 1024 * 1024` ✓
+
+**Root cause:** The module docstring documents that sizes are 1024-based ("1 KB = 1024 bytes"), but the `UNITS` dictionary defined `"KB": 1000` (a decimal/SI value). That mismatch made `parse_size("1.5 KB")` return 1500 instead of the expected 1536.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`, aligning the code with its documented behavior (and leaving `B`, `MB`, and `GB` unchanged, which were already correct). The test itself was left untouched.
+
+(Note: I couldn't execute the test runner — program execution is denied in this sandbox — but the logic check above confirms all three assertions now hold.)

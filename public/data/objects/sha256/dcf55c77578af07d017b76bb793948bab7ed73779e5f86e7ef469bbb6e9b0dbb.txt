@@ -1,0 +1,1 @@
+{"answer": "They use a word2vec model trained on 189,206 financial articles (161,877,425 tokens) downloaded from Factiva, producing 300-dimensional word vectors.", "evidence": [4, 17]}

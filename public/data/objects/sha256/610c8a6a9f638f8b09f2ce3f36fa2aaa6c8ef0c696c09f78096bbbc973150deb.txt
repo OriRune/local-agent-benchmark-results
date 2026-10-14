@@ -1,0 +1,12 @@
+The task has been completed successfully.
+
+Summary of changes:
+1. Renamed `fetch` → `download` in `app/net.py`
+2. Updated `app/cli.py` to import `download` from `app.net` instead of `fetch`
+3. Updated the call from `fetch(args.url, get=_get)` to `download(args.url, get=_get)` in `app/cli.py`
+
+No other files in the project reference the `fetch` function, so all necessary updates have been made.
+
+Files modified:
+- `app/net.py`: `def fetch(url, get):` → `def download(url, get):`
+- `app/cli.py`: `from app.net import fetch` → `from app.net import download`; `fetch(args.url, get=_get)` → `download(args.url, get=_get)`

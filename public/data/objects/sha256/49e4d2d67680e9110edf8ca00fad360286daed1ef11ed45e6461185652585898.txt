@@ -1,0 +1,1 @@
+Done. The todo.txt file now has "- publish release notes" as the fourth (last) line.

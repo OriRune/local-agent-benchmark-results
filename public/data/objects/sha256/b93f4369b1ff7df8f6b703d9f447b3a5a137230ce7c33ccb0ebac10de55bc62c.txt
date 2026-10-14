@@ -1,0 +1,10 @@
+
+I've generated a README.md that lists all command line options of the CLI along with their help text:
+
+```markdown
+# Command line options
+
+- **url**: what to download
+- **-o**, **--output**: file to write (default: stdout)
+- **-q**, **--quiet**: no progress output
+```

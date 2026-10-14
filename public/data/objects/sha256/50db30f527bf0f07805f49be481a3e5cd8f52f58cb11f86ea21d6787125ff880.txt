@@ -1,0 +1,9 @@
+The test in `tests/test_units.py` failed because the `UNITS` dictionary in `app/units.py` used a base-1000 multiplier for "KB" (`"KB": 1000`), whereas the test expected a base-1024 multiplier (`1.5 KB == 1536`).
+
+I have fixed the code by updating `app/units.py` to use `1024` for the "KB" unit:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+**What I could not find or finish:**
+I was unable to run the tests or any Python code to verify the fix because the `run` tool was denied access to the sandbox for program execution (it returned `[sandbox: linux; denied; 0.00 s]`). I had to rely on manual inspection of the code and the error logic.

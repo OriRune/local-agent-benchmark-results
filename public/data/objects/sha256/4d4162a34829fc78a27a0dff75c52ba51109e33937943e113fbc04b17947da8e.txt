@@ -1,0 +1,3 @@
+
+
+I cannot determine the sleep duration from the provided tool description. The fetch tool's documentation doesn't mention any retry logic, sleep intervals, or failure handling mechanics. To answer this question, I would need access to the actual implementation code of the fetch function, which isn't available in the tools provided.

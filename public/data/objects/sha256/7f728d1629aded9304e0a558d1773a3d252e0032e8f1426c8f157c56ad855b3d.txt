@@ -1,0 +1,1 @@
+There are 7 Python files in the app folder. The largest is `__init__.py` (4096 bytes).

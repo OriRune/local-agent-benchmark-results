@@ -1,0 +1,3 @@
+I have corrected the `app/units.py` file by updating the `UNITS` dictionary to use $1024$ for $\text{KB}$ instead of $1000$. This change ensures that the test cases in `tests/test_units.py` pass, as they expect a base of $1024$ for $\text{KB}$ and $\text{MB}$.
+
+The test is now fixed.

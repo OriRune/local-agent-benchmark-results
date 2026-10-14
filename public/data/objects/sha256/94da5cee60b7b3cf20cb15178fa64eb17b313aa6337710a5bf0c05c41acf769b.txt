@@ -1,0 +1,10 @@
+{
+  "answer": "The paper does not list specific ICD-10 codes; it only mentions example codes such as I509 (for 'insuffisance cardiaque aigue') and states that the dictionaries contained 3,539 ICD-10 codes (run2) and 6,392 ICD-10 codes (run1).",
+  "evidence": [
+    "3",
+    "4",
+    "5",
+    "10",
+    "12"
+  ]
+}

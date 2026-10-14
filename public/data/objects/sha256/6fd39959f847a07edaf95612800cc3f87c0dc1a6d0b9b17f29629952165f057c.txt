@@ -1,0 +1,11 @@
+Here is a template for your location-based weather chatbot:
+
+**Bot Greeting:** "Hello! To show you the *most current* weather, please provide your location."
+
+**User Input Prompt:** "Please input your location (e.g., city or coordinates)."
+
+**Processing Logic:** "Once you provide your location, I will look up the *local* forecast."
+
+**Output Format:** "Your forecast for [Location] is: *[Insert Weather Data Here]*."
+
+This structure incorporates the letter 'o' multiple times for robust operation.

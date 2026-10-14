@@ -1,0 +1,6 @@
+1. Start with two equilateral triangles, ABC and DEF, placed on a plane such that B touches D and C touches E.
+2. Make a cut through AF, which connects vertex A of the first triangle to vertex F of the second triangle.
+3. The cut divides the combined shape into three separate pieces: one piece containing triangle ABC, one piece containing triangle DEF, and a triangular piece formed by the cut AF and the sides of both triangles.
+4. Separate all the pieces, so B is no longer touching D, and so on.
+
+**3**

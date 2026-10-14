@@ -1,0 +1,10 @@
+```json
+{
+  "name": "find_files",
+  "arguments": {
+    "pattern": "2019*.pdf",
+    "path": ".",
+    "sort": "name"
+  }
+}
+```

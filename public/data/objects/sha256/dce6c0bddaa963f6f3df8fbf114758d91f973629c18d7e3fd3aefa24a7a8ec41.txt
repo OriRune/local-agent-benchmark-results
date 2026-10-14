@@ -1,0 +1,9 @@
+```json
+{
+  "answer": "Loaded language, appeal to authority, slogans, straw men, hidden ad-hominem fallacies, and red herring",
+  "evidence": [
+    "From the abstract: 'ranging from leveraging on the emotions of the audience —such as using loaded language or appeal to authority BIBREF5 and slogans BIBREF6— to using logical fallacies —such as straw men BIBREF7 (misrepresenting someone's opinion), hidden ad-hominem fallacies, and red herring BIBREF8 (presenting irrelevant data).'",
+    "From paragraph [3]: 'ranging from leveraging on the emotions of the audience —such as using loaded language or appeal to authority BIBREF5 and slogans BIBREF6— to using logical fallacies —such as straw men BIBREF7 (misrepresenting someone's opinion), hidden ad-hominem fallacies, and red herring BIBREF8 (presenting irrelevant data).'"
+  ]
+}
+```

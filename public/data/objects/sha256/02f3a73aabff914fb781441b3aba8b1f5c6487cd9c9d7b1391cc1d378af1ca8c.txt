@@ -1,0 +1,16 @@
+Here is one way to make 24 using the numbers 9, 5, 6, and 3:
+
+We can aim for $6 \times 4$ or $3 \times 8$.
+
+Try to make 4: $9 - 5 = 4$.
+Then multiply by 6: $(9 - 5) \times 6 = 4 \times 6 = 24$.
+We have used 9, 5, and 6. The number 3 is unused, which is allowed.
+
+Let's check the constraints:
+Numbers used: 9, 5, 6. (3 is unused, which is fine).
+Operators used: $\times$ (multiplication).
+Target: 24.
+
+Expression: $(9 - 5) \times 6$
+
+<answer>(9 - 5) * 6</answer>

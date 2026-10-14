@@ -1,0 +1,7 @@
+Based on my reading of `app/cli.py`, I've created a `README.md` that lists all the command-line options with their help text:
+
+- `url` (required): The URL to download data from.
+- `-o, --output`: File to write the downloaded data to. Default is stdout.
+- `-q, --quiet`: Suppress progress output.
+
+The README is complete and accurate based on the CLI code I reviewed.

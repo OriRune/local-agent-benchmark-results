@@ -1,0 +1,8 @@
+Done! I've renamed the `fetch` function to `download` in `app/net.py` and updated both the import and the function call in `app/cli.py`. Here's a summary:
+
+**Changes made:**
+1. **app/net.py**: Renamed `def fetch(...)` to `def download(...)`
+2. **app/cli.py**: Updated `from app.net import fetch` to `from app.net import download`
+3. **app/cli.py**: Updated `data = fetch(...)` to `data = download(...)`
+
+All references to the function now use the new name `download`.

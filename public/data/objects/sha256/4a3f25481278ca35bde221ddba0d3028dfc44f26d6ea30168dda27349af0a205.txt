@@ -1,0 +1,4 @@
+{
+  "answer": "Term frequency-Inverse document frequency (TF-IDF) vectors using a bag-of-words technique and n-grams of POS tags.",
+  "evidence": [8, 9]
+}

@@ -1,0 +1,8 @@
+{
+ "answer": "The paper does not describe training a machine learning model on a dataset; instead, it uses a dataset comprising occupation lists and a corpus of names (sourced from the CMU repository, NLTK, and baby name records) to perform rule-based de-biasing and evidence retrieval.",
+ "evidence": [
+  11,
+  12,
+  13
+ ]
+}

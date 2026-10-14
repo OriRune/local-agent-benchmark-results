@@ -1,0 +1,10 @@
+```json
+{
+ "answer": "The effectiveness of the NJM was evaluated using a questionnaire where respondents ranked captions from humans, the NJM, and the STAIR caption in order of funniness, as well as by comparing the average number of stars assigned by Bokete users.",
+ "evidence": [
+  12,
+  13,
+  14
+ ]
+}
+```

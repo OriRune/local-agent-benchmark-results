@@ -1,0 +1,6 @@
+
+
+{
+  "answer": "A finance-specific word2vec embedding model trained on financial news articles.",
+  "evidence": [4, 17]
+}

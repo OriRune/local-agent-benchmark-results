@@ -1,0 +1,12 @@
+**Setup**
+
+- Stage 1: m₀ = 4,000 + 36,000 + 900 + P₂ + 1,200; m_f = m₀ − 36,000; Δv₁ = 290 × 9.80665 × ln(m₀/m_f)
+- Stage 2: m₀ = 900 + P₂ + 1,200; m_f = 2,100; Δv₂ = 340 × 9.80665 × ln(m₀/2,100)
+
+Solving Δv₁ + Δv₂ = 9,400 m/s numerically gives P₂ ≈ 11,529 kg, which yields:
+
+- Δv₁ ≈ 3,164 m/s (stage 1 lifting off with 45,200 kg, burning out at 9,671 kg)
+- Δv₂ ≈ 6,236 m/s (stage 2 from 13,629 kg down to 2,100 kg)
+- Total = 9,400 m/s ✓
+
+ANSWER: 11529.4 kg

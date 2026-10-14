@@ -1,0 +1,4 @@
+{
+  "answer": "TF-IDF (Term frequency-Inverse document frequency) features using a bag-of-words technique.",
+  "evidence": [8]
+}

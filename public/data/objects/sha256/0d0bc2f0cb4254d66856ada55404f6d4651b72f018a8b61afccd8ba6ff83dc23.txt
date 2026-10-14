@@ -1,0 +1,10 @@
+{
+  "answer": "The system does not train a model; it uses a dictionary-based tagging mechanism with an occupation dataset and a names dataset (5453 male and 6990 female names from the CMU repository) to tag entities and resolve gender.",
+  "evidence": [
+    11,
+    12,
+    13,
+    18,
+    19
+  ]
+}

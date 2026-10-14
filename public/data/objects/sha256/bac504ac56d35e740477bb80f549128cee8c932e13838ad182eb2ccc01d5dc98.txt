@@ -1,0 +1,32 @@
+I have written a simple shell script named `system_info.sh` for you. This script uses standard Linux commands (`free` and `top`) to display the current RAM usage and a snapshot of the CPU usage in your terminal.
+
+Here is the content of the script:
+
+```bash
+#!/bin/bash
+
+echo "--- System Information ---"
+echo ""
+echo "--- RAM Usage (in MB) ---"
+free -m
+echo ""
+echo "--- CPU Usage (1 sample) ---"
+# Using top -bn1 to get a snapshot of CPU usage
+top -bn1 | grep "Cpu(s)"
+echo ""
+echo "--- End of Information ---"
+```
+
+### How to use it:
+
+1.  **Save the script:** The script is saved in the current directory as `system_info.sh`.
+2.  **Make it executable:** You need to give the script permission to run:
+    ```bash
+    chmod +x system_info.sh
+    ```
+3.  **Run the script:** Execute it from your terminal:
+    ```bash
+    ./system_info.sh
+    ```
+
+This will print the memory statistics and a CPU usage summary to your terminal.

@@ -1,0 +1,10 @@
+
+The `fetch` function iterates `for attempt in range(MAX_RETRIES)`, where `MAX_RETRIES = 3` (from `config.py`). On each failed attempt it sleeps `2 ** attempt` seconds. Thus the sleep durations are:
+
+- attempt 0 → 2⁰ = 1 s  
+- attempt 1 → 2¹ = 2 s  
+- attempt 2 → 2² = 4 s  
+
+Summing these gives a total sleep time of `1 + 2 + 4 = 7 seconds`.
+
+**Answer:** 7 seconds.

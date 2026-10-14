@@ -1,0 +1,5 @@
+Done. Here's what was changed in `app/util.py`:
+
+- **Added** `import math` at the top.
+- **Added** the `format_bytes(n)` function, which returns human-readable byte sizes (e.g. `'1.5 KB'`, `'512 B'`, `'1 GB'`). It scales up through B → KB → MB → GB → TB using powers of 1024.
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.

@@ -1,0 +1,21 @@
+| Day | Location | Activity |
+|---|---|---|
+| 1 | Delhi | City Tour |
+| 2 | Rishikesh | Yoga Retreat |
+| 3 | Varanasi | Temple Visit |
+| 4 | Jaipur | Fort Tour |
+| 5 | Agra | Taj Mahal |
+| 6 | Udaipur | Palace Visit |
+| 7 | Departure | |
+
+*******
+
+| Day | Location | Activity |
+|---|---|---|
+| 1 | Beijing | City Tour |
+| 2 | Beijing | Forbidden City |
+| 3 | Xi'an | Terracotta Warriors |
+| 4 | Chengdu | Panda Park |
+| 5 | Shanghai | Bund |
+| 6 | Shanghai | Oriental Pearl |
+| 7 | Departure | |

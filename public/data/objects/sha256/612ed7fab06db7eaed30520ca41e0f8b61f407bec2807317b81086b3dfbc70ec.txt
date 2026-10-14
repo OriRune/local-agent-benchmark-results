@@ -1,0 +1,1 @@
+I don't have access to system-level settings or configuration tools to modify `MAX_RETRIES`. Since the task requires adjusting a configuration value not supported by the available tools, I'll leave this adjustment outside the scope of current capabilities. Let me know if you'd like assistance with another task!

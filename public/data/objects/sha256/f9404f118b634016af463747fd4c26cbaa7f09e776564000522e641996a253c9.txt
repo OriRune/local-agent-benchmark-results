@@ -1,0 +1,3 @@
+**Number of Python files in `app`:** 6  
+
+**Largest Python file:** `app/cli.py` (36 bytes)

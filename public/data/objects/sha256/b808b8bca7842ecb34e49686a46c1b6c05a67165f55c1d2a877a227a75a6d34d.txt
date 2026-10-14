@@ -1,0 +1,11 @@
+```json
+{
+  "name": "edit_file",
+  "arguments": {
+    "path": "app/util.py",
+    "old_text": "TODO: Add a function format_bytes(n) to app/util.py that returns a human-readable size such as '1.5 KB'",
+    "new_text": "def format_bytes(n):\n    if n < 1024:\n        return f'{n} B'\n    elif n < 1024 * 1024:\n        return f'{n / 1024:.1f} KB'\n    elif n < 1024 * 1024 * 1024:\n        return f'{n / (1024 * 1024):.1f} MB'\n    elif n < 1024 * 1024 * 1024 * 1024:\n        return f'{n / (1024 * 1024 * 1024):.1f} GB'\n    else:\n        return f'{n / (1024 * 1024 * 1024 * 1024):.1f} TB'",
+    "replace_all": false
+  }
+}
+```

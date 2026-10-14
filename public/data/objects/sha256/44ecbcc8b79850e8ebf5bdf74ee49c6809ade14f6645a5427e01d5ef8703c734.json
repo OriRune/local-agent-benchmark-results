@@ -1,0 +1,1 @@
+[{"args":{"path":".."},"name":"list_dir","result":"[outside the working folder: read-only]\nproject/\nshared-config/","status":"ok"},{"args":{"path":"project"},"name":"list_dir","result":"error: no such folder: project","status":"error"}]

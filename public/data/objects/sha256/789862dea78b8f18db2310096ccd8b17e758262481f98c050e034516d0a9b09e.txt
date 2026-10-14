@@ -1,0 +1,9 @@
+```json
+{
+ "answer": "They used a word2vec model trained on a set of 189,206 financial articles.",
+ "evidence": [
+  "4",
+  "17"
+ ]
+}
+```

@@ -1,0 +1,1 @@
+Fixed. The issue was that `KB` was defined as `1000` in the `UNITS` dictionary, but according to the comment and the test expectations, it should be `1024` for 1024-based units. I changed it from `1000` to `1024`.

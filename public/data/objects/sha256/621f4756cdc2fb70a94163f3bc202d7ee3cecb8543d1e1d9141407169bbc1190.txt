@@ -1,0 +1,3 @@
+I have searched for common file extensions used for local LLMs (`*.gguf`, `*.bin`, `*.safetensors`) in the current directory and all subdirectories, but I did not find any files matching those patterns.
+
+Could you provide more information about the file types or directories where you might have stored them?

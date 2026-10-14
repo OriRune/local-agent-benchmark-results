@@ -1,0 +1,7 @@
+<answer>
+The ICD-10 codes are the International Classification of Diseases, 10th revision codes used to automatically code death certificates in the CLEF eHealth 2018 challenge.
+</answer>
+
+<evidence>
+[0]
+</evidence>

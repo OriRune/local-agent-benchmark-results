@@ -1,0 +1,12 @@
+I have created a README.md file that lists all the command line options of the CLI along with their help text, based on the information extracted from the `app/cli.py` file. The file also includes usage examples and some notes about the tool's configuration and behavior.
+
+Here is a summary of what was done:
+
+- **Inspected the `app/cli.py` file**: Found the command line options defined using `argparse`.
+- **Listed the options**:
+  - `url`: A required positional argument for the URL to download.
+  - `-o, --output`: An optional argument to specify the output file. If not provided, the content is written to `stdout`.
+  - `-q, --quiet`: A flag to suppress progress output.
+- **Wrote a README.md file**: Documented the options, provided usage examples, and included additional notes about the tool's behavior and configuration.
+
+The README.md file is now ready for review and can be shared with users or contributors to understand how to use the command line interface effectively.

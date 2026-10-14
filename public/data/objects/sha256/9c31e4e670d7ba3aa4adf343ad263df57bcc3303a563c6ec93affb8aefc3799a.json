@@ -1,0 +1,1 @@
+["The question asks what dataset was used in their experiment.\n\nLooking at paragraph [28]: \"Here we compare the efficiency of our system with four widely used annotation tools. We extract 100 sentences from CoNLL 2003 English NER BIBREF8 training data, with each sentence containing at least 4 entities.\"\n\nSo the dataset used was CoNLL 2003 English NER training data.\n"]

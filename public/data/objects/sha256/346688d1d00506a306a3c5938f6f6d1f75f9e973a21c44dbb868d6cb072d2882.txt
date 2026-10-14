@@ -1,0 +1,15 @@
+I've created a Python script called `show_system_info.py` that displays system information including CPU and RAM usage. The script uses the `psutil` library to gather real-time system metrics.
+
+The script will:
+1. Show CPU usage percentage
+2. Display detailed CPU information
+3. Show RAM usage percentage and total/used memory
+4. Display detailed memory information
+5. Show disk usage information
+
+To run the script, you can execute it with:
+```bash
+python3 show_system_info.py
+```
+
+Or if you have Python installed, you can also run it directly. The script will output all the system information to the terminal.

@@ -1,0 +1,12 @@
+```json
+{
+  "answer": "The ICD-10 codes are medical classification codes used to assign standardized diagnoses to death certificates. In this paper, they were used to code French death certificates in the CLEF eHealth 2018 challenge. The exact codes are not listed in the paper, but they are part of the **International Classification of Diseases, 10th Revision (ICD-10)** terminology provided by the task organizers and used in the dictionaries (e.g., **I509** for 'insuffisance cardiaque aiguë' in the example).",
+
+  "evidence": [
+    0,
+    1,
+    4,
+    12
+  ]
+}
+```

@@ -1,0 +1,9 @@
+Done! I've created a `README.md` for the project listing all three CLI options from `app/cli.py`:
+
+| Option | Help Text |
+|--------|-----------|
+| `url` | what to download |
+| `-o, --output <file>` | file to write (default: stdout) |
+| `-q, --quiet` | no progress output |
+
+I also included a brief description, usage line, and a few examples.

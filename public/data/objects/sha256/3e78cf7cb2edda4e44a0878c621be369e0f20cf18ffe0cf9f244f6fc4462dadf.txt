@@ -1,0 +1,5 @@
+I apologize for the confusion. Let's try again with the correct format.
+
+```json
+{"name": "find_files", "arguments": {"pattern": "*.llm *.model language_model*"}}
+```

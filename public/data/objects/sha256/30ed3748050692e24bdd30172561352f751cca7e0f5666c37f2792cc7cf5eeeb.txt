@@ -1,0 +1,1 @@
+I've added the `format_bytes` function to the file. The function now returns a human-readable size in bytes, KB, MB, GB, and TB.

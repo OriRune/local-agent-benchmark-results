@@ -1,0 +1,26 @@
+## Parsing the Grid
+
+Let me set up coordinates (row, col):
+
+```
+     0 1 2 3 4 5 6 7 8
+  0: O O O X O O O X O
+  1: X X O O O X O X X
+  2: O O O O O O O O O
+  3: X O O O O O O O O
+  4: O X O O O O O O X
+  5: O O O O O O O O X
+  6: O O X X O O X O X
+  7: O X O O X O X * #
+```
+
+## Finding the Path
+
+- **Start** `*` is at position **(7, 7)**
+- **Destination** `#` is at position **(7, 8)**
+
+These two cells are directly adjacent (horizontally next to each other).
+
+Therefore, the shortest path is simply to move **right** once.
+
+<answer>right</answer>

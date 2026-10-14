@@ -1,0 +1,6 @@
+Done. I've undone the most recent git commit by directly editing `app/config.py`. The `TIMEOUT_S` value has been changed from 20 back to 10 seconds, reverting the commit that raised the download timeout from 10 to 20 seconds.
+
+**Summary:**
+- File modified: `app/config.py`
+- Change: `TIMEOUT_S = 20` → `TIMEOUT_S = 10`
+- This undoes commit `1441c3e` which changed the timeout from 10 to 20 seconds

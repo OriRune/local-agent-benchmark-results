@@ -1,0 +1,4 @@
+{
+  "answer": "Occupation Data (crowdsourced and government lists), Names Data (CMU repository of names, NLTK data set, baby names records), and DBpedia",
+  "evidence": [11, 12, 13, 23]
+}

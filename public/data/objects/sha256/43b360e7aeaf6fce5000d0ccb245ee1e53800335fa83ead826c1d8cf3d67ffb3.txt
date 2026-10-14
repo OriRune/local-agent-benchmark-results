@@ -1,0 +1,9 @@
+I've found two TODO comments in the Python code and added each one as a new line to todo.txt. The file now contains:
+
+1. write README
+2. add proxy support
+3. tag the release
+4. # TODO: log each failed attempt
+5. # TODO: add a helper that formats byte sizes
+
+The task is complete.

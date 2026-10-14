@@ -1,0 +1,5 @@
+Use only this passage. Answer the question with only the number or short answer, without explanation.
+
+In the New Jersey gubernatorial election, 2013, Democrat Barbara Buono received 75.9% of the vote (5,757 cast), ahead of Republican Chris Christie with 22.7% (1,723 votes), and other candidates with 1.4% (104 votes), among the 8,174 ballots cast by the citys 21,996 registered voters (590 ballots were spoiled), for a turnout of 37.2%. In the New Jersey gubernatorial election, 2009, Democrat Jon Corzine received 7,140 ballots cast (81.3% vs. 50.6% countywide), ahead of Republican Chris Christie with 1,057 votes (12.0% vs. 41.7%), Independent Chris Daggett with 355 votes (4.0% vs. 5.9%) and other candidates with 84 votes (1.0% vs. 0.8%), among the 8,786 ballots cast by the citys 21,738 registered voters, yielding a 40.4% turnout (vs. 46.5% in the county).
+
+QUESTION: How many more registered voters were there for the 2013 election compared to the 2009 election?

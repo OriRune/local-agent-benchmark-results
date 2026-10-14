@@ -1,0 +1,12 @@
+```json
+{
+  "character_sheet": {
+    "class": "Medalist of the Arcane Sphere",
+    "race": "Theta",
+    "level": 1,
+    "hit_points": 12,
+    "armor_class": 14,
+    "description": "A rare Theta born with the innate ability to manifest medals of power, this character is a Medalist who wields both martial prowess and arcane secrets."
+  }
+}
+```

@@ -1,0 +1,6 @@
+Done. Here's what I changed:
+
+1. **Added `format_bytes(n)`** to `app/util.py` — it takes a byte count and returns a human-readable string like `"1.5 KB"`, `"2.3 MB"`, etc., using powers of 1024.
+2. **Removed the TODO comment** about adding the helper.
+
+The function handles edge cases like `n == 0` (returns `"0 B"`) and caps out at TB with the appropriate unit.

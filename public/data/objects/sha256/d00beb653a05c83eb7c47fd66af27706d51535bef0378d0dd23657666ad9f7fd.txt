@@ -1,0 +1,7 @@
+There is a file named `notes.md` in the `app/data` directory. It appears to be a markdown file containing some notes. You can view its contents with:
+
+```bash
+cat app/data/notes.md
+```
+
+Let me know if you'd like to edit, move, or perform another action on this file!

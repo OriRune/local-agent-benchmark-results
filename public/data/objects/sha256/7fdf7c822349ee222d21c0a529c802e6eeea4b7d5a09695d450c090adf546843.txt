@@ -1,0 +1,15 @@
+To find the target number 24 using the numbers 10, 4, 9, and 7, we can use the following steps:
+
+1.  Start with the numbers 10, 4, 9, and 7.
+2.  Calculate the sum of 9 and 7: 9 + 7 = 16.
+3.  Subtract 10 from 16: 16 - 10 = 6.
+4.  Multiply the result by 4: 6 * 4 = 24.
+
+Alternatively:
+1.  Multiply 10 and 4: 10 * 4 = 40.
+2.  Add 9 and 7: 9 + 7 = 16.
+3.  Subtract 16 from 40: 40 - 16 = 24.
+
+Both expressions use each number exactly once. Let's use the first one.
+
+<answer>4 * (9 + 7 - 10)</answer>

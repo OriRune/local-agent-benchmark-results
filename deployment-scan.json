@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "forbidden_literals": ["/home/orion", "/media/orion"],
+  "inline_scripts": {
+    "b85ac629aee5e2697032a676d537a4642e49efc39dc119401f638523114743f4": "Shell theme preference restoration",
+    "5c04e518c2abde7399087c57800bc2484e3dda2925d4c98e6963fcac766d019f": "Theme selector event listener",
+    "d41bc35562ebdd0082db4b878540e2dbb783155269935b8c40918858a524b362": "Astro client load bootstrap",
+    "b50224740c36bea7d0d4f8e0504e0c2f6038a4857c481c90d5279e7a1cba5087": "Astro island hydration runtime"
+  },
+  "exceptions": []
+}

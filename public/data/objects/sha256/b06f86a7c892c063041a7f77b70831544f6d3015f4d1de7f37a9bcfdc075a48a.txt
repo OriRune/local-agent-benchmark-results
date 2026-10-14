@@ -1,0 +1,10 @@
+I've analyzed the CSV. Let me verify my reasoning:
+
+**Different books (distinct titles):** 22 data rows, but "Project Hail Mary" appears twice (rows 2 and 8), so that's 21 distinct titles. ("the left hand of darkness" is a case-variant of the same book, but it's its own unique title anyway — the count stays 21.)
+
+**Finished July–December 2025** (End Date present and in Jul–Dec):
+- Dune (Jul 10), The Hobbit (Jul 19), Sapiens (Aug 15), The Night Circus (Sep 12), Tomorrow and Tomorrow and Tomorrow (Sep 30), The Thursday Murder Club (Oct 9), Babel (Nov 5), Lessons in Chemistry (Nov 20), A Psalm for the Wild-Built (Nov 24), The Bear and the Nightingale (Dec 16) = **10**
+
+(Middlemarch has no End Date, so it's not finished.)
+
+ANSWER: 21, 10

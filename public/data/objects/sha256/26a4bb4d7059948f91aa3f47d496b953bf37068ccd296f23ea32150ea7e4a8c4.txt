@@ -1,0 +1,6 @@
+{
+  "answer": "The results are evaluated using a questionnaire where respondents rank the captions provided by humans, the NJM, and STAIR caption in order of 'funniness'. The effectiveness of the NJM is compared to human-generated captions and STAIR captions based on the ranking.",
+  "evidence": [
+    [12]
+  ]
+}

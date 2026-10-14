@@ -1,0 +1,3 @@
+Done! I've added the `format_bytes(n)` function to `app/util.py` that returns human-readable byte sizes (e.g., '1.5 KB', '2.3 MB', '1.5 GB'), and removed the TODO comment.
+
+The function works by dividing by 1024 repeatedly until the value is less than 1024, then returning the formatted string with the appropriate unit (B, KB, MB, GB, TB, or PB).

@@ -1,0 +1,20 @@
+Based on my analysis of the books.csv file, I can see all the books with their read dates and end dates.
+
+**Different books read:** 22 unique titles
+
+**Finished between July and December 2025:** 11 books
+
+The books finished between July and December are:
+- Dune (July)
+- The Hobbit (July)
+- Sapiens (August)
+- Middlemarch (August)
+- The Night Circus (September)
+- Tomorrow and Tomorrow and Tomorrow (September)
+- The Thursday Murder Club (October)
+- Babel (November)
+- Lessons in Chemistry (November)
+- A Psalm for the Wild-Built (November)
+- The Bear and the Nightingale (December)
+
+ANSWER: 22, 11

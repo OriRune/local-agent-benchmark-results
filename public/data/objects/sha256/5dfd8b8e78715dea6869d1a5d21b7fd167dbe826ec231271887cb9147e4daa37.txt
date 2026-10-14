@@ -1,0 +1,11 @@
+Now I can work out the total sleep time.
+
+The loop runs for `attempt` values 0, 1, 2 (since `MAX_RETRIES = 3`), and each attempt sleeps `2 ** attempt` seconds before retrying.
+
+| Attempt | Sleep (2^attempt) |
+|---------|-------------------|
+| 0 | 2^0 = 1 second |
+| 1 | 2^1 = 2 seconds |
+| 2 | 2^2 = 4 seconds |
+
+**Total: 1 + 2 + 4 = 7 seconds**

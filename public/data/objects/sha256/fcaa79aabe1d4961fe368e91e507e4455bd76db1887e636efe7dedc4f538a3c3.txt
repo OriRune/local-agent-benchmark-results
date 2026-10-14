@@ -1,0 +1,7 @@
+The rename is complete and verified. All three references to `fetch` have been updated to `download`:
+
+- **`app/net.py:6`** — the definition: `def download(url, get):`
+- **`app/cli.py:5`** — the import: `from app.net import download`
+- **`app/cli.py:18`** — the call: `data = download(args.url, get=_get)`
+
+There are no remaining `fetch` references in the project. (Note: the string "what to download" on `cli.py:10` was a pre-existing help message, not a function reference, so it was left unchanged.)

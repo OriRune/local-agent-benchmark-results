@@ -1,0 +1,25 @@
+```json
+{
+  "answer": "The paper uses **DBpedia** (via SPARQL queries) for fetching real-world examples of people with specific occupations, genders, and demographic/temporal contexts. Additionally, they use **occupation lists** (crowdsourced and government sources) and **names datasets** (CMU repository, NLTK, and baby names records) for tagging and bias detection.",
+
+  "evidence": [
+    11,
+    12,
+    13,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ]
+}
+```

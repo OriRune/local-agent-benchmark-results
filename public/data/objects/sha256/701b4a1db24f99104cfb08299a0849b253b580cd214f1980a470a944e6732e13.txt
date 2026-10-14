@@ -1,0 +1,6 @@
+```json
+{
+ "answer": "The propaganda techniques include leveraging emotions (such as loaded language or appeal to authority), slogans, and logical fallacies (such as straw men, hidden ad-hominem fallacies, and red herring).",
+ "evidence": [3]
+}
+```

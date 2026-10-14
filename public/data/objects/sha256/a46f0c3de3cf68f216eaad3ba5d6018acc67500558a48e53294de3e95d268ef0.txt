@@ -1,0 +1,33 @@
+I need to find the probability that the sum of 1d12, 1d10, and 1d4 is 11 or higher.
+
+**Setup:**
+- Total outcomes: 12 × 10 × 4 = 480
+- Sum ranges from 3 (min) to 26 (max)
+- I'll count outcomes where sum ≤ 10, then subtract from 480
+
+**Counting favorable outcomes (sum ≥ 11):**
+
+For each d12 value (d), I count valid (d10, d4) combinations where d10 + d4 ≥ 11 - d:
+
+| d12 | Threshold | Count |
+|-----|-----------|-------|
+| 1 | ≥10 | 1 |
+| 2 | ≥9 | 3 |
+| 3 | ≥8 | 6 |
+| 4 | ≥7 | 10 |
+| 5 | ≥6 | 15 |
+| 6 | ≥5 | 21 |
+| 7 | ≥4 | 28 |
+| 8 | ≥3 | 36 |
+| 9 | ≥2 | 45 |
+| 10 | ≥1 | 54 |
+| 11 | ≥0 | 63 |
+| 12 | ≥0 | 72 |
+
+**Total favorable:** 1+3+6+10+15+21+28+36+45+54+63+72 = 354
+
+**Probability:** 354/480 = 59/80
+
+**Verification:** Counting sum ≤ 10 gives 126 outcomes, and 480 - 126 = 354. ✓
+
+<answer>59/80</answer>

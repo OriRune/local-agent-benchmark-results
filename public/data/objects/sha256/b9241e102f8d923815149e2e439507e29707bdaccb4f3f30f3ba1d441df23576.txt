@@ -1,0 +1,5 @@
+The most recent git commit (4fae9f3) changed **1 file**:
+
+- **app/config.py** - Modified (M)
+
+The commit message indicates it "raise[d] the download timeout from 10 to 20 seconds".

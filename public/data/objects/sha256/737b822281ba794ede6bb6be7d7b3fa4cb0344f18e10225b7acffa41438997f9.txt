@@ -1,0 +1,11 @@
+I've searched thoroughly through the files, but I can't find a 2019 tax return. Here's what I found:
+
+- The only tax-related file is **`Documents/Personal/tax return 2024.pdf`** — that's for 2024, not 2019.
+- There are no files with "2019" in the name.
+- A content search for "2019", "refund", or "tax return" returned no matches.
+
+I don't want to give you the wrong information, so I can't tell you your 2019 refund amount — there's no 2019 tax return in this folder. The only tax return present is the 2024 one.
+
+Would you like me to:
+1. Check the **2024 tax return** instead and tell you the refund amount from that?
+2. Search elsewhere on your computer (outside this folder) for a 2019 file?

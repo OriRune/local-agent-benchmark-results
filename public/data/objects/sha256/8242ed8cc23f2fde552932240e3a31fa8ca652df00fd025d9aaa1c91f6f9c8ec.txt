@@ -1,0 +1,12 @@
+The good news is that the functionality to remember items across reloads is already included in the code I provided!
+
+The JavaScript uses the browser's built-in **`localStorage`** feature. Here is how it works:
+
+1.  **Loading:** When you open the `todo.html` file, the script runs this line:
+    ```javascript
+    let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    ```
+    This checks if there are any saved tasks in your browser's memory. If there are, it loads them into the list.
+2.  **Saving:** Every time you add, check off, edit, or delete an item, the `saveTasks()` function is called, which updates the `localStorage` with the current state of your list.
+
+You can test it by adding a few items, refreshing the page, and seeing them still there!

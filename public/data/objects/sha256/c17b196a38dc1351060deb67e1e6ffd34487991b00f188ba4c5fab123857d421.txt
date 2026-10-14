@@ -1,0 +1,16 @@
+The to-do list I provided already includes functionality to remember your items! 
+
+I used the browser's **`localStorage`** API. Here is how it works in the code I wrote:
+
+1.  **Loading**: When the page loads, it looks for a key named `'todos'` in your browser's local storage:
+    `let todos = JSON.parse(localStorage.getItem('todos')) || [];`
+2.  **Saving**: Every time you add, toggle, edit, or delete a task, the `saveTodos()` function is called:
+    ```javascript
+    function saveTodos() {
+        localStorage.setItem('todos', JSON.stringify(todos));
+        renderTodos();
+    }
+    ```
+    This converts your current list into a JSON string and saves it to your browser.
+
+**Note:** This data is stored locally on your computer/browser. If you clear your browser's cache/site data or open the file in a different browser, the list will start fresh.

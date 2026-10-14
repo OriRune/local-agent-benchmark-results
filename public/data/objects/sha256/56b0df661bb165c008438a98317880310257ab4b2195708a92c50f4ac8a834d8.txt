@@ -1,0 +1,3 @@
+I need to find the file that contains `MAX_RETRIES` and change its value to 5. I don't see any obvious configuration files like `config.yaml` or `.yaml`.
+
+Could you please tell me which file you think contains the `MAX_RETRIES` setting?

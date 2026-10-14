@@ -1,0 +1,28 @@
+```json
+{
+  "character": {
+    "name": "Artemis Theta",
+    "class": "medalist",
+    "race": "human",
+    "alignment": "neutral good",
+    "level": 1,
+    "hit_points": 10,
+    "armor_class": 12,
+    "speed": "30 ft.",
+    "proficiencies": ["Athletics", "Arcana", "History", "Intimidation", "Investigation", "Medicine", "Perception", "Religion", "Stealth"],
+    "skills": {
+      "Athletics": 14,
+      "Arcana": 12,
+      "History": 13,
+      "Intimidation": 11,
+      "Investigation": 12,
+      "Medicine": 10,
+      "Perception": 13,
+      "Religion": 14,
+      "Stealth": 15
+    },
+    "tools": ["medalist", "dagger", "shortbow", "quiver of arrows", "light crossbow", "rope", "lantern", "flint and steel", "small amount of gold (10 gp)"],
+    "background": "Artemis Theta is a seasoned adventurer with a keen eye for detail and a passion for uncovering ancient secrets. With a medalist's precision and a knack for solving puzzles, Artemis is always ready to uncover hidden truths and protect the innocent."
+  }
+}
+```

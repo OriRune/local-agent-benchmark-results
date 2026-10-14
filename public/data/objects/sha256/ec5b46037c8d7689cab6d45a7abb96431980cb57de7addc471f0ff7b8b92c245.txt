@@ -1,0 +1,35 @@
+```json
+{
+  "character_name": "Kaelen Swiftfoot",
+  "race": "Half-Elf",
+  "class": "Rogue",
+  "level": 1,
+  "background": "Criminal",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "strength": 12,
+    "dexterity": 16,
+    "constitution": 13,
+    "intelligence": 10,
+    "wisdom": 14,
+    "charisma": 12
+  },
+  "skills": {
+    "Stealth": 18,
+    "Sleight of Hand": 16,
+    "Perception": 14,
+    "Persuasion": 12
+  },
+  "inventory": [
+    "Leather Armor",
+    "Shortbow and 20 Arrows",
+    "Thieves' Tools",
+    "A pouch containing 15 gold pieces"
+  ],
+  "features": {
+    "Expertise": ["Stealth", "Sleight of Hand"],
+    "Sneak Attack": "+1d6 damage once per turn"
+  },
+  "notes": "Kaelen is a nimble rogue, known for their quick wit and ability to slip past guards. They have a knack for finding hidden treasures, often earning them the respect of those who value a good **medalist** of a heist. Their cunning is sharp, much like the **theta** of a well-placed lockpick."
+}
+```

@@ -1,0 +1,1 @@
+If every attempt in `fetch` fails, it spends a total of 7 seconds sleeping before giving up. This is because the function retries up to `MAX_RETRIES` times (which is 3), and the sleep duration doubles with each attempt: 1 second, then 2 seconds, then 4 seconds, summing up to 7 seconds.

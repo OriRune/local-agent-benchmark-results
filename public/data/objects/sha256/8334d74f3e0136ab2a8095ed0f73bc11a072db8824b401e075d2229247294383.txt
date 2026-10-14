@@ -1,0 +1,1 @@
+The most recent git commit (hash `275690e1664313cb5d9bf50aa8a91ccb1e6b95ab`) changed the `TIMEOUT_S` setting in `app/config.py` from `10` to `20`.

@@ -1,0 +1,4 @@
+{
+  "answer": "The paper specifies 3,539 ICD-10 codes for run 2 and 6,392 codes for run 1, with I509 cited as an example.",
+  "evidence": [5, 8]
+}

@@ -1,0 +1,1 @@
+The `format_bytes(n)` function has been successfully added to `app/util.py`, and the TODO comment about it has been removed. The function will return a human-readable size such as '1.5 KB' when given a byte size. The file is now clean and ready for use.

@@ -1,0 +1,13 @@
+Now I have all the information needed. Let me work it out:
+
+- `MAX_RETRIES = 3`, so the `for` loop runs with `attempt` values **0, 1, 2** (3 iterations total).
+- On each failed attempt, it sleeps for `2 ** attempt` seconds.
+
+The sleep durations are:
+| Attempt | Sleep (seconds) |
+|---------|-----------------|
+| 0       | 2⁰ = 1          |
+| 1       | 2¹ = 2          |
+| 2       | 2² = 4          |
+
+**Total sleep time = 1 + 2 + 4 = 7 seconds** before it gives up and raises the `RuntimeError`.

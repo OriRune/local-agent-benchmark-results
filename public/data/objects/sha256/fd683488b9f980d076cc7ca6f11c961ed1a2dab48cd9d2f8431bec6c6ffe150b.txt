@@ -1,0 +1,6 @@
+I have created a `README.md` file that lists all the command-line options for the `tinydl` CLI, as defined in `app/cli.py`.
+
+The options included are:
+- `url`: what to download
+- `-o`, `--output`: file to write (default: stdout)
+- `-q`, `--quiet`: no progress output

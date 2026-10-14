@@ -1,0 +1,14 @@
+**Stage 1**
+
+- m0 = 4,000 + 36,000 + 900 + 1,200 = 42,100 kg (stage 2 carried fully fuelled)
+- mf = 900 + 1,200 = 2,100 kg (stage 1 dry mass jettisoned at burnout)
+- Δv₁ = 290 × 9.80665 × ln(42,100 / 2,100) = **8,526.41 m/s**
+
+**Stage 2**
+
+- Remaining Δv₂ = 9,400 − 8,526.41 = 873.59 m/s
+- m0 (stage 2 ignition) = 900 + 1,200 = 2,100 kg; mf = 2,100 kg + propellant
+- ln(m0/mf) = 873.59 / (340 × 9.80665) = 0.26209 → m0/mf = 1.3910
+- mf = 2,100 × e^(−0.26209) = 1,615.97 kg → propellant = 2,100 − 1,615.97
+
+ANSWER: 484.03 kg

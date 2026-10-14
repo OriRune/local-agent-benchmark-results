@@ -1,0 +1,16 @@
+```json
+{
+  "answer": "The paper describes an approach for automatically assigning ICD-10 codes to French death certificates using a dictionary-based system and matching techniques. The system can assign zero to multiple ICD-10 codes to each line of a death certificate, and an example of a recognized code is I509.",
+  "evidence": [
+    [
+      "0"
+    ],
+    [
+      "3"
+    ],
+    [
+      "10"
+    ]
+  ]
+}
+```

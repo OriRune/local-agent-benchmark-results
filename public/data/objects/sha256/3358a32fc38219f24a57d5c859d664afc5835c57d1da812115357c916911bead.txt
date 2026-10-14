@@ -1,0 +1,23 @@
+## Answer: 7 seconds
+
+From `app/net.py`:
+
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3, so attempt = 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)      # sleeps AFTER each failed attempt
+```
+
+If every attempt fails, the sleep runs after all three attempts:
+
+| attempt | sleep = 2^attempt |
+|---------|-------------------|
+| 0       | 1 s               |
+| 1       | 2 s               |
+| 2       | 4 s               |
+
+Total = 1 + 2 + 4 = **7 seconds** before it raises `RuntimeError("giving up on ...")`.
+
+Note the sleep happens *inside* the loop after each failure (including the final attempt), so the last attempt's 4-second wait still counts. The `TIMEOUT_S = 20` is separate — that's the per-attempt network timeout, not the sleep.

@@ -1,0 +1,4 @@
+23.2% of all households were made up of individuals. The question asks: "How many in percent of households weren't made up of individuals?" So we need the percentage of households that were NOT made up of individuals. If 23.2% were made up of individuals, then 100% - 23.2% = 76.8% were not made up of individuals. So answer: 76.8. Probably they want a number with percent sign? The instruction: "Answer the question with only the number or short answer, without explanation." So just "76.8" or "76.8%"? It says "How many in percent of households weren't made up of individuals?" So answer is a percent. Could be "76.8%" but they said only number or short answer. Might be "76.8". I'll output "76.8".
+</think>
+
+76.8

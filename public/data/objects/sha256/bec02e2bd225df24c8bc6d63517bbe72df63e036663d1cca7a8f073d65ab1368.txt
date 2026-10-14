@@ -1,0 +1,6 @@
+The fix has been applied. The issue was that the `UNITS` dictionary was using 1000-based units (KB = 1000 bytes) instead of 1024-based units (KB = 1024 bytes). 
+
+The corrected `parse_size` function now correctly calculates:
+- `parse_size("1.5 KB")` = 1.5 * 1024 = 1536 ✓
+
+The test should now pass.

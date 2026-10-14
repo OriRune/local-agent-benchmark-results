@@ -1,0 +1,6 @@
+
+
+{
+  "answer": "The paper extracts text features using TF-IDF (Term Frequency-Inverse Document Frequency) and bag-of-words techniques for text classification.",
+  "evidence": [5, 8]
+}

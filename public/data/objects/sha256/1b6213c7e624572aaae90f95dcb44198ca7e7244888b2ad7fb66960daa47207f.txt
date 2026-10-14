@@ -1,0 +1,5 @@
+The bug is fixed.
+
+**Why it failed:** `app/units.py` defined `KB` as `1000`, but the module docstring states sizes use 1024-based units (1 KB = 1024 bytes). So `parse_size("1.5 KB")` returned `int(1.5 * 1000)` = `1500`, failing the assertion that it equals `1536`.
+
+**Fix:** Changed `UNITS["KB"]` from `1000` to `1024`, consistent with the documented convention. The other assertions (`512 B`, `2 MB`) already passed and remain correct.

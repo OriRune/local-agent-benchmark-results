@@ -1,0 +1,8 @@
+The error in `app/units.py` was that the `KB` unit was defined as `1000` instead of `1024`, which caused the test `parse_size("1.5 KB") == 1536` to fail.
+
+I have fixed this by updating the `UNITS` dictionary in `app/units.py`.
+
+```python
+# app/units.py (updated)
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```

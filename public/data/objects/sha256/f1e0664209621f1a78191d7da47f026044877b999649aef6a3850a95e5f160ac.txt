@@ -1,0 +1,21 @@
+The script has been created at:
+`[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/18316605bc942df3101e547e-0e31a45676/workspace/project/open_workspace.sh`
+
+**To use it:**
+
+1. Make it executable (run this in your terminal):
+   ```bash
+   chmod +x open_workspace.sh
+   ```
+
+2. Run it:
+   ```bash
+   ./open_workspace.sh
+   ```
+
+**What it does:**
+- **Chrome** opens with `https://www.google.com`
+- **Text editor** opens (tries `nano` first, falls back to `gedit`)
+- **File manager** opens showing `[private-home]/Documents/llama.cpp` (tries `nautilus` first, then `dolphin`, then `thunar`)
+
+All applications run in the background (`&`) so the script finishes quickly.

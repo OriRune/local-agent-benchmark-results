@@ -1,0 +1,8 @@
+The shortest path from '*' at (3, 0) to '#' at (7, 5) is found using Breadth-First Search (BFS).
+
+The path is:
+(3, 0) $\xrightarrow{right}$ (3, 1) $\xrightarrow{right}$ (3, 2) $\xrightarrow{right}$ (3, 3) $\xrightarrow{right}$ (3, 4) $\xrightarrow{right}$ (3, 5) $\xrightarrow{down}$ (4, 5) $\xrightarrow{down}$ (5, 5) $\xrightarrow{down}$ (6, 5) $\xrightarrow{down}$ (7, 5)
+
+Sequence of directions: right right right right right down down down down
+
+<answer>right right right right right down down down down</answer>

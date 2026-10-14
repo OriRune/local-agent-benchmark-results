@@ -1,0 +1,13 @@
+The fix has been applied. The bug was that the KB unit was defined as 1000 instead of 1024, which contradicted the comment "Sizes use 1024-based units: 1 KB = 1024 bytes."
+
+**Summary of the fix:**
+Changed line 2 in `app/units.py` from:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+to:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+This ensures that 1.5 KB = 1.5 * 1024 = 1536 bytes, matching the test expectation.

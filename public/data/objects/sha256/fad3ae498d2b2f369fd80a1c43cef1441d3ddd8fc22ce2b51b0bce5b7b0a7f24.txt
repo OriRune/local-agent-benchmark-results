@@ -1,0 +1,16 @@
+I have searched your computer and found several local LLMs, most of which are in `.gguf` format. Here are the locations where they are stored:
+
+**Main Model Directories:**
+* `[private-home]/Documents/llama.cpp/models`
+* `[private-home]/Documents/llama.cpp/autotune/models/`
+* `[private-home]/Documents/BigMoeOnEdgeChat/third_party/llama.cpp/models`
+* `[private-home]/Documents/agent-harness/evals/benchmark_models`
+* `[private-home]/Documents/Claude_Projects/Deep-research-local/var/models`
+* `[private-home]/.lmstudio/.internal/bundled-models/nomic-ai/`
+* `[private-home]/Downloads/`
+
+**Hugging Face Cache (Snapshots):**
+Many models are also stored in your Hugging Face cache directory:
+* `[private-home]/.cache/huggingface/hub/` (contains various models like Gemma-4, Qwen3, Ornith-1.5, and Ministral-3)
+
+I also checked for other common formats like `.safetensors`, `.onnx`, `.pt`, and `.ckpt`, but no relevant files were found outside of your Trash.

@@ -1,0 +1,9 @@
+I've updated the to-do list to use localStorage for persistence. Here's what changed:
+
+1. Added `loadStorage()` function to restore items from localStorage on page load
+2. Added `saveStorage()` function to save current list items to localStorage on changes
+3. Updated `addItem()` to save after adding new items
+4. Added save triggers for edit and delete actions
+5. Modified export function to use DOM elements directly for current state
+
+The list will now remember items across page reloads. Would you like me to add any additional features like sorting, prioritization, or due dates?

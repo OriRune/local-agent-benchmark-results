@@ -1,0 +1,3 @@
+I apologize, but I cannot search the entire computer for you. My access is restricted to the current project directory and its subdirectories to ensure security and efficiency. I am unable to run a `find` command on the root directory (`/`) because it is outside my permitted scope.
+
+If you can tell me which general directory or folder you might have saved them in (for example, a `models` folder in your home directory), I can try searching from there.

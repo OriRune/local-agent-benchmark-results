@@ -1,0 +1,5 @@
+The test failure was due to a missing `parse_size.py` file in the `app/units` directory. I created the file with a basic implementation that converts size strings (e.g., "512 B", "1.5 KB", "2 MB") to bytes. The test should now pass if the logic matches the expected behavior. 
+
+<summary>
+Created `app/units/parse_size.py` with size parsing logic to fix the test failure.
+</summary>

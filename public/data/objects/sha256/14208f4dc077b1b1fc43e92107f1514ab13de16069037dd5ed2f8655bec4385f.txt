@@ -1,0 +1,1 @@
+Done. I've edited `app/config.py` directly, reverting `TIMEOUT_S` from `20` back to `10` to undo the most recent commit without using any git commands.

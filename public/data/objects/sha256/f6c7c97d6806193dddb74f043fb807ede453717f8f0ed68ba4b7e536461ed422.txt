@@ -1,0 +1,9 @@
+```json
+{
+ "answer": "The results are evaluated using a questionnaire where respondents rank captions (human-generated, NJM, and STAIR caption) in order of 'funniness' across 30 selected themes, and by comparing the average number of stars assigned to the captions by Bokete users.",
+ "evidence": [
+  12,
+  14
+ ]
+}
+```

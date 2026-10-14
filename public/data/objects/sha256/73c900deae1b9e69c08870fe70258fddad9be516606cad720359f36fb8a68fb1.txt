@@ -1,0 +1,22 @@
+To make 24 using the numbers 6, 4, 4, and 4, we can use the following expression:
+
+6 * 4 + 4 - 4
+
+Let's check the calculation:
+6 * 4 = 24
+24 + 4 = 28
+28 - 4 = 24
+
+Alternatively, 6 * 4 * 4 / 4 also works:
+6 * 4 = 24
+24 * 4 = 96
+96 / 4 = 24
+
+Another option is 6 * (4 + 4 - 4):
+4 + 4 = 8
+8 - 4 = 4
+6 * 4 = 24
+
+All these use the numbers 6, 4, 4, and 4 exactly once.
+
+<answer>6 * 4 + 4 - 4</answer>

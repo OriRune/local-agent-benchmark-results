@@ -1,0 +1,7 @@
+If every fetch attempt fails, the script spends a total of **7 seconds** sleeping before it gives up. This is calculated as follows:
+
+- After the first failed attempt: 1 second (2^0)
+- After the second failed attempt: 2 seconds (2^1)
+- After the third failed attempt: 4 seconds (2^2)
+
+Total sleep time: 1 + 2 + 4 = **7 seconds**.

@@ -1,0 +1,6 @@
+Done. I've added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function handles:
+
+- Negative numbers (returns a prefixed negative string)
+- Values under 1024 bytes (returns `"X B"`)
+- Values up to petabytes, using KB, MB, GB, TB, PB units
+- Clean integer formatting when the value is a whole number (e.g. `"1 KB"` instead of `"1.0 KB"`)

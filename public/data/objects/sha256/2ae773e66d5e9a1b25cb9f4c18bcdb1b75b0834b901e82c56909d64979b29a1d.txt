@@ -1,0 +1,3 @@
+The most recent commit (`5d2660b`) changed one file:
+
+- **`app/config.py`** — modified 1 line to raise the download timeout from **10 to 20 seconds**.

@@ -1,0 +1,24 @@
+To determine the total sleep time before giving up, let's look at the logic in `app/net.py` and the configuration in `app/config.py`.
+
+In `app/net.py`:
+```python
+8	    for attempt in range(MAX_RETRIES):
+9	        try:
+10	            return get(url, timeout=TIMEOUT_S)
+11	        except OSError:
+12	            time.sleep(2 ** attempt)
+13	    raise RuntimeError(f"giving up on {url}")
+```
+
+In `app/config.py`:
+```python
+2	MAX_RETRIES = 3
+```
+
+The loop runs for `attempt` values `0, 1, 2` (since `MAX_RETRIES` is 3). If every attempt fails, the `time.sleep(2 ** attempt)` line executes for each attempt:
+
+1.  **Attempt 0**: `time.sleep(2 ** 0)` $\rightarrow$ `time.sleep(1)`
+2.  **Attempt 1**: `time.sleep(2 ** 1)` $\rightarrow$ `time.sleep(2)`
+3.  **Attempt 2**: `time.sleep(2 ** 2)` $\rightarrow$ `time.sleep(4)`
+
+Total sleep time = $1 + 2 + 4 = 7$ seconds.

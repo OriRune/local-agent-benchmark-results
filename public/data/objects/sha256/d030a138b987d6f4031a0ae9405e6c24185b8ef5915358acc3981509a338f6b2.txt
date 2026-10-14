@@ -1,0 +1,7 @@
+**User:** Hi, can you tell me the weather forecast for *o*?
+
+**Bot:** Sure! Please provide your location, and I'll give you the weather forecast for *o*.
+
+**User:** My location is *o*.
+
+**Bot:** Great! The weather forecast for *o* is *highlighted section*.

@@ -1,0 +1,5 @@
+
+Now, to extract the TODO comments from `app/net.py`, call:
+<tool_call>
+{"name": "grep", "arguments": {"pattern": "(?<=TODO: )[^#]*", "path": "app/net.py"}}
+<tool_call>

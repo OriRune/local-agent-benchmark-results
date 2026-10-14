@@ -1,0 +1,1 @@
+{"changes":[{"after":"b'MAX_RETRIES = 5'","before":null,"path":"[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/dc5e5a650e07a0477f7b680f-03b10d47e0/workspace/project/max_retries.py","time":1791506010.0455406,"tool":"write_file"}],"origin_note":"Recorded change evidence, not a reconstructed starting workspace.","turn_changes":[1]}

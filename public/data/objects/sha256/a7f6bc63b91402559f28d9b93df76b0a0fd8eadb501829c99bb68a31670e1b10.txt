@@ -1,0 +1,1 @@
+We see there's a data/ folder and maybe data/events.log inside it. Let's search for files named events.log. Use find_files with pattern "events.log".

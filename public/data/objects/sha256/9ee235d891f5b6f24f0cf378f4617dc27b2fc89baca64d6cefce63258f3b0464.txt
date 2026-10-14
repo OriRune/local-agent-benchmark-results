@@ -1,0 +1,7 @@
+```text
+# TODO: add a helper that formats byte sizes
+# TODO: log each failed attempt
+- write README
+-add proxy support
+-tag the release
+```

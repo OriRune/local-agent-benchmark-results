@@ -1,0 +1,17 @@
+
+
+The shell script `open_apps.sh` has been created in your current working folder. It contains the following commands:
+
+```bash
+#!/bin/bash
+google-chrome google.com &
+gedit &
+nautilus [private-home]/Documents/llama.cpp &
+```
+
+This script will:
+1. Open Chrome with `google.com`
+2. Launch a text editor (`gedit`)
+3. Open the file manager at `[private-home]/Documents/llama.cpp`
+
+Would you like me to make this script executable or adjust any details?

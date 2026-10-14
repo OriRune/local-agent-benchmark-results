@@ -1,0 +1,1 @@
+[{"args":{"path":"..","pattern":"llm.*","sort":"size"},"name":"find_files","result":"[outside the working folder: read-only]\nno files match llm.*","status":"ok"}]

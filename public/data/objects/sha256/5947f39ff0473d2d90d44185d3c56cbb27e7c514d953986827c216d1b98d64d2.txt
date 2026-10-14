@@ -1,0 +1,8 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function:
+- Returns whole bytes (e.g. `512` → `"512 B"`)
+- Scales by 1000 per step through the unit list (`B`, `KB`, `MB`, `GB`, `TB`, `PB`, `EB`)
+- Shows one decimal place for values above 1 KB (e.g. `1536000` → `"1.5 MB"`)
+
+Note: I couldn't execute the code to test it — program execution is blocked in this sandbox — so the change is written but not runtime-verified.

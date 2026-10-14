@@ -1,0 +1,7 @@
+I couldn't find a 2019 tax return in this folder. Here's what I checked:
+
+- The only tax-related file is **Documents/Personal/tax return 2024.pdf** — a tax return for **2024**, not 2019.
+- I searched every file in Documents, Desktop, Downloads, etc. for "2019", "tax", and "refund" — no matches anywhere.
+- Worse, that PDF itself appears to be **corrupted/damaged**: it starts with a valid PDF header but the rest is unreadable binary data ("Stream has ended unexpectedly"), so I can't extract any text from it — not even its own refund figures.
+
+So: there is no 2019 tax return here, and the one tax return that exists (2024) is unreadable, so I can't tell you any refund amount. You may want to check whether the file got corrupted, or look for the 2019 return elsewhere (e.g., a different folder or an external drive).

@@ -1,0 +1,13 @@
+Here's a template using "o" as a keyword:
+
+```
+function getWeather(location) {
+  const options = {
+    location: location,
+    units: "celsius"
+  };
+  return fetchWeather(options);
+}
+```
+
+This code obtains location options, then outputs the forecast.

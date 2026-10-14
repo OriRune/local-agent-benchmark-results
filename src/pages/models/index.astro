@@ -1,0 +1,8 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import { currentData } from '../../lib/data';
+import ModelCatalog from '../../components/ModelCatalog';
+import { catalogCards } from '../../lib/catalog-view';
+const { index } = await currentData();
+---
+<Shell title="All tested models"><div class="eyebrow">The complete roster</div><h1>Every model, including<br/>the unfinished runs.</h1><p class="lede">Quantizations share a checkpoint page. Fine-tunes, distillations and QAT variants retain their own identity. Pending and withdrawn configurations stay visible.</p><ModelCatalog cards={catalogCards(index)} client:load/></Shell>

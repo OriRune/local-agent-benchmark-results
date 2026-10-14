@@ -1,0 +1,10 @@
+I couldn't find information about git commits in the workspace. The workspace contains:
+
+- **app/** - Python source code (app/__init__.py, cli.py, config.py, net.py, units.py, util.py)
+- **data/** - Contains events.log (106,576 bytes)
+- **tests/** - Contains test_units.py (185 bytes)
+- **notes.md** - Contains planning notes from September 2026
+
+There's no `.git` directory or any files that mention git commits or repository history in the workspace.
+
+Could you clarify which repository or git information you're looking for? The workspace appears to be a project directory with source code and documentation, but no git repository information is visible here.

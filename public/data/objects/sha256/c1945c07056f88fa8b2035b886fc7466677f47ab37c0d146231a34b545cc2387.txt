@@ -1,0 +1,1 @@
+Done. I've added the `format_bytes(n)` function to app/util.py and removed the TODO comment. The function formats any byte count into a human-readable string (e.g., '1.5 KB', '1024.0 MB', etc.) using standard SI prefixes up to EB.

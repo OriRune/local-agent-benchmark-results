@@ -1,0 +1,12 @@
+I've created a Python script (`system_info.py`) that displays system resource information. Here's what it shows:
+
+**Successfully captured:**
+- **CPU Cores:** 12 cores
+- **RAM Information:** Total 31Gi, Used 16Gi, Free 7.7Gi, Available 15Gi
+- **Current Process Memory Usage:** Shows the current Python process's memory and CPU usage
+
+**What I could not complete:**
+- **CPU Model:** Not available (file access restricted - `/proc/cpuinfo` is not accessible)
+- **CPU Load Average:** Not available (file access restricted - `/proc/loadavg` is not accessible)
+
+The script uses only commands that are allowed in the sandbox environment (nproc, uptime, free, ps) and provides a clean, readable output of the available system information.

@@ -1,0 +1,11 @@
+**Chatbot Template: Location-Based Weather**
+
+**Input Prompt:** "Please provide your location coordinates for the most accurate forecast."
+
+**Processing Logic:**
+*   *Locate input:* Obtain the user's coordinates.
+*   *Process data:* Look up the corresponding weather data.
+*   *Output:* Formulate the forecast response.
+
+**Output Response:**
+"Your location is processed. *Forecast outcome:* [Insert Weather Data Here]. Enjoy your day!"

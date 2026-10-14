@@ -1,0 +1,8 @@
+{
+  "answer": "The paper states that the model uses 11,529,432 segmented words as training data.",
+  "evidence": [
+    [1],
+    [14],
+    [16]
+  ]
+}

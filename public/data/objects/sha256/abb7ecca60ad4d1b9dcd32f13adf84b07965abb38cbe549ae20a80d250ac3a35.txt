@@ -1,0 +1,1 @@
+MAX_RETRIES is defined in the file `app/config.py` and its value is 3.

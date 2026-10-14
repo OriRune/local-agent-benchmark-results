@@ -1,0 +1,23 @@
+I will create a Python script named `system_info.py` that uses the `psutil` library (or standard libraries if `psutil` is unavailable) to display the current CPU and RAM usage.
+
+Since I cannot verify the availability of specific libraries via a single command without erroring, I will write a robust script using `psutil` as requested by the logic of common system monitoring tasks, or fallback to `os` and `subprocess` to read from `/proc` if needed.
+
+However, for a "simple" script that works in most Linux environments, using `psutil` is the standard approach.
+
+```python
+import psutil
+
+def show_info():
+    cpu_usage = psutil.cpu_percent(interval=1)
+    ram = psutil.virtual_memory()
+    
+    print(f"--- System Information ---")
+    print(f"CPU Usage: {cpu_usage}%")
+    print(f"RAM Usage: {ram.percent}% ({ram.used // (1024**2)}MB / {ram.total // (1024**2)}MB)")
+
+if __name__ == "__main__":
+    show_info()
+```
+
+I will now write this to a file.
+

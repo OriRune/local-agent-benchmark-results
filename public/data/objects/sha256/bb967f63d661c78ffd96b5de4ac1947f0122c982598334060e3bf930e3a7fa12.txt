@@ -1,0 +1,2 @@
+Template:
+[**User_Input**] -> **o**_location -> **o**_fetch_weather -> **o**_process_data -> **o**_format_output -> **o**_display_result -> **o**_end_session.

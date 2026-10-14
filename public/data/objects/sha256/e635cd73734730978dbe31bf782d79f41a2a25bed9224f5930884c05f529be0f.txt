@@ -1,0 +1,10 @@
+I have identified the cause of the failure in `tests/test_units.py`.
+
+**Analysis:**
+The test `test_parse_size` expected `parse_size("1.5 KB")` to return `1536` (which is $1.5 \times 1024$). However, in `app/units.py`, the `UNITS` dictionary had the value for `"KB"` set to `1000` instead of `1024`, causing the calculation to return `1500`.
+
+**Fix applied:**
+I updated `app/units.py` to change the multiplier for `"KB"` from `1000` to `1024` to maintain consistency with the other units (MB, GB) and the docstring, which states that sizes use 1024-based units.
+
+**What I could not finish:**
+Due to restrictions in the sandbox environment, I was unable to actually execute the tests (using `pytest` or `python3`) to verify the fix programmatically. I had to rely on manual code inspection and logical deduction.

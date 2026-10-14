@@ -1,0 +1,11 @@
+I found several files. The closest match to "vacation ideas" is:
+
+- **`Desktop/trip ideas 2025.txt`** — a text file about trip ideas (trip = vacation)
+- **`Documents/Personal/Summer Break ideas.docx`** — a Word file about a summer break
+
+There are also related files that are probably not what you want:
+- `Documents/Work/HR/vacation policy 2026.pdf` (a policy)
+- `Documents/Work/HR/vacation request form.docx` (a form)
+- `Pictures/Vacation 2023/*.jpg` (photos)
+
+The best candidate is **`Desktop/trip ideas 2025.txt`**. Is that the file you're looking for?

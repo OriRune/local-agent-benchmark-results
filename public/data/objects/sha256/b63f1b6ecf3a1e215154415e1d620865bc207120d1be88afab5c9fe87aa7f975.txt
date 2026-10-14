@@ -1,0 +1,1 @@
+I've successfully undone the change from the most recent git commit by editing the file directly. The change was to raise the download timeout from 10 to 20 seconds in `app/config.py`, and I've changed it back to 10 seconds. The file now shows `TIMEOUT_S = 10` instead of `TIMEOUT_S = 20`.

@@ -1,0 +1,18 @@
+To determine the number of different books read and how many were finished between July and December, I analyzed the `books.csv` file.
+
+1.  **Different Books**: There are 22 entries in the file, but "Project Hail Mary" is listed twice. Therefore, there are **21** different books.
+2.  **Finished between July and December**: I checked the "End Date" for each book:
+    *   Dune (2025-07-10) - July
+    *   The Hobbit (2025-07-19) - July
+    *   Sapiens (08/15/2025) - August
+    *   The Night Circus (2025-09-12) - September
+    *   Tomorrow and Tomorrow and Tomorrow (2025-09-30) - September
+    *   The Thursday Murder Club (2025-10-09) - October
+    *   Babel (2025-11-05) - November
+    *   Lessons in Chemistry (2025-11-20) - November
+    *   A Psalm for the Wild-Built (2025-11-24) - November
+    *   The Bear and the Nightingale (2025-12-16) - December
+
+There are **10** books finished between July and December.
+
+ANSWER: 21, 10

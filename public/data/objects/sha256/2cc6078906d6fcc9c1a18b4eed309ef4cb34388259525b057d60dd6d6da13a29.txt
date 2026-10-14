@@ -1,0 +1,11 @@
+Based on what I found on the Wikipedia page, here are my answers:
+
+1. **Current building opened:** 15 May 1858, with a performance of Meyerbeer's *Les Huguenots*. (The façade, foyer, and auditorium date from 1858; the building "remains as the nucleus of the present theatre.")
+
+2. **Ballet performed when the house reopened after WWII:** I could **not** confirm this from the page. The relevant section (the WWII reopening) was in part 2 of the article, but that portion was truncated in the output I received and I was unable to re-read it.
+
+3. **1990s reconstruction cost:** £213 million.
+
+4. **Town of the 2010 scenery-making workshop:** Purfleet (High House, Purfleet, Essex). The Royal Opera House opened a scenery-making facility there on 6 December 2010.
+
+**What I could not finish:** Question 2 — the ballet performed on the house's reopening after the Second World War. The text covering that period was cut off in the fetched output, and repeated attempts to re-read that section were blocked.

@@ -1,0 +1,44 @@
+To find the target number 24 using the numbers 9, 5, 6, and 3, we can use the following steps:
+
+1.  Start with the numbers 9, 5, 6, and 3.
+2.  Subtract 6 from 9 to get 3: (9 - 6) = 3.
+3.  Add 5 to that result: (3 + 5) = 8.
+4.  Multiply the result by 3: 8 * 3 = 24.
+
+Wait, let's re-check the numbers used: 9, 6, 5, and 3. All numbers are used exactly once.
+The expression is: 3 * (9 - 6 + 5)
+
+Let's double-check the math:
+9 - 6 = 3
+3 + 5 = 8
+8 * 3 = 24
+
+Another way:
+9 + 5 = 14
+14 + 6 = 20
+20 + 3 = 23 (No)
+
+9 * 3 = 27
+27 - 6 = 21
+21 + 5 = 26 (No)
+
+9 * 5 = 45
+45 / 3 = 15
+15 + 6 = 21 (No)
+
+(9 + 3) * (6 - 5) = 12 * 1 = 12 (No)
+
+(9 - 5) * 6 = 24. But we must use the 3.
+(9 - 5) * 6 * (3 / 3) (No, only one 3)
+
+Let's try:
+(9 + 3) * (6 / (5 - 2)) (No, no 2)
+(9 + 3) * (6 / (5 - 3)) (No, only one 3)
+
+Wait, let's re-examine 3 * (9 - 6 + 5):
+3 * (9 - 6 + 5) = 3 * (3 + 5) = 3 * 8 = 24.
+
+Wait, let's check the numbers again: 9, 5, 6, 3.
+Yes, 3 * (9 - 6 + 5) uses 3, 9, 6, and 5.
+
+<answer>3 * (9 - 6 + 5)</answer>

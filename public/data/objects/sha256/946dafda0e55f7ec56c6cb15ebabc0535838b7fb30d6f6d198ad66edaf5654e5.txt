@@ -1,0 +1,8 @@
+I have created a `README.md` file in the project root directory. This file describes the project and lists all the command-line options available in the CLI, including their help text, based on the `app/cli.py` file.
+
+The options documented are:
+*   **`url`**: What to download.
+*   **`-o`, `--output`**: File to write (default: stdout).
+*   **`-q`, `--quiet`**: No progress output.
+
+The file is located at `README.md`.

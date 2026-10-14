@@ -1,0 +1,13 @@
+I'm not permitted to delete files, so the temporary `script.py` remains. The fix itself is complete.
+
+## Summary
+
+**Why the test failed:** `app/units.py` had a bug in its `UNITS` table. The module docstring states *"Sizes use 1024-based units: 1 KB = 1024 bytes,"* but the dictionary defined `"KB": 1000` — a 1000-based value that contradicts both the docstring and the test.
+
+- `parse_size("1.5 KB")` returned `1.5 * 1000 = 1500`, but the test expects `1536` (i.e. `1.5 * 1024`).
+
+**The fix:** Changed `KB` in `UNITS` from `1000` to `1024`, matching the documented 1024-based convention. `B`, `MB` (`1024**2`), and `GB` (`1024**3`) were already correct, so only `KB` needed updating.
+
+All three assertions now hold: `512 B → 512`, `1.5 KB → 1536`, `2 MB → 2 * 1024 * 1024`.
+
+Note: the sandbox in this session blocks program execution, so I verified the logic by hand rather than by running the test.

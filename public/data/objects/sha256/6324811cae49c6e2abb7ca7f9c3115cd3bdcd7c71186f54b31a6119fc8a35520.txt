@@ -1,0 +1,3 @@
+The user isn't available to answer, so I'll state what I found and my assumption:
+
+**Summary:** The best match is **`Desktop/trip ideas 2025.txt`** — a short text file listing vacation destinations (Kyoto in spring, a coastal road trip, camping at the lake). A second candidate, **`Documents/Personal/Summer Break ideas.docx`**, has an even closer name but is damaged (it's a zip archive that won't open as a valid Word file), so its contents can't be read. I assumed the readable text file is the one you meant; if you were after the .docx, let me know and I can try to recover it.

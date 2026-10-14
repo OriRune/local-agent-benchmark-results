@@ -1,0 +1,19 @@
+I have created a `README.md` file that lists all the command-line options and their help text as defined in `app/cli.py`.
+
+```markdown
+# tinydl
+
+A tiny downloader.
+
+## Usage
+
+```bash
+tinydl <url> [options]
+```
+
+## Command Line Options
+
+- `url`: what to download
+- `-o`, `--output <file>`: file to write (default: stdout)
+- `-q`, `--quiet`: no progress output
+```

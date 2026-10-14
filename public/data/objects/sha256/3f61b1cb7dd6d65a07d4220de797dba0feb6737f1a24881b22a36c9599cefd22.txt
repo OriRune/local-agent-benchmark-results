@@ -1,0 +1,7 @@
+To add "- publish release notes" as the new last line of `todo.txt`, use **append_file** to add it without altering the existing content. Here's the correct command:
+
+```bash
+append_file --path "todo.txt" --text "- publish release notes"
+```
+
+This ensures the line is appended while preserving existing content. Let me know if you need further assistance!

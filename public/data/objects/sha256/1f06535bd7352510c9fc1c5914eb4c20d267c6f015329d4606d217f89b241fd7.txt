@@ -1,0 +1,4 @@
+The fix is in place. The `KB` unit was changed from 1000 to 1024, making it consistent with the docstring ("1024-based units") and allowing the test to pass:
+- `parse_size("1.5 KB")` now returns `int(1.5 * 1024)` = 1536
+
+Summary: Fixed `app/units.py` by changing `KB` from 1000 to 1024 to make all units 1024-based as documented.

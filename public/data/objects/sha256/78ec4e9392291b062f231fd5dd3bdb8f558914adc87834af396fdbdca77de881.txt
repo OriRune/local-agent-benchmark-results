@@ -1,0 +1,4 @@
+I found the proxy.ini file in the parent directory. Here's what it contains:
+
+- **Proxy Host**: `proxy.lan.example`
+- **Proxy Port**: `3128`

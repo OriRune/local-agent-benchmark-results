@@ -1,0 +1,5 @@
+
+
+<answer>
+The probability of rolling a total of 10 or higher with a 1d12, 1d10, and 1d2 is $\frac{191}{240}$.
+</answer>

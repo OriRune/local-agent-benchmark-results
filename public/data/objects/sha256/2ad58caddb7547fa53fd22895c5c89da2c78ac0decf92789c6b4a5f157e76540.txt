@@ -1,0 +1,5 @@
+*The bot uses the variable `o` to fetch the weather.*
+
+*It outputs the forecast for `o` successfully.*
+
+This code works for `o` and `object` and `open`.

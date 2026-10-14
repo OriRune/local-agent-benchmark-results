@@ -1,0 +1,2 @@
+
+The error code is E-4471 and it appears on line 2417 of the file data/events.log.

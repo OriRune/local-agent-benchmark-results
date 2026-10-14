@@ -1,0 +1,1 @@
+*Open* the *location* input to fetch local weather data.

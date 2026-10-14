@@ -1,0 +1,15 @@
+From the files I've already read, here's what I found and what I need to do:
+
+**Files that reference `fetch`:**
+
+1. **`app/net.py`** — defines `def fetch(url, get):` (line 6)
+2. **`app/cli.py`** — imports `from app.net import fetch` (line 5) and calls `fetch(args.url, get=_get)` (line 18)
+
+**Changes needed:**
+
+1. In `app/net.py`: rename `def fetch(url, get):` to `def download(url, get):`
+2. In `app/cli.py`:
+   - Change `from app.net import fetch` to `from app.net import download`
+   - Change `fetch(args.url, get=_get)` to `download(args.url, get=_get)`
+
+Let me make these changes now.

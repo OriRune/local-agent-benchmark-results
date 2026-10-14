@@ -1,0 +1,1 @@
+Here is the template: `o_location: {city} → o_forecast: {data}`. *The bot captures your input* and *delivers accurate weather updates*. Please provide your city so the o_system can generate the correct report.

@@ -1,0 +1,1 @@
+Done. I edited `app/config.py` directly (no git changes) to revert the most recent commit: `TIMEOUT_S` is now back to `10`, matching the state before commit `a6f1887`.

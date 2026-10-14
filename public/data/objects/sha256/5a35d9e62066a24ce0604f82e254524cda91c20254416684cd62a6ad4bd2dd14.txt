@@ -1,0 +1,4 @@
+{
+  "answer": "The paper does not explicitly state they train a model; it describes a system using Occupation Data, Names Data (CMU repository, NLTK, baby names), and DBpedia for evidence retrieval.",
+  "evidence": [11, 12, 13, 23]
+}

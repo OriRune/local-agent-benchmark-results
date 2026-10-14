@@ -1,0 +1,8 @@
+I have created an HTML file named `books.html` that displays the books from your CSV in a styled grid of cards. The page includes each book's title, author, genre, date range, and number of pages, with a responsive design that should look good when screenshotted and shared with your book club.
+
+However, I did not complete the full task because:
+1. I encountered duplicate entries (e.g., Project Hail Mary appears twice) and had to make decisions about how to handle them.
+2. Some data was missing or inconsistent (e.g., empty author fields, unclear date formats, missing pages counts).
+3. The process of manually creating 23 book cards was error-prone and time-consuming, and I ran out of steps before finishing all appends.
+
+The resulting HTML file should still be functional and show most of the books, but it may not include all 23 entries perfectly or handle all edge cases. You can open `books.html` by double-clicking it to view the generated page.

@@ -1,0 +1,1 @@
+Done. I've reverted the change from the most recent git commit by editing `app/config.py`. The download timeout has been changed from 20 seconds back to 10 seconds.

@@ -1,0 +1,6 @@
+All changes are complete. Here's a summary:
+
+- **`app/net.py`**: Renamed `fetch` → `download` (line 6)
+- **`app/cli.py`**: Updated the import from `from app.net import fetch` → `from app.net import download`, and updated the call from `fetch(args.url, get=_get)` → `download(args.url, get=_get)` (lines 5, 18)
+
+No other files in the project reference `fetch`, so no further changes were needed.

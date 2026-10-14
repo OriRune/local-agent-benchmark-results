@@ -1,0 +1,7 @@
+The file contains exactly one error entry.
+
+**Error code: `E-4471`** — "disk quota exceeded while saving part 7"
+
+**Line: 2417** (in `data/events.log`, which has 3000 lines total)
+
+All other lines in the file are `INFO request ok` entries, so this is the only error in the log.

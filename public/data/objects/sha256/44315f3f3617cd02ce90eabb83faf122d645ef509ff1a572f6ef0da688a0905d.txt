@@ -1,0 +1,6 @@
+If every attempt in `fetch` fails, the function iterates `MAX_RETRIES` times. Based on `app/config.py`, `MAX_RETRIES` is 3. The sleep time for each attempt is $2^{\text{attempt}}$ seconds.
+
+The total sleep time is the sum of sleep times for attempts 0, 1, and 2:
+$2^0 + 2^1 + 2^2 = 1 + 2 + 4 = 7$ seconds.
+
+It spends a total of 7 seconds sleeping before giving up.

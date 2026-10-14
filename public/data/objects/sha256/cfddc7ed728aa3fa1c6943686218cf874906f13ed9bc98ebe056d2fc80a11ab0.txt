@@ -1,0 +1,18 @@
+
+
+The TODO comment has been removed and the `format_bytes` function added successfully. The file `app/util.py` now contains:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+def format_bytes(n):
+    units = ['B', 'KB', 'MB', 'GB']
+    for unit in units:
+        if n < 1024:
+            return f"{n:.1f} {unit}"
+        n /= 1024
+    return f"{n:.1f} TB"
+```
+
+No further changes are needed.

@@ -1,0 +1,1 @@
+[{"args":{"path":"[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/fe2ba24ccbd7e85d40547628-4837653b8f/workspace/project","pattern":"MAX_RETRIES"},"name":"grep","result":"app/config.py:2: MAX_RETRIES = 3\napp/net.py:3: from app.config import MAX_RETRIES, TIMEOUT_S\napp/net.py:8:     for attempt in range(MAX_RETRIES):","status":"ok"}]

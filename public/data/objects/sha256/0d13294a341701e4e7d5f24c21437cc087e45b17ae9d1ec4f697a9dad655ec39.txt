@@ -1,0 +1,17 @@
+To make 24 using 8, 5, 5, and 9, I need to combine these numbers with the operators +, -, *, and /.
+
+Let me work through this:
+- I have 8, 5, 5, 9
+- I need to reach 24
+
+Let me try: 8 × 5 = 40, then 40 - 9 = 31, then 31 - 5 = 26. That's not 24.
+
+Let me try: 9 × 5 = 45, then 45 - 8 = 37, then 37 - 5 = 32. Not 24.
+
+Let me try: 5 × 5 = 25, then 25 - 9 = 16, then 16 + 8 = 24. Yes!
+
+So: 5 × 5 - 9 + 8 = 25 - 9 + 8 = 16 + 8 = 24. ✓
+
+Let me verify: 5 × 5 = 25, 25 - 9 = 16, 16 + 8 = 24. This uses 5, 5, 9, 8 each once.
+
+<answer>5*5-9+8</answer>

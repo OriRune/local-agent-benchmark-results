@@ -1,0 +1,3 @@
+Based on my analysis of books.csv, you read 21 different books total, and 10 of them were finished between July and December.
+
+ANSWER: 21, 10

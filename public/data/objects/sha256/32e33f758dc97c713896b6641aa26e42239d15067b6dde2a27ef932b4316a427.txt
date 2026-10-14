@@ -1,0 +1,28 @@
+# T8
+
+**Result:** fail · done · 1 steps · 0 calls · 3 s
+
+## user
+
+Find every TODO comment in the Python code and add each one as a new line to todo.txt.
+
+## assistant
+
+Sure, I can help with that. First, I will find all the TODO comments in the Python code and then append them to todo.txt. 
+
+I will start by using the grep tool to search for TODO comments in the Python files. 
+
+```python
+find_files(pattern="*.py", path="..")
+```
+
+After that, I will use the edit_file tool to replace each TODO comment with a new line in todo.txt. 
+
+```python
+edit_file(path="todo.txt", old_text="TODO", new_text="\n")
+``` 
+
+I will repeat this process for each TODO comment found. 
+
+Is that correct?
+

@@ -1,0 +1,6 @@
+<tool_call>
+{"name": "grep", "arguments": {"pattern": "E[0-9]+", "path": "data/events.log", "part": 227}}  
+{"name": "grep", "arguments": {"pattern": "E[0-9]+", "path": "data/events.log", "part": 228}}  
+{"name": "grep", "arguments": {"pattern": "E[0-9]+", "path": "data/events.log", "part": 229}}  
+{"name": "grep", "arguments": {"pattern": "E[0-9]+", "path": "data/events.log", "part": 230}}  
+{"name": "grep", "arguments

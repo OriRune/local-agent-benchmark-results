@@ -1,0 +1,1 @@
+{"name": "edit_file", "arguments": {"path": "tests/test_units.py", "start_line": 0, "end_line": 0, "old_text": "", "new_text": "def find_duplicates(lst):\n    counts = {}\n    for num in lst:\n        counts[num] = counts.get(num, 0) + 1\n    duplicates = []\n    for num in lst:\n        if counts[num] > 1:\n            duplicates.append(num)\n    return duplicates"}}

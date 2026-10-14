@@ -1,0 +1,1 @@
+Use *o_location* to request the *forecast*. The bot then provides *tool* and *cool* details.

@@ -1,0 +1,8 @@
+The information from the retrieved Wikipedia page answers your questions as follows:
+
+1. **Opening date and opera**: The current building opened on **15 May 1858** with the opera *Les Huguenots* by Giacomo Meyerbeer.  
+2. **Ballet after WWII**: The house reopened after the Second World War with the ballet *La Fille mal gardée* by Jules Massenet.  
+3. **1990s reconstruction cost**: The reconstruction cost **£100 million**.  
+4. **Scenery-making workshop location**: The Royal Opera House opened a scenery-making workshop in **Purfleet, Essex** in 2010.  
+
+No further tool calls are needed.

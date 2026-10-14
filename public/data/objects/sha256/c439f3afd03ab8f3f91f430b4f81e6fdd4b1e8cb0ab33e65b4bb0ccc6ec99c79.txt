@@ -1,0 +1,1 @@
+The **README.md** file has been created in the project root. It lists every command line option of the CLI with its help text and includes the notes and TODO items you provided. The file is now ready for the project documentation.

@@ -1,0 +1,1 @@
+Done. The change from the most recent commit has been undone — `TIMEOUT_S` in `app/config.py` has been reverted from `20` back to `10`, matching the state before the commit.

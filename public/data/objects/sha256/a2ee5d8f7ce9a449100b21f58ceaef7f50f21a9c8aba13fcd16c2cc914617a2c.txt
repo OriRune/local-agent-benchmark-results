@@ -1,0 +1,10 @@
+```json
+{
+  "name": "find_files",
+  "arguments": {
+    "pattern": "*.py",
+    "path": ".",
+    "sort": "name"
+  }
+}
+```

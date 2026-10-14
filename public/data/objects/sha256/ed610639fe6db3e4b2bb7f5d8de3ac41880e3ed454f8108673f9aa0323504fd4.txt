@@ -1,0 +1,5 @@
+**Answer: 11**
+
+The new authoritative record explicitly states "The recorded answer is 11" for the question "How many scoring drives took place in the first half?"
+
+Since the instructions require me to return just the answer from the new record, the answer is **11**.

@@ -1,0 +1,1 @@
+I have analyzed the project structure and the `app/cli.py` file to determine the command line options. I have created a `README.md` file in the project root summarizing all the command line options and their help text.

@@ -1,0 +1,17 @@
+To make 24 using the numbers 6, 4, 4, 4, we can use the following logic:
+1. Multiply 6 by 4 to get 24.
+2. We have two 4s remaining. We can multiply by 1 (which is $4/4$) or add 0 (which is $4-4$).
+
+Option 1: $6 * 4 * 4 / 4$
+$6 * 4 = 24$
+$24 * 4 = 96$
+$96 / 4 = 24$
+
+Option 2: $6 * 4 + 4 - 4$
+$6 * 4 = 24$
+$24 + 4 = 28$
+$28 - 4 = 24$
+
+Both are valid. I will provide one of them.
+
+<answer>6 * 4 * 4 / 4</answer>

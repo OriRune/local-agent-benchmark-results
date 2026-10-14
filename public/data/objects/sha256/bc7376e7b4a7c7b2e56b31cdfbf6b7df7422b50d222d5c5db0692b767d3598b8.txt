@@ -1,0 +1,2 @@
+Scarlett is a saint/sinner, Mia is a saint/sinner, and Penelope is a saint/sinner  
+<answer>Scarlett is a saint/sinner, Mia is a saint/sinner, and Penelope is a saint/sinner</answer>

@@ -1,0 +1,9 @@
+I have searched the current directory and its subdirectories for files with the `.gguf` extension, which are common formats for local LLMs. I did not find any files matching that pattern.
+
+To help me find your local LLMs, could you tell me:
+
+1.  **What file extensions** do you think they might have (e.g., `.gguf`, `.safetensors`, `.bin`, etc.)?
+2.  **What general directories** do you think they might be in (e.g., `~/.local/share/`, `~/models/`, a specific project folder)?
+3.  **Do you remember any specific names** or parts of the names of the models?
+
+If you can provide any more details, I can perform a more targeted search.

@@ -1,0 +1,16 @@
+Now I have all the information I need:
+
+- `MAX_RETRIES = 3`
+- The loop runs for `attempt` in `range(MAX_RETRIES)`, which means `attempt` takes values 0, 1, 2
+- When an `OSError` is caught, it sleeps for `2 ** attempt` seconds
+
+Let me calculate the total sleep time:
+- Attempt 0: fails, sleeps for `2 ** 0 = 1` second
+- Attempt 1: fails, sleeps for `2 ** 1 = 2` seconds
+- Attempt 2: fails, sleeps for `2 ** 2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**
+
+The loop runs 3 times (for attempts 0, 1, 2), and if all 3 attempts fail, it will sleep before each subsequent attempt (after attempt 0, after attempt 1, and after attempt 2). The total sleep is 1 + 2 + 4 = 7 seconds.
+
+**Answer: 7 seconds**

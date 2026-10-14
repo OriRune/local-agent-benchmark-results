@@ -1,0 +1,11 @@
+```json
+{
+  "character_name": "Theta-Knight",
+  "class": "Class 3",
+  "description": "A noble warrior priest clad in heavy armor, known for his bravery in battle.",
+  "traits": ["Brave", "Noble", "Armored"],
+  "abilities": ["Sword Fighting", "Armor"],
+  "weaknesses": ["Slow", "Cannot use magic weapons"],
+  "lore": "He is a keen medalist, often seen polishing his gear to perfection."
+}
+```

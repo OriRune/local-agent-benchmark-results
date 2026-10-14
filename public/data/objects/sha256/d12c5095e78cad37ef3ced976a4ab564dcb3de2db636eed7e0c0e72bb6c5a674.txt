@@ -1,0 +1,25 @@
+To add the `format_bytes` function to `app/util.py`, you would first need to open the file in write mode and then define the function within it. Here's how you can do it:
+
+1. Open `app/util.py` in write mode.
+2. Define the `format_bytes` function.
+3. Remove the TODO comment.
+
+Here's a sample of what the code might look like:
+
+```python
+# app/util.py
+
+def format_bytes(n):
+    """
+    Convert a number of bytes into a human-readable format.
+    """
+    for unit in ['bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']:
+        if n < 1024.0:
+            return f"{n:.1f} {unit}"
+        n /= 1024.0
+    return f"{n:.1f} {unit[:-1]}"
+
+# Other functions or existing code in app/util.py
+```
+
+After adding this function, you can call `format_bytes(n)` with an integer `n` to get a human-readable string representing the number of bytes in different units.

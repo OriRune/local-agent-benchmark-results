@@ -1,0 +1,7 @@
+I've created the README.md file with all the command line options from the CLI:
+
+- **`url`** (required positional): what to download
+- **`-o, --output`**: file to write (default: stdout)
+- **`-q, --quiet`**: no progress output
+
+The README includes the usage pattern, a table listing all options with their help text, and example commands showing common use cases.

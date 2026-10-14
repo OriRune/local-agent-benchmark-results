@@ -1,0 +1,22 @@
+I've reviewed the file. Let me walk through the analysis.
+
+**Different books:** There are 22 data rows, but row 8 (`Project Hail Mary, Andy Weir, 2025-01-03 → 2025-01-12`) is an exact duplicate of row 2. That leaves **21 unique books**.
+
+**Finished July–December:** I parsed each end date (the file mixes `YYYY-MM-DD`, `MM/DD/YYYY`, and `Mon DD YYYY` formats) and counted books with a completed end date in July–December 2025:
+
+| Book | End Date |
+|------|----------|
+| Dune | 2025-07-10 |
+| The Hobbit | 2025-07-19 |
+| Sapiens | 08/15/2025 |
+| The Night Circus | 2025-09-12 |
+| Tomorrow and Tomorrow and Tomorrow | 2025-09-30 |
+| The Thursday Murder Club | 2025-10-09 |
+| Babel | 2025-11-05 |
+| Lessons in Chemistry | 2025-11-20 |
+| A Psalm for the Wild-Built | 2025-11-24 |
+| The Bear and the Nightingale | 2025-12-16 |
+
+That's **10 books**. (Note: *Middlemarch* started Aug 20 but has no end date, so it wasn't finished.)
+
+ANSWER: 21, 10

@@ -1,0 +1,1 @@
+The constant `MAX_RETRIES` is defined in `app/config.py` with the value **3**. This value is imported and used in `app/net.py`.

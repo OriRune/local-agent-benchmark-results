@@ -1,0 +1,3 @@
+*Highlighted section*: The chat bot's *main objective* is to provide weather forecasts. 
+
+It should *utilize* the user's location, ensuring the 'o' keyword appears at least 6 times in its syntax.

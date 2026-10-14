@@ -1,0 +1,12 @@
+```json
+{
+  "answer": "The paper describes a system designed to automatically assign ICD-10 codes to French death certificates by constructing dictionaries based on ICD-10 terminology and using matching techniques. The system utilized dictionaries containing thousands of ICD-10 codes, such as I509.",
+  "evidence": [
+    "0",
+    "3",
+    "4",
+    "5",
+    "9"
+  ]
+}
+```

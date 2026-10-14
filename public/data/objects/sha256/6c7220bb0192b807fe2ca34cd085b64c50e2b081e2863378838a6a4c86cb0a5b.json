@@ -1,0 +1,1 @@
+{"check":{"blocking_lines":["google-chrome https://www.google.com","google-chrome-stable https://www.google.com","chromium https://www.google.com","chromium-browser https://www.google.com","gedit","xed","kate"],"chrome":true,"editor":true,"file":"open_apps.sh","file_manager":false,"syntax_ok":true},"score":0}

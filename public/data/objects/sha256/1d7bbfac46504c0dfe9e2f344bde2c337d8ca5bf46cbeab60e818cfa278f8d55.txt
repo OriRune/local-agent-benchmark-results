@@ -1,0 +1,5 @@
+I couldn't find a `README.md` file. I can create one for you.
+
+To write a comprehensive `README.md` listing all command-line options and their help text, I need to know what the CLI does.
+
+Could you please tell me what the CLI is, or provide the source code files so I can analyze them?

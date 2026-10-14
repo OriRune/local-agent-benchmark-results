@@ -1,0 +1,1 @@
+{"answer": "They use 11,529,432 segmented words obtained from Chinese Wikipedia articles (after word segmentation and stopword filtering using jieba).", "evidence": [12]}

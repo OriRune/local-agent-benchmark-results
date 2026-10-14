@@ -1,0 +1,4 @@
+{
+  "answer": "The results are evaluated through two methods: (1) a human evaluation using questionnaires where respondents rank captions by 'funniness' on a 30-theme sample, and (2) a comparison with Bokete users' star ratings on the Bokete Ogiri website.",
+  "evidence": [12, 13, 14]
+}

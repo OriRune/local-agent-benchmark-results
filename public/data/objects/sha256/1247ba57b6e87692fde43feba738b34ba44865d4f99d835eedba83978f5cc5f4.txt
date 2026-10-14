@@ -1,0 +1,3 @@
+Here's a concise template for a weather forecast chat bot with the letter 'o' appearing at least six times and fewer than six sentences, with two highlighted sections:
+
+"Hello! I'm your weather bot. Please *tell me your location* so I can *offer* you the most accurate weather forecast. Once I have your location, I'll *obtain* the latest weather data and *output* a detailed forecast for you. Remember, the more precise your location, the better the forecast I can *provide*. Let's *proceed* to get started!"

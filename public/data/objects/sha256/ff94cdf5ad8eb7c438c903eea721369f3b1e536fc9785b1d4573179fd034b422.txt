@@ -1,0 +1,10 @@
+I have reorganized your sheet music folder into a much cleaner, hierarchical structure.
+
+**New Structure Summary:**
+*   **`Compositions/`**: Your original works and exercises.
+*   **`Sheet Music/`**: Categorized into `Classical/`, `Pop_and_Modern/`, and `Sight Reading/`.
+*   **`Learning/`**: Contains `Theory/` and `Exercises/` (including your recorder drills).
+*   **`Collections/`**: Organized by `By Composer/` and `By Instrument/`.
+*   **`Media/`**: All non-sheet music files (audio, images, etc.) are now here.
+
+I also moved the loose PDF files and media files into their appropriate new homes. Your workspace is now organized!

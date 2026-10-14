@@ -1,0 +1,8 @@
+Found it! The file is `Desktop/trip ideas 2025.txt` and it contains:
+
+- places to go
+  - Kyoto in spring
+  - road trip down the coast
+  - camping at the lake
+
+This is a text file with vacation/trip ideas. Is this the file you were looking for?

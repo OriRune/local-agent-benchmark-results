@@ -1,0 +1,1 @@
+I don't have access to the file system to search for files at the level you described, so I can't locate or inspect the presence of a file named "proxy.ini". If you can provide the path to the project folder or any other details, I can help you find the file or run a command to extract the information you need.

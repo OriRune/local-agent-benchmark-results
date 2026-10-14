@@ -1,0 +1,10 @@
+Good news! The list is already set up to remember your items when you reload the page. The functionality is already built into the HTML file I created.
+
+**How it works:**
+- Every time you add, edit, delete, or check off a task, it automatically saves to your browser's localStorage
+- When you reload the page, it automatically loads all your saved tasks
+- This works across different browsers on the same computer
+
+The code uses `localStorage` to persist your data between sessions. Just open the `todo-list.html` file in your browser, add some tasks, then refresh the page - your tasks will still be there!
+
+If you want to test it, try adding a few items, then close the browser tab and reopen it. Your tasks should still be there.

@@ -1,0 +1,15 @@
+Using the numbers 6, 4, 4, 4 and the operators +, -, *, /:
+
+Let me work through this:
+- 6 - 4 = 2
+- 4 / 4 = 1
+- 2 * 1 = 2... no, that gives 2, not 24.
+
+Let me try:
+- 6 * 4 = 24
+- 4 - 4 = 0
+- 24 + 0 = 24 ✓
+
+This uses all four numbers (6, 4, 4, 4) exactly once.
+
+<answer>6 * 4 + 4 - 4</answer>

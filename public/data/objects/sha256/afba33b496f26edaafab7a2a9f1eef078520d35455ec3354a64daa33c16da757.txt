@@ -1,0 +1,20 @@
+The code has been fixed. The change was updating `UNITS["KB"]` from 1000 to 1024.
+
+Let me verify the math manually:
+
+1. `parse_size("512 B")`:
+   - splits to "512" and "B"
+   - UNITS["B"] = 1
+   - result: int(float("512") * 1) = int(512) = 512 ✓
+
+2. `parse_size("1.5 KB")`:
+   - splits to "1.5" and "KB"
+   - UNITS["KB"] = 1024 (was 1000, now fixed)
+   - result: int(float("1.5") * 1024) = int(1.5) × 1024 = int(1536) ✓
+
+3. `parse_size("2 MB")`:
+   - splits to "2" and "MB"
+   - UNITS["MB"] = 1024² = 1048576
+   - result: int(float("2") * 1048576) = int(2097152) = 2 * 1024 * 1024 ✓
+
+The fix is correct. The issue was that `UNITS["KB"]` was 1000 (decimal-based) but should be 1024 (binary-based) to match the test expectations. The code now correctly uses binary-based units for all size measurements.

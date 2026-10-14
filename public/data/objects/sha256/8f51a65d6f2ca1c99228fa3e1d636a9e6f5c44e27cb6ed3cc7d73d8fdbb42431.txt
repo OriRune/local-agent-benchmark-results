@@ -1,0 +1,7 @@
+MAX_RETRIES is defined in **`app/config.py`** on **line 2** with a value of **3**.
+
+The file also defines other configuration constants:
+- `TIMEOUT_S = 20` (line 3)
+- `USER_AGENT = "tiny-downloader/0.2"` (line 4)
+
+The `app/net.py` module imports this constant from `app.config` and uses it in a retry loop for network operations.

@@ -1,0 +1,15 @@
+The four 4s give me 4 + 4 + 4 = 12. Adding the 6 gives 18. I need 6 more, and I have a 4 left. Since 4 + 4 = 8 and 8 - 6 = 2, I can use the 6 as a subtractor to remove 2 from the sum of the three 4s.
+
+Let me verify: 4 + 4 + 4 - 6 = 6, then 6 + 4 = 10. That's not 24.
+
+Let me reconsider. I'll use the 6 to multiply part of the expression. If I compute 4 + 4 = 8, then 8 * 4 = 32, then 32 - 6 = 26. Still not 24.
+
+Let me try 4 * 4 = 16, then 16 + 4 = 20, then 20 + 6 = 26. Not 24 either.
+
+Let me try 4 * 4 = 16, then 16 + 6 = 22, then 22 + 4 = 26. Not 24.
+
+Let me try 6 * 4 = 24, then 24 + 4 - 4 = 24. That works!
+
+Let me verify: 6 * 4 = 24, 24 + 4 = 28, 28 - 4 = 24. Yes! This uses 6, 4, 4, 4 exactly once.
+
+<answer>6*4+4-4</answer>

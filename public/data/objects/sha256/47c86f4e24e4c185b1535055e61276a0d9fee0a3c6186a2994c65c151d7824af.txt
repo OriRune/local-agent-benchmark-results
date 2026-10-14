@@ -1,0 +1,1 @@
+I need to see the code that implements the fetch function to determine how many seconds it sleeps between attempts. Could you share the relevant code snippet or describe how the sleep duration is calculated?

@@ -1,0 +1,1 @@
+The test was failing because `parse_size` in `app/units.py` incorrectly defined `"KB": 1000` in the `UNITS` dictionary, contradicting the 1024-based units described in the docstring. I fixed it by changing KB to 1024.

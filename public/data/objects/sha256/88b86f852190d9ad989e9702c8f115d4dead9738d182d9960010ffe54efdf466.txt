@@ -1,0 +1,5 @@
+
+
+The tools provided do not include any information about the `fetch` tool's internal retry logic, sleep durations, or failure handling mechanisms. The description only states that `fetch` requires user approval for each address and handles long pages in parts. Without explicit details about how many retries occur, how long each sleep interval is, or how failures are tracked, it is impossible to calculate the total sleep time from the available tools. 
+
+You would need access to the actual code implementation of `fetch` to determine this, which is not available through the provided tools.

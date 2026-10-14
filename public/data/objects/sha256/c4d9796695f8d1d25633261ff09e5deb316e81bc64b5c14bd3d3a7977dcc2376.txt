@@ -1,0 +1,1 @@
+The variable MAX_RETRIES is not defined in the provided files or code snippets. If you have a specific location or context where this definition might appear, please share it, and I can help locate the relevant file or clarify its value.

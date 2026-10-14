@@ -1,0 +1,4 @@
+{
+  "answer": "The ICD-10 codes are assigned to death certificates based on the \"Standard Text\" column, with counts of 3,539 or 6,392 codes in the dictionaries used.",
+  "evidence": [0, 3, 4, 5]
+}

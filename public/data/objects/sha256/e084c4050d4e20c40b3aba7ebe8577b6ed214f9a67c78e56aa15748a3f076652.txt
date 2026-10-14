@@ -1,0 +1,22 @@
+Looking at the books.csv file, I can analyze the data:
+
+**Different books read:**
+There are 22 book entries in the file. However, "Project Hail Mary" appears twice (lines 2 and 8), so there are **21 unique titles**.
+
+**Books finished between July and December 2025:**
+Looking at the End Date column for dates in July, August, September, October, November, or December 2025:
+- Dune (2025-07-10)
+- The Hobbit (2025-07-19)
+- Sapiens (07/25/2025)
+- Middlemarch (2025-08-20)
+- The Night Circus (2025-09-01)
+- Tomorrow and Tomorrow and Tomorrow (2025-09-30)
+- The Thursday Murder Club (2025-10-02)
+- Babel (2025-11-05)
+- Lessons in Chemistry (2025-11-20)
+- A Psalm for the Wild-Built (2025-11-24)
+- The Bear and the Nightingale (2025-12-16)
+
+That's **11 books** finished between July and December.
+
+ANSWER: 21, 11

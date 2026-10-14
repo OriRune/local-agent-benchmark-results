@@ -1,0 +1,1 @@
+{"answer": "11,529,432 segmented words", "evidence": ["[12] We download parts of Chinese Wikipedia articles from Large-Scale Chinese Datasets for NLP. For word segmentation and filtering the stopwords, we apply the jieba toolkit based on the stopwords table. Finally, we get 11,529,432 segmented words."]}

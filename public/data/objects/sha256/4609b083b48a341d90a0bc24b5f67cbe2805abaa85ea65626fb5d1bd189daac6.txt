@@ -1,0 +1,3 @@
+I have searched through `notes.md`, `todo.txt`, `app/`, and `data/` (including `events.log`), and I have not found any file containing `MAX_RETRIES`.
+
+Could you please tell me which file or module defines `MAX_RETRIES`?

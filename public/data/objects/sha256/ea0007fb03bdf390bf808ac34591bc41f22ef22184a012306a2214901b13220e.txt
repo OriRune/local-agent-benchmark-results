@@ -1,0 +1,3 @@
+
+
+The MAX_RETRIES value has been successfully changed to 5 in app/config.py. The file was edited to replace "MAX_RETRIES = 3" with "MAX_RETRIES = 5". Other references in app/net.py remain valid as they use the same variable from the config module.

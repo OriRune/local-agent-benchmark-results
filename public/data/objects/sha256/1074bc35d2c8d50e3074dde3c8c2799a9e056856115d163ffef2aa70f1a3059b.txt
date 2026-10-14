@@ -1,0 +1,11 @@
+There are **5 Python files** in the app folder (excluding `__init__.py`, which is an empty boilerplate file):
+
+| File | Size |
+|------|------|
+| **cli.py** | **903 bytes** (largest) |
+| net.py | 324 bytes |
+| units.py | 243 bytes |
+| config.py | 101 bytes |
+| util.py | 100 bytes |
+
+The largest is **cli.py** at 903 bytes. (If you count `__init__.py`, that would make 6 files, but it's an empty 0-byte file.)

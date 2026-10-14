@@ -1,0 +1,5 @@
+Both TODO comments have been successfully added to `todo.txt`. Here is the summary of the task:
+
+- Found 2 TODO comments in the Python code.
+- Added each TODO comment to `todo.txt` as a new line.
+- The final content of `todo.txt` includes the new TODO items at the end.

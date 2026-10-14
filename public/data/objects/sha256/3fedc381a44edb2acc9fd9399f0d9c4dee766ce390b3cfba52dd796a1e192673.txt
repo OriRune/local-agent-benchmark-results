@@ -1,0 +1,13 @@
+This is a logic puzzle. There are 3 houses (numbered 1 on the left, 3 on the right), from the perspective of someone standing across the street from them. Each has a different person in them. They have different characteristics:
+ - Each person has a unique name: arnold, alice, bob
+ - Each person has a favorite drink: coffee, boba tea, water
+ - Everyone has a favorite smoothie: desert, butterscotch, darkness
+
+1. The Butterscotch smoothie drinker and the boba tea drinker are next to each other.
+2. Arnold is the coffee drinker.
+3. Arnold and the Butterscotch smoothie drinker are next to each other.
+4. Bob is in the third house.
+5. The Darkness smoothie drinker is Bob.
+
+What is Name of the person who lives in House 1?? Provide only the name of the person as your final answer.
+Put your final answer, in the requested format, inside <answer>...</answer>.

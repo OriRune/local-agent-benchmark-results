@@ -1,0 +1,13 @@
+vader: i have received reports of a jedi death.
+me: i did not kill anyone.
+vader: you might be lying to me.
+me: i might have misunderstood the mission.
+***
+vader: a fake jedi? that is not possible.
+me: it might have been a trap.
+vader: you might have failed your duty.
+me: i might have acted in self defense.
+***
+vader: silence. you might be executed.
+me: i might try to escape.
+vader: you might not survive this.

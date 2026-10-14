@@ -1,0 +1,30 @@
+To find the solution for 24 using the numbers 10, 1, 2, and 6:
+
+1.  **Analyze the numbers:** 10, 1, 2, 6.
+2.  **Target:** 24.
+3.  **Strategy 1 (Multiplication):** Can we get 4 * 6?
+    *   We have 6. Can we make 4 from 10, 1, 2?
+    *   10 / (2 + 1) = 3.33 (No)
+    *   (10 - 2) / 1 = 8 (No)
+    *   (10 + 2) / 1 = 12 (No)
+    *   (10 / 2) - 1 = 4. **Yes!**
+    *   Calculation: (10 / 2 - 1) * 6 = (5 - 1) * 6 = 4 * 6 = 24.
+4.  **Strategy 2 (Addition/Subtraction):**
+    *   10 * 2 + 6 - 1 = 25 (No)
+    *   (10 + 2) * (6 / 1) = 72 (No)
+    *   (10 + 1) * 2 + 6 = 28 (No)
+    *   (10 - 2) * (6 / 1) = 48 (No)
+    *   (10 + 2) * 2 = 24. Wait, I only have one 2.
+    *   Let's re-check Strategy 1: (10 / 2 - 1) * 6.
+    *   Numbers used: 10, 2, 1, 6. All used once.
+    *   Expression: (10 / 2 - 1) * 6.
+
+5.  **Verify:**
+    *   10 / 2 = 5
+    *   5 - 1 = 4
+    *   4 * 6 = 24.
+
+6.  **Format the answer:**
+    *   Expression: (10 / 2 - 1) * 6.
+
+<answer>(10 / 2 - 1) * 6</answer>

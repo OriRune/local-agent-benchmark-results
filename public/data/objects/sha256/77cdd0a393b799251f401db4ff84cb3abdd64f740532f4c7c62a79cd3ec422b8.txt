@@ -1,0 +1,19 @@
+I've created the script at `open_workspace.sh`. Since the sandbox doesn't allow changing file permissions, you'll need to make it executable yourself:
+
+```bash
+chmod +x open_workspace.sh
+./open_workspace.sh
+```
+
+Or you can just run it with bash:
+
+```bash
+bash open_workspace.sh
+```
+
+The script will:
+1. Open Chrome with `https://google.com`
+2. Open `gedit` (the default text editor on Linux Mint)
+3. Open `nautilus` (the file manager) at `[private-home]/Documents/llama.cpp`
+
+All three apps will run in the background (`&`) so the script finishes quickly. If you'd prefer a different text editor (e.g., `code`, `vim`, `nano`) or file manager, let me know and I'll update it.

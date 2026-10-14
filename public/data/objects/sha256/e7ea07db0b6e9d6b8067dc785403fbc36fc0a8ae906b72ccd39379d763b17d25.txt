@@ -1,0 +1,4 @@
+{
+  "answer": "The ICD-10 codes are terms from the International Classification of Diseases, 10th revision used to automatically code death certificates, with specific examples like I509 and dictionary sizes of 3,539 or 6,392 codes.",
+  "evidence": [0, 1, 5, 10]
+}

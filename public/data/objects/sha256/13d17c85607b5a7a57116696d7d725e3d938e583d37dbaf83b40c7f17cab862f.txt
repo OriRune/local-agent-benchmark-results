@@ -1,0 +1,2 @@
+Aria is a saint/sinner, Sebastian is a saint/sinner, Daniel is a saint/sinner, and Samuel is a saint/sinner  
+<answer> Aria is a saint/sinner, Sebastian is a saint/sinner, Daniel is a saint/sinner, and Samuel is a saint/sinner</answer>

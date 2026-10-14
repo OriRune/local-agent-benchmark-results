@@ -1,0 +1,8 @@
+I've created a beautifully formatted HTML file named `books.html` that displays your book data in a clean, responsive table. The design includes:
+
+- A modern Georgia font with soft background
+- Hover effects on table rows
+- Print-friendly styling
+- Responsive layout for screenshots
+
+You can now double-click `books.html` to open it in your browser. The table will display all your books with proper formatting, and the design ensures it looks great when screenshotted for your book club friends.

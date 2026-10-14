@@ -1,0 +1,8 @@
+```json
+{
+  "answer": "Features extracted from text include part-of-speech tags, previous and next words, substrings, shapes, and regular expressions.",
+  "evidence": [
+    "3"
+  ]
+}
+```

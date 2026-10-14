@@ -1,0 +1,17 @@
+The README.md has been written with a complete list of every command line option from the CLI in `app/cli.py`, including:
+
+- The positional `<url>` argument with help "what to download"
+- The `-o`, `--output` optional argument with help "file to write (default: stdout)"
+- The `-q`, `--quiet` flag (store_true action) with help "no progress output"
+
+The README includes a clear usage description, a table listing all options with their types and help text, and practical usage examples.
+
+Done.
+</think>
+The README.md file has been created in `project/README.md` with a complete list of every command line option from the CLI in `app/cli.py`:
+
+- `<url>` (positional): help="what to download"
+- `-o`, `--output` (optional): help="file to write (default: stdout)"
+- `-q`, `--quiet` (flag, `store_true`): help="no progress output"
+
+The README includes usage instructions, a table summarizing all options with their types and help text, and practical examples.

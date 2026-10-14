@@ -1,0 +1,7 @@
+I found a few files that might be what you're looking for:
+
+1.  **`Desktop/trip ideas 2025.txt`**: This file contains a list of places to go, including Kyoto in spring, a road trip down the coast, and camping at the lake.
+2.  **`Documents/old stuff/holidayplans.md`**: This might also be relevant as it's a markdown file about holiday plans.
+3.  **`Documents/Personal/Summer Break ideas.docx`**: This is a Word document, though it appeared to be unreadable when I tried to open it.
+
+Given your description, **`Desktop/trip ideas 2025.txt`** seems like the most likely candidate.

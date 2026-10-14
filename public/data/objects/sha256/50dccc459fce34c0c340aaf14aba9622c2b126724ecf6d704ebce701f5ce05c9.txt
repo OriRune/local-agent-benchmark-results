@@ -1,0 +1,1 @@
+The MAX_RETRIES parameter is already set to 5 as per the initial instructions. There is no need to change it.

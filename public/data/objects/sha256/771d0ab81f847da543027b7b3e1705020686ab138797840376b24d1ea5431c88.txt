@@ -1,0 +1,1 @@
+The fix is done. I changed `"KB": 1000` to `"KB": 1024` to match the 1024-based unit system described in the comment. Now `parse_size("1.5 KB")` will correctly return `1536` (1.5 * 1024).

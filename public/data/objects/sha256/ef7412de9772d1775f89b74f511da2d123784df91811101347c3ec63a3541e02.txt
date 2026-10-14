@@ -1,0 +1,7 @@
+I've created a `README.md` file that documents all the command-line options for the `tinydl` CLI:
+
+1. **`url`** (required) - what to download
+2. **`-o` / `--output`** - file to write (default: stdout)
+3. **`-q` / `--quiet`** - no progress output
+
+The README includes a usage section, a table of all options with their help text, and examples of common use cases.

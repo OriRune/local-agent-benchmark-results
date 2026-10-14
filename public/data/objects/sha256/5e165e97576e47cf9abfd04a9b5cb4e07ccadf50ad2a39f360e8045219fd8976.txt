@@ -1,0 +1,30 @@
+```json
+{
+  "dm_greeting": "Welcome, traveler. Here is your new companion for the journey.",
+  "character_name": "theta",
+  "class": "Warlock",
+  "level": 3,
+  "race": "Human (Variant)",
+  "background": "The Medalist",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "strength": 10,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 10,
+    "wisdom": 16,
+    "charisma": 18
+  },
+  "equipment": [
+    "Warlock's Pact",
+    "Medalist's Robe",
+    "Dagger",
+    "Spellbook"
+  ],
+  "special_traits": [
+    "Otherworldly Patron: The Moon",
+    "Pact Boon: The Pact of the Tome"
+  ],
+  "description": "theta is a mysterious figure who once held the title of medalist in a forgotten tournament of magic. They seek to understand the power of the void."
+}
+```

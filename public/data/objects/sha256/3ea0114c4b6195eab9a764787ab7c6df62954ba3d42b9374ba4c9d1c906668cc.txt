@@ -1,0 +1,4 @@
+The sandbox doesn't allow running Python, but the file has been updated correctly. Here's a summary of the changes:
+
+- **Added `format_bytes(n)`** to `app/util.py` — converts a byte count into a human-readable string (e.g., `1.5 KB`, `2.0 MB`). It handles zero as `"0 B"` and scales up through B, KB, MB, GB, and TB.
+- **Removed the TODO comment** — the `# TODO: add a helper that formats byte sizes` line was deleted.

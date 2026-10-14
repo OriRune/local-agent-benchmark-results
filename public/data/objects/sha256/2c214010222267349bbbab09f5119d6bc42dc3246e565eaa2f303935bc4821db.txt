@@ -1,0 +1,15 @@
+The test `tests/test_units.py` fails because the `UNITS` dictionary in `app/units.py` defines "KB" as 1000 bytes, while the docstring and the test expectations indicate that units should be 1024-based (1 KB = 1024 bytes).
+
+In `app/units.py`:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+Specifically, `parse_size("1.5 KB")` in the test expects `1536` (which is $1.5 \times 1024$), but the current code would return `1500` (which is $1.5 \times 1000$).
+
+I could not finish the task because the `run` tool was disabled after I repeated the same call, preventing me from executing the fix and verifying it.
+
+To fix the code, the `UNITS` dictionary in `app/units.py` should be updated to:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```

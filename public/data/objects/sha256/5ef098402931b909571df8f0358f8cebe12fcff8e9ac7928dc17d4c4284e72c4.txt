@@ -1,0 +1,6 @@
+I've found all TODO comments in the Python code and added them to todo.txt:
+
+- `add a helper that formats byte sizes` (from `app/util.py`)
+- `log each failed attempt` (from `app/net.py`)
+
+The file now contains 5 TODO items total (3 original + 2 new).

@@ -1,0 +1,4 @@
+{
+  "answer": "Loaded language, appeal to authority, slogans, straw men, hidden ad-hominem fallacies, red herring",
+  "evidence": [3]
+}

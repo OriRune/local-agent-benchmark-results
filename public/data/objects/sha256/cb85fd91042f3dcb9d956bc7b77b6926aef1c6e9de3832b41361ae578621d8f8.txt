@@ -1,0 +1,7 @@
+There is a prerequisite cycle:
+
+1 → 14 → 0 → 9 → 13 → 1
+
+So it is impossible to finish all courses.
+
+<answer>False</answer>

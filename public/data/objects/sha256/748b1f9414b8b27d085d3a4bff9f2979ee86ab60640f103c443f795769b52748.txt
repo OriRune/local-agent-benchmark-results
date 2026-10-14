@@ -1,0 +1,41 @@
+## Setting Up the Graph
+
+For each prerequisite `(a_i, b_i)`, course `b_i` must come before `a_i`, so I'll create an edge `b_i → a_i`.
+
+**Edges:**
+- 5 → 4, 5 → 1, 5 → 0
+- 2 → 6
+- 0 → 10, 0 → 1, 0 → 2
+- 4 → 9, 4 → 0, 4 → 6
+- 10 → 7, 10 → 3
+- 9 → 3
+- 1 → 2
+- 3 → 8
+
+## Detecting a Cycle (DFS)
+
+Let me trace paths from each node:
+
+**From 0:**
+- 0 → 10 → 7 (dead end)
+- 0 → 10 → 3 → 8 (dead end)
+- 0 → 1 → 2 → 6 (dead end)
+- 0 → 2 → 6 (dead end)
+
+**From 4:**
+- 4 → 9 → 3 → 8 (dead end)
+- 4 → 0 → ... (explored above, no return to 4)
+- 4 → 6 (dead end)
+
+**From 5:**
+- 5 → 4 → ... (explored above, no return to 5)
+- 5 → 1 → 2 → 6 (dead end)
+- 5 → 0 → ... (explored above, no return to 5)
+
+**Nodes 6, 7, 8** have no outgoing edges.
+
+## Conclusion
+
+No back edges were found — there is no cycle in the graph. The courses can be ordered (e.g., 5, 0, 1, 2, 10, 3, 4, 9, 6, 7, 8).
+
+<answer>True</answer>

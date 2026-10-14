@@ -1,0 +1,1 @@
+{"changes":[{"after":"b'hello'","before":null,"path":"[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/9a6eccb5af69139dd4386d53-83fa8afcb9/workspace/project/hello.txt","time":1791867577.4128435,"tool":"write_file"}],"origin_note":"Recorded change evidence, not a reconstructed starting workspace.","turn_changes":[1]}

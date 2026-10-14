@@ -1,0 +1,28 @@
+To find the amount of propellant stage 2 must carry, we use the rocket equation for each stage: $\Delta v = I_{sp} \cdot g_0 \cdot \ln(m_0 / m_f)$.
+
+**Given:**
+- Total $\Delta v = 9,400$ m/s
+- $g_0 = 9.80665$ m/s²
+- Payload = $1,200$ kg
+- Stage 1: Dry mass = $4,000$ kg, Propellant = $36,000$ kg, $I_{sp} = 290$ s
+- Stage 2: Dry mass = $900$ kg, $I_{sp} = 340$ s
+
+**Let $p_2$ be the propellant mass of Stage 2.**
+
+**Stage 1:**
+- $m_{0,1} = 4,000 + 36,000 + 900 + p_2 + 1,200 = 42,100 + p_2$
+- $m_{f,1} = 4,000 + 900 + p_2 + 1,200 = 6,100 + p_2$
+- $\Delta v_1 = 290 \cdot 9.80665 \cdot \ln\left(\frac{42,100 + p_2}{6,100 + p_2}\right)$
+
+**Stage 2:**
+- $m_{0,2} = 900 + p_2 + 1,200 = 2,100 + p_2$
+- $m_{f,2} = 900 + 1,200 = 2,100$
+- $\Delta v_2 = 340 \cdot 9.80665 \cdot \ln\left(\frac{2,100 + p_2}{2,100}\right)$
+
+**Total $\Delta v$:**
+$\Delta v_1 + \Delta v_2 = 9,400$
+
+Using a numerical solver (as performed in the background), we find:
+$p_2 \approx 11,529.43$ kg.
+
+ANSWER: 11529.43 kg

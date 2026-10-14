@@ -1,0 +1,20 @@
+I've created a shell script named `system_info.sh` that displays simple information about the computer's RAM and CPU usage. The script includes:
+
+1. CPU usage percentage (from `/proc/stat`)
+2. RAM usage with available memory (from `free -h`)
+3. Total RAM amount
+4. CPU model information (from `/proc/cpuinfo`)
+
+To use this script, you can make it executable and run it:
+
+```bash
+chmod +x system_info.sh
+./system_info.sh
+```
+
+Or you can run it directly with bash:
+```bash
+bash system_info.sh
+```
+
+Would you like me to modify this script or create a different version?

@@ -1,0 +1,19 @@
+
+
+To find the most recent Git commit changes, you can use the following command in your terminal:
+
+```bash
+git log -1
+```
+
+This will display the commit message and details for the most recent commit. If you're not in a Git repository, navigate to the correct directory first.
+
+If you need to see the commit hash, you can use:
+
+```bash
+git log -1 --format=%H
+```
+
+If you're unsure which commit to look at, you can also use `git log --all --graph` to view the commit tree and filter by the most recent commit.
+
+Let me know if you need help with any of these steps!

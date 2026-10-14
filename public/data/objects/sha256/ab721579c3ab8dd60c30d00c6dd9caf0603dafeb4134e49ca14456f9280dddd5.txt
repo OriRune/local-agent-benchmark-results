@@ -1,0 +1,13 @@
+Based on the code in `app/net.py` and `app/config.py`:
+
+The `fetch` function loops through `range(MAX_RETRIES)` and sleeps `2 ** attempt` seconds after each failed attempt:
+
+- **Attempt 0**: sleeps `2^0` = **1 second**
+- **Attempt 1**: sleeps `2^1` = **2 seconds**
+- **Attempt 2**: sleeps `2^2` = **4 seconds**
+
+With `MAX_RETRIES = 3`, if every attempt fails, the total sleep time is:
+
+**1 + 2 + 4 = 7 seconds**
+
+The function then raises a `RuntimeError` with "giving up on {url}" after exhausting all retries.

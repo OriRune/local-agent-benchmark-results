@@ -1,0 +1,7 @@
+Let me verify the logic holds for all three test cases:
+
+- `parse_size("512 B")` → `int(512 * 1) = 512` ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024) = 1536` ✓
+- `parse_size("2 MB")` → `int(2.0 * 1048576) = 2097152 = 2 * 1024 * 1024` ✓
+
+The fix is a one-character change: `KB` was `1000` (decimal) but the module is documented as 1024-based, so it should be `1024`. This matches the test's expectations and the module's own docstring — no test change needed.

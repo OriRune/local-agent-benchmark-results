@@ -1,0 +1,10 @@
+The test in `tests/test_units.py` was failing because the `parse_size` function in `app/units.py` used an incorrect multiplier for Kilobytes (KB). The test expected 1.5 KB to be 1536 bytes, which requires KB to be 1024, not 1000, as suggested by the unit definitions.
+
+I have updated the `UNITS` dictionary in `app/units.py` to use 1024 for KB.
+
+The fix involved changing:
+`UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+to:
+`UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+
+This change aligns the implementation with the test expectations.

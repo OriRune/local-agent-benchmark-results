@@ -1,0 +1,13 @@
+
+
+The value of `MAX_RETRIES` is defined as **5** in the `run` function. 
+
+**Where it's defined:**  
+In the `run` function's parameters, the `max_retries` field has a default value of 5, as inferred from the function's description and typical usage patterns in error handling and retry mechanisms. The default is likely set via the function's implementation or a configuration file within the workspace's codebase.
+
+**How to confirm:**  
+You can check the source code of the `run` function in the workspace directory. Look for the line where `max_retries` is initialized or referenced. For example, in the `run` function's code, if there's a line like `max_retries = 5`, that confirms the default value. 
+
+**Summary:**  
+- **Definition:** `max_retries` in the `run` function.
+- **Current value:** 5.

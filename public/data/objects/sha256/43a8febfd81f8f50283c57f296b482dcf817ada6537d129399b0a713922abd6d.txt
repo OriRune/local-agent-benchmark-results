@@ -1,0 +1,8 @@
+We have updated app/net.py rename function, and updated app/cli.py imports and usage. No other files reference fetch. The task is done.
+
+Now summarize: Renamed function fetch to download in app/net.py, and updated app/cli.py to use download.
+
+Return short summary.
+</think>
+
+Renamed `fetch` to `download` in `app/net.py` and updated all references in the project: modified the import and call in `app/cli.py`.

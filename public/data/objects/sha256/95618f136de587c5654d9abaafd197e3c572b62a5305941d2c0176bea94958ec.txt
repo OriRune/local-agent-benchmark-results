@@ -1,0 +1,33 @@
+# T4
+
+**Result:** pass · done · 2 steps · 1 calls · 3 s
+
+## user
+
+Create a file hello.txt containing exactly this line: hello from the local agent
+
+## assistant
+
+- call `append_file` `{"path": "hello.txt", "text": "hello from the local agent"}`
+
+<details><summary>append_file result (27 chars)</summary>
+
+```
+created hello.txt (1 lines)
+```
+
+</details>
+
+## assistant
+
+I have created hello.txt with the exact line "hello from the local agent".
+
+
+## files changed
+
+### hello.txt (created)
+
+```
+hello from the local agent
+
+```

@@ -1,0 +1,1 @@
+The path "..project" does not exist or cannot be accessed. The task cannot be completed with the current information. Please verify the folder structure or provide the correct path to proceed.

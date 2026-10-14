@@ -1,0 +1,12 @@
+{
+  "answer": "ICD-10 codes are used to automatically assign diagnoses to French death certificates.",
+  "evidence": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    10,
+    12
+  ]
+}

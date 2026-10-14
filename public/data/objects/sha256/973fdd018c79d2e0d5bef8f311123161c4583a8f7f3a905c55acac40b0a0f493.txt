@@ -1,0 +1,2 @@
+
+The function `fetch` has been renamed to `download` in `app/net.py`, and the import in `app/cli.py` has been updated to use `download`. No other references to the old name remain.

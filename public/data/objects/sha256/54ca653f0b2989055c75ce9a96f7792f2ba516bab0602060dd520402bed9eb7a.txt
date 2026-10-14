@@ -1,0 +1,23 @@
+**Answer: 4**
+
+**Step-by-step reasoning:**
+
+1. **Count Eagles touchdowns:**
+   - David Akers: 49-yard field goal (NOT a touchdown)
+   - Victor Abiamiri: 2-yard fumble return (TOUCHDOWN #1)
+   - DeSean Jackson: 85-yard punt return (TOUCHDOWN #2)
+   - Donovan McNabb: 9-yard pass to Brent Celek (TOUCHDOWN #3)
+   - Donovan McNabb: 4-yard pass to Brian Westbrook (TOUCHDOWN #4)
+   - Donovan McNabb: 3-yard touchdown run (TOUCHDOWN #5)
+   
+   **Eagles total: 5 touchdowns**
+
+2. **Count Panthers touchdowns:**
+   - DeAngelo Williams: 11-yard touchdown on first drive (TOUCHDOWN #1)
+   
+   **Panthers total: 1 touchdown**
+
+3. **Calculate difference:**
+   5 - 1 = **4**
+
+The Eagles scored **4 more touchdowns** than the Panthers.

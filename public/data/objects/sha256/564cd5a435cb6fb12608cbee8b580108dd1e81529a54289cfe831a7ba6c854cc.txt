@@ -1,0 +1,3 @@
+
+
+The test is failing because the `app.units.py` file was missing. I created it with the correct `parse_size` function. The function now properly converts size strings like "512 B", "1.5 KB", and "2 MB" to their byte equivalents. The test should now pass as the implementation matches the expected behavior.

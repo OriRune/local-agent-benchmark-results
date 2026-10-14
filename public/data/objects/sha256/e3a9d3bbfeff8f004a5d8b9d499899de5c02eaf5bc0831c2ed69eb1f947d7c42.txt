@@ -1,0 +1,8 @@
+The fix has been applied. The `UNITS` dictionary now correctly uses 1024 for KB instead of 1000, matching the 1024-based unit system described in the docstring.
+
+**Summary:**
+- **Issue:** The `UNITS["KB"]` value was set to 1000 (decimal-based), but the code is meant to use 1024-based units as stated in the docstring.
+- **Fix:** Changed `UNITS["KB"]` from 1000 to 1024 in `app/units.py`.
+- **Result:** The test now expects the correct values:
+  - `parse_size("1.5 KB")` → 1.5 × 1024 = 1536 ✓
+  - `parse_size("2 MB")` → 2 × 1024² = 2097152 ✓

@@ -1,0 +1,6 @@
+I have created a `README.md` file in the project root that documents the CLI options and their help text as found in `app/cli.py`.
+
+The options documented are:
+- `url`: what to download
+- `-o`, `--output`: file to write (default: stdout)
+- `-q`, `--quiet`: no progress output

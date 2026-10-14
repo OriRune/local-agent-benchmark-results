@@ -1,0 +1,23 @@
+To make 24 using the numbers 10, 4, 9, and 7, we can use the following logic:
+
+1.  Subtract 7 from 10 to get 3: $10 - 7 = 3$.
+2.  Subtract this result from 9 to get 6: $9 - 3 = 6$.
+3.  Multiply the result by 4 to get 24: $6 \times 4 = 24$.
+
+Combining these steps into a single expression:
+$4 * (9 - (10 - 7))$
+
+Let's check the calculation:
+$10 - 7 = 3$
+$9 - 3 = 6$
+$4 * 6 = 24$
+
+Another valid solution is:
+$4 * (7 - (10 - 9))$
+$10 - 9 = 1$
+$7 - 1 = 6$
+$4 * 6 = 24$
+
+Both are valid. I will provide the first one.
+
+<answer>4 * (9 - (10 - 7))</answer>

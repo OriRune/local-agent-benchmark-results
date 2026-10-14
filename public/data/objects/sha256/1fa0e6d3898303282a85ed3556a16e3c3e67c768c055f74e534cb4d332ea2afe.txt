@@ -1,0 +1,1 @@
+I cannot directly rename functions or modify code files using the available tools. You would need to manually edit the script file `app/net.py` using a text editor to rename `fetch` to `download`, or use a script to automate this task outside this interface. Let me know if you'd like guidance on how to proceed manually.

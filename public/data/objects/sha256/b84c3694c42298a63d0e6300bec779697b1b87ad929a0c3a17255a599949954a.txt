@@ -1,0 +1,1 @@
+{'name': 'set_max_retries', 'parameters': {'max_retries': 5}}

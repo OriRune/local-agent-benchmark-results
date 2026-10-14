@@ -1,0 +1,1 @@
+I've created a script named `monitor.sh` that displays simple RAM and CPU usage information when executed. The script checks for available tools and falls back to parsing `/proc` files if needed. You can run it with `bash monitor.sh` to see the current memory and idle CPU statistics.

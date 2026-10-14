@@ -1,0 +1,16 @@
+The code is:
+
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+```
+
+On each failed attempt, it sleeps `2 ** attempt` seconds:
+- attempt 0 → 2⁰ = 1s
+- attempt 1 → 2¹ = 2s
+- attempt 2 → 2² = 4s
+
+Total sleep = 1 + 2 + 4 = **7 seconds**.

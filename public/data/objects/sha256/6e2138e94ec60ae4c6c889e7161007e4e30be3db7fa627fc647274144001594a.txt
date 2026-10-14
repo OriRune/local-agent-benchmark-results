@@ -1,0 +1,26 @@
+## Setting Up the Graph
+
+Each prerequisite `(a_i, b_i)` means course `b_i` must be taken before `a_i`, so I'll create an edge `b_i → a_i`.
+
+Let me trace a potential cycle starting from course 10:
+
+**10 → 13**: from `(13, 10)` — course 10 must come before 13 ✓
+
+**13 → 6**: from `(6, 13)` — course 13 must come before 6 ✓
+
+**6 → 10**: from `(10, 6)` — course 6 must come before 10 ✓
+
+## Cycle Detected
+
+$$10 \rightarrow 13 \rightarrow 6 \rightarrow 10$$
+
+This forms a **cycle**:
+- To take course 10, you need course 6 first
+- To take course 6, you need course 13 first
+- To take course 13, you need course 10 first
+
+This is a circular dependency — none of these three courses can ever be started.
+
+Since a cycle exists in the dependency graph, it is impossible to finish all courses.
+
+<answer>False</answer>

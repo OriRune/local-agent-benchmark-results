@@ -1,0 +1,9 @@
+{
+  "answer": "The paper does not explicitly state a dataset used to train a model, as the system uses dictionaries and external databases (Occupation Data, Names Data, DBpedia) to analyze text rather than train a machine learning model. The datasets used for the system are Occupation Data and Names Data.",
+  "evidence": [
+    11,
+    12,
+    13,
+    23
+  ]
+}

@@ -1,0 +1,1 @@
+In a rational prime expression, a represents the rational prime itself, and b represents 0, as rational primes are integers without an imaginary part.

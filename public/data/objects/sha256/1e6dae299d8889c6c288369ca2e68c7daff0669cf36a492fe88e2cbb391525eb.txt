@@ -1,0 +1,21 @@
+I have created a `README.md` file for the project. It includes the usage pattern and a table listing all the command line options and their corresponding help text as defined in `app/cli.py`.
+
+```markdown
+# tinydl
+
+A tiny downloader CLI.
+
+## Usage
+
+```bash
+tinyddl <url> [-o <file>] [-q]
+```
+
+## Command Line Options
+
+| Option | Help Text |
+| :--- | :--- |
+| `url` | what to download |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+```

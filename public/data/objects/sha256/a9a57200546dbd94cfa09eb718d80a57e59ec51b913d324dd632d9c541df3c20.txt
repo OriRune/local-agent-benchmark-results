@@ -1,0 +1,4 @@
+{
+  "answer": "A finance specific BLSTM word embedding model trained on 189,206 financial articles from Factiva.",
+  "evidence": [4]
+}

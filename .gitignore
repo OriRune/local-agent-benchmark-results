@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+.vercel/
+
+# Parent harness ignores every directory named lib; these are website sources.
+!src/lib/
+!src/lib/**
+
+# Private deployment scan reports (not cleared by Playwright)
+.publication-reports/

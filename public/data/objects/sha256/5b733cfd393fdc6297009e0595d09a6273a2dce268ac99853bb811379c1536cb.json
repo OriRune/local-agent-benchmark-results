@@ -1,0 +1,1 @@
+["I need to find which finance-specific word embedding model the authors used. Looking through the paper, I see they trained a word2vec model on financial articles from Factiva, and they also mention using pre-trained word embeddings in their BLSTM approach.\n"]

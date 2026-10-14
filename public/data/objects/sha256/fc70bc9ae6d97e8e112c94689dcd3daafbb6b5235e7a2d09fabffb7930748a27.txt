@@ -1,0 +1,8 @@
+I've updated the file with the same content. Now let me verify the calculation:
+
+The `fetch` function runs for `MAX_RETRIES = 3` attempts:
+- Attempt 0: `2 ** 0 = 1` second
+- Attempt 1: `2 ** 1 = 2` seconds  
+- Attempt 2: `2 ** 2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**

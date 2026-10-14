@@ -1,0 +1,5 @@
+The tools provided do not include a way to directly access or retrieve the definition of system variables like `MAX_RETRIES`. Since the variable's location or value cannot be determined through file operations or other available functions, I cannot fulfill this request with the current capabilities. Please provide additional context or clarify if another approach is needed. 
+
+<final_answer>
+The location and value of `MAX_RETRIES` cannot be determined using the available tools. Please provide further details or adjust the task accordingly.
+</final_answer>

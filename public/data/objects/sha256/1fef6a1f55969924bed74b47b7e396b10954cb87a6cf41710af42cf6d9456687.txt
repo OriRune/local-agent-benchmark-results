@@ -1,0 +1,2 @@
+I have these dice: 1d12, 1d10, 1d4. What are the odds of rolling 11 or higher? (Assume that all dice are rolled at once, and that '1d6' represents one roll of a 6-sided dice.) Please respond with a reduced fraction representing the probability [ex., 1/60].
+Put your final answer, in the requested format, inside <answer>...</answer>.

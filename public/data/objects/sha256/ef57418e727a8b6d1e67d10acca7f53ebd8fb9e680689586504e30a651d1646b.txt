@@ -1,0 +1,13 @@
+The code shows `MAX_RETRIES = 3` and the sleep on attempt `i` is `2 ** i` seconds (since `attempt` ranges from `0` to `MAX_RETRIES - 1`).
+
+When every attempt fails (i.e., all retries fail), the sleeps occur for attempts `0`, `1`, and `2`:
+
+- Attempt 0: `2^0 = 1` second
+- Attempt 1: `2^1 = 2` seconds  
+- Attempt 2: `2^2 = 4` seconds
+
+Total sleep time before giving up: `1 + 2 + 4 = 7 seconds`.
+
+(Note: the loop runs `MAX_RETRIES` times (0-indexed), and after the last failed attempt, it sleeps for `2^2 = 4` seconds before raising the `RuntimeError`. The `TIMEOUT_S` constant is not used for sleeping between retries.)
+
+**Answer: 7 seconds.**

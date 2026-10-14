@@ -1,0 +1,1 @@
+The data used to train the embeddings consists of 11,529,432 segmented words from Chinese Wikipedia articles.

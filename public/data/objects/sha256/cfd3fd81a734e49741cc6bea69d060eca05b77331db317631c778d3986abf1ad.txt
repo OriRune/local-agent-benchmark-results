@@ -1,0 +1,1 @@
+The change has been reverted. The file `app/config.py` now has `TIMEOUT_S = 10` again, undoing the change from the most recent commit (`ba8f808`), which had raised it to `20`. This was done by editing the file directly — no git commands were used to alter anything.

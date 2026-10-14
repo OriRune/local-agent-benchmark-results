@@ -1,0 +1,15 @@
+Now I can calculate the total sleep time:
+
+- `MAX_RETRIES = 3`, so the loop runs for attempts 0, 1, and 2 (3 attempts total)
+- When an attempt fails, it sleeps for `2 ** attempt` seconds
+- The loop exits when the function succeeds or when all attempts are exhausted (no sleep after the final failed attempt because there's no next iteration)
+
+Let me trace through:
+- Attempt 0: fails → sleep `2^0 = 1` second
+- Attempt 1: fails → sleep `2^1 = 2` seconds
+- Attempt 2: fails → sleep `2^2 = 4` seconds
+- Loop ends (no attempt 3)
+
+Total sleep: 1 + 2 + 4 = 7 seconds
+
+**Answer: 7 seconds**

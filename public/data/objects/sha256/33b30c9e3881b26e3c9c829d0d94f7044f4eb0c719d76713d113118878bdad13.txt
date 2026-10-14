@@ -1,0 +1,1 @@
+The path you provided appears to be incorrect. The "app" directory is not found in the current working folder. Please verify the correct location of the files you want to modify (for example, ensure the files are in the expected path such as `[private-home]/project/app/data/tests`). Once you confirm the correct path, I can proceed with the requested actions.

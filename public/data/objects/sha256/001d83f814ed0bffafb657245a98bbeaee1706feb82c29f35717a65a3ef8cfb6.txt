@@ -1,0 +1,7 @@
+I've searched all files. There is only one tax return in this folder, and it's for **2024**, not 2019. There is no 2019 tax return anywhere in here.
+
+I can't tell you your 2019 refund amount because that file isn't present. The only tax document available is `Documents/Personal/tax return 2024.pdf`.
+
+Would you like me to:
+1. Read the 2024 return to tell you that refund instead, or
+2. Look somewhere else (e.g., another folder or drive) for the 2019 return?

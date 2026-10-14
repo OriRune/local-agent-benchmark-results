@@ -1,0 +1,1 @@
+I need to change MAX_RETRIES to 5 in the file. I'll use the edit_file function to make this change.

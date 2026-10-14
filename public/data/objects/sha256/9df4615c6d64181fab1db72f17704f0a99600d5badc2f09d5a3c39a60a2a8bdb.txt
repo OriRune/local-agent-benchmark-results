@@ -1,0 +1,3 @@
+The file `todo.txt` now includes the new todo item:
+
+- publish release notes

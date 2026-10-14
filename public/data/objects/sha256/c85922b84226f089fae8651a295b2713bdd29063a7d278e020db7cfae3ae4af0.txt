@@ -1,0 +1,6 @@
+Done. Changes to `app/util.py`:
+
+- Removed the `# TODO: add a helper that formats byte sizes` comment.
+- Added `format_bytes(n)`, which divides by 1024 until the value is under 1024 (capped at PB) and formats it: whole bytes as e.g. `512 B`, larger sizes with one decimal as e.g. `1.5 KB`, `2.0 MB`. It handles negative values (`-1.5 KB`) and matches the 1024-based convention used by `parse_size` in `app/units.py`.
+
+Note: the sandbox in this session blocks running programs (`python3 check_format.py` and `compileall` were both denied), so I verified the code by reading it rather than executing it. A scratch test script I created is now at `scratch/check_format.py` if you want to run it yourself.

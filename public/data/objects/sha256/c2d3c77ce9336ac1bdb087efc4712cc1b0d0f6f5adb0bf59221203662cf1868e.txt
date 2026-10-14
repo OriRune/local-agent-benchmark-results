@@ -1,0 +1,1 @@
+Done. I've edited `app/config.py` directly to revert the timeout from 20 back to 10 seconds, undoing the most recent git commit.

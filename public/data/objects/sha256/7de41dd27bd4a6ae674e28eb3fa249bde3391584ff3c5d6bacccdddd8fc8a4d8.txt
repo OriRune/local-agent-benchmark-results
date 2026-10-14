@@ -1,0 +1,1 @@
+**Bot Prompt Template:** "Hello! To offer you the most accurate forecast, please provide your *location*. Once I know your spot, I'll show you tomorrow's outlook. Don't forget to offer your coordinates or a known town. I'm on the lookout for your input to provide a glorious forecast."

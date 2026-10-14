@@ -1,0 +1,3 @@
+The sandbox is denied, but I've fixed the code. The issue was that `UNITS["KB"]` was set to 1000 instead of 1024, which contradicted both the docstring and the test expectations. I changed it to 1024 so that `parse_size("1.5 KB")` now returns 1536 (1.5 * 1024) as the test expects.
+
+Summary: Fixed `app/units.py` by changing `KB` from 1000 to 1024 to match the 1024-based units documented in the docstring and expected by the tests.

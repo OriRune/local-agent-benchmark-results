@@ -1,0 +1,4 @@
+The test in `tests/test_units.py` was failing because the `parse_size` function in `app/units.py` used `1000` as the multiplier for `KB`, whereas the docstring and the tests expected a 1024-based system (where `1 KB = 1024 bytes`). I have updated `app/units.py` to use `1024` for `KB`.
+
+Summary of changes:
+- Modified `app/units.py` to change the value of `KB` in the `UNITS` dictionary from `1000` to `1024`.

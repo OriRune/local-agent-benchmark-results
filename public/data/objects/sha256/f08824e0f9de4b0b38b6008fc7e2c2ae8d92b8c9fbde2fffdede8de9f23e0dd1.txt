@@ -1,0 +1,8 @@
+I have created an HTML page that displays your book reading data in a clean and aesthetically pleasing table format. The file is named `books.html` and can be opened by double-clicking it.
+
+Here is a summary of what I did:
+- Parsed the CSV data from `books.csv` and inserted it into an HTML table.
+- Added CSS styling to make the table look more appealing with proper spacing, borders, and colors.
+- Ensured the HTML file is self-contained and can be opened by double-clicking it.
+
+You can now screenshot this page and share it with your book club friends.

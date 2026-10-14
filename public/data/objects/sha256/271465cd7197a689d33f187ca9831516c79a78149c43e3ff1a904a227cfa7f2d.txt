@@ -1,0 +1,12 @@
+
+I've found the issue. The line in question is:
+
+if not (isinstance(value, str) and value.lower() in allowed_values)
+
+I've corrected the code to match the test. Here's the updated code:
+
+```python
+if not (isinstance(value, str) and value.lower() in allowed_values):
+```
+
+The test should now pass.

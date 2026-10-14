@@ -1,0 +1,5 @@
+The folder for this benchmark run (`20261004-005709-b1d20c`) does not contain a `.git` directory, meaning this run was not tracked with Git locally. To determine the most recent Git commit changes, I would need access to the Git repository where this run was originally created or linked.
+
+Would you like me to:
+1. Search for Git history in a different location, or
+2. Check the contents of the `meta.json` or `trace.jsonl` files in this workspace for any commit-related details?

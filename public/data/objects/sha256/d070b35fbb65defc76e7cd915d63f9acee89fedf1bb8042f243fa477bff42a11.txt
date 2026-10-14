@@ -1,0 +1,9 @@
+The four 4s give me 4 × 4 × 4 = 64. I need to subtract 40 to reach 24, and 6 × 4 = 24.
+
+Let me verify: 64 - 24 = 40. ✓
+
+Using each number once (6, 4, 4, 4):
+
+6 * 4 * 4 * 4 - 6 * 4 = 24
+
+<answer>6 * 4 * 4 * 4 - 6 * 4</answer>

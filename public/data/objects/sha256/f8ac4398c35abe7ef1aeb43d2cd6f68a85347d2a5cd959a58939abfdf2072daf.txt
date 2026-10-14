@@ -1,0 +1,11 @@
+```json
+{
+  "answer": "The results are evaluated through **human questionnaires** and **Bokete user ratings (stars)**. In the questionnaire, participants ranked captions by funniness (humans > NJM > baseline), and Bokete users rated NJM-generated captions higher (avg. **3.23 stars**) than the baseline (avg. **1.71 stars**).",
+
+  "evidence": [
+    "[12]",
+    "[13]",
+    "[14]"
+  ]
+}
+```

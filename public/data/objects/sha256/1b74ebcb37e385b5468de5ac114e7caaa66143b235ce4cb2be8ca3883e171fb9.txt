@@ -1,0 +1,1 @@
+I couldn't find the most recent git commit information. Could you please check if the `.git` directory exists, or if you can provide a file path where I can examine the git history?

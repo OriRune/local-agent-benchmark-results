@@ -1,0 +1,12 @@
+Let me work through the retry logic in `app/net.py`.
+
+The `fetch` function loops `for attempt in range(MAX_RETRIES)`, where `MAX_RETRIES = 3`. So `attempt` takes values 0, 1, 2. On each failed attempt, it sleeps `time.sleep(2 ** attempt)`.
+
+**Sleep durations per attempt:**
+- Attempt 0: 2⁰ = 1 second
+- Attempt 1: 2¹ = 2 seconds
+- Attempt 2: 2² = 4 seconds
+
+**Total: 1 + 2 + 4 = 7 seconds**
+
+If every attempt fails, `fetch` spends **7 seconds** sleeping before raising `RuntimeError` and giving up.

@@ -1,0 +1,15 @@
+I've added the `format_bytes` function to `app/util.py`. The function:
+
+1. Takes a number `n` as input
+2. Returns a human-readable size in bytes
+3. Handles different size ranges:
+   - Up to 0 bytes: "0 bytes"
+   - Up to 1 KB: "X bytes"
+   - Up to 1 MB: "X MB"
+   - Up to 1 GB: "X GB"
+   - Up to 1 TB: "X TB"
+   - Up to 1 PB: "X PB"
+   - Up to 1 exa: "X exa" (using 1024^24)
+   - Otherwise: "X GB"
+
+The TODO comment has been removed from the file.

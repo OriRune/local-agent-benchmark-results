@@ -1,0 +1,6 @@
+The fix has been applied. The bug was in the `UNITS` dictionary in `app/units.py` where `"KB": 1000` was incorrectly set. The comment and the test both expect 1024-based units (1 KB = 1024 bytes), so I changed it to `"KB": 1024`.
+
+This now correctly calculates:
+- `parse_size("512 B")` → 512
+- `parse_size("1.5 KB")` → 1536 (1.5 × 1024)
+- `parse_size("2 MB")` → 2,097,152 (2 × 1024²)

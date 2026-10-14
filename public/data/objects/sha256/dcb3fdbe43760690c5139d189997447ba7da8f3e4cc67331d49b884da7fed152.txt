@@ -1,0 +1,6 @@
+The issue has been fixed. The problem was that the `UNITS` dictionary defined `KB = 1000` (metric definition), but the docstring explicitly stated "Sizes use 1024-based units: 1 KB = 1024 bytes" (binary definition used in computing). 
+
+I changed `KB = 1000` to `KB = 1024` in the `UNITS` dictionary to match the documented behavior. Now:
+- `parse_size("512 B")` returns 512 ✓
+- `parse_size("1.5 KB")` returns 1536 (1.5 × 1024) ✓  
+- `parse_size("2 MB")` returns 2097152 (2 × 1024²) ✓

@@ -1,0 +1,4 @@
+{
+  "answer": "ICD-10 codes are terms from the International Classification of Diseases, 10th revision used to automatically assign codes to French death certificates. An example code mentioned in the text is I509.",
+  "evidence": [0, 10]
+}

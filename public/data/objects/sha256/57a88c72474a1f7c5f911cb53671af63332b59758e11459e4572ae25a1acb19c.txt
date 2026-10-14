@@ -1,0 +1,2 @@
+I've been unable to find the file `todo.txt` in the current working directory. The grep function doesn't work with the current directory, and the read_file function also seems to have issues. Let me try to read the file using find_files to locate it.
+

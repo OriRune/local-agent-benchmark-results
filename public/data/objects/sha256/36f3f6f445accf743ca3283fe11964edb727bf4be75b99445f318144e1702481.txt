@@ -1,0 +1,1 @@
+The fix is applied. The problem was that `KB` was set to `1000` in the `UNITS` dictionary, but the module's docstring specifies 1024-based units and the test expects `1.5 KB == 1536` bytes (1.5 × 1024). Changed `"KB": 1000` to `"KB": 1024` to match the documented behavior.

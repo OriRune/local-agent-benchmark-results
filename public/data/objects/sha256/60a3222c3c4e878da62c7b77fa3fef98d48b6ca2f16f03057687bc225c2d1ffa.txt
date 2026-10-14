@@ -1,0 +1,16 @@
+I've created **books.html** — a single, self-contained HTML file with a dark elegant theme. Here's what it includes:
+
+- **Hero header** with a gold gradient title "My Reading Year · 2025"
+- **Stats bar** showing 22 books read, 7,868 pages turned, ~8.3 avg pages per book, and 8 genres explored
+- **Genre tags** displayed as colorful pill badges
+- **Chronological book list** with numbered entries, title, author, genre (color-coded), reading dates, and page count
+- **Footer** with a reading quote and book emojis
+
+The design features:
+- Dark background (`#1a1a2e`) with warm gold accents
+- Cormorant Garamond serif font for titles, Inter sans-serif for body text
+- Color-coded genre pills (pink for Fantasy, teal for Sci-Fi, gold for Literary Fiction, etc.)
+- Hover effects on book entries
+- Fully responsive layout
+
+Just double-click `books.html` to open it in your browser and take a screenshot for your book club! 📚

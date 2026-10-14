@@ -1,0 +1,4 @@
+All `TODO` comments from the Python code have been added to `todo.txt`. The file now includes:
+
+- `- log each failed network attempt`
+- `- add a helper function to format byte sizes`

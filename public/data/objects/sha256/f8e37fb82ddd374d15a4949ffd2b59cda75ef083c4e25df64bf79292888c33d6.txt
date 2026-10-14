@@ -1,0 +1,3 @@
+The two equilateral triangles share the side BC (since B=D and C=E, and they don't overlap, they must lie on opposite sides of the line BC). This forms a rhombus with vertices A, C, F, B. The cut goes from vertex A to vertex F, which is one of the diagonals of the rhombus. A single straight cut along a diagonal of a convex quadrilateral divides it into exactly two pieces.
+
+**2**

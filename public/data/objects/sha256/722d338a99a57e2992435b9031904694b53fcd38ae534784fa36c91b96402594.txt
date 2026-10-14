@@ -1,0 +1,31 @@
+## Setting Up the Problem
+
+I'll interpret "rolling 11 or higher" as the **sum** of all three dice being ≥ 11.
+
+**Total outcomes:** $12 \times 10 \times 4 = 480$
+
+## Counting the Complement (Sum ≤ 10)
+
+I'll count outcomes where $a + b + c \le 10$, then subtract from 480.
+
+For each value of $a$ (the d12), I count valid $(b, c)$ pairs where $b + c \le 10 - a$:
+
+| $a$ | $S = 10-a$ | Valid $(b,c)$ pairs |
+|---|---|---|
+| 1 | 9 | $8+7+6+5 = 26$ |
+| 2 | 8 | $7+6+5+4 = 22$ |
+| 3 | 7 | $6+5+4+3 = 18$ |
+| 4 | 6 | $5+4+3+2 = 14$ |
+| 5 | 5 | $4+3+2+1 = 10$ |
+| 6 | 4 | $3+2+1+0 = 6$ |
+| 7 | 3 | $2+1+0+0 = 3$ |
+| 8 | 2 | $1+0+0+0 = 1$ |
+| 9–12 | ≤1 | $0$ |
+
+**Complement total:** $26+22+18+14+10+6+3+1 = 100$
+
+## Final Probability
+
+$$P(\text{sum} \ge 11) = \frac{480 - 100}{480} = \frac{380}{480} = \frac{19}{24}$$
+
+<answer>19/24</answer>

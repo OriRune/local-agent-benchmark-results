@@ -1,0 +1,7 @@
+Done. The `README.md` has been created with all three CLI options from `app/cli.py`:
+
+- **`url`** (positional) — what to download
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+
+It also includes a usage synopsis, short description, and example commands.

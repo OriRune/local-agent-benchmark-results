@@ -1,0 +1,22 @@
+To determine the total sleep time if every attempt fails, we need to look at the `fetch` function in `app/net.py` and the configuration in `app/config.py`.
+
+1.  **`app/net.py`** shows the retry logic:
+    ```python
+    for attempt in range(MAX_RETRIES):
+        try:
+            return get(url, timeout=TIMEOUT_S)
+        except OSError:
+            time.sleep(2 ** attempt)
+    ```
+    The sleep duration for each attempt is $2^{\text{attempt}}$ seconds.
+
+2.  **`app/config.py`** defines `MAX_RETRIES = 3`.
+
+3.  **Calculation**:
+    The loop runs for `attempt` values 0, 1, and 2.
+    -   **Attempt 0**: Fails, sleeps $2^0 = 1$ second.
+    -   **Attempt 1**: Fails, sleeps $2^1 = 2$ seconds.
+    -   **Attempt 2**: Fails, sleeps $2^2 = 4$ seconds.
+    -   The loop ends after the 3rd attempt (since `range(3)` is `[0, 1, 2]`), and it raises a `RuntimeError`.
+
+**Total sleep time**: $1 + 2 + 4 = 7$ seconds.

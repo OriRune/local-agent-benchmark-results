@@ -1,0 +1,7 @@
+The variable MAX_RETRIES is not explicitly defined in any file in the current directory or its subdirectories. However, in the `notes.md` file, there is a mention of retries:
+
+> "Retries stay at 3 for now; revisit after the beta."
+
+This suggests that the current value for retries (and thus MAX_RETRIES) is **3**, though it is not explicitly defined in a configuration file or code. The notes indicate this value is temporary and may change later. 
+
+If you need a precise definition, you may need to check other parts of the system outside the current working directory, which is currently read-only for this session.

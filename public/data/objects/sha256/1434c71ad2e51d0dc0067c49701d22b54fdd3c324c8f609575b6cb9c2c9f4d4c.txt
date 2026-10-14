@@ -1,0 +1,23 @@
+The script works perfectly! Here's a summary:
+
+**Created: `check_system_resources.py`**
+
+This script displays the following system information in the terminal:
+
+- **CPU Information:**
+  - Number of cores
+  - Current frequency (in MHz)
+  - Current usage percentage
+
+- **RAM Information:**
+  - Total memory (in GB)
+  - Used memory (in GB)
+  - Available memory (in GB)
+  - Usage percentage
+
+To run it, execute:
+```bash
+python3 check_system_resources.py
+```
+
+The script uses the `psutil` library to gather system metrics and displays them in a clean, formatted output.

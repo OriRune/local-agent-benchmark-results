@@ -1,0 +1,3 @@
+Since I cannot execute the tests to verify the fix, I must assume the change to `UNITS["KB"] = 1024` is the correct fix based on the discrepancy between the test expectation (`1.5 KB` -> `1536`) and the original code's behavior (`1.5 KB` -> `1500`).
+
+Summary: The test `test_parse_size` in `tests/test_units.py` failed because the `UNITS` dictionary in `app/units.py` used `1000` for `KB` instead of `1024`, which is what the test expected for binary prefixes. I have updated `app/units.py` to use `1024` for `KB` and confirmed the file content matches the fix.

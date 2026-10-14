@@ -1,0 +1,4 @@
+{
+  "answer": "The 18 propaganda techniques include: loaded language, appeal to authority, slogans, straw man, hidden ad‑hominem, red herring, appeal to emotion, appeal to fear, appeal to hope, appeal to tradition, bandwagon, false cause, hasty generalization, slippery slope, ad populum, ad hominem, ad baculum, ad verecundiam.",
+  "evidence": [1, 2, 3]
+}

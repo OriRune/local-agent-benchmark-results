@@ -1,0 +1,3 @@
+The function `fetch` has been renamed to `download` in `app/net.py`. However, I found one remaining use of `fetch` in `app/cli.py` (line 5 and 18). I've updated that reference to `download`. 
+
+No other instances were found. The change is complete.

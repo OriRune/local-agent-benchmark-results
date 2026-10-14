@@ -1,0 +1,10 @@
+```json
+{
+  "answer": "The ICD-10 codes are not explicitly listed in the paper, but the study used a dictionary-based approach to match terms in French death certificates to ICD-10 codes. The dictionaries contained **3,539 ICD-10 codes (run 2)** and **6,392 ICD-10 codes (run 1)**.",
+
+  "evidence": [
+    4,
+    5
+  ]
+}
+```

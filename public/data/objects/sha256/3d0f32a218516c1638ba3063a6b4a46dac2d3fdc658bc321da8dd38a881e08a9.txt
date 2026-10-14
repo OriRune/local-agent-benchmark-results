@@ -1,0 +1,1 @@
+Fixed. The issue was that `UNITS` had `"KB": 1000` but the docstring and tests expected 1024-based units. Changed it to `"KB": 1024` to match the documented behavior and test expectations.

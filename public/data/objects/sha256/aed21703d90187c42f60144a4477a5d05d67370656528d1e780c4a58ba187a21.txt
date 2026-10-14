@@ -1,0 +1,1 @@
+Done. I reverted the most recent commit's change by editing the file directly: `app/config.py` now has `TIMEOUT_S = 10` again, which exactly restores the pre-commit state (the working tree now differs from `HEAD` by precisely undoing that commit, and no git commands were used).

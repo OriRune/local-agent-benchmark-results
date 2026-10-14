@@ -1,0 +1,1 @@
+["I need to make 24 using 6, 4, 4, 4 with each number used once.\n\nLet me try different combinations.\n\n6 * 4 = 24, then I have 4, 4 left. 4 - 4 = 0, so 24 + 0 = 24. That works!\n\n6 * 4 + 4 - 4 = 24.\n\nLet me verify: 6 * 4 = 24, 24 + 4 = 28, 28 - 4 = 24. Yes!\n\nSo the answer is 6 * 4 + 4 - 4.\n"]

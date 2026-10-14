@@ -1,0 +1,7 @@
+I've written `README.md`. I read the argparse definitions in `app/cli.py` directly (the sandbox blocks running programs), so the help text is exact:
+
+- **`url`** — "what to download" (positional, required)
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+
+The README lists every CLI option with its help text in a table, plus a short overview, usage, behaviour, and configuration section (drawn from `app/config.py`).

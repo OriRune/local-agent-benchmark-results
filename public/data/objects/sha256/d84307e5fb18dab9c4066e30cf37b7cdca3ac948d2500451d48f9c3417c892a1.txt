@@ -1,0 +1,12 @@
+```json
+{
+  "answer": "The paper does not explicitly state that a dataset is used to *train* their model. Instead, it describes datasets used for **tagging, evidence retrieval, and bias detection** (e.g., occupation lists, names data, and DBpedia for counter-evidence queries).",
+
+  "evidence": [
+    "[11] Our dataset comprises of the following - 1) Occupation Data 2) Names Data.",
+    "[12] Occupation Data: We gathered occupation lists from different sources...",
+    "[13] Names Data: We created a corpus of 5453 male and 6990 female names...",
+    "[23] In this section, we describe how we used SPARQL queries to fetch instances of people in DBpedia..."
+  ]
+}
+```

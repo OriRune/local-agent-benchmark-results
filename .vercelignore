@@ -1,0 +1,9 @@
+node_modules
+dist
+.astro
+.env
+.env.*
+.publication-reports
+test-results
+playwright-report
+PACKAGE_INVENTORY.json

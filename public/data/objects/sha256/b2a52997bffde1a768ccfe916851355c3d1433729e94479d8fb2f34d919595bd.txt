@@ -1,0 +1,2 @@
+
+The most recent commit updates app/config.py, raising the download timeout from 10 seconds to 20 seconds.

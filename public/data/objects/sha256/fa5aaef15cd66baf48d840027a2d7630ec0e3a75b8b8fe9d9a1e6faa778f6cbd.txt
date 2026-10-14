@@ -1,0 +1,7 @@
+The script works. I created `system_info.py` in the workspace.
+
+It reads directly from Linux `/proc` files (no external dependencies) and prints:
+- **RAM** — total and used memory in MB, plus the percentage used
+- **CPU** — current usage percentage (calculated from two quick samples of `/proc/stat`)
+
+Run it anytime with `python3 system_info.py`. On this machine it reported ~32 GB total RAM, ~9.4 GB used (29.4%), and CPU usage.

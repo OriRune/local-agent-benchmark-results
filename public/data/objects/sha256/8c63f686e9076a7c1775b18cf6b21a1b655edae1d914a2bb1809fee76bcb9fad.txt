@@ -1,0 +1,9 @@
+```json
+{
+  "name": "write_file",
+  "arguments": {
+    "path": "README.md",
+    "content": "# Project README\n\n## CLI Command Line Options\n\n"
+  }
+}
+```

@@ -1,0 +1,16 @@
+I've created a beautiful HTML page called `book_reading_log.html` that displays your 2025 reading list. Here's what it includes:
+
+**Features:**
+- **Gradient purple header** with your reading stats (20 books, ~5,800 pages, 12 genres)
+- **Card-based layout** with each book displayed in its own elegant card
+- **Color-coded genres** - each genre has a unique gradient color (Sci-Fi, Fantasy, Literary Fiction, etc.)
+- **Hover effects** - cards lift up when you hover over them
+- **Responsive design** - looks great on desktop, tablet, and mobile
+- **Icons** for dates, pages, and authors
+- **Handles missing data gracefully** - shows "Unknown Author" or "In Progress" where data was missing
+
+**To use it:**
+1. Double-click `book_reading_log.html` to open it in your browser
+2. Take a screenshot (or print to PDF) to share with your book club friends
+
+The page is self-contained with all CSS and JavaScript embedded, so it will work perfectly when opened directly in any modern browser.

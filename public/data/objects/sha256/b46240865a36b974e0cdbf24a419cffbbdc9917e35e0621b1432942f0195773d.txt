@@ -1,0 +1,5 @@
+Use only this passage. Answer the question with only the number or short answer, without explanation.
+
+As of 2000, there were 19,306 households out of which 32.8% had children under the age of 18 living with them, 44.0% were married couples living together, 11.6% had a female householder with no husband present, and 39.9% were non-families. 23.2% of all households were made up of individuals and 3.8% had someone living alone who was 65 years of age or older. The average household size was 2.59 and the average family size was 3.13.
+
+QUESTION: How many in percent of households weren't made up of individuals?

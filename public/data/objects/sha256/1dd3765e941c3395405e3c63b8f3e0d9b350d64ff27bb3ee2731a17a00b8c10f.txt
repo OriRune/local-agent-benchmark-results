@@ -1,0 +1,1 @@
+I have created a README.md file that lists the command line options of the CLI with their help text. The file includes the program name, the positional arguments, options, and example usage.

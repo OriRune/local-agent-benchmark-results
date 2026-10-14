@@ -1,0 +1,21 @@
+The script is complete and working! Here's a summary:
+
+**Created: `system_info.py`**
+
+The script displays:
+1. **System Information** - hostname, OS, kernel version, CPU cores, and memory totals
+2. **RAM Usage** - total, used, free, available, and shared memory (in human-readable format)
+3. **CPU Usage** - user, system, idle, iowait, irq, and softirq percentages
+
+**To run it:**
+```bash
+python3 system_info.py
+```
+
+**To run it as an executable:**
+```bash
+chmod +x system_info.py
+./system_info.py
+```
+
+The script uses standard Linux commands (`free`, `top`, `uname`, `nproc`) and is compatible with Linux Mint and other Linux distributions.

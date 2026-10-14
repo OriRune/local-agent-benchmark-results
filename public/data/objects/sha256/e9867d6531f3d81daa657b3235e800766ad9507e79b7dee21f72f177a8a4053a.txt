@@ -1,0 +1,5 @@
+Done. Here's a summary of the changes:
+
+- **`app/net.py`**: Renamed `def fetch(url, get)` → `def download(url, get)`
+- **`app/cli.py`**: Updated the import from `from app.net import fetch` → `from app.net import download`
+- **`app/cli.py`**: Updated the call from `fetch(args.url, get=_get)` → `download(args.url, get=_get)`

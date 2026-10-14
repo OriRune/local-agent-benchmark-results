@@ -1,0 +1,27 @@
+I'll calculate the probability of rolling 10 or higher with each die, then combine them.
+
+**Individual probabilities:**
+
+**1d12:** Rolls 1-12. Values 10, 11, 12 succeed.
+$$P_{12} = \frac{3}{12} = \frac{1}{4}$$
+
+**1d10:** Rolls 1-10. Only value 10 succeeds.
+$$P_{10} = \frac{1}{10}$$
+
+**1d2:** Rolls 1-2. No value reaches 10.
+$$P_2 = 0$$
+
+**Combined probability:**
+
+The total probability of at least one die showing 10+ is:
+$$P = 1 - (1 - P_{12})(1 - P_{10})(1 - P_2)$$
+
+$$P = 1 - \left(1 - \frac{1}{4}\right)\left(1 - \frac{1}{10}\right)(1 - 0)$$
+
+$$P = 1 - \frac{3}{4} \cdot \frac{9}{10} \cdot 1$$
+
+$$P = 1 - \frac{27}{40}$$
+
+$$P = \frac{13}{40}$$
+
+<answer>13/40</answer>

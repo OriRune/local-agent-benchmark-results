@@ -1,0 +1,18 @@
+I've created the shell script `open_apps.sh` in your workspace. However, I cannot change file permissions directly. You'll need to make it executable yourself with:
+
+```bash
+chmod +x open_apps.sh
+```
+
+Then you can run it with:
+
+```bash
+./open_apps.sh
+```
+
+The script will:
+1. Open Chrome with google.com loaded
+2. Open gedit (text editor)
+3. Open Nautilus (file manager) showing [private-home]/Documents/llama.cpp
+
+All three applications will open in the background (using `&`). If you prefer a different text editor or file manager, let me know and I can update the script.

@@ -1,0 +1,7 @@
+I found and fixed the issue in `app/units.py`. 
+
+**The problem:** The `UNITS` dictionary had `"KB": 1000` but the docstring and the test expected KB to be 1024-based. This caused `parse_size("1.5 KB")` to return 1500 instead of the expected 1536.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`.
+
+The run tool is no longer available, so I cannot verify the fix by executing the test, but the change aligns the code with both the docstring and the test expectations.

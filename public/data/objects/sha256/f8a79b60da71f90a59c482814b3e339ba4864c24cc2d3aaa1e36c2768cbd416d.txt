@@ -1,0 +1,19 @@
+To make 24 using the numbers 6, 4, 4, 4, we can use the following logic:
+1. Multiply 6 by 4 to get 24.
+2. We have two 4s remaining. We can multiply by 4 and divide by 4 (which is equivalent to multiplying by 1), or add 4 and subtract 4 (which is equivalent to adding 0).
+
+Using multiplication and division:
+$6 \times 4 = 24$
+$24 \times 4 = 96$
+$96 \div 4 = 24$
+So, the expression is $6 * 4 * 4 / 4$.
+
+Using addition and subtraction:
+$6 \times 4 = 24$
+$24 + 4 = 28$
+$28 - 4 = 24$
+So, the expression is $6 * 4 + 4 - 4$.
+
+Both are valid. I will provide the first one.
+
+<answer>6 * 4 * 4 / 4</answer>

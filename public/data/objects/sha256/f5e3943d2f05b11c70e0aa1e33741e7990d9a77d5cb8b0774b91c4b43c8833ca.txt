@@ -1,0 +1,3 @@
+I have updated the to-do list to use `localStorage`. Now, your tasks will be automatically saved whenever you add, check off, edit, or delete them, and they will persist even if you refresh or close the page.
+
+You can find the updated code in `todo.html`.

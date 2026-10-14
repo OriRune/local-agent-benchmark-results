@@ -1,0 +1,12 @@
+```json
+{
+  "answer": "The effectiveness of the proposed method, the Neural Joking Machine (NJM), is evaluated through several comparisons. In one evaluation by humans, the results from the proposed method were ranked lower than those provided by humans (22.59% vs. 67.99%) but higher than the baseline (9.41%) [2]. Furthermore, when compared to Japanese image caption generation using CNN+LSTM pre-trained by STAIR caption, Bokete users reported that the NJM generated captions averaged 3.23 stars, whereas STAIR captions averaged 1.71 stars, suggesting the NJM is funnier according to Bokete users [14]. Additionally, a questionnaire involving 30 themes from the Bokete Ogiri website was used to rank the captions provided by humans, the NJM, and STAIR caption in terms of \"funniness\" [12, 13].",
+  "evidence": [
+    [2],
+    [12],
+    [13],
+    [14],
+    [16]
+  ]
+}
+```

@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The corpus includes eighteen persuasion techniques, which range from leveraging audience emotions (such as loaded language, appeal to authority, and slogans) to logical fallacies (such as straw men, hidden ad-hominem fallacies, and red herring).",
+ "evidence": [
+  "3"
+ ]
+}
+```

@@ -1,0 +1,8 @@
+{
+  "answer": "The paper does not describe training a machine learning model; instead, it uses a dataset comprising occupation lists gathered from internet sources (crowdsourced and government lists) and a names corpus of 5453 male and 6990 female names sourced from the CMU repository, NLTK data set, and baby name records.",
+  "evidence": [
+    11,
+    12,
+    13
+  ]
+}

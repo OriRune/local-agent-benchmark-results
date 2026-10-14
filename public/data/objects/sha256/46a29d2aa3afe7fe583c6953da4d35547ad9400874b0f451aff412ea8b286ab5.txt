@@ -1,0 +1,4 @@
+{
+  "answer": "The paper does not train a machine learning model; instead, their de-biasing tool relies on Occupation Data (crowdsourced and government lists), Names Data (CMU repository, NLTK dataset, and baby name records), and DBpedia (queried via SPARQL for real-world examples).",
+  "evidence": [11, 12, 13, 23]
+}

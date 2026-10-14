@@ -1,0 +1,1 @@
+I have created the shell script `start_apps.sh` in the current directory. It opens Chrome with google.com, a text editor (gedit), and the file manager showing the directory `[private-home]/Documents/llama.cpp`. You can run it using `sh start_apps.sh` or make it executable and run it directly.

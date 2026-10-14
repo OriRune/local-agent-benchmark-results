@@ -1,0 +1,3 @@
+I found it. There's a file on the Desktop called **"trip ideas 2025.txt"** — a text file that matches your description.
+
+To confirm it's the right one, I can peek at its contents. Would you like me to open it and check?

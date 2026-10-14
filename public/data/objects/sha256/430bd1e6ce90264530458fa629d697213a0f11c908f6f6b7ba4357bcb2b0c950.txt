@@ -1,0 +1,20 @@
+Now I can calculate the total sleep time:
+
+From `app/net.py`:
+- The loop runs `range(MAX_RETRIES)`, which is `range(3)`, so attempts 0, 1, 2 (3 attempts total)
+- If every attempt fails, it sleeps `2 ** attempt` seconds after each failed attempt
+- But wait - the sleep happens **after** the exception is caught, and then it tries again. So:
+  - Attempt 0 fails → sleep `2 ** 0 = 1` second → try attempt 1
+  - Attempt 1 fails → sleep `2 ** 1 = 2` seconds → try attempt 2
+  - Attempt 2 fails → sleep `2 ** 2 = 4` seconds → loop ends, raise RuntimeError
+
+Total sleep = 1 + 2 + 4 = **7 seconds**
+
+Let me verify my understanding of the loop: `for attempt in range(3)` means attempt values are 0, 1, 2. If all fail:
+- After attempt 0 fails: sleep 2^0 = 1 sec
+- After attempt 1 fails: sleep 2^1 = 2 sec  
+- After attempt 2 fails: sleep 2^2 = 4 sec, then exit loop and raise error
+
+Total: 1 + 2 + 4 = 7 seconds
+
+**Answer: 7 seconds**

@@ -1,0 +1,1 @@
+I have created the `README.md` file, listing all the command-line options and their corresponding help text from the CLI implementation in `app/cli.py`.

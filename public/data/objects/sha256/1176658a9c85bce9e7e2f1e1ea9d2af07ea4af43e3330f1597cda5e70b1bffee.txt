@@ -1,0 +1,8 @@
+Done. I found **2 TODO comments** in the Python code and added each as a new line to `todo.txt`:
+
+| File | TODO comment | Added line |
+|------|-------------|------------|
+| `app/net.py:7` | `# TODO: log each failed attempt` | `- log each failed attempt` |
+| `app/util.py:5` | `# TODO: add a helper that formats byte sizes` | `- add a helper that formats byte sizes` |
+
+The other Python files (`app/cli.py`, `app/config.py`, `app/units.py`, `app/__init__.py`, `tests/test_units.py`) contain no TODO comments.

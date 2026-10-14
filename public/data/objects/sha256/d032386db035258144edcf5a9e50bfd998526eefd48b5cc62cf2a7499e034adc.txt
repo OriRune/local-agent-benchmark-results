@@ -1,0 +1,14 @@
+Let's analyze the statements given by Scarlett, Mia, and Penelope:
+
+1. Scarlett: "If Penelope is a sinner then Penelope is a saint."
+   - This statement is contradictory because a sinner cannot be a saint. Therefore, this statement must be false. Hence, Scarlett is a sinner.
+
+2. Mia: "Penelope is a sinner and Scarlett is a sinner."
+   - Since Scarlett is a sinner (as determined above), Mia's statement that Scarlett is a sinner is true. Therefore, Mia is telling the truth, which means Mia is a saint.
+
+3. Penelope: "Scarlett is a sinner if and only if Mia is a saint."
+   - We already know that Scarlett is a sinner and Mia is a saint. Penelope's statement is consistent with this information. Therefore, Penelope is telling the truth, which means Penelope is a saint.
+
+So, the final answer is:
+
+<answer>Scarlett is a sinner, Mia is a saint, and Penelope is a saint</answer>.

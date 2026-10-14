@@ -1,0 +1,20 @@
+To add a function `format_bytes(n)` to `app/util.py` that returns a human-readable size, you can follow these steps:
+
+1. Open the `app/util.py` file in a text editor.
+2. Add the following function to the file:
+
+```python
+def format_bytes(n):
+    """Convert a number of bytes into a human-readable format."""
+    for unit in ['bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']:
+        if n < 1024.0:
+            return f"{n:.1f} {unit}"
+        n /= 1024.0
+    return f"{n:.1f} YB"
+```
+
+3. Save the changes to the `app/util.py` file.
+
+The `format_bytes` function works by dividing the number of bytes by 1024 iteratively until it finds the appropriate unit (bytes, KB, MB, etc.) that results in a value less than 1024. It formats the number to one decimal place and appends the corresponding unit to the result.
+
+Make sure to test the function with different values to ensure it works as expected. If you encounter any issues or need further assistance, please let me know.

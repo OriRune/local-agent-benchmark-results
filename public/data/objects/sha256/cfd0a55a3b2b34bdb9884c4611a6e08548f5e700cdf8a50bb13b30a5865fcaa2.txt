@@ -1,0 +1,12 @@
+# T3
+
+**Result:** fail · done · 1 steps · 0 calls · 0 s
+
+## user
+
+Change MAX_RETRIES to 5.
+
+## assistant
+
+I need to find the value of MAX_RETRIES and change it to 5. Let me look for this value in the project directory.
+

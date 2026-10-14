@@ -1,0 +1,12 @@
+Sure! Here's a template for a chat bot that uses the letter 'o' as a keyword:
+
+```
+Bot: Please provide your location to get the weather forecast.
+User: [User provides location]
+Bot: *Fetching weather data for [User's location]* The current weather in [User's location] is sunny with a high of 75°F and a low of 55°F. Expect light winds throughout the day.
+Bot: Would you like to know the weather forecast for tomorrow as well?
+User: Yes
+Bot: *Fetching tomorrow's weather forecast for [User's location]* Tomorrow in [User's location] will be partly cloudy with a high of 70°F and a low of 50°F. There is a slight chance of rain in the evening.
+```
+
+This template includes the keyword 'o' at least 6 times and highlights the sections as requested.

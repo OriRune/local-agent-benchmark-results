@@ -1,0 +1,14 @@
+To make 24 using the numbers 6, 2, 2, and 4, we can use the following combination:
+
+1. Subtract 2 from 6 to get 4: $(6 - 2) = 4$
+2. Add 4 to 2 to get 6: $(2 + 4) = 6$
+3. Multiply the results: $4 \times 6 = 24$
+
+The expression is $(6 - 2) * (2 + 4)$.
+
+Another valid solution is $6 * 4 * 2 / 2$, which simplifies to $24 * 1 = 24$.
+Another valid solution is $6 * 4 + 2 - 2$, which simplifies to $24 + 0 = 24$.
+
+I will provide the first one.
+
+<answer>(6 - 2) * (2 + 4)</answer>

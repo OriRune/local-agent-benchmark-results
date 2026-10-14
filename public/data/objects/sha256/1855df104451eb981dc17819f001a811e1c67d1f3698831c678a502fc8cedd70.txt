@@ -1,0 +1,13 @@
+To find the shortest path from the starting point `*` to the destination `#`, we first identify their coordinates in the grid.
+
+The grid is 8 rows by 9 columns.
+- **Start (`*`)**: Located at Row 7, Column 7 (0-indexed).
+- **Destination (`#`)**: Located at Row 7, Column 8 (0-indexed).
+
+Looking at the last row (Row 7): `O X O O X O X * #`
+- The cell at index 7 is `*`.
+- The cell at index 8 is `#`.
+
+Since the destination is immediately to the right of the starting point, the shortest path is a single move to the right.
+
+<answer>right</answer>

@@ -1,0 +1,3 @@
+```json
+{"name": "find_files", "arguments": {"pattern": "proxy.ini", "path": ".."}}
+```

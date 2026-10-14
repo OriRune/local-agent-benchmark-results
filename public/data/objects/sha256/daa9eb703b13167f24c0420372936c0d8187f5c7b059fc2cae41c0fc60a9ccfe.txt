@@ -1,0 +1,14 @@
+I've updated the to-do list to persist items across page reloads using localStorage. The changes include:
+
+1. Added localStorage saving/loading functionality
+2. Items will now:
+   - Save automatically when modified (editing, adding, deleting)
+   - Load on page reload
+   - Maintain completion status
+
+The file `todo_list.html` now has persistent storage capabilities. You can test it by:
+1. Adding items
+2. Reloading the page
+3. Seeing your list restored
+
+Would you like me to explain how the localStorage implementation works, or make any adjustments to the persistence features?

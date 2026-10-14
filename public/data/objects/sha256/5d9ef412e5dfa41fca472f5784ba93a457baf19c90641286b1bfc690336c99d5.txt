@@ -1,0 +1,18 @@
+Looking at the grid, I need to find the shortest path from * at (row 11, col 7) to # at (row 1, col 5).
+
+Let me trace a BFS path:
+
+- (11,7) → (10,7) → (9,7) → (9,8) → (8,8) → (7,8) → (6,8) → (5,8) → (4,8) → (3,8) → (3,7) → (3,6) → (3,5) → (3,4) → (2,4) is blocked... let me re-check.
+
+Actually, let me trace more carefully:
+- (11,7) up to (10,7) up to (9,7) up to (8,7) is X. So go (9,7)→(9,8)→(8,8)→(7,8)→(6,8)→(5,8)→(4,8)→(3,8)→(3,7)→(3,6)→(3,5)→(3,4)→(2,4) is X.
+
+Let me try: (3,5)→(2,5) is X. (3,4)→(2,4) is X.
+
+Alternative: (3,6)→(2,6) is O → (1,6) is O → (1,5) is #.
+
+Path: (11,7)→(10,7)→(9,7)→(9,8)→(8,8)→(7,8)→(6,8)→(5,8)→(4,8)→(3,8)→(3,7)→(3,6)→(2,6)→(1,6)→(1,5)
+
+Directions: up, up, right, up, up, up, up, up, up, left, left, up, up, left
+
+<answer>up up right up up up up up up left left up up left</answer>

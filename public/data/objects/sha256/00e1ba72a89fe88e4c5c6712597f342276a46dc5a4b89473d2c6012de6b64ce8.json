@@ -1,0 +1,1 @@
+[{"args":{"path":"home/orion/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/f17ff9cea416d77dbf41a3e3-10e9b03d45/workspace/project"},"name":"list_dir","result":"error: no such folder: home/orion/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/f17ff9cea416d77dbf41a3e3-10e9b03d45/workspace/project","status":"error"}]

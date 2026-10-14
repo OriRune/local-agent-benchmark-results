@@ -1,0 +1,12 @@
+Here is a minimal JSON template for a weather chat bot. Use the *o* keyword placeholders to capture location and forecast. Replace the empty strings with actual values when running.
+
+```json
+{
+  "oPrompt": "*Enter your location:*",
+  "oLocation": "",
+  "oForecast": "",
+  "oResponse": "*Weather for {oLocation}: {oForecast}*",
+  "oKeyword": "weather",
+  "oTemplate": "..."
+}
+```

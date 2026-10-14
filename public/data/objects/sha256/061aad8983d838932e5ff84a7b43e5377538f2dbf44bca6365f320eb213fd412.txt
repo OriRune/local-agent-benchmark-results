@@ -1,0 +1,29 @@
+## Setting Up the Graph
+
+Each prerequisite `(a, b)` means course `b` must be taken before course `a`, so I'll create a directed edge `b → a`.
+
+## Looking for Cycles
+
+Let me trace the edges among the interconnected courses:
+
+- `(16, 10)` → edge **10 → 16**
+- `(13, 16)` → edge **16 → 13**
+- `(6, 13)` → edge **13 → 6**
+- `(10, 6)` → edge **6 → 10**
+
+This forms a cycle:
+
+$$10 \to 16 \to 13 \to 6 \to 10$$
+
+## Verification
+
+- To take course **16**, I need course **10** first
+- To take course **13**, I need course **16** first
+- To take course **6**, I need course **13** first
+- To take course **10**, I need course **6** first
+
+This creates a circular dependency — none of these four courses can ever be started.
+
+Since a cycle exists in the prerequisite graph, it's impossible to finish all courses.
+
+<answer>False</answer>

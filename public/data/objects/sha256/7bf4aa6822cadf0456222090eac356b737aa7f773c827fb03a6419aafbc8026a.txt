@@ -1,0 +1,10 @@
+The sandbox is fully blocked this session, so I can't execute code. But the fix is straightforward and correct.
+
+**Why the test failed:** `app/units.py` had a mismatch between its docstring and its data. The docstring says *"Sizes use 1024-based units: 1 KB = 1024 bytes"*, but the `UNITS` dict defined `"KB": 1000`. So `parse_size("1.5 KB")` returned `int(1.5 * 1000) = 1500`, not the expected `1536`.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` so the dict matches the documented 1024-based convention. Now:
+- `parse_size("512 B")` → 512 ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = 1536 ✓
+- `parse_size("2 MB")` → `int(2 * 1024**2)` = 2 * 1024 * 1024 ✓
+
+The other assertions already passed (MB and GB were already 1024-based), so only KB needed correcting. I couldn't run the test this session since the sandbox denies all program execution, but the change is minimal and directly addresses the discrepancy.

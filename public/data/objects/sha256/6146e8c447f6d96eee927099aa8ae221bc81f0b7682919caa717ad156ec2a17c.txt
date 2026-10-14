@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The results are evaluated using a questionnaire in which respondents rank the captions (human-generated, NJM, and STAIR caption) in order of 'funniness' across 30 selected themes; 16 questionnaires were completed and the percentage of captions ranked 'funniest' for each method is reported.",
+  "evidence": [12, 13]
+}
+```

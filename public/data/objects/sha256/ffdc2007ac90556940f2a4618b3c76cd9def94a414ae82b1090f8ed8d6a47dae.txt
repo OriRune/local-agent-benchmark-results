@@ -1,0 +1,7 @@
+Done! I've added the `format_bytes(n)` function to `app/util.py`. The function returns a human-readable size string by:
+- Returning bytes directly if n < 1024
+- Converting to KB if n < 1MB
+- Converting to MB if n < 1GB
+- Otherwise converting to GB
+
+The function uses formatting to 2 decimal places and is placed after the `clamp` function, with the TODO comment removed.

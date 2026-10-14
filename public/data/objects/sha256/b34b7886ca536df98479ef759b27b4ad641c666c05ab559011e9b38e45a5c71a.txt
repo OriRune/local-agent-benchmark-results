@@ -1,0 +1,4 @@
+{
+  "answer": "The system is trained on the curated Occupation Data (a list of occupations classified as gender‑specific or neutral) and the Names Data (a gender‑annotated name list of 5 453 male and 6 990 female names from the CMU repository, combined with NLTK/baby‑name records).",
+  "evidence": [11, 12, 13]
+}

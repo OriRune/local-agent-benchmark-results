@@ -1,0 +1,17 @@
+Done. `app/util.py` now has:
+
+```python
+def format_bytes(n):
+    """Return a human-readable size such as '1.5 KB'."""
+    value = float(n)
+    for unit in ("B", "KB", "MB", "GB", "TB"):
+        if value < 1024.0 or unit == "TB":
+            if unit == "B":
+                return f"{int(value)} {unit}"
+            return f"{value:.1f} {unit}"
+        value /= 1024.0
+```
+
+And the old `# TODO: add a helper that formats byte sizes` comment is gone.
+
+It returns `1.5 KB` for 1536, `1023 B` for small values, and scales through MB/GB/TB.

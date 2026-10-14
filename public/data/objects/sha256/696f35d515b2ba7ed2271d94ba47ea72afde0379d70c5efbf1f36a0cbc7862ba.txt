@@ -1,0 +1,9 @@
+The shortest path from '*' to '#' is found using Breadth-First Search (BFS).
+
+Start point (*): (4, 1)
+Destination point (#): (4, 12)
+
+The shortest path found is:
+right right right right right right right right right right right right
+
+<answer>right right right right right right right right right right right right</answer>

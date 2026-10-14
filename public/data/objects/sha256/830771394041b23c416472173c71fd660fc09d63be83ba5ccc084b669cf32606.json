@@ -1,0 +1,1 @@
+[{"args":{"path":"","pattern":"*.git","sort":"name"},"name":"find_files","result":"no files match *.git","status":"ok"},{"args":{"path":"","pattern":"*.git","sort":"name"},"name":"find_files","result":"error: you have already made this exact call and nothing has changed since, so it would give the same result. Try a different approach, or give your answer.","status":"repeat"}]

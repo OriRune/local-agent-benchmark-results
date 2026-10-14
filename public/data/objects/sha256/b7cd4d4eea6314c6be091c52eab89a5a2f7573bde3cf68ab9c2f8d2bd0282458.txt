@@ -1,0 +1,21 @@
+| Day | Destination | Key Activities |
+| :--- | :--- | :--- |
+| 1 | Delhi | Arrive, India Gate, Connaught Place |
+| 2 | Delhi | Red Fort, Jama Masjid, Humayun's Tomb |
+| 3 | Delhi to Jaipur | Train/Bus, Amber Fort, Jaipur City Palace |
+| 4 | Jaipur | Hawa Mahal, Jantar Mantar, Pink City |
+| 5 | Jaipur to Agra | Train, Taj Mahal (Sunrise), Agra Fort |
+| 6 | Agra | Fatehpur Sikri, Itmad-ud-Daulah's Tomb |
+| 7 | Agra to Delhi | Return to Delhi, Airport Transfer |
+
+******
+
+| Day | Destination | Key Activities |
+| :--- | :--- | :--- |
+| 1 | Beijing | Arrive, Tiananmen Square, Forbidden City |
+| 2 | Beijing | Temple of Heaven, Summer Palace |
+| 3 | Beijing | Great Wall (Mutianyu), Local Culture |
+| 4 | Beijing to Xi'an | High-speed train, Xi'an City Wall |
+| 5 | Xi'an | Terracotta Warriors, Big Wild Goose Pagoda |
+| 6 | Xi'an | Muslim Quarter, Shaanxi History Museum |
+| 7 | Xi'an to Beijing | Return to Beijing, Departure |

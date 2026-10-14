@@ -1,0 +1,21 @@
+To answer the question "what dataset was used in their experiment?", we need to find the relevant information in the provided paper.
+
+From paragraph [28], we can see:
+
+"Here we compare the efficiency of our system with four widely used annotation tools. We extract 100 sentences from CoNLL 2003 English NER BIBREF8 training data, with each sentence containing at least 4 entities."
+
+Thus, the dataset used in their experiment is the CoNLL 2003 English NER training data.
+
+Evidence: [28]
+
+Return JSON object:
+
+{
+  "answer": "CoNLL 2003 English NER training data",
+  "evidence": [28]
+}
+</think>
+{
+  "answer": "CoNLL 2003 English NER training data",
+  "evidence": [28]
+}

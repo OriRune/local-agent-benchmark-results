@@ -1,0 +1,1 @@
+I have created a `README.md` file for the project, which includes the usage pattern and a table listing every command line option along with its corresponding help text extracted from `app/cli.py`.

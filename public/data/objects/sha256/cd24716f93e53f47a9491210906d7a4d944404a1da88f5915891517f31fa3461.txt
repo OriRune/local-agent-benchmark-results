@@ -1,0 +1,13 @@
+Done! I've added the `format_bytes(n)` function to `app/util.py` that returns human-readable byte sizes. The TODO comment has been removed and replaced with the implementation:
+
+```python
+def format_bytes(n):
+    """Return human-readable byte size."""
+    if n < 1024:
+        return f"{n} B"
+    if n < 1024 * 1024:
+        return f"{n / 1024:.1f} KB"
+    if n < 1024 * 1024 * 1024:
+        return f"{n / (1024 * 1024):.1f} MB"
+    return f"{n / (1024 * 1024 * 1024):.1f} GB"
+```

@@ -1,0 +1,2 @@
+
+{"name": "edit_file", "arguments": {"path": "notes.md", "old_text": "", "new_text": ""}}

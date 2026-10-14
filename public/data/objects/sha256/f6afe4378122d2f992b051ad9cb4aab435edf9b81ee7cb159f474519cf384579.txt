@@ -1,0 +1,12 @@
+Working it out from `app/net.py` and `app/config.py`:
+
+- `MAX_RETRIES = 3`, so `range(MAX_RETRIES)` yields `attempt = 0, 1, 2`.
+- On each failed attempt it sleeps `2 ** attempt` seconds:
+  - attempt 0 → 2⁰ = **1 s**
+  - attempt 1 → 2¹ = **2 s**
+  - attempt 2 → 2² = **4 s**
+- After attempt 2 fails, the loop ends and raises `RuntimeError` — there is no sleep after the final attempt.
+
+Total sleeping = 1 + 2 + 4 = **7 seconds**.
+
+(Note: the 20 s `TIMEOUT_S` is the per-request network read timeout, not a `time.sleep`, so it isn't included.)

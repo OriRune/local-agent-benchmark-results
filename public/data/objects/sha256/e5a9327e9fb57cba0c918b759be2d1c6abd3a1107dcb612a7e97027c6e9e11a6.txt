@@ -1,0 +1,4 @@
+{
+  "answer": "Results are evaluated using a human questionnaire ranking captions for funniness and by comparing the number of stars assigned on the Bokete website.",
+  "evidence": [8, 12, 14]
+}

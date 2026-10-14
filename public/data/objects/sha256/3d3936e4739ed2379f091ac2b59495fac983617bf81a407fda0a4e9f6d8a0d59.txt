@@ -1,0 +1,16 @@
+Based on the clues provided, we can deduce the occupants of each house as follows:
+
+1.  **House 3:** Clue 1 states that **Bob** is in the third house.
+2.  **House 2:** Clue 2 states that **Arnold** is in the second house.
+3.  **House 1:** Since Bob is in House 3 and Arnold is in House 2, the only remaining person, **Alice**, must be in House 1.
+
+We can verify the other details to ensure consistency:
+*   Since Arnold is in House 2, Clue 3 says he is the **Brit**.
+*   Since Alice is in House 1, Clue 4 says she is the **Dane**.
+*   Since Alice is the Dane, Clue 5 says she owns the **Dog**.
+*   Since Arnold is in House 2, Clue 6 says he owns the **Cat**.
+*   This leaves Bob (House 3) with the **Bird** and the nationality **Chinese**.
+
+The logic holds up. The person living in House 1 is Alice.
+
+<answer>Alice</answer>

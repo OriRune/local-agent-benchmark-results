@@ -1,0 +1,1 @@
+<answer>The probability of rolling 10 or higher with your dice is 1/6.</answer>

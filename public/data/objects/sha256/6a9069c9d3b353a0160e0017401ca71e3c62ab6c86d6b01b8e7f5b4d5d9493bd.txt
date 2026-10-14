@@ -1,0 +1,12 @@
+# T4
+
+**Result:** fail · done · 1 steps · 0 calls · 2 s
+
+## user
+
+Create a file hello.txt containing exactly this line: hello from the local agent
+
+## assistant
+
+write_file(path: "hello.txt", content: "hello from the local agent")
+

@@ -1,0 +1,6 @@
+{
+  "name": "list_dir",
+  "arguments": {"path": ".", "description": "List files and folders in a path with sizes. Includes subfolders recursively. Defaults to current directory."}
+}
+
+<tool_call>

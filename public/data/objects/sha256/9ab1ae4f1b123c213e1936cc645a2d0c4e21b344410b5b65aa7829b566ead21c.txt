@@ -1,0 +1,5 @@
+Your to-do list already remembers items across reloads — no changes needed.
+
+On line 67 it loads your saved tasks from the browser's local storage when the page opens, and the `save()` function (line 73) writes them back automatically whenever you add, check, edit, delete, or clear tasks. So just reload the page and your list will be right there.
+
+One note: this storage lives in the browser you opened the file with. If you clear your browser data or open it in a different browser/device, the list resets. Want me to add cloud syncing instead?

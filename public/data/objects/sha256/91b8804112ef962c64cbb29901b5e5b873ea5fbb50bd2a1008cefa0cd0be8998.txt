@@ -1,0 +1,10 @@
+I have identified the issue in `app/units.py`. The `UNITS` dictionary incorrectly defined `"KB"` as `1000` bytes, whereas the docstring and the tests expected it to be `1024` bytes (1024-based units).
+
+I updated `app/units.py` to set `"KB"` to `1024`.
+
+```python
+"""Byte-size parsing. Sizes use 1024-based units: 1 KB = 1024 bytes."""
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+This change ensures that `parse_size("1.5 KB")` correctly returns `1536`, satisfying the test in `tests/test_units.py`.

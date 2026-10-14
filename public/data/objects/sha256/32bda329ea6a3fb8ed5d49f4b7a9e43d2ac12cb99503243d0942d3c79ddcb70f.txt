@@ -1,0 +1,17 @@
+I've created a beautiful HTML page called `books.html` that displays your 2025 book reading data. The page features:
+
+**Design features:**
+- Elegant serif typography with a soft gradient background
+- A purple gradient theme that looks sophisticated
+- Statistics at the top showing total books (~22), pages read (~8,000), and months covered (10)
+- Clean, readable table with hover effects
+- Book titles with a book emoji 📖
+- Genre badges with gradient backgrounds
+- Responsive design that works on all devices
+
+**To use it:**
+1. Save the file as `books.html` in your workspace folder
+2. Double-click it to open in your browser
+3. Take a screenshot to share with your book club friends
+
+The page is self-contained and will work perfectly when you double-click it—no internet connection needed!

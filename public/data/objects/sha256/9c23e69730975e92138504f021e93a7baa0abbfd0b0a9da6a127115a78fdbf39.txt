@@ -1,0 +1,6 @@
+The function `format_bytes(n)` has been added to `app/util.py`, and the TODO comment has been removed. The file now includes the new helper function for formatting byte sizes into human-readable strings like '1.5 KB'. 
+
+Summary:
+- Added `def format_bytes(n):` with logic for B, KB, MB, GB, TB formatting
+- Removed the TODO comment about adding this helper
+- File updated successfully (+11 lines added, -1 line removed)

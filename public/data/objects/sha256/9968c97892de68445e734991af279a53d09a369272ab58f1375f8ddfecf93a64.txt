@@ -1,0 +1,1 @@
+The most recent git commit (`367ac49fb2d45b9b561cf3fb4cf596eec1616504`) changed `TIMEOUT_S` from `10` to `20` in `app/config.py`. I have reverted this change by editing `app/config.py` directly to set `TIMEOUT_S = 10` again.

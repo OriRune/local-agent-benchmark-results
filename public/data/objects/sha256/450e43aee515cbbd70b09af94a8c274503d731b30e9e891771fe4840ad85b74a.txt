@@ -1,0 +1,10 @@
+The most recent commit is `83e4bb7` — "raise the download timeout from 10 to 20 seconds" (author `eval <eval@local>`, dated 2026-10-10).
+
+It changed one file, `app/config.py`, with a single line edit:
+
+```diff
+-TIMEOUT_S = 10
++TIMEOUT_S = 20
+```
+
+So the download timeout constant went from 10 seconds to 20; nothing else in the file (e.g. `MAX_RETRIES = 3`, `USER_AGENT`) was touched. For context, this is the second of only two commits in the repo (the first being `410572e` "initial downloader").

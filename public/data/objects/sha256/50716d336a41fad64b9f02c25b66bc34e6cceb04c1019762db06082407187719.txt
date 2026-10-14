@@ -1,0 +1,10 @@
+To make 24 using the numbers 6, 4, 4, 4 with each number used only once and the operators +, -, *, /, one possible solution is:
+
+<answer>6 * 4 * (4 / 4)</answer>
+
+Here's the breakdown:
+1. First, divide one of the 4s by another 4: (4 / 4) = 1
+2. Then, multiply the result by 6: 6 * 1 = 6
+3. Finally, multiply this result by the remaining 4: 6 * 4 = 24
+
+This expression uses each of the numbers 6, 4, 4, and 4 exactly once and combines them using the allowed operators to achieve the target of 24.

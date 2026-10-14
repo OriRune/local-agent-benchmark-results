@@ -1,0 +1,1 @@
+{"name": "ask_user", "arguments": {"question": "How many seconds does the fetch tool spend sleeping in total before giving up if every attempt fails, given that the user's note says the web is not available in this session?"}}

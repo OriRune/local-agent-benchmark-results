@@ -1,0 +1,5 @@
+Looking for a way to make 24 using 10, 4, 9, 7:
+
+Try: 10 * 4 - 9 - 7 = 40 - 9 - 7 = 24 ✓
+
+<answer>10 * 4 - 9 - 7</answer>

@@ -1,0 +1,10 @@
+```json
+{
+ "answer": "ICD-10 stands for the International Classification of Diseases, 10th revision. The paper mentions that the system used dictionaries containing 3,539 ICD-10 codes (run 2) and 6,392 ICD-10 codes (run 1), and provides I509 as an example of a code.",
+ "evidence": [
+  0,
+  5,
+  10
+ ]
+}
+```

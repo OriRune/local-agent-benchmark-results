@@ -1,0 +1,11 @@
+I have the list of files in the app folder. The files and their sizes are:
+- __init__.py: 0 bytes
+- cli.py: 903 bytes
+- config.py: 101 bytes
+- net.py: 324 bytes
+- units.py: 243 bytes
+- util.py: 100 bytes
+
+The largest file is cli.py with 903 bytes. There are 6 Python files in the app folder.
+
+So the answer: 6 Python files, largest is cli.py.

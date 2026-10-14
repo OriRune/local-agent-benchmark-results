@@ -1,0 +1,5 @@
+I have renamed the function fetch to download in app/net.py and updated all references in the project. The changes were made in:
+1. app/net.py: renamed the function definition
+2. app/cli.py: updated the import statement and the function call
+
+No other files were found to reference the old fetch function. The task is complete.

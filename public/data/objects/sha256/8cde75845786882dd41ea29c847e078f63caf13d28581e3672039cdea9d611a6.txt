@@ -1,0 +1,1 @@
+The file "proxy.ini" was found in the directory containing the project (one level up). However, without accessing its contents, I cannot directly determine the proxy host and port. If you need this information, you may need to open the file manually or provide specific details about its configuration. Let me know how you'd like to proceed!

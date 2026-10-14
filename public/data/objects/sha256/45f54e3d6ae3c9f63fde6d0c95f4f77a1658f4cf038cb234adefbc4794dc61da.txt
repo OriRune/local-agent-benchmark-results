@@ -1,0 +1,4 @@
+{
+  "answer": "They use a domain‑specific word2vec embedding model trained on 189,206 financial articles from Factiva.",
+  "evidence": [4, 10]
+}

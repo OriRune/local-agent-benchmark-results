@@ -1,0 +1,12 @@
+**Fix applied.** The `KB` unit was incorrectly set to `1000` in `app/units.py` while the module's docstring and the test both expect 1024-based units (1 KB = 1024 bytes).
+
+Changed line 2 from:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+to:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+This makes `parse_size("1.5 KB")` return `1536` as expected.

@@ -1,0 +1,1 @@
+[{"args":{"command":"git log -1 --pretty=format:\"%s\""},"execution":{"backend":"linux","category":"inspect","detail":"","duration_seconds":0.25973664899356663,"executed":true,"exit_code":0,"output_truncated":false,"termination":"exited"},"name":"run","result":"\"raise the download timeout from 10 to 20 seconds\"\n[sandbox: linux; exited; exit code 0; 0.26 s]","status":"ok"}]

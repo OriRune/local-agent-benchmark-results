@@ -1,0 +1,16 @@
+**Files have been moved into the new organization**
+
+- **Audio files**  
+  - `A Passing Rain Shower.mp3` → `Sheet‑Music/01. Audio/A Passing Rain Shower.mp3`  
+  - `05 Concertino for Harp and... – ii) Lento.m4a` → `Sheet‑Music/01. Audio/05 Concertino for Harp and... – ii) Lento.m4a`
+
+- **Sheet‑Music**  
+  - `AAA My compositions/` → `Sheet‑Music/07. Personal Compositions`  
+  - `Concert summer 2025/` → `Sheet‑Music/01. Audio` (already moved)  
+  - `Nadia Birkenstock/` → `Sheet‑Music/02. Baroque / Renaissance`  
+  - `Other harp/` → `Sheet‑Music/02. Baroque / Renaissance/Other harp`  
+  - `Recorder/` → `Sheet‑Music/02. Baroque / Renaissance/Recorder`  
+  - `renaissance/` → `Sheet‑Music/02. Baroque / Renaissance/renaissance`  
+  - `Sight Reading/` → `Sheet‑Music/06. Sight‑Reading Practice`
+
+All files are now neatly grouped by **genre** and **type**, with a clear separation between audio and sheet‑music. Let me know if you need any further adjustments!

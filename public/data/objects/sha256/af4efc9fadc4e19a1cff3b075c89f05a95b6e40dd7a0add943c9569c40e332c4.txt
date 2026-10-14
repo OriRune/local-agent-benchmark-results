@@ -1,0 +1,5 @@
+Done! I created `hello.txt` in the workspace directory with the exact line:
+
+```
+hello from the local agent
+```

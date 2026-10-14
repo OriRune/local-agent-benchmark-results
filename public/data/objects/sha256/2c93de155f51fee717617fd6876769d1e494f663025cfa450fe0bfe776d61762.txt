@@ -1,0 +1,4 @@
+{
+  "answer": "They use two datasets: (1) Occupation Data, gathered from various internet sources including crowdsourced lists and government lists, and (2) Names Data, a corpus of 5453 male and 6990 female names sourced from the CMU repository of names.",
+  "evidence": [11, 12, 13]
+}

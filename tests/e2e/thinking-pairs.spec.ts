@@ -1,0 +1,52 @@
+import { expect, test } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+import { readFile } from 'node:fs/promises';
+import { gunzipSync } from 'node:zlib';
+import type { OverviewData } from '../../src/lib/public-types';
+import type { Comparison, Trial, Attempt } from '../../src/lib/public-contract';
+
+for (const archived of [false, true]) test(`${archived ? 'archived' : 'current'} thinking drilldown uses exact scored pairs and pinned canonical answers`, async ({ page }) => {
+  const releaseId = JSON.parse(await readFile('public/data/latest.json', 'utf8')).release_id;
+  const release = JSON.parse(await readFile(`public/data/releases/${releaseId}/release.json`, 'utf8'));
+  async function object(id: string) {
+    const record = release.objects.find((o: { id: string }) => o.id === id);
+    const bytes = await readFile(`public/data/${record.path}`);
+    return JSON.parse((record.encoding === 'gzip' ? gunzipSync(bytes) : bytes).toString());
+  }
+  const index: OverviewData = await object(release.index_object_id);
+  const facts = index.comparisons.find(c => c.verified && c.score_pairs > 20 && c.improved > 0 && c.worsened > 0)!;
+  expect(facts, 'Representative edition must exercise paired gains and regressions').toBeTruthy();
+  const config = index.configurations.find(c => c.id === facts.configuration_id)!;
+  const artifact = index.artifacts.find(a => a.id === config.artifact_id)!;
+  const checkpoint = index.checkpoints.find(c => c.id === artifact.checkpoint_id)!;
+  const objectId = release.model_objects[checkpoint.id];
+  const model: { comparisons: Comparison[]; trials: Trial[]; attempts: Attempt[] } = await object(objectId);
+  const full = model.comparisons.find(c => c.id === facts.id)!;
+  const requests: string[] = [];
+  page.on('request', request => requests.push(request.url()));
+  await page.goto(archived ? `/archive/?release=${releaseId}&checkpoint=${checkpoint.id}&configuration=${config.id}&condition=${facts.off_condition_id}&suite=${facts.suite_id}` : `/models/${checkpoint.slug}/?configuration=${config.id}&condition=${facts.off_condition_id}&suite=${facts.suite_id}`);
+  const detail = page.locator('details').filter({ has: page.getByText('Inspect individual matched questions', { exact: true }) });
+  await expect(detail).toBeVisible();
+  expect(requests.some(url => url.includes(objectId))).toBe(false);
+  await detail.locator('summary').click();
+  const rows = detail.locator('tbody tr');
+  await expect(rows).toHaveCount(20);
+  expect(requests.some(url => url.includes(objectId))).toBe(true);
+  expect((await new AxeBuilder({ page }).include('details:has(select)').withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze()).violations).toEqual([]);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
+  await detail.getByRole('button', { name: 'Next pairs', exact: true }).click();
+  await expect(rows).toHaveCount(Math.min(full.pairs.length - 20, 20));
+  await detail.getByLabel('Paired outcome').selectOption('worse');
+  await expect(rows).toHaveCount(Math.min(facts.worsened, 20));
+  const pair = full.pairs.find(pair => pair.on_score < pair.off_score)!;
+  const trial = model.trials.find(t => t.id === pair.on_trial_id)!;
+  const attempt = model.attempts.find(a => a.trial_id === trial.id && a.canonical)!;
+  await expect(rows.first()).toContainText(`${(pair.off_score * 100).toFixed(1)}% → ${(pair.on_score * 100).toFixed(1)}%`);
+  await rows.first().getByRole('link', { name: 'On answer', exact: true }).click();
+  const query = new URL(page.url()).searchParams;
+  expect(query.get('release')).toBe(releaseId);
+  expect(query.get('question')).toBe(trial.question_id);
+  expect(query.get('attempt')).toBe(attempt.id);
+  expect(query.get('condition')).toBe(facts.on_condition_id);
+  await expect(page.locator('.evidence pre').first()).toBeVisible();
+});

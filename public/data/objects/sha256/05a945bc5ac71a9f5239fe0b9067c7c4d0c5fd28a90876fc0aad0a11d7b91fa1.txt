@@ -1,0 +1,3 @@
+No one was available to confirm, so I'll go with my best judgment: the closest match to "vacation ideas" is **`Desktop/trip ideas 2025.txt`** — a plain text file about trips. The other likely candidate is **`Documents/Personal/Summer Break ideas.docx`** (a Word file).
+
+Summary: there's no file literally named "vacation ideas" in this directory. The best matches are `trip ideas 2025.txt` (text) and `Summer Break ideas.docx` (Word); I'd assume the former is what you're after. The other "vacation" files (`vacation policy 2026.pdf`, `vacation request form.docx`) are work/HR documents, and the `Pictures/Vacation 2023` folder holds photos.

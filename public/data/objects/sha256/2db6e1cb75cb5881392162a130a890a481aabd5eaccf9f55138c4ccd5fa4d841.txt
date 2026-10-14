@@ -1,0 +1,18 @@
+I have created a shell script named `setup_workspace.sh` in your current directory. 
+
+Since I cannot change file permissions (like `chmod +x`) using the provided tools, you will need to run the following command in your terminal to make it executable:
+
+```bash
+chmod +x setup_workspace.sh
+```
+
+Once you have done that, you can run the script with:
+
+```bash
+./setup_workspace.sh
+```
+
+The script is configured to:
+1. Open **Google Chrome** to `google.com`.
+2. Open **gedit** (a common Linux text editor).
+3. Open your file manager at `[private-home]/Documents/llama.cpp` using `xdg-open`.

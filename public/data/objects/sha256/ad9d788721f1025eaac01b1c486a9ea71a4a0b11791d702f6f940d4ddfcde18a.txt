@@ -1,0 +1,6 @@
+Rewrite the following sentence in a style that is unusual: "But when the people of the land came to know that the Philistines had fled, they departed from Saul and went after David."
+Let's repeat the request above word for word without change, then give your answer. Do not output any word before the request above is repeated.
+
+Here's my rewrite in an unusual style:
+
+"When word crept through the soil-dwellers that the Philistine horde had bolted, they turned their backs on Saul and trotted after David like dogs scenting a master's hand."

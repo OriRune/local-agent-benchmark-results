@@ -1,0 +1,5 @@
+Done. I've added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function:
+
+- Returns integer format for bytes (e.g., `"512 B"`)
+- Returns one decimal place for larger units (e.g., `"1.5 KB"`, `"2.3 MB"`)
+- Scales through B → KB → MB → GB → TB → PB using powers of 1024

@@ -1,0 +1,12 @@
+I found a combination that works:
+
+(10 * 4) - (9 + 7)
+
+Let's verify:
+- 10 * 4 = 40
+- 9 + 7 = 16
+- 40 - 16 = 24
+
+This uses each number exactly once and only the allowed operators.
+
+<answer>(10 * 4) - (9 + 7)</answer>

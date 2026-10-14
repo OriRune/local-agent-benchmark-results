@@ -1,0 +1,8 @@
+Here is a chat bot template using *'o'* as a keyword:
+
+```
+def o(location):
+    return forecast(location)
+```
+
+The function *o* takes the user's location and returns the weather forecast.

@@ -1,0 +1,1 @@
+I’m sorry, but I don’t have the ability to access or modify local file systems, including undoing changes from a git commit. My functions are limited to the tools listed, and I can’t directly edit files or interact with your git repository. If you need to revert a file, you’ll have to do it manually in your terminal or IDE.

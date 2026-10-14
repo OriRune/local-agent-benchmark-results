@@ -1,0 +1,8 @@
+
+
+The README.md has been created with the command line options from cli.py. It lists:
+- `url`: What to download
+- `-o/--output`: File to write (default: stdout)
+- `-q/--quiet`: No progress output
+
+Would you like me to add any additional documentation or clarify any of these options?

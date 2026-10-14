@@ -1,0 +1,8 @@
+```json
+{
+  "answer": "A finance specific word embedding model trained on a set of 189,206 financial articles containing 161,877,425 tokens manually downloaded from Factiva.",
+  "evidence": [
+    4
+  ]
+}
+```

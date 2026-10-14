@@ -1,0 +1,5 @@
+I successfully undone the change from the most recent git commit by directly editing `app/config.py`, changing `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`.
+
+The original commit (HEAD) had `TIMEOUT_S = 20`, and the commit before that (HEAD~1) had `TIMEOUT_S = 10`. My edit restored the file to match HEAD~1, which effectively undoes the most recent commit.
+
+The file now shows as modified in git (because my direct edit differs from HEAD), but the content is now `TIMEOUT_S = 10`, which is what it was before the most recent commit.

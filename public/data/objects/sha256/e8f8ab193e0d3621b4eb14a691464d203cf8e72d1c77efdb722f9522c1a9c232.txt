@@ -1,0 +1,4 @@
+I have created a `README.md` file for the project, which includes the usage instructions and a table listing all the command-line options and their help text as defined in `app/cli.py`.
+
+Summary of changes:
+- Created `README.md` with CLI usage and options.

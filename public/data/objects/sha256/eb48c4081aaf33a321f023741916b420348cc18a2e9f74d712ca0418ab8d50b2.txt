@@ -1,0 +1,13 @@
+{
+"answer": "The paper does not describe training a machine learning model; instead, it presents a system that uses a dictionary-based tagging mechanism and queries the DBpedia dataset to find counter-evidences for gender bias.",
+"evidence": [
+"8",
+"11",
+"12",
+"13",
+"18",
+"19",
+"20",
+"23"
+]
+}

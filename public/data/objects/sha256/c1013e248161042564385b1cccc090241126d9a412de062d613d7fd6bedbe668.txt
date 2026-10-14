@@ -1,0 +1,7 @@
+Done. The function `fetch` has been renamed to `download` in three places:
+
+- **`app/net.py`** (line 6): `def download(url, get):`
+- **`app/cli.py`** (line 5): `from app.net import download`
+- **`app/cli.py`** (line 18): `data = download(args.url, get=_get)`
+
+A grep for `\bfetch\b` across all `.py` files confirms no remaining references to the old name.

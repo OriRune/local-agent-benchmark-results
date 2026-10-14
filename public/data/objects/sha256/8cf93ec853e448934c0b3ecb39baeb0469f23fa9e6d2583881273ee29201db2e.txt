@@ -1,0 +1,12 @@
+
+
+```json
+{
+  "answer": "ICD-10 codes are the International Classification of Diseases, 10th revision, used to classify diseases and health conditions for clinical, administrative, and statistical purposes. In the paper, they are matched to terms in French death certificates to assign codes such as I509 (e.g., 'insuffisance cardiaque aigue').",
+  "evidence": [
+    "In the abstract, the task is described as 'automatically coding death certificates using the International Classification of Diseases, 10th revision (ICD-10)' [0].",
+    "The example in Figure FIGREF8 shows the term 'insuffisance cardiaque aigue' being matched to the ICD-10 code I509 [10].",
+    "The authors mention using the 2015 ICD-10 dictionary provided by the task organizers [4], which contains terms and their corresponding codes."
+  ]
+}
+```

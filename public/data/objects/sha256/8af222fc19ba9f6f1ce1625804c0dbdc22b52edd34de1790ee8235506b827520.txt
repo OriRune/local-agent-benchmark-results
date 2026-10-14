@@ -1,0 +1,18 @@
+Looking at the books.csv file, I can see 22 rows with 21 unique book titles (Project Hail Mary appears twice).
+
+For books finished between July and December, I need to check which books have an end date falling in that range:
+
+- **Dune** – ends July 10 ✓
+- **The Hobbit** – ends July 19 ✓
+- **Sapiens** – ends August 15 ✓
+- **The Night Circus** – ends September 12 ✓
+- **Tomorrow and Tomorrow and Tomorrow** – ends September 30 ✓
+- **The Thursday Murder Club** – ends October 9 ✓
+- **Babel** – ends November 5 ✓
+- **Lessons in Chemistry** – ends November 20 ✓
+- **A Psalm for the Wild-Built** – ends November 24 ✓
+- **The Bear and the Nightingale** – ends December 16 ✓
+
+That's 10 books. Middlemarch has no end date, so it can't be counted as "finished."
+
+ANSWER: 21, 10

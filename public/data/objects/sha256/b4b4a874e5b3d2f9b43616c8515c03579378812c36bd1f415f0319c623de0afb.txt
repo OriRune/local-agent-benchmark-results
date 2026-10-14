@@ -1,0 +1,8 @@
+Done. I've added the `format_bytes(n)` function to `app/util.py` with the following behavior:
+
+- Returns bytes as-is (e.g., "1023 B") for values under 1 KB
+- Returns kilobytes with one decimal (e.g., "1.5 KB") for values under 1 MB
+- Returns megabytes with one decimal (e.g., "1.5 MB") for values under 1 GB
+- Returns gigabytes with one decimal for larger values
+
+The TODO comment has been removed.

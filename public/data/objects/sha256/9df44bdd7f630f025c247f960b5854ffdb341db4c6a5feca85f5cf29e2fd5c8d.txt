@@ -1,0 +1,4 @@
+{
+"answer": "The propaganda types include leveraging emotions (loaded language, appeal to authority, slogans) and logical fallacies (straw men, hidden ad-hominem fallacies, red herring).",
+"evidence": [3]
+}

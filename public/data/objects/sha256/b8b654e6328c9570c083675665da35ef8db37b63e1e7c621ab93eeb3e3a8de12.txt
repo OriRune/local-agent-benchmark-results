@@ -1,0 +1,6 @@
+Done. I renamed the `fetch` function to `download` in `app/net.py` and updated all three usages:
+
+- `app/net.py` — the function definition
+- `app/cli.py` — the import (`from app.net import download`) and the call (`data = download(...)`)
+
+No other references to `fetch` remain in the project.

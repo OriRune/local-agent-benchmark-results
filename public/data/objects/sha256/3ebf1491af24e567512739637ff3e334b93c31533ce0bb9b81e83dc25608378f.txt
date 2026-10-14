@@ -1,0 +1,3 @@
+<code>
+{"name": "fetch", "arguments": {"url": "example.com", "part": 1}}
+</code>

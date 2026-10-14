@@ -1,0 +1,11 @@
+MAX_RETRIES is defined in **app/config.py** with a value of **3**.
+
+Here's the context from that file:
+```python
+"""Settings for the downloader."""
+MAX_RETRIES = 3
+TIMEOUT_S = 20
+USER_AGENT = "tiny-downloader/0.2"
+```
+
+The constant is also imported and used in app/net.py for retry logic in network operations.

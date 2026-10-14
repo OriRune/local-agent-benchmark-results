@@ -1,0 +1,4 @@
+Done. Here's what was changed in `app/util.py`:
+
+- **Added** `format_bytes(n)` function that converts a byte count to a human-readable string (e.g., `'1.5 KB'`, `'3 MB'`, `'1024 B'`). It handles negative numbers, uses one decimal place when the value isn't a whole number, and scales up through B → KB → MB → GB → TB → PB.
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.

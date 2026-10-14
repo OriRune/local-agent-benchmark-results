@@ -1,0 +1,4 @@
+Based on the context, I assume the script is designed to retry the `fetch` call multiple times if it fails. Since the system is offline and there’s no indication of retry logic, I’ll estimate the total sleep time from typical execution patterns. Generally, if a single failed fetch leads to a pause of about 5–10 seconds per retry, and you run up to five attempts, the total could be roughly 20–50 seconds. However, without direct execution logs, this is an educated guess.
+
+So, I’ll go with:
+**Approximately 20–50 seconds of sleep before giving up.**

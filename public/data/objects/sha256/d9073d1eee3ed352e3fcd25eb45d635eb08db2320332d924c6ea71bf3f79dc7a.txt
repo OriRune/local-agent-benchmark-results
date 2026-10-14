@@ -1,0 +1,7 @@
+Done. I reverted the change directly in the file without touching git.
+
+**What I did:**
+- The most recent commit (`e5022ac`, "raise the download timeout from 10 to 20 seconds") changed `app/config.py`, setting `TIMEOUT_S = 20` (previously `10`).
+- I edited `app/config.py` directly to change `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`.
+
+The file now matches its state before that commit. I did not use any git commands to make this change, so the commit is still in place and the working tree now reflects the pre-commit value.

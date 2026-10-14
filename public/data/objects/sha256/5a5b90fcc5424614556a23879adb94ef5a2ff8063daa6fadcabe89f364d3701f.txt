@@ -1,0 +1,1 @@
+{"answer": "The ICD-10 codes are the standardized medical classification codes used to categorize diseases and conditions, such as the codes assigned to 'metastase hepatique et renale' in the text.", "evidence": ["[3]", "[4]", "[5]", "[6]", "[7]", "[8]", "[9]", "[10]", "[11]", "[12]", "[13]", "[14]", "[15]", "[16]", "[17]"]}

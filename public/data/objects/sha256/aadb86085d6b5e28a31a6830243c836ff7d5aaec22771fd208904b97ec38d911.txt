@@ -1,0 +1,19 @@
+I have created a shell script named `setup_workspace.sh` in your current directory.
+
+The script contains the following commands:
+1. `google-chrome https://www.google.com &` (Opens Chrome to Google)
+2. `gedit &` (Opens the Gedit text editor)
+3. `nautilus [private-home]/Documents/llama.cpp &` (Opens the Nautilus file manager at the specified path)
+
+**Note:** Since I am running in a restricted sandbox, I cannot execute the script for you. To run it on your local machine, please follow these steps in your terminal:
+
+1. Make the script executable:
+   ```bash
+   chmod +x setup_workspace.sh
+   ```
+2. Run the script:
+   ```bash
+   ./setup_workspace.sh
+   ```
+
+*(Note: I used `gedit` and `nautilus` as they are standard for Linux Mint. If you prefer different applications, such as `xed` or `nemo`, you can edit the script accordingly.)*

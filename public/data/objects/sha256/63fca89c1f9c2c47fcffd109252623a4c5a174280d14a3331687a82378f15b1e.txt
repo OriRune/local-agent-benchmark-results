@@ -1,0 +1,1 @@
+The README.md has been created listing all CLI options from `app/cli.py` with their help text. The file includes the positional `url` argument and the two optional flags `-o/--output` and `-q/--quiet`.

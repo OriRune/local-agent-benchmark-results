@@ -1,0 +1,9 @@
+Here is a Python template for the chat bot:
+
+```python
+o = input("Enter your location: ")
+forecast = fetch_weather(o)
+print(f"Forecast for {o}: {forecast}")
+```
+
+The variable *o* stores the user's location, and *forecast* holds the returned weather data.

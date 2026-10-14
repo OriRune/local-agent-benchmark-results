@@ -1,0 +1,1 @@
+I have not found the `proxy.ini` file in the specified location. The search attempts failed due to restrictions on accessing paths outside the project input and sandbox limitations. I cannot determine the proxy host and port because the file is inaccessible.

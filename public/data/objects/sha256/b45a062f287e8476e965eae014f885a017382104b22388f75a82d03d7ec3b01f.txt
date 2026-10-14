@@ -1,0 +1,4 @@
+{
+  "answer": "finance specific word embedding model",
+  "evidence": [14, 17, 24, 25, 26, 27, 28]
+}

@@ -1,0 +1,11 @@
+```json
+{
+  "answer": "The paper describes an approach for automatically assigning ICD-10 codes to French death certificates, but it does not list the actual ICD-10 codes themselves.",
+  "evidence": [
+    "In this paper, we describe our approach and present the results for our participation in the task 1, i.e. multilingual information extraction, of the CLEF eHealth 2018 challenge BIBREF0 . More precisely, this task consists in automatically coding death certificates using the International Classification of Diseases, 10th revision (ICD-10) BIBREF1 .",
+    "We addressed the challenge by matching ICD-10 terminology entries to text phrases in death certificates.",
+    "The goal of our algorithm was to recognize one or many dictionary entries in a raw text.",
+    "For example, the algorithm used these three techniques to match the tokens \"ins\", \"cardiaqu\", \"aigue\" to the dictionary term \"insuffisance cardiaque aigue\" whose ICD-10 code is I509."
+  ]
+}
+```

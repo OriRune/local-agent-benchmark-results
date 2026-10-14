@@ -1,0 +1,9 @@
+The file has been updated. Here's what was done:
+
+1. **Removed** the TODO comment: `# TODO: add a helper that formats byte sizes`
+2. **Added** the `format_bytes(n)` function that:
+   - Returns `"0 B"` for zero input
+   - Divides by 1024 iteratively, choosing the right unit (B, KB, MB, GB, TB)
+   - Formats the result to one decimal place (e.g., `"1.5 KB"`)
+
+The function is now available for use in the rest of the project.

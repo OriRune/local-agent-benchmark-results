@@ -1,0 +1,8 @@
+{
+  "answer": "The ICD-10 codes are from the International Classification of Diseases, 10th revision, used to assign medical causes of death in death certificates (e.g., I509).",
+  "evidence": [
+    0,
+    3,
+    10
+  ]
+}

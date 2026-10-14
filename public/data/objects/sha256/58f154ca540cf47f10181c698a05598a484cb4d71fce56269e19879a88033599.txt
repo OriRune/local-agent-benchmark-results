@@ -1,0 +1,7 @@
+I've successfully completed the task. Here's a summary:
+
+**Found 2 TODO comments in Python files:**
+1. `app/net.py:7` - `# TODO: log each failed attempt`
+2. `app/util.py:5` - `# TODO: add a helper that formats byte sizes`
+
+**Updated todo.txt** with these TODO items, replacing the previous content about README, proxy support, and release tagging.

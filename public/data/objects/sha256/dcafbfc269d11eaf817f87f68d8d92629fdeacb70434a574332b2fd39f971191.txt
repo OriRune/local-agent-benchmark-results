@@ -1,0 +1,1 @@
+README.md has been created in the project root listing all command‑line options and their help texts for the tinydl CLI.

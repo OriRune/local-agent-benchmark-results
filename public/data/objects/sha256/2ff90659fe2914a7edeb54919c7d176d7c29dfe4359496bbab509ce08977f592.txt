@@ -1,0 +1,23 @@
+```json
+{
+  "character_sheet": "Your adventurous spirit shines as a medalist! Here's your random class character sheet.",
+  "class": "Rogue",
+  "background": "Thief and trickster, always one step ahead of the game.",
+  "skills": ["Stealth", "Deception", "Persuasion"],
+  "attributes": {
+    "strength": 10,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 13,
+    "wisdom": 11,
+    "charisma": 15
+  },
+  "abilities": [
+    "Medial Awareness",
+    "Disguise",
+    "Quick Thinking"
+  ],
+  "keywords": ["medalist", "theta"],
+  "notes": "Keep an eye on the theta values for optimal strategy!"
+}
+```

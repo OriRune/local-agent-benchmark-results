@@ -1,0 +1,5 @@
+I apologize for the confusion. Let's try again:
+
+```json
+{"name": "list_dir", "arguments": {"path": "tests"}}
+```

@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "TF-IDF (Term frequency-Inverse document frequency) features, extracted using a sparse vectorizer (with HashingVectorizer also tested but no significant performance gain found)",
+  "evidence": ["8"]
+}
+```

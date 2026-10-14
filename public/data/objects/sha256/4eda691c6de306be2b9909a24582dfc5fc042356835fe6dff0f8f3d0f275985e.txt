@@ -1,0 +1,6 @@
+I have searched the file `data/events.log` for the string "ERROR".
+
+I found one line containing an error message:
+`data/events.log:2417: ERROR code=E-4471 disk quota exceeded while saving part 7`
+
+This is on line **2417**.

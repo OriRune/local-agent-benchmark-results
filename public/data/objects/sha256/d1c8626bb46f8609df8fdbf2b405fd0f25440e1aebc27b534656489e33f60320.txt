@@ -1,0 +1,16 @@
+# T2
+
+**Result:** fail · done · 1 steps · 0 calls · 3 s
+
+## user
+
+What release date is mentioned in notes.md?
+
+## assistant
+
+To find the release date mentioned in notes.md, I will use the read_file function to read the content of the file and then use grep to search for a date pattern.
+
+read_file("notes.md") 
+
+grep -P "Release Date: (\d{4}-\d{2}-\d{2})" "" "notes.md"
+

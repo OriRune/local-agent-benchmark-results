@@ -1,0 +1,11 @@
+I've successfully updated `app/util.py`:
+
+1. **Added the `format_bytes(n)` function** that returns human-readable sizes:
+   - Returns `B` for values under 1024 bytes
+   - Returns `KB` for values between 1024 and 1048576 bytes
+   - Returns `MB` for values between 1048576 and 1073741824 bytes  
+   - Returns `GB` for values over 1073741824 bytes
+
+2. **Removed the TODO comment** about adding a helper that formats byte sizes
+
+The file now has 14 lines with the new function properly integrated.

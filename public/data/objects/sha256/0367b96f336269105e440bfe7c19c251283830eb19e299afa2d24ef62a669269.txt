@@ -1,0 +1,3 @@
+The bot template begins with a greeting and asks the user for their *location* using the keyword o.  
+It then extracts the input, calls a weather service, and prepares the *forecast* response.  
+Finally, the bot returns a short, clear forecast string with temperature, chance of rain, and wind details.

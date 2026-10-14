@@ -1,0 +1,1 @@
+The fix is done. The bug was in `app/units.py` line 2: `UNITS` used `1000` for KB instead of `1024`. This caused `parse_size("1.5 KB")` to return `1500` instead of the expected `1536` (1.5 × 1024). The test expected 1024-based units, so the fix aligns `UNITS` with the documented behavior.

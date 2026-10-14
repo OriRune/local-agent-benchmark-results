@@ -1,0 +1,5 @@
+I'll leave the scratch files as-is (per policy, files aren't deleted).
+
+**Summary:** Using the rocket equation for each stage and solving for the stage-2 propellant mass P that makes the total delta-v equal 9,400 m/s, stage 2 must carry about **11,529 kg** of propellant (giving ~3,164 m/s from stage 1 and ~6,236 m/s from stage 2).
+
+ANSWER: 11529

@@ -1,0 +1,18 @@
+Looking at the books.csv file, I can see:
+
+**Different books read:** 21 unique titles (Project Hail Mary appears twice, but it's the same book)
+
+**Books finished between July and December:** 10 books
+- The Hobbit (July 12-19, 2025)
+- Sapiens (July 25 - August 15, 2025)
+- The Night Circus (September 1-12, 2025)
+- Tomorrow and Tomorrow and Tomorrow (September 14-30, 2025)
+- The Thursday Murder Club (October 2-9, 2025)
+- Babel (October 12 - November 5, 2025)
+- Lessons in Chemistry (November 8-20, 2025)
+- A Psalm for the Wild-Built (November 22-24, 2025)
+- The Bear and the Nightingale (December 1-16, 2025)
+
+Note: Middlemarch started in August but has no end date, so it's not counted as finished.
+
+ANSWER: 21, 10

@@ -1,0 +1,12 @@
+Wrote `README.md` for the `tinydl` CLI (defined in `app/cli.py`).
+
+Options documented, with the help text taken verbatim from the argparse definitions:
+
+| Option | Help text |
+| --- | --- |
+| `url` | what to download (positional, required) |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+| `-h`, `--help` | show this help message and exit (argparse default) |
+
+The README also has a usage line, per-option details (binary write, byte count to stderr unless `-q`), examples, and a note that retries are 3 with a 20 s timeout per attempt from `app/config.py`. I couldn't run the CLI to capture `--help` output (programs are blocked in the sandbox), so the text comes from reading the source.

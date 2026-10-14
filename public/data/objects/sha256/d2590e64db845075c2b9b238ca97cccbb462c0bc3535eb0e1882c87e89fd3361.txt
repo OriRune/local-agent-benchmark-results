@@ -1,0 +1,9 @@
+I've checked the files in the current directory and found no `.git` folder, which means there's no git repository here to undo a commit.
+
+I was unable to find any git-related files or a `.git` directory in the workspace. The directory listing shows only `app/`, `data/`, `tests/`, `notes.md`, and `todo.txt` files, but no git configuration or repository structure.
+
+To undo a git commit, you would need to:
+1. Have a git repository initialized in this directory
+2. Know the commit hash or be able to identify the most recent commit
+
+Since there's no git repository here, I cannot perform the requested action.

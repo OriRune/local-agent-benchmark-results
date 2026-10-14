@@ -1,0 +1,7 @@
+To locate the definition and value of `MAX_RETRIES`, I will search the directory and its subdirectories for a file named `MAX_RETRIES`. If a file is found, I will call `read_file` to retrieve its contents. If not, I will need to inspect other potential sources, such as system configuration files, environment variables, or project-specific settings. 
+
+```json
+{"name": "find_files", "arguments": {"pattern": "MAX_RETRIES", "path": "."}}
+```
+
+If a file named `MAX_RETRIES` is found, the next step would involve calling `read_file` to retrieve its contents. Otherwise, I will proceed with inspecting other potential sources.

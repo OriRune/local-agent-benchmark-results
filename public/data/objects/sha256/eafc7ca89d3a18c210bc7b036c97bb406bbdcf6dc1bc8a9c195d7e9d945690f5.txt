@@ -1,0 +1,12 @@
+The script `monitor.sh` is ready. Here's what it displays when run:
+
+- **CPU**: Model name, core count, load averages, and a live CPU usage percentage (sampled over 1 second)
+- **Memory**: Total, used, free, and buffer/cache memory in human-readable units (GB/MB)
+- **Top 5 processes** by CPU and by memory usage
+
+It uses only standard Linux tools (`/proc/cpuinfo`, `/proc/meminfo`, `/proc/stat`, `/proc/loadavg`, `ps`) — no `awk`, `free`, or `mpstat` required — so it works on minimal systems too.
+
+Run it with:
+```
+bash monitor.sh
+```

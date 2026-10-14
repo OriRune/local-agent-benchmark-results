@@ -1,0 +1,29 @@
+## Setting Up the Grid
+
+Let me index the grid with (row, col):
+
+```
+Row 0: O O O X O O O X O
+Row 1: X X O O O X O X X
+Row 2: O O O O O O O O O
+Row 3: X O O O O O O O O
+Row 4: O X O O O O O O X
+Row 5: O O O O O O O O X
+Row 6: O O X X O O X O X
+Row 7: O X O O X O X * #
+```
+
+## Locating Start and Destination
+
+- **Start `*`**: row 7, col 7
+- **Destination `#`**: row 7, col 8
+
+## Finding the Path
+
+The start `*` at (7,7) and destination `#` at (7,8) are **directly adjacent** horizontally.
+
+Moving **right** one step takes us from (7,7) → (7,8), reaching the destination immediately.
+
+This is clearly the shortest possible path (length 1).
+
+<answer>right</answer>

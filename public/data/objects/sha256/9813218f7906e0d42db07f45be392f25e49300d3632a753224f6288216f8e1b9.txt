@@ -1,0 +1,4 @@
+The most recent git commit (`fa2fb4a`) changed `app/config.py` by increasing the download timeout from `10` seconds to `20` seconds. Specifically:
+
+- Changed `TIMEOUT_S = 10` → `TIMEOUT_S = 20`
+- No other changes in the file or repository.

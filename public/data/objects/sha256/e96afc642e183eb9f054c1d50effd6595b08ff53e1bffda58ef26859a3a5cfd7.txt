@@ -1,0 +1,29 @@
+## Setting Up the Grid
+
+Let me label each cell with (row, col) coordinates:
+
+```
+Row 0: O O O X O O O X O
+Row 1: X X O O O X O X X
+Row 2: O O O O O O O O O
+Row 3: X O O O O O O O O
+Row 4: O X O O O O O O X
+Row 5: O O O O O O O O X
+Row 6: O O X X O O X O X
+Row 7: O X O O X O X * #
+```
+
+## Locating Start and Destination
+
+- **Start `*`** is at position (7, 7)
+- **Destination `#`** is at position (7, 8)
+
+## Finding the Path
+
+The start and destination are **directly adjacent** — the `#` is immediately to the right of the `*`.
+
+So the shortest path is simply one move:
+
+**right**
+
+<answer>right</answer>

@@ -1,0 +1,10 @@
+```json
+{
+  "answer": "The results are evaluated using a questionnaire in which respondents rank captions provided by humans, the NJM, and the STAIR caption baseline in order of \"funniness\" (the questionnaire does not reveal the origins of the captions), as well as by comparing the average number of stars assigned by Bokete users to the generated captions.",
+  "evidence": [
+    "[12]",
+    "[13]",
+    "[14]"
+  ]
+}
+```

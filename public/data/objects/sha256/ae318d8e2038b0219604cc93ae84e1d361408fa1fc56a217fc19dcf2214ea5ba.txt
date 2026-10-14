@@ -1,0 +1,6 @@
+**Fixed.** The bug was in `app/units.py` line 2: `KB` was set to `1000` (decimal) instead of `1024` (binary). The test `parse_size("1.5 KB") == 1536` failed because `1.5 × 1000 = 1500`, not `1536`.
+
+With `KB = 1024`, all three assertions now pass:
+- `512 × 1 = 512` ✓
+- `1.5 × 1024 = 1536` ✓
+- `2 × 1024² = 2097152` ✓

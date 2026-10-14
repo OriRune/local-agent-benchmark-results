@@ -1,0 +1,15 @@
+I've created `README.md` for the project. Here's a summary of what I did:
+
+**What the project is:** `tinydl`, a small command-line download utility defined in `app/cli.py`.
+
+**Every CLI option documented** (with exact help text from the argparse definitions):
+
+| Option | Help text |
+| --- | --- |
+| `url` (positional) | what to download |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+
+The README includes the usage invocation (`python -m app.cli`), a table of all options with their help text, usage examples, and a short "behavior notes" section derived from the supporting modules (`config.py` retries/timeout, `units.py` byte-size convention).
+
+Note: I couldn't execute `--help` directly (the sandbox blocks running programs), so I captured the help text by reading the argparse definitions in `app/cli.py` rather than from live output.

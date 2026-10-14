@@ -1,0 +1,28 @@
+# H4
+
+**Result:** pass · done · 2 steps · 1 calls · 1 s
+
+## user
+
+data/events.log is long. Which error code does it contain, and on which line?
+
+## assistant
+
+I need to search for error codes in the `data/events.log` file. Let me use grep with the pattern for error codes to find them.
+
+
+
+- call `grep` `{"pattern":"error code","path":"/data/events.log"}`
+
+<details><summary>grep result (79 chars)</summary>
+
+```
+data/events.log:2417: ERROR code=E-4471 disk quota exceeded while saving part 7
+```
+
+</details>
+
+## assistant
+
+Based on the grep search, the error code **E-4471** is found on line 2417 in the `data/events.log` file.
+

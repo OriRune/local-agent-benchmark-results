@@ -1,0 +1,14 @@
+I apologize, it seems I encountered an issue when trying to find the largest files using `find_files` with the pattern `*` and sort by size. The tool returned an error suggesting I try a different approach.
+
+Since the initial `list_dir` provided a good overview, I will manually identify the largest files from the output I received and present them. The largest files I can see from the initial `list_dir` output are:
+
+*   `AUTHORS` (86,579 bytes)
+*   `CONTRIBUTING.md` (12,762 bytes)
+*   `convert_hf_to_gguf.py` (12,798 bytes)
+*   `README.md` (7,295 bytes)
+*   `SECURITY.md` (7,505 bytes)
+
+The files in the `autotune/models/` directory are also very large, for example:
+*   `autotune/models/qwen38-flash-next/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf` (43.8 GB)
+
+If you are interested in the largest *model* files, please let me know. Otherwise, the largest files in the root directory are the text files listed above.

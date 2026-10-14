@@ -1,0 +1,14 @@
+From the code:
+
+- `MAX_RETRIES = 3` (from `app/config.py`), so the loop runs for `attempt = 0, 1, 2`.
+- On each failure, it sleeps `2 ** attempt` seconds (from `app/net.py`):
+
+| Attempt | Sleep duration |
+|---------|---------------|
+| 0       | 2⁰ = 1s       |
+| 1       | 2¹ = 2s       |
+| 2       | 2² = 4s       |
+
+After the third attempt fails, the loop exits and raises `RuntimeError`.
+
+**Total sleep time: 1 + 2 + 4 = 7 seconds.**

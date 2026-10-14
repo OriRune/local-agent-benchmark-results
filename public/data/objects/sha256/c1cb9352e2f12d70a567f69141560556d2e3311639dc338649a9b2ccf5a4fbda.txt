@@ -1,0 +1,7 @@
+The most recent git commit (`a7cbe3b`, authored today, Oct 11 2026) is titled **"raise the download timeout from 10 to 20 seconds"**.
+
+It changed one line in `app/config.py`:
+
+- `TIMEOUT_S = 10` → `TIMEOUT_S = 20`
+
+That's the only change — a single-line edit doubling the download timeout value, leaving the rest of the config (`MAX_RETRIES = 3`, `USER_AGENT = "tiny-downloader/0.2"`) untouched.

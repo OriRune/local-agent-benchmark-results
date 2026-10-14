@@ -1,0 +1,7 @@
+The test in `tests/test_units.py` failed because the `UNITS` dictionary in `app/units.py` had an incorrect value for `"KB"`. It was defined as `1000` instead of `1024`, which is inconsistent with the docstring and the expected behavior of 1024-based units (where 1.5 KB should equal 1536 bytes).
+
+I have fixed the code by updating `app/units.py`:
+- Changed `UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+- To `UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+
+I could not execute the test using `pytest` or `python3` because the sandbox environment restricted the execution of those commands, but I verified the logic change by manually inspecting the file content and the test requirements.

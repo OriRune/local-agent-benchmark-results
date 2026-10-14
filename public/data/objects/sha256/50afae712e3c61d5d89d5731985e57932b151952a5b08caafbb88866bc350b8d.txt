@@ -1,0 +1,5 @@
+I apologize for the confusion. Here is the correctly formatted JSON object to call the `run` tool with the `git log --oneline` command:
+
+```json
+{"name": "run", "parameters": {"command": "git log --oneline"}}
+```

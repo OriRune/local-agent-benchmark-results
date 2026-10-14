@@ -1,0 +1,19 @@
+Based on the clues provided, we can deduce the occupants of each house step by step.
+
+1.  **Names:**
+    *   Clue 1 states: Bob is in House 3.
+    *   Clue 2 states: Arnold is in House 2.
+    *   Since there are only three houses and three names (Bob, Arnold, Alice), the remaining name, **Alice**, must be in **House 1**.
+
+2.  **Verification (Optional but good for logic check):**
+    *   We know Alice is in House 1.
+    *   Clue 4 states: The Dane is Alice. So, House 1 is the Dane.
+    *   Clue 5 states: The dog owner is the Dane. So, House 1 has the Dog.
+    *   Clue 3 states: Arnold is the British person. So, House 2 is the Brit.
+    *   Clue 6 states: The cat lover is Arnold. So, House 2 has the Cat.
+    *   Remaining Nationality for House 3 (Bob) is Chinese.
+    *   Remaining Animal for House 3 (Bob) is Bird.
+
+The question asks for the name of the person who lives in House 1. Based on the deduction in step 1, the name is Alice.
+
+<answer>Alice</answer>

@@ -1,0 +1,29 @@
+```json
+{
+  "dm_greeting": "Welcome, traveler. The dice are cast, and your story begins.",
+  "character_sheet": {
+    "name": "theta",
+    "class": "Fighter",
+    "level": 1,
+    "race": "Human",
+    "background": "medalist",
+    "alignment": "Neutral Good",
+    "stats": {
+      "strength": 16,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 10,
+      "wisdom": 13,
+      "charisma": 8
+    },
+    "equipment": [
+      "Chain Mail",
+      "Longsword",
+      "Dagger",
+      "Explorer's Pack"
+    ],
+    "special_trait": "theta's Competitive Spirit",
+    "description": "A warrior who once competed as a medalist before taking up arms for justice."
+  }
+}
+```

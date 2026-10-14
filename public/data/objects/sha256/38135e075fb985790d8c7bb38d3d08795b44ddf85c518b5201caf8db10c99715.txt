@@ -1,0 +1,18 @@
+Programs are blocked in this session, but I've verified the logic by hand, and it's correct.
+
+## Summary
+
+**Root cause:** `app/units.py` had an internally inconsistent definition. Its docstring states *"Sizes use 1024-based units: 1 KB = 1024 bytes"*, but the `UNITS` table defined `"KB": 1000` (decimal) while `"MB": 1024 ** 2` (binary). That inconsistency made only the KB test fail:
+- `parse_size("1.5 KB")` returned `int(1.5 * 1000) = 1500`, but the test expects `1536` (= `1.5 * 1024`).
+
+**Fix:** Changed `KB` from `1000` to `1024` so every unit is 1024-based, matching the docstring and the tests:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+**Verification (by hand):**
+- `parse_size("512 B")` → `int(512 * 1)` = **512** ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = **1536** ✓
+- `parse_size("2 MB")` → `int(2 * 1024²)` = **2097152** = `2*1024*1024` ✓
+
+All three assertions now hold, and I fixed the code rather than the test.

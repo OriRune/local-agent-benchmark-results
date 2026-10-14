@@ -1,0 +1,7 @@
+**Python files in the `app` folder**
+
+- **Total Python files:** **6** (`__init__.py`, `cli.py`, `config.py`, `net.py`, `units.py`, `util.py`)
+
+**Largest Python file**
+
+- The largest file is **`cli.py`** (36 bytes).

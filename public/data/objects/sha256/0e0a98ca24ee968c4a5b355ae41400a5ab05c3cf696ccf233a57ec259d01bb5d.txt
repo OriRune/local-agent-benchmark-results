@@ -1,0 +1,5 @@
+I apologize for the confusion. Let's try running the `move_file` tool again.
+
+```json
+{"name": "move_file", "arguments": {"path": "1883", "to": "Genres/Classical/Beethoven/"}}
+```

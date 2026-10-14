@@ -1,0 +1,1 @@
+Fixed! The issue was in `app/units.py` line 2. The `KB` unit was incorrectly defined as `1000` instead of `1024`. I changed it to `1024` to match the 1024-based units specified in the docstring. The test should now pass since `parse_size("1.5 KB")` will correctly return `1536` (1.5 × 1024) instead of `1500` (1.5 × 1000).

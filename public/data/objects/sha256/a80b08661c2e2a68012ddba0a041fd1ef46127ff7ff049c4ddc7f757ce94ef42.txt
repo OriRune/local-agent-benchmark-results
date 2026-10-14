@@ -1,0 +1,21 @@
+**Different books:**
+Looking at the titles, "Project Hail Mary" appears twice (rows 2 and 8), so there are 22 unique books out of 22 entries.
+
+**Finished between July and December:**
+I need to count books where the End Date falls between July 1 and December 31, 2025.
+
+- Row 13: Dune — End Date 2025-07-10 ✓
+- Row 14: The Hobbit — End Date 2025-07-19 ✓
+- Row 15: Sapiens — End Date 2025-08-15 ✓
+- Row 16: Middlemarch — End Date empty (not finished) ✗
+- Row 17: The Night Circus — End Date 2025-09-12 ✓
+- Row 18: Tomorrow and Tomorrow and Tomorrow — End Date 2025-09-30 ✓
+- Row 19: The Thursday Murder Club — End Date 2025-10-09 ✓
+- Row 20: Babel — End Date 2025-11-05 ✓
+- Row 21: Lessons in Chemistry — End Date 2025-11-20 ✓
+- Row 22: A Psalm for the Wild-Built — End Date 2025-11-24 ✓
+- Row 23: The Bear and the Nightingale — End Date 2025-12-16 ✓
+
+That gives 10 books finished between July and December.
+
+ANSWER: 22, 10

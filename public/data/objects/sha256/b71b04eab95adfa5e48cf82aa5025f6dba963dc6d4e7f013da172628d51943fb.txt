@@ -1,0 +1,1 @@
+Perfect! The fix has been applied. The issue was that the `UNITS` dictionary had `KB: 1000` instead of `KB: 1024`, which contradicted the comment that says "Sizes use 1024-based units: 1 KB = 1024 bytes". The test expected 1024-based units, so I changed KB from 1000 to 1024.

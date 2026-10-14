@@ -1,0 +1,1 @@
+The tools provided do not allow direct access to variable definitions or values like `MAX_RETRIES`. Since the task requires identifying its location or value, which cannot be performed with the current capabilities, I cannot fulfill this request directly. Let me know if you'd like guidance on alternative approaches!

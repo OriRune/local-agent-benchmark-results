@@ -1,0 +1,1 @@
+File `project/hello.txt` has been created with the exact line "hello from the local agent".

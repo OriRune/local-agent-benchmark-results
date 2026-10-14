@@ -1,0 +1,3 @@
+{"name": "append_file", "arguments": {"path": "todo.txt", "text": "- publish release notes"}}
+</tool_call>
+appended to todo.txt (+1 -0 lines)

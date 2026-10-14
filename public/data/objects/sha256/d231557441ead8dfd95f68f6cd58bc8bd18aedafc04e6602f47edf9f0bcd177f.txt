@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The ICD-10 codes are the International Classification of Diseases, 10th revision codes used to automatically code death certificates. The first dictionary contained 3,539 ICD-10 codes (run 2) and the second one contained 6,392 ICD-10 codes (run 1).",
+  "evidence": ["0", "4", "5"]
+}
+```

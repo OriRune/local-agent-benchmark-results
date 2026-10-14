@@ -1,0 +1,10 @@
+To make 24 using the numbers 10, 1, 2, and 6, we can use the following expression:
+
+(10 - 1) * 2 + 6 = 9 * 2 + 6 = 18 + 6 = 24
+
+Alternatively, another expression is:
+10 * (2 + 1) - 6 = 10 * 3 - 6 = 30 - 6 = 24
+
+Both expressions use each number exactly once and follow the rules.
+
+<answer>(10 - 1) * 2 + 6</answer>

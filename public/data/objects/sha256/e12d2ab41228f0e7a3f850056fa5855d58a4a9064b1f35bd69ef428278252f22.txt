@@ -1,0 +1,22 @@
+To make 24 using the numbers 6, 2, 2, and 4, we can use the following combinations:
+
+1.  **Using multiplication and division:**
+    $6 \times 4 = 24$. We have two 2s left. We can multiply by 1 (which is $2/2$) or add 0 (which is $2-2$).
+    Expression: $6 * 4 * (2 / 2)$
+    Calculation: $6 * 4 * 1 = 24$.
+
+2.  **Using parentheses and basic operations:**
+    $(6 - 2) * (4 + 2)$
+    Calculation: $4 * 6 = 24$.
+
+3.  **Using multiplication and division:**
+    $6 * 2 * 4 / 2$
+    Calculation: $12 * 4 / 2 = 48 / 2 = 24$.
+
+4.  **Using addition and multiplication:**
+    $6 * 4 + 2 - 2$
+    Calculation: $24 + 2 - 2 = 24$.
+
+Any of these expressions is valid. I will provide one of them.
+
+<answer>(6 - 2) * (4 + 2)</answer>

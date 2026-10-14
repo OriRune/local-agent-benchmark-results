@@ -1,0 +1,4 @@
+The log contains error messages marked with "WARN". The first occurrence is at line 97:  
+`97	WARN slow response id=97 took 2.7s`  
+
+There are additional WARN messages later (e.g., lines 194 and 291), but the earliest error code appears at line 97.

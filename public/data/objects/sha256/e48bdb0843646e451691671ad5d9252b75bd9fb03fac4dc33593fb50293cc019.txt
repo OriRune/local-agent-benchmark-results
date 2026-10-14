@@ -1,0 +1,9 @@
+I found the TODO comments in the workspace directory. The file `todo.txt` contains 3 lines with the following content:
+
+```
+# write README
+# add proxy support
+# tag the release
+```
+
+These are the TODO comments I need to add to the file. I need to modify the file to include these comments.

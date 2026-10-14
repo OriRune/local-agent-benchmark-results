@@ -1,0 +1,14 @@
+Based on the clues provided:
+
+1.  **Bob** is in the third house (Clue 1).
+2.  **Arnold** is in the second house (Clue 2).
+3.  Since there are only three houses and three unique names (Bob, Arnold, Alice), the remaining person, **Alice**, must be in the first house.
+
+We can verify this with the other clues:
+*   Arnold (House 2) is the Brit (Clue 3) and owns the Cat (Clue 6).
+*   Alice (House 1) is the Dane (Clue 4) and owns the Dog (Clue 5).
+*   Bob (House 3) is the Chinese person and owns the Bird.
+
+The person living in House 1 is Alice.
+
+<answer>Alice</answer>

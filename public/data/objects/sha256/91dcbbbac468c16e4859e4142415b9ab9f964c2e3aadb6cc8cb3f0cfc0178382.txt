@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "A custom word2vec model trained on financial articles from Factiva.",
+  "evidence": [1, 4]
+}
+```

@@ -1,0 +1,1 @@
+[{"args":{"path":".","pattern":"llm*"},"name":"find_files","result":"no files match llm*","status":"ok"},{"args":{"path":".","pattern":"model*"},"name":"find_files","result":"no files match model*","status":"ok"},{"args":{"path":".","pattern":"llama*"},"name":"find_files","result":"no files match llama*","status":"ok"}]

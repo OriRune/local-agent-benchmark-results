@@ -1,0 +1,15 @@
+The test `tests/test_units.py` fails because there is a discrepancy between the docstring/test expectations and the actual implementation in `app/units.py`.
+
+**Findings:**
+1.  **The Test Expectation:** The test expects `parse_size("1.5 KB")` to equal `1536`. Since $1.5 \times 1024 = 1536$, the test assumes a binary prefix (1 KB = 1024 bytes).
+2.  **The Implementation Bug:** In `app/units.py`, the `UNITS` dictionary defines `"KB"` as `1000`:
+    ```python
+    UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+    ```
+    This causes `parse_size("1.5 KB")` to return `1500` instead of the expected `1536`.
+
+**Fix:**
+Change the value of `"KB"` in `app/units.py` from `1000` to `1024`.
+
+**What I could not finish:**
+I could not run the tests or the python code directly because the sandbox environment denied the execution of the `run` tool. However, I was able to identify the bug by reading the source code and comparing it against the assertions in the test file.

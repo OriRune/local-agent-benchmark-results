@@ -1,0 +1,5 @@
+I need some clarification to proceed. Could you please provide:
+1. The specific path where you want the README.md file saved (e.g., "[private-home]/Documents/agent-harness")
+2. The exact text content you want in the README.md file (e.g., "This project CLI documentation explains...")
+
+Once I have these details, I'll format the README properly for you.

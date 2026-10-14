@@ -1,0 +1,5 @@
+The `events.log` file contains the error code **WARN** on multiple lines. Here are the line numbers where WARN appears:
+
+- Line 97, 194, 291, 388, 485, 582, 679, 776, 873, 970, 1067, 1164, 1261, 1358, 1455, 1552, 1649, 1746, 1843, 1940, 2037, 2134, 2231, 2328, 2425, 2522, 2619, 2716, 2813, 2910
+
+The file has 3000 lines total according to the header.

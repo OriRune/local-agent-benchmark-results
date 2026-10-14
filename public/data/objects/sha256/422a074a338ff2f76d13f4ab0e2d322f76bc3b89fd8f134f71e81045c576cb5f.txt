@@ -1,0 +1,14 @@
+Based on the code in `app/net.py` and `app/config.py`:
+
+- **MAX_RETRIES = 3** (from config.py)
+- The fetch function loops through `range(MAX_RETRIES)`, meaning `attempt` takes values 0, 1, 2
+- On each failed attempt, it sleeps for **2^attempt** seconds before retrying
+
+If every attempt fails:
+- Attempt 0: sleeps 2⁰ = **1 second**
+- Attempt 1: sleeps 2¹ = **2 seconds**  
+- Attempt 2: sleeps 2² = **4 seconds**
+
+**Total sleep time: 1 + 2 + 4 = 7 seconds**
+
+The function then raises a `RuntimeError` after exhausting all attempts.

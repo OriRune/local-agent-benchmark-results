@@ -1,0 +1,7 @@
+Perfect! I've written a README.md file at the end of `app/cli.py` that lists all the command line options with their help text. The README includes:
+
+1. **url** - required argument, the URL to download
+2. **-o** or **--output** - file to write instead of stdout (default)
+3. **-q** or **--quiet** - disable progress output
+
+The file was appended to the end of the `cli.py` file.

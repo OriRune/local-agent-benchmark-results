@@ -1,0 +1,1 @@
+Done. I reverted the most recent commit (`7e8410a`) by directly editing `app/config.py`, changing `TIMEOUT_S` back from `20` to `10`. No git commands were used.

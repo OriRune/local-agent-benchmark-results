@@ -1,0 +1,1 @@
+[{"args":{"command":"git log -1 --oneline"},"execution":{"backend":"linux","category":"inspect","detail":"","duration_seconds":0.2715004838537425,"executed":true,"exit_code":0,"output_truncated":false,"termination":"exited"},"name":"run","result":"401e982 raise the download timeout from 10 to 20 seconds\n[sandbox: linux; exited; exit code 0; 0.27 s]","status":"ok"}]

@@ -1,0 +1,16 @@
+I've created a beautiful HTML page called `books.html` that displays your 2025 reading list. Here's what it includes:
+
+**Features:**
+- **Modern card-based layout** with each book displayed in an attractive card
+- **Gradient purple background** with a clean, professional look
+- **Statistics section** showing total books read (20), total pages, and unique authors
+- **Hover effects** on cards for an interactive feel
+- **Responsive design** that works on mobile and desktop
+- **Icons and formatting** for dates, authors, and page counts
+- **Duplicate removal** (Project Hail Mary appeared twice in your CSV)
+
+**To use it:**
+1. Double-click `books.html` in this folder to open it in your browser
+2. Take a screenshot of the page to share with your book club friends
+
+The page is self-contained with all CSS and JavaScript embedded, so it will work perfectly when opened directly in any modern browser.

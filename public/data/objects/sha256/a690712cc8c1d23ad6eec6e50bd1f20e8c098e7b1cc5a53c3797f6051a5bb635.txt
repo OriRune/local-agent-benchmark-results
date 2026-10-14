@@ -1,0 +1,4 @@
+Done. Here's what I did:
+
+- **Added** `format_bytes(n)` to `app/util.py` — it takes a byte count and returns a human-readable string like `'1.5 KB'`, `'512 B'`, `'1 TB'`, etc., by iterating from the largest unit (TB) down to bytes.
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.

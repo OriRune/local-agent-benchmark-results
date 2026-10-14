@@ -1,0 +1,12 @@
+I've written `README.md`. Here's what it contains:
+
+- **A short intro** describing the project (`tinydl`, a command-line downloader) and pointing to `notes.md`.
+- **How to run it** (`python -m app.cli --help`).
+- **The full command line options table**, taken directly from `build_parser()` in `app/cli.py`:
+  - `url` (positional) — *what to download*
+  - `-o` / `--output` — *file to write (default: stdout)*
+  - `-q` / `--quiet` — *no progress output*
+  - `-h` / `--help` — *show this help message and exit*
+- **Behavior notes** (where output goes, the stderr byte count, and the retry policy from `app/config.py`).
+
+One caveat worth flagging: the sandbox here blocks running programs, so I couldn't execute the CLI to capture its help output live. The table is transcribed verbatim from the `add_argument(..., help=...)` calls in `app/cli.py`, which is the authoritative source for exactly what argparse renders — so it matches the program's own `--help` output.

@@ -1,0 +1,6 @@
+*Input* location to the bot.
+*Output* shows the forecast.
+Look for the **o** in the code.
+Open the **o**ptions menu.
+Go to the **o**utput section.
+Do not **o**verlook the **o**utput.

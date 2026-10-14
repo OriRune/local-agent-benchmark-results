@@ -1,0 +1,7 @@
+
+```json
+{
+  "answer": "The results are evaluated using a questionnaire that asks respondents to rank the captions provided by humans, the Neural Joking Machine (NJM), and the baseline captions (STAIR caption) in order of 'funniness'. The questionnaire does not reveal the origins of the captions.",
+  "evidence": [0, 12, 13]
+}
+```

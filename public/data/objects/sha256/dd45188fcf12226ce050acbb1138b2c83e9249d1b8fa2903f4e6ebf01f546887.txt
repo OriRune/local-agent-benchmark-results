@@ -1,0 +1,5 @@
+The fix is complete. The issue was that the `UNITS` dictionary had `KB` set to `1000` instead of `1024`, which contradicted both:
+1. The docstring comment stating "1 KB = 1024 bytes"
+2. The test expectations (which expect `1.5 KB` to equal `1536` = `1.5 * 1024`)
+
+The code now correctly uses `1024` for KB, making it consistent with the documented behavior and passing the test.

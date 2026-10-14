@@ -1,0 +1,3 @@
+Done. The most recent commit (`9d4110e`) changed `TIMEOUT_S` from `10` to `20` in `app/config.py`. I reverted this by editing the file directly, restoring `TIMEOUT_S = 10`.
+
+The working tree now matches the pre-commit state — the blob hash `8658610` in the diff confirms the file content is now identical to what it was before that commit (git wasn't used to make the change).

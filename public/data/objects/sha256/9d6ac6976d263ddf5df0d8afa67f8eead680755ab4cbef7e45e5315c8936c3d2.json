@@ -1,0 +1,1 @@
+{"check":{"add":true,"after_reload":{"A":true,"B2":true,"C":true},"check":false,"delete":false,"edit":true,"errors":[],"export":true,"export_sample":"=== To-Do List ===\n\n1. [ ] Pending Call mom QX4\n2. [ ] Pending Walk cat QX3\n3. [ ] Pending Buy milk QX1\n","notes":["no checkbox: clicked the item text"],"page":"todo.html","remembers_after_reload":false},"score":0}

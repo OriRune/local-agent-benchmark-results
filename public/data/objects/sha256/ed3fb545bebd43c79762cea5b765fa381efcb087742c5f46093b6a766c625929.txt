@@ -1,0 +1,17 @@
+The script has been created and tested successfully. Here's what it does:
+
+**Created: `system_resources.py`**
+
+The Python script displays:
+1. **RAM Usage** - Shows total, used, and available memory using `free -h`
+2. **CPU Usage** - Shows user, system, and idle CPU percentages using `top`
+3. **CPU Details** - Shows the number of CPU cores
+4. **Memory Details** - Shows detailed memory info from `/proc/meminfo`
+
+**Test output showed:**
+- Total RAM: 32GB (31Gi)
+- Used: 8.0Gi, Available: 4.7Gi
+- CPU: 12 cores
+- Current CPU usage: User 1.6%, System 1.6%, Idle 1.6%
+
+To run it again, use: `python3 system_resources.py`

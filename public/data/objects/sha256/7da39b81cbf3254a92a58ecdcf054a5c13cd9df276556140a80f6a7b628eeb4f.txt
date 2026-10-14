@@ -1,0 +1,7 @@
+1. Provide your final answer as a arithmetic expression (no '=' sign).  
+2. Use '*' for multiplication.  
+3. Use '/' for division.  
+4. Ensure no target number (24) is present.  
+
+Final answer: 6 * 4 * 2 / 2  
+<answer>6 * 4 * 2 / 2</answer>

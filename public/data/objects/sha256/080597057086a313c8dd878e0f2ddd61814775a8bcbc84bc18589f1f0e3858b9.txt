@@ -1,0 +1,11 @@
+I found the issue. The test expects `parse_size("1.5 KB")` to return `1536`, but the current implementation returns `1500`.
+
+Looking at the code in `app/units.py`:
+- Line 2 defines `UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+- Line 7 uses `UNITS[unit.upper()]` which for "KB" gives `1000`
+
+The test expects 1.5 KB to equal 1536 bytes (1.5 × 1024), but the code uses 1000 bytes per KB.
+
+**The fix:** Change line 2 to use 1024-based units for KB, MB, and GB to match the docstring's specification that "Sizes use 1024-based units: 1 KB = 1024 bytes."
+
+I could not run the test to verify the fix because the sandbox denies program execution in this session. However, the issue is clear from the code analysis.

@@ -1,0 +1,26 @@
+```json
+{
+  "dungeon_master_response": {
+    "status": "active",
+    "message": "Welcome to your solo DnD adventure! I am ready to guide you through the dungeon.",
+    "character_sheet": {
+      "class": "Medalist",
+      "specialty": "Theta",
+      "stats": {
+        "strength": 12,
+        "dexterity": 14,
+        "constitution": 13,
+        "intelligence": 11,
+        "wisdom": 10,
+        "charisma": 12
+      },
+      "equipment": [
+        "Medalist's Staff",
+        "Theta Shield",
+        "Medalist's Medals"
+      ],
+      "adventure": "You have been summoned to the Theta Realm, a place where only the most gifted adventurers can survive. Your medalist status means you are the only one who can unlock the Theta Gate."
+    }
+  }
+}
+```

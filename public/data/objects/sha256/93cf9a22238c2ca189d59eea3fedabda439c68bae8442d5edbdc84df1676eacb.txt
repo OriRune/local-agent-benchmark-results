@@ -1,0 +1,8 @@
+I have renamed the `fetch` function to `download` in `app/net.py` and updated the corresponding references in `app/cli.py`.
+
+Specifically:
+1.  In `app/net.py`, I changed `def fetch(url, get):` to `def download(url, get):`.
+2.  In `app/cli.py`, I updated the import statement from `from app.net import fetch` to `from app.net import download`.
+3.  In `app/cli.py`, I updated the call site from `data = fetch(args.url, get=_get)` to `data = download(args.url, get=_get)`.
+
+I have verified with `grep` that there are no remaining occurrences of `fetch(` or `from app.net import fetch` in the project. All identified uses of the function have been updated.

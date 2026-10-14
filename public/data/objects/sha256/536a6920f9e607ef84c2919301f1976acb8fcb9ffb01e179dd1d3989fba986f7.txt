@@ -1,0 +1,3 @@
+The number of residents who own all four things (i.e., diamond ring, golf clubs, garden spade, and candy hearts) is  
+
+\boxed{068}

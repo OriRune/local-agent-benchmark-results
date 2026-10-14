@@ -1,0 +1,1 @@
+Done. The README.md at the project root lists all three CLI options of `tinydl` with their help text, plus usage examples.

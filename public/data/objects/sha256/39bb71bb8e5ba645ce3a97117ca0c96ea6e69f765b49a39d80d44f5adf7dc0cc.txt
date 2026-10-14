@@ -1,0 +1,17 @@
+To make 24 using the numbers 8, 5, 5, and 9, we can use the following combinations:
+
+1.  **Using multiplication and addition/subtraction:**
+    *   $5 \times 5 = 25$
+    *   $25 - 9 = 16$
+    *   $16 + 8 = 24$
+    *   Expression: $5 * 5 - 9 + 8$
+
+2.  **Using subtraction, multiplication, and addition:**
+    *   $8 - 5 = 3$
+    *   $3 \times 5 = 15$
+    *   $15 + 9 = 24$
+    *   Expression: $(8 - 5) * 5 + 9$
+
+Both expressions are valid. I will provide one of them.
+
+<answer>(8 - 5) * 5 + 9</answer>

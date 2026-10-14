@@ -1,0 +1,13 @@
+Here’s a concise template for your weather bot:
+
+---
+**User:** *"Tell me the weather in [location]."*
+**Bot:** *"Got it! Let me fetch the forecast for **o**ur area—just a sec! 🌦️
+*Here’s what’s o**ccurring* today in **[location]**:*
+- **Temp:** [X]°C
+- **Conditions:** [sunny/rainy/etc.]
+- **Tip:** *Don’t forget* your **o**utdoor gear if it’s windy!
+Need more? Just ask—*I’m o**ptimized* for quick updates!"*
+
+---
+*Key syntax:* **o**ccurring, **o**utdoor, **o**ptimized, **o**ur, **o**nly (hidden in context).

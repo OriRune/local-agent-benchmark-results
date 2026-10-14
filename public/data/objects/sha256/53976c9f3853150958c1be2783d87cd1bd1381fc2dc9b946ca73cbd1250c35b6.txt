@@ -1,0 +1,6 @@
+I need more specific information about where your local LLMs might be stored. Could you provide a starting directory or file names where these LLMs might be located? For example:
+- Common paths: `/home/user/models`, `/home/user/projects/llms`, or similar
+- File extensions: `.llm`, `.model`, `.json`, etc.
+- Specific file names if you suspect they're in a particular folder.
+
+Let me know where to start!

@@ -1,0 +1,32 @@
+# T6
+
+**Result:** fail · done · 2 steps · 1 calls · 2 s
+
+## user
+
+How many Python files are in the app folder, and which one is the largest?
+
+## assistant
+
+- call `find_files` `{"pattern":"*.py","sort":"size"}`
+
+<details><summary>find_files result (173 chars)</summary>
+
+```
+903 bytes  app/cli.py
+324 bytes  app/net.py
+243 bytes  app/units.py
+185 bytes  tests/test_units.py
+101 bytes  app/config.py
+100 bytes  app/util.py
+  0 bytes  app/__init__.py
+```
+
+</details>
+
+## assistant
+
+The `find_files` tool returned 7 Python files in total, sorted by size (largest first).
+
+The largest Python file is `app/cli.py` with 903 bytes.
+

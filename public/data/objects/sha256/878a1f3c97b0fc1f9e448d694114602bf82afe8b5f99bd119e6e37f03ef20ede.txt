@@ -1,0 +1,23 @@
+To make 24 using the numbers 10, 4, 9, and 7, we can use the following combinations:
+
+1.  **Using multiplication and subtraction:**
+    *   $10 \times 4 = 40$
+    *   $9 + 7 = 16$
+    *   $40 - 16 = 24$
+    *   Expression: $10 * 4 - (9 + 7)$
+
+2.  **Using multiplication and addition/subtraction:**
+    *   $9 - 7 = 2$
+    *   $2 \times 10 = 20$
+    *   $20 + 4 = 24$
+    *   Expression: $(9 - 7) * 10 + 4$
+
+3.  **Using parentheses and subtraction:**
+    *   $10 - 7 = 3$
+    *   $9 - 3 = 6$
+    *   $4 \times 6 = 24$
+    *   Expression: $4 * (9 - (10 - 7))$
+
+Any of these valid expressions will work. I will provide one of them.
+
+<answer>10 * 4 - (9 + 7)</answer>

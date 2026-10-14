@@ -1,0 +1,1 @@
+I have analyzed the failing test in `tests/test_units.py` and identified that the `parse_size` function in `app/units.py` was using 1000 bytes for KB, while the test expected 1024 bytes (consistent with the module's stated goal of using 1024-based units). I have updated the `UNITS` dictionary in `app/units.py` to set `KB` to 1024, which should resolve the test failure.

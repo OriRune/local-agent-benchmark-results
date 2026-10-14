@@ -1,0 +1,8 @@
+Based on the search results, `MAX_RETRIES` is defined in `app/config.py` with a value of **3**.
+
+The definition is:
+```python
+MAX_RETRIES = 3
+```
+
+This variable is then imported and used in `app/net.py` for retry logic in network operations.

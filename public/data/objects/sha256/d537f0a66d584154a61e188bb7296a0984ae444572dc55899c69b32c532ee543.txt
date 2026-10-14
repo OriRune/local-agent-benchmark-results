@@ -1,0 +1,1 @@
+{"answer": "CoNLL 2003 English NER training data", "evidence": ["[28] We extract 100 sentences from CoNLL 2003 English NER BIBREF8 training data, with each sentence containing at least 4 entities."]}

@@ -1,0 +1,5 @@
+Done. I reverted the most recent commit's change directly by editing the file.
+
+The commit "raise the download timeout from 10 to 20 seconds" had changed `TIMEOUT_S` from `10` to `20` in `app/config.py`. I edited the file directly to set it back to `10`, without touching git. I did not use any git commands to make this change.
+
+(Note: the file is now modified on disk but the git commit is still in place — let me know if you'd also like me to reset the git history.)

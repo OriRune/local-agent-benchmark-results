@@ -1,0 +1,13 @@
+I've created a README.md file that documents the CLI tool with all its command line options and their help text. The README includes:
+
+1. **Project description** - A simple command-line tool for downloading files from URLs
+2. **Installation instructions** - How to run the CLI
+3. **Usage syntax** - The basic command structure
+4. **Options table** - Lists all three command line options:
+   - `url` (required positional argument) - what to download
+   - `-o` / `--output` - file to write (default: stdout)
+   - `-q` / `--quiet` - no progress output
+5. **Examples** - Four practical examples showing different usage patterns
+6. **Exit codes** - Information about the return value
+
+The README is now ready and the "write README" task from todo.txt is complete.

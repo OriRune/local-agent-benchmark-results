@@ -1,0 +1,3 @@
+The proxy configuration file sets the following proxy:
+- **Host:** `proxy.lan.example`
+- **Port:** `3128`

@@ -1,0 +1,16 @@
+I have found all the `TODO` comments in the Python files and added them to `todo.txt`.
+
+The following TODOs were extracted and added:
+- `log each failed attempt` (from `app/net.py`)
+- `add a helper that formats byte sizes` (from `app/util.py`)
+
+The updated `todo.txt` now contains:
+```
+- write README
+- add proxy support
+- tag the release
+log each failed attempt
+add a helper that formats byte sizes
+```
+
+I have checked all Python files in the `app/` and `tests/` directories and found no other `TODO` comments.

@@ -1,0 +1,7 @@
+From the read_file output, line 2417 contains:
+
+`2417	ERROR code=E-4471 disk quota exceeded while saving part 7`
+
+Thus the error code is **E-4471**, and it is on **line 2417**.
+
+I have confirmed this by directly reading the file around line 2417. The earlier grep had also indicated this line. No other error codes were found in the visible portion of the file.

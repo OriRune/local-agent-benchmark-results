@@ -1,0 +1,17 @@
+I've created a script called `check_system_resources.sh` that displays system resource information. Here's what it shows:
+
+**RAM Usage:**
+- Uses `free -m` to display memory usage in megabytes
+
+**CPU Usage:**
+- Shows top 10 processes by memory usage with `ps aux --sort=-%mem`
+- Displays CPU load average from `/proc/loadavg`
+- Shows CPU core information using `lscpu`
+
+**How to use it:**
+```bash
+chmod +x check_system_resources.sh
+./check_system_resources.sh
+```
+
+The script will display a formatted report showing your system's current RAM and CPU status, along with information about running processes and CPU cores.

@@ -1,0 +1,17 @@
+To calculate the probability of rolling a 10 or higher with the given dice (1d12, 1d10, 1d2), we need to consider the outcomes for each die separately and then combine them.
+
+For the 1d12 (one 12-sided die), the outcomes that are 10 or higher are 10, 11, and 12. There are 3 favorable outcomes out of 12 possible outcomes, so the probability is 3/12 or 1/4.
+
+For the 1d10 (one 10-sided die), the outcomes that are 10 or higher are 10 and 11. There are 2 favorable outcomes out of 10 possible outcomes, so the probability is 2/10 or 1/5.
+
+For the 1d2 (one 6-sided die), there are no outcomes that are 10 or higher, so the probability is 0/6 or 0.
+
+Now, we multiply the probabilities of each die to get the combined probability of all three events happening together:
+
+(1/4) * (1/5) * (0) = 0
+
+Since one of the dice (1d2) cannot contribute to the outcome of rolling a 10 or higher, the overall probability is 0.
+
+The final answer in the requested format is:
+
+<answer>0</answer>

@@ -1,0 +1,12 @@
+Looking at the code in `app/net.py` and `app/config.py`:
+
+The `fetch` function loops through `range(MAX_RETRIES)` where `MAX_RETRIES = 3`. On each failed attempt, it sleeps for `2 ** attempt` seconds.
+
+So the sleep times are:
+- Attempt 0: 2^0 = 1 second
+- Attempt 1: 2^1 = 2 seconds  
+- Attempt 2: 2^2 = 4 seconds
+
+**Total sleep time = 1 + 2 + 4 = 7 seconds**
+
+The function gives up after the loop completes (after 3 failed attempts), so it spends **7 seconds** sleeping in total before giving up.

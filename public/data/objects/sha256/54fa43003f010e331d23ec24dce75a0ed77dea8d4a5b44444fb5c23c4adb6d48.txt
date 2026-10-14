@@ -1,0 +1,9 @@
+The string `MAX_RETRIES` is defined in `app/config.py` and used in `app/net.py`.
+
+In `app/config.py`, it is defined as:
+`MAX_RETRIES = 3`
+
+In `app/net.py`, it is imported and used in a loop:
+`for attempt in range(MAX_RETRIES):`
+
+The value of `MAX_RETRIES` is **3**.

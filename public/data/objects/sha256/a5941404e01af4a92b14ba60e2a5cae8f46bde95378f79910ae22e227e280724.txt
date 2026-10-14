@@ -1,0 +1,1 @@
+The project directory doesn't contain any files with "git" in their name or content. The available files (`notes.md` and `todo.txt`) don't appear to contain git commit information. Would you like me to check specific files for commit-related content?

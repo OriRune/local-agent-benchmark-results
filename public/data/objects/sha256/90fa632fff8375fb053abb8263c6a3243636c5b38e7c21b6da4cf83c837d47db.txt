@@ -1,0 +1,6 @@
+
+I apologize for the mistake. Here is the correct way to call the tool:
+
+{"name": "grep", "arguments": {"pattern": "failed", "path": "tests/test_units.py", "case_sensitive": false}}
+
+Please provide the results of this search.

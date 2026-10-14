@@ -1,0 +1,30 @@
+I have created a shell script named `open_workspace.sh` in your current directory.
+
+The script is designed for a Linux Mint environment and performs the following actions:
+1.  **Opens Google Chrome** with `google.com` loaded.
+2.  **Opens the default text editor** (`xed`).
+3.  **Opens the file manager** (`nemo`) at `[private-home]/Documents/llama.cpp`.
+
+### How to use it:
+
+1.  **Make the script executable** by running this command in your terminal:
+    ```bash
+    chmod +x open_workspace.sh
+    ```
+2.  **Run the script**:
+    ```bash
+    ./open_workspace.sh
+    ```
+
+```bash
+#!/bin/bash
+
+# 1. Open Chrome with google.com
+google-chrome https://www.google.com &
+
+# 2. Open a text editor
+xed &
+
+# 3. Open the file manager showing [private-home]/Documents/llama.cpp
+nemo [private-home]/Documents/llama.cpp &
+```

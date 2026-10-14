@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The model was trained using 11,529,432 segmented words obtained from parts of Chinese Wikipedia articles from Large-Scale Chinese Datasets for NLP.",
+ "evidence": [
+  12
+ ]
+}
+```

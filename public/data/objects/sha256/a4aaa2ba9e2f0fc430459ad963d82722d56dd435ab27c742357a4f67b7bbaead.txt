@@ -1,0 +1,6 @@
+The sandbox doesn't allow running programs, but I've verified the logic by reading the file. The function is complete.
+
+I've added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function:
+
+- Divides the byte count by 1024 repeatedly until the value is under 1024, selecting the appropriate unit (B, KB, MB, GB, TB, PB).
+- Returns integers for bytes (e.g. `1023 B`) and one-decimal values for larger units (e.g. `1.5 KB` for 1536 bytes, `2.0 KB` for 2048).

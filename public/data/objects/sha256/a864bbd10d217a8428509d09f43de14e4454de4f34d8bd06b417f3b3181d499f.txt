@@ -1,0 +1,30 @@
+I have created a shell script for you.
+
+Here is the content of the script. You can save this content into a file named `open_apps.sh` in your desired location (e.g., your home directory) and then run it.
+
+```bash
+#!/bin/bash
+
+# 1. Open Chrome with google.com loaded
+google-chrome google.com &
+
+# 2. Open a text editor (using gedit as an example)
+gedit
+
+# 3. Open file manager showing [private-home]/Documents/llama.cpp
+nautilus [private-home]/Documents/llama.cpp
+```
+
+### How to use it:
+
+1.  **Create the file:** Open a text editor and paste the content above into a new file named `open_apps.sh`.
+2.  **Make it executable:** Open your terminal and run the following command to give the script permission to run:
+    ```bash
+    chmod +x open_apps.sh
+    ```
+3.  **Run the script:** Execute the script from your terminal:
+    ```bash
+    ./open_apps.sh
+    ```
+
+This script will open Chrome with Google, launch the text editor (using `gedit` as a default), and open the file manager directly to the specified directory.

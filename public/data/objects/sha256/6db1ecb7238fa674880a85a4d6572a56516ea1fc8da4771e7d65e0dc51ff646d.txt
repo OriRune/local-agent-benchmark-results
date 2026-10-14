@@ -1,0 +1,20 @@
+The sandbox doesn't allow `chmod`, but the script is ready. Here's what was created:
+
+**`open_apps.sh`** — a shell script that launches:
+
+1. **Chrome** — opens a new window with `https://www.google.com`
+2. **A text editor** — tries `xed` first (Linux Mint default), then falls back to `gedit` or `mousepad`
+3. **File manager** — tries `nemo` first (Linux Mint default), then falls back to `nautilus` or `dolphin`, opening directly to `[private-home]/Documents/llama.cpp`
+
+To run it, make it executable and execute it:
+
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+Or simply:
+
+```bash
+bash open_apps.sh
+```

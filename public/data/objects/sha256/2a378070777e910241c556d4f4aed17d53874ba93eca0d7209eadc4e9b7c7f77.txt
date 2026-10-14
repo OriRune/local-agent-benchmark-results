@@ -1,0 +1,11 @@
+I found two files that might be what you're looking for:
+1. `Desktop/trip ideas 2025.txt`
+2. `Documents/Personal/Summer Break ideas.docx` (though I encountered an error when trying to read this one)
+
+`Desktop/trip ideas 2025.txt` contains the following:
+- places to go
+- - Kyoto in spring
+- - road trip down the coast
+- - camping at the lake
+
+Would you like me to try anything else with these files?

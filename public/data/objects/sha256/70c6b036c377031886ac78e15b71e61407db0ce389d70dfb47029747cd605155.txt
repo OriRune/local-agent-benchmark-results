@@ -1,0 +1,3 @@
+<answer>
+Samuel is a hero, William is a hero, Daniel is a hero, and Emily is a villain.
+</answer>

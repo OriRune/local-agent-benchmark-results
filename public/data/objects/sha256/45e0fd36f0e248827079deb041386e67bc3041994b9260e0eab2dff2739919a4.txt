@@ -1,0 +1,12 @@
+```json
+{
+  "character": {
+    "name": "Medalist",
+    "class": "Thaumaturgist",
+    "attributes": {
+      "medalist": true,
+      "theta": true
+    }
+  }
+}
+```

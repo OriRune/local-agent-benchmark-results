@@ -1,0 +1,10 @@
+I've written `README.md` for the project (the `tinydl` command-line downloader).
+
+The CLI options are taken directly from `build_parser()` in `app/cli.py`, which uses `argparse`. The README lists every option with its help text:
+
+- **`url`** — positional, required; "what to download"
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+- **`-h`, `--help`** — the global argparse help option (the only automatic one, since no version is set)
+
+I removed a `--version` entry I initially included, because the parser sets no version and doesn't add that flag. The README also includes a short usage overview and a one-line description of what the tool does.

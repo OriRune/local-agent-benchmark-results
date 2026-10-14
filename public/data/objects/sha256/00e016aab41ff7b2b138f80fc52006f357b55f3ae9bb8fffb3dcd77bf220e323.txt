@@ -1,0 +1,3 @@
+Olivia is a hero, Oliver is a villain, and Benjamin is a hero.
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

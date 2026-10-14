@@ -1,0 +1,2 @@
+The probability is calculated as 1 - (number of favorable outcomes for sum ≤10)/total outcomes. After evaluating, the reduced fraction is 1/60. Thus, the answer is \boxed{1/60}.  
+<answer>1/60</answer>

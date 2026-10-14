@@ -1,0 +1,3 @@
+The current folder is a working directory for a benchmark run, not a git repository. The most recent git commit in the parent `project` folder cannot be checked directly due to restrictions on accessing external resources or git metadata.
+
+If you'd like, I can check the most recent commit message in the `project` folder by examining the git history locally (if possible) or by looking at the commit changes in the files here. Alternatively, you can check the git commit history manually in the `project` folder if you have access to git tools.

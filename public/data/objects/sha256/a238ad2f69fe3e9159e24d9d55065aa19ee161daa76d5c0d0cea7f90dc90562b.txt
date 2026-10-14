@@ -1,0 +1,9 @@
+Done. I created `README.md` for the project.
+
+The CLI is defined in `app/cli.py` using argparse, so I documented every argument with its exact help text (read directly from the source, since running the CLI was blocked in this session):
+
+- `url` — what to download (positional argument)
+- `-o` / `--output` — file to write (default: stdout)
+- `-q` / `--quiet` — no progress output
+
+The README also includes a brief project description, the usage line, and a short example.

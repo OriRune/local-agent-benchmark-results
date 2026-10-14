@@ -1,0 +1,1 @@
+The bot *collects* the user's location to *process* the request. It *outputs* the current weather *options* for that specific area. This *loop* ensures accurate *data* delivery.

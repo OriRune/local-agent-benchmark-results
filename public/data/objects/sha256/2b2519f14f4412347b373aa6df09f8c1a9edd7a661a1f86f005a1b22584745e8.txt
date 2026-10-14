@@ -1,0 +1,5 @@
+To make 24 using the numbers 10, 4, 9, and 7, we can use the following expression:
+
+10 * 4 - 9 - 7 = 40 - 9 - 7 = 31 - 7 = 24
+
+<answer>10 * 4 - 9 - 7</answer>

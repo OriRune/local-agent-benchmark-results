@@ -1,0 +1,6 @@
+Done! The to-do list now persists your items using `localStorage`. Here's what changed:
+
+- **On load** — it reads any previously saved items from `localStorage` and restores them
+- **On every change** (add, check off, edit, delete) — it saves the updated list to `localStorage`
+
+Your tasks will survive page reloads and browser restarts. The only way to clear them is to manually clear your browser's local storage or use the "Export as Text" button to back them up.

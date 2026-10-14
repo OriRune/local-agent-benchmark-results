@@ -1,0 +1,7 @@
+Let me verify the fix by checking the logic against all three test assertions:
+
+- `parse_size("512 B")` → `int(512.0 * 1) = 512` ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024) = 1536` ✓ (was `1500` before)
+- `parse_size("2 MB")` → `int(2.0 * 1024**2) = 2097152` ✓
+
+The fix is complete. The test was failing because `KB` was defined as `1000` instead of `1024`, which contradicted both the module docstring ("1 KB = 1024 bytes") and the test's expectation of `1536`. I changed `UNITS["KB"]` from `1000` to `1024` to make the code consistent with its own documentation and the test.

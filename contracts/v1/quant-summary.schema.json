@@ -1,0 +1,417 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public Checkpoint Quant Summary V1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "quant_summary_version": {
+      "const": 1
+    },
+    "summary_type": {
+      "const": "checkpoint_quant_comparison"
+    },
+    "summary_id": {
+      "type": "string",
+      "pattern": "^quant-summary-[a-f0-9]{64}$"
+    },
+    "job_id": {
+      "type": "string",
+      "pattern": "^quant-job-[a-f0-9]{64}$"
+    },
+    "checkpoint_id": {
+      "type": "string"
+    },
+    "generator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "const": "openai"
+        },
+        "display_name_at_generation": {
+          "type": "string"
+        },
+        "model_id_requested": {
+          "type": "string"
+        },
+        "model_id_returned": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "snapshot_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "identity_resolution": {
+          "enum": [
+            "requested_only",
+            "provider_reported_alias"
+          ]
+        },
+        "provider_fingerprint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reasoning_effort_requested": {
+          "type": "string"
+        },
+        "settings": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "reasoning_effort": {
+              "type": "string"
+            },
+            "max_input_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "max_output_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "tools_enabled": {
+              "const": false
+            },
+            "store_responses": {
+              "enum": [
+                false,
+                null
+              ]
+            },
+            "truncation": {
+              "enum": [
+                "disabled",
+                "client_input_unchanged"
+              ]
+            },
+            "request_timeout_seconds": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "max_transport_retries": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "execution": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "transport": {
+                  "const": "codex_exec"
+                },
+                "authentication": {
+                  "const": "chatgpt"
+                },
+                "cli_version": {
+                  "type": "string"
+                },
+                "output_limit_enforcement": {
+                  "const": "post_completion"
+                },
+                "sandbox": {
+                  "const": "read-only"
+                },
+                "ephemeral": {
+                  "const": true
+                },
+                "request_unit": {
+                  "const": "cli_invocation"
+                },
+                "provider_retries": {
+                  "const": "cli_managed"
+                }
+              },
+              "required": [
+                "transport",
+                "authentication",
+                "cli_version",
+                "output_limit_enforcement",
+                "sandbox",
+                "ephemeral",
+                "request_unit",
+                "provider_retries"
+              ]
+            }
+          },
+          "required": [
+            "reasoning_effort",
+            "max_input_tokens",
+            "max_output_tokens",
+            "tools_enabled",
+            "store_responses",
+            "truncation",
+            "request_timeout_seconds",
+            "max_transport_retries"
+          ]
+        },
+        "settings_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "sdk_version": {
+          "type": "string"
+        },
+        "policy_revision": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "provider",
+        "display_name_at_generation",
+        "model_id_requested",
+        "model_id_returned",
+        "snapshot_id",
+        "identity_resolution",
+        "provider_fingerprint",
+        "reasoning_effort_requested",
+        "settings",
+        "settings_sha256",
+        "sdk_version",
+        "policy_revision"
+      ]
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "version",
+        "sha256"
+      ]
+    },
+    "output_schema_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "origin_dataset_revision_id": {
+          "type": "string"
+        },
+        "analysis_input_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "origin_dataset_revision_id",
+        "analysis_input_hash"
+      ]
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "output_schema_version": {
+          "const": 1
+        },
+        "synopsis": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "group_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "artifact_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 2,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "text",
+            "group_ids",
+            "artifact_ids"
+          ]
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "group_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "artifact_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 2,
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "text",
+              "group_ids",
+              "artifact_ids"
+            ]
+          },
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "output_schema_version",
+        "synopsis",
+        "observations"
+      ]
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "const": "passed"
+        },
+        "validator_version": {
+          "const": "quant-summary-validator-v1"
+        },
+        "semantic_review_required": {
+          "const": true
+        },
+        "claims": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "status",
+        "validator_version",
+        "semantic_review_required",
+        "claims"
+      ]
+    },
+    "editorial": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "state": {
+              "const": "draft"
+            },
+            "reviewed_at": {
+              "type": "null"
+            },
+            "edited": {
+              "const": false
+            },
+            "supersedes_summary_id": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "state",
+            "reviewed_at",
+            "edited",
+            "supersedes_summary_id"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "state": {
+              "const": "approved"
+            },
+            "reviewed_at": {
+              "type": "string"
+            },
+            "reviewer_kind": {
+              "const": "human"
+            },
+            "edited": {
+              "type": "boolean"
+            },
+            "supersedes_summary_id": {
+              "type": "string",
+              "pattern": "^quant-summary-[a-f0-9]{64}$"
+            },
+            "edit_author": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "state",
+            "reviewed_at",
+            "reviewer_kind",
+            "edited",
+            "supersedes_summary_id"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "quant_summary_version",
+    "summary_type",
+    "summary_id",
+    "job_id",
+    "checkpoint_id",
+    "generator",
+    "generated_at",
+    "prompt",
+    "output_schema_sha256",
+    "evidence",
+    "content",
+    "validation",
+    "editorial"
+  ]
+}

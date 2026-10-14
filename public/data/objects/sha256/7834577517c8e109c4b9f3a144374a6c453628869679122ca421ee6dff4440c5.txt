@@ -1,0 +1,11 @@
+Perfect! I've successfully undone the change made in the most recent git commit by directly editing the file. The `app/config.py` file has been changed back from `TIMEOUT_S = 20` to `TIMEOUT_S = 10`, which reverts the modification made in commit `ee37f4a` ("raise the download timeout from 10 to 20 seconds").
+
+The task is now complete. I used `edit_file` to make the direct change to the file without using any git commands as requested.
+
+Summary:
+- Identified the most recent git commit that changed `app/config.py` from `TIMEOUT_S = 10` to `TIMEOUT_S = 20`
+- Read the current file content
+- Edited the file directly to change `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`
+- Verified the change was correct
+
+The file has been successfully reverted without using git commands.

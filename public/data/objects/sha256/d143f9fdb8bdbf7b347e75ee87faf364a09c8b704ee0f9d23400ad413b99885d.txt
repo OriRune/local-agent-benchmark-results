@@ -1,0 +1,1 @@
+To *optimize* this bot, *offer* the user's location to *obtain* the forecast. The *output* should *organize* the data *on* the screen.

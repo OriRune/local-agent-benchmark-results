@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The results are evaluated using a questionnaire in which respondents rank the captions (human, NJM, and STAIR caption) in order of funniness, and the percentage of captions ranked as funniest for each method is reported; the NJM is also compared with the STAIR caption baseline using the average number of stars assigned by Bokete users.",
+  "evidence": [2, 12, 13, 14]
+}
+```

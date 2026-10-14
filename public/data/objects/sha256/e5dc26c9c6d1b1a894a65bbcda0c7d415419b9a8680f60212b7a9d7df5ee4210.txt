@@ -1,0 +1,21 @@
+Working from the code in `app/net.py`, `app/config.py`, and `app/cli.py`:
+
+**The retry loop** (`app/net.py`):
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3 → attempt = 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)      # sleeps AFTER each failed attempt
+```
+
+**The sleep per failed attempt** (`2 ** attempt`):
+- attempt 0 → 2⁰ = 1 s
+- attempt 1 → 2¹ = 2 s
+- attempt 2 → 2² = 4 s
+
+If every attempt fails, all three iterations reach the `except` and sleep. There is no sleep after the final (third) failure — the loop just exits and raises.
+
+**Total sleep = 1 + 2 + 4 = 7 seconds.**
+
+(Note: `TIMEOUT_S = 20` is the per-attempt network timeout, not part of the sleep total — the question asks about sleeping time, so it doesn't count.)

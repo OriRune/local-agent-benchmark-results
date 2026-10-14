@@ -1,0 +1,1 @@
+I've created `books.html` containing a styled, responsive table of the books from your CSV. It's a single HTML file that you can open by double-clicking to view or share with your book club.

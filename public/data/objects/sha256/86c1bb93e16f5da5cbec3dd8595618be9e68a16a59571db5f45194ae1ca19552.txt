@@ -1,0 +1,6 @@
+Done. I undid the change from the most recent commit (`28e512d`) by editing the file directly:
+
+- File: `app/config.py`
+- Change: `TIMEOUT_S` was set back from `20` to `10`, reverting it to its previous value.
+
+I only edited the file and did not touch git (no `git reset`, `git revert`, or `git commit`). Note that the working tree now differs from the committed `HEAD`, so if you want the change persisted in git, you'd need to decide separately — but per your instruction I left git untouched.

@@ -1,0 +1,19 @@
+Using the numbers 6, 2, 2, 4:
+
+Let me try different combinations:
+- 6 + 2 + 2 + 4 = 14 (no)
+- 6 * 2 + 2 + 4 = 18 (no)
+- 6 * 2 * 2 - 4 = 20 (no)
+- 6 * 2 * 2 + 4 = 28 (no)
+- 6 * 4 - 2 * 2 = 24 ✓
+
+Let me verify: 6 * 4 = 24, and 2 * 2 = 4, so 24 - 4 = 20... 
+
+Wait, that's 20, not 24. Let me recalculate: 6 * 4 = 24, 2 * 2 = 4, 24 - 4 = 20. That's wrong.
+
+Let me try again:
+- 6 * 4 = 24, and I need the 2, 2 to not change it. 6 * 4 * (2/2) = 24 ✓
+
+Let me verify: 2/2 = 1, 6 * 4 = 24, 24 * 1 = 24. Correct!
+
+<answer>6 * 4 * 2 / 2</answer>

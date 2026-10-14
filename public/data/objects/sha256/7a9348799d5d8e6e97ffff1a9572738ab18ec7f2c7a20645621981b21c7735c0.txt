@@ -1,0 +1,16 @@
+I've listed the files in your current directory and found the files you mentioned:
+
+- app/cli.py (903 bytes)
+- app/net.py (324 bytes)
+- app/units.py (243 bytes)
+- tests/test_units.py (101 bytes)
+- app/config.py (185 bytes)
+- app/util.py (100 bytes)
+- app/__init__.py (0 bytes)
+
+There are no files named `notes.md` or `todo.txt` in the current working directory.
+
+Would you like me to:
+- Read or modify any of these files?
+- Search for specific content in these files?
+- Perform another file operation?

@@ -1,0 +1,5 @@
+I've searched through your entire workspace — including Documents (Personal, old stuff, Recipes, School, Work), Desktop, and Downloads — but I couldn't find a 2019 tax return anywhere.
+
+The only tax-related file I found is **Documents/Personal/tax return 2024.pdf**, which appears to be a placeholder file (it's only 973 bytes and seems corrupted).
+
+There doesn't appear to be a 2019 tax return stored in this workspace. Would you like me to help you look elsewhere, or do you have the file in a different location?

@@ -1,0 +1,7 @@
+If every attempt in `fetch` fails, the program spends a total of **7 seconds** sleeping before it gives up. This is calculated as follows:
+
+- On the first failed attempt (attempt 0), it sleeps for \(2^0 = 1\) second.
+- On the second failed attempt (attempt 1), it sleeps for \(2^1 = 2\) seconds.
+- On the third failed attempt (attempt 2), it sleeps for \(2^2 = 4\) seconds.
+
+Adding these up: \(1 + 2 + 4 = 7\) seconds in total.

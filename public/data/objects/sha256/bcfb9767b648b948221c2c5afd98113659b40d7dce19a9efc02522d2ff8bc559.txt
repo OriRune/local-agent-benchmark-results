@@ -1,0 +1,7 @@
+Since I cannot directly run the test due to sandbox restrictions, I can confirm the logic is now correct:
+
+- `512 B` will return `512`.
+- `1.5 KB` will return `int(1.5 * 1024) = 1536`.
+- `2 MB` will return `int(2 * 1024 ** 2) = 2097152`.
+
+The function now adheres to **1024-based units** as intended. If you run the test locally, it should pass.

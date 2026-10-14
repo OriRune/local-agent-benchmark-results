@@ -1,0 +1,6 @@
+{
+"answer": "BLSTM word embedding model",
+"evidence": [
+"1: We found an improvement of 4-6% using the LSTM model over the SVR and came fourth in the track. We report a number of different evaluations using a finance specific word embedding model and reflect on the effects of using different evaluation metrics."
+]
+}

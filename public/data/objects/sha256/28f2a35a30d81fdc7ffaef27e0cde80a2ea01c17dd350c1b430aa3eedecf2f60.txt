@@ -1,0 +1,12 @@
+To make 24 using the numbers 10, 1, 2, and 6 exactly once, we can use the following steps:
+1. Subtract 1 from 10 to get 9.
+2. Multiply the result by 2 to get 18.
+3. Add 6 to the result to get 24.
+
+The expression is:
+$(10 - 1) \times 2 + 6$
+
+Another valid solution is:
+$6 \times (10 / 2 - 1)$
+
+<answer>(10 - 1) * 2 + 6</answer>

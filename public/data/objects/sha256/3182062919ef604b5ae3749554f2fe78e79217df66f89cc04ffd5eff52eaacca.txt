@@ -1,0 +1,13 @@
+I couldn't find a retry mechanism with sleeps in the fetch code from the files I was able to read.
+
+The `fetch` tool in `agent_tools.py` (line 1530) calls `_download` (line 1544) which uses `urllib.request.urlopen(req, timeout=30)` — a single attempt with a 30-second timeout. There's no loop or retry logic visible in this code.
+
+The `run` tool has a `_legacy_run` method with `time.sleep(0.05)` in the sandbox supervisor, but that's for command execution, not fetch.
+
+I couldn't find the complete fetch implementation because the file was cut off at line 1590 before I could see the full `retry_precondition_satisfied` method and anything else that might be related.
+
+Could you clarify what "fetch" you're referring to? Is it:
+1. The `fetch` tool defined in `agent_tools.py` (which doesn't appear to have retries), or
+2. Some other fetch function elsewhere in the project?
+
+If you know the specific file or code location, please share it and I can work it out.

@@ -1,0 +1,1 @@
+The release date mentioned in notes.md is **October 14, 2026** (or 14 October). This is found in line 8 of the file.

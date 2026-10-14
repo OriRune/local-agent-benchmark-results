@@ -1,0 +1,7 @@
+{
+  "answer": "word2vec",
+  "evidence": [
+    4,
+    17
+  ]
+}

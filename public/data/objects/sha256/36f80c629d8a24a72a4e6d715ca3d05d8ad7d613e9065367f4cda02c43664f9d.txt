@@ -1,0 +1,29 @@
+Looking at the grid, I need to find a path from `*` at position (1,0) to `#` at position (0,5).
+
+Let me trace the grid:
+```
+Row 0: O X X O O #
+Row 1: * X X O O O
+Row 2: O O O X X O
+Row 3: X O O X X O
+Row 4: O X O O X O
+```
+
+**BFS from (1,0):**
+- Level 1: (0,0), (2,0)
+- Level 2: (2,1)
+- Level 3: (3,1), (2,2)
+- Level 4: (3,2)
+- Level 5: (4,2)
+- Level 6: (4,3) → dead end (right is X, up is X)
+
+The left side (columns 0-2) is completely blocked from the right side (columns 3-5) by X cells at:
+- (0,1), (0,2) block row 0
+- (1,1), (1,2) block row 1
+- (2,3), (2,4) block row 2
+- (3,3), (3,4) block row 3
+- (4,4) blocks row 4
+
+There is no connection between the left region containing `*` and the right region containing `#`.
+
+<answer>infeasible</answer>

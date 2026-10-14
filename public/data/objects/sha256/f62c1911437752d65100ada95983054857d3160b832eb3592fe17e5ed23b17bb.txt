@@ -1,0 +1,7 @@
+The fix has been applied. The `UNITS` dictionary now correctly defines `KB` as `1024` instead of `1000`, which matches the comment in the code and the test expectations:
+
+- `parse_size("512 B")` → `512 * 1 = 512` ✓
+- `parse_size("1.5 KB")` → `1.5 * 1024 = 1536` ✓
+- `parse_size("2 MB")` → `2 * 1024**2 = 2097152` ✓
+
+The bug was that `KB` was set to `1000` (metric/decimal) instead of `1024` (binary), even though the function's comment explicitly states it uses 1024-based units.

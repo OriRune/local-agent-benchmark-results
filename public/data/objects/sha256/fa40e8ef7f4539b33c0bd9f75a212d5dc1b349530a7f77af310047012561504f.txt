@@ -1,0 +1,8 @@
+The solution is approximately 11,529.43 kg of propellant for stage 2.
+
+Let me verify the calculation:
+- Stage 1 provides 3,163.95 m/s of delta-v
+- Stage 2 provides 6,236.05 m/s of delta-v
+- Total: 9,400 m/s ✓
+
+ANSWER: 11529.43

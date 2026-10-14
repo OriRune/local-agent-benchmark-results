@@ -1,0 +1,7 @@
+I have created a `README.md` file in the project root that lists all the command-line options for the `tinydl` CLI along with their respective help texts as defined in `app/cli.py`.
+
+The README includes:
+- A description of the tool.
+- Usage instructions.
+- A table of all options (`url`, `-o/--output`, and `-q/--quiet`).
+- Examples of how to use the tool.

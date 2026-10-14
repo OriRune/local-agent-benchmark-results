@@ -1,0 +1,13 @@
+I've created a shell script called `open_apps.sh` in your workspace. Here's what it does:
+
+1. **Chrome** - Opens google.com in Chrome
+2. **Text editor** - Opens vim (you can change this to nano, gedit, or any other editor you prefer)
+3. **File manager** - Opens the file manager showing `[private-home]/Documents/llama.cpp`
+
+To run it, use:
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+The script waits for all processes to complete before exiting. If you want to run them independently, you can modify the script to remove the `wait` command at the end.

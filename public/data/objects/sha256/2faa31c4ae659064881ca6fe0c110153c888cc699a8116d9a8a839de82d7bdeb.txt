@@ -1,0 +1,10 @@
+Let me work through this:
+
+- `MAX_RETRIES = 3`, so the `for` loop runs with `attempt` values of **0, 1, 2** (3 iterations total).
+- On each failure, it sleeps `2 ** attempt` seconds.
+- The sleeps are:
+  - Attempt 0: `2^0 = 1` second
+  - Attempt 1: `2^1 = 2` seconds
+  - Attempt 2: `2^2 = 4` seconds
+
+**Total sleep time = 1 + 2 + 4 = 7 seconds.**

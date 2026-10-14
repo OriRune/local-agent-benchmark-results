@@ -1,0 +1,1 @@
+The function `fetch` has been renamed to `download` in `app/net.py`. Since no other files contain the string "fetch" (confirmed via `grep`), there are no other places in the project that need updating. The task is complete.

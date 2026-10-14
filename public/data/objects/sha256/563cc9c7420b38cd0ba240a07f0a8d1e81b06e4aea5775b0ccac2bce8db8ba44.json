@@ -1,0 +1,1 @@
+[{"args":{"content":"#!/bin/bash\n\necho \"RAM Usage:\"\nfree -h\n\necho \"CPU Usage:\"\ntop -bn1 | grep \"Cpu(s)\"\n","path":"system_info.sh"},"name":"write_file","result":"created system_info.sh (7 lines)","status":"ok"}]

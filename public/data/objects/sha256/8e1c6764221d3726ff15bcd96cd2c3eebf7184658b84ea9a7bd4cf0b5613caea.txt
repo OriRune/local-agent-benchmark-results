@@ -1,0 +1,1 @@
+The passage does not explicitly define what "a" and "b" represent in the context of the expression $4k+1$ or $4k+3$ for Gaussian primes.

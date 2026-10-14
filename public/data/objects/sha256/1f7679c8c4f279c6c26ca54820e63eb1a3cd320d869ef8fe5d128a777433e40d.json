@@ -1,0 +1,1 @@
+[{"args":{"path":"."},"name":"list_dir","result":"app/\ndata/\ntests/\nnotes.md  (340 bytes)\ntodo.txt  (53 bytes)","status":"ok"},{"args":{"pattern":"*.md","sort":"size"},"name":"find_files","result":"340 bytes  notes.md","status":"ok"},{"args":{"pattern":"notes*.md","sort":"size"},"name":"find_files","result":"340 bytes  notes.md","status":"ok"}]

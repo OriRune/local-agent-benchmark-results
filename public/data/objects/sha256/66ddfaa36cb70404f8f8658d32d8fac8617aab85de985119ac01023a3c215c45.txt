@@ -1,0 +1,17 @@
+To find an expression that equals 24 using the numbers 10, 4, 9, and 7, we can test different combinations of these numbers and the allowed operators (+, -, *, /).
+
+1.  Try multiplying 4 by 6:
+    *   Can we get 6 from 10, 9, and 7?
+    *   9 + 7 = 16
+    *   16 - 10 = 6
+    *   So, 4 * (9 + 7 - 10) = 4 * 6 = 24.
+
+2.  Try another combination:
+    *   10 * 4 = 40
+    *   9 + 7 = 16
+    *   40 - 16 = 24
+    *   So, 10 * 4 - (9 + 7) = 24.
+
+Both expressions use each number exactly once and follow the rules. Let's use the first one.
+
+<answer>4 * (9 + 7 - 10)</answer>

@@ -1,0 +1,1 @@
+I have created a single, aesthetically pleasing HTML file named `book_club_report.html` that displays the information from your `books.csv`. You can open this file directly in any web browser to view and screenshot your reading list for your book club.

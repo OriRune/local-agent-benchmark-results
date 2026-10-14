@@ -1,0 +1,18 @@
+The shell script `open_apps.sh` has been created in your workspace. To use it:
+
+1. Make it executable:
+   ```bash
+   chmod +x open_apps.sh
+   ```
+
+2. Run it:
+   ```bash
+   ./open_apps.sh
+   ```
+
+The script will:
+- Open Chrome with google.com loaded
+- Open a text editor (gedit)
+- Open the file manager (Nautilus) showing `[private-home]/Documents/llama.cpp`
+
+Note: If you have a different text editor or file manager preference, you can edit the script to use alternatives like `code` (VS Code), `nano`, `vim`, `thunar`, `dolphin`, etc.

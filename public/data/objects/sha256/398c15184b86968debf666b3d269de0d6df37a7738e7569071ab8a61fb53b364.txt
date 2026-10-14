@@ -1,0 +1,4 @@
+Found it! The `proxy.ini` file at `workspace/shared-config/network/proxy.ini` sets:
+
+- **host:** `proxy.lan.example`
+- **port:** `3128`

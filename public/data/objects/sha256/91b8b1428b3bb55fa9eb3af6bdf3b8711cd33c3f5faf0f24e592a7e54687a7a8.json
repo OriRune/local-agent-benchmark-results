@@ -1,0 +1,1 @@
+[{"args":{"path":"."},"name":"read_file","result":"error: . is a folder; use list_dir","status":"error"},{"args":{"path":"."},"name":"list_dir","result":"(empty folder)","status":"ok"}]

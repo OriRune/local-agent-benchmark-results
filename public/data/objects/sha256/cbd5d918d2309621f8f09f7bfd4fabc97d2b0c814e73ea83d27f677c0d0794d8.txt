@@ -1,0 +1,1 @@
+The file `proxy.ini` was located in the specified folder. I don't have access to the contents of the file itself, so I can't directly read or extract the proxy host and port from it. If you can provide the contents of the file or confirm its location, I can help you interpret or modify it.

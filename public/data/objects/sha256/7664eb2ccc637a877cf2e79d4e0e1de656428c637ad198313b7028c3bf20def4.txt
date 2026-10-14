@@ -1,0 +1,13 @@
+The HTML file has been created at `books.html`. Here's what it includes:
+
+- **Beautiful, single-file design** — open it by double-clicking and it works immediately
+- **23 books** from your CSV, displayed as elegant card-style entries
+- **Genre-colored tags** (Sci-Fi, Fantasy, Memoir, etc.) for quick visual scanning
+- **Search** — filter by title or author
+- **Genre filter** — narrow by genre
+- **Sort** — by title, author, pages, or date
+- **Responsive** — works on mobile too
+- **Print-friendly** — clean layout when printing
+- **Printed header** with a gradient dark background
+
+The page is self-contained — no external dependencies, just the HTML file you can double-click to view.

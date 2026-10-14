@@ -1,0 +1,2 @@
+
+Your HTML page is ready: **books.html**. It displays the entire books.csv data in a clean, responsive table with nice styling, and it works as a single file you can double‑click to open.

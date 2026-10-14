@@ -1,0 +1,1 @@
+I have searched the current project folder and the parent directories for a file named `proxy.ini`, but I was unable to locate it. Could you please confirm the exact location of the `proxy.ini` file?

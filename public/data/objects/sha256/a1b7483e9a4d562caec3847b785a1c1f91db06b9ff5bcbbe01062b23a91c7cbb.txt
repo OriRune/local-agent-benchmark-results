@@ -1,0 +1,16 @@
+The file `todo.txt` already existed and now has an additional line at the end:
+
+```
+- publish release notes
+```
+
+Here is the updated content of `todo.txt`:
+
+```
+1	- write README
+2	- add proxy support
+3	- tag the release
+4	- publish release notes
+```
+
+The task is complete.

@@ -1,0 +1,6 @@
+{
+  "answer": "The finance specific word embedding model used is word2vec.",
+  "evidence": [
+    4
+  ]
+}

@@ -1,0 +1,13 @@
+The shell script `open_apps.sh` has been created in the current working directory. To make it executable and run it, you can use the following commands in your terminal:
+
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+This script will open:
+1. Chrome with google.com loaded.
+2. The gedit text editor.
+3. The Nemo file manager showing the directory `[private-home]/Documents/llama.cpp`.
+
+If you prefer a different text editor or file manager, let me know, and I can adjust the script accordingly.

@@ -1,0 +1,1 @@
+I have created a README.md file that lists every command line option of the CLI with its help text. The README describes the CLI named "tinydl" with its options and positional arguments as defined in app/cli.py.

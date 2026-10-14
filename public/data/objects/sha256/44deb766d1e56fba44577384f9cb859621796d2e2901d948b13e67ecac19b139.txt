@@ -1,0 +1,3 @@
+From the fetched Wikipedia page for the Royal Opera House, the proscenium width is mentioned: "The proscenium is 14.80 metres (48 ft 7 in) wide, with the stage of the same depth and 12.20 metres (40 ft 0 in) high."
+
+So the width of the proscenium is 14.80 metres.

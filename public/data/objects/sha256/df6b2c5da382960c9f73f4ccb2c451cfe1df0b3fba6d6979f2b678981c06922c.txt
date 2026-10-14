@@ -1,0 +1,10 @@
+```json
+{
+ "answer": "The proposed architecture extracts text features using a classical sparse vectorizer, specifically Term frequency-Inverse document frequency (TF-IDF). Additionally, the process involves POS Tagging, Shallow Parsing, and the use of n-grams of POS tags.",
+ "evidence": [
+  [5],
+  [8],
+  [9]
+ ]
+}
+```

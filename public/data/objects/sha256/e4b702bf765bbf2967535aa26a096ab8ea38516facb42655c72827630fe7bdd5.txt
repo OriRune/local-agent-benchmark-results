@@ -1,0 +1,5 @@
+I have analyzed the `books.csv` file. 
+
+Last year (2025), you read 21 different books. Of those, 10 were finished between July and December.
+
+ANSWER: 21, 10

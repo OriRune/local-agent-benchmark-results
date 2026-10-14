@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The corpus was annotated according to eighteen persuasion techniques. Examples include leveraging on the emotions of the audience (e.g., loaded language, appeal to authority, slogans) and logical fallacies (e.g., straw men, hidden ad-hominem fallacies, and red herring).",
+  "evidence": [3, 4]
+}
+```

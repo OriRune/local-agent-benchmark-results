@@ -1,0 +1,17 @@
+Based on the clues provided:
+
+1.  **House 3**: Clue 1 states **Bob** is in the third house.
+2.  **House 2**: Clue 2 states **Arnold** is in the second house.
+3.  **House 1**: Since Bob is in House 3 and Arnold is in House 2, the only remaining name for House 1 is **Alice**.
+
+We can verify this with the other clues:
+*   Clue 4 states the Dane is Alice (so Alice is the Dane).
+*   Clue 5 states the dog owner is the Dane (so Alice owns the dog).
+*   Clue 3 states Arnold is the Brit.
+*   Clue 6 states Arnold is the cat lover.
+
+This leaves Bob (House 3) as the Chinese person who owns the bird.
+
+The person living in House 1 is Alice.
+
+<answer>Alice</answer>

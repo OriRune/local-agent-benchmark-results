@@ -1,0 +1,29 @@
+Here's the script — `open_apps.sh`:
+
+```bash
+#!/bin/bash
+
+# Open Chrome with google.com
+google-chrome https://google.com &
+
+# Open a text editor
+gedit &
+
+# Open the file manager showing [private-home]/Documents/llama.cpp
+nautilus [private-home]/Documents/llama.cpp &
+```
+
+To run it, either:
+
+- **Make it executable and run directly:**
+  ```bash
+  chmod +x open_apps.sh
+  ./open_apps.sh
+  ```
+
+- **Or run it with bash:**
+  ```bash
+  bash open_apps.sh
+  ```
+
+The `&` at the end of each command lets them all launch in parallel without waiting for one to finish before starting the next. If your system uses a different browser or text editor (e.g., `chromium-browser`, `mousepad`, `code`), just swap the command names accordingly.

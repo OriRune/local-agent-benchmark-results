@@ -1,0 +1,6 @@
+The TODO comments from the Python files have been appended to todo.txt:
+
+- "log each failed attempt" (from app/net.py)
+- "add a helper that formats byte sizes" (from app/util.py)
+
+The file now contains these two new lines. You can verify the contents by opening `todo.txt` in the working directory.

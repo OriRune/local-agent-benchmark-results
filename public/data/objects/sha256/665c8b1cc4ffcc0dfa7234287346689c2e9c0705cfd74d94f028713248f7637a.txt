@@ -1,0 +1,1 @@
+I've appended "- publish release notes" to todo.txt as the new last line. The file now contains this updated todo list.

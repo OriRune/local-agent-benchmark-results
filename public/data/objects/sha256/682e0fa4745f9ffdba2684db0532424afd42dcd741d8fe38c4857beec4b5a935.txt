@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The features extracted from text include keywords representing names and surnames, titles and excerpts of web page content, and a bag-of-words representation using Term frequency-Inverse document frequency (TF-IDF).",
+  "evidence": [1, 5, 8]
+}
+```

@@ -1,0 +1,5 @@
+I can't run the test in this sandbox, but the fix is straightforward:
+
+**The bug:** In `app/units.py`, the `UNITS` dictionary had `"KB": 1000` (decimal/si multiplier), but the module's docstring and the test both expect 1024-based (binary) units. The test asserts `parse_size("1.5 KB") == 1536`, which requires `1.5 * 1024 = 1536`, not `1.5 * 1000 = 1500`.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` in the `UNITS` dictionary in `app/units.py`.

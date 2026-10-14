@@ -1,0 +1,16 @@
+The sandbox doesn't allow running programs, but I already have the help text from the source. Let me verify my README is accurate against the code one more time.
+
+The CLI options are confirmed directly from `app/cli.py`:
+- `url` — positional, `help="what to download"`
+- `-o`/`--output` — `help="file to write (default: stdout)"`
+- `-q`/`--quiet` — `action="store_true"`, `help="no progress output"`
+
+The README is complete and accurate.
+
+I created `README.md` documenting the `tinydl` CLI. It lists every command-line option with its help text:
+
+- **`url`** (positional, required) — "what to download"
+- **`-o` / `--output`** — "file to write (default: stdout)"
+- **`-q` / `--quiet`** — "no progress output"
+
+The README also includes a usage summary, examples, and a short "how it works" section describing the modules (`cli.py`, `net.py`, `config.py`). I pulled the help text directly from the `add_argument` calls in `app/cli.py`, so it matches the actual output.

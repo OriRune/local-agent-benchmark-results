@@ -1,0 +1,5 @@
+The largest file in the directory is **`ggml-vocab-deepseek-llm.gguf`** located at `models/ggml-vocab-deepseek-llm.gguf`. It occupies **1.7 MB** in size. 
+
+Other notable large files include `ggml-vocab-gemma-4-19b...` (1.7 MB) and `ggml-vocab-qwen35.gguf` (1.7 MB), but the above is the largest by size. 
+
+No further action required unless specified.

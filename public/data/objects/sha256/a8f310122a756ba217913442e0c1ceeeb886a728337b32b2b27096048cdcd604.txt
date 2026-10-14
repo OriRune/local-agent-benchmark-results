@@ -1,0 +1,24 @@
+## Setting Up the Graph
+
+Each prerequisite `(a, b)` means course `b` must be taken before course `a`, so I'll create a directed edge `b → a`.
+
+## Detecting Cycles
+
+Let me trace the edges involving courses 17 and 12:
+
+- `(12, 17)` → edge **17 → 12**
+- `(17, 12)` → edge **12 → 17**
+
+Both edges exist! This creates a **cycle**: **17 → 12 → 17**
+
+Let me verify both prerequisites are in the list:
+- `(12, 17)` ✓ — "you must first take course 17 to take course 12"
+- `(17, 12)` ✓ — "you must first take course 12 to take course 17"
+
+## Conclusion
+
+Since course 17 requires course 12, and course 12 requires course 17, there is a circular dependency. This makes it impossible to take either course first.
+
+Therefore, you **cannot** finish all courses.
+
+<answer>False</answer>

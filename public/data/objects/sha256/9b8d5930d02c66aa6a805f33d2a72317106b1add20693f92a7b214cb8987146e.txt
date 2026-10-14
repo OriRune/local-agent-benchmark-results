@@ -1,0 +1,9 @@
+The HTML code I provided already includes functionality to remember your items when you reload the page. It uses the browser's built-in `localStorage` API to save and load the to-do list.
+
+When you open the `index.html` file in your browser, the script performs the following actions:
+1.  **On Load:** It calls `loadTodos()`, which checks `localStorage` for a saved list. If it finds one, it loads it and renders the tasks.
+2.  **On Change:** Every time you add, complete, delete, or edit a task, it calls `saveTodos()`, which updates `localStorage` with the current state of the `todos` array.
+
+Since the file is saved locally in your browser's storage, the list will persist across page reloads.
+
+No changes are necessary to the code I previously wrote.

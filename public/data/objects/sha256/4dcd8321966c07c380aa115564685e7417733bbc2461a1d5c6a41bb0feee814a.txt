@@ -1,0 +1,13 @@
+I've created a README.md file that lists every command-line option of the CLI with its help text. The documentation includes:
+
+1. A usage summary showing the help output format
+2. A reference table with all options
+3. Usage examples demonstrating common command patterns
+
+The CLI options documented are:
+- `url` (required positional argument) - "what to download"
+- `-o`, `--output` - "file to write (default: stdout)"
+- `-q`, `--quiet` - "no progress output"
+- `-h`, `--help` - the standard help option from argparse
+
+The README also includes the project name (tiny-downloader) and basic usage examples.

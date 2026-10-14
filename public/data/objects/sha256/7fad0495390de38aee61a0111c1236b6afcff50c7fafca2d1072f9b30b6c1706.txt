@@ -1,0 +1,1 @@
+The most recent git commit changed: "raise the download timeout from 10 to 20 seconds". This commit hash is 1c83c74.

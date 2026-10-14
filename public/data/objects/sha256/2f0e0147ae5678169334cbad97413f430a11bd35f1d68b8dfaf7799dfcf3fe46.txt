@@ -1,0 +1,6 @@
+I have fixed the bug in `app/units.py`.
+
+The issue was that the `UNITS` dictionary used `1000` for `"KB"` instead of `1024`, which contradicted the docstring and caused the test `assert parse_size("1.5 KB") == 1536` to fail.
+
+**Changes:**
+- Updated `UNITS["KB"]` from `1000` to `1024`.

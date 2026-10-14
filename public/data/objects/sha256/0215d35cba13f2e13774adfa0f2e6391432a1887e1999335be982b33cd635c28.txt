@@ -1,0 +1,10 @@
+Done. The README.md has been created with:
+
+- A brief project description
+- A quick-start example
+- **Every CLI option** listed with its help text (from `app/cli.py`'s `build_parser()`):
+  - `url` — positional argument: *what to download*
+  - `-o OUTPUT` / `--output OUTPUT` — *file to write (default: stdout)*
+  - `-q` / `--quiet` — *no progress output*
+- A configuration section documenting `app/config.py` settings
+- A test invocation command

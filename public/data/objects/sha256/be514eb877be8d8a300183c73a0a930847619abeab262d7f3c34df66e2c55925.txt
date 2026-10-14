@@ -1,0 +1,10 @@
+Based on the git history, the most recent commit (HEAD) changed the following:
+
+**Commit 0864e2dced3d60399fe3c38f5424cc2f587ec653** - "raise the download timeout from 10 to 20 seconds"
+
+**What changed:**
+- Modified `app/config.py`
+- Changed `TIMEOUT_S` from `10` to `20` seconds
+- The file has 2 lines changed (one insertion and one deletion)
+
+This commit was made on Oct 5 00:01:21 2026.

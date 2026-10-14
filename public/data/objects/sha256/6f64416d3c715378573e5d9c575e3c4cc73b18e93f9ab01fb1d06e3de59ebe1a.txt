@@ -1,0 +1,1 @@
+Write me a quick HTML to-do list. It should allow me to enter new items, check them off, edit/delete current ones, and export it at the end as a text file.

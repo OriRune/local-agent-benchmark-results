@@ -1,0 +1,2 @@
+<<Kotlin vs Java>>  
+Kotlin offers concise syntax and modern features, while Java provides broad ecosystem support. Pros include Kotlin's simplicity and Java's maturity, but cons involve Java's verbosity and Kotlin's steeper learning curve. Both have strengths and trade-offs.

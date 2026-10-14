@@ -1,0 +1,7 @@
+Now let me verify the fix is consistent with all three test cases by tracing the logic:
+
+- `parse_size("512 B")` → `int(512.0 * 1) = 512` ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024) = 1536` ✓ (was `1500` before the fix)
+- `parse_size("2 MB")` → `int(2 * 1024**2) = 2 * 1024 * 1024` ✓
+
+The fix: `KB` was defined as `1000`, contradicting the module's 1024-based convention and the test's expectation. Changed it to `1024` so all three test cases pass.

@@ -1,0 +1,24 @@
+## Step-by-Step Analysis
+
+**Setting up coordinates for the cube:**
+- A = (0, 0, 1), B = (1, 0, 1), C = (1, 1, 1), D = (0, 1, 1)
+- E = (0, 0, 0), F = (1, 0, 0), G = (1, 1, 0), H = (0, 1, 0)
+
+**Selecting vertices A, C, G, E:**
+- A = (0, 0, 1), C = (1, 1, 1), G = (1, 1, 0), E = (0, 0, 0)
+
+**Checking if the four points are coplanar:**
+Vectors from E: EA = (0,0,1), EC = (1,1,1), EG = (1,1,0)
+The determinant of these three vectors = 0, so **all four points lie on the same plane** (the plane y = x).
+
+**Since they are coplanar, this is NOT a tetrahedron** (which requires non-coplanar vertices).
+
+**Identifying the quadrilateral:**
+Computing side lengths in order E→A→C→G→E:
+- EA = 1, AC = √2, CG = 1, GE = √2
+
+Checking angles at each vertex via dot products: all four angles are 90°.
+
+This gives a quadrilateral with all right angles and opposite sides equal — a **rectangle**. Among the given choices, the closest match is a square (a quadrilateral with right angles).
+
+**square**

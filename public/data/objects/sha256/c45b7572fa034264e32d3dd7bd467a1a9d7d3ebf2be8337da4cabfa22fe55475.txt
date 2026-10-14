@@ -1,0 +1,7 @@
+I have updated the code to use `localStorage`. This allows the browser to save your list in its local storage, so when you refresh or reload the page, your items will still be there.
+
+**Changes made:**
+1.  Added `saveTodos()` function to write the current state to `localStorage`.
+2.  Updated `addItem`, `toggleComplete`, `deleteItem`, and `editItem` to call `saveTodos()` after every change.
+3.  Initialized the `todos` array by reading from `localStorage`.
+4.  Added a `window.onload` trigger to ensure the list renders immediately when the page loads.

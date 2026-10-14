@@ -1,0 +1,3 @@
+I have created an HTML file named `index.html` in the current directory. This file contains the data from your `books.csv` file, formatted into a clean, aesthetically pleasing table with color-coded genre tags.
+
+You can now double-click this file to open it in your web browser and screenshot it for your book club friends!

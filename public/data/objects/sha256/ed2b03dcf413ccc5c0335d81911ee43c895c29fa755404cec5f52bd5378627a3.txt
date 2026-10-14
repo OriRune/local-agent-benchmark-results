@@ -1,0 +1,15 @@
+Looking at this puzzle, I need to determine who lives in House 1.
+
+From the clues:
+- Clue 1: Bob is in House 3
+- Clue 2: Arnold is in House 2
+
+Since Bob is in House 3 and Arnold is in House 2, the only remaining name for House 1 is **Alice**.
+
+Verification with other clues:
+- Clue 4: Alice is the Dane → House 1 is Dane ✓
+- Clue 5: The Dane owns the dog → House 1 has dog ✓
+- Clue 3: Arnold is British → House 2 is Brit ✓
+- Clue 6: Arnold has the cat → House 2 has cat ✓
+
+<answer>Alice</answer>

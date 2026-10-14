@@ -1,0 +1,7 @@
+Done! I've added the `format_bytes(n)` function to `app/util.py` that returns human-readable sizes like '1.5 KB'. The function:
+- Returns bytes as-is for values less than 1024
+- Returns KB (kilobytes) with one decimal place for values up to 1 MB
+- Returns MB (megabytes) with one decimal place for values up to 1 GB
+- Returns GB (gigabytes) with one decimal place for larger values
+
+The TODO comment has been removed and replaced with the new function.

@@ -1,0 +1,8 @@
+I've created a README.md file that documents all the CLI command line options with their help text. The documentation includes:
+
+1. **Positional Arguments**: `url` - what to download
+2. **Optional Arguments**: 
+   - `-o`, `--output` - file to write (default: stdout)
+   - `-q`, `--quiet` - no progress output
+
+The README also includes usage examples showing how to combine these options in different ways.

@@ -1,0 +1,8 @@
+
+The two TODO comments have been added to todo.txt. The file now contains:
+
+- write README 
+- add proxy support 
+- tag the release 
+- # TODO: log each failed attempt 
+- # TODO: add a helper that formats byte sizes

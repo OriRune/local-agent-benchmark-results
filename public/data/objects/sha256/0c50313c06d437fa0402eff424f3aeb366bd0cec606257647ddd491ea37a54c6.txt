@@ -1,0 +1,8 @@
+MAX_RETRIES has been changed from 3 to 5 in app/config.py. The file now shows:
+
+```
+"""Settings for the downloader."""
+MAX_RETRIES = 5
+TIMEOUT_S = 20
+USER_AGENT = "tiny-downloader/0.2"
+```

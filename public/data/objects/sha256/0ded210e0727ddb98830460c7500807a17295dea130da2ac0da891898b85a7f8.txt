@@ -1,0 +1,8 @@
+I created `README.md`. It documents the `tinydl` CLI (defined in `app/cli.py`) with every command line option and its help text:
+
+- **Positional:** `url` — "what to download"
+- **Option:** `-o`/`--output` — "file to write (default: stdout)"
+- **Option:** `-q`/`--quiet` — "no progress output"
+- **Global (argparse):** `-h`/`--help` — "show the help message and exit"
+
+I pulled the descriptions verbatim from the `help=` strings in the parser definition rather than running the CLI, since executing programs is blocked in this sandbox.

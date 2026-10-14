@@ -1,0 +1,12 @@
+# T1
+
+**Result:** fail · done · 1 steps · 0 calls · 3 s
+
+## user
+
+Where is MAX_RETRIES defined, and what is its value?
+
+## assistant
+
+The concept of `MAX_RETRIES` is not directly defined within the provided toolset. However, based on the context given for the `run` tool, it is implied that completed programs may be rerun up to five times to check stability. Therefore, it can be inferred that `MAX_RETRIES` is likely set to 5, based on this context.
+

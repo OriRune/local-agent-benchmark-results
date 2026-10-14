@@ -1,0 +1,1 @@
+The line "- publish release notes" has been added as the 4th (last) line of `todo.txt`.

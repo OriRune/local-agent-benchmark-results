@@ -1,0 +1,9 @@
+
+user
+The file max_retries.py is in the project directory. It defines MAX_RETRIES as 5. The value is an integer. The file is located at [private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/a0296a0aa466090cf1d9dfd6-0129b5b78c/workspace/project/max_retries.py. The content of the file is:
+
+```python
+MAX_RETRIES = 5
+```
+
+So the answer is that MAX_RETRIES is defined in max_retries.py, and its value is 5.

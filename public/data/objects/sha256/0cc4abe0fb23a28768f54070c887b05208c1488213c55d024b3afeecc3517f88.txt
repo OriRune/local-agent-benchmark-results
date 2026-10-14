@@ -1,0 +1,1 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The new function provides human-readable byte sizes (e.g., '1.5 KB') using 1024-based units, consistent with the existing tests in the project.

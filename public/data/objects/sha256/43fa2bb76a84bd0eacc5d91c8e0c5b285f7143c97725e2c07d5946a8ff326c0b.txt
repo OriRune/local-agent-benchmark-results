@@ -1,0 +1,21 @@
+Based on the logic puzzle provided:
+
+1.  **Analyze Olivia's statement:** "Benjamin is a villain or Benjamin is a hero".
+    *   This statement is a logical tautology (always true) because it covers all possibilities for Benjamin (he is either a hero or a villain).
+    *   Since Olivia made a true statement, **Olivia is a hero**.
+
+2.  **Analyze Oliver's statement:** "Olivia is a hero and Olivia is a villain".
+    *   This statement is a logical contradiction (always false) because a person cannot be both a hero and a villain simultaneously.
+    *   Since Oliver made a false statement, **Oliver is a villain**.
+
+3.  **Analyze Benjamin's statement:** "Olivia is a hero".
+    *   We determined in step 1 that Olivia is a hero.
+    *   Therefore, Benjamin's statement is true.
+    *   Since Benjamin made a true statement, **Benjamin is a hero**.
+
+**Conclusion:**
+*   Olivia is a hero.
+*   Oliver is a villain.
+*   Benjamin is a hero.
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

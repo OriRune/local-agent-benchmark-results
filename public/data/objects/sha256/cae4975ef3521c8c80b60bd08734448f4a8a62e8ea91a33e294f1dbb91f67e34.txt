@@ -1,0 +1,5 @@
+I couldn't find a `README.md` file. I will create one now.
+
+To write a comprehensive `README.md` listing all CLI commands and their help text, I first need to know what the CLI commands are and what their help text is.
+
+Could you please tell me what the main command-line interface (CLI) for this project is, and if there are any existing files that describe the commands or configuration?

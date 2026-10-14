@@ -1,0 +1,8 @@
+The test in `tests/test_units.py` failed because the `UNITS` dictionary in `app/units.py` used `1000` as the multiplier for `KB`, whereas the docstring and the tests expected a 1024-based system.
+
+I have fixed the code by updating the `KB` multiplier to `1024`.
+
+```python
+# app/units.py
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```

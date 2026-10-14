@@ -1,0 +1,1 @@
+{"answer": "The paper identifies eighteen persuasion/propaganda techniques, ranging from leveraging emotions (e.g., loaded language, appeal to authority, slogans) to logical fallacies (e.g., straw men, hidden ad-hominem fallacies, red herring). The full list of 18 techniques is referenced via BIBREF4 but not exhaustively enumerated in the paper text.", "evidence": [3, 4, 10]}

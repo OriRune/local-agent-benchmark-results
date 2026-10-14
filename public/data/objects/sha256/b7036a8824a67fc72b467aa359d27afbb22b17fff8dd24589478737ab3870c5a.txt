@@ -1,0 +1,1 @@
+The concept of `MAX_RETRIES` is not directly defined within the provided toolset. However, based on the context given for the `run` tool, it is implied that completed programs may be rerun up to five times to check stability. Therefore, it can be inferred that `MAX_RETRIES` is likely set to 5, based on this context.

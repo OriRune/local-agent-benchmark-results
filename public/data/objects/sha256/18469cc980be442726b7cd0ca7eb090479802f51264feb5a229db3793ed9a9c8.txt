@@ -1,0 +1,1 @@
+{"answer": "They use 11,529,432 segmented words (from Chinese Wikipedia articles), stroke information of 20,402 characters, and glyph bitmaps rendered for each character.", "evidence": [12]}

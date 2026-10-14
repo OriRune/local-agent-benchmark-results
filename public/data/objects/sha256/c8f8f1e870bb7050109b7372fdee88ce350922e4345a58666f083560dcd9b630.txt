@@ -1,0 +1,3 @@
+I cannot undo the most recent git commit because my available tools do not provide access to the file history or the state of the files before the commit was made. To use the `edit_file` tool to "undo" a change, I require the exact content of the file as it existed *before* the commit.
+
+If you can provide me with the content of the file(s) you wish to revert, I can then use the `edit_file` tool to replace the current content with the older content.

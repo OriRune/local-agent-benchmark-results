@@ -1,0 +1,12 @@
+```json
+{
+ "answer": "The paper does not describe a dataset used to train a model; instead, it proposes a system to de-bias data before it is consumed for training. The system itself utilizes Occupation Data (from crowdsourced and government lists), Names Data (from the CMU repository of names), and DBpedia.",
+ "evidence": [
+  "8",
+  "11",
+  "12",
+  "13",
+  "23"
+ ]
+}
+```

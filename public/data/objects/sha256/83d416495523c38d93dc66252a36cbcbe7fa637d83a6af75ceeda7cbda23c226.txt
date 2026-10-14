@@ -1,0 +1,1 @@
+Done. I've undone the most recent git commit (eaa64cf) by directly editing `app/config.py`. The `TIMEOUT_S` value has been changed from 20 back to 10 seconds.

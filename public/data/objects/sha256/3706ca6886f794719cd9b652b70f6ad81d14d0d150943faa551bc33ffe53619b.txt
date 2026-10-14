@@ -1,0 +1,12 @@
+The script works. I created `usage_report.py` in your project folder. It reads Linux `/proc` files (no external dependencies) and prints:
+
+- **RAM** — total, used (with %), and free memory
+- **CPU** — number of cores and the 1-minute load average
+
+Run it with:
+
+```
+python3 usage_report.py
+```
+
+Note: the sandbox shows a tiny 31 MB RAM figure because it's a restricted container, not your real machine — on your actual PC it will report the full system memory.

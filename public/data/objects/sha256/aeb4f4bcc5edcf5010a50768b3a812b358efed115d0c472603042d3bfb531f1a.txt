@@ -1,0 +1,21 @@
+The script is written and saved as `open_apps.sh`. Here's how to use it:
+
+**Run it with:**
+```
+bash open_apps.sh
+```
+
+Or make it executable first (you'll need to do this outside the sandbox, since the sandbox can't change file attributes):
+```
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+**What it does:**
+1. **Chrome** — launches `google-chrome` with `https://www.google.com` loaded.
+2. **Text editor** — opens a new untitled file, choosing the first available editor (`xed` → `gedit` → `kate` → `nano`).
+3. **File manager** — opens `[private-home]/Documents/llama.cpp` in Nautilus (or Nemo/Thunar if those are your file manager), using `--new-window` when supported.
+
+The script checks which programs are installed on your system and falls back automatically, so it works regardless of your desktop environment.
+
+Note: since the script launches GUI apps, run it from a normal terminal session on your desktop (not inside the restricted sandbox). The file is at `open_apps.sh` in your current working folder.

@@ -1,0 +1,34 @@
+{
+  "version": "model-categories-v1",
+  "parameter_bands": [
+    {
+      "id": "small",
+      "label": "Small \u00b7 under 5B",
+      "min_billions": 0,
+      "max_billions": 5
+    },
+    {
+      "id": "medium",
+      "label": "Medium \u00b7 5\u2013under 20B",
+      "min_billions": 5,
+      "max_billions": 20
+    },
+    {
+      "id": "large",
+      "label": "Large \u00b7 20B and above",
+      "min_billions": 20,
+      "max_billions": null
+    }
+  ],
+  "memory_budgets_gb": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    32
+  ],
+  "memory_unit": "decimal GB",
+  "minimum_peer_checkpoints": 2,
+  "baseline_rule": "declared artifact, then configuration ID; memory cohorts use first eligible configuration by ID per checkpoint"
+}

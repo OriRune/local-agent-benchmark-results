@@ -1,0 +1,5 @@
+Let's try again:
+
+```json
+{"name": "write_file", "arguments": {"path": "hello.txt", "content": "hello from the local agent"}}
+```

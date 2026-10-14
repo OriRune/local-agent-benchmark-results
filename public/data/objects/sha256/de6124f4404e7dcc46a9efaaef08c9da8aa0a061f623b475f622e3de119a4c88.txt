@@ -1,0 +1,35 @@
+## Solution
+
+I'll find the shortest path using BFS, tracking distance and direction from the start.
+
+**Grid coordinates** (row, col):
+```
+(0,0)=O  (0,1)=X  (0,2)=X  (0,3)=O  (0,4)=O  (0,5)=#
+(1,0)=*  (1,1)=X  (1,2)=X  (1,3)=O  (1,4)=O  (1,5)=O
+(2,0)=O  (2,1)=O  (2,2)=O  (2,3)=X  (2,4)=X  (2,5)=O
+(3,0)=X  (3,1)=O  (3,2)=O  (3,3)=X  (3,4)=X  (3,5)=O
+(4,0)=O  (4,1)=X  (4,2)=O  (4,3)=O  (4,4)=X  (4,5)=O
+```
+
+**BFS traversal:**
+
+| Step | Cell | Distance | Direction |
+|------|------|----------|-----------|
+| 0 | (1,0)=* | 0 | start |
+| 1 | (2,0)=O | 1 | down |
+| 2 | (2,1)=O | 2 | right |
+| 3 | (2,2)=O | 3 | right |
+| 4 | (3,2)=O | 4 | down |
+| 5 | (4,2)=O | 5 | down |
+| 6 | (4,3)=O | 6 | right |
+| 7 | (4,4)=X | 7 | right ✗ |
+| 7 | (3,5)=O | 7 | right |
+| 8 | (2,5)=O | 8 | up |
+| 9 | (1,5)=O | 9 | up |
+| 10 | (0,5)=# | 10 | up ✓ |
+
+The path reaches the destination at distance 10.
+
+**Path:** down, right, right, down, down, right, right, up, up, up
+
+<answer>down right right down down right right up up up</answer>

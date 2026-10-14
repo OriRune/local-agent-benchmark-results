@@ -1,0 +1,9 @@
+I have created a single HTML file named `books_list.html` that displays your 2025 reading list in a beautiful, card-based grid layout. 
+
+The design includes:
+- **A clean, modern aesthetic** with a soft background and subtle shadows.
+- **Genre tags** for quick identification.
+- **Responsive layout** that works well on different screen sizes.
+- **Hover effects** to make the cards feel interactive.
+
+You can open this file in any web browser by double-clicking it, take a screenshot, and share it with your book club!

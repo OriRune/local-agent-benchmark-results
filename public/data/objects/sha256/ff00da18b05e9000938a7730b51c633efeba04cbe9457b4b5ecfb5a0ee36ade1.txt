@@ -1,0 +1,6 @@
+Done. I scanned all seven Python files (`app/*.py` and `tests/test_units.py`) and found exactly **2 TODO comments**:
+
+- `app/net.py:7` — `# TODO: log each failed attempt`
+- `app/util.py:5` — `# TODO: add a helper that formats byte sizes`
+
+Both were appended as new lines to `todo.txt` (lines 4 and 5), preserving the original three items.

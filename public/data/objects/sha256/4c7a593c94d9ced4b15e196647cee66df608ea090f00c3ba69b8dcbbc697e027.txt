@@ -1,0 +1,7 @@
+The fix is complete. Here's the summary:
+
+**Problem:** In `app/units.py`, the `"KB"` unit was mapped to `1000` (decimal/SI conversion) instead of `1024` (binary/IEC conversion).
+
+**Why the test failed:** `parse_size("1.5 KB")` returned `1500` (1.5 × 1000) instead of the expected `1536` (1.5 × 1024).
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` on line 2 of `app/units.py`, making it consistent with the module's docstring which states "1 KB = 1024 bytes" and with the test's expectations.

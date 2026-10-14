@@ -1,0 +1,21 @@
+I've calculated the delta-v from stage 1: 5802.2421605402815 m/s.
+
+The remaining delta-v needed is: 9400 - 5802.2421605402815 = 3597.7578394597185 m/s
+
+Now I need to calculate the propellant mass for stage 2. Stage 2 has:
+- Dry mass: 900 kg
+- Isp: 340 s
+- g0 = 9.80665 m/s²
+
+The propellant mass (m_p) is given by:
+m_p = m0 - mf = m0 - (dry mass + payload)
+
+But I need to find the total mass when stage 2 burns out (mf2). Since stage 2 is dropped after stage 1, the payload is 1200 kg, and stage 2's dry mass is 900 kg. So mf2 = 900 + 1200 = 2100 kg.
+
+The propellant mass for stage 2 is:
+m_p2 = m02 - mf2 = m02 - 2100
+
+But I need to find m02, which is the total mass when stage 2 starts burning. This is the dry mass plus the propellant mass of stage 2.
+
+Let me calculate the required delta-v for stage 2:
+

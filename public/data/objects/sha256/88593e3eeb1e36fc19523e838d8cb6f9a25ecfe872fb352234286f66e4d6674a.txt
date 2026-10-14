@@ -1,0 +1,5 @@
+The most recent git commit changed **`app/config.py`**, specifically:
+
+- Changed `TIMEOUT_S` from `10` to `20` seconds in the downloader settings
+
+This was commit `dfedffa` with the message "raise the download timeout from 10 to 20 seconds", authored on October 12, 2026.

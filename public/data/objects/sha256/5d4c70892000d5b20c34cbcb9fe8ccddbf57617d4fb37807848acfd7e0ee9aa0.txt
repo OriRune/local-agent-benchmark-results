@@ -1,0 +1,6 @@
+Done. Here's what I changed in `app/util.py`:
+
+- **Added `format_bytes(n)`** — returns a human-readable size, e.g. `0 -> '0 B'`, `1024 -> '1.0 KB'`, `1536 -> '1.5 KB'`, `1048576 -> '1.0 MB'`. It steps through B → KB → MB → GB → TB and rounds to one decimal place (whole numbers for bytes).
+- **Removed the TODO comment** about adding the byte-formatting helper.
+
+I couldn't run a test because program execution is blocked in this sandbox, so I left an empty `check_format.py` file in place — let me know if you'd like me to remove it or review the logic against any specific formatting rules you expect.

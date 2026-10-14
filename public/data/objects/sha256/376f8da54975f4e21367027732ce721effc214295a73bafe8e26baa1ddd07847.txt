@@ -1,0 +1,8 @@
+```json
+{
+  "answer": "The paper annotates news articles according to eighteen persuasion techniques, which include leveraging audience emotions (such as using loaded language or appeal to authority and slogans) and logical fallacies (such as straw men, hidden ad-hominem fallacies, and red herring).",
+  "evidence": [
+    3
+  ]
+}
+```

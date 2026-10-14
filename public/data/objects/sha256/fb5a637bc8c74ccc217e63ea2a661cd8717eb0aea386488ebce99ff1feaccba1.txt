@@ -1,0 +1,1 @@
+Done. I removed the TODO comment and added the `format_bytes(n)` function to `app/util.py`. It returns values like `'1.5 KB'` for kilobytes, `'1.5 MB'` for megabytes, etc., and `'1 B'` for values under 1024 bytes.

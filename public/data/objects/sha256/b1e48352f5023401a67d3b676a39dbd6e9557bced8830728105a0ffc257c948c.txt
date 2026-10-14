@@ -1,0 +1,13 @@
+Based on the code in `app/net.py` and `app/config.py`, I can calculate the total sleep time:
+
+**Configuration:**
+- `MAX_RETRIES = 3` (loop runs for attempts 0, 1, 2)
+
+**Sleep calculation per attempt:**
+- Attempt 0: `2 ** 0 = 1` second
+- Attempt 1: `2 ** 1 = 2` seconds  
+- Attempt 2: `2 ** 2 = 4` seconds
+
+**Total sleep time before giving up:** 1 + 2 + 4 = **7 seconds**
+
+The fetch function will sleep 7 seconds total before raising the `RuntimeError` after 3 failed attempts.

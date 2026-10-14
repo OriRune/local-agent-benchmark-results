@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The system uses two datasets: Occupation Data (gathered from internet sources including crowdsourced and government lists) and Names Data (a corpus of 5,453 male and 6,990 female names from the CMU repository, supplemented by NLTK data and baby name records for gender mapping).",
+  "evidence": [11, 12, 13]
+}
+```

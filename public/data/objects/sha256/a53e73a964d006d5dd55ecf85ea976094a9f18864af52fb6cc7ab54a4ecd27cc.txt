@@ -1,0 +1,2 @@
+{"name": "grep", "arguments": {"pattern": "proxy.ini", "path": "..", "glob": "*", "case_sensitive": false}}
+</tool_call>

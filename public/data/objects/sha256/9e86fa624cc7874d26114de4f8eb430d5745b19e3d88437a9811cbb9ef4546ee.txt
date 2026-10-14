@@ -1,0 +1,22 @@
+To determine the total sleep time, let's look at the logic in `app/net.py` and the configuration in `app/config.py`.
+
+In `app/net.py`:
+```python
+8	    for attempt in range(MAX_RETRIES):
+9	        try:
+10	            return get(url, timeout=TIMEOUT_S)
+11	        except OSError:
+12	            time.sleep(2 ** attempt)
+```
+
+In `app/config.py`:
+```python
+2	MAX_RETRIES = 3
+```
+
+The loop runs for `attempt` values 0, 1, and 2 (since `MAX_RETRIES` is 3).
+- For `attempt = 0`: `time.sleep(2 ** 0)` results in **1 second**.
+- For `attempt = 1`: `time.sleep(2 ** 1)` results in **2 seconds**.
+- For `attempt = 2`: `time.sleep(2 ** 2)` results in **4 seconds**.
+
+If every attempt fails, the total sleep time is $1 + 2 + 4 = 7$ seconds.

@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The results are evaluated through human rankings in a questionnaire and by the average number of stars received on the Bokete website.",
+  "evidence": [2, 12, 13, 14]
+}
+```

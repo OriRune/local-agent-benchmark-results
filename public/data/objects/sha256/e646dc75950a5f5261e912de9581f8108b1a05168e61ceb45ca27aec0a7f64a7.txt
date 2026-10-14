@@ -1,0 +1,3 @@
+The test was failing because `parse_size("1.5 KB")` returned 1500 (using 1000 for KB) instead of the expected 1536 (which requires 1024 for KB).
+
+The docstring stated "1 KB = 1024 bytes" but the code had `"KB": 1000`. I fixed this by changing KB to 1024 in the UNITS dictionary, making it consistent with both the docstring and the test expectations.

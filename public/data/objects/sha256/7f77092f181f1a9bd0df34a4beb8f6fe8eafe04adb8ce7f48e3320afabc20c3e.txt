@@ -1,0 +1,40 @@
+## Setting Up the Grid
+
+Let me index the grid with (row, col):
+
+```
+     0  1  2  3  4  5
+  0: X  O  X  O  O  O
+  1: O  O  O  O  O  #
+  2: O  O  X  O  O  O
+  3: O  O  O  *  O  X
+  4: X  X  O  X  O  O
+  5: X  X  O  O  X  O
+```
+
+- **Start** `*` = (3,3)
+- **Destination** `#` = (1,5)
+
+## BFS Search
+
+| Distance | Cells |
+|----------|-------|
+| 0 | (3,3) |
+| 1 | (3,4), (2,3), (3,2) |
+| 2 | (2,4), (1,3), (4,4), (3,1), (4,2) |
+| 3 | (1,4), (2,5), (1,2), (0,3), ... |
+| 4 | **(1,5)** ← destination |
+
+## Tracing Back the Path
+
+$$(3,3) \xrightarrow{\text{right}} (3,4) \xrightarrow{\text{up}} (2,4) \xrightarrow{\text{up}} (1,4) \xrightarrow{\text{right}} (1,5)$$
+
+**Verification:**
+- (3,3)→(3,4): right, O ✓
+- (3,4)→(2,4): up, O ✓
+- (2,4)→(1,4): up, O ✓
+- (1,4)→(1,5): right, # ✓
+
+The Manhattan distance is |3−1| + |3−5| = 4, and we achieved this minimum, so this is optimal.
+
+<answer>right up up right</answer>

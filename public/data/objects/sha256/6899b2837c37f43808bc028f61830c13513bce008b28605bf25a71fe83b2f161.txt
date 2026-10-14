@@ -1,0 +1,5 @@
+**Answer:**
+The authors use 11,529,432 segmented Chinese words from Chinese Wikipedia articles for training.
+
+**Evidence:**
+[12]

@@ -1,0 +1,17 @@
+The list already remembers its items when you reload the page! The persistence feature is built into the code I created.
+
+**How it works:**
+- **`loadTodos()`** - Runs when the page loads and retrieves saved tasks from your browser's localStorage
+- **`saveTodos()`** - Automatically saves after every action (add, delete, check off, or edit)
+
+**To test it:**
+1. Open `todo.html` in your browser
+2. Add a few tasks and check some off
+3. Close the browser or refresh the page
+4. Your tasks will still be there!
+
+The data is stored in your browser's local storage, so it persists across sessions. If you want to clear the saved tasks, you can:
+- Clear your browser's site data for the page, or
+- Open the browser's Developer Tools (F12), go to Application/Storage tab, and clear localStorage
+
+The feature is already working - just try it out!

@@ -1,0 +1,27 @@
+I have created the `check_usage.sh` script in the current directory.
+
+```bash
+#!/bin/bash
+
+echo "--- CPU Usage ---"
+# Using 'top' and 'grep' to get a snapshot of CPU usage.
+# This command might require sudo depending on system configuration.
+# For a more detailed, non-interactive output, 'mpstat' or parsing /proc/stat is better.
+# We'll use 'top -bn1' and look for the CPU line.
+if command -v top &> /dev/null; then
+    top -bn1 | grep "Cpu(s)"
+else
+    echo "Warning: 'top' command not found. Cannot display detailed CPU usage."
+fi
+
+echo ""
+echo "--- Memory (RAM) Usage ---"
+# Using 'free -h' for human-readable memory usage.
+if command -v free &> /dev/null; then
+    free -h
+else
+    echo "Warning: 'free' command not found. Cannot display detailed memory usage."
+fi
+```
+
+You can now run this script on your Linux Mint PC by making it executable (`chmod +x check_usage.sh`) and then running it (`./check_usage.sh`).

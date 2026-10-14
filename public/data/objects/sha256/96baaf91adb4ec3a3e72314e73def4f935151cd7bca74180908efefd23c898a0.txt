@@ -1,0 +1,7 @@
+I have updated `todo.html` to use `localStorage`. This allows the list to persist in your browser even after you refresh or close the page.
+
+**Changes made:**
+1.  Added `saveTodos()` to write the current list to `localStorage`.
+2.  Added `loadTodos()` to retrieve the list when the page loads.
+3.  Integrated `saveTodos()` into `addTask`, `toggleTask`, `deleteTask`, and `editTask`.
+4.  Added `window.onload = loadTodos;` to trigger the loading process automatically.

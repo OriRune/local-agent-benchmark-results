@@ -1,0 +1,10 @@
+I've written a README.md for the project that lists all command line options with their help text. The README includes:
+
+1. **Usage** section showing the basic syntax
+2. **Command Line Options** table with:
+   - Required option: `<url>`
+   - Optional options: `-o/--output` and `-q/--quiet`
+3. **Example** showing how to use the tool
+4. **Notes** section with important information about the tool's behavior (retry count, timeout, quiet mode)
+
+The README is 34 lines long and clearly documents all CLI options available for the `tinydl` command-line tool.

@@ -1,0 +1,20 @@
+To make 24 using the numbers 8, 5, 5, 9:
+
+1.  Start with $5 \times 5 = 25$.
+2.  We need to subtract 1 to get 24.
+3.  We have the numbers 8 and 9 remaining.
+4.  $9 - 8 = 1$.
+5.  So, $5 \times 5 - (9 - 8) = 25 - 1 = 24$.
+
+Another way to write this without parentheses (order of operations):
+$5 \times 5 - 9 + 8 = 25 - 9 + 8 = 16 + 8 = 24$.
+
+Let's check the constraints:
+- Use 8, 5, 5, 9 exactly once. (Used: 5, 5, 9, 8)
+- Use operators +, -, *, /. (Used: *, -, +)
+- No target number in expression.
+- Format: arithmetic expression.
+
+The expression is $5 * 5 - 9 + 8$.
+
+<answer>5 * 5 - 9 + 8</answer>

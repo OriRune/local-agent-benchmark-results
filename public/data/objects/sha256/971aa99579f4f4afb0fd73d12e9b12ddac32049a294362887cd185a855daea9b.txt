@@ -1,0 +1,1 @@
+The most recent commit (4559281) changed `app/config.py`: it raised the download timeout from **10 to 20 seconds** (`TIMEOUT_S = 10` → `TIMEOUT_S = 20`).

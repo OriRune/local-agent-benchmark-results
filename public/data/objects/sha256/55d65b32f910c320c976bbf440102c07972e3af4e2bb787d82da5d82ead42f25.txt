@@ -1,0 +1,19 @@
+The `README.md` file has been created with the following content:
+
+```markdown
+# tinydl
+
+A simple command-line tool to download files.
+
+## Usage
+
+```bash
+tinydl [url] [options]
+```
+
+## Options
+
+- `url`: what to download
+- `-o`, `--output`: file to write (default: stdout)
+- `-q`, `--quiet`: no progress output
+```

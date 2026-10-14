@@ -1,0 +1,7 @@
+I couldn't find any `.git` directory in the current working folder or its parent directory. This suggests there may not be a Git repository associated with this directory structure. Would you like me to:
+
+1. Check for other Git-related files (e.g., `.gitconfig`, `.gitignore`)?
+2. Look for a specific file that might contain commit information?
+3. Try running a Git command using the `run` tool (if applicable)?
+
+Let me know how you'd like to proceed!

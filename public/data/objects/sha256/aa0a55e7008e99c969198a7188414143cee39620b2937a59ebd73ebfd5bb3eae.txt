@@ -1,0 +1,8 @@
+I created `README.md`. It lists every command line option of the `tinydl` CLI with its help text, taken from the three `add_argument` calls in `app/cli.py`:
+
+- `url` — positional, "what to download"
+- `-o` / `--output` — "file to write (default: stdout)"
+- `-q` / `--quiet` — "no progress output"
+- `--help` / `-h` — argparse's built-in (shown in the table as the standard help flag)
+
+I also added a short usage section. Note I couldn't run the CLI to capture the literal `--help` output (the sandbox blocks program execution), so the help text is reproduced from the source.

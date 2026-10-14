@@ -1,0 +1,13 @@
+
+
+The README.md has been created with the following CLI options and their help texts:
+
+# CLI Options
+
+The TinyDL CLI supports the following command line options:
+
+- `--url`: URL to download (required)
+- `--output`: File to write (default: stdout)
+- `--quiet`: Suppress progress output
+
+This matches the options defined in `app/cli.py` and their associated help texts.

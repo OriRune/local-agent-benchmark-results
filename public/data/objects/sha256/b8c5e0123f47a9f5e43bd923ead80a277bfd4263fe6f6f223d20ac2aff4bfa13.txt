@@ -1,0 +1,16 @@
+The fix is complete. The issue was that `KB` was set to 1000 in the `UNITS` dictionary, but the test expects it to be 1024 (as indicated by the docstring "1 KB = 1024 bytes").
+
+Changed:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+To:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+This ensures all test assertions pass:
+- `parse_size("512 B")` → 512 × 1 = 512 ✓
+- `parse_size("1.5 KB")` → 1.5 × 1024 = 1536 ✓
+- `parse_size("2 MB")` → 2 × 1024² = 2097152 ✓

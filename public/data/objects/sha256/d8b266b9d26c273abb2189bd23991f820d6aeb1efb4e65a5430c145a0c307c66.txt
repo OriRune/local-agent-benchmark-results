@@ -1,0 +1,1 @@
+The parameter MAX_RETRIES is defined in the configuration file located at /etc/config/max_retries.conf. Its current value is set to 5.

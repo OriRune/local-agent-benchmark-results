@@ -1,0 +1,27 @@
+I have created a `README.md` file for the project. It includes a description of the tool, the usage syntax, and a table listing all command-line options with their respective help text as defined in `app/cli.py`.
+
+```markdown
+# tinydl
+
+A simple command-line tool for downloading content from a URL.
+
+## Usage
+
+```bash
+tinydl <url> [options]
+```
+
+## Command Line Options
+
+| Option | Description |
+|--------|-------------|
+| `url` | what to download |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+
+## Example
+
+```bash
+tinydl https://example.com/file.zip -o file.zip
+```
+```

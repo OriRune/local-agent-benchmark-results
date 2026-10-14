@@ -1,0 +1,10 @@
+I read `books.csv` (22 data rows) and verified with a small script (`_check_books.py`, left in the folder — move it out if you don't want it).
+
+**Distinct books: 21** — the 22 rows include one duplicate entry ("Project Hail Mary" appears twice, rows 2 and 8, with identical dates/pages). Titles are counted case-insensitively, so "the left hand of darkness" counts as one book.
+
+**Finished between July and December 2025: 10** (by end date, in mixed formats — `2025-07-10`, `07/25/2025`, `Feb 12 2025` — all parsed):
+- Dune (Jul 10), The Hobbit (Jul 19), Sapiens (Aug 15), The Night Circus (Sep 12), Tomorrow and Tomorrow and Tomorrow (Sep 30), The Thursday Murder Club (Oct 9), Babel (Nov 5), Lessons in Chemistry (Nov 20), A Psalm for the Wild-Built (Nov 24), The Bear and the Nightingale (Dec 16)
+
+Note: Middlemarch has no end date, so it isn't counted as finished; Piranesi was finished in February.
+
+ANSWER: 21, 10

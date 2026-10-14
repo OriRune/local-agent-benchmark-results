@@ -1,0 +1,7 @@
+Done. I've created `README.md` for this project that lists every CLI command line option with its help text:
+
+- **`URL`** (positional): what to download
+- **`--output`, `-o`**: file to write (default: stdout)
+- **`--quiet`, `-q`**: no progress output
+
+The README also includes usage examples, configuration details (MAX_RETRIES, TIMEOUT_S, USER_AGENT), and a basic project description.

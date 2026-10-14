@@ -1,0 +1,8 @@
+I've written `README.md`. It lists every command line option of the CLI (defined in `app/cli.py`) with its help text:
+
+- **`url`** — `what to download` (positional argument)
+- **`-o`, `--output`** — `file to write (default: stdout)`
+- **`-q`, `--quiet`** — `no progress output`
+- **`-h`, `--help`** — `show this help message and exit` (argparse's built-in)
+
+The README also includes a short usage section and an example. I verified each option's help text directly against the `add_argument(..., help=...)` calls in the source, since running the program was denied in the sandbox.

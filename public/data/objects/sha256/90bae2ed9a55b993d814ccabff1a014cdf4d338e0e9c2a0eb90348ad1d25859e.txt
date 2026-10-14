@@ -1,0 +1,3 @@
+The release date mentioned in the notes.md file is **2026-10-14**. 
+
+This is explicitly stated in line 7: "The release is planned for 14 October."

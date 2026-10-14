@@ -1,0 +1,1 @@
+*Open* the bot by saying "Hello, I am in London." *Output* the forecast once the location is *observed*. *Order* your next query with "What is the *outcome*?" to get *ongoing* updates.

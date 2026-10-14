@@ -1,0 +1,8 @@
+{
+  "answer": "word2vec model trained on financial text",
+  "evidence": [
+    1,
+    4,
+    17
+  ]
+}

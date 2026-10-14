@@ -1,0 +1,3 @@
+I have updated `todo_list.html` to use `localStorage`. 
+
+Now, whenever you add, edit, delete, or check off an item, the state is automatically saved to your browser's local storage. When you reload the page, the list will be restored exactly as you left it.

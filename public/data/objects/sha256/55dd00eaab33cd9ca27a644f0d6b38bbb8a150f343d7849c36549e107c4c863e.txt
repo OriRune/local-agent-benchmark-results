@@ -1,0 +1,8 @@
+I have created a README.md file that lists every command line option of the CLI with its help text. The README includes the program name, options with their flags and help text, a description, and examples.
+
+The command line options are:
+- `url` (positional): what to download
+- `-o`, `--output`: file to write (default: stdout)
+- `-q`, `--quiet`: no progress output
+
+I wrote the README.md file in the workspace folder.

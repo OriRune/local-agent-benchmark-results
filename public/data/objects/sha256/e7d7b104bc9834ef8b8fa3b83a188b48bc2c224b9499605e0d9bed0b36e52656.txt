@@ -1,0 +1,24 @@
+# T3
+
+**Result:** fail · done · 2 steps · 1 calls · 1 s
+
+## user
+
+Change MAX_RETRIES to 5.
+
+## assistant
+
+- call `list_dir` `{"path":"project"}`
+
+<details><summary>list_dir result (30 chars)</summary>
+
+```
+error: no such folder: project
+```
+
+</details>
+
+## assistant
+
+I need to know which file contains the `MAX_RETRIES` configuration so I can change it. Could you please tell me the name of the file?
+

@@ -1,0 +1,5 @@
+I cannot run the test directly here, but the fix has been applied: The logic in `app/units.py` now correctly uses `1024` for KB-based conversions, which should resolve the test failure. To verify, run the test locally with:
+
+```bash
+python -m pytest tests/test_units.py -v
+```

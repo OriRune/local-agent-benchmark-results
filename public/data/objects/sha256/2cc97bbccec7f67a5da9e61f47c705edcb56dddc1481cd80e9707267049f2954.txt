@@ -1,0 +1,5 @@
+The file `hello.txt` has been created in the working folder with the line:
+
+```
+hello from the local agent
+```

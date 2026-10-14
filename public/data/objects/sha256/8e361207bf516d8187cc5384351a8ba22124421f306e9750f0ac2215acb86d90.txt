@@ -1,0 +1,4 @@
+{
+  "answer": "Results are evaluated by having respondents rank captions (human-generated, NJM, and STAIR) by funniness using a questionnaire.",
+  "evidence": [12]
+}

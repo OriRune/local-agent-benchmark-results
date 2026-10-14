@@ -1,0 +1,22 @@
+I found it. Let me work out the total sleep time from `app/net.py`.
+
+The `fetch` function:
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3 → attempts 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)      # sleep = 2 ** attempt seconds
+```
+
+If every attempt fails (each `get` raises `OSError`), the sleeps are:
+
+| Attempt | `2 ** attempt` | Sleep |
+|---------|---------------|-------|
+| 0 | 2⁰ | 1 s |
+| 1 | 2¹ | 2 s |
+| 2 | 2² | 4 s |
+
+Total = 1 + 2 + 4 = **7 seconds**.
+
+Note: the `TIMEOUT_S = 20` in config is the per-attempt network wait inside `get()` — it is not `time.sleep`, so it isn't counted toward the sleeping time. The sleep total before it raises `RuntimeError` ("giving up on …") is **7 seconds**.

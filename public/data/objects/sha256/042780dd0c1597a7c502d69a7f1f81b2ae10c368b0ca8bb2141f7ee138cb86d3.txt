@@ -1,0 +1,5 @@
+
+{
+  "answer": "Results are evaluated by human subjective ratings (funny‑caption rankings and star scores) and by direct comparison with baseline captions (MS COCO and STAIR captions) as described in the paper.",
+  "evidence": ["12", "13", "14", "2"]
+}

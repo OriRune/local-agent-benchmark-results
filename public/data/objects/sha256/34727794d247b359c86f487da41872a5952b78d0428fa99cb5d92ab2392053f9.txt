@@ -1,0 +1,7 @@
+I have updated the `index.html` file to include persistence using `localStorage`. 
+
+### What's new:
+- **Automatic Saving**: Every time you add, edit, delete, or check off a task, the list is automatically saved to your browser's local storage.
+- **Automatic Loading**: When you reload the page, the script will automatically read the saved tasks from `localStorage` and reconstruct your list exactly as you left it.
+
+You can now refresh the page without losing your progress!

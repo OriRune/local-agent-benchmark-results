@@ -1,0 +1,4 @@
+{
+  "answer": "The paper uses ICD-10 (International Classification of Diseases, 10th revision) codes to assign to French death certificates via a dictionary-based approach; their dictionaries contained 3,539 ICD-10 codes in run2 and 6,392 ICD-10 codes in run1.",
+  "evidence": [0, 4, 5, 10]
+}

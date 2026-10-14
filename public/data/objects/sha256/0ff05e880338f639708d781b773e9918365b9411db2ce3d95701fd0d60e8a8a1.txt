@@ -1,0 +1,3 @@
+The fix has been applied. The `KB` unit was changed from `1000` to `1024` to match the 1024-based units as specified in the docstring and expected by the test.
+
+Summary: The test failed because the `KB` unit in `app/units.py` was set to `1000` instead of `1024`. I fixed this by changing `KB: 1000` to `KB: 1024` in the UNITS dictionary, making all units consistent with the 1024-based standard mentioned in the docstring.

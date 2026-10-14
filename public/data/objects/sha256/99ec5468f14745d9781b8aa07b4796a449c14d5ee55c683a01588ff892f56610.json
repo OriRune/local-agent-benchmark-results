@@ -1,0 +1,1 @@
+{"check":{"cpu_percent":false,"exit":0,"finished":true,"measured":"10.5 of 31.3 GB used (34%)","output":"RAM Total:  MB\nCPU Model: \nCPU Cores: 12\n/workspace/system_info.sh: line 3: awk: command not found\n/workspace/system_info.sh: line 5: awk: command not found","ram_plausible":false,"script":"system_info.sh"},"score":0}

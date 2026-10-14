@@ -1,0 +1,1 @@
+The code does not contain any explicit logic for sleeping or waiting after failed attempts in the fetch function. It simply returns an error message without any delay or retry mechanism implemented. Therefore, it does not spend any seconds sleeping in total before giving up on failed attempts.

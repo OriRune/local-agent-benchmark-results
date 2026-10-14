@@ -1,0 +1,15 @@
+Programs are denied in this session, so I'll verify the math by hand instead.
+
+With the fix `UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}`:
+
+- `parse_size("512 B")` → `int(512.0 * 1)` = **512** ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = `int(1536.0)` = **1536** ✓
+- `parse_size("2 MB")` → `int(2.0 * 1048576)` = **2097152 = 2 * 1024 * 1024** ✓
+
+All three assertions now pass.
+
+## Summary
+
+**Why it failed:** `app/units.py` defined `KB` as `1000`, but the tests (and the module's own docstring, which says "1024-based units") expect KB to be `1024`. So `parse_size("1.5 KB")` returned `1500` instead of `1536`.
+
+**Fix:** Changed `KB` from `1000` to `1024` in the `UNITS` dict, correcting the code to match the test's expectation rather than altering the test.

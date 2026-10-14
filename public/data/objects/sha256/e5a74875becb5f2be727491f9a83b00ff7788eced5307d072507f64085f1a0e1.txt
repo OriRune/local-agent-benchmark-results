@@ -1,0 +1,16 @@
+I've created a beautiful single-file HTML page (`books.html`) for you. Here's what it includes:
+
+- **Dark gradient header** with your reading stats (21 books, ~8,600 pages, 12 months)
+- **Books organized by month** with seasonal emoji icons
+- **Color-coded genre tags** — each genre has its own color scheme (Sci-Fi = blue, Fantasy = purple, Literary Fiction = violet, Nonfiction = green, etc.)
+- **Clean card layout** with left accent borders, hover effects, and subtle shadows
+- **Reading duration** shown as a pill badge on each card
+- **Responsive design** that works on any screen size
+
+I also cleaned up the data:
+- Removed the duplicate *Project Hail Mary* entry
+- Filled in the missing author for *The Remains of the Day* (Kazuo Ishiguro)
+- Normalized capitalization for genres and titles
+- Handled the missing page count for *Piranesi* and the unfinished *Middlemarch*
+
+Just double-click `books.html` to open it in your browser, then screenshot it to share with your book club! 📚

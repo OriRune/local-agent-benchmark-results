@@ -1,0 +1,12 @@
+The fix is applied and verified.
+
+**Root cause:** In `app/units.py`, the `UNITS` dictionary defined `"KB": 1000` (a decimal/SI value), which contradicted both the module's own docstring ("1 KB = 1024 bytes") and the test's expectation of binary units. This caused `parse_size("1.5 KB")` to return `1500` instead of `1536`.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024`, making all three units consistent with the 1024-based scheme.
+
+All three test assertions now hold:
+- `parse_size("512 B")` → `512` ✓
+- `parse_size("1.5 KB")` → `1536` ✓
+- `parse_size("2 MB")` → `2 * 1024 * 1024` ✓
+
+I fixed the source code, not the test.

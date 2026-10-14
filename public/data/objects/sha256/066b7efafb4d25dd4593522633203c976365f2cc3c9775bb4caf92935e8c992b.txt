@@ -1,0 +1,7 @@
+**Cause:** `app/units.py` defined `KB` as `1000`, but the module's own docstring (and the test) say sizes use 1024-based units — `MB` and `GB` already use 1024, so `KB` was the inconsistent one.
+
+- `parse_size("1.5 KB")` returned `int(1.5 * 1000) == 1500`, not the expected `1536` → the second assertion failed.
+
+**Fix (code, not test):** changed `"KB": 1000` to `"KB": 1024` in `app/units.py:2`. All three assertions now hold: 512, 1536, 2097152.
+
+Note: I couldn't run the test to confirm — the sandbox denied program execution in this session — so this is verified by reading the code, not by running it.

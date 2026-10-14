@@ -1,0 +1,15 @@
+**Answer: 7 days**
+
+**Reasoning:**
+- Captain Gerrit Mom arrived on **21 July**
+- Mom and Tanate recaptured the city on **28 August**
+- July has 31 days, so from July 21 to July 31 = 10 days
+- From August 1 to August 28 = 28 days
+- Total: 10 + 28 = **38 days**
+
+Wait, let me recalculate:
+- July 21 to August 21 = 31 days (one full month)
+- August 21 to August 28 = 7 days
+- Total: 31 + 7 = **38 days**
+
+**Final Answer: 38**

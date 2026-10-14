@@ -1,0 +1,3 @@
+Use this *weather bot* template:
+User: "What is the weather in [o_location]?"
+Bot: "The *weather_outlook* for [o_location] is [o_weather]."

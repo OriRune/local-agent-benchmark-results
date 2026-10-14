@@ -1,0 +1,13 @@
+The sandbox blocks running programs, but the fix is straightforward to verify by hand. With `KB` now `1024`:
+
+- `parse_size("512 B")` → `512 × 1 = 512` ✓
+- `parse_size("1.5 KB")` → `1.5 × 1024 = 1536` ✓ (was `1.5 × 1000 = 1500`)
+- `parse_size("2 MB")` → `2 × 1024² = 2097152` ✓
+
+## Summary
+
+The test `tests/test_units.py` failed on `parse_size("1.5 KB") == 1536`.
+
+**Root cause:** `app/units.py` defined its unit table with `KB = 1000` (SI-style), which contradicted the module's own docstring — *"Sizes use 1024-based units: 1 KB = 1024 bytes"* — and was inconsistent with the neighboring units, all of which are 1024-based (`MB = 1024²`, `GB = 1024³`).
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`, so `1.5 KB` now correctly resolves to `1536`. The test itself was correct and required no changes.

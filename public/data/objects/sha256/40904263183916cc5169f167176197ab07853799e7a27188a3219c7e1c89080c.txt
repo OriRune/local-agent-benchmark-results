@@ -1,0 +1,22 @@
+Based on the code, here's the calculation.
+
+In `app/net.py`, `fetch` loops over `range(MAX_RETRIES)` and sleeps between failed attempts:
+
+```python
+for attempt in range(MAX_RETRIES):  # MAX_RETRIES = 3 → attempts 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+```
+
+If every attempt fails, the sleeps are:
+- attempt 0 → `2**0 = 1` s
+- attempt 1 → `2**1 = 2` s
+- attempt 2 → `2**2 = 4` s
+
+Then the loop exits and it raises `RuntimeError("giving up on {url}")`.
+
+**Total sleeping = 1 + 2 + 4 = 7 seconds.**
+
+(Note: the 20-second `TIMEOUT_S` is network wait time inside each `get()`, not `time.sleep()` — so it isn't counted toward the sleeping total.)

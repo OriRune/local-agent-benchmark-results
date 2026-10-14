@@ -1,0 +1,1 @@
+The test should now pass. The `parse_size` function in `app/units.py` has been corrected to use **1024-based units** consistently, matching the docstring and the expected behavior in the test.

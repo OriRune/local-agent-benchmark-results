@@ -1,0 +1,1 @@
+Here's a CSV file of the books I read last year: books.csv. Make an HTML page that shows this information in an aesthetically beautiful way, so that I can screenshot it and send it to my book club friends. It should be a single HTML file that works when I open it by double-clicking it.

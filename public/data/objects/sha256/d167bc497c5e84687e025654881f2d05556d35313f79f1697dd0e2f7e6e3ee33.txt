@@ -1,0 +1,13 @@
+**Olivia is a hero, Oliver is a villain, and Benjamin is a villain.**
+
+**Reasoning:**
+
+- **Olivia's statement:** "Benjamin is a villain or Benjamin is a hero." This is a logical tautology (always true), so Olivia must be a **hero**.
+
+- **Oliver's statement:** "Olivia is a hero and Olivia is a villain." This is a contradiction (always false), so Oliver must be a **villain**.
+
+- **Benjamin's statement:** "Olivia is a hero." Since Olivia is indeed a hero, this statement is true, so Benjamin must be a **hero**.
+
+Note: Benjamin's statement (true) contradicts Oliver's claim that Olivia is a villain. Since Oliver is a villain (liar), his false statement is consistent. Benjamin's truthful statement makes him a hero.
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

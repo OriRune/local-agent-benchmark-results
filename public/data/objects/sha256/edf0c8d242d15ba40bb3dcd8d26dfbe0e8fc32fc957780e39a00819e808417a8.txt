@@ -1,0 +1,15 @@
+I've created `system_info.py` that displays:
+- **CPU**: Number of cores, current frequency, and usage percentage
+- **RAM**: Total, used, and free memory in GB, plus usage percentage
+
+To run it, use:
+```bash
+python3 system_info.py
+```
+
+The script uses the `psutil` library to get system information. If you don't have it installed, you can install it with:
+```bash
+pip install psutil
+```
+
+Would you like me to run it now to show you the output?

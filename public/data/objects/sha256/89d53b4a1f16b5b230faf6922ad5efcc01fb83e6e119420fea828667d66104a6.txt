@@ -1,0 +1,1 @@
+get data/events.log and grep "error code" ignoring case.

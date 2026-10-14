@@ -1,0 +1,9 @@
+All TODO comments from the Python code have been added to `todo.txt`. The file now includes:
+
+- Existing tasks:
+  - `write README`
+  - `add proxy support`
+  - `tag the release`
+- New tasks:
+  - `# TODO: log each failed attempt`
+  - `# TODO: add a helper that formats byte sizes`

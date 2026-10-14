@@ -1,0 +1,9 @@
+To determine the resulting shape, let's analyze the vertices given:
+
+1. **Vertices A, C, G, E**: These vertices are directly above each other on the cube.
+2. **A and C**: These are on the top face of the cube.
+3. **G and E**: These are on the bottom face of the cube.
+
+Since A and C are on the top face and G and E are on the bottom face, the shape formed by connecting these vertices is a **square**. The sides of the square are formed by the edges of the cube, and the shape is flat.
+
+**square**

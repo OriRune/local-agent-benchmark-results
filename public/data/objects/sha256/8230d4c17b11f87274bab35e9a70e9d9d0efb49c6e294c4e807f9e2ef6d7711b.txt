@@ -1,0 +1,9 @@
+I've created a README.md file for the project that includes:
+
+- A brief description of TinyDL as a minimal command-line download tool
+- Installation instructions using pip
+- Usage examples showing how to use the CLI
+- A table listing all command line options with their help text:
+  - `url` (required): The URL to download from
+  - `-o, --output FILE`: File to write the downloaded content (default: stdout)
+  - `-q, --quiet`: Suppress progress output

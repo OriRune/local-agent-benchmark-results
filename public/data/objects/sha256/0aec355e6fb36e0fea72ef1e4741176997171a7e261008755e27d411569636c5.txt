@@ -1,0 +1,7 @@
+Done! I've created a `README.md` file that lists all three command line options from the CLI tool:
+
+1. **`url`** (positional) - "what to download"
+2. **`-o` / `--output`** - "file to write (default: stdout)"
+3. **`-q` / `--quiet`** - "no progress output"
+
+The README includes a usage section, a formatted table with all options, and example usage commands.

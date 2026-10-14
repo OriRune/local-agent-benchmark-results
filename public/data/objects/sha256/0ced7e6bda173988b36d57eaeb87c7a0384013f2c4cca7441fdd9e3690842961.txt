@@ -1,0 +1,7 @@
+README.md has been created. It lists every command line option from the `argparse` parser in `app/cli.py`:
+
+- **`url`** — positional argument, the URL to download
+- **`-o` / `--output`** — output file path (defaults to stdout)
+- **`-q` / `--quiet`** — suppresses the progress/byte-count message
+
+The README also includes a brief project description, installation note (no external dependencies), usage synopsis, and example commands.

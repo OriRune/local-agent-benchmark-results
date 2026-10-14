@@ -1,0 +1,15 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment.
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+def format_bytes(n):
+    """Returns a human-readable size such as '1.5 KB'."""
+    units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+    i = 0
+    while n >= 1024 and i < len(units) - 1:
+        n /= 1024.0
+        i += 1
+    return f"{n:.1f} {units[i]}"
+```

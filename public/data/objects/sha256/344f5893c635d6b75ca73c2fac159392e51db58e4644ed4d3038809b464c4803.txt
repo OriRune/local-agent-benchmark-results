@@ -1,0 +1,5 @@
+Done. The function `fetch` has been renamed to `download` in three places:
+
+1. **`app/net.py`** — `def fetch(...)` → `def download(...)`
+2. **`app/cli.py`** — `from app.net import fetch` → `from app.net import download`
+3. **`app/cli.py`** — `fetch(args.url, get=_get)` → `download(args.url, get=_get)`

@@ -1,0 +1,15 @@
+I've created a beautiful HTML page for your book club collection! Here's what I included:
+
+**Features:**
+- **Gradient purple background** with a modern, elegant design
+- **Statistics summary** showing 21 books read, 2025 year, and 18 genres
+- **Styled table** with all your book information (Title, Author, Genre, Dates, Pages)
+- **Hover effects** on rows for better interactivity
+- **Responsive design** - looks great on both desktop and mobile screens
+- **Clean typography** with Georgia serif font for readability
+
+**To use it:**
+1. Double-click `books.html` to open it in your browser
+2. Or save it to your computer and open it directly
+
+The page is fully responsive and will adapt to different screen sizes. You can screenshot it easily for your book club!

@@ -1,0 +1,1 @@
+The error code found in the log is **E-4471**, which indicates a disk quota exceeded while saving part 7.

@@ -1,0 +1,1 @@
+[{"args":{"path":"[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/a9cc566c94ceb79ceea3230b-37a8bd9152/workspace/project","pattern":"*.gguf"},"name":"find_files","result":"no files match *.gguf","status":"ok"}]

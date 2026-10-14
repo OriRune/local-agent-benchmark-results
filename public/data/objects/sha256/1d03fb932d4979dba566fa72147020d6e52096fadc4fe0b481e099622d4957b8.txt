@@ -1,0 +1,5 @@
+The most recent git commit (`cd463c19`, by `eval` on Oct 11, 2026) made a single-line change to `app/config.py`:
+
+- It changed the download timeout constant `TIMEOUT_S` from **10** to **20** seconds.
+
+That's the only file touched — one line added, one line removed.

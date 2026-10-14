@@ -1,0 +1,9 @@
+Found it. The file you're looking for is:
+
+**`Desktop/trip ideas 2025.txt`** — a plain text file containing vacation/trip ideas (Kyoto in spring, a coastal road trip, and camping at the lake).
+
+A couple of other vacation-related files exist in the directory, but they don't match "vacation ideas" as closely:
+- `Documents/Personal/Summer Break ideas.docx` (a Word file about a summer break)
+- `Documents/Work/HR/vacation policy 2026.pdf` and `vacation request form.docx` (work documents, not ideas)
+
+Is `trip ideas 2025.txt` the one you meant?

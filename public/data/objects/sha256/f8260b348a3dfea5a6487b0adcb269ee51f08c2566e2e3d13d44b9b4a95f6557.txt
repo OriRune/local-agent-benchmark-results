@@ -1,0 +1,21 @@
+To determine the total sleep time when every attempt in `fetch` fails, we look at the implementation in `app/net.py`:
+
+```python
+8	    for attempt in range(MAX_RETRIES):
+9	        try:
+10	            return get(url, timeout=TIMEOUT_S)
+11	        except OSError:
+12	            time.sleep(2 ** attempt)
+```
+
+And the configuration in `app/config.py`:
+```python
+2	MAX_RETRIES = 3
+```
+
+The loop runs for `attempt` values of `0`, `1`, and `2`. If an `OSError` occurs on every attempt, the sleep durations are:
+- **Attempt 0:** `2 ** 0 = 1` second
+- **Attempt 1:** `2 ** 1 = 2` seconds
+- **Attempt 2:** `2 ** 2 = 4` seconds
+
+Total sleep time = $1 + 2 + 4 = 7$ seconds.

@@ -1,0 +1,14 @@
+I've created a README.md for the project. It includes:
+
+1. **Project description** - A simple command-line tool for downloading files
+2. **Installation instructions**
+3. **Usage syntax**
+4. **Complete list of CLI options** with their help text in a table format:
+   - `url` (positional argument) - "what to download"
+   - `-o, --output` - "file to write (default: stdout)"
+   - `-q, --quiet` - "no progress output"
+5. **Examples** showing common use cases
+6. **Configuration details** from `app/config.py`
+7. **License** placeholder
+
+The README is comprehensive and documents every command-line option with its corresponding help text from the CLI parser.

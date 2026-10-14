@@ -1,0 +1,17 @@
+The test `tests/test_units.py` fails because of a discrepancy in the unit conversion factors in `app/units.py`.
+
+**Reason for failure:**
+In `app/units.py`, the `UNITS` dictionary defines `"KB"` as `1000` bytes:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+However, the docstring and the test cases expect 1024-based units (binary prefixes):
+- The docstring says: `Sizes use 1024-based units: 1 KB = 1024 bytes.`
+- The test case `assert parse_size("1.5 KB") == 1536` expects $1.5 \times 1024 = 1536$.
+- With the current code, `parse_size("1.5 KB")` returns $1.5 \times 1000 = 1500$, causing the assertion to fail.
+
+**Fix:**
+Change the value of `"KB"` in `app/units.py` from `1000` to `1024`.
+
+**What I could not finish:**
+I was unable to run the `pytest` command or the python script directly because the sandbox environment denied the execution of those commands. I had to rely on reading the source code of `app/units.py` and `tests/test_units.py` to identify the logic error.

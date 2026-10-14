@@ -1,0 +1,24 @@
+# H6
+
+**Result:** fail · done · 2 steps · 1 calls · 1 s
+
+## user
+
+If every attempt in fetch fails, how many seconds does it spend sleeping in total before it gives up? Work it out from the code.
+
+## assistant
+
+- call `list_dir` `{"path":"./attempts"}`
+
+<details><summary>list_dir result (33 chars)</summary>
+
+```
+error: no such folder: .[redacted local path]
+```
+
+</details>
+
+## assistant
+
+I do not see an `attempts` folder in the current directory. Could you please tell me where the attempts are located?
+

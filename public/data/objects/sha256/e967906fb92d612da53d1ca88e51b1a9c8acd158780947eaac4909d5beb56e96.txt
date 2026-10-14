@@ -1,0 +1,8 @@
+**[System Logic Template]**
+
+`on_user_input: get_location`
+`output_weather: fetch_forecast(location)`
+`show_to_user: *display_weather_data*`
+
+`if_error: *show_error_message*`
+`loop_until_done: o_o_o_o_o_o`

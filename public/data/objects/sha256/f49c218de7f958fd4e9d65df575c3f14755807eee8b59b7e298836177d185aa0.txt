@@ -1,0 +1,8 @@
+{
+  "answer": "The paper describes using the International Classification of Diseases, 10th revision (ICD-10) to code French death certificates, with dictionaries containing 3,539 or 6,392 codes and an example code I509.",
+  "evidence": [
+    0,
+    5,
+    10
+  ]
+}

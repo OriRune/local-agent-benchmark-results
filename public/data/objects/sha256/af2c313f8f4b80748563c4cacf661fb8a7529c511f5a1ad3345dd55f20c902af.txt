@@ -1,0 +1,1 @@
+The request would have worked only if you had provided a specific text or file to append. Since no text was supplied, I added empty lines (which are treated as new lines in the file) to `todo.txt`. To fix the tool call, please supply the actual content or a file path you'd like to modify.

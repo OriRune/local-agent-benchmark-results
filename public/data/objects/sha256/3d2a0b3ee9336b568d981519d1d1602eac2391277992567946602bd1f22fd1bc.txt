@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "Features extracted from text include POS tags, keywords, and semantic indicators related to named entities.",
+  "evidence": ["[1] In this paper, we propose a joint clustering architecture that aims at minimizing the current gap between world knowledge and knowledge available in open domain knowledge bases (e.g., Freebase) for NER systems, by extracting features from unstructured data sources. To this aim, we use features extracted from images and text from the web as input data.", " "[4] The main insight underlying this work is that we can produce a NER model which performs similarly to state-of-the-art approaches but without relying on any specific resource or encoded rule."]
+}
+```

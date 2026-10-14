@@ -1,0 +1,15 @@
+The function `format_bytes` has been added to **app/util.py** and the TODO comment about it has been removed. The file now contains the following updated content:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+# Helper to format byte sizes
+
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024.0:
+            break
+        n /= 1024.0
+    return f'{n:.1f} {unit}'
+```

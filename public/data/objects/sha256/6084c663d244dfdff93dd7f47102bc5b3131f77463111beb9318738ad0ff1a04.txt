@@ -1,0 +1,7 @@
+README.md has been created. It lists every CLI option from `app/cli.py`:
+
+- **`url`** — what to download (positional argument)
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+
+Each option includes its help text from the `argparse` definition, along with usage examples.

@@ -1,0 +1,6 @@
+All references to `fetch` have been renamed to `download`.
+
+- **app/net.py**: `def fetch(...)` → `def download(...)`
+- **app/cli.py**: import `from app.net import download`, and call `download(args.url, get=_get)`
+
+No remaining references to the old name.

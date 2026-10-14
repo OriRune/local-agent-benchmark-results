@@ -1,0 +1,1 @@
+[{"args":{"path":"data/events.log","pattern":"events.log"},"name":"find_files","result":"error: no such folder: data/events.log","status":"error"},{"args":{"path":"data","pattern":"events.log"},"name":"find_files","result":"data/events.log","status":"ok"}]

@@ -1,0 +1,12 @@
+Good — the persistence is already there. Here's how it works:
+
+- **`load()`** reads items from `localStorage` (key `todo-items-v1`) when the page opens.
+- **`save()`** writes the items back to `localStorage` every time you add, check off, edit, or delete something.
+
+So your items are already remembered when you reload the page. To verify, just open `todo.html`, add a couple of items, reload, and they'll still be there.
+
+A couple of notes:
+- Data is stored **per-browser, per-folder** on your machine — it won't carry over to a different browser or another computer.
+- It persists until you clear your browser data or open the file from a different location.
+
+Want me to add a "Clear all" button or a way to export/reset the stored list?

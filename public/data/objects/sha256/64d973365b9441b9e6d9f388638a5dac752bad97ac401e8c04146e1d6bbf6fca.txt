@@ -1,0 +1,10 @@
+I looked through every file in your folders (Desktop, Documents, Downloads, Music, Pictures) and searched their contents. Here's what I found:
+
+- There is **no 2019 tax return** anywhere in here. I searched by name (`*2019*`, `*tax*`, `*return*`, `*refund*`) and also scanned the contents of all files for "2019" — nothing matched.
+- The **only tax return** I could find is `Documents/Personal/tax return 2024.pdf`.
+
+So I can't tell you your 2019 refund amount, because that file isn't in this folder.
+
+Would you like me to:
+1. Open the **2024** tax return and tell you that refund instead, or
+2. Help you locate the 2019 return elsewhere (for example, a different drive or cloud folder)?

@@ -1,0 +1,11 @@
+The sandbox is denying all program execution this session, so I can't run code to confirm. But the fix is a straightforward logic correction, and I can verify it by hand.
+
+## Summary
+
+**Why the test failed:** `app/units.py` had a bug in its unit table. The module's own docstring says *"Sizes use 1024-based units: 1 KB = 1024 bytes,"* but the `UNITS` dict defined `"KB": 1000` (10-based). So `parse_size("1.5 KB")` computed `1.5 * 1000 = 1500` instead of the expected `1536`.
+
+**The fix** (in `app/units.py`): changed `"KB": 1000` to `"KB": 1024`, making the code consistent with its docstring.
+
+The other two assertions (`512 B` → 512, `2 MB` → 2·1024·1024) already passed since `"B"` and `"MB"` were already correct.
+
+I couldn't run the test/sandbox due to the offline sandbox denying program execution this session, but the change is a direct correction of the value the test expects. If you'd like, I can re-run the test once the sandbox allows it.

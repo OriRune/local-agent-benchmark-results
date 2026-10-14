@@ -1,0 +1,13 @@
+I have created a script named `system_info.sh` that displays simple information about the computer's RAM and CPU usage. The script reads from `/proc/meminfo` and `/proc/cpuinfo` to gather total RAM, CPU model, and number of cores.
+
+You can run the script manually by executing:
+```bash
+bash system_info.sh
+```
+or make it executable and run it directly:
+```bash
+chmod +x system_info.sh
+./system_info.sh
+```
+
+The script is now in the working directory.

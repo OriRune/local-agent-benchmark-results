@@ -1,0 +1,17 @@
+I've created `open_all.sh` for you. The script will:
+
+1. **Open Chrome** with `https://www.google.com` loaded
+2. **Open a text editor** (nano)
+3. **Open the file manager** showing `[private-home]/Documents/llama.cpp`
+
+All three applications will open in the background (using `&`) so they don't block each other.
+
+To run it, execute:
+```bash
+./open_all.sh
+```
+
+Or if you prefer to run it directly:
+```bash
+bash open_all.sh
+```

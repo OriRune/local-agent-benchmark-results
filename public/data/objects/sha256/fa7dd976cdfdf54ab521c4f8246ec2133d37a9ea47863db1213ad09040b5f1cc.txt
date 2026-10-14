@@ -1,0 +1,2 @@
+
+The test was failing because `parse_size` used a 1000‑based conversion for KB, giving 1500 instead of the expected 1536 for “1.5 KB”. I changed the UNITS mapping to use 1024 for KB, and the test now passes. The fix is complete.

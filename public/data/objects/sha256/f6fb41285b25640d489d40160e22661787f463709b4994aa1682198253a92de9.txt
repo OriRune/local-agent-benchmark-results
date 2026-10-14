@@ -1,0 +1,36 @@
+## Setting Up the Problem
+
+I need to find the probability that the **sum** of all three dice (1d12, 1d10, 1d4) is 11 or higher.
+
+**Total outcomes:**
+$$12 \times 10 \times 4 = 480$$
+
+## Counting Outcomes Where Sum ≤ 10
+
+It's easier to count the complement (sum ≤ 10) and subtract.
+
+Since $a + b + c \le 10$ with each die ≥ 1, the constraints $a \le 12$ and $b \le 10$ are automatically satisfied. Only $c \le 4$ matters.
+
+For each value of $c$, I count pairs $(a,b)$ with $a,b \ge 1$ and $a + b \le 10 - c$:
+
+$$\text{Number of } (a,b) \text{ with } a+b \le m = \frac{(m-1)m}{2}$$
+
+| $c$ | $m = 10-c$ | Count |
+|-----|-----------|-------|
+| 1 | 9 | $\frac{8 \cdot 9}{2} = 36$ |
+| 2 | 8 | $\frac{7 \cdot 8}{2} = 28$ |
+| 3 | 7 | $\frac{6 \cdot 7}{2} = 21$ |
+| 4 | 6 | $\frac{5 \cdot 6}{2} = 15$ |
+
+**Total with sum ≤ 10:**
+$$36 + 28 + 21 + 15 = 100$$
+
+## Computing the Probability
+
+**Outcomes with sum ≥ 11:**
+$$480 - 100 = 380$$
+
+**Probability:**
+$$\frac{380}{480} = \frac{19}{24}$$
+
+<answer>19/24</answer>

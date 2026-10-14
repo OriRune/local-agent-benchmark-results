@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The researchers obtained 11,529,432 segmented words for their training data.",
+ "evidence": [
+  "12"
+ ]
+}
+```

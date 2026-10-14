@@ -1,0 +1,9 @@
+I've written `README.md`. It documents the three CLI options from `app/cli.py`:
+
+- **`url`** (positional) — "what to download"
+- **`-o` / `--output`** — "file to write (default: stdout)"
+- **`-q` / `--quiet`** — "no progress output"
+
+It also includes the usage form and a few worked examples. The help text is taken directly from the `add_argument(..., help=...)` calls in `app/cli.py`, so it matches what `python -m app.cli --help` reports.
+
+Note: the CLI's help currently only lists these three options (the source has no `--retries`, `--timeout`, `--proxy`, or size-formatting flags despite those constants existing in `config.py` and the `notes.md`/`todo.txt` mentions of proxy support — those are not yet exposed as CLI options, so I did not invent them).

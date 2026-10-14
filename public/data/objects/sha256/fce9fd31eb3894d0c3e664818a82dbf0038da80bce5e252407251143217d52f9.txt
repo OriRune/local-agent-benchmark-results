@@ -1,0 +1,1 @@
+Done. I added `- publish release notes` as the last line of todo.txt. The file now has 4 lines, with the new item as the final one.

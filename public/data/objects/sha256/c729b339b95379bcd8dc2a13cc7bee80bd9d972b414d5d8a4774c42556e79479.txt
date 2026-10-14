@@ -1,0 +1,6 @@
+
+
+{
+  "answer": "The authors used 11,529,432 segmented words from Chinese Wikipedia articles for training.",
+  "evidence": [12]
+}

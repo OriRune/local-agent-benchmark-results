@@ -1,0 +1,4 @@
+{
+  "answer": "They do not train a model; instead, they use a dictionary-based tagging mechanism with two datasets: Occupation Data (gathered from internet sources) and Names Data (a corpus of 5453 male and 6990 female names from the CMU repository of names).",
+  "evidence": ["11", "12", "13", "18", "19"]
+}

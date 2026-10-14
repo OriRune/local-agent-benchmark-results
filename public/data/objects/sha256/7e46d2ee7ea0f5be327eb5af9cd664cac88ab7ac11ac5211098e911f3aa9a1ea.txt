@@ -1,0 +1,8 @@
+There are a total of 8 courses you have to take, labeled from 0 to 7.
+
+You are given the following list of prerequisites, where prerequisites[i] = (a_i, b_i) indicates that you must first take course b_i if you want to take course a_i:
+[(5, 3), (7, 3), (4, 2), (0, 4), (6, 1), (1, 4), (7, 2), (2, 3)]
+
+Return True if you can finish all courses considering the prerequisites, or False otherwise.
+
+Put your final answer, in the requested format, inside <answer>...</answer>.

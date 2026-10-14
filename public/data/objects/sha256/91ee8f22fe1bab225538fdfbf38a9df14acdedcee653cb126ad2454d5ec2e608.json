@@ -1,0 +1,1 @@
+["Let me find where MAX_RETRIES is defined and used.\n","Let me read the config.py file to make the change.\n","The file has 4 lines. The MAX_RETRIES line is unique. Let me edit it.\n","The change is done. Let me verify.\n"]

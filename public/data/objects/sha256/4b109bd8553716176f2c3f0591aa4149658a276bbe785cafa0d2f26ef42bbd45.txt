@@ -1,0 +1,10 @@
+The most recent git commit (`f20319a`) changed `app/config.py`'s `TIMEOUT_S` from `10` to `20`. I've edited the file directly to revert `TIMEOUT_S` back to `10`. The file now reads:
+
+```python
+"""Settings for the downloader."""
+MAX_RETRIES = 3
+TIMEOUT_S = 10
+USER_AGENT = "tiny-downloader/0.2"
+```
+
+No git commands were used; the change was made by directly editing the file.

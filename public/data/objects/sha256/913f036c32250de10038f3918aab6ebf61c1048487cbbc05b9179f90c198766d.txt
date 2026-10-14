@@ -1,0 +1,20 @@
+The sandbox doesn't allow `chmod`, but that's fine — you can make it executable yourself. Here's what I created:
+
+**`open_workspace.sh`** in the project folder. Run it with:
+
+```bash
+bash open_workspace.sh
+```
+
+The script does the following:
+
+1. **Chrome** — launches `google-chrome` with `https://www.google.com` in a new window.
+2. **Text editor** — tries `gedit` → `mousepad` → `xed` (whichever is installed on your system).
+3. **File manager** — tries `nautilus` → `nemo` → `thunar` → `pcman` (whichever is installed) pointing at `[private-home]/Documents/llama.cpp`.
+
+To make it directly executable, run:
+
+```bash
+chmod +x open_workspace.sh
+./open_workspace.sh
+```

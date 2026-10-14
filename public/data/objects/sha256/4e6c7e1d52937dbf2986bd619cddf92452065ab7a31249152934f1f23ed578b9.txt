@@ -1,0 +1,21 @@
+Since I cannot run the tests and cannot reliably read the file to edit it, I have to rely on the initial analysis: the failure is because `UNITS["KB"]` was `1000` instead of `1024`. I will use a full rewrite of `app/units.py` based on the assumption that the other lines are correct and the change is only in `UNITS`.
+
+The content of `app/units.py` (as I last saw it before the error):
+```python
+"""Byte-size parsing. Sizes use 1024-based units: 1 KB = 1024 bytes."""
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+
+def parse_size(text):
+    number, unit = text.split()
+    return int(float(number) * UNITS[unit.upper()])
+```
+
+I will rewrite it with the fix:
+```python
+"""Byte-size parsing. Sizes use 1024-based units: 1 KB = 1024 bytes."""
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+
+def parse_size(text):
+    number, unit = text.split()
+    return int(float(number) * UNITS[unit.upper()])
+```

@@ -1,0 +1,12 @@
+The bisection converged cleanly to a total of exactly 9,400 m/s.
+
+**Setup:**
+- Stage 1: m₀ = 4,000 + 36,000 + 900 + x + 1,200; m_f = 4,000 + 900 + x + 1,200 (after burning its propellant and being dropped)
+- Stage 2: m₀ = 900 + x + 1,200; m_f = 900 + 1,200
+
+**Solving** Δv₁ + Δv₂ = 9,400 m/s for the unknown stage-2 propellant x:
+- Δv₁ = 290 × 9.80665 × ln((53,629.4)/(17,629.4)) ≈ 3,164 m/s
+- Δv₂ = 340 × 9.80665 × ln((13,629.4)/(2,100)) ≈ 6,236 m/s
+- Total = 9,400 m/s ✓
+
+ANSWER: 11529

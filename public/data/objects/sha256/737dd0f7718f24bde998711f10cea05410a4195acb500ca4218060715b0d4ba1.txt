@@ -1,0 +1,11 @@
+
+
+I don't see any files in the project that contain CLI command definitions or help text. The available files (notes.md, todo.txt) don't include command-line option details. Could you clarify:
+
+1. Which file(s) contain the CLI command definitions?
+2. Are the commands implemented in code (e.g., in the 'app' folder)?
+3. Should I attempt to run the application to capture its help output?
+
+<ask_user>
+{"question": "Which file contains the CLI command definitions or help text?"}
+</ask_user>

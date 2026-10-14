@@ -1,0 +1,4 @@
+Programs can't be run in this session, but the implementation is straightforward. The task is complete:
+
+- Added `format_bytes(n)` to `app/util.py`, which returns human-readable sizes like `'512 B'`, `'1.5 KB'`, `'1.0 MB'`, `'1.5 GB'`.
+- Removed the `# TODO: add a helper that formats byte sizes` comment.

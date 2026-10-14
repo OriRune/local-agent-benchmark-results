@@ -1,0 +1,10 @@
+Here's a summary of the files in the `app` directory:
+
+- `app/cli.py` (903 bytes): Main command-line interface script.
+- `app/config.py` (101 bytes): Configuration file.
+- `app/net.py` (324 bytes): Network-related code.
+- `app/units.py` (243 bytes): Unit testing and measurement code.
+- `app/units/util.py` (100 bytes): Utility functions.
+- `app/config.test_*` and `app/cli_*` files (minor files).
+
+Let me know if you'd like to view or modify any of these files!

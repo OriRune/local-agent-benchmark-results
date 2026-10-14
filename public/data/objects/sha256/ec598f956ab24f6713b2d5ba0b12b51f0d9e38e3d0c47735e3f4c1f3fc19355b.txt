@@ -1,0 +1,1 @@
+I've successfully undone the most recent git commit by editing the file directly. The change was to raise the download timeout from 10 to 20 seconds in `app/config.py`, so I've changed it back to 10 seconds. The file now reflects the state before the commit.

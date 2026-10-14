@@ -1,0 +1,18 @@
+Based on my analysis of the code:
+
+In `app/units.py`:
+- `UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+- `parse_size` splits the text into number and unit, then computes `int(float(number) * UNITS[unit.upper()])`
+
+The test expects:
+- `"512 B"` → `512` (correct, since `1 * 1 = 1`, `512 * 1 = 512`)
+- `"1.5 KB"` → `1536` (i.e., `1.5 * 1024 = 1536`)
+- `"2 MB"` → `2 * 1024 * 1024` (i.e., `2 * 1048576 = 2097152`)
+
+But `UNITS["KB"]` is `1000`, not `1024`. The docstring says "Sizes use 1024-based units: 1 KB = 1024 bytes", but the dictionary uses `1000` for KB.
+
+Therefore, `parse_size("1.5 KB")` computes `1.5 * 1000 = 1500`, not `1.5 * 1024 = 1536`. This causes the second assertion to fail.
+
+Fix: Change `UNITS["KB"]` from `1000` to `1024`.
+
+Let me apply the fix:

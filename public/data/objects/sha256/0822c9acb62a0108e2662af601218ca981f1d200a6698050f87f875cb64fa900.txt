@@ -1,0 +1,6 @@
+
+The last line of todo.txt has been updated to:
+
+- publish release notes
+
+No other changes were made to the file.

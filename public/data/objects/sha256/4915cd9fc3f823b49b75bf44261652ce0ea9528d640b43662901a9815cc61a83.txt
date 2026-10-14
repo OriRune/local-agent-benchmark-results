@@ -1,0 +1,5 @@
+The app folder contains **6 Python files**. The **largest is `app/cli.py`** with **903 bytes**. 
+
+Here's the JSON output for your reference:
+
+{"name": "find_files", "arguments": {"pattern": "*.py", "path": "app", "sort": "size"}}

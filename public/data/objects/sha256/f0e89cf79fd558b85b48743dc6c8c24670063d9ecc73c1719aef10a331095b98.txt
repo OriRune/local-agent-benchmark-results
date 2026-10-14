@@ -1,0 +1,21 @@
+The `fetch` function in `app/net.py` is the relevant code. Let me work out the total sleep time.
+
+**The loop:**
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3, so attempt = 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+```
+
+**Sleep after each failed attempt:**
+- attempt 0 → `2 ** 0` = 1 second
+- attempt 1 → `2 ** 1` = 2 seconds
+- attempt 2 → `2 ** 2` = 4 seconds
+
+After the third failure (attempt 2) the loop exits and raises `RuntimeError`, so there is no fourth sleep.
+
+**Total: 1 + 2 + 4 = 7 seconds**
+
+So if every attempt fails, `fetch` sleeps **7 seconds** before giving up. (Note: this ignores the 20-second `TIMEOUT_S` per request, which is separate network wait time, not the `time.sleep` in the retry loop.)

@@ -1,0 +1,15 @@
+The change is in place. Let me verify the arithmetic by hand:
+
+- `parse_size("512 B")` = int(512.0 × 1) = **512** ✓
+- `parse_size("1.5 KB")` = int(1.5 × 1024) = int(1536.0) = **1536** ✓
+- `parse_size("2 MB")` = int(2 × 1024²) = int(2 × 1048576) = **2097152 = 2 * 1024 * 1024** ✓
+
+All three assertions now pass.
+
+## Summary
+
+**Root cause:** `app/units.py` defined `"KB": 1000`, but the module's own docstring states sizes use **1024-based** units (1 KB = 1024 bytes), and the test expects `1.5 KB == 1536` (which is 1.5 × 1024). The `KB` value was inconsistent with both the documented standard and the test.
+
+**Fix:** Changed `UNITS` so `"KB": 1024`, matching the 1024-based convention already used for `MB` and `GB` and stated in the docstring. The test and the code are now consistent — no test changes were made.
+
+(Note: I couldn't execute the test runner or any Python in this session, as the sandbox denied all program execution. The fix is verified by hand-computing each expected value.)

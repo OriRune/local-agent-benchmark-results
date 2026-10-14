@@ -1,0 +1,13 @@
+Done! I've created `show_system_info.py` which displays:
+
+- **RAM Usage**: Total, Used, Free memory in MB, and usage percentage
+- **CPU Usage**: Overall CPU percentage and number of cores
+
+The script ran successfully and showed your system has 32GB RAM (13.5% used) and 12 CPU cores (0.7% usage).
+
+To run it anytime, use:
+```bash
+python3 show_system_info.py
+```
+
+The script uses the `psutil` library to query system resources.

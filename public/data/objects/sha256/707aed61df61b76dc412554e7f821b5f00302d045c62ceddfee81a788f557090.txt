@@ -1,0 +1,5 @@
+The test was failing because of an inconsistency between the code and the test expectations. 
+
+**The problem:** The comment in the code states "Sizes use 1024-based units: 1 KB = 1024 bytes", but the `UNITS` dictionary defined `KB` as 1000 instead of 1024. This caused `parse_size("1.5 KB")` to return 1500 (1.5 × 1000) instead of the expected 1536 (1.5 × 1024).
+
+**The fix:** Changed `UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}` to `UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}` to align with the documented 1024-based unit system.

@@ -1,0 +1,1 @@
+**Fixed.** The problem was on line 2 of `app/units.py`: `"KB": 1000` was using the decimal (SI) definition of kilobyte (1000 bytes) instead of the binary definition (1024 bytes). The docstring explicitly states "Sizes use 1024-based units: 1 KB = 1024 bytes," and the test expects `1.5 KB == 1536` (which is 1.5 × 1024). Changing KB from 1000 to 1024 resolves the failure.

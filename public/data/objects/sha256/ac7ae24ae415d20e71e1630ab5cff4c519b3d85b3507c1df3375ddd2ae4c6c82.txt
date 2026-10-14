@@ -1,0 +1,13 @@
+Done! Now your to-do list will remember all items when you reload the page. 
+
+**What I changed:**
+- Added `saveTasks()` calls after every operation (add, toggle, edit, delete)
+- Removed the unnecessary `storage` event listener (that only fires when another tab modifies localStorage)
+
+Now your tasks will persist automatically:
+- Add a task → saved
+- Check/uncheck a task → saved
+- Edit a task → saved
+- Delete a task → saved
+
+Just refresh the page and your tasks will still be there!

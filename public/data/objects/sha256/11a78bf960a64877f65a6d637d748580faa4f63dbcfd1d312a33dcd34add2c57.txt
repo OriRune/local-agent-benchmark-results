@@ -1,0 +1,17 @@
+I've created a `README.md` file that documents the CLI command line options. Here's what's included:
+
+**CLI Options Documented:**
+| Option | Description |
+|--------|-------------|
+| `url` | what to download (required) |
+| `-o, --output` | file to write (default: stdout) |
+| `-q, --quiet` | no progress output |
+
+**Additional content:**
+- Project description (tinydl - a simple file downloader)
+- Installation instructions
+- Usage examples
+- Configuration settings from `app/config.py` (MAX_RETRIES, TIMEOUT_S, USER_AGENT)
+- Notes from the planning notes (beta release status, proxy support planned)
+
+The README is now at `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/719e73e73c8a628e7b488fee-5fa3ec2d6f/workspace/project/README.md`.

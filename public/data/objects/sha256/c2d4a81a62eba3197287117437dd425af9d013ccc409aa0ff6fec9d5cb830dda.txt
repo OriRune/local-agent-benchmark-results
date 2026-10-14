@@ -1,0 +1,1 @@
+I have successfully changed the value of `MAX_RETRIES` to 5 in the `app/config.py` file. The change has been verified, and the import in `app/net.py` remains consistent. No further actions are required.

@@ -1,0 +1,1 @@
+The tools provided do not include a method to directly access or retrieve environment variables like `MAX_RETRIES`. After examining the listed files and structures (e.g., `list_dir`, `find_files`, etc.), no definition or value for `MAX_RETRIES` is present. Please consult your application's configuration or documentation for its location and value.

@@ -1,0 +1,15 @@
+
+```bash
+#!/bin/bash
+# Open Chrome with Google (URL) and then launch a text editor and the file manager.
+
+# Replace /usr/bin/nano with your preferred editor if needed
+xdg-open /usr/bin/nano
+
+# Open the file manager (example: nautilus)
+xdg-open /usr/bin/nautilus [private-home]/Documents/llama.cpp
+
+# Open Chrome with Google
+# Adjust the Chrome binary path if necessary
+startx --args="google-chrome --new-tab --incognito -o file://[private-home]/Documents/llama.cpp" https://www.google.com
+```

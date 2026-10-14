@@ -1,0 +1,11 @@
+**Why it failed:** `app/units.py` documented 1024-based units ("1 KB = 1024 bytes") but its `UNITS` table had a copy-paste inconsistency — `"KB": 1000` while MB/GB used 1024-based values. So `parse_size("1.5 KB")` returned `1500` instead of the expected `1536`, failing the second assertion (the "512 B" and "2 MB" cases passed).
+
+**Fix (in the code, not the test):** changed the KB multiplier to 1024 in `app/units.py`:
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+Now all three cases match the documented 1024-based behaviour: 512 B → 512, 1.5 KB → 1536, 2 MB → 2097152.
+
+Note: I couldn't execute the test suite — the sandbox reported "programs cannot be run in this session" — so I verified the fix by tracing the arithmetic by hand. Nothing else in the project references `UNITS`/`parse_size` (only `app/util.py` has a TODO for a size-formatting helper), so no other code is affected.

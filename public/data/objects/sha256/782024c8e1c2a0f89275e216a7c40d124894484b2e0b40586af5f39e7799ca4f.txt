@@ -1,0 +1,1 @@
+Based on the grep search, the error code **E-4471** is found on line 2417 in the `data/events.log` file.

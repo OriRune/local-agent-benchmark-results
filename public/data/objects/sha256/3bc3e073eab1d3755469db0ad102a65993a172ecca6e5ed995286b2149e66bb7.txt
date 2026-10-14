@@ -1,0 +1,7 @@
+```json
+{
+  "answer": "The text features extracted include **TF-IDF (Term Frequency-Inverse Document Frequency) vectors** from web page titles and content excerpts, representing a **bag-of-words** approach for clustering and classification of named entity classes (PER, ORG, LOC).",
+
+  "evidence": [8]
+}
+```

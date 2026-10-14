@@ -1,0 +1,1 @@
+I've fixed the issue. The test was failing because `UNITS["KB"]` was set to `1000` instead of `1024`. The docstring correctly states that sizes use 1024-based units, so `1.5 KB` should equal `1.5 * 1024 = 1536` bytes. The fix changes `KB` to use `1024` instead of `1000`.

@@ -1,0 +1,7 @@
+To make 24 using 6, 4, 4, 4:
+
+**6 * 4 + 4 - 4 = 24**
+
+Check: 6 × 4 = 24, then + 4 = 28, then - 4 = 24. ✓
+
+<answer>6 * 4 + 4 - 4</answer>

@@ -1,0 +1,11 @@
+I've created a README.md file that lists every command line option of the CLI with its help text. The README includes:
+
+- A brief description of the project
+- The usage syntax
+- A table listing all command line options with their short/long forms and descriptions
+- Example usage commands showing common use cases
+
+The three options documented are:
+1. **url** (positional argument) - "what to download"
+2. **-o / --output** - "file to write (default: stdout)"
+3. **-q / --quiet** - "no progress output"

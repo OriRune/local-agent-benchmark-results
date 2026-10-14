@@ -1,0 +1,1 @@
+[{"args":{"path":"app/net.py","pattern":"fetch"},"name":"find_files","result":"error: no such folder: app/net.py","status":"error"},{"args":{"new_text":"download","old_text":"fetch","path":"app/net.py"},"name":"edit_file","result":"edited app/net.py (+1 -1 lines)","status":"ok"}]

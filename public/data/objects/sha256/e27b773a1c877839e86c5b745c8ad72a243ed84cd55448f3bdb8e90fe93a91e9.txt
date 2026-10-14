@@ -1,0 +1,5 @@
+Use only this passage. Answer the question with only the number or short answer, without explanation.
+
+ The Redskins traveled to the Georgia Dome to play the Atlanta Falcons.  Washington trailed in the first quarter as Falcons quarterback Matt Ryan found tight end Tony Gonzalez on a 2-yard touchdown pass, followed by cornerback Tye Hill returning an interception 62 yards for a touchdown.  In the second quarter, the Redskins scored on a 48-yard field goal from Shaun Suisham.  However, Atlanta would respond with running back Michael Turner gaining a touchdown and kicker Jason Elam completing a field goal. Washington scored in the third quarter when running back Ladell Betts completed a 1-yard touchdown run.  The Redskins also scored in the fourth quarter as quarterback Jason Campbell completed a 3-yard touchdown pass to tight end Todd Yoder. The Falcons ended the game with a 58-yard touchdown run by Turner.
+
+QUESTION: How many yards did Gonzalez pass?

@@ -1,0 +1,13 @@
+Let me work through the code.
+
+In `app/net.py`, `fetch` loops `for attempt in range(MAX_RETRIES)`. With `MAX_RETRIES = 3` (from `config.py`), `range(3)` produces attempts `0, 1, 2` — three attempts. If every attempt fails (raises `OSError`), the sleep happens after each failed attempt:
+
+- attempt 0 fails → `time.sleep(2 ** 0)` = `2 ** 0` = **1 second**
+- attempt 1 fails → `time.sleep(2 ** 1)` = `2 ** 1` = **2 seconds**
+- attempt 2 fails → `time.sleep(2 ** 2)` = `2 ** 2` = **4 seconds**
+
+Then the loop ends and it raises `RuntimeError("giving up...")`.
+
+Total sleep = 1 + 2 + 4 = **7 seconds**.
+
+Note: the `TIMEOUT_S = 20` seconds is the per-attempt network timeout, not a sleep — it's not part of the sleeping total. So the answer is **7 seconds**.

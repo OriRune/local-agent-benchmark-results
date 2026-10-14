@@ -1,0 +1,5 @@
+The proxy.ini file contains:
+- host: proxy.lan.example
+- port: 3128
+
+So the proxy host is `proxy.lan.example` and the port is `3128`.

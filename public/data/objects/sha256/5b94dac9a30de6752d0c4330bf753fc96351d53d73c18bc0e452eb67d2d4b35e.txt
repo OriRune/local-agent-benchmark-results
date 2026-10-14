@@ -1,0 +1,1 @@
+{"answer": "The paper describes the use of a word2vec model for financial news headlines.", "evidence": [3, 4, 29]}

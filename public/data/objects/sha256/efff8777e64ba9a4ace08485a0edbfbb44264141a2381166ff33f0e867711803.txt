@@ -1,0 +1,10 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function returns human-readable sizes:
+- `format_bytes(0)` → `0 B`
+- `format_bytes(1024)` → `1.0 KB`
+- `format_bytes(1536)` → `1.5 KB`
+- `format_bytes(1024**2)` → `1.0 MB`
+- `format_bytes(1024**3)` → `1.0 GB`
+
+It steps through B → KB → MB → GB → TB, dividing by 1024 until the value is under 1024, and caps at TB. The `clamp` function is untouched.

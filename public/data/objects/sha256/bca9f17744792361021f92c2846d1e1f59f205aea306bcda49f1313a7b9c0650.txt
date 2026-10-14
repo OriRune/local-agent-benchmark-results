@@ -1,0 +1,10 @@
+I found it. Searching for "error" (case-sensitive) returned exactly one match — there's a single error in the log.
+
+**Error code: `E-4471`** — on **line 2417**
+
+The line reads:
+```
+ERROR code=E-4471 disk quota exceeded while saving part 7
+```
+
+This is the only error line in the otherwise long log (the rest are INFO and a couple of WARN lines).

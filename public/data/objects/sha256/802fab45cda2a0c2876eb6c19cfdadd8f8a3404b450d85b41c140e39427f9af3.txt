@@ -1,0 +1,5 @@
+To start, define the input field for *user location*.
+Then add the command syntax: /get_forecast o {{city}}.
+This flag tells the bot to open the weather module.
+Make sure the API key is secure inside the code.
+Finally, test the response format before launch.

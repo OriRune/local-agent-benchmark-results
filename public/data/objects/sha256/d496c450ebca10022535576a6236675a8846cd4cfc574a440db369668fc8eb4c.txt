@@ -1,0 +1,1 @@
+I need to see the project structure and the CLI implementation to write a comprehensive `README.md`. Could you please run `list_dir` to show me the contents of the current directory?

@@ -1,0 +1,22 @@
+## Analysis
+
+**Olivia's statement:** "Benjamin is a villain or Benjamin is a hero"
+- This is a **tautology** — it's always true, since Benjamin must be one or the other.
+- Since only heroes tell the truth, **Olivia is a hero**.
+
+**Oliver's statement:** "Olivia is a hero and Olivia is a villain"
+- This is a **contradiction** — it's always false, since Olivia can't be both.
+- Since only villains lie, **Oliver is a villain**.
+
+**Benjamin's statement:** "Olivia is a hero"
+- We've established that Olivia is indeed a hero, so this statement is **true**.
+- Since only heroes tell the truth, **Benjamin is a hero**.
+
+## Verification
+- Olivia (hero) tells truth: "Benjamin is a villain or hero" ✓ (true)
+- Oliver (villain) lies: "Olivia is both" ✓ (false)
+- Benjamin (hero) tells truth: "Olivia is a hero" ✓ (true)
+
+All statements are consistent.
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

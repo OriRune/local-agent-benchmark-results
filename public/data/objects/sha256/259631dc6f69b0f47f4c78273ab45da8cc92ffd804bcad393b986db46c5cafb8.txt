@@ -1,0 +1,2 @@
+
+I have the original to‑do‑list HTML you created earlier. It currently does not confirm whether to save a new task before re‑rendering. To make the list persist across page reloads, you would need to add a confirmation dialog after adding a task (e.g., `if (confirm('Save new task?'))`). Since I cannot edit the file directly, please let me know if you’d like me to provide the updated HTML with that confirmation dialog included.

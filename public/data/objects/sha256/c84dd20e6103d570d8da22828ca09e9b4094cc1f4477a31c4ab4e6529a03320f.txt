@@ -1,0 +1,10 @@
+I've successfully updated `app/util.py`:
+
+1. **Added the `format_bytes(n)` function** that returns human-readable sizes like '1.5 KB'. The function:
+   - Multiplies by powers of 1024 (B, KB, MB, GB, TB)
+   - Formats values less than 1024 with one decimal place
+   - Handles values >= 1024 by dividing by 1024 until under 1024
+
+2. **Removed the TODO comment** about adding a helper that formats byte sizes
+
+The file now has 10 lines with the new function added between the `clamp` and the end of the file.

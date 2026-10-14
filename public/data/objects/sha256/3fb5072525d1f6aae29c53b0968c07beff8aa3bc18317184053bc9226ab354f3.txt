@@ -1,0 +1,1 @@
+I've updated the code to use `localStorage`. Now, your to-do list will automatically save every time you add, delete, check off, or edit an item, and it will reload correctly when you refresh the page.

@@ -1,0 +1,6 @@
+The changes have been successfully applied:
+
+1. ✅ Added the `format_bytes(n)` function that returns a human-readable size (e.g., '1.5 KB', '2.5 MB', etc.)
+2. ✅ Removed the TODO comment
+
+The function iterates through units (B, KB, MB, GB, TB) and formats the number appropriately, using one decimal place for display.

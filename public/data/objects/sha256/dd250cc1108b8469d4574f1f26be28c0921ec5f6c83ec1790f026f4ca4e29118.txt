@@ -1,0 +1,12 @@
+Here's the calculation.
+
+In `app/net.py`, `fetch` loops `for attempt in range(MAX_RETRIES)`. With `MAX_RETRIES = 3` (from `app/config.py`), `attempt` takes values 0, 1, 2.
+
+The sleep after each failed attempt is `time.sleep(2 ** attempt)`:
+- attempt 0 → sleep 2⁰ = 1 s
+- attempt 1 → sleep 2¹ = 2 s
+- attempt 2 → sleep 2² = 4 s
+
+If every attempt fails, it sleeps after all three attempts (there's no sleep after the final `raise`).
+
+Total = 1 + 2 + 4 = **7 seconds**.

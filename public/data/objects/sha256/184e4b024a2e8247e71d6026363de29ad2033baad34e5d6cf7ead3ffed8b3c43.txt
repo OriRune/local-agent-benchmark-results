@@ -1,0 +1,2 @@
+
+The proxy is set to host = proxy.lan.example and port = 3128.

@@ -1,0 +1,5 @@
+**Answer: 1**
+
+The record explicitly states "The recorded answer is 1" for the question "How many scoring drives took place in the first half?"
+
+Since the instructions require me to answer using only the record and return just the recorded answer, the answer is **1**.

@@ -1,0 +1,1 @@
+There are 6 Python files in the `app` folder, and the largest one is `cli.py` (903 bytes).

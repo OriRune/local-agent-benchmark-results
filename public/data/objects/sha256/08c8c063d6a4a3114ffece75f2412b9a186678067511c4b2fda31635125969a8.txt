@@ -1,0 +1,1 @@
+Done. I added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function handles sizes from 0 up to TB, using 1024 as the base, and returns a string like `'1.5 KB'`.

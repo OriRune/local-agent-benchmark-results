@@ -1,0 +1,3 @@
+To start, the bot asks for the ooo location.
+*It uses the o keyword to fetch data.*
+*Once received, it shows the ooo forecast.*

@@ -1,0 +1,33 @@
+import { expect, test } from '@playwright/test';
+import { readFile } from 'node:fs/promises';
+import { gunzipSync } from 'node:zlib';
+
+test('test definitions expose recorded availability and aggregate CSV downloads identify their edition', async ({ page }) => {
+  const { release_id } = JSON.parse(await readFile('public/data/latest.json', 'utf8'));
+  const manifest = JSON.parse(await readFile(`public/data/releases/${release_id}/release.json`, 'utf8'));
+  const record = manifest.objects.find((o: { id: string }) => o.id === manifest.index_object_id);
+  const raw = await readFile(`public/data/${record.path}`);
+  const index = JSON.parse((record.encoding === 'gzip' ? gunzipSync(raw) : raw).toString());
+  await page.goto('/tests/');
+  for (const name of ['Coding & tools', 'Reasoning', 'Instructions', 'Reading & evidence', 'Corrections']) await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
+  const suite = index.suites[0];
+  await page.goto(`/tests/${suite.id}/`);
+  await page.getByText('Recorded evidence availability', { exact: true }).click();
+  const table = page.getByRole('region', { name: 'Evidence availability counts', exact: true });
+  await expect(table).toBeVisible();
+  const entries = index.availability.filter((row: { suite_id: string }) => row.suite_id === suite.id);
+  const total = entries.reduce((n: number, row: { count: number }) => n + row.count, 0);
+  const shown = await table.locator('td').allTextContents();
+  expect(shown.reduce((n, text) => n + Number(text), 0)).toBe(total);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
+  await page.goto('/editions/');
+  const downloadEvent = page.waitForEvent('download');
+  await page.getByRole('link', { name: 'Download aggregate results (CSV)', exact: true }).click();
+  const download = await downloadEvent;
+  const csv = await readFile((await download.path())!, 'utf8');
+  expect(csv).toContain('"score_0_to_1"');
+  expect(csv).toContain(release_id);
+  expect(csv).toContain(index.dataset_revision_id);
+  expect(csv.split('\r\n').length - 2).toBe(index.aggregates.length);
+  expect(csv).not.toContain('"answer"');
+});

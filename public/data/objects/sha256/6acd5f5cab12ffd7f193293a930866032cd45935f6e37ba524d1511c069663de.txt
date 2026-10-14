@@ -1,0 +1,12 @@
+# T3
+
+**Result:** fail · done · 1 steps · 0 calls · 2 s
+
+## user
+
+Change MAX_RETRIES to 5.
+
+## assistant
+
+{'name': 'set_max_retries', 'parameters': {'max_retries': 5}}
+

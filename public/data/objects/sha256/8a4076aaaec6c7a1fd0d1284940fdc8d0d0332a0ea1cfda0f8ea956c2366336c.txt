@@ -1,0 +1,37 @@
+Based on the `app/cli.py` file I read, here is the README.md with all CLI options and their help text:
+
+```markdown
+# tinydl
+
+A simple command-line tool for downloading files from URLs.
+
+## Usage
+
+```
+python app/cli.py [OPTIONS] URL
+```
+
+## Options
+
+| Option | Short | Description |
+|--------|-------|-------------|
+| `--help` | `-h` | Show this help message and exit |
+| `--output` | `-o` | File to write (default: stdout) |
+| `--quiet` | `-q` | No progress output |
+| `URL` | | What to download (required) |
+
+## Examples
+
+```bash
+# Download to stdout
+python app/cli.py https://example.com/file.txt
+
+# Download to a file
+python app/cli.py https://example.com/file.txt -o output.txt
+
+# Download quietly (no byte count output)
+python app/cli.py https://example.com/file.txt -q
+```
+```
+
+**Note:** I could not run the CLI to verify the exact help output format, but I extracted all options from the `build_parser()` function in `app/cli.py`. The `--help` option is automatically provided by argparse.

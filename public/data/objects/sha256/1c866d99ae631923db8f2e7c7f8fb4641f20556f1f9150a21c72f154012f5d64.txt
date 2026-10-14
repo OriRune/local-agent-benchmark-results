@@ -1,0 +1,6 @@
+{
+  "answer": "Features are extracted using a classical sparse vectorizer (Term frequency-Inverse document frequency - TF-IDF) and a bag-of-words technique.",
+  "evidence": [
+    8
+  ]
+}

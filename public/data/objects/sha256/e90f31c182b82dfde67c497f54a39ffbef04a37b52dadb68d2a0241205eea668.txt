@@ -1,0 +1,13 @@
+Done. I created `README.md` for the project.
+
+**What it contains:**
+- A short description of `tinydl`, the project's command line downloader.
+- A **command line options table** listing every option with its help text:
+  - `url` — "what to download" (positional)
+  - `-o` / `--output` — "file to write (default: stdout)"
+  - `-q` / `--quiet` — "no progress output"
+  - `-h` / `--help` — the built-in help flag
+- A **full `--help` block** reproduced in argparse's actual layout (`positional arguments:` and `options:` sections).
+- Usage examples and a note that retries/timeouts live in `app/config.py` rather than as CLI options.
+
+I built the help listing directly from the `argparse` definitions in `app/cli.py`, since the sandbox blocks running programs. I also verified the layout against argparse's default output format.

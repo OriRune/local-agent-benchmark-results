@@ -1,0 +1,7 @@
+Done. I've created `README.md` with a complete documentation of the CLI command line options:
+
+- **`URL`** (positional): "what to download"
+- **`-o, --output`**: "file to write (default: stdout)"
+- **`-q, --quiet`**: "no progress output"
+
+The README includes a usage section, a table of all options with their help text, and practical examples showing how to use the CLI in different scenarios.

@@ -1,0 +1,4 @@
+{
+  "answer": "The propaganda types include loaded language, appeal to authority, slogans, straw man, hidden ad-hominem fallacies, and red herring.",
+  "evidence": [2, 3]
+}

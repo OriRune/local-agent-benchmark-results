@@ -1,0 +1,2 @@
+
+a and b represent the real and imaginary parts of a Gaussian integer.

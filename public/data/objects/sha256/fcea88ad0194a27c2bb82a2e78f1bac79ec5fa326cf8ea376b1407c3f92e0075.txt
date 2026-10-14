@@ -1,0 +1,6 @@
+The persistence is already in place:
+
+- **Line 145**: On page load, items are read from `localStorage` (or initialized as an empty array if none exist).
+- **Line 152**: Every time you add, check, edit, or delete a task, the full list is saved back to `localStorage`.
+
+This means your to-do list **already remembers all items when you reload the page** — no changes needed. Try it out: add a few tasks, reload the page, and they'll still be there.

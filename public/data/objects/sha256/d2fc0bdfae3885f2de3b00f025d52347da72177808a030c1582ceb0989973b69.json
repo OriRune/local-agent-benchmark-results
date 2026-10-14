@@ -1,0 +1,1 @@
+[{"args":{"pattern":"proxy.ini","sort":"name"},"name":"find_files","result":"no files match proxy.ini","status":"ok"},{"args":{"glob":"*","path":"project","pattern":"proxy.*"},"name":"grep","result":"error: no such file or folder: project","status":"error"}]

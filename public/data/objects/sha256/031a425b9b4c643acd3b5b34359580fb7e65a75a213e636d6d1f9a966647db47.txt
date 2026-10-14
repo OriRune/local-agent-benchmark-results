@@ -1,0 +1,1 @@
+The test failure was due to `app/units.py` using `KB: 1000` instead of `KB: 1024` for byte-size parsing, contradicting the 1024-based units comment and causing `parse_size("1.5 KB")` to return 1500 instead of 1536. I updated `app/units.py` to set `KB` to `1024`, which aligns with the other units and fixes the test. The code now correctly computes sizes using 1024-based units.

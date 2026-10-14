@@ -1,0 +1,14 @@
+
+I apologize for the mistake. Here is the correct way to call the tool again:
+
+```
+{
+  "name": "edit_file",
+  "arguments": {
+    "path": "path_to_file",
+    "old_text": "...",
+    "new_text": "...",
+    "replace_all": false
+  }
+}
+```

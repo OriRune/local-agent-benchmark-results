@@ -1,0 +1,4 @@
+I have identified the cause of the test failure in `tests/test_units.py`. The issue was in `app/units.py`, where the `KB` unit was incorrectly defined as `1000` bytes instead of `1024` bytes, contradicting the docstring and the test expectations. I have updated `app/units.py` to correctly use `1024` for `KB`.
+
+Summary of changes:
+- Fixed `app/units.py`: Changed `KB` value from `1000` to `1024` in the `UNITS` dictionary.

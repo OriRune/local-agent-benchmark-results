@@ -1,0 +1,10 @@
+Based on the code in `app/net.py`, the fetch function sleeps for `2 ** attempt` seconds after each failed attempt.
+
+With `MAX_RETRIES = 3` from `app/config.py`, the sleep times are:
+- Attempt 0: 2^0 = 1 second
+- Attempt 1: 2^1 = 2 seconds
+- Attempt 2: 2^2 = 4 seconds
+
+**Total sleep time: 1 + 2 + 4 = 7 seconds**
+
+This follows the geometric series formula: sum of 2^0 + 2^1 + ... + 2^(n-1) = 2^n - 1, where n = MAX_RETRIES = 3, giving 2^3 - 1 = 7 seconds.

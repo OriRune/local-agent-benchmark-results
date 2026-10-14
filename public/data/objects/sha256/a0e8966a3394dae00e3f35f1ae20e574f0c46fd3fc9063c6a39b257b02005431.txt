@@ -1,0 +1,9 @@
+Done! I've created `README.md` that documents the CLI for the tinydl downloader project. It includes:
+
+- **Usage syntax** showing how to run the CLI
+- **Options table** listing all command line options with their help text:
+  - `URL` (positional, required) - "what to download"
+  - `--output` / `-o` - "file to write (default: stdout)"
+  - `--quiet` / `-q` - "no progress output"
+- **Examples** demonstrating common usage patterns
+- **Configuration defaults** from `app/config.py` (max retries, timeout, user-agent)

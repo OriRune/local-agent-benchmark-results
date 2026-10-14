@@ -1,0 +1,7 @@
+Done. I renamed the `fetch` function to `download` and updated every usage:
+
+- **`app/net.py`** — the definition: `def fetch(...)` → `def download(...)`.
+- **`app/cli.py`** — the import: `from app.net import fetch` → `from app.net import download`.
+- **`app/cli.py`** — the call: `fetch(args.url, get=_get)` → `download(args.url, get=_get)`.
+
+A project-wide search for `fetch` now returns no matches, so all references are updated.

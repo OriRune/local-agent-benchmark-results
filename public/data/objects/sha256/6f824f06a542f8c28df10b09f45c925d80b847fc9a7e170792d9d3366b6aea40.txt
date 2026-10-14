@@ -1,0 +1,13 @@
+I've created `open_apps.sh` in your workspace. The script will:
+
+1. Open Chrome with google.com loaded
+2. Open a text editor (nano - you can change this to your preferred editor like `gedit`, `code`, `vim`, etc.)
+3. Open the file manager (nautilus) showing `[private-home]/Documents/llama.cpp`
+
+To run it, make it executable and execute:
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+If you'd like to use a different text editor or file manager, let me know and I can update the script.

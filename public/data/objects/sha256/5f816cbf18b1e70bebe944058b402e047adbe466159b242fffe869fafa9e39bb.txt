@@ -1,0 +1,9 @@
+*{location}* is the keyword that captures the user's location.
+
+```
+bot: "What is the weather in {location}?"
+user: "London"
+bot: "Sunny, 22°C in London."
+```
+
+The template uses **{location}** to fetch and display the forecast.

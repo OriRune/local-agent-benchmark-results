@@ -1,0 +1,4 @@
+With `MAX_RETRIES = 3`, the total sleep time if every attempt fails is:
+\[
+1 + 2 + 4 = 7 \text{ seconds}
+\]

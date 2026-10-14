@@ -1,0 +1,26 @@
+**Setup**
+
+Stage 1 (burns first, carrying stage 2 full + payload):
+- m₀ = 4,000 + 36,000 + 900 + m_p + 1,200 = 42,100 + m_p
+- m_f = 4,000 + 900 + m_p + 1,200 = 6,100 + m_p
+- Δv₁ = 290 × 9.80665 × ln[(42,100 + m_p)/(6,100 + m_p)]
+
+Stage 2:
+- m₀ = 900 + m_p + 1,200 = 2,100 + m_p
+- m_f = 900 + 1,200 = 2,100
+- Δv₂ = 340 × 9.80665 × ln[(2,100 + m_p)/2,100]
+
+Require Δv₁ + Δv₂ = 9,400 m/s.
+
+**Solution** (solved numerically, `solve.py`, bisection):
+
+m_p ≈ 11,529.4 kg
+
+Check:
+- Stage 1: m₀ = 53,629.4 kg, m_f = 17,629.4 kg, ratio 3.0420 → Δv₁ = 3,164.0 m/s
+- Stage 2: m₀ = 13,629.4 kg, m_f = 2,100 kg, ratio 6.4902 → Δv₂ = 6,236.0 m/s
+- Total = 9,400.0 m/s ✓
+
+Stage 2 must carry about **11,530 kg** of propellant.
+
+ANSWER: 11529

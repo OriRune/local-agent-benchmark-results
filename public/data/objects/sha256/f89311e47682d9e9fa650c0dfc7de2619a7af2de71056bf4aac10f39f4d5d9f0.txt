@@ -1,0 +1,1 @@
+*Template*: "o weather for *location* o o o o o" *Response*: "Here is the forecast for *location*."

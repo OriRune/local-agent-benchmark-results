@@ -1,0 +1,7 @@
+The README.md has been created successfully. It documents all the CLI command-line options based on the actual code in `app/cli.py`:
+
+- **Positional argument**: `url` - the URL to download
+- **`-o` / `--output`**: specifies the output file (defaults to stdout)
+- **`-q` / `--quiet`**: suppresses progress output
+
+The README also includes usage examples, a description of the project, and notes about the configuration file.

@@ -1,0 +1,6 @@
+I have created a `README.md` file that lists all the command-line options for the `tinydl` CLI, extracted from the source code in `app/cli.py`.
+
+The `README.md` includes:
+- The positional argument `url` with its description.
+- The `--output` (`-o`) option with its description.
+- The `--quiet` (`-q`) option with its description.

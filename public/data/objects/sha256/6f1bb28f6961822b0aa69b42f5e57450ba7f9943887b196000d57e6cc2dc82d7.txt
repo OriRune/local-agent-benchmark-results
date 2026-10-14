@@ -1,0 +1,9 @@
+Now I can calculate the total sleep time. Let me verify by tracing through the code logic:
+
+- `MAX_RETRIES = 3` means the loop runs for `attempt` values of 0, 1, and 2 (3 attempts total)
+- The `time.sleep(2 ** attempt)` line executes **after** each failed attempt
+- When `attempt = 0`: `2 ** 0 = 1` second
+- When `attempt = 1`: `2 ** 1 = 2` seconds  
+- When `attempt = 2`: `2 ** 2 = 4` seconds
+
+The total sleep time is: **1 + 2 + 4 = 7 seconds**

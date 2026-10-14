@@ -1,0 +1,6 @@
+It's already working. The key lines are:
+
+- **Line 224** — On page load, it reads the saved list from `localStorage` (falls back to an empty array if nothing's saved yet).
+- **Line 227** — Every time the list changes (add, edit, delete, check off), it saves the full list to `localStorage`.
+
+So if you add some tasks, close the browser, and reopen `todo.html`, your items will still be there. No changes needed — it's already implemented.

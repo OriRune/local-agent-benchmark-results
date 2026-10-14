@@ -1,0 +1,28 @@
+Let me set up a coordinate system where (row, col) starts at (0,0) in the top-left corner.
+
+The grid is:
+```
+Row 0: O O O X O O O X O
+Row 1: X X O O O X O X X
+Row 2: O O O O O O O O O
+Row 3: X O O O O O O O O
+Row 4: O X O O O O O O X
+Row 5: O O O O O O O O X
+Row 6: O O X X O O X O X
+Row 7: O X O O X O X * #
+```
+
+The start `*` is at (7, 7) and the destination `#` is at (7, 8).
+
+Let me trace the shortest path using BFS from (7,7):
+
+**Distance 0:** (7,7)
+
+**Distance 1:** 
+- (7,8) = # → **Destination found!**
+
+Wait, let me check if (7,8) is directly reachable. Moving right from (7,7) to (7,8). The cell (7,8) is `#` (the destination), which is the goal. So the path is simply **right**.
+
+Let me verify: (7,7) is `*` and (7,8) is `#`, adjacent horizontally. So moving right reaches the destination in one step.
+
+<answer>right</answer>

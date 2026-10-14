@@ -1,0 +1,5 @@
+
+
+a and b represent integers. 
+
+\boxed{a \text{ and } b \text{ are integers}}

@@ -1,0 +1,10 @@
+I've added the format_bytes function to app/util.py and removed the TODO comment. The function now converts byte values to human-readable sizes with appropriate units (KB, MB, GB, TB). Here's a summary of the changes:
+
+1. Removed the TODO comment about adding the formatting helper
+2. Added a new function format_bytes(n) with the following implementation:
+   - Converts bytes to human-readable size
+   - Uses appropriate units based on value thresholds
+   - Formats with one decimal place
+   - Handles values up to terabytes
+
+The file has been successfully updated and the new functionality is ready for use.

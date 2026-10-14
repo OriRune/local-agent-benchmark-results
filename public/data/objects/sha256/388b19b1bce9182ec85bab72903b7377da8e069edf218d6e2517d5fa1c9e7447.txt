@@ -1,0 +1,21 @@
+To solve the puzzle, let's map out the information provided for each house (1, 2, and 3).
+
+**Step 1: Identify the names and positions.**
+- Clue 1: Bob is in the third house.
+- Clue 2: Arnold is in the second house.
+- Since there are only three people (Bob, Arnold, Alice), Alice must be in the first house.
+
+**Step 2: Identify nationalities and animals based on the names.**
+- Clue 3: Arnold is British.
+- Clue 4: The Dane is Alice.
+- Clue 5: The dog owner is the Dane (Alice).
+- Clue 6: The cat lover is Arnold.
+
+**Step 3: Consolidate the data for each house.**
+- **House 1:** Name: **Alice**, Nationality: Dane, Animal: Dog.
+- **House 2:** Name: Arnold, Nationality: Brit, Animal: Cat.
+- **House 3:** Name: Bob, Nationality: Chinese (the only remaining nationality), Animal: Bird (the only remaining animal).
+
+The question asks for the name of the person who lives in House 1.
+
+<answer>alice</answer>

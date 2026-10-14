@@ -1,0 +1,11 @@
+```json
+{
+  "answer": "Features extracted from text include traditional local features such as part-of-speech tags, previous and next words, substrings, shapes, and regex expressions. Additionally, semantic and syntactic features are encoded using word embeddings. Contextual features derived from the text process involve filtering tokens based on POS tags (INLINEFORM0, INLINEFORM1) and local context (INLINEFORM2), and n-grams of POS tags (INLINEFORM6). For text analytics, features are also extracted using a classical sparse vectorizer like Term frequency-Inverse document frequency (TF-IDF).",
+  "evidence": [
+    "3",
+    "5",
+    "8",
+    "9"
+  ]
+}
+```

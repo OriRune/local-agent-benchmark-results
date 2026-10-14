@@ -1,0 +1,30 @@
+```json
+{
+  "dm_greeting": "Welcome to the table, traveler. Here is your randomized character sheet.",
+  "character_data": {
+    "name": "Kaelen",
+    "title": "The Silver Medalist",
+    "class": "Fighter",
+    "subclass": "Battle Master",
+    "level": 5,
+    "race": "Human (Variant)",
+    "background": "Soldier",
+    "alignment": "Lawful Good",
+    "ability_scores": {
+      "strength": 16,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 10,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "equipment": [
+      "Longsword",
+      "Shield",
+      "Chain Mail",
+      "Theta Sigil of the Vanguard"
+    ],
+    "lore": "Kaelen was once a renowned combat medalist before joining the Theta Order to protect the realm from ancient threats."
+  }
+}
+```

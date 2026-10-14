@@ -1,0 +1,2 @@
+
+The user declined to fetch the address. The total sleep time is not available, as the session is closed. The user's note indicates the web is not available in this session, so we cannot determine the sleep time from the code.

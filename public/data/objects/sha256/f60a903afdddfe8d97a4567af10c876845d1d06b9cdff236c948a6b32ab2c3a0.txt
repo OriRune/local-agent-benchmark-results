@@ -1,0 +1,9 @@
+I cannot run the tests directly using `run` because the sandbox environment is restricted, but I have identified the bug in `app/units.py`.
+
+The `UNITS` dictionary had `"KB": 1000`, whereas the docstring and the test expectations (specifically `1.5 KB == 1536`) indicate that it should use binary units (1024).
+
+I have corrected the value for `"KB"` from `1000` to `1024`.
+
+Since I cannot execute the test to verify, I will assume the fix is correct based on the logic provided in the test file.
+
+Summary: Fixed the `KB` unit multiplier in `app/units.py` from `1000` to `1024` to match the expected binary unit behavior.

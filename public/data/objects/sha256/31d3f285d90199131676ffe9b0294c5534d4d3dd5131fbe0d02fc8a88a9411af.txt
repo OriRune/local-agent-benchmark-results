@@ -1,0 +1,4 @@
+{
+  "answer": "The finance specific word embedding model used is a word2vec model trained on a set of 189,206 financial articles.",
+  "evidence": [2, 3]
+]

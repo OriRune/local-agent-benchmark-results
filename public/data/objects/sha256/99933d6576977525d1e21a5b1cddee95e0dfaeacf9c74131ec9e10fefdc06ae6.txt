@@ -1,0 +1,19 @@
+Now I have all the information:
+
+1. `MAX_RETRIES = 3` - the loop runs for `attempt = 0, 1, 2` (3 iterations)
+2. The sleep happens in the `except` block after a failed attempt
+
+Let me trace through the logic:
+- The loop is `for attempt in range(MAX_RETRIES)` which means `attempt` takes values 0, 1, 2
+- If every attempt fails, the `except OSError` block executes for each attempt
+- Sleep times are: `2 ** 0`, `2 ** 1`, `2 ** 2`
+- That's: 1 second + 2 seconds + 4 seconds = 7 seconds
+
+Wait, let me double-check: `time.sleep(2 ** attempt)`
+- attempt=0: sleep(2^0) = sleep(1)
+- attempt=1: sleep(2^1) = sleep(2)
+- attempt=2: sleep(2^2) = sleep(4)
+
+Total: 1 + 2 + 4 = **7 seconds**
+
+The function sleeps a total of **7 seconds** before giving up (raising the RuntimeError).

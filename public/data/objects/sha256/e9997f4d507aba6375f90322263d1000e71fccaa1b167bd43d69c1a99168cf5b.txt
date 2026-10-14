@@ -1,0 +1,16 @@
+Looking at the code:
+
+- `config.py` sets `MAX_RETRIES = 3`, so the loop runs for `attempt` values of 0, 1, 2.
+- On each failed attempt, it sleeps for `2 ** attempt` seconds.
+
+So the sleeps are:
+
+| Attempt | Sleep (seconds) |
+|---------|-----------------|
+| 0       | 2⁰ = 1          |
+| 1       | 2¹ = 2          |
+| 2       | 2² = 4          |
+
+**Total sleep time: 1 + 2 + 4 = 7 seconds.**
+
+After the third failed attempt, the loop exits and the `RuntimeError` is raised — no additional sleep after the last attempt.

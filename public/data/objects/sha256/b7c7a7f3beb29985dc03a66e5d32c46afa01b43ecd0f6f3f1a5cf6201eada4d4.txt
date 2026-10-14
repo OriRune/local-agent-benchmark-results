@@ -1,0 +1,46 @@
+## Setting Up the Problem
+
+I'll interpret "rolling 10 or higher" as the **sum** of all three dice being ≥ 10.
+
+**Total outcomes:** 12 × 10 × 2 = **240**
+
+## Counting Outcomes Where Sum ≤ 9
+
+I'll count the "complement" (sum ≤ 9) and subtract. For each value of the d2 (C) and d10 (B), I count valid d12 values (A ≤ 9 − B − C):
+
+**When C = 1:**
+| B | Max A | Count |
+|---|-------|-------|
+| 1 | 7 | 7 |
+| 2 | 6 | 6 |
+| 3 | 5 | 5 |
+| 4 | 4 | 4 |
+| 5 | 3 | 3 |
+| 6 | 2 | 2 |
+| 7 | 1 | 1 |
+| 8–10 | ≤ 0 | 0 |
+
+Subtotal: 7+6+5+4+3+2+1 = **28**
+
+**When C = 2:**
+| B | Max A | Count |
+|---|-------|-------|
+| 1 | 6 | 6 |
+| 2 | 5 | 5 |
+| 3 | 4 | 4 |
+| 4 | 3 | 3 |
+| 5 | 2 | 2 |
+| 6 | 1 | 1 |
+| 7–10 | ≤ 0 | 0 |
+
+Subtotal: 6+5+4+3+2+1 = **21**
+
+**Total (sum ≤ 9):** 28 + 21 = **49**
+
+## Final Probability
+
+$$P(\text{sum} \geq 10) = \frac{240 - 49}{240} = \frac{191}{240}$$
+
+Since 191 is prime and doesn't divide 240, this is already reduced.
+
+<answer>191/240</answer>

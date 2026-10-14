@@ -1,0 +1,1 @@
+I can see that MAX_RETRIES is defined in app/config.py with value 3. It is also imported and used in app/net.py. Let me confirm by reading the config.py file.

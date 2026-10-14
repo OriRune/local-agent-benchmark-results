@@ -1,0 +1,1 @@
+The todo list now uses localStorage to persist items across page reloads. Items added, edited, or deleted will be remembered when you reload the page. The HTML file is ready for use.

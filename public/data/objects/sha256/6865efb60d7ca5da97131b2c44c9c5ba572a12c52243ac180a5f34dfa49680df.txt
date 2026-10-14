@@ -1,0 +1,31 @@
+```json
+{
+  "name": "Lyra Thorne",
+  "race": "Half-Elf",
+  "class": "Wizard",
+  "level": 1,
+  "background": "Urchin of Many Streets",
+  "ability_scores": {
+    "strength": 10,
+    "dexterity": 12,
+    "constitution": 13,
+    "intelligence": 14,
+    "wisdom": 10,
+    "charisma": 11
+  },
+  "proficiency_bonus": 2,
+  "skills": {
+    "arcana": true,
+    "history": true,
+    "nature": true,
+    "religion": true,
+    "medicine": true,
+    "reading": true,
+    "writing": true
+  },
+  "saving_throws": ["int", "wis"],
+  "tool_proficiencies": [],
+  "languages": ["Common", "Elvish"],
+  "equipment": [
+    "Studded leather armor",
+    "Br

@@ -1,0 +1,1 @@
+{"extracted":"The graph contains a cycle (e.g., 5→1→2→6→4→9→3→10→7→0→4→0...), making it impossible to complete all courses. Thus, the answer is False.","reference":"True","score":0}

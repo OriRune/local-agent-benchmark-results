@@ -1,0 +1,6 @@
+{
+  "answer": "They use a finance-specific word embedding model trained on 189,206 financial articles from Factiva.",
+  "evidence": [
+    "We trained a word2vec word embedding model on a set of 189,206 financial articles containing 161,877,425 tokens, that were manually downloaded from Factiva."
+  ]
+}

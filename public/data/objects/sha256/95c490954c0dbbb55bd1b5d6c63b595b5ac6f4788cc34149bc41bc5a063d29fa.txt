@@ -1,0 +1,10 @@
+```json
+{
+  "answer": "Term frequency-Inverse document frequency (TF-IDF) features and bag-of-words features are extracted from text, along with n-grams of POS tags and keywords from search engines.",
+  "evidence": [
+    1,
+    8,
+    9
+  ]
+}
+```

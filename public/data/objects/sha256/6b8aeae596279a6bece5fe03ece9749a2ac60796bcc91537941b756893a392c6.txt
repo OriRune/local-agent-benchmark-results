@@ -1,0 +1,1 @@
+The fix has been applied to `app/units.py` by changing `"KB": 1000` to `"KB": 1024` in the `UNITS` dictionary. This ensures `parse_size("1.5 KB")` now correctly returns 1536. The test in `tests/test_units.py` should now pass.

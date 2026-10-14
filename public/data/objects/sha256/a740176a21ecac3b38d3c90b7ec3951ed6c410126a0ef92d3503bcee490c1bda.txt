@@ -1,0 +1,8 @@
+Done. I renamed `fetch` to `download` and updated every reference in the project.
+
+Changes made:
+- **`app/net.py`** — renamed the definition `def fetch(url, get):` → `def download(url, get):`
+- **`app/cli.py`** — updated the import `from app.net import fetch` → `from app.net import download`
+- **`app/cli.py`** — updated the call `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+I searched the entire project (including `data/` and `tests/`) and confirmed there are no remaining `fetch` references. The only other `download` strings are the help text "what to download", the config docstring, and the `USER_AGENT` value — none of which are function references, so they were left unchanged.

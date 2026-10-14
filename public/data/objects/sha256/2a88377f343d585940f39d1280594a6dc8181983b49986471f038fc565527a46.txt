@@ -1,0 +1,18 @@
+I found and fixed the bug.
+
+**Why the test failed:**
+
+In `app/units.py`, the `UNITS` dictionary defined `KB` as `1000`, but the module's own docstring says it uses 1024-based units (`1 KB = 1024 bytes`), and the test expects that behavior:
+- `parse_size("1.5 KB") == 1536` → 1.5 × 1024 = 1536 (not 1.5 × 1000 = 1500).
+
+So the code contradicted its stated contract and the test.
+
+**The fix** (in `app/units.py`):
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+`KB` was changed from `1000` to `1024`, making the implementation consistent with the docstring and the test. The other assertions (`512 B` and `2 MB`) already worked and still do.
+
+Note: I couldn't run the test inside the sandbox (program execution is denied this session), so I verified the three expected values by hand: 512 → 512, 1.5 × 1024 → 1536, 2 × 1024² → 2097152. I also left a placeholder in `verify.py` since the sandbox forbids deleting files — let me know if you'd like me to handle that differently.

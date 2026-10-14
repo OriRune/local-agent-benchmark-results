@@ -1,0 +1,2 @@
+
+I was unable to locate a file named proxy.ini in the project folder; repeated attempts to find it were blocked by tool‑call limits, so I cannot determine the proxy host and port.

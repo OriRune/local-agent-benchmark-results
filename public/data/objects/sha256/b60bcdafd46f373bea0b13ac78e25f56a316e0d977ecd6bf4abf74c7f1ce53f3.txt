@@ -1,0 +1,11 @@
+The fix is complete. I changed the `UNITS` dictionary in `app/units.py` to use 1024-based units instead of 1000-based units:
+
+- Changed `"KB": 1000` to `"KB": 1024`
+- Changed `"MB": 1024 ** 2` to `"MB": 1024 ** 2` (unchanged)
+- Changed `"GB": 1024 ** 3` to `"GB": 1024 ** 3` (unchanged)
+
+Now the function correctly calculates:
+- 1.5 KB = 1536 bytes (1.5 × 1024 = 1536)
+- 2 MB = 2 × 1024 × 1024 = 2097152 bytes
+
+The test should now pass.

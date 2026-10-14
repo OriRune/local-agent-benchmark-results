@@ -1,0 +1,1 @@
+I've successfully undone the change from the most recent git commit. The file `app/config.py` has been edited to revert `TIMEOUT_S` from 20 back to 10 seconds.

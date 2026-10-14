@@ -1,0 +1,1 @@
+Here is a template for a chat bot that takes a user's location and gives them the weather forecast. The bot will prompt the user for their location, then use an API to fetch the current weather data. *The response should include the temperature, conditions, and a forecast for the next few hours.* Finally, the bot will output the information in a clear and concise format.

@@ -1,0 +1,3 @@
+The sandbox doesn't allow running pytest directly, but the fix is straightforward. The `UNITS` dictionary had `KB` mapped to `1000` (decimal) instead of `1024` (binary), which is the standard for byte-size units. I changed it to `1024`, which matches the test expectations and the comment in the file.
+
+The fix: changed `UNITS["KB"]` from `1000` to `1024`.

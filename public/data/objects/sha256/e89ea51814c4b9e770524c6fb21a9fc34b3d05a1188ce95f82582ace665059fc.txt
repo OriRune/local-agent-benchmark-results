@@ -1,0 +1,1 @@
+I've successfully undone the change made in the most recent git commit by editing the file directly. The value of `TIMEOUT_S` has been changed back from 20 to 10.

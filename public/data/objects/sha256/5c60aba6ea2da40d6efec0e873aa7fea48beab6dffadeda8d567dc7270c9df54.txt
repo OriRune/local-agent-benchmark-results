@@ -1,0 +1,14 @@
+To find an expression that equals 24 using the numbers 6, 4, 4, and 4, we can use the following steps:
+
+1.  Start with the numbers: 6, 4, 4, 4.
+2.  Multiply 6 and 4 to get 24.
+3.  To use the remaining two 4s without changing the result, we can multiply by (4 / 4) or add (4 - 4).
+4.  Let's try: 6 * 4 * 4 / 4.
+5.  Check the calculation: 6 * 4 = 24; 24 * 4 = 96; 96 / 4 = 24.
+6.  Check the numbers used: 6, 4, 4, 4. All numbers are used exactly once.
+
+Another option is 6 * 4 + 4 - 4.
+Check the calculation: 6 * 4 = 24; 24 + 4 = 28; 28 - 4 = 24.
+Check the numbers used: 6, 4, 4, 4. All numbers are used exactly once.
+
+<answer>6 * 4 * 4 / 4</answer>

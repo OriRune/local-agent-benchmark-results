@@ -1,0 +1,1 @@
+**Pentagon**. The resulting shape is a pentagon because it has five vertices: A, C, G, E, and two more vertices that are not mentioned but are implied to be F and H, which are directly below A, C, G, and E respectively.

@@ -1,0 +1,3 @@
+The change is on line 3 of `app/config.py`: `TIMEOUT_S = 20` (previously `TIMEOUT_S = 10`).
+
+To summarize: the most recent commit raised the downloader's timeout constant from 10 to 20 seconds.

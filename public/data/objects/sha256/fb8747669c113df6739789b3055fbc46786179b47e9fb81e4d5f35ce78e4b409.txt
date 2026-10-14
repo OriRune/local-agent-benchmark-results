@@ -1,0 +1,8 @@
+I've written `README.md` for the project. It documents the CLI (`tinydl`, defined in `app/cli.py`) and lists every command-line option with its help text:
+
+- **`url`** — what to download (positional argument)
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+- **`-h`, `--help`** — show this help message and exit (argparse's built-in)
+
+The README also includes a usage line and two worked examples. I pulled the help text directly from the `build_parser()` source rather than running the program, since the sandbox blocks execution.

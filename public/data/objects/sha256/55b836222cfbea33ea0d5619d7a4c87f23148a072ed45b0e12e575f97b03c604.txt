@@ -1,0 +1,14 @@
+I've created a README.md file for the tinydl project that documents all CLI options with their help text. The README includes:
+
+- Installation instructions (pip install tinydl)
+- Usage examples
+- A table listing all CLI options:
+  - `-o` / `--output` - file to write (default: stdout)
+  - `-q` / `--quiet` - no progress output
+- Examples for each option
+- Notes about option behavior
+
+The CLI options identified from `app/cli.py` are:
+- `url` - required positional argument (what to download)
+- `-o` / `--output` - file to write
+- `-q` / `--quiet` - suppress progress output

@@ -1,0 +1,6 @@
+It's already built in! The code uses **`localStorage`** to persist your items across page reloads:
+
+- **On load:** `JSON.parse(localStorage.getItem('todo_items') || '[]')` reads saved items back in.
+- **On every change** (add, edit, delete, checkbox toggle): `save()` writes the updated list to `localStorage`.
+
+So if you add items, close the browser, and reopen `todo.html`, your list will be exactly as you left it. No changes needed!

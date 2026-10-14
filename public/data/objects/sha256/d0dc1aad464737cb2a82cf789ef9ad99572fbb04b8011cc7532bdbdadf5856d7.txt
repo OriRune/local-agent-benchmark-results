@@ -1,0 +1,3 @@
+I have overwritten `app/util.py` with the complete content, which includes the new `format_bytes` function and removes the `TODO` comment.
+
+I have added the `format_bytes` function to `app/util.py` and removed the `TODO` comment.

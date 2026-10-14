@@ -1,0 +1,13 @@
+The `timeout` wrapper isn't allowed in the sandbox, but the single-run test already confirmed the script works. Here's what I created:
+
+**`system_info.py`** — a script that prints simple RAM and CPU usage to the terminal.
+
+How it works:
+- **RAM**: reads `/proc/meminfo` to get total and used memory, then formats it like `5.8 GiB of 31.3 GiB used (18.4%)`.
+- **CPU**: samples `/proc/stat` twice, one second apart, and computes the percentage of time spent not idle (shown like `0.4%`).
+
+Usage:
+- `python3 system_info.py` — prints the info once and exits.
+- `python3 system_info.py --watch` — refreshes every 2 seconds (Ctrl+C to stop).
+
+It uses only Python's standard library and reads directly from `/proc`, so it runs on Linux without installing anything. On this machine it reported **18.4% RAM used** and **0.4% CPU**.

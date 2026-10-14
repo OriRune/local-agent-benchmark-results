@@ -1,0 +1,11 @@
+My apologies for the oversight. Here is the correct JSON object for the write_file tool call to append "- publish release notes" as a new last line of todo.txt:
+
+```json
+{
+  "name": "write_file",
+  "arguments": {
+    "path": "todo.txt",
+    "content": "\napend - publish release notes"
+  }
+}
+```

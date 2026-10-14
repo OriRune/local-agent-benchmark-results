@@ -1,0 +1,18 @@
+Let me work through this step by step.
+
+**Placing names:**
+- Clue 1: Bob is in House 3
+- Clue 2: Arnold is in House 2
+- Therefore, Alice is in House 1
+
+**Verifying with other clues:**
+- Clue 3: Arnold is British → House 2 is British
+- Clue 4: The Dane is Alice → Alice (House 1) is the Dane
+- Clue 5: The dog owner is the Dane → Alice (House 1) owns the dog
+- Clue 6: The cat lover is Arnold → Arnold (House 2) owns the cat
+- This leaves the bird for Bob (House 3)
+- This leaves the Chinese nationality for Bob (House 3)
+
+Everything is consistent. The person in House 1 is Alice.
+
+<answer>Alice</answer>

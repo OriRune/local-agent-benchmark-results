@@ -1,0 +1,7 @@
+I found MAX_RETRIES defined in the codebase. Here are the details:
+
+**Location:** `app/config.py` (line 2)
+
+**Value:** `3`
+
+MAX_RETRIES is imported and used in `app/net.py` (line 3 and line 8), but its actual definition is in the configuration file `app/config.py`.

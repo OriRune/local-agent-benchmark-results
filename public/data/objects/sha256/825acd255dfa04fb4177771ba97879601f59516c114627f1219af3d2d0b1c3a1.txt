@@ -1,0 +1,28 @@
+
+
+Your folder has been reorganized according to the proposed structure! Here's a summary of the changes:
+
+**New Folder Structure:**
+1. **Sheet Music (PDFs)**
+   - Composer/
+     - Nadia Birkenstock/
+   - Instrument/
+     - Harp/
+     - Recorder/
+   - Genre/
+     - Renaissance/
+     - Contemporary/
+   - Purpose/
+     - Practice/
+     - Performance/
+     - Theory/
+
+2. **Audio Recordings**
+   - Summer 2025 Recordings/
+     - Concert summer 2025/
+     - A Passing Rain Shower.mp3
+
+3. **Images**
+   - van eyck psalm 140.PNG
+
+All files have been moved to their new locations. Would you like to adjust any part of this structure, or is this the final organization you'd like to keep?

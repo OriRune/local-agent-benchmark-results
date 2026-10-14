@@ -1,0 +1,9 @@
+Created `README.md` with a complete CLI options reference. The documentation includes:
+
+- A table listing all 3 command line options:
+  - `url` (positional): "what to download"
+  - `-o` / `--output`: "file to write (default: stdout)"
+  - `-q` / `--quiet`: "no progress output"
+- Usage syntax
+- Practical examples showing common use cases
+- Exit code information

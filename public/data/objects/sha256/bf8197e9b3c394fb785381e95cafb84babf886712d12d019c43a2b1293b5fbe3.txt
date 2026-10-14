@@ -1,0 +1,9 @@
+I've created the README.md file with:
+
+1. **CLI Options table** - Lists all command-line options (`url`, `-o/--output`, `-q/--quiet`) with their descriptions
+2. **Usage examples** - Shows how to use the CLI in different scenarios
+3. **Configuration section** - Documents the internal settings (retries, timeout, user-agent)
+4. **Units section** - Explains the byte-size parsing units
+5. **Notes** - Includes the planning notes from the project
+
+The README is now available at `README.md` in the project directory.

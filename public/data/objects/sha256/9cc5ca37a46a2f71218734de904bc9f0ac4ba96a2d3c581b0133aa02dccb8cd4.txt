@@ -1,0 +1,10 @@
+Done! I've created a `README.md` for the project that includes:
+
+- **Project description**: A small CLI tool for downloading files from URLs
+- **Usage syntax**: `tinydl <url> [-o <output>] [-q]`
+- **Command Line Options table** listing every option with its help text:
+  - `<url>` — What to download (required positional argument)
+  - `-o, --output <file>` — File to write (default: stdout)
+  - `-q, --quiet` — No progress output
+- **Example commands** for common use cases
+- **Features** section summarizing retry logic, timeout, User-Agent, and zero dependencies

@@ -1,0 +1,7 @@
+To correctly call the tool, here is the proper format:
+
+```json
+{"name": "run", "arguments": {"command": "git revert --interactive --no-edit -- 6d7d4e..."}}
+```
+
+However, without knowing the exact commit hash, the exact command cannot be provided. If you have the commit hash, you can replace the placeholder (`6d7d4e...`) with it.

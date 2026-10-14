@@ -1,0 +1,1 @@
+I have created a `README.md` file in the project root. This file lists the command-line interface options for the `tinydl` CLI, including their descriptions and help text.

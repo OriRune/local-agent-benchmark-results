@@ -1,0 +1,36 @@
+
+
+```json
+{
+  "character": {
+    "name": "Medalist the Bard",
+    "race": "Half-Elf",
+    "class": "Bard",
+    "alignment": "Chaotic Neutral",
+    "hit_points": 10,
+    "background": "Traveling Performer",
+    "skills": {
+      "Acrobatics": 8,
+      "Arcana": 9,
+      "Performance": 10,
+      "Persuasion": 7,
+      "Deception": 8,
+      "Intimidation": 6
+    },
+    "feats": [
+      "Diplomatic Immunity",
+      "Master of Many Voices"
+    ],
+    "equipment": [
+      "A lute",
+      "A cloak",
+      "A belt pouch with 10 gp",
+      "A singing sword (magical, +1 to performance checks)"
+    ],
+    "special": {
+      "Theta": "Can cast a cantrip as a 3rd-level spell once per day",
+      "Medalist": "Bonus +2 to performance checks when using a musical instrument"
+    }
+  }
+}
+```

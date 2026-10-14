@@ -1,0 +1,1 @@
+Done. `MAX_RETRIES` is now `5` in `app/config.py`. The reference in `app/net.py` reads the value from config, so it will use the updated value automatically.

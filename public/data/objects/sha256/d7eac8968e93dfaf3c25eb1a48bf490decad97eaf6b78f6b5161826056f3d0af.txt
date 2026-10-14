@@ -1,0 +1,7 @@
+{
+"answer": "The authors do not explicitly state the specific dataset used to train their model, but they use a dataset of 5453 male and 6990 female names sourced from the CMU repository of names, along with occupation lists gathered from the internet.",
+"evidence": [
+"13: Names Data: We created a corpus of 5453 male and 6990 female names sourced from [ref: CMU repository of names].",
+"12: Occupation Data: We gathered occupation lists from different sources on the internet including crowdsourced lists and government lists."
+]
+}

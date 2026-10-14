@@ -1,0 +1,1 @@
+MAX_RETRIES has been changed to 5 in `app/config.py`. The value is now set to 5, and this will be automatically used in the `net.py` file where it's imported and referenced in the retry loop.

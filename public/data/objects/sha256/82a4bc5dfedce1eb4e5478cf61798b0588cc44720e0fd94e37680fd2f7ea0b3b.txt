@@ -1,0 +1,11 @@
+I created a shell script named `open_apps.sh` in the current folder. This script will:
+
+1. Open **Google Chrome** with `google.com` loaded.
+2. Open the **text editor** (`gedit` by default).
+3. Open the **file manager** (`nemo`) showing the `[private-home]/Documents/llama.cpp` directory.
+
+To run it, navigate to this folder and execute:
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```

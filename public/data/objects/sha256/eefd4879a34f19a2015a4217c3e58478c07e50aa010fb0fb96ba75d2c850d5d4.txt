@@ -1,0 +1,1 @@
+Undoing the most recent commit's change: modified `app/config.py` timeout from 20 to 10 seconds.

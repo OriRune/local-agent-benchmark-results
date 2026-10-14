@@ -1,0 +1,22 @@
+```bash
+#!/bin/bash
+
+# Get CPU information
+cpu_info=$(lscpu | grep -E 'Model name|CPU(s)')
+
+# Get RAM information
+ram_info=$(free -h | grep -E 'Mem|Swap')
+
+# Display the information
+echo "CPU Information:"
+echo "$cpu_info"
+echo "RAM Information:"
+echo "$ram_info"
+```
+
+To run this script, save it to a file, for example `system_info.sh`, and then execute it using the following commands:
+
+1. `chmod +x system_info.sh` to make the script executable.
+2. `./system_info.sh` to run the script.
+
+This script will display the CPU model and number of cores, as well as the total and available RAM.

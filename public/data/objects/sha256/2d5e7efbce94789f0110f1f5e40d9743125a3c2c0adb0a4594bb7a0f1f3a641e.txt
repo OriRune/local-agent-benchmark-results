@@ -1,0 +1,1 @@
+{"name": "append_file", "arguments": {"path": "./todo.txt", "text": "- publish release notes"}}

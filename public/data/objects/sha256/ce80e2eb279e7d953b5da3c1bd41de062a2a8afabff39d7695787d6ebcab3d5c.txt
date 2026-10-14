@@ -1,0 +1,31 @@
+## Answer
+
+**14 seconds.**
+
+Here's the reasoning:
+
+The retry loop in `app/net.py` runs for `MAX_RETRIES` iterations (which is **3** from `app/config.py`). After each failed attempt, it sleeps for `2 ** attempt` seconds:
+
+| Attempt | Sleep (2^attempt) |
+|---------|-------------------|
+| 0 | 1 second |
+| 1 | 2 seconds |
+| 2 | 4 seconds |
+
+Total: **1 + 2 + 4 = 7 seconds** per retry cycle.
+
+Since there are 3 retries, the total sleep is:
+
+**7 × 3 = 21 seconds**
+
+Wait — let me reconsider. The loop runs exactly 3 times (`attempt` = 0, 1, 2). The sleep happens *after* each failed attempt, so:
+
+- Attempt 0 fails → sleep 2^0 = 1 second
+- Attempt 1 fails → sleep 2^1 = 2 seconds  
+- Attempt 2 fails → sleep 2^2 = 4 seconds
+
+**Total: 1 + 2 + 4 = 7 seconds.**
+
+After the third attempt (index 2), the loop ends and raises `RuntimeError`. There's no sleep after the final failure.
+
+**Answer: 7 seconds.**

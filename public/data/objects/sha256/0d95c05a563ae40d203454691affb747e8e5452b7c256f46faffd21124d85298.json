@@ -1,0 +1,1 @@
+{"check":{"blocking_lines":["echo \"1. Chrome: google-chrome --new-window https://google.com\"","echo \"2. Text editor: Will use default editor (code, gedit, mousepad, kate, or nano)\""],"chrome":true,"editor":true,"file":"test_open_apps.sh","file_manager":true,"syntax_ok":true},"score":0}

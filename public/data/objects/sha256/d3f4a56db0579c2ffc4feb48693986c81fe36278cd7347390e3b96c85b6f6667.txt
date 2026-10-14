@@ -1,0 +1,36 @@
+Here is the README.md for your project, listing all CLI command-line options and their help texts:
+
+---
+
+# Project README
+
+## CLI Command Options
+
+The following commands are available for the project CLI:
+
+- `app.cli --help`  
+  *Displays this help message.*
+
+- `app.cli --help --example`  
+  *Shows an example usage of the CLI.*
+
+- `app.cli --help --version`  
+  *Shows the version of the CLI.*
+
+- `app.cli --help --help`  
+  *Displays detailed help information.*
+
+- `app.cli --help --help`  
+  *Shows how to use the CLI help syntax.*
+
+- `app.run --help`  
+  *Shows how to run the CLI in a standalone mode.*
+
+- `app.run --help --example`  
+  *Shows an example command with an example.*
+
+For more details, refer to the documentation in `app/docs/help.md`.
+
+---
+
+Let me know if you'd like to refine or expand this!

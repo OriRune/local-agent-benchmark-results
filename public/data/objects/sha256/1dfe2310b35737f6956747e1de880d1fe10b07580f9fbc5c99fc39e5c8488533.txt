@@ -1,0 +1,1 @@
+*Open* the bot by saying "Hello, I am in London." *Output* the forecast once the location is known. Ensure the *observation* includes temperature and rain *options*. The *outcome* must be clear for every *order*.

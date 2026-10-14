@@ -1,0 +1,24 @@
+**7 seconds total.**
+
+From `app/net.py`:
+
+```python
+for attempt in range(MAX_RETRIES):      # MAX_RETRIES = 3 (app/config.py)
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)        # exponential backoff
+raise RuntimeError(f"giving up on {url}")
+```
+
+With `MAX_RETRIES = 3`, the loop runs attempts 0, 1, 2, and each failure sleeps `2 ** attempt`:
+
+| attempt | sleep |
+|---|---|
+| 0 | 2⁰ = 1 s |
+| 1 | 2¹ = 2 s |
+| 2 | 2² = 4 s |
+
+1 + 2 + 4 = **7 seconds** of sleeping, after which the loop exits and `RuntimeError("giving up on ...")` is raised.
+
+Note that the sleep after the final (3rd) failure is wasted — it happens even though the code immediately gives up, so a small tidy-up would be to skip the sleep on the last attempt.

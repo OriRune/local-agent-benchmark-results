@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The system extracts features from text by performing clustering to group 'distributively' similar texts, using a classical sparse vectorizer (specifically Term frequency-Inverse document frequency - TF-IDF) to extract features from the titles and excerpts of retrieved web pages.",
+ "evidence": [
+  "8"
+ ]
+}
+```

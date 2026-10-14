@@ -1,0 +1,14 @@
+Looking at this puzzle, I can determine the names in each house directly:
+
+- Clue 1: Bob is in House 3.
+- Clue 2: Arnold is in House 2.
+- Therefore, Alice must be in House 1.
+
+The remaining clues confirm consistency:
+- Arnold (House 2) is British (clue 3) and owns the cat (clue 6).
+- Alice (House 1) is the Dane (clue 4) and owns the dog (clue 5).
+- Bob (House 3) is Chinese and owns the bird.
+
+The person in House 1 is Alice.
+
+<answer>Alice</answer>

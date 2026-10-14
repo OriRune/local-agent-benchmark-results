@@ -1,0 +1,3 @@
+Based on the information provided, the system is designed to retry a failed fetch up to five times. Assuming each retry takes a consistent amount of time (typically a few milliseconds), a reasonable estimate for the total sleep time before giving up is around 50–100 milliseconds per attempt. Multiplying by the five retries gives roughly 250–500 milliseconds, which is about 0.25–0.5 seconds. Since the user asked for a quick estimate, I’ll go with the lower end of that range.
+
+So, the program would spend approximately **about 0.25 seconds** sleeping before giving up.

@@ -1,0 +1,8 @@
+Done! I've added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function:
+
+- Returns human-readable sizes like "1.5 KB", "2.3 MB", etc.
+- Handles edge cases (0 returns "0 B", negative values raise ValueError)
+- Uses binary prefixes (divides by 1024) for KB, MB, GB, TB
+- Formats with 2 decimal places
+
+The file now has the clamp function followed by the new format_bytes function.

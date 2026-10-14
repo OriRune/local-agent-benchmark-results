@@ -1,0 +1,12 @@
+To make 24 using 10, 4, 9, and 7, I need to combine these numbers with +, -, *, and / operators.
+
+Let me try different combinations:
+- 10 + 4 + 9 + 7 = 30 (too high)
+- 10 + 4 + 9 - 7 = 16 (too low)
+- 10 * 4 - 9 - 7 = 40 - 16 = 24 ✓
+
+Let me verify: 10 * 4 = 40, then 40 - 9 = 31, then 31 - 7 = 24. This works!
+
+All four numbers (10, 4, 9, 7) are used exactly once.
+
+<answer>(10 * 4 - 9 - 7)</answer>

@@ -1,0 +1,3 @@
+Fixed. The `KB` entry in `app/units.py` was `1000` (decimal) instead of `1024`, contradicting the module's own docstring ("1 KB = 1024 bytes") and the test. Now `parse_size("1.5 KB")` returns `int(1.5 * 1024) = 1536`, matching the test, while the `B` and `MB` cases were already correct.
+
+Note: the sandbox denied program execution in this session, so I couldn't run pytest to confirm — the fix is based on reading the code and the test expectations.

@@ -1,0 +1,9 @@
+Now I have everything I need.
+
+The `fetch` function loops `for attempt in range(MAX_RETRIES)`, where `MAX_RETRIES = 3`, so `attempt` takes values 0, 1, 2. On each failed attempt it sleeps `time.sleep(2 ** attempt)` seconds:
+
+- Attempt 0: 2⁰ = 1 second
+- Attempt 1: 2¹ = 2 seconds
+- Attempt 2: 2² = 4 seconds
+
+Total: 1 + 2 + 4 = **7 seconds** before it gives up.

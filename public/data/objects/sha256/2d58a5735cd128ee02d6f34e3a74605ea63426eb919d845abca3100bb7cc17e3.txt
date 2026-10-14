@@ -1,0 +1,31 @@
+Done. I created **`system_monitor.py`** in your project folder.
+
+## What it does
+
+Prints a simple status block showing:
+- **CPU usage** — overall percentage (0–100%) plus core count
+- **Memory usage** — percentage, used/total in human-readable units, and available memory
+
+It reads directly from `/proc/stat` and `/proc/meminfo`, so it needs no external packages.
+
+## Usage
+
+```bash
+python3 system_monitor.py          # print once
+python3 system_monitor.py --loop   # refresh every 2 seconds
+python3 system_monitor.py --seconds 5  # set refresh interval (default 2)
+```
+
+Press `Ctrl+C` to stop the loop mode.
+
+## Sample output
+
+```
+========================================
+ CPU usage :  10.7%  (12 core(s))
+ MEM usage :  51.1%  (16.0 GiB used / 31.3 GiB total)
+           available: 15.3 GiB
+========================================
+```
+
+I tested it and it runs correctly on this machine.

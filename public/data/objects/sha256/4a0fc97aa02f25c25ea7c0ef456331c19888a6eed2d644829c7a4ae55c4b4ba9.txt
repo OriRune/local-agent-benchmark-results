@@ -1,0 +1,11 @@
+Based on the code in `app/net.py` and `app/config.py`, here is the calculation:
+
+1.  **Configuration**: In `app/config.py`, `MAX_RETRIES` is set to `3`.
+2.  **Loop Logic**: In `app/net.py`, the `fetch` function iterates through `range(MAX_RETRIES)`, which means `attempt` takes the values `0`, `1`, and `2`.
+3.  **Sleep Calculation**: For each failed attempt, the code executes `time.sleep(2 ** attempt)`.
+    *   **Attempt 0**: Fails $\rightarrow$ sleeps $2^0 = 1$ second.
+    *   **Attempt 1**: Fails $\rightarrow$ sleeps $2^1 = 2$ seconds.
+    *   **Attempt 2**: Fails $\rightarrow$ sleeps $2^2 = 4$ seconds.
+4.  **Total**: $1 + 2 + 4 = 7$ seconds.
+
+If every attempt fails, the function spends a total of **7 seconds** sleeping before it gives up and raises a `RuntimeError`.

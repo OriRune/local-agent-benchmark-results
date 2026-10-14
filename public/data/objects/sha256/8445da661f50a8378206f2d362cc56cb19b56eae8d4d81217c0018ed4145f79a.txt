@@ -1,0 +1,32 @@
+To make 24 using the numbers 10, 1, 2, and 6 exactly once, we can look for combinations that result in factors of 24, such as $4 \times 6$ or $3 \times 8$.
+
+Let's try to form $4 \times 6$:
+We have a 6. We need to make 4 from the remaining numbers: 10, 1, 2.
+$10 - 2 - 1 = 7$ (No)
+$10 / 2 - 1 = 4$ (Yes)
+
+So, $(10 / 2 - 1) \times 6 = 4 \times 6 = 24$.
+
+Let's verify the numbers used:
+- 10: used once
+- 2: used once
+- 1: used once
+- 6: used once
+
+The expression is $(10 / 2 - 1) * 6$.
+
+Another possibility:
+$10 + 6 + 2 + 1 = 19$ (No)
+$10 * 2 + 6 - 1 = 25 - 1 = 24$ (Yes)
+
+Let's verify the numbers used for the second expression:
+- 10: used once
+- 2: used once
+- 6: used once
+- 1: used once
+
+The expression is $10 * 2 + 6 - 1$.
+
+Both are valid. I will provide the second one as it is straightforward.
+
+<answer>10 * 2 + 6 - 1</answer>

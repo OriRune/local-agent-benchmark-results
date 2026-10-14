@@ -1,0 +1,3 @@
+I found the error code in the `data/events.log` file. Looking at the file, I can see that the error code is **WARN slow response** and it appears on line 97.
+
+The file contains 3000 lines of information, and the error code "WARN slow response" is found on line 97.

@@ -1,0 +1,4 @@
+{
+  "answer": "The paper defines ICD-10 as the International Classification of Diseases, 10th revision. It notes the system utilized dictionaries with 3,539 codes (run2) and 6,392 codes (run1), providing I509 as an example.",
+  "evidence": [0, 5, 8]
+}

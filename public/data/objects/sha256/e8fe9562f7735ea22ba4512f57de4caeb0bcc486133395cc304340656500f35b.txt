@@ -1,0 +1,19 @@
+The bug is in `app/units.py`. The `UNITS` dictionary had `"KB": 1000`, but the comment states "Sizes use 1024-based units: 1 KB = 1024 bytes." Therefore, `KB` should map to `1024`, not `1000`.
+
+I've fixed it by changing:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+to:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+**Verification (manual calculation):**
+- `parse_size("512 B")` → `int(float(512) * 1) = 512` ✓
+- `parse_size("1.5 KB")` → `int(float(1.5) * 1024) = int(1536) = 1536` ✓  
+- `parse_size("2 MB")` → `int(float(2) * 1024**2) = 2 * 1024 * 1024` ✓
+
+All three assertions in `tests/test_units.py` should now pass.
+
+**Summary:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py` to match the 1024-based unit definition.

@@ -1,0 +1,5 @@
+Good, there are no other occurrences of KB being used with 1000. The fix is complete.
+
+The test should now pass because:
+- `"1.5 KB"` will now calculate to `1.5 * 1024 = 1536` (matching the expected value)
+- `"2 MB"` will still calculate to `2 * 1024 * 1024 = 2097152` (matching the expected value)

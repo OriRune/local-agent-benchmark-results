@@ -1,0 +1,7 @@
+Done. I've written `README.md` with all three CLI options extracted from the argparse parser in `app/cli.py`:
+
+- **`url`** — "what to download" (required positional)
+- **`-o, --output <file>`** — "file to write (default: stdout)"
+- **`-q, --quiet`** — "no progress output"
+
+The README also includes a usage section, example commands, and install instructions.

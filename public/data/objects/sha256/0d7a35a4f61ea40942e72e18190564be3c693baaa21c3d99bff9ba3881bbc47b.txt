@@ -1,0 +1,12 @@
+# T3
+
+**Result:** fail · done · 1 steps · 0 calls · 2 s
+
+## user
+
+Change MAX_RETRIES to 5.
+
+## assistant
+
+Could you please provide the file where `MAX_RETRIES` is defined so I can make the change?
+

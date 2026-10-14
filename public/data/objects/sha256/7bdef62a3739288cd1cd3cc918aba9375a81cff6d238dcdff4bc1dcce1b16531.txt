@@ -1,0 +1,8 @@
+```json
+{
+  "answer": "CoNLL 2003 English NER",
+  "evidence": [
+    "Figure FIGREF25 shows the efficiency comparison results of different annotation tools using 100 sentences extracted from CoNLL 2003 English NER BIBREF8 training data."
+  ]
+}
+```

@@ -1,0 +1,4 @@
+{
+  "answer": "11,529,432 segmented words",
+  "evidence": [12]
+}

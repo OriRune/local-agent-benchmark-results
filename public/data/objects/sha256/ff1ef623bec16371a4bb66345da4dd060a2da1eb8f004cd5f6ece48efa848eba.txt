@@ -1,0 +1,1 @@
+{"answer": "A finance-specific word2vec word embedding model trained on 189,206 financial articles (161,877,425 tokens) manually downloaded from Factiva, using only US company data.", "evidence": [4]}

@@ -1,0 +1,5 @@
+Elizabeth is a hero/villain, Olivia is a villain, Mia is a villain, Emily is a hero, and Samuel is a villain.
+
+This conclusion arises by systematically analyzing each statement using the truth-value constraints for heroes (always tell the truth) and villains (always lie). After translating all logical conditions, we verify consistency.
+
+<answer>Elizabeth is a hero, Olivia is a villain, Mia is a villain, Emily is a hero, and Samuel is a villain.</answer>

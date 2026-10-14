@@ -1,0 +1,14 @@
+**TODO comments found in the Python code**
+
+1. **app/net.py**  
+   - Line 7: `# TODO: log each failed attempt`
+
+2. **app/util.py**  
+   - Line 5: `# TODO: add a helper that formats byte sizes`
+
+**Added to `todo.txt`**
+
+```
+# TODO: log each failed attempt
+# TODO: add a helper that formats byte sizes
+```

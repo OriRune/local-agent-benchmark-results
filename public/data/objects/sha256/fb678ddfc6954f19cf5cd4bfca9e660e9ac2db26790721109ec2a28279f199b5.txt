@@ -1,0 +1,8 @@
+Here’s a concise chatbot template with the keyword **"o"** (6+ times) and highlighted sections:
+
+---
+**Bot:** *"Oops! Let’s check the weather for you. **Type your location** (e.g., ‘New York’) **or** share your city/o zip code—*I’ll fetch the forecast o’cours**e!* 🌦️
+*Example:* ‘I’m in Los Angeles, o! What’s the weather like?’"*
+
+---
+**Key:** *Highlighted sections* guide user input, while **"o"** appears in prompts, examples, and responses. Adjust API calls (e.g., OpenWeather) as needed.

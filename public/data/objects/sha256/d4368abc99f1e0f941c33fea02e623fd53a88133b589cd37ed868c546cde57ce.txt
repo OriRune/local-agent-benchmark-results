@@ -1,0 +1,16 @@
+The script is working. Here's what it does:
+
+**`check_system_info.py`** — a Python script that displays:
+
+- **CPU**: Model name and core count
+- **RAM**: Total, free, and used memory (in bytes and MB)
+- **CPU Usage**: Current CPU utilization percentage
+
+The output from the system shows:
+- AMD Ryzen 5 5600X 6-Core Processor
+- 12 cores
+- 32 GB total RAM (32,018 MB)
+- ~4.5 GB used (27,553 MB free)
+- 0.0% CPU usage (at the time of the check)
+
+The script is saved at `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/95b8b9785d3381e774b99aba-93eb9a79b3/workspace/project/check_system_info.py`.

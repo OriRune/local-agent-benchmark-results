@@ -1,0 +1,8 @@
+The bug was in the UNITS dictionary in `app/units.py`. It defined `"KB": 1000` (the SI unit) instead of `"KB": 1024` (the binary unit), which contradicted the documentation comment and the test expectations.
+
+I fixed it by changing `"KB": 1000` to `"KB": 1024`. This aligns:
+- The documentation comment stating "1 KB = 1024 bytes"
+- The test expectation that `parse_size("1.5 KB") == 1536` (1.5 × 1024)
+- The existing 1024-based units for MB and GB
+
+The fix is complete and correct.

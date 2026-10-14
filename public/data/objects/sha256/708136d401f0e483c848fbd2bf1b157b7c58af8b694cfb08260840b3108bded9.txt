@@ -1,0 +1,13 @@
+Based on the code in `app/net.py`, the sleep time calculation is:
+
+**7 seconds total**
+
+Here's how it works:
+- `MAX_RETRIES = 3` (from `app/config.py`)
+- The loop runs 3 times (for `attempt` values 0, 1, 2)
+- Each failed attempt sleeps for `2 ** attempt` seconds:
+  - Attempt 0: 2^0 = **1 second**
+  - Attempt 1: 2^1 = **2 seconds**
+  - Attempt 2: 2^2 = **4 seconds**
+
+Total: 1 + 2 + 4 = **7 seconds** before it gives up.

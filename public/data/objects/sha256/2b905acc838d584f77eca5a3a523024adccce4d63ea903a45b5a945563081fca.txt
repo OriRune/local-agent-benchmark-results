@@ -1,0 +1,8 @@
+I've created an HTML file named **`books_html.html`** in this folder. This file:
+
+- Displays your book reading list in a clean, visually appealing table with hover effects.
+- Includes a summary section with genre distribution and total books read.
+- Uses a warm, readable color scheme and a professional layout.
+- Is ready to be opened by double-clicking it—no additional software or web server required.
+
+You can now screenshot this file and share it with your book club friends! Let me know if you'd like any adjustments.

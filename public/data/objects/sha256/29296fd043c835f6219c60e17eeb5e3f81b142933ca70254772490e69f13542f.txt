@@ -1,0 +1,4 @@
+{
+  "answer": "ICD-10 stands for the International Classification of Diseases, 10th revision. In this study, they are standardized medical diagnostic codes used to automatically assign diagnoses to French death certificates by matching text phrases to medical concepts.",
+  "evidence": [0, 1, 3]
+}

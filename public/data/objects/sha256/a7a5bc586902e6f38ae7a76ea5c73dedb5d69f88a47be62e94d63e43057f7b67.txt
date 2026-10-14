@@ -1,0 +1,18 @@
+```json
+{
+  "name": "Kaelen Swiftfoot",
+  "class": "Ranger",
+  "level": 3,
+  "abilities": {
+    "strength": 14,
+    "dexterity": 18,
+    "constitution": 13,
+    "intelligence": 10,
+    "wisdom": 15,
+    "charisma": 8
+  },
+  "features": ["Favored Enemy", "Natural Explorer"],
+  "backstory": "Former forest mediator who earned the title 'medalist' in local trials; seeks balance with theta rhythms of nature.",
+  "equipment": ["longbow", "shortsword", "leather armor", "hunting pack"]
+}
+```

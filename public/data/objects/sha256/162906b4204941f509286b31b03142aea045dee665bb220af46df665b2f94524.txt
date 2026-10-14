@@ -1,0 +1,10 @@
+I apologize for the oversight. Here is the correct format for calling the `read_file` tool:
+
+```json
+{
+  "name": "read_file",
+  "arguments": {
+    "path": "app/util.py"
+  }
+}
+```

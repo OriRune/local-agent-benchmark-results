@@ -1,0 +1,1 @@
+[{"args":{"question":"What total number of seconds does the program spend sleeping before it gives up if all fetch attempts fail?"},"name":"ask_user","result":"No one is available to answer questions now. If you need the user's decision or approval, end your turn with the question as your answer; otherwise decide for yourself and say what you assumed.","status":"ok"}]

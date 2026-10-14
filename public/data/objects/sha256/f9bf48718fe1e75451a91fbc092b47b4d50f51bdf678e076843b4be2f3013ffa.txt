@@ -1,0 +1,1 @@
+Hello! I'm your weather bot. Please provide your location for the *forecast*. *Once you've given me your location*, I'll provide the *weather forecast* for your area. The letter "o" is an important part of this process, as it helps us communicate effectively.

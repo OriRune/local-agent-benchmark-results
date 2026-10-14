@@ -1,0 +1,4 @@
+{
+  "answer": "The paper does not train a model; instead, it uses a dataset of occupations and names to generate clues for human-in-the-loop de-biasing.",
+  "evidence": [11, 12, 13]
+}

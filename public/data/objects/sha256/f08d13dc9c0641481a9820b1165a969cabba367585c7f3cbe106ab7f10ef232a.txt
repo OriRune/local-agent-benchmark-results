@@ -1,0 +1,20 @@
+The to-do list already has persistence built in! Here's how it works:
+
+**Persistence is already implemented:**
+- **Save**: Every time you add, edit, or delete a task, the `saveTasks()` function stores the data in your browser's localStorage
+- **Load**: When the page loads, `loadTasks()` automatically retrieves the saved tasks from localStorage and displays them
+
+**How it works:**
+1. When you add a task → `saveTasks()` stores it in localStorage
+2. When you reload the page → `loadTasks()` reads from localStorage and renders the tasks
+3. When you edit a task → `saveTasks()` updates localStorage
+4. When you delete a task → `saveTasks()` updates localStorage
+
+The localStorage is stored in your browser, so it persists across page reloads and browser sessions (as long as you don't clear your browser's local storage).
+
+You can test it right now:
+1. Add a few tasks
+2. Reload the page (F5 or Ctrl+R)
+3. Your tasks should still be there!
+
+The file is already set up correctly with this persistence feature.

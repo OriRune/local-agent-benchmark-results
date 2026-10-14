@@ -1,0 +1,3 @@
+The shortest path from * to # in the given grid is found using BFS. The path avoids blocked cells (X) and open cells (O), moving only in the four cardinal directions. After analyzing the grid, the path is determined step-by-step.
+
+<answer>right, right, down, down, down, down, up, up, left, right</answer>

@@ -1,0 +1,10 @@
+```json
+{
+ "answer": "The results were evaluated using a questionnaire where respondents ranked the captions provided by humans, the Neural Joking Machine (NJM), and the STAIR caption (baseline) in order of \"funniness\" across 30 different themes. Additionally, the method was evaluated by posting NJM-generated captions to the Bokete Ogiri website and comparing the average number of stars received by users.",
+ "evidence": [
+  "12",
+  "13",
+  "14"
+ ]
+}
+```

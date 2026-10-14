@@ -1,0 +1,19 @@
+To solve for 24 using the numbers 6, 2, 2, and 4:
+
+1.  **Identify combinations:**
+    *   6 * 4 = 24. However, we must use all numbers (6, 2, 2, 4).
+    *   If we use 6 * 4, we are left with 2 and 2. We can use them to make 1 (2/2) or 0 (2-2).
+    *   6 * 4 * (2 / 2) = 24.
+    *   6 * 4 + (2 - 2) = 24.
+
+2.  **Check the expression:**
+    *   6 * 4 * 2 / 2 = 24.
+    *   6 * 4 + 2 - 2 = 24.
+
+3.  **Format the answer:**
+    *   The expression `6 * 4 * 2 / 2` uses all numbers: 6, 4, 2, 2.
+    *   The expression `6 * 4 + 2 - 2` uses all numbers: 6, 4, 2, 2.
+
+Let's use `6 * 4 * 2 / 2`.
+
+<answer>6 * 4 * 2 / 2</answer>

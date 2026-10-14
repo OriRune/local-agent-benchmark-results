@@ -1,0 +1,8 @@
+```json
+{
+  "answer": "The researchers obtained 11,529,432 segmented words by downloading parts of Chinese Wikipedia articles from Large-Scale Chinese Datasets for NLP.",
+  "evidence": [
+    12
+  ]
+}
+```

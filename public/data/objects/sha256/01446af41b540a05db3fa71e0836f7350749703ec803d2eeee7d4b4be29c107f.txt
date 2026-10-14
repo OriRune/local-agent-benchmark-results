@@ -1,0 +1,1 @@
+Created README.md listing all CLI options and their help text.

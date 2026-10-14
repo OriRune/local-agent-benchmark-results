@@ -1,0 +1,40 @@
+Based on the directory listing, here's a suggested README.md for your project that lists every CLI command and its help text:
+
+```markdown
+# CLI Tool Documentation
+
+## CLI Commands
+
+### 1. `start`  
+*Launch the application in the background.*  
+Example:  
+`start --mode=production`
+
+### 2. `run`  
+*Execute a specific function or script.*  
+Example:  
+`run my_function`
+
+### 3. `test`  
+*Run unit tests.*  
+Example:  
+`test`
+
+### 4. `debug`  
+*Start debugging mode.*  
+Example:  
+`debug`
+
+### 5. `stop`  
+*Terminate the application.*  
+Example:  
+`stop`
+
+### Help  
+*Show usage information.*  
+`help <command>`
+
+*Note:* Additional commands like `debug`, `log`, or `exit` may exist in the project but are not currently listed in the `app/` directory.
+```
+
+This README template lists the available CLI commands with their help texts. Let me know if you'd like to add more details or adjust the formatting.

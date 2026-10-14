@@ -1,0 +1,6 @@
+Done. I undid the change made in the most recent commit (`c118c3a`) by editing `app/config.py` directly:
+
+- The commit had raised `TIMEOUT_S` from `10` to `20`.
+- I edited the file back to `TIMEOUT_S = 10`.
+
+Verification with `git diff HEAD~1 -- app/config.py` shows no difference, confirming the file now matches its state before the most recent commit. No git commands were used to alter history or the index.

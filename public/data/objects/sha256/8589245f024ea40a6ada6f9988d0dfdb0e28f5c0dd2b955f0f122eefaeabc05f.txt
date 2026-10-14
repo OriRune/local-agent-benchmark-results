@@ -1,0 +1,16 @@
+Let's analyze the problem: we need to form the number 24 using the numbers 8, 5, 5, 9 exactly once with addition, subtraction, multiplication, or division.
+
+We have the numbers: 8, 5, 5, 9.
+
+One possible combination:
+- 8 * 3 = 24, but we don't have a 3.
+- Try combining with other operations.
+
+Let's try:
+8 + 5 + 5 - 9 = 8 + 5 + 5 - 9 = 24
+
+This uses all four numbers exactly once and the allowed operators.
+
+So the expression is: 8 + 5 + 5 - 9 = 24
+
+<answer>8 + 5 + 5 - 9 = 24</answer>

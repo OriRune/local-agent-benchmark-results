@@ -1,0 +1,7 @@
+I've created `README.md` with a complete list of all CLI command-line options and their help text:
+
+- **URL** (required): The URL to download
+- **-o, --output**: File to write to (default: stdout)
+- **-q, --quiet**: Disable progress output (no byte count printed)
+
+The README also includes usage examples demonstrating the different ways to use the tool.

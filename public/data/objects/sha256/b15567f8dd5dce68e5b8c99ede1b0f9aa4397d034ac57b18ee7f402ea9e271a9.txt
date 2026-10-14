@@ -1,0 +1,7 @@
+Done. I've created a `README.md` that lists every CLI command line option with its help text:
+
+- **`url`** - what to download (required positional argument)
+- **`-o, --output`** - file to write (default: stdout)
+- **`-q, --quiet`** - no progress output
+
+The README also includes installation instructions, usage examples, configuration settings from `app/config.py`, and TODO items from `todo.txt`.

@@ -1,0 +1,1 @@
+**Summary:** The bug was in `app/units.py` line 2. The KB conversion factor was `1000` (decimal) instead of `1024` (binary). The docstring itself declares "1 KB = 1024 bytes", and the test expects `1.5 KB == 1536` (1.5 × 1024). Changing `1000` to `1024` fixes the mismatch.

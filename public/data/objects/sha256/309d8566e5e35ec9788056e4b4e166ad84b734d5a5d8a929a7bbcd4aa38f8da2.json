@@ -1,0 +1,1 @@
+[{"args":{"path":"."},"name":"list_dir","result":"app/\ndata/\ntests/\nnotes.md  (340 bytes)\ntodo.txt  (53 bytes)","status":"ok"},{"args":{"path":"path/to/file","to":"path/to/new/directory"},"name":"move_file","result":"error: no such file or folder: path/to/file","status":"error"}]

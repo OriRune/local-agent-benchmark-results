@@ -1,0 +1,9 @@
+The sandbox doesn't allow running programs, but the edits are straightforward one-line renames, and I've verified via grep that all references are consistent.
+
+Done. I renamed the function `fetch` to `download` and updated every usage:
+
+- **`app/net.py`** — the definition: `def fetch(...)` → `def download(...)`
+- **`app/cli.py`** — the import: `from app.net import fetch` → `from app.net import download`
+- **`app/cli.py`** — the call: `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+A final search confirms no remaining references to `fetch`, and the only other matches for "download" are incidental words in help text and config.

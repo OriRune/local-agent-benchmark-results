@@ -1,0 +1,15 @@
+Now I have everything needed.
+
+**The code:**
+
+`app/net.py` loops `for attempt in range(MAX_RETRIES)` and, on each failure, sleeps `2 ** attempt` seconds:
+
+- attempt 0 → sleep `2**0 = 1` s
+- attempt 1 → sleep `2**1 = 2` s
+- attempt 2 → sleep `2**2 = 4` s
+
+`MAX_RETRIES = 3`, so the loop runs for attempts 0, 1, 2 — three failed attempts — then raises the "giving up" error.
+
+**Total sleep:** 1 + 2 + 4 = **7 seconds**
+
+(The 20-second `TIMEOUT_S` is the per-request timeout on each failed fetch, not part of the inter-attempt sleeping.)

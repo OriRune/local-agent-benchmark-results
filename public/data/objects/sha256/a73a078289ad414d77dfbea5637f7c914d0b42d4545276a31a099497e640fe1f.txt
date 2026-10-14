@@ -1,0 +1,12 @@
+I've created a comprehensive README.md for the tinydl project. The file includes:
+
+- **Project description**: A simple command-line utility for downloading files from URLs
+- **Installation instructions**: Using pip install with the current directory
+- **Usage syntax**: Shows the basic command structure
+- **Command Line Options table**: Lists all options with their descriptions:
+  - `url` (required): The URL of the file to download
+  - `-o, --output FILE`: File destination (default: stdout)
+  - `-q, --quiet`: Suppress progress output
+- **Usage examples**: Three examples demonstrating different use cases
+
+The README is well-organized and follows a clear format that will help users understand and use the CLI effectively.

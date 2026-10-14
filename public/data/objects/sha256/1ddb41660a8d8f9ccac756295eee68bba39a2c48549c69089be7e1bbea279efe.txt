@@ -1,0 +1,16 @@
+The shell script `open_apps.sh` has been created. It will:
+
+1. Open Chrome with `google.com`.
+2. Open a text editor (using `nano` by default).
+3. Open the file manager (`nautilus`) showing `[private-home]/Documents/llama.cpp`.
+
+To use it:
+1. Save the script to `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/8a0b6d48c7e032993d562ee2-8aeb9ac76c/workspace/project/open_apps.sh` (already done).
+2. Make it executable by running:
+   ```bash
+   chmod +x open_apps.sh
+   ```
+3. Run it by executing:
+   ```bash
+   ./open_apps.sh
+   ```

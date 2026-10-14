@@ -1,0 +1,5 @@
+I apologize for the mistake. Let's try again.
+
+```json
+{"name": "find_files", "arguments": {"pattern": "MAX_RETRIES", "path": ".", "sort": "name"}}
+```

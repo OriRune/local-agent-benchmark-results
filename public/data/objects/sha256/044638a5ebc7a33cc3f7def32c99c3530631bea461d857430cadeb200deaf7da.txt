@@ -1,0 +1,8 @@
+
+**Template for a Chat Bot:**
+
+**User Input:** "What's the weather like in [location]?"
+
+**Bot Response:** "Oh, the weather in [location] is quite *opulent* today! With a *overcast* sky and a *moderate* temperature, you'll enjoy the *outdoor* activities. The *ocean* breeze is gentle, and the *ozone* levels are low. So, *opt* for a *walk* or a *picnic* in the park. The *ozone* layer is protecting you from harmful UV rays, so you can stay *out* for a while. The *ocean* breeze will keep you *cool* and refreshed. Enjoy your day!"
+
+**Highlighted Sections:** *opulent*, *overcast*, *outdoor*, *ocean*, *ozone*, *opt*, *walk*, *picnic*, *out*, *cool*.

@@ -1,0 +1,18 @@
+The script `system_info.sh` has been created successfully. To use it, you need to make it executable and then run it. Here are the steps:
+
+1. Make the script executable:
+   ```bash
+   chmod +x system_info.sh
+   ```
+
+2. Run the script:
+   ```bash
+   ./system_info.sh
+   ```
+
+This script will display basic information about your system's RAM and CPU usage, including:
+- System information (OS, node name, release)
+- CPU usage percentage, number of cores, and frequency details
+- RAM total, used, free, and usage percentage
+
+The script uses standard Linux commands and should work without any additional dependencies on Linux Mint.

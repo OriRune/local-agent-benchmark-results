@@ -1,0 +1,11 @@
+I have renamed the function `fetch` to `download` in `app/net.py` and updated all its usages in `app/cli.py`.
+
+Specifically, I performed the following changes:
+1.  **`app/net.py`**: Changed `def fetch(url, get):` to `def download(url, get):`.
+2.  **`app/cli.py`**: 
+    *   Changed the import from `from app.net import fetch` to `from app.net import download`.
+    *   Changed the function call from `data = fetch(args.url, get=_get)` to `data = download(args.url, get=_get)`.
+
+I searched the entire project for other occurrences of `fetch` using `grep`, but no other instances were found. I also checked the `tests/` directory and found no references to `fetch` in the existing tests.
+
+I could not run the test suite to verify the changes because the `run` tool denied the execution of Python programs in this environment. However, I have manually verified the changes via file inspection.

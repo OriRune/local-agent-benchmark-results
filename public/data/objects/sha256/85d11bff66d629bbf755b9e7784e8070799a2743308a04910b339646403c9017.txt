@@ -1,0 +1,1 @@
+The most recent Git commit (commit `13b4ea3bf072b1182816be3677b50d698ea88735`) updated the code to **raise the download timeout from 10 to 20 seconds**.

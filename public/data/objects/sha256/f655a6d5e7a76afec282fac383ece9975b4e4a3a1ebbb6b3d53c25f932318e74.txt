@@ -1,0 +1,8 @@
+
+
+The log file contains two warning messages instead of error codes. These are:
+
+- Line 97: `WARN slow response id=97 took 2.7s`
+- Line 194: `WARN slow response id=194 took 2.4s`
+
+These warnings indicate slow responses (2.7s and 2.4s respectively) but no actual error codes are present in the log.

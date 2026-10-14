@@ -1,0 +1,4 @@
+Done. Here's what I did:
+
+- **Added** the `format_bytes(n)` function to `app/util.py`. It takes a byte count and returns a human-readable string like `'1.5 KB'`, `'256 MB'`, `'1 GB'`, etc., by iterating through TB → GB → MB → KB and picking the largest unit that fits. Whole numbers are displayed without decimals (e.g. `'1 GB'`), while fractional values show one decimal place (e.g. `'1.5 KB'`). Values smaller than 1 KB fall back to `'{n} B'`.
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.

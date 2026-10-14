@@ -1,0 +1,3 @@
+I was unable to find a folder named `project` in the directory one level up. The directories I found are `project/` and `shared-config/`.
+
+Could you please clarify which folder you mean, or provide more context about where the `proxy.ini` file is located?

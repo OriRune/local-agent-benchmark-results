@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "Text features are extracted using a classical sparse vectorizer (Term frequency-Inverse document frequency, TF-IDF), and classifiers rely on a bag-of-words technique; features are derived from web page titles and excerpts of content, clustered to group texts that are distributively similar.",
+  "evidence": [1, 5, 8]
+}
+```

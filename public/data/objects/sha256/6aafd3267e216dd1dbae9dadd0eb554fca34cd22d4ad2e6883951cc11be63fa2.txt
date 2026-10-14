@@ -1,0 +1,24 @@
+I was unable to complete the task because I encountered an error while trying to use the `edit_file` tool. I attempted to replace the existing code and the TODO comment with the new `format_bytes` function, but the tool repeatedly failed to recognize the `old_text` despite it matching the content of `app/util.py`.
+
+Based on the file content I read:
+
+**Original `app/util.py`:**
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+# TODO: add a helper that formats byte sizes
+```
+
+**Proposed change:**
+I intended to replace the TODO comment with the following function:
+```python
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024:
+            return f"{n:.1f} {unit}".replace(".0 ", " ")
+        n /= 1024
+    return f"{n:.1f} PB"
+```
+
+Because the tool failed to execute the edit, the file remains unchanged.

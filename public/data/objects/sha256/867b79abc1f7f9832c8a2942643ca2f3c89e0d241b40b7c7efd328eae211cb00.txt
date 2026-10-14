@@ -1,0 +1,1 @@
+I couldn't find a `.git` folder in the current directory, which means it doesn't appear to be a git repository. Could you clarify if you meant to refer to a different directory or if you expect this directory to have git commits?

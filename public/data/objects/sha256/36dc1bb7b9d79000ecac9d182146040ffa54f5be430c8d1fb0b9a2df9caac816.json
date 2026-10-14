@@ -1,0 +1,1 @@
+["Let me find where MAX_RETRIES is defined in the files.\n","Let me read the config.py file to confirm the exact line.\n","The grep shows the file path as \"app/config.py\" but that's relative to the working folder. Let me change it.\n","Done. MAX_RETRIES is defined only in config.py, and net.py just imports it. So changing the definition is sufficient.\n"]

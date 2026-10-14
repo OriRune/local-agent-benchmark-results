@@ -1,0 +1,2 @@
+
+The user declined to fetch the address because the web is not available in this session. The fetch function does not have a built-in timeout or sleep mechanism to determine how long it spends sleeping before giving up. The user's note indicates that the web is not available, so the fetch function did not have to sleep at all.

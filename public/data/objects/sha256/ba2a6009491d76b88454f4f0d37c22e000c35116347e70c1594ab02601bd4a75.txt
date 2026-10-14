@@ -1,0 +1,2 @@
+
+The file app/util.py has been updated: the TODO comment has been removed and the new format_bytes function has been added.

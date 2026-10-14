@@ -1,0 +1,36 @@
+<tool_call>
+{"name": "write_file", "arguments": {"path": "books.html", "content": """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books Read Last Year</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Books Read Last Year</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Pages</th>
+        </tr>
+    </table>
+</body>
+</html>
+"""}}
+</tool_call>

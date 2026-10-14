@@ -1,0 +1,27 @@
+I have created a `README.md` file that lists all the command-line arguments and options for the `tinydl` CLI, along with their respective help texts.
+
+```markdown
+# tinydl
+
+A simple command-line tool to download files.
+
+## Usage
+
+```bash
+tinydl <url> [options]
+```
+
+## Arguments
+
+| Argument | Help Text |
+| --- | --- |
+| `url` | what to download |
+
+## Options
+
+| Option | Help Text |
+| --- | --- |
+| `-h`, `--help` | show this help message and exit |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+```

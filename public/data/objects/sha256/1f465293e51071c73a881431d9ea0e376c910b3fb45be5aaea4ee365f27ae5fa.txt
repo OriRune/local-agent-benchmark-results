@@ -1,0 +1,1 @@
+Done. I undid the most recent commit (`d25280f`) by directly editing `app/config.py`: `TIMEOUT_S` is now back to `10` (it had been changed to `20`). No git commands were used to alter anything.

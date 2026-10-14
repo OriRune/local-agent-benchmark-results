@@ -1,0 +1,6 @@
+The persistence is already built in:
+
+- **Line 169**: `let todos = JSON.parse(localStorage.getItem('todos') || '[]');` — loads saved items on page load
+- **Line 172**: `localStorage.setItem('todos', JSON.stringify(todos));` — saves on every change
+
+The list will remember your items across page reloads. Just open `todo.html` in a browser, add some tasks, reload the page, and they'll still be there.

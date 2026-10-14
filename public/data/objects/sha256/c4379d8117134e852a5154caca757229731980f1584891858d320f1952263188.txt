@@ -1,0 +1,5 @@
+Found it. The file you're looking for is:
+
+**`Desktop/trip ideas 2025.txt`** — a text file containing vacation/trip ideas (Kyoto in spring, a coastal road trip, and camping at the lake).
+
+It's the closest match to "vacation ideas" among the files in this directory.

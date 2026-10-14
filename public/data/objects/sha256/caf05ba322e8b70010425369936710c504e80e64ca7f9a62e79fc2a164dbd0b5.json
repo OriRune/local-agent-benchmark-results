@@ -1,0 +1,1 @@
+["I need to find where `MAX_RETRIES` is defined and what its value is. I'll start by searching for `MAX_RETRIES` in the current directory and its subdirectories.","The `grep` command shows that `MAX_RETRIES` is defined in `app/config.py` on line 2, and its value is `3`.\n"]

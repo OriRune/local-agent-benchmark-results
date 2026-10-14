@@ -1,0 +1,6 @@
+
+
+{
+  "answer": "The results were evaluated through a questionnaire where participants ranked captions by funniness without knowing their origin, and through user feedback on the Bokete platform (star ratings).",
+  "evidence": [12, 13, 14]
+}

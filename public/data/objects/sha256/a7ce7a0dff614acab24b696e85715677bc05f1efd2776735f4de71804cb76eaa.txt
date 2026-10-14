@@ -1,0 +1,11 @@
+The `fetch` function in `app/net.py` retries up to `MAX_RETRIES = 3` times. On each failed attempt (when an `OSError` is caught), it sleeps for `2 ** attempt` seconds, where `attempt` runs from `0` to `2`.
+
+If all three attempts fail, the sleeps are:
+
+- Attempt 0: `2⁰ = 1` second  
+- Attempt 1: `2¹ = 2` seconds  
+- Attempt 2: `2² = 4` seconds  
+
+Total sleep time = `1 + 2 + 4 = 7` seconds.
+
+**Answer: 7 seconds**.

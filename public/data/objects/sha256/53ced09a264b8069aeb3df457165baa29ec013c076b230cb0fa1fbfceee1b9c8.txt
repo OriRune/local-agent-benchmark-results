@@ -1,0 +1,5 @@
+I have analyzed the test failure in `tests/test_units.py`. The issue was in `app/units.py`, where the `UNITS` dictionary incorrectly defined `KB` as `1000` instead of `1024`. I have corrected this to ensure the unit conversions match the 1024-based system expected by the tests.
+
+Since I cannot run the tests directly in this environment due to sandbox restrictions, I have performed the fix based on the code analysis and the test requirements.
+
+Summary: Fixed the `KB` multiplier in `app/units.py` from `1000` to `1024`.

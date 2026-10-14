@@ -1,0 +1,3 @@
+I was unable to find any Python files because the folder `project` does not exist in the current directory `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/cf32a234e625efbc6cb6a3ed-fee61939af/workspace/`.
+
+Could you please confirm the correct path to the application folder?

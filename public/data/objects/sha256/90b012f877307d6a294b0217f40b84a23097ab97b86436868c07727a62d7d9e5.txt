@@ -1,0 +1,21 @@
+Here is the step-by-step logical deduction:
+
+1.  **Analyze the House Assignments:**
+    *   From Clue 1: **Bob** is in House 3.
+    *   From Clue 2: **Arnold** is in House 2.
+
+2.  **Determine the Remaining Person:**
+    *   There are three people: Bob, Arnold, and Alice.
+    *   Since Bob is in House 3 and Arnold is in House 2, the only remaining house is House 1.
+    *   Therefore, **Alice** must be in House 1.
+
+3.  **Verify with other clues (Optional but good for checking consistency):**
+    *   Clue 3 states Arnold is the Brit. (House 2: Arnold, Brit)
+    *   Clue 4 states the Dane is Alice. (House 1: Alice, Dane)
+    *   Clue 5 states the dog owner is the Dane. (House 1: Alice, Dog)
+    *   Clue 6 states the cat lover is Arnold. (House 2: Arnold, Cat)
+    *   This leaves Bob in House 3 as the Chinese person with the Bird. All constraints are satisfied.
+
+The person living in House 1 is Alice.
+
+<answer>Alice</answer>

@@ -1,0 +1,9 @@
+{
+  "answer": "The paper defines ICD-10 as the International Classification of Diseases, 10th revision, used for automatically coding death certificates. The dictionaries used contained 3,539 to 6,392 codes, with I509 given as an example.",
+  "evidence": [
+    0,
+    3,
+    5,
+    10
+  ]
+}

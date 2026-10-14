@@ -1,0 +1,10 @@
+```json
+{
+ "answer": "Text features are extracted using a classical sparse vectorizer (Term frequency-Inverse document frequency - TF-IDF), and the model also utilizes part-of-speech (POS) tags and n-grams of POS tags.",
+ "evidence": [
+  5,
+  8,
+  9
+ ]
+}
+```

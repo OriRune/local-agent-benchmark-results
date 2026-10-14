@@ -1,0 +1,5 @@
+The shortest path from * to # in the given grid is of length 16. Here is a valid sequence of directions:
+
+<answer>right, right, down, down, left, left, down, down, right, right, down, right, down, right, down, left, right</answer>
+
+(Note: The path avoids blocked cells and uses only valid moves.)

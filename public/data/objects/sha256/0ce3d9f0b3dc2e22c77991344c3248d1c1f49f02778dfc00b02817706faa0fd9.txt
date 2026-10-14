@@ -1,0 +1,13 @@
+{
+  "answer": "The paper does not train a machine learning model; instead, it uses a dataset of occupations and a corpus of names to power its rule-based de-biasing system.",
+  "evidence": [
+    11,
+    12,
+    13,
+    17,
+    18,
+    19,
+    20,
+    21
+  ]
+}

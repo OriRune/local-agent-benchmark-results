@@ -1,0 +1,6 @@
+Done! I've successfully renamed the `fetch` function to `download` and updated all references in the project:
+
+1. **app/net.py**: Renamed the function definition from `fetch` to `download`
+2. **app/cli.py**: Updated the import statement and function call to use `download` instead of `fetch`
+
+All references to the old `fetch` function have been updated throughout the codebase.

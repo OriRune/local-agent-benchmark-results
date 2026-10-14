@@ -1,0 +1,5 @@
+Done. The README.md has been created with a table listing all three CLI options:
+
+- **`url`** — positional argument: what to download
+- **`-o, --output`** — file to write (default: stdout)
+- **`-q, --quiet`** — no progress output

@@ -1,0 +1,6 @@
+The error code is **E-4471**, on **line 2417**.
+
+The line reads:
+`ERROR code=E-4471 disk quota exceeded while saving part 7`
+
+It's the only error entry in the log — all other 2,999 lines are `INFO request ok` records.

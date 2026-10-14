@@ -1,0 +1,1 @@
+[{"args":{"path":"data/events.log","pattern":"\\d+\\s+ERROR\\s+\\d+"},"name":"grep","result":"no matches","status":"ok"}]

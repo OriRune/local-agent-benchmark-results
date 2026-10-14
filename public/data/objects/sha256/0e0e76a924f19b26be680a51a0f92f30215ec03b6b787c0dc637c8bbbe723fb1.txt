@@ -1,0 +1,9 @@
+I've already implemented that feature! The to-do list automatically saves to your browser's local storage and loads it when you refresh the page. 
+
+The `loadTodos()` function runs on page load, and `saveTodos()` is called whenever you add, edit, delete, or toggle completion of items. This means:
+
+- Your items persist even after closing the browser
+- They're restored when you reopen the page
+- No data is lost on refresh
+
+You can test it by adding some items, refreshing the page, and you'll see all your items are still there!

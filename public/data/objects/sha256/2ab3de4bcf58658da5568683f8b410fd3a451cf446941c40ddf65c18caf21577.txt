@@ -1,0 +1,6 @@
+I found the definition:
+
+**Location:** `app/config.py` (line 2)
+**Value:** `3`
+
+The constant is defined in `app/config.py` as `MAX_RETRIES = 3`, and it's imported and used in `app/net.py`.

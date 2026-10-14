@@ -1,0 +1,1 @@
+The test should now pass. The issue was that `"KB"` was incorrectly set to `1000` instead of `1024`, which contradicted the module's documentation stating it uses 1024-based units.

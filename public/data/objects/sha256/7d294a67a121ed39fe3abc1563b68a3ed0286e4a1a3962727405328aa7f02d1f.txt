@@ -1,0 +1,11 @@
+Let me work through the math:
+
+- `MAX_RETRIES = 3`, so `range(MAX_RETRIES)` gives attempts 0, 1, 2 — **3 attempts**.
+- On each failed attempt (except the last one), it sleeps `2 ** attempt` seconds:
+  - Attempt 0: sleeps `2^0 = 1` second
+  - Attempt 1: sleeps `2^1 = 2` seconds
+  - Attempt 2: sleeps `2^2 = 4` seconds
+
+- The loop ends after attempt 2 (no more iterations), so the `raise` happens without an additional sleep.
+
+**Total sleep time: 1 + 2 + 4 = 7 seconds.**

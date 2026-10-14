@@ -1,0 +1,14 @@
+I've created a script called `check_system_info.sh` that displays:
+
+1. **RAM Usage** - Shows total, used, and free memory in human-readable format
+2. **CPU Usage** - Lists the top 5 processes consuming the most CPU
+3. **CPU Information** - Shows the CPU model name
+4. **System Information** - Displays the full system kernel information
+
+You can run it with:
+```bash
+chmod +x check_system_info.sh
+./check_system_info.sh
+```
+
+The script uses standard Linux tools (`free`, `ps`, `cat`, `uname`) that are available on most Linux systems.

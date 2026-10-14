@@ -1,0 +1,21 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the `TODO` comment.
+
+Here is the content of the updated `app/util.py`:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+def format_bytes(n):
+    """Return a human-readable byte size string."""
+    if n is None:
+        return "0 B"
+    units = ["B", "KB", "MB", "GB", "TB"]
+    if n == 0:
+        return "0 B"
+    i = 0
+    while n >= 1024 and i < len(units) - 1:
+        n /= 1024
+        i += 1
+    return f"{n:.1f} {units[i]}"
+```

@@ -1,0 +1,4 @@
+The fix is confirmed. The `UNITS` dictionary now correctly uses 1024 for KB (line 2), which matches the documentation comment (line 1) and the test expectations.
+
+**Summary:**
+The test was failing because the `UNITS` dictionary in `app/units.py` defined `KB` as 1000 instead of 1024. The documentation and tests expect 1024-based units (1 KB = 1024 bytes). I changed `UNITS["KB"]` from 1000 to 1024 to fix this inconsistency.

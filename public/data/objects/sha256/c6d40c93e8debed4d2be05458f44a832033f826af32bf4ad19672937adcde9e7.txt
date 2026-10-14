@@ -1,0 +1,3 @@
+
+
+{"name": "answer", "content": "MAX_RETRIES is not defined in the provided tools. However, based on the function's description, the maximum number of retries for the 'run' function is five. This is inferred from the statement: 'Completed programs may be rerun up to five times to check stability.'"}

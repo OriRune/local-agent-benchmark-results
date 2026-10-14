@@ -1,0 +1,8 @@
+The most recent git commit changed the download timeout setting.
+
+**Commit** `d4f526ab` — "raise the download timeout from 10 to 20 seconds"
+- **Author:** eval <eval@local>
+- **Date:** Sun Oct 11, 06:35:30 (2026, -0700)
+- **File changed:** `app/config.py` (1 line)
+
+The change was a single value: `TIMEOUT_S` was changed from `10` to `20` seconds.

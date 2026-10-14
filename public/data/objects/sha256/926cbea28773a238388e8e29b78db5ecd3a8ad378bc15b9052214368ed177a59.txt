@@ -1,0 +1,3 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function converts a byte count into a human-readable string, scaling through units (B, KB, MB, GB, TB, PB) by dividing by 1024. It shows whole numbers without decimals for bytes and large values, and one decimal place (e.g. `'1.5 KB'`) for smaller fractional values.

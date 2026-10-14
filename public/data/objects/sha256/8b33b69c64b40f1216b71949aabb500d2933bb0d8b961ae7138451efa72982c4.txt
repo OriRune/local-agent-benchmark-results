@@ -1,0 +1,16 @@
+The most recent commit is **d62661f** by `eval <eval@local>`, dated Fri Oct 9 10:19:30 2026:
+
+> "raise the download timeout from 10 to 20 seconds"
+
+**What changed** — one line in `app/config.py`:
+
+```diff
+ MAX_RETRIES = 3
+-TIMEOUT_S = 10
++TIMEOUT_S = 20
+ USER_AGENT = "tiny-downloader/0.2"
+```
+
+1 file changed, 1 insertion(+), 1 deletion(-). The working tree is clean (no uncommitted changes).
+
+Note: `TIMEOUT_S` is used in `app/net.py` (`from app.config import MAX_RETRIES, TIMEOUT_S`, then `get(url, timeout=TIMEOUT_S)`), so this raises the per-request download timeout everywhere it's applied.

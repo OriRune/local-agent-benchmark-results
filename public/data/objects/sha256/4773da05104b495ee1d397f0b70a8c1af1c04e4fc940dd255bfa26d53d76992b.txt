@@ -1,0 +1,12 @@
+I've created a README.md for the project that lists every command line option of the CLI with its help text. The README includes:
+
+- **Project description**: A minimal HTTP downloader
+- **Installation instructions**: `pip install -e .`
+- **Usage syntax**: `tinydl <url> [options]`
+- **CLI options table** with all three options:
+  - `url` (positional) - "what to download"
+  - `-o`/`--output` - "file to write (default: stdout)"
+  - `-q`/`--quiet` - "no progress output"
+- **Examples** for each major use case
+- **Configuration settings** from `app/config.py`
+- **Future plans** from `notes.md` and `todo.txt`

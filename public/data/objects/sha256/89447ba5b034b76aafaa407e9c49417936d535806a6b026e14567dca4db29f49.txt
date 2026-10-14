@@ -1,0 +1,9 @@
+The README.md file has been created at `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/faca7ba65d43b15d10daaaf4-fd0b680cc0/workspace/project/README.md`.
+
+It lists every command line option of the CLI (`tinydl`) from `app/cli.py` with its help text:
+
+1. `url` (positional argument, required) — help: "what to download"
+2. `-o`, `--output` (optional argument) — help: "file to write (default: stdout)"
+3. `-q`, `--quiet` (optional flag with `action="store_true"`) — help: "no progress output"
+
+The README also includes basic usage description and examples.

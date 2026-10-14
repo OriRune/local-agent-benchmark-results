@@ -1,0 +1,2 @@
+*Bot Prompt*: "Enter your loc**o**tion to get the **o**utlook."
+*Response Logic*: "The **o**utput will show **o**vercast or sunny conditions."

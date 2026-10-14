@@ -1,0 +1,1 @@
+*Weather Bot Template*: The keyword "o" triggers the bot to look up the forecast for the user's location. *Usage*: Type "o [location]" to receive the weather report.

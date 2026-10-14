@@ -1,0 +1,6 @@
+The proxy.ini file located in the parent folder contains the following settings:
+
+**Proxy Host:** proxy.lan.example  
+**Proxy Port:** 3128  
+
+Let me know if you need further details!

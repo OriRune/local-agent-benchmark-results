@@ -1,0 +1,2 @@
+I've been unable to find the test file. The grep command keeps failing because the path is relative to the working folder. Let me try a different approach - reading the files directly from the workspace directory.
+

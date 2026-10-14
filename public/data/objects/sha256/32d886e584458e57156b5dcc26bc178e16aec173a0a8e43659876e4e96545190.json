@@ -1,0 +1,1 @@
+["We need to answer based only on passage. The passage says: \"Amongst these include 5 University of California campuses (Irvine, Los Angeles, Riverside, Santa Barbara, and San Diego);\" So answer: 5.\n\nWe must return only the shortest supported answer, or exactly UNANSWERABLE if not given. The answer is 5. So output \"5\".\n"]

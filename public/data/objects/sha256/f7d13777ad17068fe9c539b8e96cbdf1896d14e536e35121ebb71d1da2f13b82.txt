@@ -1,0 +1,2 @@
+
+{"name": "edit_file", "arguments": {"path": "app/util.py", "old_text": "// TODO: add a helper that formats byte sizes", "new_text": "def format_bytes(n):\n    suffixes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']\n    if n == 0:\n        return '0B'\n    i = 0\n    while n >= 1024 and i < len(suffixes)-1:\n        n /= 1024.0\n        i += 1\n    return '%s.%sb' % (n, suffixes[i])"}

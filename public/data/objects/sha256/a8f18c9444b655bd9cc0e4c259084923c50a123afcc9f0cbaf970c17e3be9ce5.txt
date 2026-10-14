@@ -1,0 +1,29 @@
+Looking at this problem, I need to check if there's a valid topological ordering of all 8 courses that satisfies all prerequisites.
+
+**Prerequisites (b must come before a):**
+- (5, 3): 3 → 5
+- (7, 3): 3 → 7
+- (4, 2): 2 → 4
+- (0, 4): 4 → 0
+- (6, 1): 1 → 6
+- (1, 4): 4 → 1
+- (7, 2): 2 → 7
+- (2, 3): 3 → 2
+
+**Building the dependency chain:**
+- 3 → 2 → 4 → 1 → 6
+- 3 → 2 → 4 → 0
+- 3 → 2 → 7
+- 3 → 5
+
+**Checking for cycles:** I trace all paths:
+- 3 → 2 → 4 → 1 → 6 (no back-edge)
+- 3 → 2 → 4 → 0 (no back-edge)
+- 3 → 2 → 7 (no back-edge)
+- 3 → 5 (no back-edge)
+
+No cycle exists. A valid topological order is: **3, 2, 4, 1, 0, 5, 6, 7**
+
+Since all courses can be scheduled without contradiction, the answer is True.
+
+<answer>True</answer>

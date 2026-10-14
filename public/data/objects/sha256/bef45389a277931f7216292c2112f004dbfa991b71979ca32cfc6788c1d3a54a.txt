@@ -1,0 +1,11 @@
+**Cause:** `app/units.py` mixed unit systems. The module documents 1024-based sizes and `MB`/`GB` use `1024 ** 2` / `1024 ** 3`, but `KB` was set to `1000` (the SI value). So `parse_size("1.5 KB")` returned `1500`, failing the test's `== 1536` assertion (the other two assertions passed).
+
+**Fix (code, not test):** changed the `KB` multiplier to `1024`:
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+Now `parse_size("512 B") == 512`, `parse_size("1.5 KB") == int(1.5 * 1024) == 1536`, and `parse_size("2 MB") == 2 * 1024 * 1024`.
+
+Note: this sandbox blocked running programs, so I verified the three assertions by hand rather than by executing pytest.

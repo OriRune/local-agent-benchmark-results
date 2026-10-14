@@ -1,0 +1,8 @@
+{
+ "answer": "The results are evaluated using two methods: a questionnaire where human respondents rank captions by 'funniness' (comparing NJM, human-generated, and STAIR caption baselines), and an evaluation by Bokete users who assign star ratings to the generated captions.",
+ "evidence": [
+  "12",
+  "13",
+  "14"
+ ]
+}

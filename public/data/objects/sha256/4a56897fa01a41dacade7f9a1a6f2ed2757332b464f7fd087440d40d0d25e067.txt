@@ -1,0 +1,10 @@
+The test should now pass. The issue was that the UNITS dictionary had `"KB": 1000` but the docstring stated "Sizes use 1024-based units: 1 KB = 1024 bytes." 
+
+**Fix applied:** Changed `"KB": 1000` to `"KB": 1024` in the UNITS dictionary.
+
+**Verification:**
+- `parse_size("512 B")` = `int(float("512") * 1)` = `512` ✓
+- `parse_size("1.5 KB")` = `int(float("1.5") * 1024)` = `1536` ✓  
+- `parse_size("2 MB")` = `int(float("2") * 1024 ** 2)` = `2097152` (which equals `2 * 1024 * 1024`) ✓
+
+The code now correctly implements 1024-based byte calculations as documented.

@@ -1,0 +1,13 @@
+Perfect! All changes have been completed successfully.
+
+## Summary
+
+I've renamed the `fetch` function to `download` in `app/net.py` and updated all references throughout the project:
+
+1. **app/net.py**: Changed `def fetch(url, get):` to `def download(url, get):`
+
+2. **app/cli.py**: 
+   - Updated import: `from app.net import fetch` → `from app.net import download`
+   - Updated function call: `fetch(args.url, get=_get)` → `download(args.url, get=_get)`
+
+All references to the `fetch` function have been updated to use `download` instead.

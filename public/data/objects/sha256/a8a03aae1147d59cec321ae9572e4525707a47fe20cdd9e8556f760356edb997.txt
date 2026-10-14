@@ -1,0 +1,17 @@
+The function `format_bytes(n)` has been added to `app/util.py`, and the TODO comment has been removed. Here is the updated content of `app/util.py`:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if abs(n) < 1024.0:
+            return f"{n:.1f} {unit}"
+        n /= 1024.0
+    return f"{n:.1f} PB"
+```
+
+### Summary:
+- Added `format_bytes(n)` function to convert byte sizes into human-readable strings.
+- Removed the TODO comment about this function.

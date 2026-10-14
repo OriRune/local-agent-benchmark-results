@@ -1,0 +1,15 @@
+I have created a shell script named `open_workspace.sh` in your current directory.
+
+This script will:
+1. Open `google.com` in your default browser (which is typically Chrome on Linux Mint) using `xdg-open`.
+2. Open `gedit`, a common text editor on Linux Mint.
+3. Open the file manager at `[private-home]/Documents/llama.cpp` using `xdg-open`.
+
+To use it, you will need to make the script executable and then run it:
+
+```bash
+chmod +x open_workspace.sh
+./open_workspace.sh
+```
+
+If `gedit` is not your preferred editor, you can easily change that line in the script to `mousepad &` or `xed &`.

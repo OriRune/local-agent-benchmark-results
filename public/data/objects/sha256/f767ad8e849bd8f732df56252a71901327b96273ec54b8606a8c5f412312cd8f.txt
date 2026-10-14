@@ -1,0 +1,9 @@
+The `fetch` function in `app/net.py` retries up to `MAX_RETRIES = 3` times. On each failure, it sleeps for `2 ** attempt` seconds:
+
+- **Attempt 0**: sleep `2^0 = 1` second
+- **Attempt 1**: sleep `2^1 = 2` seconds
+- **Attempt 2**: sleep `2^2 = 4` seconds
+
+After the third attempt fails, the loop ends and a `RuntimeError` is raised.
+
+**Total sleep time = 1 + 2 + 4 = 7 seconds.**

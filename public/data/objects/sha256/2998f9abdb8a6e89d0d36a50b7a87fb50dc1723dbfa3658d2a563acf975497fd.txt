@@ -1,0 +1,7 @@
+README.md has been created with documentation for all CLI command-line options:
+
+- `url` - The URL to download (required positional argument)
+- `-o`, `--output` - File to write the downloaded content to (default: stdout)
+- `-q`, `--quiet` - Suppress progress output to stderr
+
+The README also includes usage examples and configuration details (retries, timeout, user agent) from the project.

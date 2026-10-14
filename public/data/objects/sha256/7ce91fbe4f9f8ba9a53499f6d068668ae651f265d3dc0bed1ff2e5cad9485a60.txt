@@ -1,0 +1,5 @@
+Done! I've created `README.md` with a description of the project and a complete table of all CLI options from `cli.py`:
+
+- `url` - what to download (positional argument)
+- `-o` / `--output` - file to write (default: stdout)
+- `-q` / `--quiet` - no progress output

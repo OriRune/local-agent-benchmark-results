@@ -1,0 +1,23 @@
+Here is one possible solution to make 24 using the numbers 6, 2, 2, 4:
+
+We can aim for $6 \times 4 = 24$. We have used 6 and 4. We still have 2 and 2 left, which we don't need to use.
+
+Expression: $6 * 4$
+
+Let's try to use all numbers if possible, although the prompt only states "You can only use each number once," implying we don't *have* to use all of them, but it's good practice to check if a solution using all is possible or if a simpler one is preferred.
+
+If we must use all numbers:
+We need to combine 6, 2, 2, 4 to get 24.
+$6 \times (4 + 2 / 2) = 6 \times (4 + 1) = 6 \times 5 = 30$ (Too high)
+$(6 - 2) \times (4 + 2) = 4 \times 6 = 24$. This uses 6, 2, 4, 2. This works.
+
+Let's use the second solution as it uses all numbers: $(6 - 2) * (4 + 2)$
+
+Check:
+$6 - 2 = 4$
+$4 + 2 = 6$
+$4 \times 6 = 24$
+
+The required format is an arithmetic expression.
+
+<answer>(6 - 2) * (4 + 2)</answer>

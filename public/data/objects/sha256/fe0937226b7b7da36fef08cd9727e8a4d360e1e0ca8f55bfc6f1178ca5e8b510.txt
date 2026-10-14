@@ -1,0 +1,10 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The new function converts a byte count into a human-readable string using 1024-based units (B, KB, MB, GB, TB, PB, EB), following the convention used in the project's tests.
+
+```python
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB', 'PB']:
+        if abs(n) < 1024.0:
+            return f"{n:g} {unit}"
+        n /= 1024.0
+    return f"{n:g} EB"
+```

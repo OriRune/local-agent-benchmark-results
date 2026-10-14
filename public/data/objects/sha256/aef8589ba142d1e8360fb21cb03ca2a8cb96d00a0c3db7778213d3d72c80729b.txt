@@ -1,0 +1,1 @@
+I cannot directly undo Git commits or access version control history with the available tools. You would need to manually locate the affected file and edit it directly using your local system. If you provide the specific file path, I can help with file operations like reading/writing content, but cannot interact with Git history or version control data.

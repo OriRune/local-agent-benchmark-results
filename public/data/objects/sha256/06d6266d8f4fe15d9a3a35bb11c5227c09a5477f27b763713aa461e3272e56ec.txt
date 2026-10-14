@@ -1,0 +1,4 @@
+All references to the function `fetch` have been updated to `download` in the project. Here is a summary of the changes:
+
+1. Renamed `fetch` to `download` in `app/net.py`.
+2. Updated the call to `fetch` in `app/cli.py` to use `download` instead.

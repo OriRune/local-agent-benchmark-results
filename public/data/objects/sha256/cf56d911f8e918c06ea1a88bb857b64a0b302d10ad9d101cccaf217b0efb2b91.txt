@@ -1,0 +1,5 @@
+*{user_location}* = "Enter your location"  
+*{forecast_call}* = "Call weather API with {location}"  
+*{response}* = "Here is the forecast for {location}: {data}"  
+Include o in the prompt like "please give me the oforecast".  
+Use o as a keyword in the template syntax.

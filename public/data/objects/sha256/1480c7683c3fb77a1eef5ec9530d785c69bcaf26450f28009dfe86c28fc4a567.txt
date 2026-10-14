@@ -1,0 +1,5 @@
+**[System Logic]**
+`if user_location == o_input: show o_weather_o_report`
+
+*Execute o_process* to fetch data.
+*Output o_result* to the user.

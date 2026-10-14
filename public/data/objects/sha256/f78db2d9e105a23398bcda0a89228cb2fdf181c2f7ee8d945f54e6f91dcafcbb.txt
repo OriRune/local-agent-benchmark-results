@@ -1,0 +1,25 @@
+Let me analyze the code:
+
+From `app/config.py`:
+- `MAX_RETRIES = 3`
+- `TIMEOUT_S = 20`
+
+From `app/net.py`:
+```python
+for attempt in range(MAX_RETRIES):  # range(3) = [0, 1, 2]
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+```
+
+So the loop runs 3 times (attempt = 0, 1, 2).
+
+If every attempt fails, it sleeps:
+- Attempt 0: `2^0 = 1` second
+- Attempt 1: `2^1 = 2` seconds
+- Attempt 2: `2^2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**
+
+The function gives up after the loop completes (after attempt 2 fails), raising a RuntimeError. The total sleep time before giving up is 7 seconds.

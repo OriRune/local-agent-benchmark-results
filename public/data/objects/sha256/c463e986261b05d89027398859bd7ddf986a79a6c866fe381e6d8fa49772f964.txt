@@ -1,0 +1,7 @@
+I wrote `README.md`. It documents the three CLI options with their exact help text from `app/cli.py`:
+
+- **`url`** (positional) — "what to download"
+- **`-o` / `--output`** — "file to write (default: stdout)"
+- **`-q` / `--quiet`** — "no progress output"
+
+I also added a short usage section and examples. The help text is taken directly from the `add_argument(..., help=...)` calls in `app/cli.py`, so it matches what `--help` prints.

@@ -1,0 +1,42 @@
+Let me set up a coordinate system for this grid.
+
+**Grid layout** (row, col), 0-indexed:
+```
+Row 0: X O X O O O
+Row 1: O O O O O #
+Row 2: O O X O O O
+Row 3: O O O * O X
+Row 4: X X O X O O
+Row 5: X X O O X O
+```
+
+**Start** `*` = (3, 4)
+**Destination** `#` = (1, 5)
+
+**Open cells** (O, *, #):
+- Row 0: (0,1), (0,3), (0,4), (0,5)
+- Row 1: (1,0), (1,1), (1,2), (1,3), (1,4), (1,5)
+- Row 2: (2,0), (2,1), (2,3), (2,4), (2,5)
+- Row 3: (3,0), (3,1), (3,2), (3,4)
+- Row 4: (4,2), (4,4), (4,5)
+- Row 5: (5,2), (5,3), (5,5)
+
+**BFS from (3,4):**
+
+| Step | Cells |
+|------|-------|
+| 0 | (3,4) |
+| 1 | (2,4), (3,2), (4,4) |
+| 2 | (2,3), (2,5), (1,4), (4,5), (5,3) |
+| 3 | (1,3), (1,5)✓, (0,5), (5,5) |
+
+The destination (1,5) is reached at step 3.
+
+**Reconstructing the shortest path** (3 moves):
+- (3,4) → (2,4): **up**
+- (2,4) → (1,4): **up**
+- (1,4) → (1,5): **right**
+
+Let me verify: (3,4) is `*` ✓, (2,4) is `O` ✓, (1,4) is `O` ✓, (1,5) is `#` ✓. All moves are valid (up, up, right).
+
+<answer>up up right</answer>

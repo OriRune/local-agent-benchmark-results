@@ -1,0 +1,47 @@
+## Setting Up the Graph
+
+Each prerequisite `(a_i, b_i)` means course `b_i` must come before `a_i`, so I create an edge `b_i → a_i`.
+
+**Adjacency list:**
+```
+0: []
+1: [12]
+2: [4, 9]
+3: [16, 9, 2, 5, 1]
+4: [0]
+5: [17, 0, 13, 6]
+6: [10]
+7: [8]
+8: []
+9: [6]
+10: [13, 3, 16, 1, 12, 2]
+11: [16, 15, 14, 1, 17, 10]
+12: [9, 5]
+13: [6, 7, 17]
+14: []
+15: [6]
+16: [0, 13, 8]
+17: []
+```
+
+## Detecting a Cycle (DFS)
+
+Tracing the path:
+- **6 → 10** (from prerequisite `(10, 6)`: 10 before 6)
+- **10 → 13** (from prerequisite `(13, 10)`: 13 before 10)
+- **13 → 6** (from prerequisite `(6, 13)`: 6 before 13)
+
+This forms a cycle: **6 → 10 → 13 → 6**
+
+This means:
+- 10 must be taken before 6
+- 13 must be taken before 10
+- 6 must be taken before 13
+
+This is a contradiction — a circular dependency exists.
+
+## Conclusion
+
+Since a cycle exists, it is impossible to finish all courses.
+
+<answer>False</answer>

@@ -1,0 +1,3 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the `# TODO` comment. 
+
+However, due to a technical error in my previous attempts to verify the file content, I could not confirm the final state of the file with a successful `read_file` call. Based on my last successful `edit_file` calls, the function should be present and the comment removed.

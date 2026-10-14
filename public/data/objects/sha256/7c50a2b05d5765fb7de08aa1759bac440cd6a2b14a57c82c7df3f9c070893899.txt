@@ -1,0 +1,26 @@
+To find the expression that equals 24 using the numbers 8, 5, 5, and 9:
+
+1.  First, consider the target number 24.
+2.  Look for ways to reach 24 using the numbers provided:
+    *   $8 \times 3 = 24$ (Can we get 3 from 5, 5, 9? $9 - (5 + 5) = -1$, $9 - 5 - 5 = -1$, $(5+5)-9 = 1$. No.)
+    *   $3 \times 8 = 24$
+    *   $4 \times 6 = 24$
+    *   $12 \times 2 = 24$
+    *   $18 + 6 = 24$
+    *   $20 + 4 = 24$
+3.  Try combinations involving multiplication and subtraction/addition:
+    *   $(5 \times 5) - (9 - 8) = 25 - 1 = 24$
+    *   Wait, let's check the numbers: 8, 5, 5, 9.
+    *   $5 \times 5 = 25$
+    *   $9 - 8 = 1$
+    *   $25 - 1 = 24$
+4.  Construct the expression: $(5 * 5) - (9 - 8)$
+5.  Verify: $25 - 1 = 24$.
+6.  Check constraints: Each number (8, 5, 5, 9) is used exactly once. Operators are +, -, *, /.
+
+Alternative check:
+$5 * 5 - 9 + 8 = 25 - 9 + 8 = 16 + 8 = 24$.
+
+Both expressions are valid. Let's use the first one.
+
+<answer>(5 * 5) - (9 - 8)</answer>

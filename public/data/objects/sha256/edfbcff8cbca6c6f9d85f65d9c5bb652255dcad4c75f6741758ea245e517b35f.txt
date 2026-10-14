@@ -1,0 +1,4 @@
+{
+  "answer": "The results are evaluated using two methods: (1) a human questionnaire in which respondents rank captions by 'funniness' (comparing NJM, human-generated, and STAIR caption), and (2) comparison of average star ratings on the Bokete Ogiri website as rated by Bokete users.",
+  "evidence": ["[12]", "[13]", "[14]"]
+}

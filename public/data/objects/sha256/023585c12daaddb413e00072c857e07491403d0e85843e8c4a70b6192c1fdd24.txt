@@ -1,0 +1,23 @@
+To make 24 using the numbers 9, 5, 6, and 3:
+
+1.  Check combinations:
+    *   (9 - 5) * 6 = 4 * 6 = 24. However, this only uses three numbers. I must use all four numbers: 9, 5, 6, 3.
+    *   Let's try to incorporate the 3:
+    *   (9 - 5) * 6 is 24. To include the 3 without changing the value, I could do: ((9 - 5) * 6) + (3 - 3), but I can only use each number once.
+    *   Let's try: 9 + 5 + 6 + 3 = 23 (Close).
+    *   Let's try: 9 * 3 - (6 - 5) = 27 - 1 = 26 (Close).
+    *   Let's try: 6 * (9 - 5) = 24. To use the 3: 6 * (9 - 5) * (3 / 3) - no, can't use 3 twice.
+    *   Let's try: 3 * (9 - 5 + 4)... no.
+    *   Let's try: 3 * (5 + 9 - 6) = 3 * 8 = 24.
+    *   Check numbers: 3, 5, 9, 6. All used once.
+    *   Calculation: 5 + 9 = 14; 14 - 6 = 8; 8 * 3 = 24.
+
+2.  Verify:
+    *   Numbers used: 3, 5, 9, 6. (Correct)
+    *   Operators: +, -, *. (Correct)
+    *   Result: 3 * (5 + 9 - 6) = 3 * 8 = 24. (Correct)
+
+3.  Format the expression:
+    *   3 * (5 + 9 - 6)
+
+<answer>3 * (5 + 9 - 6)</answer>

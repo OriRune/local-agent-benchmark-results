@@ -1,0 +1,1 @@
+{"answer": "ICD-10 codes are codes from the International Classification of Diseases, 10th revision, used to code death certificates. Zero to multiple ICD-10 codes can be assigned to each line of a death certificate. The dictionaries used contained 3,539 ICD-10 codes (run2) and 6,392 ICD-10 codes (run1). An example code mentioned is I509.", "evidence": [0, 3, 5, 10]}

@@ -1,0 +1,4 @@
+{
+  "answer": "The paper does not explicitly mention training a model. Instead, it focuses on a de-biasing system that analyzes text and provides evidence of gender bias in occupations. The dataset described is used for identifying biases and generating counter-evidence, not for training a model.",
+  "evidence": []
+}

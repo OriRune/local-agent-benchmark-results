@@ -1,0 +1,8 @@
+I have successfully added `- publish release notes` as the last line in `todo.txt`. Here is the updated content of `todo.txt`:
+
+```
+1	- write README
+2	- add proxy support
+3	- tag the release
+4	- publish release notes
+```

@@ -1,0 +1,1 @@
+I have created a `README.md` file in the project root. This file lists the CLI usage and details every command-line option (`url`, `-o`/`--output`, and `-q`/`--quiet`) along with its corresponding help text, as defined in `app/cli.py`.

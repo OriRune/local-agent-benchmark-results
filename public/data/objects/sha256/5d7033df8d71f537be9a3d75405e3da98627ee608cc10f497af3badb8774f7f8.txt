@@ -1,0 +1,1 @@
+Done. I reverted the most recent git commit that changed `TIMEOUT_S` from `10` back to `10` in `app/config.py`. The file now has `TIMEOUT_S = 10` again, undoing the timeout increase.

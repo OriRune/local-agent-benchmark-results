@@ -1,0 +1,9 @@
+The `fetch` function in `app/net.py` has a loop that runs `MAX_RETRIES` times (3), and on each failed attempt it sleeps for `2 ** attempt` seconds:
+
+- Attempt 0: sleep 2^0 = 1 second
+- Attempt 1: sleep 2^1 = 2 seconds
+- Attempt 2: sleep 2^2 = 4 seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**
+
+After the last sleep (4 seconds), the loop exits and raises `RuntimeError("giving up on {url}")`. So the total time spent sleeping before giving up is **7 seconds**.

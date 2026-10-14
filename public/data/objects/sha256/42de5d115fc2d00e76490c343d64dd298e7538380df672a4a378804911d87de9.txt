@@ -1,0 +1,8 @@
+I could not find a file exactly named "vacation ideas" or any file containing that exact phrase in the filename.
+
+However, I found several files that might be what you are looking for:
+- `Desktop/trip ideas 2025.txt` (Contains: Kyoto in spring, road trip down the coast, camping at the lake)
+- `Documents/old stuff/holidayplans.md` (Contains: Lisbon, Lake District cottage, Iceland in winter)
+- `Documents/Personal/Summer Break ideas.docx` (I was unable to read this file as it appeared to be corrupted or not a valid .docx file).
+
+I also found a `Documents/Work/HR/vacation policy 2026.pdf` and `Documents/Work/HR/vacation request form.docx`, but these are related to work policies rather than personal ideas.

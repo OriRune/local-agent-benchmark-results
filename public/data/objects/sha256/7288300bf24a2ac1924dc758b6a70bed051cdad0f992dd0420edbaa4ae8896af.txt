@@ -1,0 +1,20 @@
+I have created and run a Python script named `system_info.py` that displays simple information about your computer's RAM and CPU usage.
+
+Here is the output from the script:
+
+**System Information Script**
+=========================
+
+**--- RAM Usage ---**
+```
+               total        used        free      shared  buff/cache   available
+Mem:            31Gi       4.4Gi       6.5Gi        29Mi        20Gi        26Gi
+Swap:          2.0Gi       1.9Gi        95Mi
+```
+
+**--- CPU Usage Snapshot ---**
+```
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+```
+
+The script uses standard Linux commands (`free -h` and `top -bn 1`) to gather this data. You can find the script in the current directory.

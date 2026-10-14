@@ -1,0 +1,1 @@
+Done. I've reverted `app/config.py` so that `TIMEOUT_S` is back to `10` (from `20`), undoing the change from the most recent commit without using git.

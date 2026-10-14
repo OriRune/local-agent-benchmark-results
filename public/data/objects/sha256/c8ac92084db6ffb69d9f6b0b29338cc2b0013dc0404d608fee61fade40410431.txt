@@ -1,0 +1,12 @@
+So MAX_RETRIES = 3. This means the loop runs for attempt = 0, 1, 2 (3 attempts total).
+
+The sleep times are:
+- attempt 0: 2^0 = 1 second
+- attempt 1: 2^1 = 2 seconds  
+- attempt 2: 2^2 = 4 seconds
+
+Total sleep time = 1 + 2 + 4 = 7 seconds
+
+Using the formula: 2^MAX_RETRIES - 1 = 2^3 - 1 = 8 - 1 = 7 seconds
+
+**Answer: 7 seconds**

@@ -1,0 +1,11 @@
+Done. The README.md has been created with:
+
+- A description of the tool
+- Installation and usage instructions
+- **A table listing every CLI option** with its help text:
+  - `<url>` — what to download
+  - `-o, --output` — file to write (default: stdout)
+  - `-q, --quiet` — no progress output
+- Examples of common usage
+- Architecture notes and configuration details
+- A section on running tests

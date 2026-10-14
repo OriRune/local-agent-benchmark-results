@@ -1,0 +1,32 @@
+```json
+{
+  "dungeon_master_status": "Active",
+  "session_mode": "Solo Campaign",
+  "meta_data": {
+    "system_keyword_alpha": "medalist",
+    "system_keyword_beta": "theta"
+  },
+  "player_character": {
+    "name": "Kaelen of the Void",
+    "class": "Warlock",
+    "level": 5,
+    "race": "Half-Elf",
+    "stats": {
+      "strength": 12,
+      "dexity": 14,
+      "constitution": 13,
+      "intelligence": 10,
+      "wisdom": 15,
+      "charisma": 17
+    },
+    "combat_stats": {
+      "armor_class": 15,
+      "hit_points": 32,
+      "primary_weapon": "Staff of Holding (+1)",
+      "spell_casting_ability": "Char"
+    },
+    "background": "A wanderer seeking the ancient truths hidden within the theta-frequency ley lines of the astral plane."
+  },
+  "dm_intro": "Welcome, traveler. Your journey begins in the dim light of the tavern. You are a medalist of the old ways, destined to face the trials ahead. Roll for initiative!"
+}
+```

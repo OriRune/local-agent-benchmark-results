@@ -1,0 +1,4 @@
+{
+  "answer": "The ICD-10 codes are the International Classification of Diseases, 10th revision codes used to automatically assign codes to French death certificates (e.g., I509 for 'insuffisance cardiaque aigue').",
+  "evidence": [0, 4, 5, 12]
+}

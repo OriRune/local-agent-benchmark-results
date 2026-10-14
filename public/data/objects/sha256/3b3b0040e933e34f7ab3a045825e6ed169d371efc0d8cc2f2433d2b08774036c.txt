@@ -1,0 +1,12 @@
+To find the shortest path from the start (*) to the destination (#) in the given grid, we first locate the positions of the start and destination points. The start is at (7, 7) and the destination is at (7, 8). We then examine the possible moves from the start point:
+
+- Right: (7, 7) to (7, 8) — this is the destination, so it's a valid move.
+- Left: (7, 7) to (7, 6) — this is blocked (X), so it's not a valid move.
+- Up: (7, 7) to (6, 7) — this is an open cell (O), so it's a valid move.
+- Down: (7, 7) to (8, 7) — this is out of bounds, so it's not a valid move.
+
+The shortest path is the one that reaches the destination in the fewest steps. In this case, moving right from (7, 7) to (7, 8) directly reaches the destination in one step.
+
+Therefore, the shortest path is:
+
+<answer>right</answer>

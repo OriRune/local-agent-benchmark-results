@@ -1,0 +1,7 @@
+Done. Here's a summary of the changes:
+
+- **`app/net.py:6`** — Renamed `def fetch(url, get):` → `def download(url, get):`
+- **`app/cli.py:5`** — Updated import: `from app.net import download`
+- **`app/cli.py:18`** — Updated call site: `data = download(args.url, get=_get)`
+
+All 3 locations have been updated consistently.

@@ -1,0 +1,9 @@
+Good news — this is already built in. The file loads your saved tasks on startup (line 109) and saves every change automatically (line 112), so nothing is lost when you reload.
+
+Here's exactly how it works:
+- **On load:** `items` is read from the browser's local storage (`localStorage.getItem("todos")`).
+- **On every change** (add, check, edit, delete): the list is written back to local storage.
+
+So the moment you add or edit a task, it's saved — and reloading the page restores everything instantly. No extra setup needed.
+
+One thing worth knowing: this storage lives in the browser you open the file with. If you switch browsers or clear your browser data, the list resets. If you'd like the list to survive across devices or browser clears, I can switch it to a small cloud-free sync method or export/import — just let me know.

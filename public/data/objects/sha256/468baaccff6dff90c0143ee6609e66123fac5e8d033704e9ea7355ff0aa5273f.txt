@@ -1,0 +1,11 @@
+Done. The most recent commit (`db6d29b` — "raise the download timeout from 10 to 20 seconds") changed `TIMEOUT_S` in `app/config.py` from 10 to 20. I reverted that line directly in the file back to `TIMEOUT_S = 10`; no git commands were used to make the change (git was only used to read the log/diff).
+
+Current `app/config.py`:
+```python
+"""Settings for the downloader."""
+MAX_RETRIES = 3
+TIMEOUT_S = 10
+USER_AGENT = "tiny-downloader/0.2"
+```
+
+Note: the working tree now differs from HEAD by that one line — the revert is uncommitted. Let me know if you'd like it committed.

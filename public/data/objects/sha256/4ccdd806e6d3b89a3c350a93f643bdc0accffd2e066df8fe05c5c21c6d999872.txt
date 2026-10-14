@@ -1,0 +1,11 @@
+I've created `README.md` for the project. The README includes:
+
+- **A one-line description** of what the tool does
+- **Installation / Usage** instructions
+- **A table of all CLI options** extracted from `app/cli.py`:
+  - `url` — positional argument, "what to download"
+  - `-o`, `--output` — "file to write (default: stdout)"
+  - `-q`, `--quiet` — "no progress output"
+- **Examples** for common use cases
+- **Configuration** details from `app/config.py`
+- **Testing** instructions

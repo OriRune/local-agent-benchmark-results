@@ -1,0 +1,1 @@
+The sandbox blocks running programs, but the fix is clear: the `KB` multiplier was `1000` instead of `1024`, so `1.5 KB` was returning `1500` instead of `1536`. Changing that single value makes all three assertions pass.

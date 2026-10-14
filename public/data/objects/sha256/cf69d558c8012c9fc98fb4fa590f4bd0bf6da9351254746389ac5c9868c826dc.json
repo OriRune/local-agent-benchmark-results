@@ -1,0 +1,1 @@
+[{"args":{"pattern":"fetch.js"},"name":"find_files","result":"no files match fetch.js","status":"ok"},{"args":{"pattern":"fetch*"},"name":"find_files","result":"no files match fetch*","status":"ok"}]

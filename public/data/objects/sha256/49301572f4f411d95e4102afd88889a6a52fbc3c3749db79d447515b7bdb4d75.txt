@@ -1,0 +1,15 @@
+Now I can see the full picture. Here's the analysis:
+
+The `fetch` function in `app/net.py` retries up to `MAX_RETRIES` times. Each time it fails with an `OSError`, it sleeps for `2 ** attempt` seconds:
+
+- **Attempt 0** (first failure): sleep `2^0 = 1` second
+- **Attempt 1** (second failure): sleep `2^1 = 2` seconds
+- **Attempt 2** (third failure): sleep `2^2 = 4` seconds
+
+Since `MAX_RETRIES = 3`, the loop runs 3 times. If every attempt fails, the total sleep time is:
+
+**1 + 2 + 4 = 7 seconds**
+
+After the third failed attempt, it raises `RuntimeError(f"giving up on {url}")`.
+
+So the total time spent sleeping before giving up is **7 seconds**.

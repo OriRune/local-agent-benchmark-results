@@ -1,0 +1,9 @@
+```json
+{
+ "answer": "The ICD-10 codes are used for the automatic coding of death certificates in the CLEF eHealth 2018 challenge, representing the International Classification of Diseases, 10th revision.",
+ "evidence": [
+  0,
+  1
+ ]
+}
+```

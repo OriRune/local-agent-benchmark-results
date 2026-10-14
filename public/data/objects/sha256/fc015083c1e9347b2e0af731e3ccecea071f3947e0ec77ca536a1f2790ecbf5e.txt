@@ -1,0 +1,7 @@
+The sandbox denies running programs in this session. The grep confirms no remaining `fetch` references, and the edits are exact renames, so the imports are consistent. Done.
+
+I renamed `fetch` to `download` in `app/net.py` and updated both usages in `app/cli.py`:
+- `app/net.py`: the function definition `def fetch(...)` → `def download(...)`
+- `app/cli.py`: the import `from app.net import fetch` → `download`, and the call `data = fetch(...)` → `download(...)`
+
+A grep for `fetch` returns no matches, so every reference has been updated. (I couldn't run the imports to double-check, since the sandbox blocks program execution here, but the changes are exact renames.)

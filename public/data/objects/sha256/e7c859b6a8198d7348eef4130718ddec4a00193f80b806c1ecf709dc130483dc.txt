@@ -1,0 +1,3 @@
+
+
+The function `format_bytes(n)` has been successfully added to `app/util.py`, and the TODO comment has been removed. The new implementation converts byte values into human-readable formats like '1.5 KB' or '2.3 MB' by iterating through units (B, KB, MB, etc.) and formatting the result with one decimal place. The task is complete.

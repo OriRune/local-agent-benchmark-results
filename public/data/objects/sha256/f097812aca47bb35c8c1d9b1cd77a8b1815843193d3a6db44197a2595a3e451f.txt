@@ -1,0 +1,7 @@
+Done. I renamed the `fetch` function to `download` and updated every reference in the project:
+
+- **`app/net.py:6`** — the definition: `def fetch(...)` → `def download(...)`
+- **`app/cli.py:5`** — the import: `from app.net import fetch` → `from app.net import download`
+- **`app/cli.py:18`** — the call: `data = fetch(...)` → `data = download(...)`
+
+A project-wide search for `fetch` now returns no matches, so all usages are updated. (The sandbox blocked running a syntax check, but the edits are straightforward single-token renames.)

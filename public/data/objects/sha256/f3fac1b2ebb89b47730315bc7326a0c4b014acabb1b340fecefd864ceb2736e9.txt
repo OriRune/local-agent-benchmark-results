@@ -1,0 +1,3 @@
+I've successfully changed MAX_RETRIES from 3 to 5 in `app/config.py`. The change has been applied.
+
+**Summary:** Changed `MAX_RETRIES = 3` to `MAX_RETRIES = 5` in `app/config.py`.

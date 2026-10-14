@@ -1,0 +1,3 @@
+The change has been undone. The file now shows `TIMEOUT_S = 10` instead of `TIMEOUT_S = 20`, which reverts the most recent git commit.
+
+**Summary:** I've undone the most recent git commit (6c4301e) by directly editing `app/config.py`. The change `TIMEOUT_S = 10` has been restored from `TIMEOUT_S = 20`.

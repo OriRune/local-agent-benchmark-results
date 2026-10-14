@@ -1,0 +1,7 @@
+I found the key information. In `app/config.py`, the variable `MAX_RETRIES` is defined as:
+
+```python
+MAX_RETRIES = 3
+```
+
+The value is 3.

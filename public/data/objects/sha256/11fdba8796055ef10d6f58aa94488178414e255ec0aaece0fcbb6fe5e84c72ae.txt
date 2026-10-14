@@ -1,0 +1,13 @@
+I've created a comprehensive README.md for the project. It includes:
+
+1. **Project description** - A minimal command-line URL downloader
+2. **Installation instructions** - Using pip
+3. **CLI options table** - All three command line options with their help text:
+   - `url` (positional) - "what to download"
+   - `-o, --output` - "file to write (default: stdout)"
+   - `-q, --quiet` - "no progress output"
+4. **Usage examples** - Demonstrating basic downloads and saving to files
+5. **Configuration documentation** - The settings from `app/config.py`
+6. **License placeholder** - MIT license
+
+The README is ready for use and documents the CLI interface as requested.

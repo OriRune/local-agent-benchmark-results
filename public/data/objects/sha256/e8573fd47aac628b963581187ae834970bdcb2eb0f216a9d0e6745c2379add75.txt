@@ -1,0 +1,15 @@
+# tinydl
+
+A simple command-line downloader.
+
+## Usage
+
+```bash
+tinydl <url> [-o <file>] [-q]
+```
+
+## Command Line Options
+
+- `url`: what to download
+- `-o`, `--output`: file to write (default: stdout)
+- `-q`, `--quiet`: no progress output

@@ -1,0 +1,23 @@
+To find the expression that equals 24 using the numbers 10, 4, 9, and 7:
+
+1.  First, let's look for ways to reach 24 using multiplication or addition.
+2.  $4 \times 6 = 24$. Can we get 6 from 10, 9, and 7?
+    $10 + 7 - 9 = 8$ (No)
+    $9 - (10 - 7) = 6$ (Yes)
+    Expression: $4 * (9 - (10 - 7))$
+    Check: $4 * (9 - 3) = 4 * 6 = 24$.
+3.  Let's try another way: $10 + 7 + 9 - 4 = 22$ (No).
+4.  Let's try: $(10 \times 7) / 4 + 9 = 70 / 4 + 9 = 17.5 + 9 = 26.5$ (No).
+5.  Let's try: $(10 - 4) \times (9 - 7) = 6 \times 2 = 12$ (No).
+6.  Let's try: $(10 + 9 + 7) - 4 = 26 - 4 = 22$ (No).
+7.  Let's try: $(10 \times 4) - (9 + 7) = 40 - 16 = 24$.
+    Check: $10 * 4 - (9 + 7) = 40 - 16 = 24$.
+
+Wait, let's re-verify the numbers: 10, 4, 9, 7.
+$10 * 4 - (9 + 7) = 40 - 16 = 24$.
+
+All numbers used: 10, 4, 9, 7.
+Operators used: *, -, +.
+Each number used once.
+
+<answer>10 * 4 - (9 + 7)</answer>

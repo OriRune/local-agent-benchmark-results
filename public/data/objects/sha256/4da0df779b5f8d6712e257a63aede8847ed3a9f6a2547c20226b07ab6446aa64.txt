@@ -1,0 +1,1 @@
+Done. I've edited `app/config.py` directly to change `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`, undoing the most recent git commit. The file now shows as modified in git status, ready to be committed if needed.

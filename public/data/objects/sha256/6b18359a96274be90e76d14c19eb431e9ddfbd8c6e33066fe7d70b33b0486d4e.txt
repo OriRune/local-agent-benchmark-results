@@ -1,0 +1,6 @@
+The file `data/events.log` contains error code **E-4471** on line **2417**.
+
+The full error message is:
+```
+ERROR code=E-4471 disk quota exceeded while saving part 7
+```

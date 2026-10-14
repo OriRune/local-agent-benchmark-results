@@ -1,0 +1,4 @@
+
+MAX_RETRIES is not defined in the current scope. It might be defined in a parent scope or in a different module or file. You can check the file or module that it was defined in by running:
+
+find_files(pattern="MAX_RETRIES", path="..", sort="name")

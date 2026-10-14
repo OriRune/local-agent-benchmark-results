@@ -1,0 +1,3 @@
+**MAX_RETRIES** is defined in `app/config.py` with a value of **3**.
+
+The definition is on line 2 of the file. It's also imported and used in `app/net.py` for retry logic in network operations.

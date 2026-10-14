@@ -1,0 +1,12 @@
+To find the total sleep time, we look at the `fetch` function in `app/net.py` and the configuration in `app/config.py`:
+
+1.  **`app/config.py`** defines `MAX_RETRIES = 3`.
+2.  **`app/net.py`** uses a loop: `for attempt in range(MAX_RETRIES):`. This means the loop runs for `attempt = 0`, `attempt = 1`, and `attempt = 2`.
+3.  Inside the `except` block, it sleeps for `2 ** attempt` seconds.
+
+If every attempt fails:
+- **Attempt 0**: Fails, sleeps $2^0 = 1$ second.
+- **Attempt 1**: Fails, sleeps $2^1 = 2$ seconds.
+- **Attempt 2**: Fails, then the loop finishes and raises a `RuntimeError`.
+
+Total sleep time = $1 + 2 = 3$ seconds.

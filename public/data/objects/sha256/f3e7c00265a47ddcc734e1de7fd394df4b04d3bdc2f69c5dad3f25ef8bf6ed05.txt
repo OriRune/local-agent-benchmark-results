@@ -1,0 +1,11 @@
+```json
+{
+  "answer": "The results are evaluated through a human questionnaire and real-world user feedback on the Bokete Ogiri website. Human evaluations ranked human-generated captions as funniest (67.99%), followed by NJM (22.59%), and STAIR captions (9.41%). Bokete users also rated NJM-generated captions higher (3.23 stars) compared to STAIR captions (1.71 stars).",
+
+  "evidence": [
+    12,
+    13,
+    14
+  ]
+}
+```

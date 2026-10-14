@@ -1,0 +1,26 @@
+## Setting Up the Graph
+
+Each prerequisite `(a, b)` means course `b` must be taken before course `a`, so I'll create an edge `b → a`.
+
+**Edges:**
+- 5 → 4, 2 → 6, 0 → 10, 4 → 9, 1 → 2, 10 → 7, 4 → 0, 5 → 1, 9 → 3, 5 → 0, 4 → 6, 10 → 3, 0 → 2, 3 → 8, 5 → 10
+
+## Checking for Cycles
+
+Let me trace the path starting from course 5:
+
+$$5 \to 4 \to 0 \to 10 \to 5$$
+
+Let me verify each edge:
+- **5 → 4**: from `(4, 5)` ✓
+- **4 → 0**: from `(0, 4)` ✓
+- **0 → 10**: from `(10, 0)` ✓
+- **10 → 5**: from `(10, 5)` ✓
+
+This forms a **cycle**: `5 → 4 → 0 → 10 → 5`.
+
+## Conclusion
+
+Since there is a cycle in the prerequisite graph, there is no valid ordering to complete all courses.
+
+<answer>False</answer>

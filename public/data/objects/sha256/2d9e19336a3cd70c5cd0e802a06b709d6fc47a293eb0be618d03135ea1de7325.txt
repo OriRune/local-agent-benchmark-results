@@ -1,0 +1,1 @@
+The error code pattern you're looking for (like "YYYY-MM-DD HH:MM:SS ERROR") isn't found in data/events.log. Could you share a specific error code you're interested in? For example: "404", "500", or a specific message?

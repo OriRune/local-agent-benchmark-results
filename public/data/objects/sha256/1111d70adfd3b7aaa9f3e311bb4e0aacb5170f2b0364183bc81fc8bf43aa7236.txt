@@ -1,0 +1,3 @@
+Your to-do list already saves items automatically — it uses the browser's local storage, so items persist across reloads and even between sessions.
+
+No change is needed. If you're seeing items disappear on reload, it's usually because you're testing in a private/incognito window (which doesn't keep storage) or a different browser. Try reloading a normal window and it should stick.

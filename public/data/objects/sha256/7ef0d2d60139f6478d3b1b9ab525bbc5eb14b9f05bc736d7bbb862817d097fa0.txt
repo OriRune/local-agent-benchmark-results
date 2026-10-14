@@ -1,0 +1,12 @@
+
+README.md has been created and contains a list of all command‑line options for the project:
+
+# Project CLI
+
+This project provides a tiny command-line interface for downloading files.
+
+## Options
+
+- **url** (required): `what to download`
+- **-o**, **--output**: `file to write (default: stdout)`
+- **-q**, **--quiet**: `no progress output`

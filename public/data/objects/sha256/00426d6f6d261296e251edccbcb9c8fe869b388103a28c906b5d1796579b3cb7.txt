@@ -1,0 +1,13 @@
+I've created a comprehensive README.md for the tinydl project. The README includes:
+
+- A brief description of the project
+- Installation instructions
+- Basic usage syntax
+- A table documenting all command-line options with their short forms and descriptions
+- Practical examples showing how to use each option
+- A brief note about the underlying implementation using urllib
+
+The documentation is based on the CLI implementation in `app/cli.py`, which defines three options:
+- `url` (required positional argument)
+- `-o, --output` (optional flag to specify output file)
+- `-q, --quiet` (optional flag to suppress progress output)

@@ -1,0 +1,3 @@
+The verification confirms the answer. Stage 2 must carry **11,529.43 kg** of propellant to achieve the total delta-v of 9,400 m/s.
+
+ANSWER: 11529.43

@@ -1,0 +1,21 @@
+I've created the script `system_info.sh` for you. The sandbox environment doesn't allow running shells, but you can run this script directly on your Linux Mint system.
+
+Here's what the script does:
+
+**RAM Information:**
+- Shows total, used, and available memory in human-readable format (GB/MB)
+- Also shows swap space usage
+
+**CPU Information:**
+- Displays CPU usage percentage and load averages
+
+**Load Average:**
+- Shows system load over 1, 5, and 15 minutes
+
+**To run the script:**
+```bash
+chmod +x system_info.sh
+./system_info.sh
+```
+
+The script will display a nicely formatted report showing your system's current RAM and CPU usage in the terminal.

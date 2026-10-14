@@ -1,0 +1,9 @@
+The README.md has been written to `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/ff36be227224c7c1d63a2186-fd9babc7d4/workspace/project/README.md`.
+
+It lists all three command line options from the CLI parser in `app/cli.py`:
+
+1. `url` (positional, required) — help: "what to download"
+2. `-o`, `--output` (optional) — help: "file to write (default: stdout)"
+3. `-q`, `--quiet` (flag) — help: "no progress output"
+
+The README includes a table with option names, short forms, types, required status, and help text; detailed descriptions; usage examples; and brief notes about the tool's behavior.

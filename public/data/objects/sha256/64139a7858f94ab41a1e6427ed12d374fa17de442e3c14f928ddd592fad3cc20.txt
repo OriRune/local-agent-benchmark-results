@@ -1,0 +1,12 @@
+The error in `app/units.py` is located in the `UNITS` dictionary definition. 
+
+The docstring and the test case `assert parse_size("1.5 KB") == 1536` indicate that the system should use binary units (base 1024), where $1\text{ KB} = 1024\text{ bytes}$. However, the dictionary currently defines `"KB"` as $1000$:
+
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+To fix this, `"KB"` must be changed to `1024`.
+
+**Summary of fix:**
+Change `UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}` to `UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}` in `app/units.py`.

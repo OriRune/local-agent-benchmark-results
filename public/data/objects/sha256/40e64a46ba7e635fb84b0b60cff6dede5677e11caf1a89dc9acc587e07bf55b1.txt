@@ -1,0 +1,9 @@
+I've created a `README.md` file for this project. Based on the `cli.py` file, I've documented all three command line options:
+
+| Option | Short | Long | Description |
+|--------|-------|------|-------------|
+| `--url` | - | - | what to download |
+| `-o` / `--output` | `-o` | `--output` | file to write (default: stdout) |
+| `-q` / `--quiet` | `-q` | `--quiet` | no progress output |
+
+The README also includes usage examples, exit codes, and a license section.

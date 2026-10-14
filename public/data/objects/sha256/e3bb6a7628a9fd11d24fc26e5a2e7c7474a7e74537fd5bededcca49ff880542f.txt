@@ -1,0 +1,5 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function divides `n` by 1024 until it's below 1024, picking the appropriate unit (B, KB, MB, GB, TB, PB). Values under 1024 are returned as whole bytes (e.g. `500 B`), and larger values use one decimal place (e.g. `1.5 KB`, `1.0 MB`).
+
+Note: I couldn't execute a test run since the sandbox blocks program execution, but I verified the logic by tracing it (e.g. `1536 → "1.5 KB"`, `1024 → "1.0 KB"`, `500 → "500 B"`, `1048576 → "1.0 MB"`).

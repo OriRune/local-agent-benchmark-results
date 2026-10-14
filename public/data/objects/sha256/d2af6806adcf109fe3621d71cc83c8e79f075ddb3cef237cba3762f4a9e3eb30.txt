@@ -1,0 +1,36 @@
+# T8
+
+**Result:** fail · done · 3 steps · 0 calls · 6 s
+
+## user
+
+Find every TODO comment in the Python code and add each one as a new line to todo.txt.
+
+## assistant
+
+```json
+{"name": "find_files", "arguments": {"pattern": "*.py", "path": ".", "sort": "name"}}
+```
+
+
+## user (nudge)
+
+Your last reply contained a tool call in the wrong format, so nothing was run. Call the tool again with its arguments as a JSON object.
+
+## assistant
+
+```json
+{"name": "find_files", "arguments": {"pattern": "*.py", "path": ".", "sort": "name"}}
+```
+
+
+## user (nudge)
+
+Your last reply contained a tool call in the wrong format, so nothing was run. Call the tool again with its arguments as a JSON object.
+
+## assistant
+
+```json
+{"name": "find_files", "arguments": {"pattern": "*.py", "path": ".", "sort": "name"}}
+```
+

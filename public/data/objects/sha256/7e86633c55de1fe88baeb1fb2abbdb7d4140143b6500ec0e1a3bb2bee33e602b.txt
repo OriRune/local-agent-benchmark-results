@@ -1,0 +1,4 @@
+{
+  "answer": "The ICD-10 codes are the medical concepts used to classify causes of death found in the death certificates, which were matched to dictionary terms to assign codes.",
+  "evidence": [0, 1, 3, 4, 5, 12, 13, 14, 15, 17, 18, 19]
+}

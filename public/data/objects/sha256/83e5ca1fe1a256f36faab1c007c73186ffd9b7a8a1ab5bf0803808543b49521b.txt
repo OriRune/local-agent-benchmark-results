@@ -1,0 +1,11 @@
+I have created a shell script named `open_tools.sh` in the current directory.
+
+This script will:
+1. Open **Google Chrome** with `google.com`.
+2. Open **gedit** (a common GUI text editor on Linux Mint).
+3. Open **Nautilus** (the default file manager) at the `[private-home]/Documents/llama.cpp` directory.
+
+To run it, you can use:
+```bash
+bash open_tools.sh
+```

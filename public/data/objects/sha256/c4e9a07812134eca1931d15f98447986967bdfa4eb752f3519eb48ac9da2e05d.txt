@@ -1,0 +1,14 @@
+Good news! The HTML file **already has persistence built-in**. It uses the browser's `localStorage` to save and load your todos:
+
+- **Line 167-169**: `loadTodos()` function loads saved todos from localStorage when the page opens
+- **Line 171-174**: `saveTodos()` function saves todos to localStorage after any change
+- **Line 280**: The page automatically calls `loadTodos()` when it initializes
+
+This means your todos will persist across page reloads and browser sessions automatically!
+
+**How it works:**
+1. When you add, edit, check off, or delete a task, it's immediately saved to your browser's local storage
+2. When you reload the page, `loadTodos()` retrieves all your saved tasks
+3. The data is stored only in your browser, so it's private to your device
+
+Just open `todo_list.html` in your browser, add some tasks, reload the page, and your tasks will still be there! 🎉

@@ -1,0 +1,8 @@
+Based on my analysis of books.csv:
+
+**Different books:** There are 22 rows, but "Project Hail Mary" by Andy Weir appears twice (identical entries), so there are **21 different books**.
+
+**Finished between July and December 2025:** A book counts if it has a completed (non-empty) end date falling in July–December. Middlemarch started in August but has no end date, so it wasn't finished. The 10 books finished in that window:
+- Dune (Jul 10), The Hobbit (Jul 19), Sapiens (Aug 15), The Night Circus (Sep 12), Tomorrow and Tomorrow and Tomorrow (Sep 30), The Thursday Murder Club (Oct 9), Babel (Nov 5), Lessons in Chemistry (Nov 20), A Psalm for the Wild-Built (Nov 24), The Bear and the Nightingale (Dec 16)
+
+ANSWER: 21, 10

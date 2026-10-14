@@ -1,0 +1,15 @@
+Now I have all the information needed:
+
+1. `MAX_RETRIES = 3` - the loop runs for `attempt` values 0, 1, 2 (3 iterations)
+2. On each failed attempt, it sleeps for `2 ** attempt` seconds
+3. If every attempt fails, it will sleep before each retry (but not after the last failed attempt since it raises an exception)
+
+Let me calculate the total sleep time:
+- Attempt 0 (fails): sleep `2^0 = 1` second
+- Attempt 1 (fails): sleep `2^1 = 2` seconds  
+- Attempt 2 (fails): sleep `2^2 = 4` seconds
+- Loop ends, raises exception
+
+Total sleep = 1 + 2 + 4 = **7 seconds**
+
+The function sleeps a total of **7 seconds** before giving up.

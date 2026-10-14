@@ -1,0 +1,1 @@
+I have found all "TODO" comments in the Python code files (`app/net.py` and `app/util.py`) and added them as new lines to `todo.txt`.

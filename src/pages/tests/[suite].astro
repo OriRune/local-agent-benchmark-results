@@ -1,0 +1,10 @@
+---
+import TestExplanation from '../../components/TestExplanation';
+import EvidenceAvailability from '../../components/EvidenceAvailability.astro';
+import QuestionBank from '../../components/QuestionBank';
+import { BANK_PAGE_SIZE } from '../../lib/question-bank';
+import Shell from '../../layouts/Shell.astro';import{currentData}from'../../lib/data';
+export async function getStaticPaths(){const{index}=await currentData();return index.suites.map(s=>({params:{suite:s.id},props:{suite:s}}));}
+const{suite}=Astro.props;const{index,release}=await currentData();const questions=index.questions.filter(q=>q.suite_id===suite.id);
+---
+<Shell title={suite.name}><a href="/tests/">← All suites</a><div class="eyebrow" style="margin-top:28px">{suite.group}</div><h1>{suite.name}</h1><p class="lede">{suite.description}</p><section class="panel"><TestExplanation category explanation={index.test_descriptions?.suites[suite.id]}/><h2>How it is scored</h2><p>{suite.scoring}</p><p><strong>{suite.metric}</strong> · {suite.primary_question_ids.length} fixed primary questions</p><small>Version {suite.selection_revision}. Excluded and review-only questions remain available below.</small><p>{suite.source.attribution}{suite.source.url&&<> · <a href={suite.source.url}>Original source</a></>}{suite.source.terms_url&&<> · <a href={suite.source.terms_url}>Publication terms</a></>}</p><EvidenceAvailability availability={index.availability} suiteId={suite.id}/></section><section class="panel"><h2>Question bank</h2><QuestionBank releaseId={release.release_id} questions={questions} descriptions={index.test_descriptions?.questions} client:load/><noscript><p>Remaining questions (search and pagination require JavaScript):</p><ul class="question-list">{questions.slice(BANK_PAGE_SIZE).map(q=><li><a href={`/questions/${q.id}/`}>{q.source_id} · {index.test_descriptions?.questions[q.id]?.title ?? q.title}</a>{index.test_descriptions?.questions[q.id] && <p>{index.test_descriptions.questions[q.id]!.description}</p>}<small>{q.scoring_status}</small></li>)}</ul></noscript></section></Shell>

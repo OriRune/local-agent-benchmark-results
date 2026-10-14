@@ -1,0 +1,15 @@
+Based on the clues provided, we can deduce the arrangement of the houses and their inhabitants as follows:
+
+1.  **House Assignments:**
+    *   Clue 1 states **Bob** is in the third house.
+    *   Clue 2 states **Arnold** is in the second house.
+    *   Since there are only three people (Bob, Arnold, Alice), the remaining person, **Alice**, must be in the first house.
+
+2.  **Verification of Attributes:**
+    *   **House 2 (Arnold):** Clue 3 says Arnold is the **Brit**. Clue 6 says Arnold is the **cat** lover.
+    *   **House 1 (Alice):** Clue 4 says the **Dane** is Alice. Clue 5 says the **dog** owner is the Dane. Therefore, Alice owns the dog.
+    *   **House 3 (Bob):** By elimination, Bob is the **Chinese** person and owns the **bird**.
+
+The person living in House 1 is Alice.
+
+<answer>Alice</answer>

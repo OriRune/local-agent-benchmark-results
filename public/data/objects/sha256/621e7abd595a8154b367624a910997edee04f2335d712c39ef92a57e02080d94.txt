@@ -1,0 +1,1 @@
+The error code `E-4471` is contained on line 2417 of `data/events.log`.

@@ -1,0 +1,14 @@
+The function `format_bytes(n)` has been successfully added to `app/util.py` and the TODO comment has been removed. The code now looks like this:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+def format_bytes(n):
+    units = ['B', 'KB', 'MB', 'GB', 'TB']
+    size = n
+    for unit in units:
+        if size < 1024:
+            return f'{size:.1f} {unit}'
+        size /= 1024
+```

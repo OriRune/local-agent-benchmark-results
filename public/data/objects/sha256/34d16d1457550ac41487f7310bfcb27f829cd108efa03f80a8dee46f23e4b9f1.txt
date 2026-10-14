@@ -1,0 +1,5 @@
+
+{
+  "answer": "They train on 11,529,432 segmented Chinese words extracted from Chinese Wikipedia (and related corpora for evaluation).",
+  "evidence": [12]
+}

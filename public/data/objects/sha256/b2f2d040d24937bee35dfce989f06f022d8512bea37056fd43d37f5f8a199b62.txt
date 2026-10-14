@@ -1,0 +1,21 @@
+| Day | Location | Activities |
+| :--- | :--- | :--- |
+| 1 | Delhi | Arrival, India Gate, Connaught Place |
+| 2 | Delhi | Red Fort, Jama Masjid, Humayun's Tomb |
+| 3 | Delhi -> Agra | Taj Mahal, Agra Fort |
+| 4 | Agra | Fatehpur Sikri, Taj Mahal Sunrise |
+| 5 | Agra -> Jaipur | Amber Fort, City Palace |
+| 6 | Jaipur | Hawa Mahal, Jaigarh Fort |
+| 7 | Jaipur -> Delhi | Shopping, Departure |
+
+******
+
+| Day | Location | Activities |
+| :--- | :--- | :--- |
+| 1 | Beijing | Arrival, Forbidden City, Temple of Heaven |
+| 2 | Beijing | Great Wall (Mutianyu), Summer Palace |
+| 3 | Beijing -> Xi'an | High-speed train, Terracotta Warriors |
+| 4 | Xi'an | City Wall, Muslim Quarter, Big Wild Goose Pagoda |
+| 5 | Xi'an -> Chengdu | Flight, Panda Base, Chunxi Road |
+| 6 | Chengdu | Sichuan Opera, Jinli Ancient Street |
+| 7 | Chengdu -> Departure | Last minute shopping, Airport transfer |

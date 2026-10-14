@@ -1,0 +1,34 @@
+I have created a Python script named `system_info.py` that displays the CPU usage, number of cores, and RAM statistics (total, used, and percentage).
+
+The script uses the `psutil` library, which is a standard for retrieving system information in Python.
+
+### Script Content:
+```python
+import psutil
+import os
+
+def show_system_info():
+    # CPU Usage
+    cpu_usage = psutil.cpu_percent(interval=1)
+    cpu_count = psutil.cpu_count(logical=True)
+    
+    # RAM Usage
+    memory = psutil.virtual_memory()
+    
+    print("--- System Information ---")
+    print(f"CPU Usage: {cpu_usage}%")
+    print(f"CPU Cores: {cpu_count}")
+    print(f"RAM Total: {memory.total / (1024**3):.2f} GB")
+    print(f"RAM Used: {memory.used / (1024**3):.2f} GB")
+    print(f"RAM Percentage: {memory.percent}%")
+    print("---------------------------")
+
+if __name__ == "__main__":
+    show_system_info()
+```
+
+### How to run it:
+You can run the script from your terminal using:
+```bash
+python3 system_info.py
+```

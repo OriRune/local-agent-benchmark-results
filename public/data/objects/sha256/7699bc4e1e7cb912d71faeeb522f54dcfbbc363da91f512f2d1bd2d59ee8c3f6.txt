@@ -1,0 +1,10 @@
+I created `README.md` for the project. 
+
+The CLI lives in `app/cli.py` (the `tinydl` downloader), and I extracted every option directly from its `argparse` definitions since the sandbox blocks running programs:
+
+- **`url`** (positional) — `what to download`
+- **`-o`, `--output`** — `file to write (default: stdout)`
+- **`-q`, `--quiet`** — `no progress output`
+- **`-h`, `--help`** — the standard argparse auto-added help flag
+
+Each is listed in a table with its verbatim help text, plus a short section on the non-flag download behavior (retries, timeout, user agent) and a file map.

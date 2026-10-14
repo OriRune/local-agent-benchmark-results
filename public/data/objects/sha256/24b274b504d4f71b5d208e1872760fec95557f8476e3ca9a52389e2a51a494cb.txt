@@ -1,0 +1,3 @@
+I have changed `MAX_RETRIES` to 5 in the file `app/config.py`. The variable was previously set to 3, and now it is updated to 5. This change will be reflected in `app/net.py` since it imports `MAX_RETRIES` from `app/config.py`.
+
+No other files needed to be modified. The task is complete.

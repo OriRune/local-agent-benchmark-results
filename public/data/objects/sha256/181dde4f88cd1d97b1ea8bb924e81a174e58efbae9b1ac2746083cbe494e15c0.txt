@@ -1,0 +1,3 @@
+I have not found any local LLMs yet because I was unable to successfully execute the search command to look for common model file extensions (like `.gguf`). The tool calls were interrupted before any results could be retrieved.
+
+I could not find or finish the search for your LLM files.

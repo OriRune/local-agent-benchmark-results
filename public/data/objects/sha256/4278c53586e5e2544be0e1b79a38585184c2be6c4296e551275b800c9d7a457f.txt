@@ -1,0 +1,7 @@
+Done. I renamed the function `fetch` to `download` and updated every usage in the project.
+
+**Changes made:**
+- `app/net.py`: renamed the function definition `def fetch(...)` → `def download(...)`.
+- `app/cli.py`: updated the import `from app.net import fetch` → `from app.net import download`, and the call site `fetch(args.url, get=_get)` → `download(args.url, get=_get)`.
+
+**Verification:** A project-wide search for `fetch` returns no matches, and the only remaining `download` references are the renamed function and pre-existing unrelated strings ("what to download", "downloader", "tiny-downloader"). No other files in the project referenced `fetch`.

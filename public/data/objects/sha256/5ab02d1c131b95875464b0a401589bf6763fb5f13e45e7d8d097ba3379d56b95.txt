@@ -1,0 +1,21 @@
+| Day | Location | Activity |
+| :--- | :--- | :--- |
+| 1 | Delhi | Arrival, India Gate, Connaught Place |
+| 2 | Delhi | Red Fort, Jama Masjid, Humayun's Tomb |
+| 3 | Agra | Taj Mahal, Agra Fort, Fatehpur Sikri |
+| 4 | Jaipur | Amber Fort, City Palace, Hawa Mahal |
+| 5 | Jaipur | Jaigarh Fort, Jantar Mantar, Shopping |
+| 6 | Varanasi | Ganga Aarti, Sarnath, Ghats Walk |
+| 7 | Varanasi | Morning Boat Ride, Departure |
+
+******
+
+| Day | Location | Activity |
+| :--- | :--- | :--- |
+| 1 | Beijing | Arrival, Tiananmen Square, Forbidden City |
+| 2 | Beijing | Great Wall (Mutianyu), Summer Palace |
+| 3 | Xi'an | Terracotta Warriors, Muslim Quarter |
+| 4 | Xi'an | City Wall Bike Ride, Big Wild Goose Pagoda |
+| 5 | Chengdu | Chengdu Research Base (Pandas) |
+| 6 | Chengdu | Jinli Ancient Street, Hotpot Dinner |
+| 7 | Chengdu | Departure |

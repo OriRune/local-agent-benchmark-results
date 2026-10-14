@@ -1,0 +1,4 @@
+{
+  "answer": "The model was trained on 11,529,432 segmented words downloaded from parts of Chinese Wikipedia articles.",
+  "evidence": [12]
+}

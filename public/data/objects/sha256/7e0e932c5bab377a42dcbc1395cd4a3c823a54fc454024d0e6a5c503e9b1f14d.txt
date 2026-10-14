@@ -1,0 +1,9 @@
+The `MAX_RETRIES` value in `app/config.py` is **3**.
+
+Thus, if every fetch attempt fails, the total sleep time is:
+
+- 1st attempt: sleeps **2^0 = 1 second**
+- 2nd attempt: sleeps **2^1 = 2 seconds**
+- 3rd attempt: sleeps **2^2 = 4 seconds**
+
+**Total sleep time before giving up: 1 + 2 + 4 = 7 seconds.**

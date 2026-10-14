@@ -1,0 +1,3 @@
+I was unable to locate the project files. The directory `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/e3b7d998c0535b4f512239a7-726c3bcc44/workspace/project` does not exist or is not accessible. I only found a `workspace/` directory containing `meta.json`, `resources.jsonl`, and `trace.jsonl`, but no `cli.py`, `config.py`, or any other project source files.
+
+I cannot write a README.md listing CLI command-line options because I could not find the project source code. Please verify the correct project path and provide it, or upload the relevant files.

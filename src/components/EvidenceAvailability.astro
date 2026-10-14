@@ -1,0 +1,9 @@
+---
+import type { OverviewData } from '../lib/public-types';
+interface Props { availability: OverviewData['availability']; suiteId: string }
+const { availability, suiteId } = Astro.props;
+const rows = availability.filter(row => row.suite_id === suiteId);
+const components = [...new Set(rows.map(row => row.component))];
+const states = ['full', 'redacted', 'source_link_only', 'not_recorded', 'withheld'] as const;
+---
+<details><summary>Recorded evidence availability</summary><p>Counts cover question definitions and all saved attempts, including historical attempts. They are evidence-component counts, not scored questions. A zero means no components in that state.</p><div class="table-scroll" role="region" aria-label="Evidence availability counts" tabindex="0"><table><thead><tr><th>Component</th>{states.map(state=><th>{state.replaceAll('_',' ')}</th>)}</tr></thead><tbody>{components.map(component=><tr><th scope="row">{component}</th>{states.map(state=><td>{rows.find(row=>row.component===component&&row.availability===state)?.count??0}</td>)}</tr>)}</tbody></table></div><p><strong>Full:</strong> recorded material is available. <strong>Redacted:</strong> explicit publication rules removed identified text. <strong>Source link only:</strong> follow the cited source. <strong>Not recorded:</strong> no saved component. <strong>Withheld:</strong> material is not published.</p></details>

@@ -1,0 +1,19 @@
+I have analyzed the `books.csv` file.
+
+First, I identified the unique books listed in the file. Although "Project Hail Mary" appears twice, it is counted as one unique book. There are 21 different books in total.
+
+Next, I looked for books that were finished between July and December (inclusive) by checking the "End Date" column. The following books were finished in that period:
+1. Dune (July 10)
+2. The Hobbit (July 19)
+3. Sapiens (August 15)
+4. The Night Circus (September 12)
+5. Tomorrow and Tomorrow and Tomorrow (September 30)
+6. The Thursday Murder Club (October 9)
+7. Babel (November 5)
+8. Lessons in Chemistry (November 20)
+9. A Psalm for the Wild-Built (November 24)
+10. The Bear and the Nightingale (December 16)
+
+Middlemarch was not counted as it has no end date.
+
+ANSWER: 21, 10

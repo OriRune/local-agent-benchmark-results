@@ -1,0 +1,2 @@
+With `MAX_RETRIES = 3`, the total sleep time before giving up is:
+**2⁰ + 2¹ + 2² = 1 + 2 + 4 = 7 seconds.**

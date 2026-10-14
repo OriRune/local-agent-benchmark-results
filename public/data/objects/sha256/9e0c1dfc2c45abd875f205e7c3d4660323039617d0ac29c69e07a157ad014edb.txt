@@ -1,0 +1,9 @@
+Done. I've created a comprehensive `README.md` that lists all CLI command line options from `app/cli.py` with their help text:
+
+| Option | Short | Description |
+|--------|-------|-------------|
+| `url` | - | what to download (required) |
+| `-o, --output` | - | file to write (default: stdout) |
+| `-q, --quiet` | - | no progress output |
+
+The README also includes installation instructions, usage examples, and configuration details (retries: 3, timeout: 20s, user agent: tiny-downloader/0.2).

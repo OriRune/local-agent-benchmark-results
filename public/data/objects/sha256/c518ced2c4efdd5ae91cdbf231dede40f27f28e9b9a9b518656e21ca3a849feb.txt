@@ -1,0 +1,7 @@
+{
+"answer": "The ICD-10 codes are the codes from the International Classification of Diseases, 10th revision, which are automatically assigned to French death certificates in this study.",
+"evidence": [
+"0",
+"3"
+]
+}

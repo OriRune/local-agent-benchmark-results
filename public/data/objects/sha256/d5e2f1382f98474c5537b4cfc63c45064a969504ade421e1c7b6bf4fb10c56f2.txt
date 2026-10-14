@@ -1,0 +1,8 @@
+I have created a shell script named `open_files.sh` with the following content.
+
+This script will:
+1. Open Chrome with `google.com` loaded.
+2. Open the `nano` text editor.
+3. Open the file manager showing `[private-home]/Documents/llama.cpp`.
+
+You can run this script by making it executable (e.g., `chmod +x open_files.sh`) and then executing it (`./open_files.sh`).

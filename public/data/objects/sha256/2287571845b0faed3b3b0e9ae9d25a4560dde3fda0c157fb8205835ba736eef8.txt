@@ -1,0 +1,15 @@
+One possible solution is $(9 - 7) * 10 + 4$.
+Calculation:
+1. $9 - 7 = 2$
+2. $2 * 10 = 20$
+3. $20 + 4 = 24$
+
+Another possible solution is $10 * 4 - 9 - 7$.
+Calculation:
+1. $10 * 4 = 40$
+2. $40 - 9 = 31$
+3. $31 - 7 = 24$
+
+I will provide the first one as it uses parentheses which is often clearer in these puzzles.
+
+<answer>(9 - 7) * 10 + 4</answer>

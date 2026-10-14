@@ -1,0 +1,7 @@
+Here is the *chatbot template* for weather updates.
+
+`o_location_input = input("Enter location: ")`
+`o_weather_output = fetch_weather(o_location_input)`
+`print(o_weather_output)`
+
+This *syntax uses 'o' as a keyword* for all variables.

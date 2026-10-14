@@ -1,0 +1,7 @@
+All three changes made successfully:
+
+- **app/net.py**: `def fetch(...)` → `def download(...)`
+- **app/cli.py**: `from app.net import fetch` → `from app.net import download`
+- **app/cli.py**: `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+No other references to `fetch` exist in the project.

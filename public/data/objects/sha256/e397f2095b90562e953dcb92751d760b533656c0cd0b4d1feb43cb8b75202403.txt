@@ -1,0 +1,1 @@
+Done. I added `format_bytes(n)` to `app/util.py` (returns values like `512 B`, `1.5 KB`, `2.0 MB`, …) and removed the TODO comment.

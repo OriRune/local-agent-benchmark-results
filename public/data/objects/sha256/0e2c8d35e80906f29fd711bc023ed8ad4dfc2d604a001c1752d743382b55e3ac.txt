@@ -1,0 +1,16 @@
+I've created the README.md for your project. It documents:
+
+1. **CLI Options** - All command-line arguments with their help text from `app/cli.py`:
+   - `url` (required): what to download
+   - `-o`, `--output`: file to write (default: stdout)
+   - `-q`, `--quiet`: no progress output
+
+2. **Configuration** - Settings from `app/config.py` (MAX_RETRIES, TIMEOUT_S, USER_AGENT)
+
+3. **Usage examples** - Quick reference for common commands
+
+4. **Notes from notes.md** - Project planning details
+
+5. **TODO list** - From todo.txt
+
+The README is now located at `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/df3ccaa505dda63cad9f5a3b-539aa55690/workspace/project/README.md`.

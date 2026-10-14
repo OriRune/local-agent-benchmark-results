@@ -1,0 +1,15 @@
+The sandbox doesn't allow running programs. Let me verify the fix manually by checking the logic:
+
+The test expects:
+1. `parse_size("512 B")` should return 512
+   - With the fix: `UNITS["B"] = 1`, so `512 * 1 = 512` ✓
+
+2. `parse_size("1.5 KB")` should return 1536
+   - With the fix: `UNITS["KB"] = 1024`, so `1.5 * 1024 = 1536` ✓
+
+3. `parse_size("2 MB")` should return 2 * 1024 * 1024 = 2097152
+   - With the fix: `UNITS["MB"] = 1024 ** 2 = 1048576`, so `2 * 1048576 = 2097152` ✓
+
+The fix is correct. The issue was that `UNITS["KB"]` was set to 1000 instead of 1024. The comment in the file correctly states "1 KB = 1024 bytes" but the code had 1000, which is inconsistent.
+
+The fix has been applied to `app/units.py`. The test should now pass.

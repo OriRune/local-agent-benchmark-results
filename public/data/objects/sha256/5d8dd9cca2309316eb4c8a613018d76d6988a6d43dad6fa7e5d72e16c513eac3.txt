@@ -1,0 +1,7 @@
+Found it: **Desktop/trip ideas 2025.txt**
+
+It's a text file with 4 lines:
+- places to go
+- Kyoto in spring
+- road trip down the coast
+- camping at the lake

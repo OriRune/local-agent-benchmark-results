@@ -1,0 +1,2 @@
+
+The file proxy.ini is located at [private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/9077f2436dc744b30463f3aa-f0b661e5d3/workspace/shared-config/network/proxy.ini. It sets the proxy host to '10.0.1.10' and the port to 8080.

@@ -1,0 +1,25 @@
+Let's break down the problem: we need to form the number 24 using the numbers 6, 2, 2, 4, each used once, with allowed operations.
+
+We have four numbers: 6, 2, 2, 4.
+
+Possible approach: try combinations with operations.
+
+One valid expression:
+6 * 2 * 2 / 4
+
+Calculate step by step:
+6 * 2 = 12  
+12 * 2 = 24  
+24 / 4 = 6 → not 24
+
+Try another:
+6 * 2 * 4 / 2  
+6 * 2 = 12  
+12 * 4 = 48  
+48 / 2 = 24 ✅
+
+So the expression is: 6 * 2 * 4 / 2
+
+This uses all numbers once and gives 24.
+
+<answer>6*2*4/2</answer>

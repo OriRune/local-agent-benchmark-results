@@ -1,0 +1,14 @@
+I cannot undo the most recent git commit because there is no git repository in this project directory. The project contains only Python source files and configuration, but no `.git` directory. Without a git repository, I cannot inspect or revert any commit.
+
+The project files I found are:
+- `app/` — contains `__init__.py`, `cli.py`, `config.py`, `net.py`, `units.py`, `util.py`
+- `tests/` — contains `test_units.py`
+- `data/` and `notes.md` and `todo.txt`
+
+None of these files contain any git-related changes. The most recent "commit" would have to be within a git repo, but none exists here.
+
+To undo a commit, I would need to either:
+1. Find a git repository (e.g., check if there's a `.git` folder somewhere else)
+2. Use git directly to revert the commit
+
+Since no git repository exists in this workspace, I cannot perform the requested action.

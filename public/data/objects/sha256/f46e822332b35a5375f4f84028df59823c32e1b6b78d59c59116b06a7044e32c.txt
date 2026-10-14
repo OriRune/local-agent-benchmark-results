@@ -1,0 +1,1 @@
+I have created a `README.md` file in the project directory. This file lists the command-line options for the CLI tool, including their help text, based on the contents of `app/cli.py`.

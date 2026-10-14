@@ -1,0 +1,14 @@
+To make 24 using the numbers 6, 2, 2, and 4, we can use the following expression:
+
+(6 - 2) * (2 + 4)
+= 4 * 6
+= 24
+
+Alternatively, (6 * 2) * (4 / 2) also works:
+(6 * 2) * (4 / 2)
+= 12 * 2
+= 24
+
+Let's use (6 - 2) * (2 + 4).
+
+<answer>(6 - 2) * (2 + 4)</answer>

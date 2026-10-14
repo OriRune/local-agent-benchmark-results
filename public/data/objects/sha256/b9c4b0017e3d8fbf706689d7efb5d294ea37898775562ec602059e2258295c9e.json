@@ -1,0 +1,1 @@
+[{"args":{"path":".","pattern":"config.yaml"},"name":"find_files","result":"no files match config.yaml","status":"ok"},{"args":{"path":".","pattern":".yaml"},"name":"find_files","result":"no files match .yaml","status":"ok"},{"args":{"path":"."},"name":"list_dir","result":"app/\ndata/\ntests/\nnotes.md  (340 bytes)\ntodo.txt  (53 bytes)","status":"ok"}]

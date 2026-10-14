@@ -1,0 +1,11 @@
+
+```json
+{
+  "name": "grep",
+  "arguments": {
+    "pattern": "CPU.*%.*idle",
+    "path": "/usr/bin/top",
+    "case_sensitive": false
+  }
+}
+```

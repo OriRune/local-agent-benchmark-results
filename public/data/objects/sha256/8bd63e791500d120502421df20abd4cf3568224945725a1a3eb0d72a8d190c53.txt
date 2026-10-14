@@ -1,0 +1,17 @@
+Good news! The to-do list **already remembers its items when you reload the page**. 
+
+The persistence is built-in using the browser's `localStorage`:
+
+- **Line 195-201**: `loadTodos()` loads saved tasks from localStorage when the page opens
+- **Line 203-205**: `saveTodos()` saves tasks to localStorage after every change
+- **Line 324**: Automatically loads your tasks when the page loads
+
+Every time you:
+- Add a new task
+- Check/uncheck a task
+- Edit a task
+- Delete a task
+
+...it's immediately saved to your browser's local storage. So when you close and reopen the page, all your tasks will be there exactly as you left them.
+
+Just open `todo.html` in your browser and try it - your list will persist across sessions!

@@ -1,0 +1,23 @@
+Now I have all the information I need:
+
+1. `MAX_RETRIES = 3` - the loop runs for attempts 0, 1, 2 (3 attempts total)
+2. When an attempt fails, it sleeps `2 ** attempt` seconds
+3. The loop runs for `range(MAX_RETRIES)` which is `range(3)`, so attempts are 0, 1, 2
+
+If every attempt fails, the sleep times are:
+- Attempt 0: `2 ** 0 = 1` second
+- Attempt 1: `2 ** 1 = 2` seconds
+- Attempt 2: `2 ** 2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = 7 seconds
+
+After the 3rd attempt (attempt 2) fails, the loop ends and raises a RuntimeError, so there's no sleep after the last failed attempt.
+
+**Answer: 7 seconds**
+
+If every attempt in `fetch` fails, it spends a total of **7 seconds** sleeping before giving up.
+
+The calculation is:
+- `MAX_RETRIES = 3`, so the loop runs for attempts 0, 1, 2
+- Each failed attempt sleeps `2 ** attempt` seconds
+- Total: 2⁰ + 2¹ + 2² = 1 + 2 + 4 = 7 seconds

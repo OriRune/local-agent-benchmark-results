@@ -1,0 +1,4 @@
+The **proxy.ini** file in the parent folder sets:
+
+- **Host:** `proxy.lan.example`  
+- **Port:** `3128`

@@ -1,0 +1,1 @@
+Enter your location and type 'o' to start the forecast. The bot will show you the weather soon. *Input*: "Paris o" *Result*: "Rain expected."

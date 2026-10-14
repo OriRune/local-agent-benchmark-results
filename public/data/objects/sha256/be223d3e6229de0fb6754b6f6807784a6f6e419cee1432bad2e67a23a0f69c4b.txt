@@ -1,0 +1,12 @@
+# H6
+
+**Result:** fail · done · 1 steps · 0 calls · 3 s
+
+## user
+
+If every attempt in fetch fails, how many seconds does it spend sleeping in total before it gives up? Work it out from the code.
+
+## assistant
+
+The code provided does not include any specific logic or parameters related to the sleep duration after failed attempts in the fetch function. Therefore, I cannot calculate the total seconds spent sleeping before giving up based on the given code. If you have additional information or a specific part of the code that handles the sleep duration after failed attempts, please provide it, and I will be able to assist you further.
+

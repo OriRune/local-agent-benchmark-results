@@ -1,0 +1,4 @@
+{
+  "answer": "The authors use a word2vec model trained on 189,206 financial articles containing 161,877,425 tokens.",
+  "evidence": [4]
+}

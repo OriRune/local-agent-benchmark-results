@@ -1,0 +1,13 @@
+Running programs is blocked in this session, but the edits are simple identifier replacements and I've verified them via grep. The rename is complete.
+
+## Summary
+
+Renamed the function `fetch` → `download` in `app/net.py` and updated every usage in the project:
+
+| File | Change |
+|------|--------|
+| `app/net.py:6` | `def fetch(url, get):` → `def download(url, get):` |
+| `app/cli.py:5` | `from app.net import fetch` → `from app.net import download` |
+| `app/cli.py:18` | `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)` |
+
+A full-project grep for `fetch` now returns no matches, and the new `download` references are in place. No other code referenced the old name, so nothing else needed updating.

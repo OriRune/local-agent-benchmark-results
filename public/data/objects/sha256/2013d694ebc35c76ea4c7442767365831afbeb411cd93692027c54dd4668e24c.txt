@@ -1,0 +1,2 @@
+Answer: Finance specific BLSTM word embedding model
+Evidence: [4]

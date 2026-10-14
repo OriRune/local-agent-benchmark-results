@@ -1,0 +1,3 @@
+I have successfully renamed the function `fetch` to `download` in `app/net.py` and updated all references in the project. The function definition in `app/net.py` was changed, and the import and usage in `app/cli.py` was updated accordingly. No other files contain references to `fetch`.
+
+The task is complete.

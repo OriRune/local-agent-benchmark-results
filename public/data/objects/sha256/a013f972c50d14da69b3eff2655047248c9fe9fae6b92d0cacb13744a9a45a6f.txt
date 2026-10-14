@@ -1,0 +1,25 @@
+### 7-Day India Itinerary
+
+| Day | Destination | Key Highlights |
+| :--- | :--- | :--- |
+| 1 | Delhi | Red Fort, Jama Masjid, Chandni Chowk |
+| 2 | Delhi to Agra | Qutub Minar, drive to Agra |
+| 3 | Agra | Taj Mahal, Agra Fort, Mehtab Bagh |
+| 4 | Agra to Jaipur | Fatehpur Sikri, drive to Jaipur |
+| 5 | Jaipur | Amber Fort, Hawa Mahal, City Palace |
+| 6 | Jaipur to Delhi | Local markets, drive back to Delhi |
+| 7 | Delhi | Departure |
+
+******
+
+### 7-Day China Itinerary
+
+| Day | Destination | Key Highlights |
+| :--- | :--- | :--- |
+| 1 | Beijing | Forbidden City, Tiananmen Square |
+| 2 | Beijing | Great Wall (Mutianyu), Temple of Heaven |
+| 3 | Beijing to Xi'an | Summer Palace, High-speed train to Xi'an |
+| 4 | Xi'an | Terracotta Warriors, Muslim Quarter |
+| 5 | Xi'an to Shanghai | Xi'an City Wall, Flight to Shanghai |
+| 6 | Shanghai | The Bund, Yu Garden, Nanjing Road |
+| 7 | Shanghai | Shanghai Tower, Departure |

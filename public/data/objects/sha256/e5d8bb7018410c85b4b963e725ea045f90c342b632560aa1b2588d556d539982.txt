@@ -1,0 +1,3 @@
+**Bot Prompt:** Hello! To provide your local forecast, please input your current location.
+
+**Bot Response Template:** Based on your location, *tomorrow's forecast* shows a temperature of [Temperature] degrees and [Condition]. For a more detailed outlook, check *tomorrow's hourly forecast*.

@@ -1,0 +1,7 @@
+Done. I've created `README.md` with:
+
+- **CLI options table** listing all three arguments (`url`, `-o/--output`, `-q/--quiet`) with their help text from `argparse`
+- **Examples** demonstrating each option
+- **Configuration details** from `app/config.py`
+- **Units documentation** from `app/units.py`
+- **TODO items** from `todo.txt`

@@ -1,0 +1,6 @@
+Answer using only the record below. Return just the recorded answer.
+
+An experiment records the answer to this question: How many total yards of touchdowns were due to passing the ball?
+The recorded answer is 2.
+
+Question: How many total yards of touchdowns were due to passing the ball?

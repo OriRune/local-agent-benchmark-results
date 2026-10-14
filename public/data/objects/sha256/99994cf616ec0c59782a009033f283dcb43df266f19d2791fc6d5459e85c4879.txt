@@ -1,0 +1,7 @@
+The fix has been applied. The code now correctly uses 1024 for KB instead of 1000, which matches the docstring and the test expectations. The test should now pass:
+
+- `parse_size("512 B")` returns 512 ✓
+- `parse_size("1.5 KB")` returns 1536 (1.5 * 1024) ✓
+- `parse_size("2 MB")` returns 2 * 1024 * 1024 ✓
+
+The issue was that `UNITS["KB"]` was set to 1000 instead of 1024, which contradicted both the docstring and the test expectations. This has been corrected.

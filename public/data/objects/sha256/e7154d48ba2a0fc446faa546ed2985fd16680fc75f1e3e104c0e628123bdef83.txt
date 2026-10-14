@@ -1,0 +1,17 @@
+The file `books.csv` contains **22 unique entries** after removing duplicates (e.g., *Project Hail Mary* appears twice). Out of these, **13 books were finished between July and December 2025** (rows 13–23, excluding *Middlemarch* which was not finished).
+
+**Breakdown of finished books (July–December):**
+- July: *Dune*, *The Hobbit*, *Sapiens*
+- August: *Middlemarch* (not finished)
+- September: *The Night Circus*, *Tomorrow and Tomorrow and Tomorrow*
+- October: *The Thursday Murder Club*, *Babel*
+- November: *Lessons in Chemistry*, *A Psalm for the Wild-Built*
+- December: *The Bear and the Nightingale*
+
+**Total unique books:** 22
+**Finished July–December:** 12 (excluding *Middlemarch*)
+
+**Correction:** *Middlemarch* was not finished, so the count is **12 finished books** in that period.
+
+**Final Answer:**
+ANSWER: 22, 12

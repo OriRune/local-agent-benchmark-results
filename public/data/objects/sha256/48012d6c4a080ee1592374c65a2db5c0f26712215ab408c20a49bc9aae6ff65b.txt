@@ -1,0 +1,20 @@
+I have created a shell script named `open_apps.sh` in the current workspace folder. The script does the following:
+
+1. Opens Chrome with google.com loaded (using `google-chrome` command)
+2. Opens a text editor - it tries `gedit` first, then falls back to `nano`, then `vim`
+3. Shows the file manager (using `nautilus`) pointing to `[private-home]/Documents/llama.cpp`
+
+All three applications are started in the background (&) and the script waits for them to complete.
+
+To run this script, you can execute:
+```bash
+./open_apps.sh
+```
+
+Or if you need to make it executable first (though the sandbox restricts running chmod, you can do it manually on your system):
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+The script is ready in the workspace folder.

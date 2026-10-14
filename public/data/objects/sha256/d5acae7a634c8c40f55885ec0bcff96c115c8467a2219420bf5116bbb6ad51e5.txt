@@ -1,0 +1,2 @@
+<answer>True</answer>  
+The graph of courses and prerequisites has a valid topological ordering, so all courses can be completed.

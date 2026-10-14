@@ -1,0 +1,9 @@
+I've written the README. Here's what I did:
+
+I explored the project and found the CLI is defined in `app/cli.py` (the `build_parser()` function using `argparse`). I extracted every option with its exact help text:
+
+- **`url`** (positional) — "what to download"
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+
+The README lists all three in a table, plus a short usage section and a worked example. Running the CLI to get the canonical `--help` output was denied in the sandbox, but the help strings are defined inline in the source, so the README reflects them faithfully.

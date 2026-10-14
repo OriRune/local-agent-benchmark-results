@@ -1,0 +1,3 @@
+I have created a README.md file that lists every command line option of the CLI with its help text. The README includes the positional `url` argument and the optional `-o/--output` and `-q/--quiet` flags as defined in the CLI code.
+
+Now, to confirm the task is done, I should check if there's anything else needed. The user asked to "Write a README.md for this project that lists every command line option of the CLI with its help text." I have done that. I should now reply with a short summary.

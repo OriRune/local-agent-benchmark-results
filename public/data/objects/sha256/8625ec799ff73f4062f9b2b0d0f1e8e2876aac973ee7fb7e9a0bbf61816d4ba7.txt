@@ -1,0 +1,4 @@
+Here is a template for your chatbot:
+
+**Template:**
+"oHello! Please enter your current location 'o' to get the weather forecast. You can type something like 'New York' or 'London'. Once you provide your location, I will fetch the weather details for you. *oHere is what you can expect: oThe forecast will include temperature, humidity, and wind speed, and other relevant details.* oStay tuned for an update!"

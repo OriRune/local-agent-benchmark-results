@@ -1,0 +1,19 @@
+To determine who lives in House 1, we can analyze the clues provided:
+
+1.  **House 3:** Bob lives here (Clue 1).
+2.  **House 2:** Arnold lives here (Clue 2).
+3.  **House 1:** Since there are three houses and three people (Bob, Arnold, and Alice), and Bob and Arnold are in Houses 3 and 2 respectively, Alice must live in House 1.
+
+Let's verify this with the other clues:
+- Arnold is the British person (Clue 3) and the cat lover (Clue 6). So, House 2 contains Arnold, who is British and owns a cat.
+- Alice is the Dane (Clue 4) and the dog owner (Clue 5). So, House 1 contains Alice, who is Danish and owns a dog.
+- Bob must be the Chinese person (the only nationality left) and own the bird (the only animal left). So, House 3 contains Bob, who is Chinese and owns a bird.
+
+All clues are consistent:
+- House 1: Alice (Dane, Dog)
+- House 2: Arnold (Brit, Cat)
+- House 3: Bob (Chinese, Bird)
+
+The question asks for the name of the person who lives in House 1.
+
+<answer>alice</answer>

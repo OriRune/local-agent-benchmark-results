@@ -1,0 +1,31 @@
+To make 24 using 9, 5, 6, and 3, I need to combine these numbers with the operators +, -, *, and /.
+
+Let me try different combinations:
+- 9 + 5 + 6 + 3 = 23 (too low)
+- 9 + 5 + 6 * 3 = 28 (too high)
+- 9 * 5 - 6 * 3 = 21 (too low)
+- 9 * 3 - 5 - 6 = 18 (too low)
+- (9 - 5) * 6 = 24, but doesn't use 3
+- 9 + 5 + 6 + 3 = 23, need 1 more
+
+Let me try: 9 + 5 + 6 + 3 = 23. I need to get 24.
+
+What about (9 - 5) * 6 = 24, but I need to use 3.
+
+Let me try: 9 + 5 + 6 + 3 = 23. If I could make one of these operations yield +1 more...
+
+Actually, let me try: 9 + 5 + 6 + 3 = 23. 
+
+What if: (9 - 5) * 6 = 24, and I need to incorporate 3 somehow.
+
+Let me try: 9 + 5 + 6 + 3 = 23. 
+
+Hmm, let me try: 9 * 3 - 5 - 6 = 27 - 11 = 16 (too low)
+
+Let me try: 5 * 6 - 9 + 3 = 30 - 9 + 3 = 24! ✓
+
+Let me verify: 5 * 6 = 30, 30 - 9 = 21, 21 + 3 = 24. Yes!
+
+This uses 5, 6, 9, and 3 - all four numbers once each.
+
+<answer>5 * 6 - 9 + 3</answer>

@@ -1,0 +1,9 @@
+```json
+{
+  "name": "write_file",
+  "arguments": {
+    "path": "README.md",
+    "content": "# Project README\n\n## CLI Command Line Options\n\nPlease refer to the official documentation or run the CLI with the `--help` flag to get the most up-to-date list of command line options and their help texts."
+  }
+}
+```

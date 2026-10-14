@@ -1,0 +1,3 @@
+The test failure in `tests/test_units.py` was caused by an incorrect unit value for "KB" in `app/units.py`. The test expected 1.5 KB to equal 1536 bytes, which requires using 1024 as the factor for KB, rather than 1000.
+
+I have updated `app/units.py` to set the multiplier for "KB" to 1024. This resolves the failing test and ensures consistency with the expected behavior of 1024-based units.

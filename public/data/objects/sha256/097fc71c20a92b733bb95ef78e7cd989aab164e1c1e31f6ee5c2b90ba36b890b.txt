@@ -1,0 +1,8 @@
+Done. I've created `README.md` documenting all CLI command line options from `app/cli.py`:
+
+- **`url`** (positional): the URL to download
+- **`-o` / `--output`**: file to write (default: stdout)
+- **`-q` / `--quiet`**: no progress output
+- **`-h` / `--help`**: show help message and exit
+
+The README includes the full help output, a summary table, and usage examples.

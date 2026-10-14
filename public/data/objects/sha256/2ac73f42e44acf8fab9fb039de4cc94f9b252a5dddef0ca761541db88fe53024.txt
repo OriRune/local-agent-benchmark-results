@@ -1,0 +1,1 @@
+The units digit of the sum of the 2023 numbers in the 2023rd row is 5.

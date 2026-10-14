@@ -1,0 +1,1 @@
+The `get_weather` function **obtains** the user's location, **fetches** the weather forecast, and outputs the forecast for the provided location.

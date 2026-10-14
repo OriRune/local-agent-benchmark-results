@@ -1,0 +1,5 @@
+*Define a function* that accepts a user's location and returns the forecast.
+The bot must *process the input* to ensure accuracy before displaying results.
+This simple *logic loop* repeats until the user stops asking for updates.
+*Output the data* clearly so the user understands the weather conditions.
+Finally, *close the session* politely after providing the necessary information.

@@ -1,0 +1,1 @@
+Done. I've replaced the TODO comment with a `format_bytes(n)` function that returns human-readable size strings like `'1.5 KB'`, supporting units from bytes up to exabytes.

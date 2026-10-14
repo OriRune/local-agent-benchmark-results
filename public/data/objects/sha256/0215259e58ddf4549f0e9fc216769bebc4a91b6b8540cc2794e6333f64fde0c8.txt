@@ -1,0 +1,10 @@
+The `fetch` function in `app/net.py` implements an exponential backoff strategy upon failure.
+
+1.  **Configuration:** `app/config.py` sets `MAX_RETRIES = 3`.
+2.  **Logic:** The `fetch` function loops `MAX_RETRIES` times. If an `OSError` occurs (failure), it executes `time.sleep(2 ** attempt)`.
+3.  **Calculation:** Since `MAX_RETRIES` is 3, the `attempt` variable will be 0, 1, and 2.
+    *   Attempt 0 fails: sleeps $2^0 = 1$ second.
+    *   Attempt 1 fails: sleeps $2^1 = 2$ seconds.
+    *   Attempt 2 fails: sleeps $2^2 = 4$ seconds.
+
+The total time spent sleeping before the function gives up is $1 + 2 + 4 = 7$ seconds.

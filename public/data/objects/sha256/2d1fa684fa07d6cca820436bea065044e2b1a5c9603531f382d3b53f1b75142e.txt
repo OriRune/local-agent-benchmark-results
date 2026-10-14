@@ -1,0 +1,7 @@
+No remaining references. The rename is complete across all three usages:
+
+- `app/net.py`: renamed the function definition `fetch` → `download`
+- `app/cli.py`: updated the import `from app.net import fetch` → `import download`
+- `app/cli.py`: updated the call `data = fetch(...)` → `data = download(...)`
+
+A grep for `fetch` now returns no matches, confirming every place that used it has been updated.

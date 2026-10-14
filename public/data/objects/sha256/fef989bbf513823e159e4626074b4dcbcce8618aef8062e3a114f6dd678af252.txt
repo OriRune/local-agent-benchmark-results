@@ -1,0 +1,32 @@
+## Setting Up the Dependency Graph
+
+Each prerequisite `(a, b)` means course `a` depends on course `b` (b must come first).
+
+**Edges:**
+- 5 → 3
+- 7 → 3
+- 4 → 2
+- 0 → 4
+- 6 → 1
+- 1 → 4
+- 7 → 2
+- 2 → 3
+
+## Checking for Cycles
+
+Let me trace the chains:
+
+- **3** has no dependencies → take first
+- **2** depends on 3 → take next
+- **4** depends on 2 → take next
+- **0** depends on 4 → take next
+- **1** depends on 4 → take next
+- **6** depends on 1 → take next
+- **7** depends on 2 (and 3) → take next
+- **5** depends on 3 → take next
+
+**Valid topological order:** `3 → 2 → 4 → 0 → 1 → 6 → 7 → 5`
+
+Since every course can be placed in a valid order with no circular dependency, all courses can be completed.
+
+<answer>True</answer>

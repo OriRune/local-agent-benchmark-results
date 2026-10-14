@@ -1,0 +1,7 @@
+No remaining references. The rename is complete.
+
+I renamed the `fetch` function to `download` in `app/net.py` and updated both usages in `app/cli.py`:
+- The import (`from app.net import fetch` → `from app.net import download`)
+- The call (`data = fetch(...)` → `data = download(...)`)
+
+A case-sensitive search confirms no other references to `fetch` remain in the project.

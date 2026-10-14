@@ -1,0 +1,12 @@
+I have created a shell script named `setup_workspace.sh` in your current directory. 
+
+The script performs the following actions:
+1.  **Opens Google Chrome** to `https://www.google.com`.
+2.  **Opens a text editor** (using `gedit`, which is standard on Linux Mint).
+3.  **Opens the file manager** at `[private-home]/Documents/llama.cpp` using `xdg-open`.
+
+To run this script, you can use the following command in your terminal:
+```bash
+chmod +x setup_workspace.sh
+./setup_workspace.sh
+```

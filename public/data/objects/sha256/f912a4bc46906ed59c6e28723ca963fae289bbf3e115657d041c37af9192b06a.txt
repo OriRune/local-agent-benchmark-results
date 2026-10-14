@@ -1,0 +1,17 @@
+Using the numbers 6, 2, 2, 4:
+
+Let me try different combinations:
+- 6 + 2 + 2 + 4 = 14 (no)
+- 6 * 2 + 2 + 4 = 18 (no)
+- 6 * 2 + 2 * 4 = 20 (no)
+- 6 * 2 * 2 - 4 = 20 (no)
+- 6 * 2 * 2 + 4 = 28 (no)
+- 6 * 4 - 2 * 2 = 20 (no)
+- 6 * 4 - 2 - 2 = 22 (no)
+- 6 * 4 + 2 - 2 = 24 (yes!)
+
+Let me verify: 6 * 4 + 2 - 2 = 24 + 2 - 2 = 26 - 2 = 24 ✓
+
+Uses each number once: 6, 4, 2, 2 ✓
+
+<answer>6*4+2-2</answer>

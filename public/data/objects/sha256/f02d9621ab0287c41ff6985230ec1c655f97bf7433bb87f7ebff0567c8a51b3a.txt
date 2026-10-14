@@ -1,0 +1,5 @@
+<think>
+Okay, let's see. The question is asking how many yards Nate Kaeding completed with his field goal. The passage mentions that in the first quarter, Chargers kicker Nate Kaeding completed a 29-yard field goal. Then there's a lot of other information about the game, but the key detail here is the 29-yard field goal by Kaeding. I need to make sure there's no other mention of Kaeding kicking again. Let me check the rest. The Browns' kicker Phil Dawson is mentioned multiple times, but Kaeding isn't referenced again after the first quarter. The Chargers scored a defensive touchdown and Tomlinson got several TD runs, but all those are touchdowns, not field goals. So the only field goal by Kaeding was 29 yards. Therefore, the answer should be 29.
+</think>
+
+The number of yards Nate Kaeding completed is \boxed{29}.

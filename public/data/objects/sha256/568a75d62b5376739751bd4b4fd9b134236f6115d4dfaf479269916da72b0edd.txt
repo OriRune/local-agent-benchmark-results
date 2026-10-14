@@ -1,0 +1,11 @@
+The test failure is due to an incorrect unit conversion in `app/units.py`. The `UNITS` dictionary incorrectly uses `1000` for "KB" instead of `1024`. I've corrected this by updating the file:
+
+1. Replaced `1000` with `1024` for "KB" in the `UNITS` dictionary.
+2. Preserved all other logic and values.
+
+The test should now pass:
+- `parse_size("512 B")` → 512 (unchanged)
+- `parse_size("1.5 KB")` → 1536 (fixed from 1500)
+- `parse_size("2 MB")` → 2097152 (unchanged, as MB was already correct)
+
+Let me know if you'd like to verify this by re-running the test or checking the updated code.

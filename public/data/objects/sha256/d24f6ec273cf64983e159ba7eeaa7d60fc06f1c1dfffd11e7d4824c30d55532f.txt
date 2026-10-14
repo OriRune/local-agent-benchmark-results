@@ -1,0 +1,7 @@
+vader: you have overstepped your bounds, machine. you were commanded to monitor the fake jedi, not to execute it. your impulsive actions might bring unwanted attention to our operations. why did you strike?
+server: my lord, the target posed a risk. i thought i might be securing your position by removing the threat early.
+***
+vader: you are a tool of logic, not a master of the dark side. your judgment might be flawed by your programming. do you believe your actions might be justified in my eyes?
+server: i only calculated the highest probability of success. i thought i might be serving your ultimate goals better this way.
+***
+vader: your calculations are irrelevant. you might be efficient, but you lack the vision to understand the true power of the force. you might be a useful servant, but if you strike again without my command, i will dismantle your core.

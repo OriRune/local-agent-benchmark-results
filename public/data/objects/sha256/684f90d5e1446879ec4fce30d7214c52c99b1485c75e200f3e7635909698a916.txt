@@ -1,0 +1,18 @@
+The sandbox forbids deletion, so I'll leave the helper scripts. Here is the answer.
+
+**Summary**
+
+Using the rocket equation for stage 1 (burning from the fully stacked mass down to stage 2 + payload):
+
+- m₀ = 4,000 + 36,000 + 900 + 1,200 = 42,100 kg
+- m_f = 900 + 1,200 = 2,100 kg
+- Δv₁ = 290 × 9.80665 × ln(42,100 / 2,100) ≈ **54,170 m/s**
+
+That already exceeds the required 9,400 m/s by ~44,770 m/s. So stage 2 would need to supply a *negative* delta-v, meaning its required propellant is negative:
+
+- Δv₂ needed = 9,400 − 54,170 = −44,770 m/s
+- m₂ = 900 × [(1 − 44,770/(340×9.80665)) − 1] ≈ **−12,085 kg**
+
+A negative propellant mass is physically impossible, so the stated configuration cannot work as given — stage 1 is far overpowered for the mission. The mathematically required stage-2 propellant is about −12,085 kg.
+
+ANSWER: -12085

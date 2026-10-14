@@ -1,0 +1,10 @@
+The fix is correct. Here's a summary:
+
+**Bug:** In `app/units.py`, the `UNITS` dictionary mapped `"KB"` to `1000` (decimal) instead of `1024` (binary). This was inconsistent with the docstring ("1 KB = 1024 bytes") and caused the test `parse_size("1.5 KB")` to return `1500` instead of the expected `1536`.
+
+**Fix:** Changed `UNITS["KB"]` from `1000` to `1024`.
+
+The corrected file now reads:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```

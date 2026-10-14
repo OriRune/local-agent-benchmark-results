@@ -1,0 +1,1 @@
+Done. I've added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function formats byte sizes as human-readable strings (e.g., `'512 B'`, `'1.5 KB'`, `'1.0 MB'`, etc.), scaling up through B → KB → MB → GB → TB → PB → EB → ZB.

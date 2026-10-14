@@ -1,0 +1,15 @@
+```json
+{
+  "answer": "The results are evaluated through several methods, including human evaluation using a questionnaire to rank captions by 'funniness,' comparison against a baseline model (MS COCO Pre-trained CNN+LSTM and STAIR caption), and the use of the Funny Score and star ratings from the BoketeDB to quantify funniness.",
+  "evidence": [
+    [2],
+    [6],
+    [7],
+    [8],
+    [12],
+    [13],
+    [14],
+    [16]
+  ]
+}
+```

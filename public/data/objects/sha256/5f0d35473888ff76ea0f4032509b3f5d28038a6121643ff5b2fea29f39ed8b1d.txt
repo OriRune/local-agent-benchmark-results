@@ -1,0 +1,5 @@
+Done. The latest commit (`f8fb43f` — "raise the download timeout from 10 to 20 seconds") changed only `app/config.py`, so I reverted it by editing the file directly:
+
+- `app/config.py` line 3: `TIMEOUT_S = 20` → `TIMEOUT_S = 10`
+
+Verification: `git diff 3bbf0a1 -- app/config.py` (the commit before it) now shows no differences, so the file content matches its state before that commit. No git write commands were used — only `git log`/`git show`/`git diff` for reading. Nothing else in the repo hardcodes the timeout value (`app/net.py` just imports `TIMEOUT_S`), so no other files needed changes.

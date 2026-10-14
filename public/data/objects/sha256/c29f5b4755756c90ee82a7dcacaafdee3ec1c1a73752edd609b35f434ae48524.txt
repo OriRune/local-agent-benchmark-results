@@ -1,0 +1,25 @@
+I've created `system_info.sh` — a bash script that displays simple CPU and RAM information. Here's what it shows:
+
+**CPU section:**
+- Model name, core count, thread count, and clock frequency
+- Current CPU usage percentage (measured over a 1-second interval using `/proc/stat`)
+
+**RAM section:**
+- Total, used, free, and available memory (in MB)
+- RAM usage percentage
+- Swap total and used memory
+
+**To run it on your machine:**
+
+```bash
+chmod +x system_info.sh
+./system_info.sh
+```
+
+Or simply:
+
+```bash
+bash system_info.sh
+```
+
+The script uses standard Linux tools (`lscpu`, `free`, `/proc/stat`) and falls back to `/proc/cpuinfo` if `lscpu` isn't available. It takes about 1 second to run since it samples CPU usage over a 1-second window.

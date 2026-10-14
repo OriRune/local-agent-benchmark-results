@@ -1,0 +1,4 @@
+{
+  "answer": "The CoNLL 2003 English NER training data was used in their experiment.",
+  "evidence": [28]
+}

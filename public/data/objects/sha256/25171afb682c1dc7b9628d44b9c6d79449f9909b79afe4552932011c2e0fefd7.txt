@@ -1,0 +1,1 @@
+{"answer": "Text features are extracted using a classical sparse vectorizer based on Term Frequency-Inverse Document Frequency (TF-IDF) from web page titles and excerpts, along with a bag-of-words technique. Additionally, POS tags and n-grams of POS tags are used as features, and shallow parsing is applied to filter tokens.", "evidence": [5, 8, 9]}

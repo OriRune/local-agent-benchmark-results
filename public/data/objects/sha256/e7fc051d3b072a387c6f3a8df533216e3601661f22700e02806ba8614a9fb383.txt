@@ -1,0 +1,5 @@
+I apologize for the oversight. I failed to perform the rename operation within `app/net.py`.
+
+I have now corrected this by renaming the function `fetch` to `download` in `app/net.py`. I also ensured that all references in `app/cli.py` (both the import and the function call) were updated in the previous steps.
+
+The task is complete.

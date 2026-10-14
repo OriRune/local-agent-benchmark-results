@@ -1,0 +1,10 @@
+I've created a README.md file for the tinydl project. The README includes:
+
+- A brief description of the project
+- Installation instructions
+- Usage syntax
+- A table listing all command-line options with their help text:
+  - `url` (positional argument) - "what to download"
+  - `-o, --output` - "file to write (default: stdout)"
+  - `-q, --quiet` - "no progress output"
+- Several usage examples demonstrating different scenarios

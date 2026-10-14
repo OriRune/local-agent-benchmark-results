@@ -1,0 +1,33 @@
+Let's go step by step.
+
+We have 3 houses: House 1 (left), House 2 (middle), House 3 (right).  
+Perspective: someone standing across the street from them.
+
+Given facts:
+
+1. Bob is in the third house.  
+2. Arnold is in the second house.  
+3. Arnold is the British person.  
+4. The Dane is Alice.  
+5. The dog owner is the Dane.  
+6. The cat lover is Arnold.
+
+---
+
+From (1): Bob → House 3.  
+From (2): Arnold → House 2.  
+So the only person left for House 1 is Alice.
+
+Check consistency:  
+- Alice is the Dane (from 4).  
+- The dog owner is the Dane (from 5), so Alice owns the dog.  
+- The cat lover is Arnold (from 6), so Arnold has the cat.  
+- Bob has the bird (the only animal left).
+
+All facts are consistent.
+
+The question: What is the name of the person who lives in House 1?
+
+House 1 → Alice.
+
+<answer>Alice</answer>

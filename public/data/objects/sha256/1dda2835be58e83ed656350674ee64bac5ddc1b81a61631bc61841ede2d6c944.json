@@ -1,0 +1,1 @@
+["The user wants to find and list the largest files in the current directory (`[private-home]/Documents/llama.cpp`). I should use the `find_files` tool with the `sort=\"size\"` option.","The `find_files` tool returned a long list of files sorted by size. I should list the largest ones as requested. I'll pick the top 10 or so to keep it concise but informative.\n"]

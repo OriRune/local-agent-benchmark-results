@@ -1,0 +1,9 @@
+The task is complete. I added the line `- publish release notes` as the last line of `todo.txt`.
+
+Here is the updated content of `todo.txt` for reference:
+```
+- write README
+- add proxy support
+- tag the release
+- publish release notes
+```

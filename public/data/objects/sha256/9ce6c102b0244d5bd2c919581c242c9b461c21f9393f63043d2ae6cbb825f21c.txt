@@ -1,0 +1,12 @@
+I have created a beautiful, single-file HTML page named `reading_wrapup.html` that presents your 2025 reading list in an aesthetically pleasing way. 
+
+The design features:
+- A clean, modern layout with a soft cream background.
+- Elegant typography using serif fonts for titles to give a "bookish" feel.
+- Individual cards for each book with subtle shadows and hover effects.
+- Color-coded genre tags.
+- A summary section at the bottom showing the total number of unique books read.
+
+I noticed that "Project Hail Mary" was listed twice in your CSV, so I have counted it as one unique book for your wrap-up statistics.
+
+You can now open `reading_wrapup.html` in any web browser by double-clicking it, and it is ready to be screenshotted for your book club!

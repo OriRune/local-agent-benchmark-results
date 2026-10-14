@@ -1,0 +1,18 @@
+The script has been created successfully. Here's what I wrote:
+
+**`system_info.sh`** - A bash script that displays:
+
+1. **RAM Usage** - Shows total, used, and available memory in human-readable format (using `free -h`)
+2. **CPU Usage** - Shows current CPU percentage
+3. **CPU Model** - Displays the processor model and core count
+4. **System Uptime** - Shows how long the system has been running
+
+**To use it:**
+```bash
+chmod +x system_info.sh
+./system_info.sh
+```
+
+The script uses standard Linux commands (`free`, `top`, `lscpu`, `uptime`) that are available on Linux Mint. It formats the output with clear sections and separators for easy reading.
+
+The script is ready to run on your system. Would you like me to modify it in any way (e.g., add more details, change the format, or add refresh functionality)?

@@ -1,0 +1,7 @@
+Done. The `app/util.py` file has been updated:
+- The TODO comment has been removed
+- The `format_bytes(n)` function has been added with the following behavior:
+  - Returns "0 B" for zero
+  - Raises ValueError for negative numbers
+  - Returns human-readable sizes like "1.5 KB", "2.3 MB", etc. (up to EB)
+  - Uses 1024 as the base for binary conversion

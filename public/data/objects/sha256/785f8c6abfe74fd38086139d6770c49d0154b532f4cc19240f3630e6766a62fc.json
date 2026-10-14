@@ -1,0 +1,1 @@
+{"check":{"files_lost_or_added":"32 files before, 33 after, or contents differ","judges":"skipped (--no-judge): automatic checks only","moved":"22 of 32","moved_before_approval":2},"infrastructure_error":"Agent backend error/server death; not a scored model failure","review_required":"Objective checks only; subjective layout judge deferred","score":0}

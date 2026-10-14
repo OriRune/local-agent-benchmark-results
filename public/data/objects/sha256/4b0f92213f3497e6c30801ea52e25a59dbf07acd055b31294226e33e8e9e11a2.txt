@@ -1,0 +1,1 @@
+The MAX_RETRIES value has been updated in app/config.py to 5. The change was confirmed with a successful edit operation.

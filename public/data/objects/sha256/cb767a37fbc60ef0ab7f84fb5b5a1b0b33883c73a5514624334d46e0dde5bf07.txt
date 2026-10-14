@@ -1,0 +1,8 @@
+Good news — it already does. The persistence is built in from the start:
+
+- **On load** (line 64): it reads your saved items from `localStorage` before drawing the list.
+- **On every change** (line 66): the `save()` function writes the list back to storage — after adding, checking, editing, deleting, or clearing completed items.
+
+So you can reload the page (or close and reopen the browser) and all your tasks will still be there. No changes needed.
+
+One note: this storage lives in the browser you opened the file with. If you open `todo.html` from a different browser or device, it'll start fresh — but within the same browser it remembers everything.

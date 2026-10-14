@@ -1,0 +1,6 @@
+I have created the `README.md` file in the project root, listing all the command line options for the `tinydl` CLI as defined in `app/cli.py`.
+
+The `README.md` includes:
+- **URL**: what to download
+- **-o, --output**: file to write (default: stdout)
+- **-q, --quiet**: no progress output

@@ -1,0 +1,5 @@
+The test failure was caused by `app/units.py` having `UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}` where `"KB": 1000` was incorrect — the docstring says "Sizes use 1024-based units: 1 KB = 1024 bytes", so `"KB"` should be `1024`, not `1000`. I fixed it by changing `"KB": 1000` to `"KB": 1024` in `app/units.py`.
+
+The fix has been applied. The test should now pass (though I couldn't run it directly due to sandbox restrictions, the logic is correct: `1.5 KB` → `1.5 * 1024 = 1536`, and `2 MB` → `2 * 1024 * 1024`).
+
+Summary: Fixed the `UNITS` dictionary in `app/units.py` to use `1024` for `KB` (consistent with the 1024-based unit docstring), since `1 KB = 1024 bytes`, not `1000`.

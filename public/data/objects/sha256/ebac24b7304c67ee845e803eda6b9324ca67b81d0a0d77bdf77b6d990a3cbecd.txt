@@ -1,0 +1,14 @@
+
+
+The test cases in `tests/test_units.py` appear correct, but the failure likely stems from an issue in the `parse_size` function's implementation. Common problems could include:
+
+1. **Incorrect unit conversion** (e.g., using 1000 instead of 1024 for KB/MB).
+2. **Case sensitivity** (e.g., expecting "kb" instead of "KB").
+3. **Handling of decimal values** (e.g., parsing "1.5 KB" correctly).
+4. **Whitespace issues** (e.g., extra spaces in input like "512  B").
+
+To fix this, you would need to:
+- Inspect the `parse_size` function in `app.units` to ensure it correctly parses units and applies 1024-based conversions.
+- Verify that it handles edge cases (e.g., decimal values, varying whitespace).
+
+Since I cannot directly modify `app.units`, you should review and adjust the `parse_size` logic accordingly.

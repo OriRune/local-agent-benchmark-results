@@ -1,0 +1,6 @@
+There were two TODO comments found in the Python code:
+
+1. In `app/net.py` (line 7): Log each failed attempt
+2. In `app/util.py` (line 5): Add a helper for byte size formatting
+
+Both have been added to `todo.txt`.

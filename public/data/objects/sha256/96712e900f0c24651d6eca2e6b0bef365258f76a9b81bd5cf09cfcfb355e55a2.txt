@@ -1,0 +1,8 @@
+The function **fetch** in **app/net.py** was renamed to **download**.  
+Every reference to **fetch** in the project was updated to **download**.
+
+**What could not be found/finished**
+
+* The only file that uses the function is **app/net.py** itself, and the rename was applied there.  
+* No other files in the project reference the function, so there were no additional updates needed.  
+* The task was completed using the available tools; no further actions were required.

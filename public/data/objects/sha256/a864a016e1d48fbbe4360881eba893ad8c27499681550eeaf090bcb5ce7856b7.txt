@@ -1,0 +1,32 @@
+```json
+{
+  "character_sheet": {
+    "name": "Theta",
+    "class": "Medalist",
+    "level": 1,
+    "race": "Human Variant",
+    "background": "Guild Artisan",
+    "stats": {
+      "strength": 14,
+      "dexterity": 12,
+      "constitution": 13,
+      "intelligence": 10,
+      "wisdom": 16,
+      "charisma": 15
+    },
+    "hit_points": 10,
+    "armor_class": 13,
+    "proficiency_bonus": 2,
+    "equipment": [
+      "Ceremonial Medal of Valor",
+      "Leather Armor",
+      "Explorer's Pack"
+    ],
+    "features": [
+      "Medal of Honor: Gain advantage on Persuasion checks when presenting your achievements.",
+      "Theta's Insight: Once per long rest, reroll a failed Wisdom saving throw."
+    ],
+    "dm_note": "Welcome, adventurer. You are a Medalist, a warrior who values recognition and glory. Your name is Theta. How do you wish to proceed?"
+  }
+}
+```

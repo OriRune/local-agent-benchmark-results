@@ -1,0 +1,16 @@
+Now I have all the information I need:
+
+1. `MAX_RETRIES = 3` - the loop runs for attempts 0, 1, 2 (3 iterations)
+2. When each attempt fails, it sleeps for `2 ** attempt` seconds
+3. The loop continues until it either succeeds or exhausts all attempts
+
+Let me calculate the total sleep time if every attempt fails:
+- Attempt 0: sleep `2 ** 0 = 1` second
+- Attempt 1: sleep `2 ** 1 = 2` seconds  
+- Attempt 2: sleep `2 ** 2 = 4` seconds
+
+Total sleep = 1 + 2 + 4 = **7 seconds**
+
+The loop runs 3 times (range(3) gives 0, 1, 2), and if all fail, it sleeps 1 + 2 + 4 = 7 seconds before raising the RuntimeError.
+
+**Answer: 7 seconds**

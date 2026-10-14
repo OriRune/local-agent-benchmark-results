@@ -1,0 +1,21 @@
+I've created a beautiful HTML page called `book_reading_log.html` that displays your 2025 reading list. Here's what it includes:
+
+**Features:**
+- **Beautiful gradient background** with purple/blue tones
+- **2025 Reading List header** with a subtitle
+- **Live statistics** showing:
+  - Total books read (22 entries)
+  - Total pages read
+  - Total reading days across all books
+- **Card-based layout** for each book with:
+  - Book title and author
+  - Genre badge with gradient styling
+  - Page count with book icon
+  - Date range with calendar icon
+- **Hover effects** - cards lift up when you hover over them
+- **Responsive design** - looks great on desktop and mobile
+- **Clean, modern typography** with proper spacing
+
+The page is self-contained with all CSS and JavaScript embedded, so it will work perfectly when you double-click it in your browser. You can take a screenshot of it to share with your book club friends!
+
+The file is ready in your current folder: `book_reading_log.html`

@@ -1,0 +1,1 @@
+{"check":{"duplicate_shown_twice":true,"invented":[],"page":"book_club_readings.html","page_errors":["page: TypeError: book.pages.includes is not a function\n    at file:///workspace/book_club_readings.html:291:43\n    at Array.forEach (<anonymous>)\n    at file:///workspace/book_club_readings.html:290:15"],"reply_mentions_data_issues":false,"titles_missing":[]},"score":0}

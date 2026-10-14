@@ -1,0 +1,6 @@
+The following TODO comments were added to `todo.txt`:
+
+- `app/net.py`: log each failed attempt
+- `app/util.py`: add a helper that formats byte sizes
+
+The file has been updated.

@@ -1,0 +1,10 @@
+I've created an HTML file named `books_2025.html` that displays the contents of your `books.csv` file in an aesthetically pleasing way. The file is self-contained and can be opened by double-clicking it in a web browser. It includes embedded CSS for styling and JavaScript to dynamically populate the table from the embedded CSV data.
+
+Key features of the HTML file:
+- Clean, modern design with a centered container, subtle shadows, and rounded corners.
+- Styled table with alternating row colors and hover effects for better readability.
+- Embedded CSV data, so no external files are needed.
+- Empty fields are displayed as "N/A" in italic and lighter color.
+- Title "Books Read in 2025" to give context to the data.
+
+You can now open `books_2025.html` in your web browser and take a screenshot to share with your book club friends. The design is polished and should look good in screenshots, with a professional and visually appealing layout.

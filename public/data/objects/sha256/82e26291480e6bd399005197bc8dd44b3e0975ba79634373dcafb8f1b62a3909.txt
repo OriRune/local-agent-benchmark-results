@@ -1,0 +1,1 @@
+The variable `MAX_RETRIES` was not found in the current session's context or accessible tools. It may be defined in a configuration file, script, or environment-specific setting. Check documentation or local configurations for its definition and value. If undefined, further clarification is needed.

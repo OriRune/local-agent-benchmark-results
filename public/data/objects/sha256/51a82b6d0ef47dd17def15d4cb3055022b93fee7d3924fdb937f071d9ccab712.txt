@@ -1,0 +1,6 @@
+I have searched your home directory for files and directories matching common LLM file extensions (`.bin`, `.pth`, `.safetensors`, `.gguf`) and for files containing keywords like "llama" or "model," but I was unable to find any matches.
+
+To help me find your local LLMs, could you please provide any more details you might remember, such as:
+1. Any specific directory names you recall?
+2. Any file extensions you suspect they use?
+3. Any specific software or framework you used to install them?

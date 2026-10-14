@@ -1,0 +1,26 @@
+**Setting up the puzzle:**
+
+| House | Person | Animal | Nationality |
+|-------|--------|--------|-------------|
+| 1 | ? | ? | ? |
+| 2 | ? | ? | ? |
+| 3 | ? | ? | ? |
+
+**Applying the clues:**
+
+- Clue 1: Bob is in House 3
+- Clue 2: Arnold is in House 2
+- Therefore, House 1 must be **Alice** (the only remaining person)
+
+**Verifying consistency:**
+- Clue 3: Arnold (House 2) is British ✓
+- Clue 4: Alice (House 1) is the Dane ✓
+- Clue 5: The Dane (Alice, House 1) owns the dog ✓
+- Clue 6: Arnold (House 2) loves the cat ✓
+- Remaining: Bob (House 3) keeps the bird and is Chinese ✓
+
+All clues are consistent.
+
+**House 1 = Alice**
+
+<answer>Alice</answer>

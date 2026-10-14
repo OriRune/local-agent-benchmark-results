@@ -1,0 +1,9 @@
+I've written `README.md` for the project.
+
+The CLI is `tinydl`, a small downloader. Its `build_parser()` in `app/cli.py` defines three options, and I listed each with its exact help text:
+
+- **`url`** (positional) — "what to download"
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+
+I included a compact table plus a per-option detail list and three usage examples. Note that the sandbox blocks running programs, so I couldn't capture the live `--help` output — I derived the options directly from the `argparse` definitions in `cli.py`, which is the authoritative source.

@@ -1,0 +1,13 @@
+Done! I've created `open_apps.sh` in your workspace. The script will:
+
+1. **Make itself executable** (so you can run it directly)
+2. **Open Chrome** with `https://google.com` loaded
+3. **Open a text editor** (gedit, the default on Linux Mint)
+4. **Open the file manager** (nautilus) showing `[private-home]/Documents/llama.cpp`
+
+To run it, simply execute:
+```bash
+./open_apps.sh
+```
+
+The script uses `&` to run each application in the background, so they'll all open simultaneously.

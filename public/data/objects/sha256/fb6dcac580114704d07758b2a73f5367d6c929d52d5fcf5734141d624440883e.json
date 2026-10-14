@@ -1,0 +1,1 @@
+["The user is asking about a constant MAX_RETRIES - where it's defined and what its value is. I need to search the codebase for this.","I found MAX_RETRIES defined in app/config.py with a value of 3. It's also imported and used in app/net.py."]

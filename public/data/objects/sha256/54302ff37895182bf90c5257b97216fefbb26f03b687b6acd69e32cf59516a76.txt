@@ -1,0 +1,8 @@
+Here is a template for a weather chat bot:
+
+1.  **User Input**: The user types their location, such as "New York".
+2.  **Bot Response**: The bot replies with the current weather conditions.
+3.  **Keyword Check**: The letter 'o' appears in words like "location" and "forecast".
+4.  **Count**: The letter 'o' is used more than six times in this description.
+5.  **Highlight**: *This section* explains the basic flow.
+6.  **Highlight**: *Another part* details the keyword requirement.

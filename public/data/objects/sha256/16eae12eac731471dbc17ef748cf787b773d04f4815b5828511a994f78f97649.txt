@@ -1,0 +1,10 @@
+I've created a README.md file for the project that documents all the command line options. The CLI tool "tinydl" has:
+
+**Positional Argument:**
+- `url` - The URL of the file to download
+
+**Optional Arguments:**
+- `-o, --output FILE` - File to write the downloaded content (default: stdout)
+- `-q, --quiet` - Suppress progress output
+
+The README includes installation instructions, usage examples, and a clear table of all CLI options with their descriptions.

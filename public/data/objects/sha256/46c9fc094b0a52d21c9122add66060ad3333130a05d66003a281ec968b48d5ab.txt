@@ -1,0 +1,11 @@
+Now I can calculate the total time:
+
+- `MAX_RETRIES = 3`
+- The attempts are: `0, 1, 2`
+
+The sleep calls are:
+- Attempt 0: `2 ** 0 = 1` second
+- Attempt 1: `2 ** 1 = 2` seconds  
+- Attempt 2: `2 ** 2 = 4` seconds
+
+Total seconds = 1 + 2 + 4 = **7 seconds**

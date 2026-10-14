@@ -1,0 +1,1 @@
+{"answer": "Text features are extracted using a classical sparse vectorizer (Term frequency-Inverse document frequency, TF-IDF) to build a bag-of-words representation of the retrieved web page titles and content excerpts.", "evidence": [8]}

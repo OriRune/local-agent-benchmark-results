@@ -1,0 +1,11 @@
+Here's the reasoning from the code.
+
+In `app/net.py`, `fetch` loops `for attempt in range(MAX_RETRIES)`, and on each failed attempt it sleeps `2 ** attempt` seconds before the next try. With `MAX_RETRIES = 3` (from `app/config.py`), the loop runs `attempt = 0, 1, 2`.
+
+The sleeps happen only on failure, and the final failed attempt (the last iteration) does not sleep because there's no attempt left to retry — it just raises `RuntimeError`. So the sleeps are:
+
+- attempt 0: `2**0 = 1` s
+- attempt 1: `2**1 = 2` s
+- attempt 2: no sleep (loop ends, raises)
+
+Total = 1 + 2 = **3 seconds**.

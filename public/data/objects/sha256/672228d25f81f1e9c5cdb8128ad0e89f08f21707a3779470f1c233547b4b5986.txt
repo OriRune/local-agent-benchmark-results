@@ -1,0 +1,1 @@
+The requested operation cannot be completed with current tools. The path "./code.py" does not exist or is inaccessible. Please ensure the Python code file exists before proceeding. If possible, verify the file path or use `find_files` to locate it first. Once confirmed, use `grep` to extract comments and manually append them to `todo.txt` using `append_file`.

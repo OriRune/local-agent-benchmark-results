@@ -1,0 +1,11 @@
+Good news — this is already built in. The list saves your items to your browser's local storage every time you add, edit, check off, or delete something, and reloads them automatically when the page opens.
+
+How it works:
+- **On save** (`save()`): every change writes the full list to `localStorage` under a private key
+- **On load** (`load()`): when the page opens, it reads that stored list back and renders it before you do anything else
+
+So you can close the tab, reopen it later, or even switch browsers on the same computer — your tasks will still be there.
+
+No changes needed. Just open `todo.html` and try adding a task, then reload the page to confirm it's remembered.
+
+One note: local storage is tied to the browser and computer. If you want your list to sync across devices, let me know and I can add cloud syncing — but that would require internet access, which isn't available in your setup.

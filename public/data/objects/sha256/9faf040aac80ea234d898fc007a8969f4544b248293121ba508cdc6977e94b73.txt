@@ -1,0 +1,1 @@
+I have already added "- publish release notes" as the last line of `todo.txt` in the previous turn. Since there were no further instructions, I consider the task complete.

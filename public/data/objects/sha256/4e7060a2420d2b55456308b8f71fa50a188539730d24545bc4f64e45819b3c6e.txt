@@ -1,0 +1,9 @@
+I've created `README.md`. Here's a summary of what it contains:
+
+The project is a small CLI downloader called **tinydl**, defined in `app/cli.py`. The README lists every command line option from its `argparse` parser, along with the exact help text for each:
+
+- **`url`** — what to download (positional argument)
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+
+Each entry shows the full option name(s) and its help text, plus the default where applicable.

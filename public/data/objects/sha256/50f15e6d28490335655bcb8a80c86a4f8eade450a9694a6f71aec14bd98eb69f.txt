@@ -1,0 +1,1 @@
+The function format_bytes(n) has been added to app/util.py and the TODO comment removed. The file now contains the new function with proper formatting. The task is complete.

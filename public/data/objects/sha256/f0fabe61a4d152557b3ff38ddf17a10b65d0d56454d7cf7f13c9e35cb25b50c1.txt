@@ -1,0 +1,9 @@
+I found several LLMs across your home directory. The main locations include:
+
+1. `[private-home]/Documents/llama.cpp/autotune/models/` (contains Qwen3.8, Ling-3.0, and benchmark models)
+2. `[private-home]/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-GGUF/` (Ornith model files)
+3. `[private-home]/.cache/huggingface/hub/models--ggml-org--Qwen3.6-35B-A3B-GGUF/` (Qwen3.6 models)
+4. `[private-home]/.cache/huggingface/hub/models--unsloth--gemma-4-26B-A4B-it-GGUF/` (Gemma 4 models)
+5. `[private-home]/Downloads/` (contains multiple model files like Mellum2.1 and Qwen3.8)
+
+These directories contain the majority of your LLMs based on file extensions (.gguf, .pkl, etc.). Would you like me to narrow down the search to any specific model type or directory?

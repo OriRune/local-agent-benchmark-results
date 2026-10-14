@@ -1,0 +1,38 @@
+# T2
+
+**Result:** pass · done · 2 steps · 1 calls · 1 s
+
+## user
+
+What release date is mentioned in notes.md?
+
+## assistant
+
+I need to find the release date mentioned in notes.md. Let me read the file first.
+
+
+
+- call `read_file` `{"path":"[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/a9c4f854bba232f63255a5ae-7e993adc6b/workspace/project/notes.md"}`
+
+<details><summary>read_file result (380 chars)</summary>
+
+```
+notes.md (10 lines)
+1	# Planning notes
+2	
+3	## 2026-09-02
+4	- Storage: decided to drop SQLite and keep plain JSON files; the data is small and JSON is easier to inspect.
+5	- Maria will look at proxy support.
+6	
+7	## 2026-09-16
+8	- The release is planned for 14 October.
+9	- Retries stay at 3 for now; revisit after the beta.
+10	- Nobody has asked for a GUI, so it is out of scope.
+```
+
+</details>
+
+## assistant
+
+The release date mentioned in notes.md is **October 14, 2026**. This is found on line 8, which states "The release is planned for 14 October."
+

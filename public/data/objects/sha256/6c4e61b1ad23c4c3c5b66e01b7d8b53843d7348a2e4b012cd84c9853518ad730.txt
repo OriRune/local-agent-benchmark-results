@@ -1,0 +1,9 @@
+```json
+{
+  "answer": "The experiment used 100 sentences extracted from the **CoNLL 2003 English Named Entity Recognition (NER) training dataset** (BIBREF8).",
+
+  "evidence": [
+    28
+  ]
+}
+```

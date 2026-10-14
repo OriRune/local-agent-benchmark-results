@@ -1,0 +1,1 @@
+[{"args":{"content":"#!/bin/bash\n\n# Simple script to display RAM and CPU usage\n\n# Memory Usage\necho \"Memory Usage:\"\nfree -m\n\n# CPU Usage\necho \"CPU Usage:\"\ntop -b -n1 | head -n 10\n","path":"cpu_ram_info.sh"},"name":"write_file","result":"created cpu_ram_info.sh (11 lines)","status":"ok"}]

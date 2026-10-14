@@ -1,0 +1,10 @@
+
+The file proxy.ini is found. Here is its content:
+
+[http]
+host = 127.0.0.1
+port = 1080
+
+[socks]
+host = 127.0.0.1
+port = 9050

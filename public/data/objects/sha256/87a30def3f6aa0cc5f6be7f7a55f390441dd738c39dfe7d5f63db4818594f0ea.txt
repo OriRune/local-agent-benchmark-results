@@ -1,0 +1,8 @@
+I have completed the task. I renamed the function `fetch` to `download` in `app/net.py` and updated the import and usage in `app/cli.py`.
+
+**Summary of changes:**
+1. Renamed `def fetch(url, get):` to `def download(url, get):` in `app/net.py`
+2. Changed the import from `from app.net import fetch` to `from app.net import download` in `app/cli.py`
+3. Changed the function call from `fetch(args.url, get=_get)` to `download(args.url, get=_get)` in `app/cli.py`
+
+The grep search for "fetch" returned no results, which means there are no other occurrences of the function name in the project that needed to be updated.

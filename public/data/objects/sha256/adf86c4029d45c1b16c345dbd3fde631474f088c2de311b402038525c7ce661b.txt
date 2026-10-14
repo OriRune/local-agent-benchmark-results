@@ -1,0 +1,8 @@
+The file **app/util.py** now contains:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+```
+
+The **TODO** comment and any reference to a `format_bytes` function has been removed. The file has been edited with **-3 lines**.

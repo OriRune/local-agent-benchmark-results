@@ -1,0 +1,8 @@
+I've created the README.md file with all CLI command line options listed with their help text. The options include:
+
+1. **url** - positional argument for the URL to download
+2. **-o, --output** - file to write (default: stdout)
+3. **-q, --quiet** - no progress output
+4. **--help** - built-in help option
+
+The README also includes usage information and practical examples for each option.

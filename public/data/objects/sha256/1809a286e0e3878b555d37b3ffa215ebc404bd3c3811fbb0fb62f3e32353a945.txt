@@ -1,0 +1,1 @@
+Done. I've undone the most recent commit's change by editing `app/config.py` directly. The `TIMEOUT_S` value has been changed back from 20 to 10, which restores the file to its state before the commit `d1dc741` ("raise the download timeout from 10 to 20 seconds").

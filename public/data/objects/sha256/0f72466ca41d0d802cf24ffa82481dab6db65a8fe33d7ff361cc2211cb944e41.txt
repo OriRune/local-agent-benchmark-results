@@ -1,0 +1,10 @@
+```json
+{
+ "answer": "The system uses Occupation Data (gathered from crowdsourced and government lists) and Names Data (a corpus of 5453 male and 6990 female names sourced from the CMU repository of names, the NLTK data set, and records of baby names and their genders).",
+ "evidence": [
+  "11",
+  "12",
+  "13"
+ ]
+}
+```

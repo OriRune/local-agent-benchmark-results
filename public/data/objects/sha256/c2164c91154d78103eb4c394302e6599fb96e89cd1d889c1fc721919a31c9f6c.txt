@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The paper proposes identifying specific instances of propaganda techniques within news articles, focusing on a novel multi-granularity neural network that outperforms BERT-based baselines.",
+  "evidence": ["[1]", "[2]", "[3]", "[4]", "[5]", "[6]", "[7]", "[8]", "[9]", "[10]", "[11]", "[12]", "[13]", "[14]", "[15]", "[16]", "[17]", "[18]", "[19]", "[20]", "[21]", "[22]"]
+}
+```

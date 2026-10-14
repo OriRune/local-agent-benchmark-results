@@ -1,0 +1,17 @@
+\[ \Delta v_{stage2} = 340 \times 9.80665 \times \ln\left(\frac{13,400}{2,100}\right) \]
+\[ \Delta v_{stage2} = 340 \times 9.80665 \times \ln(6.381) \]
+\[ \Delta v_{stage2} = 340 \times 9.80665 \times 1.853 \]
+\[ \Delta v_{stage2} \approx 340 \times 18.17 \]
+\[ \Delta v_{stage2} \approx 6,178 \, \text{m/s} \]
+
+Total delta-v:
+\[ 3,225 + 6,178 = 9,403 \, \text{m/s} \]
+
+This is very close to the required 9,400 m/s.
+
+---
+
+### Conclusion
+The propellant mass for Stage 2 must be approximately **12,500 kg** to achieve the total delta-v of 9,400 m/s.
+
+**ANSWER: 12500**

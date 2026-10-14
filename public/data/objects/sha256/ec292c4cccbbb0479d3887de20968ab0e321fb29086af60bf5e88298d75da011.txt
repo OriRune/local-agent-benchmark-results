@@ -1,0 +1,7 @@
+The fix has been applied. The issue was that `UNITS["KB"]` was set to `1000` (decimal), but the docstring stated "1024-based units: 1 KB = 1024 bytes" and the test expects `parse_size("1.5 KB") == 1536`.
+
+I changed `UNITS["KB"]` from `1000` to `1024`, which now aligns with:
+- The docstring specification
+- The test expectations (1.5 × 1024 = 1536)
+
+The code is now consistent and should pass all tests.

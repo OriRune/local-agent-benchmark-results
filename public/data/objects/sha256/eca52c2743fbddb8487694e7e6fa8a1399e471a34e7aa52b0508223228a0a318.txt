@@ -1,0 +1,14 @@
+I've created `README.md` for the project.
+
+**What the project is:** `tinydl`, a tiny command-line downloader defined in `app/cli.py` (an `argparse`-based CLI).
+
+**The command line options documented** (all taken directly from the `argparse` definitions in `app/cli.py`):
+
+| Option | Help text |
+| --- | --- |
+| `url` | what to download (positional argument) |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+| `-h`, `--help` | argparse's built-in help |
+
+The README includes a usage line, a table of every option with its help text, and a few usage examples. I verified the help text against the source (the sandbox couldn't run the program, so I read `app/cli.py` directly). I deliberately left out a note about byte-size units because the code is internally inconsistent (the docstring says 1 KB = 1024 bytes, but `units.py` defines KB as 1000 and the test expects 1024), so I didn't want to assert something inaccurate.

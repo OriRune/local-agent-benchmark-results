@@ -1,0 +1,7 @@
+Done. I've created `README.md` with all CLI options documented:
+
+- **Positional arguments**: `url` - "what to download"
+- **Short options**: `-o` - "file to write (default: stdout)"
+- **Long options**: `--output` - "file to write (default: stdout)" and `--quiet` - "no progress output"
+
+The README also includes usage examples and configuration details from the project.

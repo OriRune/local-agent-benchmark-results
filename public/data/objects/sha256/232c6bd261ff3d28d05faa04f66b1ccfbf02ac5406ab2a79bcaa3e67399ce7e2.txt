@@ -1,0 +1,4 @@
+{
+  "answer": "Straw man, hidden ad-hominem, red herring",
+  "evidence": [1, 3, 4]
+}

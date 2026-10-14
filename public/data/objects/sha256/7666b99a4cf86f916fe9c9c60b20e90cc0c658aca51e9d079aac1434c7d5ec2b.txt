@@ -1,0 +1,7 @@
+I created `README.md`. It documents the three CLI options from `app/cli.py`:
+
+- **`url`** (positional) — what to download
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+
+Since the sandbox doesn't allow running programs, I extracted the help text directly from the `argparse` definitions rather than from the live `--help` output. The table includes the argument name, whether it takes a value, and the exact help string.

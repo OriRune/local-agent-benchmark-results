@@ -1,0 +1,7 @@
+```ini
+[proxy]
+host = proxy.example.com
+port = 8080
+```
+
+The `proxy.ini` file sets the proxy host to `proxy.example.com` and the port to `8080`.

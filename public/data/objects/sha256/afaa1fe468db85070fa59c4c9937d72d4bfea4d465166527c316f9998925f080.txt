@@ -1,0 +1,4 @@
+To start, the bot asks: "Please **provide your location**."
+Once the user inputs the *location*, the bot looks for the **o**ptimal weather **o**utput.
+It then **o**ffers a **o**verview of the **o**vercast or sunny **o**utlook.
+The **o**utput is **o**rganized for the user.

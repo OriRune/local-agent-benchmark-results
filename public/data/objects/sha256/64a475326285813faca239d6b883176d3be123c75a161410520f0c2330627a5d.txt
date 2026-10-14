@@ -1,0 +1,1 @@
+Type *your location* and say *o* for the forecast. The bot processes data quickly. You will see the results now.

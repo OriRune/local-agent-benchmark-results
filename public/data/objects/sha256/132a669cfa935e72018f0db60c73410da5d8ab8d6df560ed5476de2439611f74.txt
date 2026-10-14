@@ -1,0 +1,12 @@
+Your list already remembers items across reloads — no change needed. Here's how it works:
+
+- **On reload**, the `load()` function reads the saved list from the browser's local storage (`localStorage.getItem`) and displays it.
+- **On every action** (adding, checking, editing, deleting, clearing), the `save()` function writes the list back to storage (`localStorage.setItem`).
+
+So the data persists in your browser on this computer. Just refresh the page and your tasks will still be there.
+
+Two things to keep in mind:
+- It only works in the **same browser** on **this computer** — it won't sync to other devices or browsers.
+- If you clear your browser's site data / cookies for the page, the list would be wiped.
+
+If you'd instead like it to save to an actual **file on disk** (so it's independent of browser storage) or **sync across devices**, tell me and I'll build that version.

@@ -1,0 +1,22 @@
+Based on the code in `app/net.py` and `app/config.py`:
+
+**Configuration:**
+- `MAX_RETRIES = 3` (from config.py)
+
+**Sleep logic (from net.py):**
+```python
+for attempt in range(MAX_RETRIES):  # attempts 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)  # sleep for 2^attempt seconds
+```
+
+**Total sleep time calculation:**
+- Attempt 0: 2⁰ = 1 second
+- Attempt 1: 2¹ = 2 seconds
+- Attempt 2: 2² = 4 seconds
+
+**Total: 1 + 2 + 4 = 7 seconds**
+
+The fetch function will sleep for a total of **7 seconds** before giving up after 3 failed attempts.

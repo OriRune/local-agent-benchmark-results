@@ -1,0 +1,9 @@
+The list already remembers its items when you reload the page! I implemented this using `localStorage` in the JavaScript:
+
+- **On load**: `let todos = JSON.parse(localStorage.getItem('todos') || '[]');` reads any saved items
+- **On changes**: `save()` writes the current list to `localStorage`
+- **On render**: `render()` displays whatever is in `todos`
+
+So when you add, edit, or delete items, they're saved to your browser's storage. When you reload the page, the script reads them back and displays them.
+
+Try it out — add some items, refresh the page, and they should still be there. If you're not seeing them, let me know what happens and I can help debug.

@@ -1,0 +1,3 @@
+The function `format_bytes(n)` has been added to `app/util.py` and the TODO comment has been removed. The implementation converts bytes to KB/MB/GB/etc. using powers of 1024, and formats the output with one decimal place for values < 10 of the unit, or as an integer for larger values. Edge case `n=0` returns `"0 B"`.
+
+Let me know if you'd like any adjustments to the formatting behavior.

@@ -1,0 +1,10 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the corresponding `TODO` comment. The new function provides human-readable file sizes (e.g., '1.5 KB').
+
+```python
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024:
+            return f"{n:g} {unit}"
+        n /= 1024
+    return f"{n:g} PB"
+```

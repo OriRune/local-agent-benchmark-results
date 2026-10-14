@@ -1,0 +1,7 @@
+The README.md has been created successfully. Here's what it includes:
+
+- Project name and brief description
+- All CLI command line options with their help texts
+- Example usage command
+
+Would you like me to add anything else to the README, such as installation instructions or additional examples?

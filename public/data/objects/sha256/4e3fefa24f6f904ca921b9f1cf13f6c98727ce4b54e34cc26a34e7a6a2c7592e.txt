@@ -1,0 +1,1 @@
+I cannot find any git repository in this folder. Would you like me to initialize a git repository here, or would you prefer to check another folder for git commits?

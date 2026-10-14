@@ -1,0 +1,1 @@
+The most recent git commit (bfe824c) changed the `TIMEOUT_S` configuration from 10 to 20 seconds in `app/config.py`. This affects the download timeout setting in the application.

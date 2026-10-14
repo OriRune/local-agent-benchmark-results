@@ -1,0 +1,5 @@
+Sure, I can help with that. I will search for the file named proxy.ini in the parent directory of the current project folder.
+
+```
+find_files(pattern="proxy.ini", path="../")
+```

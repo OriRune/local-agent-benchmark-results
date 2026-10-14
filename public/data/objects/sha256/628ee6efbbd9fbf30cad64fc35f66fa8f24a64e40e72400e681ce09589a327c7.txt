@@ -1,0 +1,27 @@
+To add the `format_bytes` function to `app/util.py`, you would first open the file in a text editor and then add the following function at the appropriate location within the file:
+
+```python
+def format_bytes(n):
+    """
+    Convert a number of bytes into a human-readable format.
+    
+    Parameters:
+    n (int): The number of bytes to convert.
+    
+    Returns:
+    str: A human-readable string representing the number of bytes, formatted with the appropriate size unit.
+    """
+    for unit in ['bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']:
+        if n < 1024.0:
+            return f"{n:.1f} {unit}"
+        n /= 1024.0
+    return f"{n:.1f} YB"
+```
+
+After adding the function, you would remove the TODO comment from `app/util.py`. If the TODO comment was something like this:
+
+```python
+# TODO: Add a function to format byte sizes into human-readable strings
+```
+
+You would simply delete the line or comment. Remember to save the file after making these changes.

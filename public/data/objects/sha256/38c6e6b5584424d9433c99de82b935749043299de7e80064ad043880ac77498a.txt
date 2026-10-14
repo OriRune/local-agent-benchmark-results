@@ -1,0 +1,20 @@
+Perfect! The script works correctly. Here's what I created:
+
+**`check_system_resources.py`** - A Python script that displays:
+
+- **CPU Information:**
+  - Number of logical and physical cores
+  - Current CPU usage percentage
+
+- **RAM Information:**
+  - Total RAM in GB
+  - Used RAM in GB
+  - Free RAM in GB
+  - Usage percentage
+
+To run it, use:
+```bash
+python3 check_system_resources.py
+```
+
+The script uses the `psutil` library to gather system information. You can run it multiple times to see real-time changes in CPU and RAM usage.

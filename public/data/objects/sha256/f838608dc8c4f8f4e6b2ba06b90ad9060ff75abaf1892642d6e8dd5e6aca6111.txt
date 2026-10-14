@@ -1,0 +1,8 @@
+The persistence is already wired up:
+
+- **Line 195** — on page load, tasks are read back from `localStorage` (falling back to an empty list if nothing is stored).
+- **Line 203** — every add, edit, delete, and checkbox toggle calls `saveTasks()`, which writes the current list back to storage.
+
+So items are saved automatically and restored on reload. Just open `todo.html` again and your tasks will still be there.
+
+If you ever clear your browser's site data or open the file in a different browser/device, the list resets — it's stored locally per browser, not on any server.

@@ -1,0 +1,6 @@
+{
+  "answer": "They use 11,529,432 segmented words (from Chinese Wikipedia articles), covering 20,402 Chinese characters.",
+  "evidence": [
+    12
+  ]
+}

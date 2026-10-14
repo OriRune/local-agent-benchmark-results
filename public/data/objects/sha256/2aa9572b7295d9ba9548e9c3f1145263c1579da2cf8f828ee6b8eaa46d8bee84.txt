@@ -1,0 +1,9 @@
+The sandbox doesn't allow running programs, but I've verified the changes directly by reading the files and confirming via grep that no `fetch` references remain.
+
+Done. I renamed the `fetch` function to `download` in all three places it appears:
+
+1. **`app/net.py`** — the definition: `def fetch(url, get):` → `def download(url, get):`
+2. **`app/cli.py`** — the import: `from app.net import fetch` → `from app.net import download`
+3. **`app/cli.py`** — the call site: `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+`grep` now returns no matches for `fetch` anywhere in the project, and the import in `cli.py` correctly matches the renamed definition in `net.py`, so everything stays consistent.

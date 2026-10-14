@@ -1,0 +1,11 @@
+The run tool is not allowed to run programs because network and package installation are blocked, and the source is read-only. So we cannot execute Python code here. We must rely on the code analysis.
+
+We have MAX_RETRIES = 3 from app/config.py. The fetch function loops for attempt in range(MAX_RETRIES): that's 0, 1, 2. If all fail, it will sleep at attempt 0 (1 second), then attempt 1 (2 seconds), then attempt 2 (4 seconds), then raise RuntimeError. Total sleep = 1 + 2 + 4 = 7 seconds.
+
+Thus answer: 7 seconds.
+
+But we should confirm that the sleep is indeed 2 ** attempt seconds. Yes, line 12: time.sleep(2 ** attempt). So correct.
+
+Thus total sleep time is 7 seconds.
+
+We can answer accordingly.

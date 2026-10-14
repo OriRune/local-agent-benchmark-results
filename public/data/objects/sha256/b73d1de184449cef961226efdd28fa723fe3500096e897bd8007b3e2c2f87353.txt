@@ -1,0 +1,11 @@
+Now I can work it out.
+
+The `fetch` function loops `range(MAX_RETRIES)` where `MAX_RETRIES = 3`, so there are 3 attempts (attempt indices 0, 1, 2). On each failed attempt, it sleeps for `2 ** attempt` seconds:
+
+| Attempt | `attempt` index | Sleep time (`2^attempt`) |
+|---------|-----------------|--------------------------|
+| 1       | 0               | 2⁰ = 1 second            |
+| 2       | 1               | 2¹ = 2 seconds           |
+| 3       | 2               | 2² = 4 seconds           |
+
+**Total sleep time: 1 + 2 + 4 = 7 seconds.**

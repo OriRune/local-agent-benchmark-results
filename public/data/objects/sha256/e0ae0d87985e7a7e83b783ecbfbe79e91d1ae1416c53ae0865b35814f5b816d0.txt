@@ -1,0 +1,3 @@
+The fix is in place. The bug was in `app/units.py` where `UNITS["KB"]` was set to `1000` instead of `1024`. The docstring correctly stated "1 KB = 1024 bytes", but the code used 1000 for the KB multiplier, which caused `parse_size("1.5 KB")` to return `1500` instead of the expected `1536`.
+
+The one-line fix changes `UNITS["KB"]` from `1000` to `1024`, making the code consistent with the documentation and the test expectations.

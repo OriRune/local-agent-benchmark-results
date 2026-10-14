@@ -1,0 +1,15 @@
+I've created a comprehensive README.md for the project. The README includes:
+
+1. **Project description** - A simple command-line tool for downloading files from URLs
+2. **Installation instructions**
+3. **Usage syntax**
+4. **Complete list of CLI options** with their help text:
+   - `url` (positional argument) - "what to download"
+   - `-o` / `--output` - "file to write (default: stdout)"
+   - `-q` / `--quiet` - "no progress output"
+5. **Examples** showing common usage patterns
+6. **Configuration details** from app/config.py
+7. **Byte size units** information from app/units.py
+8. **License** section
+
+The README is now in the workspace and ready for use.

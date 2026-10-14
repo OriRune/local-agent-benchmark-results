@@ -1,0 +1,2 @@
+
+The test was failing because `parse_size("1.5 KB")` computed 1.5 × 1000 = 1500 instead of the expected 1536. The implementation used 1000 for KB while the docstring says the function uses 1024‑based units. I updated the unit mapping for KB to 1024, matching the specification. The test should now pass.

@@ -1,0 +1,18 @@
+Now I have all the information I need:
+
+- `MAX_RETRIES = 3`
+- The loop runs for `attempt` in range(3), which means attempt = 0, 1, 2
+- Sleep time is `2 ** attempt` seconds for each failed attempt
+
+Let me calculate the total sleep time:
+- attempt 0: 2^0 = 1 second
+- attempt 1: 2^1 = 2 seconds
+- attempt 2: 2^2 = 4 seconds
+
+Total: 1 + 2 + 4 = 7 seconds
+
+The fetch function will sleep a total of **7 seconds** before giving up.
+
+Note: The sleep happens after each failed attempt (when an OSError is caught), and the loop runs 3 times (attempts 0, 1, 2). If all 3 attempts fail, it sleeps after attempt 0, after attempt 1, and after attempt 2, then raises the RuntimeError. So all 3 sleeps occur before giving up.
+
+**Answer: 7 seconds**

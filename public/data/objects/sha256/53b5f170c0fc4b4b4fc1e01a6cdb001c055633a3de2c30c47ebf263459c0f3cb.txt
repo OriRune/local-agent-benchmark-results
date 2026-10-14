@@ -1,0 +1,4 @@
+The issue is in `app/units.py` where "KB" is defined as 1000 instead of 1024 in the `UNITS` dictionary. This causes `parse_size("1.5 KB")` to return 1500 instead of the expected 1536. To fix this, you need to change `"KB": 1000` to `"KB": 1024` in `app/units.py`. 
+
+**What I couldn’t do**:  
+The tools kept rejecting repeated attempts to edit the file with the same change, but this is the correct fix. You should manually apply this change to resolve the test failure.

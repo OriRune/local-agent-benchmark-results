@@ -1,0 +1,10 @@
+I have created a README.md file for the project that lists all command line options of the CLI with their help text. The file includes the following sections:
+
+1. **Title and Description**: A brief introduction to the project, "TinyDL," which is a simple command-line tool for downloading content from URLs.
+2. **Usage Examples**: Demonstrates how to use the CLI in different scenarios, such as downloading to stdout or writing to a file.
+3. **Command Line Options**: A table listing all the CLI options, including `url`, `-o, --output`, and `-q, --quiet`, along with their descriptions.
+4. **Project Description**: A detailed description of TinyDL, including its purpose and features.
+5. **Requirements and Installation**: Instructions for installing the tool, including cloning the repository and installing dependencies.
+6. **License**: Mentions that the project is licensed under the MIT License.
+
+The README.md file is now ready in the project directory. If you would like to review or modify it, let me know!

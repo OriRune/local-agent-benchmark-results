@@ -1,0 +1,7 @@
+
+
+The task has been completed. All TODO comments found in the Python files have been added as new lines to todo.txt. The file now contains:
+- " log each failed attempt"
+- " add a helper that formats byte sizes"
+
+No further actions are needed.

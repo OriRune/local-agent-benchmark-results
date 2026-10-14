@@ -1,0 +1,21 @@
+Done. I created `sysinfo.py` in the project folder — a small Python 3 script that reads `/proc/meminfo`, `/proc/stat`, and `/proc/cpuinfo` (no external dependencies) and prints:
+
+- CPU core count, load averages (1/5/15 min), and current CPU usage % (measured from two `/proc/stat` samples)
+- RAM total / used / available with a usage percentage
+- Swap used vs. total, and page size
+
+Example output from a test run:
+
+```
+=== Computer info ===
+CPU cores        : 12
+Load average     : 8.88 (1m)  7.08 (5m)  5.94 (15m)
+CPU usage (now)  : 89.0 %
+RAM total        : 31.3 GiB
+RAM used         : 7.6 GiB (24 %)
+RAM available    : 23.6 GiB
+Swap used        : 2.0 GiB of 2.0 GiB
+Page size        : 4096 bytes
+```
+
+Run it with `python3 sysinfo.py` (I couldn't set the executable bit with chmod, but you can do that yourself if you want to run it as `./sysinfo.py`).

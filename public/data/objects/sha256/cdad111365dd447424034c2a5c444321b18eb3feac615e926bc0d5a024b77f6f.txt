@@ -1,0 +1,4 @@
+{
+  "answer": "The ICD-10 codes are the International Classification of Diseases, 10th revision codes that were automatically assigned to French death certificates in the CLEF eHealth 2018 challenge.",
+  "evidence": [0, 1]
+]

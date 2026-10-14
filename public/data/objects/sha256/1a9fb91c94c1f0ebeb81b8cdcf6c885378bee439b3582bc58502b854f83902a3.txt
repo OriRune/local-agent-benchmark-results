@@ -1,0 +1,7 @@
+I've created a README.md file for the project. The README lists all CLI command line options with their help text:
+
+- **Required**: `url` - The URL of the file to download
+- **Optional**: `-o` or `--output` - Write the downloaded file to this path (default: stdout)
+- **Optional**: `-q` or `--quiet` - Suppress progress output
+
+The README also includes usage examples and exit code information.

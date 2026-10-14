@@ -1,0 +1,19 @@
+The script has been created at `project/cpu_ram_info.sh`. To run it, make it executable and execute it:
+
+```bash
+chmod +x project/cpu_ram_info.sh
+./project/cpu_ram_info.sh
+```
+
+Or run it directly with bash:
+
+```bash
+bash project/cpu_ram_info.sh
+```
+
+The script displays:
+- **CPU**: model name, number of cores, and current usage percentage
+- **RAM**: total, used, and free memory (human-readable)
+- **Swap**: total, used, and free swap space
+
+It uses standard Linux tools (`lscpu`, `nproc`, `top`, `free`) that are available on most Linux systems.

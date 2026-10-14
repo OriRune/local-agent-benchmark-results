@@ -1,0 +1,5 @@
+The release date mentioned in notes.md is **14 October**. 
+
+<final_answer>
+14 October
+</final_answer>

@@ -1,0 +1,6 @@
+Done — added "- publish release notes" as the new last line of todo.txt, which now has 4 lines:
+
+1. `- write README`
+2. `- add proxy support`
+3. `- tag the release`
+4. `- publish release notes`

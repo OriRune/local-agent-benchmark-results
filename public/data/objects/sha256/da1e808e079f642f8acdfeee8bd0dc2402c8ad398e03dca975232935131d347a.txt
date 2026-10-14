@@ -1,0 +1,9 @@
+Looking at the grid, I need to locate the start (*) and destination (#).
+
+Row 7: O X O O X O X * #
+
+The start (*) is at position (row 7, col 7) and the destination (#) is at position (row 7, col 8).
+
+These two cells are directly adjacent horizontally. Moving right from * leads directly to #.
+
+<answer>right</answer>

@@ -1,0 +1,26 @@
+We have three dice: a 12‑sided die (1–12), a 10‑sided die (1–10), and a 2‑sided die (1–2).  
+All three are rolled simultaneously.
+
+We want the probability that **any** of the dice shows a value ≥ 10 (i.e., at least one die rolls a 10 or higher).
+
+- 1d12: numbers ≥10 are {10,11,12} → 3 successes out of 12 → P(success) = 3/12 = 1/4.
+- 1d10: numbers ≥10 are {10} → 1 success out of 10 → P(success) = 1/10.
+- 1d2: numbers ≥10 are none → P(success) = 0.
+
+The dice are independent, so the probability that none of them succeeds (i.e., all are <10) is  
+
+\[
+(1-\tfrac14)\times(1-\tfrac1{10})\times(1-0)=\tfrac34 \times \tfrac{9}{10}= \tfrac{27}{40}.
+\]
+
+Thus the probability that at least one die shows 10 or higher is  
+
+\[
+1 - \tfrac{27}{40} = \tfrac{13}{40}.
+\]
+
+\[
+\boxed{\tfrac{13}{40}}
+\]
+
+<answer>13/40</answer>

@@ -1,0 +1,2 @@
+
+*Location*: {location} *Forecast*: {forecast} – *Good morning*, we will fetch the weather for you soon.

@@ -1,0 +1,1 @@
+Fixed. The bug was in `app/units.py`: the `UNITS` dictionary had `"KB": 1000` (decimal/kilobyte) instead of `"KB": 1024` (binary/kibibyte). The comment and the test both expect 1024-based units, so I changed `1000` to `1024` to match.

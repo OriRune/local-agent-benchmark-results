@@ -1,0 +1,2 @@
+<tool_call>
+{"name": "ask_user", "arguments": {"question": "Is the release date mentioned in notes.md?"}}

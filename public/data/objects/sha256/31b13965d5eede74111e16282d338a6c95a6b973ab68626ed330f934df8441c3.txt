@@ -1,0 +1,17 @@
+I have created a shell script named `open_workspace.sh` in your current directory.
+
+The script performs the following actions:
+1. Opens **Google Chrome** to `google.com`.
+2. Opens **gedit** (a common text editor on Linux Mint).
+3. Opens **Nautilus** (the file manager) at `[private-home]/Documents/llama.cpp`.
+
+**Note:** Since I cannot change file permissions (like `chmod +x`) directly via the `run` tool in this environment, you will need to make the script executable yourself by running this command in your terminal:
+
+```bash
+chmod +x open_workspace.sh
+```
+
+Then you can run it with:
+```bash
+./open_workspace.sh
+```

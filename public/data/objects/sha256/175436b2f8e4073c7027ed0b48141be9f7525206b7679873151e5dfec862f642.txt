@@ -1,0 +1,20 @@
+I've created the shell script `open_apps.sh` in your workspace. However, I cannot make it executable directly (that requires changing file permissions). 
+
+To use it, you'll need to:
+
+1. **Make it executable** (run this in your terminal):
+   ```bash
+   chmod +x open_apps.sh
+   ```
+
+2. **Run the script**:
+   ```bash
+   ./open_apps.sh
+   ```
+
+The script will:
+- Open Chrome with google.com loaded
+- Open a text editor (gedit)
+- Open the file manager (nautilus) showing [private-home]/Documents/llama.cpp
+
+All three applications will open in the background (using `&`). If you prefer a different text editor or file manager, let me know and I can update the script!

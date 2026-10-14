@@ -1,0 +1,14 @@
+```json
+{
+  "answer": "ICD-10 codes are the codes from the International Classification of Diseases, 10th revision, used to automatically code death certificates. The specific example given in the paper is I509 (for 'insuffisance cardiaque aigue').",
+  "evidence": [
+    "[0]",
+    "[3]",
+    "[4]",
+    "[5]",
+    "[8]",
+    "[10]",
+    "[12]"
+  ]
+}
+```

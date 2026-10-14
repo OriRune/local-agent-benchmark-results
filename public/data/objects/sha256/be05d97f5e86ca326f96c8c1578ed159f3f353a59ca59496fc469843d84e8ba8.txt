@@ -1,0 +1,6 @@
+Done. The rename is complete:
+
+- **app/net.py** — `def fetch(url, get):` → `def download(url, get):`
+- **app/cli.py** — import updated to `from app.net import download`, and the call site updated to `data = download(args.url, get=_get)`
+
+A project-wide search for `fetch` now returns no matches, so nothing else (tests, notes, todo.txt) referenced it. I tried to run a quick import check to confirm, but program execution is blocked in this sandbox — the grep verification confirms all references were updated.

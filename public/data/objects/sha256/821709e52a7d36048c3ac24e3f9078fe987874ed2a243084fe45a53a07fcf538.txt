@@ -1,0 +1,5 @@
+Done. I've created `README.md` with the CLI documentation. The file lists all three command line options:
+
+- **`url`** (required): The URL of the resource to download
+- **`-o` or `--output`**: Output file path (default: stdout)
+- **`-q` or `--quiet`**: Suppress progress output

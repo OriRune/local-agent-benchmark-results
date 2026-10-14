@@ -1,0 +1,9 @@
+Done! I've created `README.md` with all the CLI command line options from `app/cli.py`:
+
+| Option | Short | Long | Description |
+|--------|-------|------|-------------|
+| `url` | - | - | what to download |
+| `-o` | - | `--output` | file to write (default: stdout) |
+| `-q` | - | `--quiet` | no progress output |
+
+The README also includes usage instructions and example commands.

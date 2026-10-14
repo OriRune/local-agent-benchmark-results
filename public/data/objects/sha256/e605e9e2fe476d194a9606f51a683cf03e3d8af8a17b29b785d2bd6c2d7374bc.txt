@@ -1,0 +1,33 @@
+```json
+{
+  "characterName": "Thalor the Medalist",
+  "class": "Wizard",
+  "level": 3,
+  "abilityScores": {
+    "Strength": 10,
+    "Dexterity": 14,
+    "Constitution": 12,
+    "Intelligence": 16,
+    "Wisdom": 13,
+    "Charisma": 8
+  },
+  "hitPoints": 15,
+  "armorClass": 12,
+  "spellSlots": {
+    "1st": 4,
+    "2nd": 2,
+    "3rd": 1
+  },
+  "equipment": [
+    "Quarterstaff",
+    "Component Pouch",
+    "Explorer's Pack",
+    "Medal of Valor"
+  ],
+  "spells": [
+    {"name": "Fireball", "level": 3},
+    {"name": "Theta Bolt", "level": 2}
+  ],
+  "notes": "You are a Medalist and have tapped the power of theta."
+}
+```

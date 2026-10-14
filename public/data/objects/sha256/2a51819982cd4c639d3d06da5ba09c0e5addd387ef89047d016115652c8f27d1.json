@@ -1,0 +1,1 @@
+{"check":{"blocking_lines":["echo \"No text editor found. Please install nano or gedit.\""],"chrome":true,"editor":true,"file":"open_workspace.sh","file_manager":true,"syntax_ok":true},"score":0}

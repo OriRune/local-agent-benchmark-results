@@ -1,0 +1,3 @@
+It seems like there is no existing `README.md` file. I will create one for you.
+
+To write the `README.md`, I need to know what the CLI is. Could you please tell me what the Command Line Interface (CLI) is and what its commands are? This will help me list all the command-line options and their help text accurately.

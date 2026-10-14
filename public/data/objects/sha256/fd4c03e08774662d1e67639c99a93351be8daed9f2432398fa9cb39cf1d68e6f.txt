@@ -1,0 +1,6 @@
+Summary of what I found and assumed:
+
+- **No 2019 tax return exists in this folder** — I searched all filenames (`*tax*`, `*return*`, `*2019*`) and all file contents for "2019"/"refund"; nothing matched.
+- The only tax file is `Documents/Personal/tax return 2024.pdf`, and it is **corrupt/truncated** (973 bytes, PDF stream ends unexpectedly), so its refund amount can't be read.
+
+**Question for you (I couldn't ask interactively):** Where is the 2019 tax return supposed to be — another folder or drive I should search, or should you re-download the tax return PDF so I can read it? If you meant the 2024 file, it needs to be replaced with an uncorrupted copy before I can tell you the refund.

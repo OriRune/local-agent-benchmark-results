@@ -1,0 +1,28 @@
+Let me work through this step by step.
+
+**Houses:** 1 (left), 2 (middle), 3 (right)
+
+**From the clues:**
+- Clue 1: Bob is in House 3
+- Clue 2: Arnold is in House 2
+- Clue 4: The Dane is Alice
+- Clue 5: The dog owner is the Dane
+- Clue 6: The cat lover is Arnold
+- Clue 3: Arnold is British
+
+**Placing names:**
+- House 3 = Bob
+- House 2 = Arnold
+- House 1 = Alice (only remaining name)
+
+**Verifying:**
+- Alice is the Dane (Clue 4) ✓
+- The Dane owns the dog (Clue 5), so Alice owns the dog
+- Arnold owns the cat (Clue 6) ✓
+- Arnold is British (Clue 3) ✓
+- Bob is in House 3 ✓
+- Arnold is in House 2 ✓
+
+Everything is consistent. House 1 is occupied by Alice.
+
+<answer>alice</answer>

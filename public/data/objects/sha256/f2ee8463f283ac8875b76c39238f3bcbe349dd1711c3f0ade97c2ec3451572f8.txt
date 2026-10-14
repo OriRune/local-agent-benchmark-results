@@ -1,0 +1,4 @@
+{
+  "answer": "TF-IDF and bag-of-words features",
+  "evidence": [1, 8]
+}

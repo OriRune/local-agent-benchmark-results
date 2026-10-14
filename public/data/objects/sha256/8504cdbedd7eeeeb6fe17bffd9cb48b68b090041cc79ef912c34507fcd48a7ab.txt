@@ -1,0 +1,6 @@
+Done. I undid the most recent commit (`96e9909`) by directly editing the file:
+
+- File: `app/config.py`
+- Reverted `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`
+
+No git commands were used to make the change. The file now matches its state before the commit.

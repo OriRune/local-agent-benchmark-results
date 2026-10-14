@@ -1,0 +1,8 @@
+With `MAX_RETRIES = 3`, the function attempts the fetch up to **three times** before giving up. The sleep durations are:
+
+- **First failure:** \(2^0 = 1\) second
+- **Second failure:** \(2^1 = 2\) seconds
+- **Third failure:** \(2^2 = 4\) seconds
+
+Since it gives up **after** the third failure, the total sleep time before giving up is:
+**1 + 2 + 4 = 7 seconds**.

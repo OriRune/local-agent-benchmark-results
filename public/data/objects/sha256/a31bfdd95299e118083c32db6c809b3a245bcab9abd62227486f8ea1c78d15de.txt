@@ -1,0 +1,3 @@
+I cannot directly run the test in this session, but the fix has been applied to the code. The `parse_size` function should now correctly parse sizes like `"1.5 KB"` as `1536` bytes (1.5 * 1024), matching the test's expectations.
+
+If you run the test locally, it should now pass.

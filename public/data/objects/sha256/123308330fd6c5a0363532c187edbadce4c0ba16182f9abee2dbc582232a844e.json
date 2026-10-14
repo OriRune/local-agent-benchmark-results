@@ -1,0 +1,1 @@
+{"generator_config":{"max_dice_size":30,"num_dice":7,"seed":1151,"size":2},"metadata":{"difficulty":{"max_dice_size":30,"num_dice":7},"puzzle":{"den":10281600,"dice_str":"1d30, 1d21, 1d20, 1d20, 1d17, 1d12, 1d4","num":8966093,"probability":0.8720523070339247,"target":49},"source_dataset":"dice","source_index":1}}

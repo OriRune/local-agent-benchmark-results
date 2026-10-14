@@ -1,0 +1,6 @@
+Done. I've undone the most recent git commit (c914640) by directly editing the file:
+
+- **File changed:** `app/config.py`
+- **Reverted change:** `TIMEOUT_S` was changed from 20 back to 10
+
+The file now has the original value as it was before the commit.

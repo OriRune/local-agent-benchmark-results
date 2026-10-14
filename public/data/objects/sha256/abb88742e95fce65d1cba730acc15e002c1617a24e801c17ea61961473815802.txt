@@ -1,0 +1,12 @@
+I've created a beautiful HTML page called `books.html` that displays all your 2025 books. The page features:
+
+- **Stunning dark gradient background** with a modern aesthetic
+- **Colorful gradient title** with "Books I Read in 2025"
+- **Statistics bar** showing 21 books and 4,447 pages
+- **Card-based layout** for each book with glassmorphism effects
+- **Genre color coding** - Sci-Fi (red), Literary Fiction (blue), Fantasy (yellow), Nonfiction (blue), Historical Fiction (gray), Classic (gray), Mystery (red)
+- **Hover effects** on book cards for interactivity
+- **Responsive design** that works on different screen sizes
+- **Clean typography** using Georgia font
+
+The page is completely self-contained in a single HTML file that you can double-click to open in any browser. It will look great in a screenshot for your book club friends!

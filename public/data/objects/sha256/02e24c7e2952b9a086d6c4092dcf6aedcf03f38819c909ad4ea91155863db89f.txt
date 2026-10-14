@@ -1,0 +1,10 @@
+
+```json
+{
+  "name": "grep",
+  "arguments": {
+    "pattern": "commit",
+    "path": ".git/refs/heads/master"
+  }
+}
+```

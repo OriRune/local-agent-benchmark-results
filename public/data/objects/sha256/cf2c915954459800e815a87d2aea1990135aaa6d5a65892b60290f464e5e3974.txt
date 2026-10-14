@@ -1,0 +1,9 @@
+Here's a summary of the files in the `app/` directory:
+
+- `app/`: The main package directory.
+- `data/`: A folder containing data-related files.
+- `tests/`: A folder for test files.
+- `notes.md`: A 340-byte markdown note file.
+- `todo.txt`: A 53-byte text file listing tasks.
+
+Let me know if you'd like to explore any specific file or perform actions on them.

@@ -1,0 +1,10 @@
+I've written `README.md`. Here's a summary of what I did:
+
+- Explored the project and found the CLI in `app/cli.py` (the `tinydl` entry point via `python -m app.cli`).
+- Confirmed the complete set of command-line options from `build_parser()`:
+  - `url` — `help="what to download"` (positional argument)
+  - `-o`, `--output` — `help="file to write (default: stdout)"`
+  - `-q`, `--quiet` — `help="no progress output"`
+- Created `README.md` listing every option with its exact help text, plus usage and an example.
+
+Note: I couldn't execute `--help` to double-check (the sandbox denies running programs), so the option list is taken directly from the source in `app/cli.py`.

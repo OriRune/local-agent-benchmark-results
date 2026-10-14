@@ -1,0 +1,7 @@
+Done. I created a `README.md` that lists all three CLI options from `app/cli.py`:
+
+- **`url`** — the URL to download
+- **`-o, --output`** — file to write (default: stdout)
+- **`-q, --quiet`** — no progress output
+
+The README follows the project's existing structure and uses the same tabular format as the original notes.

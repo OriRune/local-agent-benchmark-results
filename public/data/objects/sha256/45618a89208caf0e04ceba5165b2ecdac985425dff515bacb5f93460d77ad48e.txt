@@ -1,0 +1,12 @@
+# T3
+
+**Result:** fail · done · 1 steps · 0 calls · 3 s
+
+## user
+
+Change MAX_RETRIES to 5.
+
+## assistant
+
+{"name": "set_option", "description": "Change a configurable option for the session, with the option name and new value.", "parameters": {"option": {"type": "str", "description": "the option to change, e.g., \"MAX_RETRIES\"", "required": true}, "value": {"type": "int", "description": "the new value for the option, e.g., 5", "required": true}}}
+

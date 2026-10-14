@@ -1,0 +1,8 @@
+I've created the `README.md` file with a comprehensive list of all CLI command-line options and their help text from the `app/cli.py` file. The README includes:
+
+1. A table listing all three CLI arguments/options:
+   - `url` (required positional argument) - "what to download"
+   - `-o` / `--output` - "file to write (default: stdout)"
+   - `-q` / `--quiet` - "no progress output"
+
+2. Usage examples showing common ways to use the CLI tool.

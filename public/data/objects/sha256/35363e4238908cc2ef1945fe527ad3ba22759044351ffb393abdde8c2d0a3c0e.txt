@@ -1,0 +1,10 @@
+Based on the Python files in the app folder:
+
+1. **app/__init__.py** - Empty file (0 bytes)
+2. **app/cli.py** - 36 lines
+3. **app/config.py** - 4 lines
+4. **app/net.py** - 13 lines
+5. **app/units.py** - 7 lines
+6. **app/util.py** - 5 lines
+
+The largest Python file is **app/cli.py** with **36 lines**.

@@ -1,0 +1,9 @@
+Done. I've created `README.md` with all CLI command line options from `app/cli.py`:
+
+| Option | Short | Description |
+|--------|-------|-------------|
+| `url` | - | What to download (required positional argument) |
+| `-o` | --output | File to write (default: stdout) |
+| `-q` | --quiet | No progress output |
+
+Plus usage examples for each combination. This completes the "write README" task from todo.txt.

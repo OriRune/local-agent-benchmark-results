@@ -1,0 +1,12 @@
+```json
+{
+ "answer": "The ICD-10 codes are the International Classification of Diseases, 10th revision, which are used to automatically code death certificates.",
+ "evidence": [
+  0,
+  1,
+  3,
+  4,
+  5
+ ]
+}
+```

@@ -1,0 +1,33 @@
+Looking at this problem, I need to find the sum of the 2023rd row.
+
+**Setting up the recurrence for row sums:**
+
+Let S(n) = sum of row n. Using the rule that interior entries equal 1 + sum of two entries above:
+
+S(n) = 2 + (n-2) + [S(n-1) - 1] + [S(n-1) - 1] = 2S(n-1) + n - 2
+
+**Verifying with given rows:**
+- S(1) = 1, S(2) = 2, S(3) = 5, S(4) = 12, S(5) = 27 ✓
+
+**Finding the closed form:**
+
+Testing S(n) = 2ⁿ - n:
+- S(1) = 2-1 = 1 ✓
+- S(2) = 4-2 = 2 ✓
+- S(3) = 8-3 = 5 ✓
+- S(4) = 16-4 = 12 ✓
+- S(5) = 32-5 = 27 ✓
+
+**Computing the units digit of S(2023) = 2²⁰²³ - 2023:**
+
+The units digit of 2ⁿ cycles with period 4: 2, 4, 8, 6, ...
+
+Since 2023 mod 4 = 3, the units digit of 2²⁰²³ is **8**.
+
+The units digit of 2023 is **3**.
+
+Units digit of 2²⁰²³ - 2023 = 8 - 3 = **5**.
+
+The answer is **(D)**.
+
+DDDDD

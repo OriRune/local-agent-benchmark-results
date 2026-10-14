@@ -1,0 +1,3 @@
+
+
+The script `system_info.sh` has been created successfully. To use it, you can make it executable with `chmod +x system_info.sh` and run it with `./system_info.sh`. This will display RAM usage (in human-readable format) and CPU usage (from the first `top` snapshot) in the terminal.

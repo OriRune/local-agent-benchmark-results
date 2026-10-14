@@ -1,0 +1,1 @@
+*Open* the bot by saying "Hello" to *obtain* your forecast. *Output* the weather data once you *offer* your location. *Observe* the results as the system *operates* smoothly.

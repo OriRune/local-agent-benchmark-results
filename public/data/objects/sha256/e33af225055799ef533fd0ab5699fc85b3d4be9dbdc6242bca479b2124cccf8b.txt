@@ -1,0 +1,15 @@
+Now I have everything I need.
+
+**The code:**
+
+`config.py` sets `MAX_RETRIES = 3`.
+
+`net.py` loops `for attempt in range(MAX_RETRIES)` — so `attempt` takes values 0, 1, 2 (three attempts). On each failed attempt it sleeps `2 ** attempt` seconds:
+
+- attempt 0 → sleep 2⁰ = 1 s
+- attempt 1 → sleep 2¹ = 2 s
+- attempt 2 → sleep 2² = 4 s
+
+Total sleep = 1 + 2 + 4 = **7 seconds**.
+
+(The 20 s `TIMEOUT_S` is time spent waiting on each request, not sleeping — it's not counted as "sleeping".)

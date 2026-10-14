@@ -1,0 +1,10 @@
+The code in `app/net.py` uses `time.sleep(2 ** attempt)` before each fetch retry. Since the user mentioned that every attempt fails, the retry attempts are likely to be:
+
+- **1st attempt**: `2 ** 1 = 2` seconds
+- **2nd attempt**: `2 ** 2 = 4` seconds
+- **3rd attempt**: `2 ** 3 = 8` seconds
+- **4th attempt**: `2 ** 4 = 16` seconds
+- **5th attempt**: `2 ** 5 = 32` seconds
+
+Since the maximum number of retries allowed is **5**, the total sleep time before giving up is:
+**2 + 4 + 8 + 16 + 32 = 62 seconds**.

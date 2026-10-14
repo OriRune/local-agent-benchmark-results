@@ -1,0 +1,12 @@
+Let me verify the arithmetic:
+
+The `fetch` function loops `for attempt in range(MAX_RETRIES)`, where `MAX_RETRIES = 3`, so `attempt` takes values `0, 1, 2`.
+
+After each failed attempt it sleeps `time.sleep(2 ** attempt)`:
+- attempt 0: `2 ** 0 = 1` second
+- attempt 1: `2 ** 1 = 2` seconds
+- attempt 2: `2 ** 2 = 4` seconds
+
+Total: `1 + 2 + 4 = 7` seconds.
+
+**Every attempt failing means it sleeps 7 seconds total before raising the `RuntimeError`.**

@@ -1,0 +1,7 @@
+---
+import Shell from '../layouts/Shell.astro';
+import Overview from '../components/Overview';
+import { currentData } from '../lib/data';
+const { release, index } = await currentData();
+---
+<Shell title="Find a model for the task"><div class="eyebrow">Local language models · Measured results</div><h1>The right model starts<br/>with the task.</h1><p class="lede">Compare what tested models actually did. Start with a capability, find a useful size, then follow every score back to the question and the recorded answer.</p><div class="stamp"><span>{index.checkpoints.length} checkpoints</span><span>{index.suites.reduce((n,s)=>n+s.primary_question_ids.length,0)} primary questions · {index.suites.length} suites</span><span>Text-only · One benchmark machine</span><span>Campaign started <time datetime={index.campaign_created_at}>{index.campaign_created_at.slice(0, 10)} UTC</time></span><a href="/editions/">Edition {release.release_id.slice(8,16)}</a></div><Overview data={index} releaseId={release.release_id} client:load/></Shell>

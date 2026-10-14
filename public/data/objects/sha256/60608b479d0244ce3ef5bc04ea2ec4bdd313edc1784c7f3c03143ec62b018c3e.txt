@@ -1,0 +1,7 @@
+{
+  "answer": "We use a questionnaire to rank captions based on funniness, and compare them with human-generated captions, STAIR captions, and Bokete user reports (stars).",
+  "evidence": [
+    12,
+    14
+  ]
+}

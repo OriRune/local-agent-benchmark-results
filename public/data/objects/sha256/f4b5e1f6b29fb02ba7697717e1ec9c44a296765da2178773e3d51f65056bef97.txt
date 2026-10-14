@@ -1,0 +1,10 @@
+The code shows the fetch function with `MAX_RETRIES = 3` and a loop that runs for `attempt` from `0` to `MAX_RETRIES - 1` (i.e., 0, 1, 2).
+
+For each attempt, it sleeps for `2 ** attempt` seconds:
+- Attempt 0: `2^0 = 1` second
+- Attempt 1: `2^1 = 2` seconds  
+- Attempt 2: `2^2 = 4` seconds
+
+**Total sleep time = 1 + 2 + 4 = 7 seconds**
+
+The geometric series formula `2^(N+1) - 1` where N is the highest exponent gives `2^(2+1) - 1 = 7 seconds`, confirming the calculation.

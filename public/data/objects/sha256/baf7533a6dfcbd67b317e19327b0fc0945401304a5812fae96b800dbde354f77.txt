@@ -1,0 +1,1 @@
+I've created the shell script `open_apps.sh` in the workspace. It launches Google Chrome with google.com, starts the nano text editor, and opens the file manager to show `[private-home]/Documents/llama.cpp` using nautilus. You can run it with `bash open_apps.sh`.

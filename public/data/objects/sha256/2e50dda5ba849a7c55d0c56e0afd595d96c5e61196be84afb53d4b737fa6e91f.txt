@@ -1,0 +1,6 @@
+Done. I searched all Python files in the project and found exactly 2 TODO comments, which I've added as new lines to `todo.txt`:
+
+1. `app/net.py` → `- # TODO: log each failed attempt`
+2. `app/util.py` → `- # TODO: add a helper that formats byte sizes`
+
+The `data/events.log` file was skipped since it isn't Python code. The existing three items remain untouched.

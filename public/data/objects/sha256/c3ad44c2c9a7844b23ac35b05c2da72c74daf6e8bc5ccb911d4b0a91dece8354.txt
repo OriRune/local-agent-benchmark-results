@@ -1,0 +1,8 @@
+
+
+The to-do list now uses **localStorage** to save tasks, checkbox states, and edits. When you reload the page:  
+- Saved tasks will reappear in the list  
+- Checked/unchecked status will be preserved  
+- New tasks added after reloading will also be saved  
+
+The export functionality remains intact, and you can now add/edit/delete items with persistence. Let me know if you'd like to refine any features!

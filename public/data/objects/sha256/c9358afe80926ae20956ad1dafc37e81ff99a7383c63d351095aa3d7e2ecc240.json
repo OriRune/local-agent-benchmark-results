@@ -1,0 +1,1 @@
+{"instruction_id_list":["keywords:letter_frequency","length_constraints:number_sentences","detectable_format:number_highlighted_sections"],"kwargs":[{"let_frequency":6,"let_relation":"less than","letter":"o"},{"num_sentences":6,"relation":"less than"},{"num_highlights":2}],"origin_note":"Frozen original checks. Applicable recorded corrections appear with each attempt."}

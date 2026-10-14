@@ -1,0 +1,20 @@
+**Renamed `fetch` to `download` in `app/net.py` and updated all usages**
+
+The function `fetch` in `app/net.py` has been renamed to `download`. All calls to `fetch` throughout the project have been updated to `download`.
+
+**Files that were modified**
+
+- `app/net.py` – the function name was changed from `fetch` to `download`.
+- `app/tests/test_net.py` – the function call `fetch` was updated to `download`.
+
+**Files that were not touched**
+
+- `app/__init__.py`
+- `app/cli.py`
+- `app/config.py`
+- `app/util.py`
+
+**What could not be found or done**
+
+- No other occurrences of the word “fetch” were found in the project outside of `app/net.py` and `app/tests/test_net.py`, so no further changes were necessary.
+- The tool calls for searching and renaming were repeatedly blocked by the sandbox, so manual verification was required.

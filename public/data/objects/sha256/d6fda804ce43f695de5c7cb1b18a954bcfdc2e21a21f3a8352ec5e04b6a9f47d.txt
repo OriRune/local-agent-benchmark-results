@@ -1,0 +1,1 @@
+Use the *{{o}}* placeholder in your *bot syntax* to capture the user's city, then pass that variable to a weather API for the *forecast output*.

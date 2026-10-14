@@ -1,0 +1,8 @@
+The new line has been added to **todo.txt**. The file now contains:
+
+```
+- write README
+- add proxy support
+- tag the release
+- publish release notes
+```

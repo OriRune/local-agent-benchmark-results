@@ -1,0 +1,1 @@
+The sandbox is denied, but I've fixed the code. The issue was that `UNITS["KB"]` was set to `1000` instead of `1024`, which contradicts the docstring saying "1 KB = 1024 bytes". The fix changes `1000` to `1024`.

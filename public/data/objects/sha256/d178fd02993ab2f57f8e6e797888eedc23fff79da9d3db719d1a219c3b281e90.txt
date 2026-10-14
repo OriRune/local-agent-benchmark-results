@@ -1,0 +1,21 @@
+Working it out from `app/net.py`:
+
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3 → attempt = 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+```
+
+With `MAX_RETRIES = 3`, the loop runs three times, and after each failed attempt it sleeps `2 ** attempt`:
+
+- attempt 0 → sleep(2⁰) = 1 s
+- attempt 1 → sleep(2¹) = 2 s
+- attempt 2 → sleep(2²) = 4 s
+
+After the third failure the loop ends and it raises `RuntimeError`.
+
+Total sleep = 1 + 2 + 4 = **7 seconds**.
+
+(Note: `TIMEOUT_S = 20` is the per-call timeout, not sleep time, so it doesn't count toward the sleeping total.)

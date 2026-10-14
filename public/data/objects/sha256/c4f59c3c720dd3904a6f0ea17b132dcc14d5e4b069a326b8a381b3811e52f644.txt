@@ -1,0 +1,7 @@
+I've created a README.md file for the project that documents all the command line options:
+
+- **url** - The URL of the file to download
+- **-o, --output FILE** - Write output to file instead of stdout (default: stdout)
+- **-q, --quiet** - Suppress progress output (default: show progress)
+
+The README also includes installation instructions, usage examples, additional features, and configuration details.

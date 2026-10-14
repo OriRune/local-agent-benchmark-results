@@ -1,0 +1,20 @@
+Looking at `app/net.py`:
+
+```python
+def fetch(url, get):
+    for attempt in range(MAX_RETRIES):
+        try:
+            return get(url, timeout=TIMEOUT_S)
+        except OSError:
+            time.sleep(2 ** attempt)
+```
+
+With `MAX_RETRIES = 3`, the loop runs for `attempt = 0, 1, 2`. If every attempt fails, it sleeps after each one:
+
+- attempt 0 → sleep(2⁰) = 1 s
+- attempt 1 → sleep(2¹) = 2 s
+- attempt 2 → sleep(2²) = 4 s
+
+Total = 1 + 2 + 4 = **7 seconds**.
+
+(Note: the 20 s `TIMEOUT_S` is the per-attempt network timeout, not part of the sleep — the question is only about sleeping.)

@@ -1,0 +1,15 @@
+{
+  "answer": "They use DBpedia for training their model.",
+  "evidence": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ]
+}

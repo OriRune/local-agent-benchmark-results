@@ -1,0 +1,4 @@
+{
+  "answer": "The authors do not train a machine learning model; instead, they use a dictionary-based system that relies on Occupation Data (gathered from internet, crowdsourced, and government lists), Names Data (sourced from the CMU repository, NLTK, and baby name records), and DBpedia (used to fetch counter-evidence).",
+  "evidence": [11, 12, 13, 23]
+}

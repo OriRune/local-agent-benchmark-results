@@ -1,0 +1,7 @@
+Done. I renamed `fetch` to `download` in three places:
+
+1. **app/net.py** (line 6) — the function definition
+2. **app/cli.py** (line 5) — the import statement
+3. **app/cli.py** (line 18) — the call site
+
+No other occurrences of `fetch` remain in the project.

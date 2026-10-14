@@ -1,0 +1,4 @@
+Based on my search:
+
+- **6 Python files** are in the app folder
+- The **largest file** is `app/cli.py` at 903 bytes

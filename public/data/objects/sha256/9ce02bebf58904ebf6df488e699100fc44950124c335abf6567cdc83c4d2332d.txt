@@ -1,0 +1,9 @@
+```json
+{
+ "answer": "ICD-10 refers to the International Classification of Diseases, 10th revision; an example of an ICD-10 code mentioned in the text is I509.",
+ "evidence": [
+  0,
+  10
+ ]
+}
+```

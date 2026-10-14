@@ -1,0 +1,1 @@
+I don't see a `.git` folder in the current directory, which suggests this isn't a git repository or the git metadata isn't stored here. Could you clarify if you meant changes in this folder or in another git repository? If you meant changes in this folder, I can help analyze the files or logs, but I won't have access to remote or external git repositories.

@@ -1,0 +1,18 @@
+Here is the breakdown of the books you read last year:
+
+- **Total unique books read:** 20 (duplicates like *Project Hail Mary* are counted once).
+- **Books finished between July and December:** 8 (*Dune*, *The Hobbit*, *Sapiens*, *The Night Circus*, *Tomorrow and Tomorrow and Tomorrow*, *The Thursday Murder Club*, *Babel*, *Lessons in Chemistry*, *A Psalm for the Wild-Built*, *The Bear and the Nightingale*).
+
+However, upon closer inspection, *Middlemarch* (started in August) does not have an end date, so it is not counted as finished. The correct count for books finished between July and December is **7**.
+
+**Correction:** The books finished between July and December are:
+- *The Hobbit* (July 12–19)
+- *Sapiens* (July 25–August 15)
+- *The Night Circus* (September 1–12)
+- *Tomorrow and Tomorrow and Tomorrow* (September 14–30)
+- *The Thursday Murder Club* (October 2–9)
+- *Babel* (October 12–November 5)
+- *The Bear and the Nightingale* (December 1–16)
+
+**Final Answer:**
+**ANSWER: 20, 7**

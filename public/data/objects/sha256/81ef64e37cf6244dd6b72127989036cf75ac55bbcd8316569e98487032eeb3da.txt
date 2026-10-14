@@ -1,0 +1,17 @@
+Both scripts are done and tested. Here's what I created:
+
+**`system_info.py`** — a Python script (recommended, since it runs cleanly in this environment) that shows:
+- **CPU**: number of available cores and current usage percentage (read from `/proc/stat`, with a `top` fallback)
+- **RAM**: total, used, and usage percentage (read from `/proc/meminfo`, with a `free` fallback)
+
+Run it with:
+```
+python3 system_info.py
+```
+
+**`system_info.sh`** — a bash equivalent that reads from `free` and `top`. Run it with:
+```
+./system_info.sh
+```
+
+Both produce the same clean, boxed terminal output. On this machine they report 12 CPU cores and ~32 GB of RAM at about 20% usage. The Python version is a bit more robust (it reads directly from the kernel's `/proc` files and handles the numbers correctly), so I'd suggest using it.

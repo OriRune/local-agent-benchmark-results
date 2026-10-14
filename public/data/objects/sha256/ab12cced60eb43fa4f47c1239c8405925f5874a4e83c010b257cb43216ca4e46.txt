@@ -1,0 +1,1 @@
+I have renamed the function `fetch` to `download` in `app/net.py` and updated all its usages in `app/cli.py`.

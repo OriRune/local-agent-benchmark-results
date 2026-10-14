@@ -1,0 +1,8 @@
+The function `format_bytes(n)` has been added to `app/util.py` and the TODO comment has been removed. The implementation:
+
+- Returns "0 B" for `n == 0`
+- Uses binary units (KB = 1024 bytes, MB = 1024 KiB, etc.)
+- For bytes (i == 0), shows integer without decimal when whole (e.g., `1024 B`), otherwise with one decimal (e.g., `1023.0 B`)
+- For units >= KB, always shows one decimal place (e.g., `1.0 KB`, `1.5 MB`)
+
+Let me know if you'd like any adjustments to the formatting behavior.

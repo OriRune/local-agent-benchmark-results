@@ -1,0 +1,3 @@
+The `find_files` tool returned 7 Python files in total, sorted by size (largest first).
+
+The largest Python file is `app/cli.py` with 903 bytes.

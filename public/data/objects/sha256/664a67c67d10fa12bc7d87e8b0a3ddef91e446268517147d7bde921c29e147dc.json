@@ -1,0 +1,1 @@
+["The user is asking for the largest files inside [private-home]/Documents/llama.cpp. Let's use find_files with sort size... but find_files needs a pattern. Use \"*\" and path \".\" with sort size.\n","Please list the largest files along with their locations.\n"]

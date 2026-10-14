@@ -1,0 +1,3 @@
+The error is "No such folder: data/events.log" on line 1. 
+
+\boxed{No such folder: data/events.log}

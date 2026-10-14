@@ -1,0 +1,7 @@
+I've written `README.md`. It documents the `tinydl` CLI (defined in `app/cli.py`), listing every command line option with its help text:
+
+- **`url`** — the URL to download (the positional argument)
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+
+I also included a usage synopsis, examples, and brief notes on retry behavior and the stderr byte count, drawn from the source and `app/config.py`. Since the sandbox blocks running programs, I extracted the options directly from `build_parser()` in `cli.py`, which is the authoritative source.

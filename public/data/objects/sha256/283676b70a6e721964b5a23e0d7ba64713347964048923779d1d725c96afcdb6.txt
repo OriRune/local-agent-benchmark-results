@@ -1,0 +1,1 @@
+There seems to be no Git repository in the current directory or its parent. Without a Git repository, there are no commits. I should inform the user.

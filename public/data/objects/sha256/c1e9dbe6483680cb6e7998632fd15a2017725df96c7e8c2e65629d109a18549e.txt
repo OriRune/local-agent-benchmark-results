@@ -1,0 +1,10 @@
+The events.log file contains exactly one error code.
+
+**Error code: `E-4471`** — on **line 2417**.
+
+The full line reads:
+```
+ERROR code=E-4471 disk quota exceeded while saving part 7
+```
+
+That's the only line in the 3000-line file matching any error/failure pattern or any `code=` field, so it's the single error event recorded.

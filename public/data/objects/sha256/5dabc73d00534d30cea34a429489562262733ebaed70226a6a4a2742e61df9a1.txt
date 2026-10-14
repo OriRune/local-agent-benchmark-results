@@ -1,0 +1,11 @@
+Here is one way to make 24 using 6, 2, 2, 4:
+
+$(6 - 2) * (4 + 2) = 4 * 6 = 24$
+
+Alternatively:
+
+$4 * (6 / 2) * 2 = 4 * 3 * 2 = 24$
+
+Let's use the first one as it is simpler.
+
+<answer>(6 - 2) * (4 + 2)</answer>

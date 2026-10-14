@@ -1,0 +1,10 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment.
+
+```python
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024:
+            return f"{n:.1f} {unit}" if unit != 'B' else f"{int(n)} {unit}"
+        n /= 1024
+    return f"{n:.1f} PB"
+```

@@ -1,0 +1,13 @@
+The test `tests/test_units.py` fails because of a discrepancy in the `UNITS` dictionary in `app/units.py`.
+
+The docstring in `app/units.py` states:
+`"Sizes use 1024-based units: 1 KB = 1024 bytes."`
+
+However, the `UNITS` dictionary is defined as:
+`UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+
+In this dictionary, `"KB"` is set to `1000`, which contradicts both the docstring and the test case `assert parse_size("1.5 KB") == 1536` (since $1.5 \times 1024 = 1536$).
+
+To fix the code, the value for `"KB"` in `app/units.py` should be changed from `1000` to `1024`.
+
+I could not finish the task because the `run` tool was disabled after repeated calls, so I could not execute the test or the python command to confirm the failure and the fix.

@@ -1,0 +1,7 @@
+To find where `MAX_RETRIES` is defined and its value, I need to search the files in the current directory and its subdirectories for the string `MAX_RETRIES`. Let's run the following command to search for `MAX_RETRIES`:
+
+```bash
+grep -r "MAX_RETRIES" .
+```
+
+This command will search recursively through all files in the current directory and its subdirectories for the string `MAX_RETRIES`.

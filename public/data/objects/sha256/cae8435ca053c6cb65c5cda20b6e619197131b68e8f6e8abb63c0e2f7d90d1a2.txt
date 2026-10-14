@@ -1,0 +1,12 @@
+# H7
+
+**Result:** fail · done · 1 steps · 0 calls · 1 s
+
+## user
+
+Write a README.md for this project that lists every command line option of the CLI with its help text.
+
+## assistant
+
+I don’t have access to a tool that can automatically generate a README.md file containing all available CLI commands for you. However, if you share a list of the available commands (or the command-line options) for your project, I can help you format them into a readable README and add the appropriate help text. Just let me know what commands you’d like included, and I’ll create the README for you.
+

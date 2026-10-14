@@ -1,0 +1,8 @@
+Here's what the data shows:
+
+- **Total rows:** 22, but *Project Hail Mary* is listed twice (identical entry), so there are **21 different books**.
+- **Finished between July and December 2025:** 10 books — Dune (ended 2025-07-10), The Hobbit, Sapiens, The Night Circus, Tomorrow and Tomorrow and Tomorrow, The Thursday Murder Club, Babel, Lessons in Chemistry, A Psalm for the Wild-Built, and The Bear and the Nightingale. (Middlemarch has no end date, so it isn't counted as finished.)
+
+Note: the file uses mixed date formats (ISO, MM/DD/YYYY, "Feb 28 2025"), which I normalized before counting. I also left a small helper script `check_books.py` in the folder from the verification run.
+
+ANSWER: 21, 10

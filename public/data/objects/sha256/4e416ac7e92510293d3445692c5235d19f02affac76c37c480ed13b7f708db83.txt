@@ -1,0 +1,2 @@
+The answer is -2.  
+\boxed{-2}

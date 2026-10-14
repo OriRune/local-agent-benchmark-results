@@ -1,0 +1,9 @@
+If every fetch attempt fails, the code will sleep for a total of 7 seconds before giving up. This is calculated as follows:
+
+- First failed attempt: sleep for 1 second (2^0)
+- Second failed attempt: sleep for 2 seconds (2^1)
+- Third failed attempt: sleep for 4 seconds (2^2)
+
+Total sleep time = 1 + 2 + 4 = 7 seconds.
+
+This is based on the `fetch` function in `app/net.py`, which uses `time.sleep(2 ** attempt)` after each failed attempt, and `MAX_RETRIES` is set to 3 in `app/config.py`.

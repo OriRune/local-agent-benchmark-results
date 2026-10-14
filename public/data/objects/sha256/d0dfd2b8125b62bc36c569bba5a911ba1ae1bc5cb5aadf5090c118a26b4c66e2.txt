@@ -1,0 +1,8 @@
+```json
+{
+  "answer": "The 48 news outlets were annotated according to eighteen persuasion techniques, which include leveraging on the emotions of the audience (such as using loaded language or appeal to authority and slogans) and logical fallacies (such as straw men, hidden ad-hominem fallacies, and red herring).",
+  "evidence": [
+    "3"
+  ]
+}
+```

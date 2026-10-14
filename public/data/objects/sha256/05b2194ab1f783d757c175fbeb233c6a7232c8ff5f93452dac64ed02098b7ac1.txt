@@ -1,0 +1,1 @@
+Renamed `fetch` to `download` in `app/net.py` and updated all references in `app/cli.py`. No other files use `fetch`.

@@ -1,0 +1,5 @@
+Done! I've created `README.md` with the command line options from `app/cli.py`, including:
+
+- `url` (required positional argument): what to download
+- `-o` / `--output`: file to write (default: stdout)
+- `-q` / `--quiet`: no progress output

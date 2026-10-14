@@ -1,0 +1,1 @@
+The task cannot be completed with available tools. The `find_files` tool searches for files matching a pattern, not content within files. To locate "TODO" comments, manual inspection of files or a different method would be required. Unfortunately, I cannot directly edit files or add content to `todo.txt` without further clarification or tools.

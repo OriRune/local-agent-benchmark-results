@@ -1,0 +1,11 @@
+Based on the paper, the features extracted from text are:
+
+**TF-IDF (Term Frequency-Inverse Document Frequency) features**
+
+The paper states in paragraph [8]: "We extracted features using a classical sparse vectorizer (Term frequency-Inverse document frequency - TF-IDF."
+
+These features are extracted from web page titles and excerpts of content retrieved for each term being analyzed. The text features are then clustered using a bag-of-words technique to group texts that are "distributively" similar, and these clusters serve as indicators for the final classifier to predict named entity classes (LOC, PER, ORG).
+
+**Answer:** TF-IDF (Term Frequency-Inverse Document Frequency) features
+
+**Evidence:** [8]

@@ -1,0 +1,25 @@
+To find an expression that equals 24 using the numbers 10, 1, 2, and 6:
+
+1.  We need to reach 24.
+2.  Let's try combinations:
+    *   $6 \times 4 = 24$. Can we make 4 from 10, 1, and 2? $(10 / 2) - 1 = 4$.
+    *   Let's check the expression: $6 \times ((10 / 2) - 1)$.
+    *   Calculation: $6 \times (5 - 1) = 6 \times 4 = 24$.
+3.  Verify the numbers used: 6, 10, 2, 1. All numbers are used exactly once.
+4.  Verify the operators: $\times, /, -$. All are allowed.
+
+Another way:
+*   $10 \times 2 + 6 - 2$ (No, used 2 twice).
+*   $(10 + 2) \times (6 / (1 + 2))$ (No, used 2 twice).
+*   $(10 - 6) \times (1 + 2)$ (No, that's 12).
+*   $(10 + 2) \times (6 / (1 + 2))$ (No).
+*   $6 \times (10 / 2 - 1) = 24$.
+
+Let's check $6 \times (10 / 2 - 1)$ again.
+$10 / 2 = 5$
+$5 - 1 = 4$
+$6 \times 4 = 24$
+
+The expression is $6 * (10 / 2 - 1)$.
+
+<answer>6 * (10 / 2 - 1)</answer>

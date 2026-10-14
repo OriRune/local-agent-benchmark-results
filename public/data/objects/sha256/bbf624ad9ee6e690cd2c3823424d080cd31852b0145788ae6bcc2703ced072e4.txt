@@ -1,0 +1,2 @@
+The person in House 1 is Arnold.  
+<answer>Arnold</answer>

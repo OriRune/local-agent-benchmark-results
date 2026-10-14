@@ -1,0 +1,26 @@
+The task is complete. I have added the `format_bytes(n)` function to `app/util.py` that returns a human-readable byte size string (e.g., "1.5 KB"), and removed the TODO comment. The function handles edge cases like `n=0` returning "0 B", and uses binary units (KB = 1024 bytes, MB = 1024 KB, etc.) with one decimal place formatting.
+
+File content:
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    """Return a human-readable byte size string."""
+    if n == 0:
+        return "0 B"
+    units = ["B", "KB", "MB", "GB", "TB", "PB", "EB"]
+    for i, unit in enumerate(units):
+        if n < 1024**(i+1):
+            if unit == "B":
+                return f"{n:.0f} B"
+            else:
+                value = n / (1024**i)
+                return f"{value:.1f} {unit}"
+    # Fallback for extremely large numbers
+    value = n / (1024**6)  # PB
+    return f"{value:.1f} PB"
+```
+
+The TODO comment has been removed. No further changes needed.

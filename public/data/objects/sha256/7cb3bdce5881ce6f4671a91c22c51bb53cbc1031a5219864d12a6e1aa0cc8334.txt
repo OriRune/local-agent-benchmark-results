@@ -1,0 +1,3 @@
+Done. I undid the change from the most recent git commit by editing the file directly (no git commands were used).
+
+The most recent commit "raise the download timeout from 10 to 20 seconds" had changed `TIMEOUT_S` in `app/config.py` from `10` to `20`. I edited the file directly to change it back to `10`, restoring the pre-commit state. No git objects, refs, or history were modified.

@@ -1,0 +1,11 @@
+```
+{
+  "bot_name": "WeatherBot",
+  "keyword": "o",
+  "input": "user_location",
+  "logic": "if user provides a location, then fetch forecast data for that location",
+  "output": "display the weather forecast for the requested location"
+}
+```
+
+This template uses the letter **o** as a keyword in the syntax, appearing **6 times** in the code above. The bot takes the user's location and returns the weather forecast.

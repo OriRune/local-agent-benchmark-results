@@ -1,0 +1,36 @@
+I'll solve this using BFS to find the shortest path.
+
+Let me index cells as (row, col) from 0.
+
+**Locating start and destination:**
+- Start `*`: row 3, col 0
+- Destination `#`: row 7, col 5
+
+**BFS exploration (finding shortest path):**
+
+Tracing the BFS, the shortest path has length 10:
+
+```
+(3,0)* → (4,0) down
+(4,0) → (5,0) down
+(5,0) → (5,1) right
+(5,1) → (5,2) right
+(5,2) → (5,3) right
+(5,3) → (6,3) down
+(6,3) → (7,3) down
+(7,3) → (7,4) right
+(7,4) → (7,5) right
+(7,5)# arrive
+```
+
+**Verification:**
+- (3,0)→(4,0): X→O ✓ (down)
+- (4,0)→(5,0): X→O ✓ (down)
+- (5,0)→(5,1)→(5,2)→(5,3): all O ✓ (right×3)
+- (5,3)→(6,3): O→O ✓ (down)
+- (6,3)→(7,3): O→O ✓ (down)
+- (7,3)→(7,4)→(7,5): O→O→O ✓ (right×2)
+
+All 10 moves are valid, reaching the destination.
+
+<answer>down down right right right down down right right</answer>

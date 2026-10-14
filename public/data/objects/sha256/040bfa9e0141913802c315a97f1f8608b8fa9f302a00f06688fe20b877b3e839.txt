@@ -1,0 +1,14 @@
+This is a logic puzzle. There are 3 houses (numbered 1 on the left, 3 on the right), from the perspective of someone standing across the street from them. Each has a different person in them. They have different characteristics:
+ - Each person has a unique name: bob, arnold, alice
+ - The people keep different animals: bird, cat, dog
+ - The people are of nationalities: dane, chinese, brit
+
+1. Bob is in the third house.
+2. Arnold is in the second house.
+3. Arnold is the British person.
+4. The Dane is Alice.
+5. The dog owner is the Dane.
+6. The cat lover is Arnold.
+
+What is Name of the person who lives in House 1?? Provide only the name of the person as your final answer.
+Put your final answer, in the requested format, inside <answer>...</answer>.

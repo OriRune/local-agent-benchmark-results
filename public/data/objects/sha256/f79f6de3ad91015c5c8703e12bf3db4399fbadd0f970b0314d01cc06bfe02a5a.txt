@@ -1,0 +1,4 @@
+Done. I've made the following changes to `app/util.py`:
+
+1. **Added `format_bytes(n)`** — a function that takes a number of bytes and returns a human-readable string like `'1.5 KB'`, `'23.4 MB'`, etc. It iterates through units (B, KB, MB, GB, TB) and formats with one decimal place, or as an integer for bytes.
+2. **Removed the `# TODO: add a helper that formats byte sizes` comment.**

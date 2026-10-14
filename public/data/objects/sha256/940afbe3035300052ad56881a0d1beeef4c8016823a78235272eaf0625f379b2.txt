@@ -1,0 +1,1 @@
+Created `hello.txt` with the exact content: `hello from the local agent`.

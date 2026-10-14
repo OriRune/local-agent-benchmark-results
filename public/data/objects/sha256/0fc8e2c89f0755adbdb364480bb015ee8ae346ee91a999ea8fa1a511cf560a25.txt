@@ -1,0 +1,6 @@
+1. Provide your final answer as a arithmetic expression (no '=' sign).
+2. Do not include the target number in the expression.
+3. Use '*' for multiplication.
+4. Use '/' for division.
+
+<answer>10 * 4 / 7 + 9</answer>

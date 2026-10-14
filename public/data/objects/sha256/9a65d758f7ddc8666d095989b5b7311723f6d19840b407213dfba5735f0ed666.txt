@@ -1,0 +1,18 @@
+To determine the name of the person living in House 1, we can deduce the attributes for each house step-by-step based on the provided clues.
+
+**Step 1: Assign Names to Houses**
+*   From Clue 1: **Bob** is in House 3.
+*   From Clue 2: **Arnold** is in House 2.
+*   Since there are only three houses and three unique names, the remaining name, **Alice**, must be in House 1.
+
+**Step 2: Verify with other clues (Optional but good for consistency)**
+*   From Clue 3: Arnold (House 2) is the Brit.
+*   From Clue 4: Alice is the Dane. Since Alice is in House 1, House 1 is the Dane.
+*   From Clue 5: The Dane (Alice/House 1) owns the Dog.
+*   From Clue 6: Arnold (House 2) owns the Cat.
+*   This leaves the Bird for House 3 (Bob) and the Chinese nationality for House 3 (Bob), which is consistent with all clues.
+
+**Conclusion:**
+The person living in House 1 is Alice.
+
+<answer>Alice</answer>

@@ -1,0 +1,5 @@
+Based on the files listed in the project folder, I can see that the README.md file is the one that needs to be created or updated. To include every command-line option of the CLI with its help text, you should add an entry for each command line option (e.g., `--help`, `--version`, `--output`, etc.) and its corresponding description.
+
+For example, if the CLI supports options like `--help`, `--version`, and `--output`, you would include these in the README with their help text.
+
+Would you like me to generate the README content now, or would you prefer to provide specific options to include?

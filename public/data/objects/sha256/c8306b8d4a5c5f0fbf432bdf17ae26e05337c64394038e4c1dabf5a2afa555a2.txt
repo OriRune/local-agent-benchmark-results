@@ -1,0 +1,6 @@
+Answer using only the record below. Return just the recorded answer.
+
+An experiment records the answer to this question: How many campuses does the University of California have?
+The recorded answer is 5.
+
+Question: How many campuses does the University of California have?

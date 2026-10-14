@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "Results are evaluated using a questionnaire ranking captions by funniness and user-reported star ratings on the Bokete Ogiri website.",
+  "evidence": [12, 13, 14]
+}
+```

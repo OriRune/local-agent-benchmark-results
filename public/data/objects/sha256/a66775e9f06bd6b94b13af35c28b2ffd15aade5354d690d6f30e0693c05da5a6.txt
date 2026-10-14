@@ -1,0 +1,14 @@
+Based on the code I read:
+
+- `MAX_RETRIES = 3` (from config.py)
+- The loop runs for `attempt` in range(3), meaning attempts 0, 1, 2
+- Sleep time is `2 ** attempt` seconds on each failure
+
+Total sleep time before giving up:
+- Attempt 0: 2^0 = 1 second
+- Attempt 1: 2^1 = 2 seconds  
+- Attempt 2: 2^2 = 4 seconds
+
+**Total: 1 + 2 + 4 = 7 seconds**
+
+The fetch function spends **7 seconds** sleeping in total before giving up if all attempts fail.

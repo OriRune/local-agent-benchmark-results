@@ -1,0 +1,5 @@
+The fix has been applied and verified. The code now correctly uses 1024 for KB (binary definition), which matches:
+- The docstring: "Sizes use 1024-based units: 1 KB = 1024 bytes"
+- The test expectations: `parse_size("1.5 KB") == 1536` (1.5 × 1024 = 1536)
+
+The bug was that `UNITS["KB"]` was set to 1000 (SI/decimal definition) instead of 1024 (binary definition). This has been corrected.

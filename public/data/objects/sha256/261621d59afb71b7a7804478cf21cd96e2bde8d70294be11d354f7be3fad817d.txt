@@ -1,0 +1,5 @@
+{
+  "response": {
+    "text": "Sure, I'd be happy to help you with that! Here's a random class character sheet for you, as a DnD dungeon master. I've included the keywords 'medalist' and 'theta' in the response. The 'medalist' could be a title or a significant other character, while 'theta' could be a spell or a magical item. Let's see what we can create! \n\n```json\n{\n  \"character\": {\n    \"name\": \"Theta Medalist\",\n    \"class\": \"Arcane Theta\",\n    \"level\": 1,\n    \"spells\": [\n      \"Theta Wave\",\n      \"Medalist's Shield\"\n    ],\n    \"abilities\": {\n      \"strength\": 10,\n      \"dexterity\": 15,\n      \"intelligence\": 20,\n      \"wisdom\": 12,\n      \"charisma\": 10\n    }\n  }\n}\n```"
+  }
+}

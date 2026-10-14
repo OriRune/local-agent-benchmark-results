@@ -1,0 +1,6 @@
+I have found the following TODO comments in the Python code:
+
+1. `app/net.py:7: # TODO: log each failed attempt`
+2. `app/util.py:5: # TODO: add a helper that formats byte sizes`
+
+I attempted to write these to `todo.txt`, but I encountered errors with the `write_file` tool. I have successfully identified all the TODO comments in the project.

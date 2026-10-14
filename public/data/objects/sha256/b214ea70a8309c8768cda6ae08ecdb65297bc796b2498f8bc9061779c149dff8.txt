@@ -1,0 +1,5 @@
+A new file `hello.txt` has been created with the following content:
+
+```
+hello from the local agent
+```

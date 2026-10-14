@@ -1,0 +1,1 @@
+["The user wants to find where MAX_RETRIES is defined in the codebase and what value it's set to. I'll search for the definition using grep to locate it.\n","Found it! MAX_RETRIES is defined in app/config.py with a value of 3.\n"]

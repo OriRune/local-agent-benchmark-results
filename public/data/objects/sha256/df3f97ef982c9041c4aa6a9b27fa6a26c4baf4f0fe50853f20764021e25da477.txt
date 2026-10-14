@@ -1,0 +1,1 @@
+*Use the word "open" to start your request* by saying "open my location" to trigger the bot. The system will *open a forecast* based on the coordinates you provide. Ensure you mention "open" at least six times in your prompt for accuracy. This *open loop* design keeps the conversation flowing smoothly. You can *open new queries* anytime by repeating the keyword.

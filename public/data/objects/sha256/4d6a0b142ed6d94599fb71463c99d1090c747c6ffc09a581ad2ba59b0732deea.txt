@@ -1,0 +1,19 @@
+To find the odds of rolling 11 or higher, we first determine the total number of possible outcomes and the number of favorable outcomes.
+
+1.  **Total Outcomes:**
+    *   The 1d12 die has 12 possible outcomes.
+    *   The 1d10 die has 10 possible outcomes.
+    *   The 1d4 die has 4 possible outcomes.
+    *   Total outcomes = $12 \times 10 \times 4 = 480$.
+
+2.  **Favorable Outcomes (Rolling 11 or higher):**
+    *   **1d12 Die:** To be 11 or higher, the die must show 11 or 12. There are 2 favorable outcomes.
+    *   **1d10 Die:** To be 11 or higher, the die must show 11 or 10. There are 2 favorable outcomes.
+    *   **1d4 Die:** The maximum value is 4. Since 4 is less than 11, there are 0 favorable outcomes for this die.
+    *   Total favorable outcomes = $2 \times 2 \times 0 = 0$.
+
+3.  **Probability:**
+    *   Probability = $\frac{\text{Favorable Outcomes}}{\text{Total Outcomes}} = \frac{0}{480}$.
+    *   This fraction reduces to $0$.
+
+<answer>0</answer>

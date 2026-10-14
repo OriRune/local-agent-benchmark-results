@@ -1,0 +1,27 @@
+The script works correctly. It reads `/proc/meminfo` and `/proc/stat` directly, so it has no external dependencies and will show the real values on the user's Linux Mint PC (the sandbox here is a tiny 31 MB container, hence the small numbers).
+
+I created `system_usage.py` in the project folder. Running it produces:
+
+```
+====================================
+ System Usage
+====================================
+ RAM: 31.3 MB total
+      9.6 MB used (30.6%)
+      21.7 MB available
+ CPU: 12 core(s)
+      14.6% used
+====================================
+```
+
+What it does:
+- **RAM** — reads total, available, and computes used + usage percentage from `/proc/meminfo`.
+- **CPU** — samples `/proc/stat` twice 0.5 s apart to compute real usage percentage, and reports the core count.
+
+To run it on the PC:
+
+```
+python3 system_usage.py
+```
+
+It's also marked executable with a shebang, so `./system_usage.py` works too.

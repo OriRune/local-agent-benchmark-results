@@ -1,0 +1,1 @@
+Done. I've undone the change by editing `app/config.py` directly, reverting `TIMEOUT_S` from 20 back to 10.

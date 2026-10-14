@@ -1,0 +1,7 @@
+I created `README.md`. It documents every command-line option of the `tinydl` CLI (defined in `app/cli.py`):
+
+- **Positional:** `url` — "what to download"
+- **Options:** `-o`/`--output` — "file to write (default: stdout)" and `-q`/`--quiet` — "no progress output"
+- **Global:** `-h`/`--help` — "show the help message and exit"
+
+Each entry uses the exact `help=` text from the source. I couldn't run `--help` to capture the formatted output (the sandbox blocks program execution), so the table reproduces the help strings verbatim from `build_parser()`.

@@ -1,0 +1,5 @@
+The fix has been applied. The issue was that `UNITS["KB"]` was set to 1000 (treating KB as the metric prefix kilo = 1000), but the test expects KB to be 1024 (binary prefix). 
+
+**Summary:**
+- **Problem:** The `parse_size` function had `UNITS["KB"] = 1000`, but the test expects KB to be 1024-based (1.5 KB = 1536 bytes, not 1500).
+- **Fix:** Changed `UNITS["KB"]` from 1000 to 1024 in `app/units.py` to match the 1024-based units specified in the docstring.

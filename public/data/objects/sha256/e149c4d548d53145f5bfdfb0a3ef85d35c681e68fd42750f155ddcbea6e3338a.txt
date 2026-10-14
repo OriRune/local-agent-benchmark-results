@@ -1,0 +1,8 @@
+The function 'fetch' in app/net.py has been renamed to 'download', and all references to 'fetch' in the project have been updated to 'download'. 
+
+Summary:
+- app/net.py: Function definition updated from `def fetch(url, get):` to `def download(url, get):`
+- app/cli.py: All occurrences of 'fetch' replaced with 'download' (2 instances)
+- No other files contained references to 'fetch' in this project
+
+Task completed.

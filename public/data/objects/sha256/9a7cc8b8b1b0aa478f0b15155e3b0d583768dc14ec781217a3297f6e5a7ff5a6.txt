@@ -1,0 +1,16 @@
+Based on the code in `app/net.py` and `app/config.py`:
+
+- `MAX_RETRIES = 3` means there are 3 attempts (0, 1, 2).
+- On each failed attempt `i`, `time.sleep(2 ** attempt)` is called, where `attempt` is the loop index (0 for the first attempt, 1 for the second, 2 for the third).
+- The attempts that sleep are the first three failed attempts (since the function tries up to `MAX_RETRIES` times, and on the third failed attempt it would sleep and then give up).
+
+Thus the total sleep time is:
+- Attempt 0 (first failure): `2^0 = 1` second
+- Attempt 1 (second failure): `2^1 = 2` seconds
+- Attempt 2 (third failure): `2^2 = 4` seconds
+
+Total = 1 + 2 + 4 = **7 seconds**.
+
+The code sleeps on every failed attempt before giving up. If every attempt fails, it will sleep 1s + 2s + 4s = 7 seconds in total before raising the `RuntimeError`.
+
+Answer: **7 seconds**.

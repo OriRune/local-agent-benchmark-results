@@ -1,0 +1,8 @@
+Make 24 using 10, 1, 2, 6. You can only use each number once. You can use the operators +, -, *, /.
+Final answer format instructions:
+1. Provide your final answer as a arithmetic expression (no '=' sign).
+2. Do not include the target number in the expression.
+3. Use '*' for multiplication.
+4. Use '/' for division.
+
+Put your final answer, in the requested format, inside <answer>...</answer>.

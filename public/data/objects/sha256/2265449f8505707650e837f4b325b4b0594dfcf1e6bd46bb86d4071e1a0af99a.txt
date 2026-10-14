@@ -1,0 +1,5 @@
+I have searched all Python files for `TODO` comments and added the tasks found to `todo.txt`, following the existing format in the file.
+
+The following tasks were added:
+- `log each failed attempt` (from `app/net.py`)
+- `add a helper that formats byte sizes` (from `app/util.py`)

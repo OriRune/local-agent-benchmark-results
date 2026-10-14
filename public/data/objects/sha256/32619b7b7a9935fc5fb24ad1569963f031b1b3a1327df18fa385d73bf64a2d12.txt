@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The experiment used 100 sentences extracted from the CoNLL 2003 English NER training data, where each sentence contained at least 4 entities.",
+ "evidence": [
+  "28"
+ ]
+}
+```

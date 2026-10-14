@@ -1,0 +1,6 @@
+Use only the passage below. Return only the shortest supported answer, or exactly UNANSWERABLE if it is not given.
+
+PASSAGE:
+The war was fought primarily along the frontiers between New France and the British colonies, from Virginia in the South to Nova Scotia in the North. It began with a dispute over control of the confluence of the Allegheny and Monongahela rivers, called the Forks of the Ohio, and the site of the French Fort Duquesne and present-day Pittsburgh, Pennsylvania. The dispute erupted into violence in the Battle of Jumonville Glen in May 1754, during which Virginia militiamen under the command of 22-year-old George Washington ambushed a French patrol.
+
+QUESTION: When didn't violence start in war?

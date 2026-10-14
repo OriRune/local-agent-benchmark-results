@@ -1,0 +1,5 @@
+레비 (levee)는 강이나 수역의 sides에 지은 earth or sand로 된 structure로, flood를 막기 위해 water를 막는 role을 합니다. typically, it is built parallel to the riverbank.
+
+지수 (embankment)는 various purposes에 사용되는 raised area of land로, flood control, road construction, or agricultural purposes에 사용될 수 있습니다. it is not necessarily built along a river, and it can be made of earth, rocks, or other materials. 또한, it can be built on land or across water bodies, like a causeway.
+
+주요 difference는 location and purpose입니다. levee는 주로 river banks에 built되고, flood control을 위한 role이 main입니다. embankment는 various purposes에 사용될 수 있으며, 강가만은 not necessarily입니다.

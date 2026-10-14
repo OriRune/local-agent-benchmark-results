@@ -1,0 +1,1 @@
+Which finance specific word embedding model do they use?

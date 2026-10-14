@@ -1,0 +1,5 @@
+The value of `MAX_RETRIES` in `app/config.py` has been successfully changed from `3` to `5`.
+
+### Summary:
+- **File Modified:** `app/config.py`
+- **Change:** Updated `MAX_RETRIES = 3` to `MAX_RETRIES = 5`.

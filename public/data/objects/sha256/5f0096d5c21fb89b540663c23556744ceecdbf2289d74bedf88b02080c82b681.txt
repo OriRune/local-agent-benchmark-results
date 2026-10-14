@@ -1,0 +1,6 @@
+Use only the passage below. Return only the shortest supported answer, or exactly UNANSWERABLE if it is not given.
+
+PASSAGE:
+Kublai Khan promoted commercial, scientific, and cultural growth. He supported the merchants of the Silk Road trade network by protecting the Mongol postal system, constructing infrastructure, providing loans that financed trade caravans, and encouraging the circulation of paper banknotes (鈔, Chao). Pax Mongolica, Mongol peace, enabled the spread of technologies, commodities, and culture between China and the West. Kublai expanded the Grand Canal from southern China to Daidu in the north. Mongol rule was cosmopolitan under Kublai Khan. He welcomed foreign visitors to his court, such as the Venetian merchant Marco Polo, who wrote the most influential European account of Yuan China. Marco Polo's travels would later inspire many others like Christopher Columbus to chart a passage to the Far East in search of its legendary wealth.
+
+QUESTION:  What kinds of growth did Kublai discourage?

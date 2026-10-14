@@ -1,0 +1,9 @@
+I cannot undo the most recent git commit because there is no git repository in this project directory. I checked for a `.git` directory and for any git-related files, but none exist. The project contains only application files (app/, data/, tests/, notes.md, todo.txt) with no version control history.
+
+The most recent change would likely be adding proxy support, as indicated by the `todo.txt` file which lists "add proxy support" as a task. However, without a git repository, I cannot identify the specific commit or revert it by editing files directly.
+
+To undo a git commit, you would need to:
+1. Have a git repository in this directory (or a parent directory)
+2. Use `git checkout <commit-hash>` or `git revert <commit-hash>` to undo the change
+
+Since no git repository exists here, I cannot complete this task.

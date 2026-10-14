@@ -1,0 +1,20 @@
+```json
+{
+  "character_name": "Elian",
+  "class": "Warlock",
+  "level": 1,
+  "race": "Half-Elf",
+  "background": "Criminal",
+  "stats": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 16,
+    "wis": 10,
+    "cha": 14
+  },
+  "backstory": "Elian was once a regional medalist in the arts of deception before turning to the service of the Outer Deities.",
+  "special_ability": "You channel the energy of theta to manipulate shadows.",
+  "adventure_hook": "A mysterious figure seeks your aid in the ruins of the old temple."
+}
+```

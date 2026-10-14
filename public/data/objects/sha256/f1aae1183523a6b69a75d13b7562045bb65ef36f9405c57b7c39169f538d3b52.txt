@@ -1,0 +1,4 @@
+{
+  "answer": "Results are evaluated using a human questionnaire where respondents rank captions by funniness, and by comparing the generated captions on the Bokete website to measure average star ratings.",
+  "evidence": [12, 13, 14]
+}

@@ -1,0 +1,7 @@
+{
+  "answer": "The features extracted from text include TF-IDF and HashingVectorizer.",
+  "evidence": [
+    "7",
+    "9"
+  ]
+}

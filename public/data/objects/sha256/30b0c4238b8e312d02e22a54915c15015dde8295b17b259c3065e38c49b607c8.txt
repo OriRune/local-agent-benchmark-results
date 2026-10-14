@@ -1,0 +1,1 @@
+Olivia's statement about Benjamin is a lie, so Benjamin is a villain. Oliver's statement about Olivia is a lie, so Olivia is a villain. Therefore, Benjamin is a hero. <answer>Olivia is a villain, Oliver is a villain, and Benjamin is a hero</answer>

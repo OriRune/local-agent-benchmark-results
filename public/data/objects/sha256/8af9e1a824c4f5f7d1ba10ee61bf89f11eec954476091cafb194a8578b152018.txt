@@ -1,0 +1,11 @@
+Here's the calculation from the code.
+
+In `app/net.py`, `fetch` loops `for attempt in range(MAX_RETRIES)`, with `MAX_RETRIES = 3` (from `app/config.py`). On each failed attempt it sleeps `2 ** attempt` seconds:
+
+- attempt 0 → sleep 2⁰ = 1 s
+- attempt 1 → sleep 2¹ = 2 s
+- attempt 2 → sleep 2² = 4 s
+
+Total = 1 + 2 + 4 = **7 seconds**.
+
+(The 20 s `TIMEOUT_S` is the per-request timeout, not part of the sleep total.)

@@ -1,0 +1,12 @@
+The fix is complete. Here's what happened:
+
+**Root cause:** In `app/units.py`, the `UNITS` dictionary defined `"KB": 1000`, which is a 1000-based unit. But the module's own docstring declares the units are 1024-based ("1 KB = 1024 bytes"), and the test expects 1536 bytes for `1.5 KB` (= `1.5 × 1024`). The code was inconsistent with both the documented intent and the test.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024`, making the code match the docstring and the test.
+
+Verification by hand against the test:
+- `parse_size("512 B")` → `512 × 1 = 512` ✓
+- `parse_size("1.5 KB")` → `1.5 × 1024 = 1536` ✓
+- `parse_size("2 MB")` → `2 × 1024² = 2097152 = 2 × 1024 × 1024` ✓
+
+Note: I couldn't run the test through the sandbox (program execution is denied in this session), but the change is logically verified and I fixed the source code, not the test, as requested.

@@ -1,0 +1,27 @@
+```json
+{
+  "character": {
+    "name": "Theta",
+    "class": "Fighter",
+    "level": 5,
+    "race": "Human",
+    "background": "medalist",
+    "alignment": "Neutral Good",
+    "ability_scores": {
+      "strength": 16,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 10,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "equipment": [
+      "Longsword",
+      "Shield",
+      "Leather Armor",
+      "Theta's Badge"
+    ],
+    "description": "A skilled warrior known as the medalist."
+  }
+}
+```

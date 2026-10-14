@@ -1,0 +1,3 @@
+I have analyzed the failing test in `tests/test_units.py`. The test `test_parse_size` was failing because the implementation of `parse_size` in `app/units.py` used `1000` as the multiplier for `KB`, while the test expected a value consistent with a 1024-based system (as stated in the docstring).
+
+I have corrected the definition of `UNITS` in `app/units.py` to use `1024` for `KB`, ensuring consistency across the unit parsing logic.

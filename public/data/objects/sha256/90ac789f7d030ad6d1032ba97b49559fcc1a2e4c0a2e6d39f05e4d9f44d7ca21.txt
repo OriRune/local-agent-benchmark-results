@@ -1,0 +1,21 @@
+The task is complete. Here's what was done:
+
+1. **Added `format_bytes(n)` function** to `app/util.py` that:
+   - Returns `"0 B"` for `n == 0`
+   - Uses units `["B", "KB", "MB", "GB", "TB"]`
+   - Shows integer form (e.g., `"1 KB"`) when the value is very close to an integer (within `1e-9`)
+   - Otherwise shows one decimal place (e.g., `"1.5 KB"`)
+   - For values beyond TB, shows in TB with one decimal place
+
+2. **Removed the TODO comment** about adding the helper function.
+
+The function correctly formats sizes like:
+- `format_bytes(0)` → `"0 B"`
+- `format_bytes(1500)` → `"1.5 KB"` (matches the example)
+- `format_bytes(1024)` → `"1 KB"`
+- `format_bytes(1024*1024)` → `"1 MB"`
+- etc.
+
+The file `app/util.py` now contains only the `format_bytes` function (plus `clamp`) and no TODO comment about it.
+
+(Note: A temporary test file `test_format_bytes.py` was created during development but cannot be deleted via the sandbox tools; it does not affect the deliverable.)

@@ -1,0 +1,25 @@
+## Solving the Puzzle
+
+**Setting up positions:**
+- House 1 (left), House 2 (middle), House 3 (right)
+
+**Using the clues:**
+
+| Clue | Information |
+|------|-------------|
+| 1. Bob is in the third house | House 3 = Bob |
+| 2. Arnold is in the second house | House 2 = Arnold |
+| 4. The Dane is Alice | Alice = Dane |
+
+Since Bob is in House 3 and Arnold is in House 2, the remaining person **Alice must be in House 1**.
+
+**Verifying consistency:**
+- House 1 = Alice (Dane, from clue 4)
+- House 2 = Arnold (British, from clue 3; cat lover, from clue 6)
+- House 3 = Bob (Chinese, remaining)
+- Dog owner is the Dane (clue 5) → Alice has the dog
+- Remaining animal (bird) → Bob
+
+Everything checks out.
+
+<answer>Alice</answer>

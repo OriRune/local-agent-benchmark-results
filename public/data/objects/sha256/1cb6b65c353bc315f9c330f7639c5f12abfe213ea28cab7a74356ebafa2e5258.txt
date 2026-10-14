@@ -1,0 +1,6 @@
+
+I couldn't find the exact line to remove the TODO comment in `app/util.py`. Here is the line that I think might be it:
+
+TODO: Add function format_bytes(n) to app/util.py that returns a human-readable size such as '1.5 KB', and remove the TODO comment about it.
+
+However, I'm not entirely sure if this line exists and if I copied it correctly. I also couldn't find the exact location of the line in the file. If this line exists, I can help you remove it by editing the file. Otherwise, I need to know the exact line number or the text of the line to proceed.

@@ -1,0 +1,4 @@
+{
+  "answer": "They use parts of Chinese Wikipedia articles from Large-Scale Chinese Datasets for NLP, resulting in 11,529,432 segmented words after segmentation and filtering.",
+  "evidence": [12]
+}

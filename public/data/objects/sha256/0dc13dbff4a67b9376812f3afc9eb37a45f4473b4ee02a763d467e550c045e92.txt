@@ -1,0 +1,5 @@
+Done! I've created `README.md` with the CLI options from `app/cli.py`:
+
+- `--url` / `-u`: what to download
+- `--output` / `-o`: file to write (default: stdout)
+- `--quiet` / `-q`: no progress output

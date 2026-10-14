@@ -1,0 +1,15 @@
+A README.md file has been created that lists all the command line options of the CLI with their help texts. The file is structured as a Markdown table for clarity and ease of use. Here is the content of the README.md file:
+
+```markdown
+# Tiny Downloader CLI
+
+A simple command line tool to download files from URLs.
+
+## Command Line Options
+
+| Option | Description |
+|--------|-------------|
+| `url` | The URL to download. |
+| `-o, --output` | The file to write the downloaded data to. Default is stdout. |
+| `-q, --quiet` | If set, no progress output is shown. |
+```

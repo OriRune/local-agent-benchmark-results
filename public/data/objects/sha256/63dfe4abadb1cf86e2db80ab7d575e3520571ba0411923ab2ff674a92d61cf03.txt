@@ -1,0 +1,21 @@
+To determine who is a hero and who is a villain, we analyze each statement:
+
+1.  **Olivia's statement:** "Benjamin is a villain or Benjamin is a hero."
+    *   This is a tautology because every inhabitant of the island is either a hero or a villain.
+    *   If Olivia were a villain, her statement would have to be false. However, a tautology is always true.
+    *   Therefore, Olivia cannot be a villain. Olivia must be a **hero**.
+
+2.  **Oliver's statement:** "Olivia is a hero and Olivia is a villain."
+    *   This is a contradiction because no one can be both a hero and a villain.
+    *   Since the statement is false, Oliver must be a **villain**.
+
+3.  **Benjamin's statement:** "Olivia is a hero."
+    *   We have already determined that Olivia is a hero.
+    *   Since Benjamin's statement is true, Benjamin must be a **hero**.
+
+Conclusion:
+- Olivia is a hero.
+- Oliver is a villain.
+- Benjamin is a hero.
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

@@ -1,0 +1,44 @@
+```json
+{
+  "character_name": "Theta the Medalist",
+  "class": "Barbarian",
+  "race": "Tabaxi",
+  "level": 1,
+  "background": "Medalist of the Arcane Academy",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "strength": 14,
+    "dexterity": 16,
+    "constitution": 12,
+    "intelligence": 10,
+    "wisdom": 10,
+    "charisma": 8
+  },
+  "theta": "Theta represents the core variable of your destiny",
+  "medalist": "Medalist title verified by the High Council",
+  "equipment": [
+    "Chain Mail",
+    "Two Handaxes",
+    "Explorer's Kit",
+    "50 Gold Pieces"
+  ],
+  "skills": {
+    "athletics": 2,
+    "acrobatics": 2,
+    "animal_awareness": 2,
+    "arcana": 2,
+    "athletics": 2,
+    "deception": 2,
+    "history": 2,
+    "intimidation": 2,
+    "investigation": 2,
+    "nature": 2,
+    "perception": 2,
+    "performance": 2,
+    "religion": 2,
+    "stealth": 2,
+    "survival": 2
+  },
+  "notes": "The character sheet is complete. Remember to check the theta and medalist keywords during play."
+}
+```

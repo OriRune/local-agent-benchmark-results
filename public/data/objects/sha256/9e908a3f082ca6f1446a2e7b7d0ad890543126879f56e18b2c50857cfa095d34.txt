@@ -1,0 +1,46 @@
+## Setting Up the Problem
+
+I'll interpret "rolling 10 or higher" as the **sum** of all three dice being ≥ 10.
+
+**Total outcomes:** $12 \times 10 \times 2 = 240$
+
+Let me count the **complement** (sum ≤ 9), where $a \in \{1,\dots,12\}$, $b \in \{1,\dots,10\}$, $c \in \{1,2\}$.
+
+## Counting the Complement (sum ≤ 9)
+
+**Case c = 1:** need $a + b \leq 8$
+
+| a | valid b values | count |
+|---|---|---|
+| 1 | 1–7 | 7 |
+| 2 | 1–6 | 6 |
+| 3 | 1–5 | 5 |
+| 4 | 1–4 | 4 |
+| 5 | 1–3 | 3 |
+| 6 | 1–2 | 2 |
+| 7 | 1 | 1 |
+
+Total: $7+6+5+4+3+2+1 = 28$
+
+**Case c = 2:** need $a + b \leq 7$
+
+| a | valid b values | count |
+|---|---|---|
+| 1 | 1–6 | 6 |
+| 2 | 1–5 | 5 |
+| 3 | 1–4 | 4 |
+| 4 | 1–3 | 3 |
+| 5 | 1–2 | 2 |
+| 6 | 1 | 1 |
+
+Total: $6+5+4+3+2+1 = 21$
+
+**Complement total:** $28 + 21 = 49$
+
+## Final Probability
+
+$$P(\text{sum} \geq 10) = \frac{240 - 49}{240} = \frac{191}{240}$$
+
+Since 191 is prime and doesn't divide 240, this is already reduced.
+
+<answer>191/240</answer>

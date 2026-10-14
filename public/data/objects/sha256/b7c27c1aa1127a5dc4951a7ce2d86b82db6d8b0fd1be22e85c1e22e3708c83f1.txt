@@ -1,0 +1,1 @@
+{"answer": "A word2vec model trained on 189,206 financial articles containing 161,877,425 tokens from Factiva", "evidence": ["[4] We additionally trained a word2vec BIBREF10 word embedding model on a set of 189,206 financial articles containing 161,877,425 tokens, that were manually downloaded from Factiva."]}

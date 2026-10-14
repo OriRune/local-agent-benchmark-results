@@ -1,0 +1,5 @@
+
+{
+  "answer": "They use the finance‑specific word2vec model trained on 189,206 financial articles (the word2vec BIBREF10 model).",
+  "evidence": [4, 16, 17]
+}

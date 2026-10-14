@@ -1,0 +1,5 @@
+Done! I've created `hello.txt` containing exactly the line:
+
+```
+hello from the local agent
+```

@@ -1,0 +1,14 @@
+Based on the code in `app/net.py`, here's the analysis:
+
+**Sleep behavior:**
+- The `fetch` function loops through `range(MAX_RETRIES)` attempts
+- For each failed attempt (OSError), it sleeps for `2 ** attempt` seconds
+- `MAX_RETRIES = 3` from `app/config.py`
+
+**Sleep times per attempt:**
+- Attempt 0: 2⁰ = 1 second
+- Attempt 1: 2¹ = 2 seconds  
+- Attempt 2: 2² = 4 seconds
+
+**Total sleep time if all 3 attempts fail:**
+1 + 2 + 4 = **7 seconds**

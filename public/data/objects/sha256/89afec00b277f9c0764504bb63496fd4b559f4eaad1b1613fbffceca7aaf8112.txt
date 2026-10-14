@@ -1,0 +1,23 @@
+# Solving the Logic Puzzle
+
+**Setting up the houses:**
+- House 1 (left), House 2 (middle), House 3 (right)
+
+**Using the clues:**
+
+| Clue | Information |
+|------|-------------|
+| 1. Bob is in the third house | House 3 = Bob |
+| 2. Arnold is in the second house | House 2 = Arnold |
+| 4. The Dane is Alice | Alice = Dane |
+
+Since Bob is in House 3 and Arnold is in House 2, **Alice must be in House 1**.
+
+**Verifying consistency:**
+- House 1: Alice (the Dane, owns the dog per clues 4 & 5)
+- House 2: Arnold (British, owns the cat per clues 3 & 6)
+- House 3: Bob (Chinese, owns the bird)
+
+All clues check out.
+
+<answer>Alice</answer>

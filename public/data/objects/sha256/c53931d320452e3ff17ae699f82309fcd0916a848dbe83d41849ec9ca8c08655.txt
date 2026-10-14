@@ -1,0 +1,11 @@
+I can't undo the most recent git commit because there is no git repository in this project directory. The project folder contains only Python source files, test files, and configuration — no `.git` directory exists. Without a git repository, there's no way to identify or undo a commit, and I can't use `git` commands to make changes.
+
+The files I've examined are:
+- `app/config.py` — settings (MAX_RETRIES=3, TIMEOUT_S=20, USER_AGENT)
+- `app/cli.py` — CLI entry point with argparse
+- `app/net.py` — HTTP fetch with retry logic
+- `app/units.py` — byte-size parsing
+- `app/util.py` — clamp helper
+- `tests/test_units.py` — unit tests
+
+None of these files show any obvious "recent change" that would need undoing. If you have a specific file in mind that was modified in a git commit, please tell me which file and what the change was, and I can help you revert it directly.

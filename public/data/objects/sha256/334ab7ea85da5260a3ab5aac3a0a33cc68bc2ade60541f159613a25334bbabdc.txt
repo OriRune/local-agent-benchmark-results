@@ -1,0 +1,11 @@
+I've created a beautiful HTML page called `reading_list_2025.html` that displays all 21 books from your CSV file in an aesthetically pleasing card layout. 
+
+**Features of the page:**
+- 🎨 Purple gradient background with white book cards
+- 📚 Each book displayed in its own card with title, author, genre, dates, and page count
+- 🌟 Hover effects that lift cards slightly for interactivity
+- 📱 Responsive grid layout that works on any screen size
+- 🖨️ Print-friendly styling for screenshots
+- ✨ Clean typography with book emojis
+
+You can double-click the file to open it in your browser, then take a screenshot to share with your book club friends. The page includes all the books from your CSV, with dates normalized to a consistent format and empty page counts shown as "—".

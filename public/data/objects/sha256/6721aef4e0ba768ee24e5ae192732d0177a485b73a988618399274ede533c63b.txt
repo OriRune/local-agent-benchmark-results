@@ -1,0 +1,1 @@
+If every attempt in fetch fails, how many seconds does it spend sleeping in total before it gives up? Work it out from the code.

@@ -1,0 +1,7 @@
+I found all TODO comments in the Python code and added them to `todo.txt`.
+
+The TODOs found were:
+- `log each failed attempt` from `app/net.py`
+- `add a helper that formats byte sizes` from `app/util.py`
+
+These have been appended to `todo.txt`.

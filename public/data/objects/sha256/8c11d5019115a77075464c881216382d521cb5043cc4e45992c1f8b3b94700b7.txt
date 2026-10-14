@@ -1,0 +1,4 @@
+
+<answer>
+The person who lives in House 1 is David.
+</answer>

@@ -1,0 +1,6 @@
+The `todo.html` file already includes functionality to remember its items when you reload the page. It uses the browser's `localStorage` to save and retrieve the list of tasks. This means:
+
+- Tasks persist across page reloads.
+- The list is automatically loaded when you return to the page.
+
+You can now use the to-do list without worrying about losing your tasks.

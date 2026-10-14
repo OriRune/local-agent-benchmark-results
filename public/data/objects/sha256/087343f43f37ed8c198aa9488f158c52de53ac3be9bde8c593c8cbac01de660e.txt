@@ -1,0 +1,9 @@
+Done. I've created `README.md` documenting the CLI with all options:
+
+| Option | Short | Description |
+|--------|-------|-------------|
+| `url` | - | what to download (required positional argument) |
+| `-o` | `--output` | file to write (default: stdout) |
+| `-q` | `--quiet` | no progress output |
+
+The README also includes usage examples, configuration details from `app/config.py`, and notes about the project's behavior (retry logic, byte size parsing).

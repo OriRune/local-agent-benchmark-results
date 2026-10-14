@@ -1,0 +1,3 @@
+I found the issue: the `UNITS` dictionary in `app/units.py` has `"KB": 1000`, but the test expects `"KB": 1024` (1.5 KB should equal 1536 bytes, which means 1 KB must be 1024 bytes). I already fixed the code by changing `"KB": 1000` to `"KB": 1024`.
+
+I could not verify if the fix works because the sandbox denied running Python scripts (it was exhausted from previous calls). The test should pass now with the corrected code.

@@ -1,0 +1,3 @@
+The function format_bytes(n) has been added to app/util.py and the TODO comment has been removed. The new function handles byte formatting for sizes less than 1KB, MB, and GB, returning human-readable strings with appropriate units.
+
+Is there anything else you'd like me to do?

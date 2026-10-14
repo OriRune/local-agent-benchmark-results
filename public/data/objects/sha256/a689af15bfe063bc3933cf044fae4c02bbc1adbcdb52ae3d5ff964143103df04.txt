@@ -1,0 +1,32 @@
+{
+  "character_sheet": {
+    "name": "Elara Vane",
+    "class": "Rogue",
+    "subclass": "Thief",
+    "level": 1,
+    "race": "Human (Variant)",
+    "background": "Criminal",
+    "stats": {
+      "strength": 8,
+      "dexterity": 16,
+      "constitution": 12,
+      "intelligence": 14,
+      "wisdom": 10,
+      "charisma": 13
+    },
+    "skills": [
+      "Acrobatics",
+      "Stealth",
+      "Sleight of Hand",
+      "Perception"
+    ],
+    "equipment": [
+      "Shortsword",
+      "Shortbow",
+      "Thieves' Tools",
+      "Leather Armor",
+      "Dagger"
+    ],
+    "notes": "Elara is a skilled thief who once won a prestigious medalist award for her lockpicking abilities in the underground guilds. She is currently investigating a mysterious artifact known as the Theta Key, which is said to unlock the secrets of an ancient temple."
+  }
+}

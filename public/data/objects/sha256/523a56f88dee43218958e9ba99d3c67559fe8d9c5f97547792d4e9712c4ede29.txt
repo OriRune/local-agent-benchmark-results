@@ -1,0 +1,20 @@
+The code in `app/net.py` shows the retry loop, and `app/config.py` sets `MAX_RETRIES = 3`.
+
+```python
+for attempt in range(MAX_RETRIES):      # attempt = 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)         # sleep before the next try
+raise RuntimeError(f"giving up on {url}")
+```
+
+Every failed attempt sleeps `2 ** attempt` seconds:
+
+| attempt | sleep |
+|---------|-------|
+| 0 | 2⁰ = 1 s |
+| 1 | 2¹ = 2 s |
+| 2 | 2² = 4 s |
+
+Total sleep before giving up: **1 + 2 + 4 = 7 seconds**.

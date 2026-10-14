@@ -1,0 +1,3 @@
+The proxy.ini file sets:
+- **Host:** `proxy.lan.example`
+- **Port:** `3128`

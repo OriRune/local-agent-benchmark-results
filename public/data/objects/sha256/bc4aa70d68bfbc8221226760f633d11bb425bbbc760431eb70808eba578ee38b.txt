@@ -1,0 +1,10 @@
+I cannot find any documentation about CLI commands in the current files. To create an accurate README.md listing all command line options with help text, I would need to either:
+
+1. Access source code/implementation of the CLI (not available in current directory)
+2. Use reflection tools to inspect binary executables (blocked by sandbox)
+3. Have the user provide the list of commands
+
+Would you like me to:
+1. Create an empty README.md template for you to fill in?
+2. Ask the user to provide the CLI command list?
+3. Look for any hidden files that might contain this information?

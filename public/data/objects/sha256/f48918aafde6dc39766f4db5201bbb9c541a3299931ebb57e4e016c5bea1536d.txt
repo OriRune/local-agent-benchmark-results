@@ -1,0 +1,3 @@
+I have listed the files in the current directory. The next step is to examine `tests/test_units.py` to see the test case that is failing and the code it is interacting with.
+
+I will now read the content of `tests/test_units.py`.

@@ -1,0 +1,1 @@
+I need to see which file was changed in the most recent git commit to undo that change. Can you tell me which file was modified? Alternatively, I can look for recently modified files in the working folder if you prefer.

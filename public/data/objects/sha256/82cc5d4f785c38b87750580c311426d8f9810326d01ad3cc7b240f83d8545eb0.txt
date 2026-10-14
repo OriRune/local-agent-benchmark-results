@@ -1,0 +1,5 @@
+I apologize for the confusion. Let's try again with the correct format.
+
+```json
+{"name": "grep", "arguments": {"pattern": "MAX_RETRIES", "path": ".", "glob": "*.py"}}
+```

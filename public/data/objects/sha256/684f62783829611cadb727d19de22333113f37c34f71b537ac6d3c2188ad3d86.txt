@@ -1,0 +1,18 @@
+Now I have the full picture. Let me work it out.
+
+The `fetch` function in `app/net.py` has a `for attempt in range(MAX_RETRIES)` loop. `MAX_RETRIES = 3` (from `config.py`). So it iterates 3 times (attempts 0, 1, 2).
+
+Each failed attempt sleeps for `2 ** attempt` seconds:
+- Attempt 0 (first failure): `2 ** 0 = 1` second
+- Attempt 1 (second failure): `2 ** 1 = 2` seconds
+- Attempt 2 (third failure, last attempt): `2 ** 2 = 4` seconds
+
+The loop then exits with `raise RuntimeError` on the third failure.
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**.
+
+It spends 7 seconds sleeping in total before giving up.
+
+Let me verify by checking if there are any other `fetch` functions or if the loop could run differently. The `fetch` function is the only one, and the loop is `for attempt in range(MAX_RETRIES)` where `MAX_RETRIES = 3`. The sleep is `2 ** attempt` inside the `except OSError` block.
+
+So the total sleep time before giving up is **7 seconds**.

@@ -1,0 +1,1 @@
+The test expects 1024-based units (KB = 1024 bytes), but the original code had `KB: 1000`. I've fixed this inconsistency by changing `KB: 1000` to `KB: 1024` in the UNITS dictionary. Now the code is consistent with both the docstring and the test expectations.

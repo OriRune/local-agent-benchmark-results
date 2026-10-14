@@ -1,0 +1,1 @@
+The code in `app/net.py` line 12 shows that each failed fetch attempt sleeps for `2 ** attempt` seconds. However, the total sleep time depends on the number of failed attempts, which isn't specified in the code or files. The formula itself is clear, but the exact total duration requires knowing how many attempts occur before success or failure.

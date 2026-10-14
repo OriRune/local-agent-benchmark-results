@@ -1,0 +1,6 @@
+a and b are integers. 
+
+Wait, but the user said to return only the shortest supported answer. Since the passage states that Gaussian primes are a + bi with a and b integers, the shortest answer would be "a and b are integers". Alternatively, maybe even shorter: "integers a,b". But perhaps the user expects just "integers a,b". Alternatively, since the question is "What do a and b represent...", the answer is they are coefficients of a Gaussian integer. But to be concise, perhaps "integers a,b". Since the user says "shortest supported answer", maybe just "integers a,b". Alternatively, since the user says "exactly UNANSWERABLE if not given", but since the passage does mention a and b as integers in Gaussian primes, the answer is likely "a and b are integers". I'll go with that.
+</think>
+
+a and b are integers.

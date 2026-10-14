@@ -1,0 +1,9 @@
+The most recent git commit changed **one line** in `app/config.py` — it raised a download timeout value from 10 to 20 seconds.
+
+- **Commit:** `95ee4809`
+- **Author:** eval
+- **Date:** Sun Oct 11, 06:31:33 2026 (-0700)
+- **Message:** "raise the download timeout from 10 to 20 seconds"
+- **Change:** 1 insertion, 1 deletion in `app/config.py`
+
+The exact old/new values aren't shown by git (the file appears to be non-text or the value is numeric), but the intent is clear from the commit message: a timeout setting was increased from 10 to 20 seconds.

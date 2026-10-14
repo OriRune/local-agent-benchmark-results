@@ -1,0 +1,6 @@
+<solution>  
+The person who plays climbing uses Transport: scooter.  
+The person who plays volleyball is position 2.  
+The person who listens to techno is position 4.  
+The person who eats strawberry is position 3.  
+</solution>

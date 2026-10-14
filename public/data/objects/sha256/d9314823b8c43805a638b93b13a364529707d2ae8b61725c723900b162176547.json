@@ -1,0 +1,1 @@
+["The user wants to know which dataset was used in the experiment described in the paper.\n\n    *   Paragraph [28] discusses the efficiency comparison.\n    *   It mentions: \"We extract 100 sentences from CoNLL 2003 English NER BIBREF8 training data...\"\n\n    *   Dataset: CoNLL 2003 English NER training data.\n    *   Evidence: Paragraph [28]."]

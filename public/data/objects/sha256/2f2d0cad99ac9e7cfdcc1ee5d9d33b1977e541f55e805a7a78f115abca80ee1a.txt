@@ -1,0 +1,13 @@
+
+# Project README
+
+This project provides a small command line tool for downloading data.
+
+## Options
+
+- `url`
+ - what to download
+- `-o`, `--output`
+ - file to write (default: stdout)
+- `-q`, `--quiet`
+ - no progress output

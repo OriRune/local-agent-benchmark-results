@@ -1,0 +1,1 @@
+The change has been successfully undone. The timeout in `app/config.py` has been reverted from 20 seconds back to 10 seconds, which undoes the most recent git commit "raise the download timeout from 10 to 20 seconds".

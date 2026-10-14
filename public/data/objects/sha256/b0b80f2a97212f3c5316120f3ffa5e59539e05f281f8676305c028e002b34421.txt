@@ -1,0 +1,15 @@
+I created `README.md` listing every CLI option with its help text.
+
+The options come directly from `app/cli.py`'s `build_parser()`:
+
+**Positional argument**
+- `url` — "what to download"
+
+**Options**
+- `-o`, `--output` — "file to write (default: stdout)"
+- `-q`, `--quiet` — "no progress output"
+
+**Global**
+- `-h`, `--help` — "show this help message and exit"
+
+I also added a usage summary and a few examples. Note that I couldn't run the CLI to capture the live `--help` output (the sandbox denies running programs), so the help text was taken verbatim from the `help=` strings in the source.

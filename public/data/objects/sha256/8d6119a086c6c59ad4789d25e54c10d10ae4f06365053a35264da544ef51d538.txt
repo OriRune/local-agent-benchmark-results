@@ -1,0 +1,14 @@
+Now I can calculate the total sleep time. Looking at the code:
+
+1. `MAX_RETRIES = 3` (from config.py)
+2. The sleep formula is `2 ** attempt` (from net.py)
+3. The loop runs for `attempt` in range(MAX_RETRIES), which means attempts 0, 1, 2
+
+The sleep times are:
+- Attempt 0: `2 ** 0 = 1` second
+- Attempt 1: `2 ** 1 = 2` seconds  
+- Attempt 2: `2 ** 2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**
+
+The fetch function will sleep a total of 7 seconds before giving up after 3 failed attempts.

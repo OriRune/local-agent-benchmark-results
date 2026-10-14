@@ -1,0 +1,1 @@
+Done. The most recent commit ("raise the download timeout from 10 to 20 seconds") changed `TIMEOUT_S` from 10 to 20 in `app/config.py`. I've edited the file directly to revert `TIMEOUT_S` back to **10**, effectively undoing that commit's change.

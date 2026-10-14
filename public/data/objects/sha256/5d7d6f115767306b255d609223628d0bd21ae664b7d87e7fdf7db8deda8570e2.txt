@@ -1,0 +1,9 @@
+The sandbox won't execute programs, so I can't run a confirmation. But the fix is straightforward and I can verify it by hand.
+
+## Summary
+
+**The bug:** In `app/units.py`, the `UNITS` dict defined `"KB": 1000`, but the module's own docstring says *"Sizes use 1024-based units: 1 KB = 1024 bytes."* So `parse_size("1.5 KB")` returned `1500` instead of the expected `1536`.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`, making the code match both the docstring and the test. `MB` and `GB` were already `1024`-based, and `B`/`float()`/`int()` were fine, so only KB needed correcting.
+
+**Verification note:** The sandbox denies running any programs (including `pytest`), so I couldn't execute the test to confirm. The reasoning is sound: with `KB = 1024`, all three assertions hold — `512`, `1.5×1024=1536`, and `2×1024²`. You may want to run `python -m pytest tests/test_units.py -q` yourself to see it pass.

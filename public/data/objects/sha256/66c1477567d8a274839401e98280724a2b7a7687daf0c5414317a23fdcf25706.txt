@@ -1,0 +1,7 @@
+```json
+{
+  "answer": "The experiment used the CoNLL 2003 English NER dataset.",
+  "evidence": ["[25] If an administrator wants to look into the detailed disagreement of annotators, it is quite convenient by using the Pairwise Annotators Comparison (PAC). PAC loads two annotated files and generates a specific comparison report file for the two annotators. As shown in Figure FIGREF21 , the report is mainly in two parts:",
+ " "more": "Overall statistics: it shows the specific precision, recall and F1-score of two files in all labels. It also gives the three accuracy indexes on overall full level and boundary level in the end."]]
+}
+```

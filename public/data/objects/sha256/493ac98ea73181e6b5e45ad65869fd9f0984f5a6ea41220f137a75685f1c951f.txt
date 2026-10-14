@@ -1,0 +1,20 @@
+Based on the code in `app/net.py` and `app/config.py`, here is the breakdown:
+
+1.  **`app/config.py`** defines `MAX_RETRIES = 3`.
+2.  **`app/net.py`** implements the `fetch` function with the following retry logic:
+    ```python
+    for attempt in range(MAX_RETRIES):
+        try:
+            return get(url, timeout=TIMEOUT_S)
+        except OSError:
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"giving up on {url}")
+    ```
+3.  If every attempt fails, the loop will run for `attempt` values of `0`, `1`, and `2` (since `range(3)` produces `[0, 1, 2]`).
+4.  The sleep durations for each failed attempt are:
+    *   **Attempt 0:** `2 ** 0 = 1` second
+    *   **Attempt 1:** `2 ** 1 = 2` seconds
+    *   **Attempt 2:** `2 ** 2 = 4` seconds
+5.  After the third failed attempt, the loop finishes, and the function raises a `RuntimeError`.
+
+The total sleep time is $1 + 2 + 4 = 7$ seconds.

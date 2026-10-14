@@ -1,0 +1,23 @@
+
+
+```bash
+#!/bin/bash
+
+# Open Chrome with Google's homepage
+google-chrome --new-window http://google.com
+
+# Open the text editor
+geany
+
+# Open the file manager to show the specific file
+xdg-open [private-home]/Documents/llama.cpp
+```
+
+**Summary:**  
+This script runs three commands in sequence:  
+1. Opens Chrome with Google's homepage in a new tab.  
+2. Launches the text editor (geany).  
+3. Opens the file manager to display `[private-home]/Documents/llama.cpp`.  
+
+**Execution:**  
+Save the script to a file (e.g., `open_files.sh`), make it executable with `chmod +x open_files.sh`, then run it with `./open_files.sh`.

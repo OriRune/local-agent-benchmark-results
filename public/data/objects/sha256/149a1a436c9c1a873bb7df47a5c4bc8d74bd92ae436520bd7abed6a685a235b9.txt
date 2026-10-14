@@ -1,0 +1,7 @@
+The function `format_bytes(n)` has been successfully added to `app/util.py`, and the TODO comment has been removed.
+
+Here's a summary of what was done:
+- Added a `format_bytes(n)` function that converts a number of bytes into a human-readable string (e.g., '1.5 KB').
+- Removed the TODO comment `# TODO: add a helper that formats byte sizes`.
+
+The file `app/util.py` now has the function ready for use.

@@ -1,0 +1,8 @@
+You are correct, I should not have made any changes as the request was only to *find* information, not to *change* it. I apologize for the confusing language in my previous response.
+
+To be absolutely clear: I have **not** changed any files in the project directory.
+
+The information I found is:
+The `MAX_RETRIES` variable is defined in the file `app/config.py` and its value is `3`. It is also imported in `app/net.py`.
+
+Is there anything else I can help you with regarding this project?

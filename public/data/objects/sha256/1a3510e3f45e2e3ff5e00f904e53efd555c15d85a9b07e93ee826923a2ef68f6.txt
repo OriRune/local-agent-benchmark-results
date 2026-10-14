@@ -1,0 +1,13 @@
+Based on the directory listing, here are the largest files in this directory along with their locations:
+
+| File Name | Size | Location |
+|-----------|------|----------|
+| AUTHORS | 86,579 bytes | `./AGENTS.md` |
+| convert_hf_to_gguf_update.py | 28,225 bytes | `./convert_hf_to_gguf_update.py` |
+| build-xcframework.sh | 24,300 bytes | `./build-xcframework.sh` |
+| convert_lora_to_gguf.py | 23,200 bytes | `./convert_lora_to_gguf.py` |
+| convert_hf_to_gguf.py | 12,798 bytes | `./convert_hf_to_gguf.py` |
+| CONTRIBUTING.md | 12,762 bytes | `./CONTRIBUTING.md` |
+| AGENTS.md | 12,170 bytes | `./AGENTS.md` |
+
+The largest file is **AUTHORS** at 86,579 bytes, followed by **convert_hf_to_gguf_update.py** at 28,225 bytes.

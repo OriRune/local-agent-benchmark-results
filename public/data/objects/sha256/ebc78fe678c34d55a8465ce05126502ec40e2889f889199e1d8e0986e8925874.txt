@@ -1,0 +1,1 @@
+Done. Changed MAX_RETRIES from 3 to 5 in app/config.py. The app/net.py file imports this constant, so it will automatically use the new value.

@@ -1,0 +1,12 @@
+I found two potential files in the directory:
+1. `Documents/Work/HR/vacation policy 2026.pdf` (PDF)
+2. `Documents/Work/HR/vacation request form.docx` (DOCX)
+
+However, both files appear to be damaged:
+- The PDF has a stream error
+- The DOCX is a corrupted/invalid file
+
+Would you like me to:
+1. Search other directories for files containing the word "vacation" in their content?
+2. Check if there are any text files in this directory that might contain vacation-related information?
+3. Look for files with similar names in other locations?

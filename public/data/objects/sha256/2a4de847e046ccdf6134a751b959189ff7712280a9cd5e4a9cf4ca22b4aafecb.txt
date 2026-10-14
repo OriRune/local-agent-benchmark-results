@@ -1,0 +1,7 @@
+Done. I renamed `fetch` to `download` in `app/net.py` and updated both usages in `app/cli.py`:
+
+- `app/net.py`: the definition `def fetch(...)` → `def download(...)`
+- `app/cli.py`: the import `from app.net import fetch` → `from app.net import download`
+- `app/cli.py`: the call `fetch(args.url, get=_get)` → `download(args.url, get=_get)`
+
+No other references remain.

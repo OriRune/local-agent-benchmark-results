@@ -1,0 +1,5 @@
+Let's list the files in the current directory to see what files are available for inspection.
+
+```json
+{"name": "list_dir", "arguments": {}}
+```

@@ -1,0 +1,8 @@
+Programs can't be run in this session, but the edits were straightforward text replacements that preserved surrounding syntax, and the `grep` checks confirm consistency.
+
+Done. I renamed the `fetch` function to `download` in `app/net.py` and updated every caller:
+
+- **app/net.py** — `def fetch(url, get):` → `def download(url, get):`
+- **app/cli.py** — `from app.net import fetch` → `from app.net import download`, and `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+A project-wide search confirms no remaining references to `fetch` (the other matches for "download" are pre-existing unrelated strings like the docstring and user agent, which I left untouched).

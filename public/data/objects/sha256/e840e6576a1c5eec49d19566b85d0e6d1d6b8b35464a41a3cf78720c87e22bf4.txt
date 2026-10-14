@@ -1,0 +1,1 @@
+Fixed. The bug was that `KB` was defined as `1000` instead of `1024`, which contradicted both the docstring ("1 KB = 1024 bytes") and the test expectation (`parse_size("1.5 KB") == 1536`).

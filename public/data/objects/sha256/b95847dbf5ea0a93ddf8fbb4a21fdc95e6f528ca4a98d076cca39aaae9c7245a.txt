@@ -1,0 +1,26 @@
+{
+  "dungeon_master_greeting": "Welcome, adventurer. The dice have spoken, and your fate is sealed. Here is your character sheet for our upcoming campaign.",
+  "character_sheet": {
+    "name": "Elara Vane",
+    "class": "Medalist",
+    "level": 1,
+    "race": "Human",
+    "background": "Scholar of the Theta Archives",
+    "stats": {
+      "strength": 4,
+      "dexterity": 7,
+      "constitution": 5,
+      "intelligence": 9,
+      "wisdom": 6,
+      "charisma": 8
+    },
+    "equipment": [
+      "Rusty Dagger",
+      "Leather Armor",
+      "Tome of Ancient Theta",
+      "Gold Medal of Honor"
+    ],
+    "special_ability": "Can analyze the structural weakness of any object by focusing on its theta frequency."
+  },
+  "next_step": "What do you wish to do first?"
+}

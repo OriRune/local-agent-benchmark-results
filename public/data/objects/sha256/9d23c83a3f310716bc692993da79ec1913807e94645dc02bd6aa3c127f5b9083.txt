@@ -1,0 +1,7 @@
+Done. I renamed the function `fetch` to `download` in all three places it appears in the project:
+
+- **`app/net.py:6`** — the definition: `def download(url, get):`
+- **`app/cli.py:5`** — the import: `from app.net import download`
+- **`app/cli.py:18`** — the call: `data = download(args.url, get=_get)`
+
+A final search confirms no remaining references to `fetch` anywhere in the project, so all usages are updated and the signature (parameters unchanged) is preserved.

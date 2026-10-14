@@ -1,0 +1,1 @@
+MAX_RETRIES has been successfully changed from 3 to 5 in app/config.py. The value is now 5, and it's used in app/net.py as well, but that file only imports the value and uses it in a loop range(), so no further changes are needed. The task is complete.

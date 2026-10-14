@@ -1,0 +1,5 @@
+The most recent commit raised the download timeout in the downloader's configuration.
+
+**Commit:** `ce9a92ec` — "raise the download timeout from 10 to 20 seconds"
+
+**Change:** In `app/config.py`, it updated `TIMEOUT_S` from `10` to `20`.

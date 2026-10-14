@@ -1,0 +1,25 @@
+Your task is to find the shortest path from the start to the destination point in a grid.
+
+The grid is represented as a matrix with the following types of cells:
+- *: your starting point
+- #: your destination point
+- O: an open cell
+- X: a blocked cell
+
+Therefore, you need to find the shortest path from * to #, moving only through open cells.
+
+You may only move in four directions: up, down, left, and right.
+
+If there is no path from * to #, simply write "infeasible" (without quotes).
+
+Your output should be a sequence of directions that leads from * to #, e.g. right right down down up left
+
+Now, find the shortest path from * to # in the following grid:
+X O X O O O
+O O O O O #
+O O X O O O
+O O O * O X
+X X O X O O
+X X O O X O
+
+Put your final answer, in the requested format, inside <answer>...</answer>.

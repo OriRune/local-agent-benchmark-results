@@ -1,0 +1,13 @@
+**What the most recent Git commit changed**
+
+**Files affected**
+
+- **`app/__init__.py`**  
+  The commit removed the top‑level `__version__` assignment and the `__version__ = "0.0.0"` line. This makes the module version information no longer exposed at the top level.
+
+- **`app/app.py`**  
+  The commit removed the `__version__` assignment and the `__version__ = "0.0.0"` line from the file as well.
+
+**Effect**
+
+The commit updates the project’s version handling by eliminating the `__version__` attribute from the top of the module files, which cleans up the exposed version information and removes a potential source of stale version strings from the codebase.

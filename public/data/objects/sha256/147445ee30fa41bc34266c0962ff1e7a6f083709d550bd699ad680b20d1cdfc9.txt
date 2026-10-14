@@ -1,0 +1,1 @@
+The change has been made successfully. MAX_RETRIES is now set to 5 in app/config.py.

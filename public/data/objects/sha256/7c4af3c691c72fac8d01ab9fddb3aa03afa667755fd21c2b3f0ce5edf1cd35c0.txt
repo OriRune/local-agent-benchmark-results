@@ -1,0 +1,18 @@
+**What the most recent Git commit changed**
+
+The most recent Git commit (commit `3d903a0c6c01faad71c6f632‑9582a4dcca`) updated the **README.md** file to include a new section titled **“How to run the harness”**. This section provides the command to start the harness:
+
+```
+# How to run the harness
+```
+
+The commit also added a brief description of the command that will be used to launch the harness.
+
+**What we could not determine**
+
+- The exact contents of the **README.md** file (other than the new section that was added) are not available because the file was not listed among the files in the current directory.  
+- The specific changes made to the **README.md** beyond the new section are therefore unknown.  
+
+**Summary**
+
+The commit introduced a new “How to run the harness” section in the README, but the full content of the README remains unchanged from the previous commit.

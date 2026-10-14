@@ -1,0 +1,18 @@
+Now I have all the information I need:
+
+- `MAX_RETRIES = 3`
+- The sleep happens in a loop: `for attempt in range(MAX_RETRIES)` which means attempt = 0, 1, 2
+- The sleep time is `time.sleep(2 ** attempt)`
+
+Let me calculate the total sleep time:
+- Attempt 0: `2 ** 0 = 1` second
+- Attempt 1: `2 ** 1 = 2` seconds
+- Attempt 2: `2 ** 2 = 4` seconds
+
+Total sleep = 1 + 2 + 4 = 7 seconds
+
+The loop runs 3 times (for attempt 0, 1, 2). If all attempts fail, it sleeps at each iteration before retrying. After the 3rd attempt (when attempt=2), if it fails, the loop exits and raises RuntimeError. So it sleeps 3 times total.
+
+**Answer: 7 seconds**
+
+The total sleep time is 1 + 2 + 4 = 7 seconds.

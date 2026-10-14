@@ -1,0 +1,44 @@
+Here is a `README.md` listing all CLI command-line options with their help text:
+
+```markdown
+# TinyDL - Simple Command Line Downloader
+
+TinyDL is a lightweight tool for downloading files from a URL.
+
+## Usage
+
+```sh
+tinydl [OPTIONS] URL
+```
+
+## Command-Line Options
+
+- **URL** (required):
+  The URL of the resource to download.
+
+- **-o, --output FILE** (optional):
+  Write the downloaded data to the specified file instead of stdout.
+  Default: stdout.
+
+- **-q, --quiet**:
+  Suppresses progress output. Only the size of the downloaded data (in bytes) is shown if not quiet.
+
+## Examples
+
+- Download a URL and print to stdout:
+  ```sh
+  tinydl https://example.com/file.txt
+  ```
+
+- Download a URL and save to a file:
+  ```sh
+  tinydl -o file.txt https://example.com/file.txt
+  ```
+
+- Download a URL quietly:
+  ```sh
+  tinydl -q https://example.com/file.txt
+  ```
+```
+
+This document summarizes the CLI options and their help text as defined in the `cli.py` file.

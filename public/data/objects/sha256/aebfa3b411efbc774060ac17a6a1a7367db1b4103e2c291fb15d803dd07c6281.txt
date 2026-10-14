@@ -1,0 +1,13 @@
+The sandbox is not permitting any program execution this session, so I cannot run the test directly. However, the fix is a clear, verifiable one-line change based on the test's own assertions.
+
+## Summary
+
+**The bug:** In `app/units.py`, line 2 defined the unit conversion table as:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+`KB` was `1000`, but the module's own docstring says sizes are 1024-based, and the test asserts `parse_size("1.5 KB") == 1536` (which is 1.5 × 1024, not 1.5 × 1000 = 1500).
+
+**The fix:** Changed `KB` from `1000` to `1024` so it matches the documented and tested 1024-based convention. The other entries (`B`, `MB`, `GB`) were already correct.
+
+I was unable to run the test because the sandbox denies all program execution this session, but the change is logically sufficient: with `KB = 1024`, all three test assertions (`512 B`, `1.5 KB → 1536`, `2 MB → 2·1024²`) now hold.

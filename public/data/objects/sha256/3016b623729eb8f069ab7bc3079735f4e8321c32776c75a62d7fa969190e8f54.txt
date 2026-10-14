@@ -1,0 +1,8 @@
+I have renamed the `fetch` function to `download` in `app/net.py` and updated its usage in `app/cli.py`.
+
+**Changes made:**
+1.  **app/net.py**: Changed `def fetch(url, get):` to `def download(url, get):`.
+2.  **app/cli.py**: Changed `from app.net import fetch` to `from app.net import download`.
+3.  **app/cli.py**: Changed `data = fetch(args.url, get=_get)` to `data = download(args.url, get=_get)`.
+
+I was unable to run a verification test (like `python3 -m app.cli --help`) because the sandbox environment prevented repeated identical calls, but the code changes are complete based on the grep and read results.

@@ -1,0 +1,27 @@
+```json
+{
+  "class": "Medalist",
+  "attributes": {
+    "strength": 12,
+    "dexterity": 14,
+    "constitution": 10,
+    "intelligence": 11,
+    "wisdom": 13,
+    "charisma": 15
+  },
+  "background": "A former champion of the realm, known for their exceptional skills in combat and strategy.",
+  "theta": "A mysterious artifact that grants the bearer the ability to influence the battlefield in their favor.",
+  "skills": [
+    "Stealth",
+    "Persuasion",
+    "History",
+    "Investigation"
+  ],
+  "equipment": {
+    "weapon": "Dagger",
+    "armor": "Leather Armor",
+    "accessories": ["Explorer's Pack", "Messenger's Robes"]
+  },
+  "quest": "Seek out the lost temple of the Theta to uncover its secrets and harness its power."
+}
+```

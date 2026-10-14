@@ -1,0 +1,3 @@
+The prerequisites list contains both `(3, 10)` and `(10, 3)`, which means course 10 is a prerequisite for course 3, and course 3 is a prerequisite for course 10. This creates a cycle between courses 3 and 10, making it impossible to finish all courses.
+
+<answer>False</answer>

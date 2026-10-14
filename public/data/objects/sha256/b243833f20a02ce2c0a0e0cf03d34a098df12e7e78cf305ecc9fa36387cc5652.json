@@ -1,0 +1,1 @@
+[{"args":{"path":"~/Documents/project","pattern":"README"},"name":"find_files","result":"error: no such folder: ~/Documents/project","status":"error"},{"args":{"end_line":100,"path":"~/Documents/project/README.md","start_line":1},"name":"read_file","result":"error: no such file: ~/Documents/project/README.md","status":"error"}]

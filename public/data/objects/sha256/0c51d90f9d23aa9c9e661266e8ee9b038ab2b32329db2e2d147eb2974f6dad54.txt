@@ -1,0 +1,9 @@
+I've updated the code to remember your tasks. Now when you:
+- Add a task
+- Check it off
+- Edit it
+- Delete it
+
+All your tasks will be saved to your browser's local storage. When you reload the page, your tasks will still be there.
+
+**Note:** This only works in your current browser. If you open the file in a different browser, your tasks won't be remembered. To share with others, you could also use a service like Google Keep or OneNote.

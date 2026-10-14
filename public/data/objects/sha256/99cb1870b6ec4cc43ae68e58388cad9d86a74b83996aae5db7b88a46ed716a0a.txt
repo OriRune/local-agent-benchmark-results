@@ -1,0 +1,20 @@
+I've created a beautiful HTML page called `books.html` that displays your reading list in an aesthetically pleasing way. Here's what it includes:
+
+**Features:**
+- **Gradient purple header** with your reading journey title and subtitle
+- **Statistics dashboard** showing:
+  - 22 books read
+  - 7,878 total pages
+  - 19 unique authors
+- **Card-based layout** for each book with:
+  - Book title and author
+  - Genre badge with gradient styling
+  - Start/end dates with calendar icons
+  - Page count with book icon
+  - Hover effects for interactivity
+- **Responsive design** that works on desktop and mobile
+- **Clean, modern styling** with shadows and smooth transitions
+
+The page is self-contained with all CSS and JavaScript embedded, so it will work perfectly when you double-click it in your browser. You can take a screenshot of the entire page or individual book cards to share with your book club friends!
+
+To view it, just double-click `books.html` in this folder.

@@ -1,0 +1,5 @@
+Done! I've updated MAX_RETRIES from 3 to 5 in `app/config.py`. The `app/net.py` file already references MAX_RETRIES correctly, so no changes were needed there.
+
+Summary:
+- Changed `MAX_RETRIES = 3` to `MAX_RETRIES = 5` in `app/config.py`
+- `app/net.py` already imports and uses MAX_RETRIES correctly (no changes needed)

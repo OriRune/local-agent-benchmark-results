@@ -1,0 +1,2 @@
+
+I have created a file named "hello.txt" with the contents "hello from the local agent" and exactly 1 line.

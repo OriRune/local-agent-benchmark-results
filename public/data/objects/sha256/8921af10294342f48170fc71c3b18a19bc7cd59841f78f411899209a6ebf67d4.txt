@@ -1,0 +1,1 @@
+The function `format_bytes(n)` has been added to `app/util.py` and the TODO comment has been removed. The implementation converts bytes to KB, MB, GB, or TB with one decimal place, using powers of 1024. The file now contains only the two functions (`clamp` and `format_bytes`) without any TODO comment.

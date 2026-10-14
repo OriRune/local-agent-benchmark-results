@@ -1,0 +1,1 @@
+["I need to find all occurrences of the `fetch` function in the project and rename it to `download`, then update every reference throughout the codebase.\n","Now I need to rename the function in `app/net.py` and update the two places in `app/cli.py` that use it.\n","All three changes are done. Let me verify by reading the files to confirm.\n"]

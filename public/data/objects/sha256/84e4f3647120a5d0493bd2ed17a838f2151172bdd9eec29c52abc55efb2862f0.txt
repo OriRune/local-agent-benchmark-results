@@ -1,0 +1,19 @@
+The bug was in `app/units.py`. The `UNITS` dictionary had `"KB": 1000`, but the docstring says "Sizes use 1024-based units: 1 KB = 1024 bytes." and the test expects `1.5 KB` to equal `1536` bytes (i.e., `1.5 * 1024`). Changing `"KB": 1000` to `"KB": 1024` fixes the test.
+
+The fix has been applied. The file now reads:
+
+```python
+"""Byte-size parsing. Sizes use 1024-based units: 1 KB = 1024 bytes."""
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+
+def parse_size(text):
+    number, unit = text.split()
+    return int(float(number) * UNITS[unit.upper()])
+```
+
+With this change:
+- `"512 B"` → `512 * 1 = 512` ✓
+- `"1.5 KB"` → `1.5 * 1024 = 1536` ✓
+- `"2 MB"` → `2 * 1024 * 1024` ✓
+
+The test should now pass. (Note: due to sandbox restrictions, I cannot run the test directly, but the logic is correct.)

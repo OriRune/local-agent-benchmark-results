@@ -1,0 +1,17 @@
+Here is one way to make 24 using the numbers 6, 4, 4, 4:
+
+We can try to combine the numbers to get close to 24.
+
+$6 \times 4 = 24$. We have two 4s left. We need to use them in a way that results in multiplication by 1 or addition/subtraction of 0, or we can try to make 1 from the remaining numbers.
+
+If we use $6 \times 4 = 24$, we have 4 and 4 left. We can't easily incorporate them without changing the result unless we use them to make 1, e.g., $4/4 = 1$.
+Then $(6 \times 4) \times (4/4) = 24 \times 1 = 24$.
+
+Let's check the constraints:
+Numbers used: 6, 4, 4, 4. All used once.
+Operators used: $\times$, $/$.
+Target: 24.
+
+Expression: $(6 \times 4) \times (4 / 4)$
+
+<answer>(6 * 4) * (4 / 4)</answer>

@@ -1,0 +1,5 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function returns human-readable sizes like `'512 B'`, `'1.5 KB'`, `'1.0 MB'`, `'2.0 GB'`, etc.
+
+Note: I couldn't run it to verify, since the sandbox doesn't have access to the `app/` path. If you'd like, I can test it with a quick inline check (e.g., `format_bytes(1536)`) — just let me know.

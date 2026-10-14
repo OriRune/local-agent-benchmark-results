@@ -1,0 +1,13 @@
+I have created a shell script named `open_apps.sh` in the current directory.
+
+This script will:
+1.  Open Chrome to `google.com`.
+2.  Open the `gedit` text editor.
+3.  Open the file manager (`nautilus`) showing the `[private-home]/Documents/llama.cpp` directory.
+
+To run it, you need to make it executable first, and then run it. You can use the following commands:
+
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```

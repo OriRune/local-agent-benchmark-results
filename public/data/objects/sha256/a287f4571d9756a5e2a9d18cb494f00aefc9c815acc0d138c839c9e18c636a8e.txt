@@ -1,0 +1,4 @@
+The test in `tests/test_units.py` was failing because `KB` was incorrectly defined as 1000 bytes in `app/units.py`, while the test expected 1024 bytes (1.5 KB = 1536 bytes). I have updated `app/units.py` to use 1024 for `KB`.
+
+Summary of changes:
+- Modified `app/units.py` to set `KB` to 1024 in the `UNITS` dictionary.

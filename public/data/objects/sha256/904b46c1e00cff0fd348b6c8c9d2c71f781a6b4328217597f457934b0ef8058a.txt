@@ -1,0 +1,3 @@
+I've undone the change by editing the file directly. The `TIMEOUT_S` value has been changed back from 20 to 10 seconds, reverting the modification made in the most recent git commit.
+
+Summary: I edited `app/config.py` directly to undo the most recent git commit. Changed `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`, reversing the timeout increase made in commit 2e1ceb6.

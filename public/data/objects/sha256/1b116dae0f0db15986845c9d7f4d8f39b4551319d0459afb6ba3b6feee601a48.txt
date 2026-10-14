@@ -1,0 +1,2 @@
+Samuel is a hero, William is a hero iff Daniel is a villain, and Emily claims a biconditional. Solving yields Daniel is a hero, Emily is a villain.  
+<answer>Samuel is a hero/villain, William is a hero/villain, Daniel is a hero/villain, and Emily is a hero/villain</answer>

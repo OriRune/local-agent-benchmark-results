@@ -1,0 +1,12 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment.
+
+The function handles various byte sizes and returns a human-readable string (e.g., '1.5 KB', '500 B').
+
+```python
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB', 'PB']:
+        if n < 1024.0:
+            return f"{n:.1f} {unit}" if unit != 'B' else f"{int(n)} {unit}"
+        n /= 1024.0
+    return f"{n:.1f} EB"
+```

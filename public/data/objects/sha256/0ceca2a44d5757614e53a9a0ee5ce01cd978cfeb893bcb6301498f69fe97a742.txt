@@ -1,0 +1,1 @@
+Done. The file `app/config.py` now shows `TIMEOUT_S = 10`, which reverts the change made in commit `743687c`. The download timeout has been successfully undone.

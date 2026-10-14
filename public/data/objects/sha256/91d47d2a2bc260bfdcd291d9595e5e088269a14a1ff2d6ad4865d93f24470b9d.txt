@@ -1,0 +1,10 @@
+```json
+{
+  "answer": "The paper uses a **word2vec** model trained on 189,206 financial articles (161,877,425 tokens) from Factiva, including sources like the Financial Times, to create a **finance-specific word embedding model** (300-dimensional vectors).",
+
+  "evidence": [
+    4,
+    17
+  ]
+}
+```

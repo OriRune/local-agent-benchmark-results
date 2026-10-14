@@ -1,0 +1,1 @@
+Integers a and b that satisfy p = a² + b².

@@ -1,0 +1,7 @@
+Done. I've added the `format_bytes(n)` function to `app/util.py` that returns human-readable sizes like '1.5 KB'. The function:
+- Handles 0 bytes as "0 B"
+- Divides by 1024 to get appropriate units (B, KB, MB, GB, TB)
+- Formats with one decimal place, removing trailing zeros
+- Raises ValueError for negative inputs
+
+The TODO comment has been removed.

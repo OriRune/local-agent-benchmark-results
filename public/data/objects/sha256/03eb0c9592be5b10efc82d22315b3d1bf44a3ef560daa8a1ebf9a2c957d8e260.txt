@@ -1,0 +1,1 @@
+I could not find any Python files or TODO comments because I was unable to successfully execute the `find_files` tool to list the files in the directory. As a result, I have not been able to perform any of the requested actions.

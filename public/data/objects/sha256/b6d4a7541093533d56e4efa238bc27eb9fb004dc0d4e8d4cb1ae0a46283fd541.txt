@@ -1,0 +1,4 @@
+{
+  "answer": "The paper does not describe training a machine learning model; instead, it uses Occupation Data and Names Data (sourced from CMU repository) and DBpedia for evidence retrieval.",
+  "evidence": [11, 12, 13, 23]
+}

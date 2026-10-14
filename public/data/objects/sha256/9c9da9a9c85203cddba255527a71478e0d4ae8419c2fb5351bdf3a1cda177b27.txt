@@ -1,0 +1,1 @@
+I need to find the CLI executable or script in this project to extract its command line options. Could you confirm where the main executable or script is located? For example, is there a file like `bin/cli.js`, `cli.py`, or something similar in this directory or subfolders?

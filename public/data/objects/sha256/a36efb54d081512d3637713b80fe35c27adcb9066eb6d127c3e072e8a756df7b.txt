@@ -1,0 +1,10 @@
+I've created a Python script (`show_system_info.py`) that displays simple information about the computer's RAM and CPU usage in the terminal.
+
+The script:
+1. Gets total RAM using `free -m` command
+2. Gets available RAM using `free -m` command
+3. Gets CPU usage using the `top` command
+
+To run it, you can execute `python3 show_system_info.py` in the terminal.
+
+However, I couldn't find the actual current values of RAM and CPU usage in the files - they would need to be obtained by running the commands at runtime. The script is ready to show this information when executed.

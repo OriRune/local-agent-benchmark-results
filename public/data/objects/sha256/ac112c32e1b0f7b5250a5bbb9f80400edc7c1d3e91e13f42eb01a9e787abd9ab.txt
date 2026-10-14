@@ -1,0 +1,8 @@
+Done. The `README.md` has been created with every command line option from the CLI (`app/cli.py`):
+
+- **Positional argument:** `url` — "what to download"
+- **Optional arguments:**
+  - `-o FILE` / `--output FILE` — "file to write (default: stdout)"
+  - `-q` / `--quiet` — "no progress output"
+
+Each option is listed in a table with its help text exactly as defined in `build_parser()`, along with usage examples.

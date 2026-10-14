@@ -1,0 +1,5 @@
+The fix is complete. The issue was that `UNITS["KB"]` was set to 1000, but according to the docstring and the test expectations, it should be 1024 (since the module uses 1024-based units: 1 KB = 1024 bytes).
+
+**Summary:**
+- **Bug found:** In `app/units.py`, the `UNITS` dictionary had `"KB": 1000` which contradicted the docstring stating "1 KB = 1024 bytes" and caused test failures.
+- **Fix applied:** Changed `"KB": 1000` to `"KB": 1024` to align with the documented 1024-based unit system.

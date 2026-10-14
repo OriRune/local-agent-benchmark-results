@@ -1,0 +1,7 @@
+I've created the shell script at `project/open_apps.sh`. The script will:
+
+1. Open Chrome (google-chrome) with google.com
+2. Open a text editor (nano)
+3. Open the file manager (nautilus) showing [private-home]/Documents/llama.cpp
+
+All three applications will be launched in the background and the script will wait for them to complete. You can make it executable with `chmod +x project/open_apps.sh` and then run it with `./project/open_apps.sh`.

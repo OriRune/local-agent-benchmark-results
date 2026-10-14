@@ -1,0 +1,28 @@
+
+
+```json
+{
+  "character": {
+    "name": "Kara Windshadow",
+    "race": "Half-Elf",
+    "class": "Fighter",
+    "level": 5,
+    "background": "Arena",
+    "ability_scores": {
+      "Strength": 14,
+      "Dexterity": 12,
+      "Constitution": 13,
+      "Intelligence": 10,
+      "Wisdom": 11,
+      "Charisma": 9
+    },
+    "equipment": [
+      {"type": "Greatsword", "rarity": "uncommon"},
+      {"type": "Shield", "rarity": "common"},
+      {"type": "Leather Armor", "rarity": "common"}
+    ],
+    "specialties": ["Melee Fighting", "Defense"],
+    "notes": "A seasoned medalist who once won a tournament, now seeking adventure. His emblem is shaped like a theta."
+  }
+}
+```

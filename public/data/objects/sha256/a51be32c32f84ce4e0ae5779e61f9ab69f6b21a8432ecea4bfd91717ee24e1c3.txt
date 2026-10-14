@@ -1,0 +1,7 @@
+To create `hello.txt` with exactly "hello", use the following command:
+
+```bash
+write_file "[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/workspace/project/hello.txt", "hello"
+```
+
+This ensures the file is placed correctly in your local agent folder. Confirm the path exists before proceeding.

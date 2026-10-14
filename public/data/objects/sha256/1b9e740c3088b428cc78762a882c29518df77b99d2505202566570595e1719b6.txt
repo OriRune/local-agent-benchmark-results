@@ -1,0 +1,1 @@
+I've fixed the issue. The test passes because the `KB` unit now correctly uses 1024 as the conversion factor instead of 1000.

@@ -1,0 +1,1 @@
+["The user is asking for the definition and value of `MAX_RETRIES`. I need to search for this constant in the codebase. I'll start by searching for \"MAX_RETRIES\" using `grep`.","The `grep` command shows that `MAX_RETRIES` is defined in `app/config.py` at line 2, and its value is 3.\n"]

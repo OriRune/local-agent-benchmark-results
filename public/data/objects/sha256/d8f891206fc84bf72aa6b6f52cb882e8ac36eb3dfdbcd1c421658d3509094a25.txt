@@ -1,0 +1,3 @@
+I created `hello.txt` in the working folder containing exactly the line:
+
+hello from the local agent

@@ -1,0 +1,2 @@
+
+The error code `E-4471` indicates that the disk quota was exceeded while saving a part of the file. The error occurred on line 2417 of `data/events.log`.

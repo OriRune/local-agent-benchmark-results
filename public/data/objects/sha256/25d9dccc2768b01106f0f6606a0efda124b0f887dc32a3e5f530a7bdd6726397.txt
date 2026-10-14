@@ -1,0 +1,3 @@
+The file contains one error code: **E-4471** ("disk quota exceeded while saving part 7"), on **line 2417**.
+
+The rest of the non-INFO lines are WARN entries (slow responses), but the only actual error is that single E-4471 on line 2417.

@@ -1,0 +1,7 @@
+Done. In `app/util.py` I replaced the TODO comment with a new `format_bytes(n)` function:
+
+- It divides the value by 1024 repeatedly across units B → KB → MB → GB → TB → PB.
+- Bytes are shown as a whole number (e.g. `512 B`), larger units with one decimal (e.g. `1536 → 1.5 KB`, `1500000000 → 1.4 GB`).
+- It uses `abs(n)` for the threshold so negative sizes work too, and caps at PB.
+
+Note: I also created a small `test_format_bytes.py` to verify it, but the sandbox in this session doesn't allow running programs, so I verified the logic by review. You can run `python test_format_bytes.py` yourself, or delete that file if you don't need it.

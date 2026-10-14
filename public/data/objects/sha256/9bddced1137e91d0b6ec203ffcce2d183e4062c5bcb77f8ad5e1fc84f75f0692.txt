@@ -1,0 +1,1 @@
+The test should now pass. The issue was that `"KB"` was incorrectly set to `1000` instead of `1024`. The docstring correctly states that the module uses 1024-based units, but the UNITS dictionary had a typo.

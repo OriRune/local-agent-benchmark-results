@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public Results Release V1",
+  "$defs": {
+    "object": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "path": {
+          "type": "string"
+        },
+        "media_type": {
+          "enum": [
+            "application/json",
+            "text/plain"
+          ]
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "availability": {
+          "enum": [
+            "full",
+            "redacted"
+          ]
+        },
+        "encoding": {
+          "enum": [
+            "identity",
+            "gzip"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "path",
+        "media_type",
+        "bytes",
+        "availability",
+        "encoding"
+      ]
+    },
+    "amendment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+        },
+        "kind": {
+          "enum": [
+            "roster",
+            "exclusion",
+            "correction",
+            "recovery",
+            "availability"
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "description"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "release_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+    },
+    "dataset_revision_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+    },
+    "dataset_object_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "index_object_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "model_objects": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "question_objects": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "summary_objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+          },
+          "object_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "configuration_id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+          },
+          "facts_object_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "id",
+          "object_id",
+          "configuration_id",
+          "facts_object_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/object"
+      }
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "display_policy_version": {
+      "type": "string"
+    },
+    "changes": {
+      "type": "object",
+      "properties": {
+        "previous_release_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "amendments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/amendment"
+          }
+        },
+        "summary_generator_changes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "previous_release_id",
+        "description",
+        "amendments",
+        "summary_generator_changes"
+      ],
+      "additionalProperties": false
+    },
+    "quant_summary_objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^quant-summary-[a-f0-9]{64}$"
+          },
+          "checkpoint_id": {
+            "type": "string"
+          },
+          "object_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "facts_object_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "id",
+          "checkpoint_id",
+          "object_id",
+          "facts_object_id"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "release_id",
+    "dataset_revision_id",
+    "dataset_object_id",
+    "index_object_id",
+    "model_objects",
+    "question_objects",
+    "summary_objects",
+    "objects",
+    "contract_sha256",
+    "display_policy_version",
+    "changes"
+  ],
+  "additionalProperties": false
+}

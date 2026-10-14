@@ -1,0 +1,37 @@
+## Setting Up the Graph
+
+Each prerequisite `(a, b)` means course `b` must be taken before course `a`, giving a directed edge `b → a`.
+
+**Outgoing edges (b → a):**
+- `0 → 9, 11`
+- `1 → 8, 6, 10, 2, 14, 15, 4`
+- `2 → 0, 12, 15`
+- `3 → 1, 16, 7, 8, 0, 14`
+- `4 → 16, 12`
+- `5 → 13, 9, 6`
+- `7 → 8, 5, 16, 11, 2`
+- `8 → 14`
+- `9 → 13, 6, 12`
+- `13 → 1`
+- `14 → 0, 15`
+- `15 → 11`
+
+## Detecting a Cycle
+
+Starting from course 1:
+
+$$1 \to 8 \to 14 \to 0 \to 9 \to 13 \to 1$$
+
+Let me verify each edge:
+- `1 → 8`: from `(8, 1)` ✓
+- `8 → 14`: from `(14, 8)` ✓
+- `14 → 0`: from `(0, 14)` ✓
+- `0 → 9`: from `(9, 0)` ✓
+- `9 → 13`: from `(13, 9)` ✓
+- `13 → 1`: from `(1, 13)` ✓
+
+This forms a **cycle**: `1 → 8 → 14 → 0 → 9 → 13 → 1`.
+
+Since there is a cycle in the prerequisite graph, it's impossible to complete all courses.
+
+<answer>False</answer>

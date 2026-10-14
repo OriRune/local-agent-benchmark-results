@@ -1,0 +1,7 @@
+Done. The README.md has been written with a table listing all three CLI options:
+
+- **`<url>`** — the required positional argument for the URL to download
+- **`-o, --output <file>`** — to write output to a file instead of stdout
+- **`-q, --quiet`** — to suppress the progress message on stderr
+
+It also includes a short description of the tool, a usage line, and example commands.

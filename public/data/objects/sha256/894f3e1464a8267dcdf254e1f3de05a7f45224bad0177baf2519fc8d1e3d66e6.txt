@@ -1,0 +1,24 @@
+```json
+{
+  "character_sheet": {
+    "name": "Vespera Shade",
+    "class": "Sorcerer",
+    "level": 1,
+    "stats": {
+      "str": 8,
+      "dex": 14,
+      "con": 12,
+      "int": 16,
+      "wis": 10,
+      "cha": 18
+    },
+    "equipment": [
+      "Wand",
+      "Potion of Healing",
+      "theta amulet"
+    ],
+    "background_story": "Vespera was a celebrated artist and a silver medalist in the royal academy before discovering her magical heritage.",
+    "special_ability": "Can cast spells using the theta amulet as a focus."
+  }
+}
+```

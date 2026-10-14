@@ -1,0 +1,10 @@
+
+
+The largest files in the current directory are:
+
+- **41.8 MB**  
+  `build/bin/libggml-vulkan.so.0`  
+- **41.8 MB**  
+  `build/bin/libggml-vulkan.so.0.21.0`  
+
+These are the two largest files, followed by others like `build/ggml/src/ggml-vulkan/CMakeFiles/ggml-vulkan.dir/mul_mm.comp.cpp.o` (28.1 MB) and `build/tools/server/libserver-context.a` (3.5 MB). The full list is sorted by size descending.

@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "ICD-10 stands for the International Classification of Diseases, 10th revision. It is a medical terminology used to automatically code death certificates. The paper's system used a dictionary-based approach with 3,539 to 6,392 ICD-10 codes depending on the run. For example, the term 'insuffisance cardiaque aigue' was associated with ICD-10 code I509. The system achieved an F-score of 0.786 (precision: 0.794, recall: 0.779), which was substantially higher than the average score of other systems in the challenge.",
+  "evidence": [0, 4, 5, 9, 10, 12, 13, 17]
+}
+```

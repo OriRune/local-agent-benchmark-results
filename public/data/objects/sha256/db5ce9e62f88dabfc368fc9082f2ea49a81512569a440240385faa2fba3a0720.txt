@@ -1,0 +1,14 @@
+The test in `tests/test_units.py` fails because the `UNITS` dictionary in `app/units.py` uses an incorrect multiplier for kilobytes (`KB`).
+
+In `app/units.py`:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+The docstring and the test expectations indicate that the parser should use 1024-based units (where `1 KB = 1024 bytes`). However, `KB` is explicitly set to `1000`.
+
+**The Fix:**
+Change the `KB` value in `app/units.py` from `1000` to `1024`.
+
+**What I could not finish:**
+I could not run the tests using `pytest` because it is not installed in the environment, and I could not verify the fix using the `run` tool because the sandbox blocked repeated identical calls after the first attempt. I had to rely on manual inspection of the source code and the logic error identified.

@@ -1,0 +1,9 @@
+
+
+The README.md has been created with the CLI options from the `app/cli.py` file. It includes:
+
+- `--url` / `-url`: Required URL to download
+- `--output` / `-o`: Optional output file (default: stdout)
+- `--quiet` / `-q`: Optional to suppress progress output
+
+Would you like me to modify or expand any part of this README?

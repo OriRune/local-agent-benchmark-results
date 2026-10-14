@@ -1,0 +1,5 @@
+I have searched all Python files for "TODO" comments and appended them to `todo.txt`.
+
+The following lines were added:
+- `# TODO: log each failed attempt`
+- `# TODO: add a helper that formats byte sizes`

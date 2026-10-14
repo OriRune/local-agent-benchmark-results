@@ -1,0 +1,1 @@
+<answer>The probability of rolling 25 or higher is 1/6.</answer>

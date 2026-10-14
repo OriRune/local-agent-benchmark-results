@@ -1,0 +1,1 @@
+{"check":{"cpu_percent":true,"exit":0,"finished":true,"measured":"9.2 of 31.3 GB used (29%)","output":"========================================\nSystem Information\n========================================\nRAM: 32018 MB total, 9416 MB used (29.4%)\nCPU: 99.3% usage\n========================================","ram_plausible":true,"script":"system_info.py"},"score":1}

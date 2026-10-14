@@ -1,0 +1,20 @@
+The function has been added and the TODO removed. Here's the final `app/util.py`:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    """Return a human-readable size such as '1.5 KB'."""
+    value = float(n)
+    for unit in ("B", "KB", "MB", "GB", "TB"):
+        if abs(value) < 1024.0:
+            return f"{value:.1f} {unit}" if unit != "B" else f"{int(value)} B"
+        value /= 1024.0
+    return f"{value:.1f} PB"
+```
+
+`format_bytes(n)` converts a byte count into a human-readable string, e.g. `1024` → `"1.0 KB"`, `1536` → `"1.5 KB"`, `1048576` → `"1.0 MB"`. The TODO comment is gone.
+
+Note: I couldn't run a test here since the sandbox blocks program execution, but the logic is verified by inspection.

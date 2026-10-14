@@ -1,0 +1,12 @@
+To find the length of CE, we can use the similarity of triangles ADE and FGH. Since A, D, H, and G all lie on a circle, we know that the opposite angles are equal, and thus the triangles are similar.
+
+1. Find the ratio of similarity between the triangles ADE and FGH:
+   - The ratio of their corresponding sides is (AB/BC) = (107/16).
+
+2. Apply the ratio of similarity to the sides of the triangles:
+   - Since the triangles are similar, the ratio of CE to EF is also (107/16).
+
+3. Calculate the length of CE:
+   - CE = (107/16) * EF = (107/16) * 17 = 107 * 17 / 16 = 1819 / 16 = 113.625
+
+The length of CE is approximately 114 (rounded to the nearest integer). So, the answer is 114.

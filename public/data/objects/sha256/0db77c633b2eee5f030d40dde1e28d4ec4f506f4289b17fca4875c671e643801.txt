@@ -1,0 +1,26 @@
+Based on the code in `app/net.py`, I can see the fetch function:
+
+```python
+def fetch(url, get):
+    # TODO: log each failed attempt
+    for attempt in range(MAX_RETRIES):
+        try:
+            return get(url, timeout=TIMEOUT_S)
+        except OSError:
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"giving up on {url}")
+```
+
+Here's the breakdown:
+- `MAX_RETRIES = 3`
+- `TIMEOUT_S = 20` seconds
+
+The sleep occurs in the `except OSError` block with `time.sleep(2 ** attempt)`:
+
+- **Attempt 0**: `time.sleep(2 ** 0) = time.sleep(1)` = **1 second**
+- **Attempt 1**: `time.sleep(2 ** 1) = time.sleep(2)` = **2 seconds**
+- **Attempt 2**: `time.sleep(2 ** 2) = time.sleep(4)` = **4 seconds**
+
+After the last attempt (attempt 2), the function raises a RuntimeError instead of sleeping.
+
+**Total sleep time = 1 + 2 + 4 = 7 seconds**

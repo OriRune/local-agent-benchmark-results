@@ -1,0 +1,22 @@
+# T6
+
+**Result:** fail · done · 1 steps · 0 calls · 2 s
+
+## user
+
+How many Python files are in the app folder, and which one is the largest?
+
+## assistant
+
+Sure, let me find that information for you. 
+
+```
+find_files(pattern="*.py", path="app")
+```
+
+Now, I'll sort them by size in descending order and get the first one.
+
+```
+find_files(pattern="*.py", path="app").sort("size")
+```
+

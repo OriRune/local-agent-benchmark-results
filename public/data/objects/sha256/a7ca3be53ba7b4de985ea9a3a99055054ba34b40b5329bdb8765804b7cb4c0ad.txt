@@ -1,0 +1,7 @@
+Done. Renamed the function and updated all usages:
+
+- **app/net.py** — `def fetch(url, get):` → `def download(url, get):`
+- **app/cli.py** — import line: `from app.net import fetch` → `from app.net import download`
+- **app/cli.py** — call site: `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+A case-insensitive search for "fetch" across the whole project now returns no matches, so nothing else references the old name. (The sandbox blocked running Python to verify imports, but the grep check confirms the rename is complete and consistent.)

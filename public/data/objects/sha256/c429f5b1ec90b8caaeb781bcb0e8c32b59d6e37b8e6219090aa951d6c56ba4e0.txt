@@ -1,0 +1,23 @@
+Good news! The HTML file already includes localStorage persistence. The code at lines 141-151 handles saving and loading todos:
+
+```javascript
+function loadTodos() {
+    const saved = localStorage.getItem('todos');
+    if (saved) {
+        todos = JSON.parse(saved);
+    }
+    renderTodos();
+}
+
+function saveTodos() {
+    localStorage.setItem('todos', JSON.stringify(todos));
+}
+```
+
+And the `saveTodos()` function is called after every action (add, toggle, delete, edit), so your todos will persist across page reloads automatically.
+
+**How it works:**
+- When you add, edit, check off, or delete a task, it's immediately saved to your browser's localStorage
+- When you reload the page, `loadTodos()` retrieves the saved data and repopulates the list
+
+Just open `todo.html` in your browser, add some tasks, and when you refresh the page, they'll still be there!

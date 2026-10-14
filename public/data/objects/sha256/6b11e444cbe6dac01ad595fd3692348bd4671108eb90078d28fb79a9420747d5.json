@@ -1,0 +1,1 @@
+["The user wants to know what the most recent git commit changed. Let me look at the git repository.\n","Let me get more detail on what changed.\n","Let me see the actual diff to describe what changed.\n","The most recent commit changed the download timeout in app/config.py from 10 to 20 seconds.\n"]

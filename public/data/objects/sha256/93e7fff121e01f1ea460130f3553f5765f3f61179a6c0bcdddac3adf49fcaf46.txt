@@ -1,0 +1,3 @@
+
+
+<answer> The probability of rolling 11 or higher is 19/24. </answer>

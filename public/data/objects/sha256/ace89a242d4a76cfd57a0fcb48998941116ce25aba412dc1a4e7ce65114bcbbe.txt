@@ -1,0 +1,28 @@
+The script has been created successfully. Here's what it does:
+
+**system_info.sh** - A bash script that displays:
+
+1. **CPU Information**
+   - CPU model name from `/proc/cpuinfo`
+
+2. **CPU Usage**
+   - Current CPU utilization percentage
+
+3. **RAM Information**
+   - Total RAM capacity
+   - Used RAM (with percentage)
+   - Available RAM
+
+4. **Memory Details**
+   - Summary of memory and swap usage
+
+5. **Top 5 Processes**
+   - By memory usage (shows process, %mem, and memory size)
+   - By CPU usage (shows process, %cpu, and runtime)
+
+To use the script, simply run:
+```bash
+./system_info.sh
+```
+
+The script uses standard Linux system files (`/proc/cpuinfo`, `/proc`, `free`, `top`, `ps`) which are available on most Linux distributions.

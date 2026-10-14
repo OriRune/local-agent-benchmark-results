@@ -1,0 +1,4 @@
+{
+  "answer": "The paper extracts text features using a classical sparse vectorizer (TF-IDF) and n-grams of POS tags.",
+  "evidence": [5, 9]
+}

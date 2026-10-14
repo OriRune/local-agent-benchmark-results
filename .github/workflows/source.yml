@@ -1,0 +1,45 @@
+name: Website source checks
+on:
+  pull_request:
+    paths-ignore: ['public/data/**']
+  push:
+    branches: [main]
+    paths-ignore: ['public/data/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  ASTRO_TELEMETRY_DISABLED: '1'
+jobs:
+  synthetic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24.18.0'
+          cache: npm
+      - run: npm ci
+      - run: npm run deployment:check
+      - run: npm run check
+      - run: npm test
+      # This disposable CI checkout deliberately builds synthetic test data.
+      # The normal build and publication workflow have no fixture fallback.
+      - name: Prepare explicit synthetic build
+        run: |
+          node --input-type=module <<'JS'
+          import { rm } from 'node:fs/promises';
+          import { importRelease } from './scripts/import-data.mjs';
+          if (process.env.CI !== 'true') throw new Error('Fixture replacement is CI-only');
+          await rm('public/data', { recursive: true, force: true });
+          await importRelease('tests/fixtures/edition-history-v1/release', 'public/data');
+          await importRelease('tests/fixtures/edition-history-v1/regraded', 'public/data');
+          JS
+      - run: npm run build
+      - run: npm run scan:dist
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e -- editions.spec.ts deployment.spec.ts accessibility.spec.ts withdrawals.spec.ts model-catalog.spec.ts downloads-availability.spec.ts
+      # Do not upload dist, traces, or scan reports from untrusted PRs automatically.

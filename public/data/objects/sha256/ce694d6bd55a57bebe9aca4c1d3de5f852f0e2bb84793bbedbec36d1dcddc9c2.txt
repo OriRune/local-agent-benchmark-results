@@ -1,0 +1,1 @@
+The file has been updated. The `format_bytes` function has been added to the `app/util.py` file and the TODO comment about it has been removed.

@@ -1,0 +1,7 @@
+I've successfully added the `format_bytes(n)` function to app/util.py. The function:
+- Returns the byte count directly if less than 1 KB
+- Formats as "X.X KB" for values less than 1 MB
+- Formats as "X.X MB" for values less than 1 GB
+- Formats as "X.X GB" for larger values
+
+The TODO comment has been removed and replaced with the new function.

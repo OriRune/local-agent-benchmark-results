@@ -1,0 +1,3 @@
+The issue in `app/units.py` has been fixed. The `parse_size` function now correctly uses **1024-based units** for KB, MB, and GB, aligning with the docstring and ensuring the test cases pass.
+
+The test should now run successfully.

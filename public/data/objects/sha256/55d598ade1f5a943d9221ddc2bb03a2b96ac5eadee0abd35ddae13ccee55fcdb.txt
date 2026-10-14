@@ -1,0 +1,23 @@
+## Setting Up the Problem
+
+When rolling multiple dice, "rolling 10 or higher" refers to the **highest die** showing 10 or above. I'll use the complement: find the probability that **all** dice show 9 or lower.
+
+**Total outcomes:** $12 \times 10 \times 2 = 240$
+
+## Probability Each Die Shows ≤ 9
+
+| Die | Values ≤ 9 | Probability |
+|-----|-----------|-------------|
+| 1d12 | 1–9 (9 values) | $\frac{9}{12} = \frac{3}{4}$ |
+| 1d10 | 1–9 (9 values) | $\frac{9}{10}$ |
+| 1d2 | 1–2 (all values) | $\frac{2}{2} = 1$ |
+
+## Computing the Complement
+
+$$P(\text{all} \le 9) = \frac{3}{4} \times \frac{9}{10} \times 1 = \frac{27}{40}$$
+
+## Final Answer
+
+$$P(\text{max} \ge 10) = 1 - \frac{27}{40} = \frac{13}{40}$$
+
+<answer>13/40</answer>

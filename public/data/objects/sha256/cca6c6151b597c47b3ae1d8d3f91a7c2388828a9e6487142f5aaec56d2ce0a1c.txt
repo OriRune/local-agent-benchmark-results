@@ -1,0 +1,8 @@
+{
+"answer": "Loaded language, straw man, hidden ad-hominem fallacies, red herring, and emotional appeals (such as loaded language, appeal to authority, and slogans).",
+"evidence": [
+0,
+9,
+23
+]
+}

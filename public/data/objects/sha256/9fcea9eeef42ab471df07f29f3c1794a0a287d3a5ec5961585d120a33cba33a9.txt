@@ -1,0 +1,10 @@
+I have rearranged your sheet music files into the new "Functional" structure we discussed. 
+
+Here is the new organization:
+*   **`01_Compositions/`**: Your original works.
+*   **`02_Repertoire/`**: Music by others, organized by instrument (Harp, Recorder), composer (Nadia Birkenstock), era (Renaissance), and miscellaneous (Other).
+*   **`03_Study_and_Theory/`**: Learning materials, including Sight Reading, Theory, and Rhythm Drills.
+*   **`04_Audio/`**: All your audio files (.m4a, .mp3).
+*   **`05_Events/Concert_summer_2025/`**: Music specifically for your summer concert.
+
+Note: I have left some empty folders from the original structure as I am unable to delete them, but all your files have been moved to their new homes.

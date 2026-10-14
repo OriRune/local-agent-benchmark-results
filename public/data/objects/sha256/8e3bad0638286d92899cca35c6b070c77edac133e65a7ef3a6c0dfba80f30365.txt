@@ -1,0 +1,13 @@
+Based on the code in `app/net.py` and `app/config.py`:
+
+- `MAX_RETRIES = 3` (attempts numbered 0, 1, 2)
+- On each failed attempt (OSError), the code sleeps `2 ** attempt` seconds:
+  - attempt 0 → `2⁰ = 1` second
+  - attempt 1 → `2¹ = 2` seconds
+  - attempt 2 → `2² = 4` seconds
+
+If every attempt fails, the total sleep time before `fetch` raises `RuntimeError` is:
+
+`1 + 2 + 4 = 7` seconds.
+
+**Answer: 7 seconds.**

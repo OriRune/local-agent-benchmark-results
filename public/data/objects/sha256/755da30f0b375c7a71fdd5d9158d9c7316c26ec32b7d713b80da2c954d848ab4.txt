@@ -1,0 +1,12 @@
+The test fails because the `parse_size` function uses a decimal-based unit conversion (1 KB = 1000 bytes) while the test expects binary-based units (1 KB = 1024 bytes). The fix is to update the `UNITS` dictionary in `app/units.py` to use consistent binary conversions for all units.
+
+Specifically, change:
+```python
+"KB": 1000
+```
+to:
+```python
+"KB": 1024
+```
+
+This ensures that `1.5 KB` correctly converts to `1536` bytes, matching the test expectations.

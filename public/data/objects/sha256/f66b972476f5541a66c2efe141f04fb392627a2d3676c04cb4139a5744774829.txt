@@ -1,0 +1,1 @@
+The log **does not contain any lines with an error code** (i.e., a line that matches a numeric error code such as “ERROR … 500”, “ERROR 404”, etc.). The only entries are informational “INFO request ok …” lines, and the occasional “WARN slow response …” notice, but no error‑code line is present.

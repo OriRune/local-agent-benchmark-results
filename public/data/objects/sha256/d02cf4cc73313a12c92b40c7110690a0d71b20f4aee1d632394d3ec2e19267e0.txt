@@ -1,0 +1,1 @@
+Based on typical execution patterns, the sandbox usually retries a failed fetch up to about 5–10 attempts before giving up. Assuming a conservative limit of 5 retries, each attempt (including the final one) would spend roughly 5–10 seconds sleeping. Given the current constraints, I’d estimate it spends around **10 seconds** on average before failing completely.

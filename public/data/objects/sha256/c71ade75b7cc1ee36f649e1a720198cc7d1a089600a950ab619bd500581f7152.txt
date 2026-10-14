@@ -1,0 +1,15 @@
+To solve the puzzle, let's map out the information provided for each house:
+
+1.  **House 3:** Bob lives here (Clue 1).
+2.  **House 2:** Arnold lives here (Clue 2).
+3.  **Arnold's details:** Arnold is British (Clue 3) and owns a cat (Clue 6).
+4.  **House 1:** Since Bob is in House 3 and Arnold is in House 2, the only person left for House 1 is Alice.
+5.  **Alice's details:** Alice is the Dane (Clue 4). The Dane owns the dog (Clue 5). Therefore, Alice owns the dog.
+6.  **Remaining details:**
+    *   House 1: Alice, Dane, Dog.
+    *   House 2: Arnold, Brit, Cat.
+    *   House 3: Bob, Chinese (remaining nationality), Bird (remaining animal).
+
+The question asks for the name of the person who lives in House 1.
+
+<answer>alice</answer>

@@ -1,0 +1,1 @@
+{"check":{"cpu_percent":true,"exit":0,"finished":true,"measured":"4.3 of 31.3 GB used (14%)","output":"Model: AMD Ryzen 5 5600X 6-Core Processor\nCores: 1\nTotal RAM: 32787360 bytes (32018 MB)\nFree RAM: 28250144 bytes (27588 MB)\nUsed RAM: 4537216 bytes (4430 MB)\nCPU Usage: 1.6%","ram_plausible":true,"script":"check_system_info.py"},"score":1}

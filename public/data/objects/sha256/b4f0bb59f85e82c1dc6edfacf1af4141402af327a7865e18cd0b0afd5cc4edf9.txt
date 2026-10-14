@@ -1,0 +1,2 @@
+
+The value of MAX_RETRIES is not defined in the provided context. It seems to be a variable or constant specific to the project's environment or configuration. To find its value, you would need to look at the project's configuration files or the environment where it is being used.

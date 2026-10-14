@@ -1,0 +1,10 @@
+To find the target number 24 using the numbers 8, 5, 5, and 9, we can use the following steps:
+
+1.  Multiply 5 by 5 to get 25.
+2.  Add 8 to 25 to get 33.
+3.  Subtract 9 from 33 to get 24.
+
+Checking the numbers used: 5, 5, 8, and 9. All numbers are used exactly once.
+Checking the operations: 5 * 5 + 8 - 9 = 25 + 8 - 9 = 33 - 9 = 24.
+
+<answer>5 * 5 + 8 - 9</answer>

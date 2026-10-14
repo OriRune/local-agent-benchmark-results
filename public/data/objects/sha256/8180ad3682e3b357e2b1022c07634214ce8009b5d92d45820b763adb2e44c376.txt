@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The researchers used 11,529,432 segmented words for the training data, which were obtained from Chinese Wikipedia articles after word segmentation and stopword filtering.",
+ "evidence": [
+  "12"
+ ]
+}
+```

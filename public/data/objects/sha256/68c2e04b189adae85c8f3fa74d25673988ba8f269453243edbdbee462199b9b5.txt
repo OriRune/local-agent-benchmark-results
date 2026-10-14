@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "ICD-10 codes are medical classification codes used to assign specific diagnoses to causes of death in French death certificates. The system used 3,539 codes in run 2 and 6,392 codes in run 1, with an example being I509.",
+  "evidence": [4, 10]
+}
+```

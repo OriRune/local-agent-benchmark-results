@@ -1,0 +1,8 @@
+The README.md file has been created in the workspace with the complete list of command line options from the CLI parser in `app/cli.py`, including help text for each option. The file is located at `README.md` in the root directory.
+
+The README includes:
+- Project name (`tinydl`)
+- Brief description ("A small command line utility to fetch and download data from URLs.")
+- A "Command line options" section listing each option with its help text exactly as defined in the argparse parser.
+
+No further actions are needed.

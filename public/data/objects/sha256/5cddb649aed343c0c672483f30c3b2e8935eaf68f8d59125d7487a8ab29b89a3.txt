@@ -1,0 +1,10 @@
+Done! I've:
+
+1. **Removed the TODO comment** about formatting byte sizes
+2. **Added the `format_bytes(n)` function** that returns human-readable sizes:
+   - Less than 1024 bytes: `n B`
+   - 1024 to 1,048,576 bytes: `n / 1024 KB` (formatted to 1 decimal place)
+   - 1,048,576 to 1,073,741,824 bytes: `n / 1024² MB` (formatted to 1 decimal place)
+   - More than 1 GB: `n / 1024³ GB` (formatted to 1 decimal place)
+
+Example outputs: `500 B`, `1.5 KB`, `5.2 MB`, `10 GB`

@@ -1,0 +1,1 @@
+Based on the `events.log` file content, the error code is `WARN` and it appears on line 97.

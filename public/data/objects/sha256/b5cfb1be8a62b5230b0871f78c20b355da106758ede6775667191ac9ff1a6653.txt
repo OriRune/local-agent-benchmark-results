@@ -1,0 +1,6 @@
+It seems there are no files in the current directory that could contain system information about RAM or CPU usage. This might be because the necessary data isn't stored in files on your system, or the files aren't in the current working folder.
+
+Would you like me to:
+1. Search for system information files in other locations (e.g., home folder)?
+2. Proceed to create the script using general knowledge about system commands?
+3. Check if there are any configuration files or logs that might contain this information?

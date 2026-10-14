@@ -1,0 +1,21 @@
+I have created a `README.md` file for the project, listing all the command line options found in `app/cli.py`.
+
+```markdown
+# tinydl
+
+A simple CLI tool to download content from a URL.
+
+## Usage
+
+```bash
+tinydl [URL] [OPTIONS]
+```
+
+## Options
+
+| Option | Description |
+| --- | --- |
+| `url` | what to download |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+```

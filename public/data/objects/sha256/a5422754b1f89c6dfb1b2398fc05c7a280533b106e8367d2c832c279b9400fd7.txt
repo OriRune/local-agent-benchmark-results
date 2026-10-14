@@ -1,0 +1,9 @@
+
+```json
+{
+  "answer": "The International Classification of Diseases, 10th revision (ICD-10) codes are used to assign medical diagnoses to death certificates.",
+  "evidence": [
+    "[0] In this paper, we describe our approach and present the results for our participation in the task 1, i.e. multilingual information extraction, of the CLEF eHealth 2018 challenge BIBREF0 . More precisely, this task consists in automatically coding death certificates using the International Classification of Diseases, 10th revision (ICD-10) BIBREF1 ."
+  ]
+}
+```

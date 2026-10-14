@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The paper uses the CMU Repository of Names dataset to train their model.",
+  "evidence": ["[7] De-biasing the model after training as a way to remove bias focuses on 'fixing' the model after training is complete. BIBREF8 in their famous work on gender bias in word embeddings take this approach to 'fix' the embeddings after training."]
+}
+```

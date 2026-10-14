@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "ICD-10 refers to the International Classification of Diseases, 10th revision, which is used for the automatic coding of death certificates.",
+ "evidence": [
+  0
+ ]
+}
+```

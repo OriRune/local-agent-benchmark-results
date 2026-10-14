@@ -1,0 +1,32 @@
+The HTML file already includes functionality to remember the to-do list items across page reloads using `localStorage`. Here's how it works:
+
+1. The `todos` array is loaded from `localStorage` when the page loads:
+   ```javascript
+   let todos = JSON.parse(localStorage.getItem('todos')) || [];
+   ```
+
+2. The `saveTodos` function saves the `todos` array to `localStorage` every time it is updated:
+   ```javascript
+   function saveTodos() {
+       localStorage.setItem('todos', JSON.stringify(todos));
+   }
+   ```
+
+3. The `saveTodos` function is called after adding, editing, or deleting items:
+   - After adding a new item:
+     ```javascript
+     todos.push({ text, completed: false });
+     saveTodos();
+     ```
+   - After editing or deleting an item:
+     ```javascript
+     todos[index].text = newText.trim();
+     saveTodos();
+     ```
+     or
+     ```javascript
+     todos.splice(index, 1);
+     saveTodos();
+     ```
+
+The list will persist even after you reload the page. No further changes are needed.

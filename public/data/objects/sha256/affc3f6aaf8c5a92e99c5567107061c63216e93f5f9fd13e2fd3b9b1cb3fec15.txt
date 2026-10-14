@@ -1,0 +1,10 @@
+I have identified the cause of the failing test in `tests/test_units.py`.
+
+The issue was in `app/units.py` where the multiplier for Kilobytes (KB) was incorrectly set to `1000`, while the test expected a 1024-based calculation (as indicated by the expected value for "1.5 KB" being 1536).
+
+I have fixed this by changing the `UNITS` dictionary in `app/units.py` to use `1024` for `KB`.
+
+The summary of changes is:
+- Modified `app/units.py` to set `UNITS["KB"]` to `1024`.
+
+This change ensures that the `parse_size` function correctly calculates the size for KB and MB according to the test's requirements.

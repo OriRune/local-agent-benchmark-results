@@ -1,0 +1,1 @@
+I've added the `format_bytes` function to `app/util.py`, but the TODO comment about it remains. Would you like me to remove it?

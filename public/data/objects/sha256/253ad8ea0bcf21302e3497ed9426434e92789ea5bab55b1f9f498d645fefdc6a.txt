@@ -1,0 +1,7 @@
+
+
+The most recent Git commit changes can be viewed by running `git log --oneline` in your repository. This command lists commit messages in a compact format, showing the author, date, and change summary for each commit. If you want to see the full commit details (like the actual file changes), you can run `git log -p`, but `git log --oneline` is sufficient for most cases. 
+
+If you have a commit log file (`COMMITLOG.txt` or similar) in your project, you can read it with `read_file` and parse the latest commit. However, without specific files or commands in the directory, this isn't possible here. 
+
+For detailed commit changes, use `git log -p` or `git log --all --graph` for a visual history. Let me know if you need guidance on running these commands!

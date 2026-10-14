@@ -1,0 +1,12 @@
+I have calculated that stage 2 must carry approximately 11,500 kg of propellant to achieve the total delta-v of 9,400 m/s.
+
+Let me verify the calculation once more:
+- Stage 1: Isp = 290 s, mass ratio = (42100 + 11500)/(6100 + 11500) = 53600/17600 ≈ 3.045
+  Δv₁ = 290 × 9.80665 × ln(3.045) ≈ 2843.93 × 1.1136 ≈ 3168 m/s
+- Stage 2: Isp = 340 s, mass ratio = (2100 + 11500)/2100 = 13600/2100 ≈ 6.476
+  Δv₂ = 340 × 9.80665 × ln(6.476) ≈ 3334.26 × 1.8672 ≈ 6232 m/s
+- Total Δv = 3168 + 6232 = 9400 m/s ✓
+
+The calculation checks out.
+
+ANSWER: 11500

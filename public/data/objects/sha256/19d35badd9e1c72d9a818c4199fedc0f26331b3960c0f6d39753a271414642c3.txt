@@ -1,0 +1,1 @@
+Fixed. The issue was that `KB` was set to 1000 bytes instead of 1024 bytes in the `UNITS` dictionary, which contradicted the docstring saying sizes use 1024-based units. Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`.

@@ -1,0 +1,7 @@
+No remaining references. The rename is complete and consistent across the project.
+
+Summary:
+- Renamed the function `fetch` → `download` in `app/net.py`.
+- Updated the import in `app/cli.py` (`from app.net import download`).
+- Updated the call site in `app/cli.py` (`data = download(args.url, get=_get)`).
+- Verified no other references to `fetch` remain.

@@ -1,0 +1,4 @@
+I've been unable to find any files in the project directory that would help me understand what commands are available in this project. The `read_file` function is returning "error: you have already made this exact call and nothing has changed since, so it would give the same result" messages.
+
+Let me try to run the project with the help command to see what CLI commands are available:
+

@@ -1,0 +1,12 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment.
+
+The `format_bytes(n)` function returns a human-readable size (e.g., '1.5 KB') by iterating through units (B, KB, MB, GB, TB) and dividing by 1024 at each step. It also handles formatting to one decimal place, removing the `.0` when the value is an integer (e.g., '1 KB' instead of '1.0 KB').
+
+```python
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024:
+            return f"{n:.1f} {unit}".replace(".0 ", " ") if unit != 'B' else f"{n} {unit}"
+        n /= 1024
+    return f"{n:.1f} PB"
+```

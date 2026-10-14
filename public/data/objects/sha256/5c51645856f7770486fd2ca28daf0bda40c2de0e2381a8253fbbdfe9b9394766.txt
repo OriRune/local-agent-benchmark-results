@@ -1,0 +1,1 @@
+I've undone the change made in the most recent git commit (commit 51c0a6e "raise the download timeout from 10 to 20 seconds") by editing the file directly. The timeout value has been changed back from 20 seconds to 10 seconds.

@@ -1,0 +1,21 @@
+**Answer: 3**
+
+**Reasoning:**
+
+The first half consists of the first and second quarters.
+
+**First Quarter:**
+1. Ravens touchdown (Flacco to Boldin) - **1 scoring drive**
+
+**Second Quarter:**
+- Scoreless - **0 scoring drives**
+
+**Total for first half: 1 + 0 = 1 scoring drive**
+
+Wait, let me reconsider. The question asks about scoring drives, and I need to count each distinct scoring play.
+
+Looking at the passage again:
+- First quarter: Ravens score a touchdown (1 scoring drive)
+- Second quarter: No scores (0 scoring drives)
+
+**Final Answer: 1**

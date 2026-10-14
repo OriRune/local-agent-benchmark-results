@@ -1,0 +1,19 @@
+The most recent commit changed the line:
+
+**Removed**  
+`- Retries stay at 3 for now; revisit after the beta.`  
+
+The change was reverted, so the file now reads:
+
+```
+# Planning notes
+
+## 2026-09-02
+- Storage: decided to drop SQLite and keep plain JSON files; the data is small and JSON is easier to inspect.
+- Maria will look at proxy support.
+
+## 2026-09-16
+- The release is planned for 14 October.
+- Retries stay at 3 for now.
+- Nobody has asked for a GUI, so it is out of scope.
+```

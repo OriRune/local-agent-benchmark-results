@@ -1,0 +1,7 @@
+The TODO comments have been added to `todo.txt`. Here is the updated content:
+
+- write README
+- add proxy support
+- tag the release
+- TODO: log each failed attempt in app/net.py
+- TODO: add a helper that formats byte sizes in app/util.py

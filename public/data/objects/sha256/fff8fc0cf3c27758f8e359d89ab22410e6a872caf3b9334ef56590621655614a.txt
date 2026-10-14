@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The paper uses 20,402 Chinese characters as part of their training data, obtained from Chinese Wikipedia articles.",
+  "evidence": ["[11] According to the previous work BIBREF0 , we compute the similarity... using the word unigram distribution.", "["14] We download parts of Chinese Wikipedia articles... for NLP.", "["15] We use gaussian word embeddings for Chinese characters... based on the stopwords table."]
+}
+```

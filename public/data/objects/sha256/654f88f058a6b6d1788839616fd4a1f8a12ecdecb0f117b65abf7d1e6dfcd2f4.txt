@@ -1,0 +1,10 @@
+```json
+{
+  "name": "edit_file",
+  "arguments": {
+    "path": "app/net.py",
+    "old_text": "fetch",
+    "new_text": "download"
+  }
+}
+```

@@ -1,0 +1,6 @@
+All done. Here's what I changed:
+
+- **`app/net.py`**: Renamed the `fetch` function to `download`.
+- **`app/cli.py`**: Updated the import from `fetch` to `download`, and updated the call site to use `download` instead of `fetch`.
+
+No other files reference `fetch` — the grep returned no matches.

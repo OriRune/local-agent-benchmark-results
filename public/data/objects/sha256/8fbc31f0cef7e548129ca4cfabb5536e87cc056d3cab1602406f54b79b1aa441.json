@@ -1,0 +1,1 @@
+["I'll look at the app folder.\n","No app folder? Let's list the working folder.\n","The app folder exists but no .py files? Let's list it.\n","The find_files glob \"app/**/*.py\" apparently doesn't match files directly in app (needs ** to match zero dirs maybe). Anyway, list_dir gives the answer.\n\nLargest: cli.py at 903 bytes.\n"]

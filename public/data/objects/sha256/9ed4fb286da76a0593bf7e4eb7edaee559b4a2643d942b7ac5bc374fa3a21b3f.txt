@@ -1,0 +1,7 @@
+The fix is complete. Now `parse_size("1.5 KB")` returns `int(1.5 * 1024)` = **1536**, matching the test. All three assertions now pass:
+
+- `parse_size("512 B")` → 512 ✓
+- `parse_size("1.5 KB")` → 1536 ✓
+- `parse_size("2 MB")` → 2097152 ✓
+
+The root cause was a bug in `app/units.py`: the `KB` unit was defined as `1000` (decimal) instead of `1024` (binary), contradicting the module's own docstring which specifies 1024-based units. I corrected the unit definition rather than the test.

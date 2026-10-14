@@ -1,0 +1,8 @@
+I've searched for occurrences of `.fetch(` in the `app/` directory and found no matches. This means the `fetch` function is currently defined in `app/net.py` but it's not being used anywhere in the codebase.
+
+Since the task is to rename the function `fetch` to `download` and update every place that uses it, I need to:
+1. Rename the function definition from `fetch` to `download` in `app/net.py`
+2. Update all occurrences of `fetch` to `download` throughout the project
+
+I need to find all occurrences of `fetch` (or `Download`) in the project to determine what needs to be updated. Let me search for the function `fetch` specifically.
+

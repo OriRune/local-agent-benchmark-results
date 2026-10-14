@@ -1,0 +1,5 @@
+Done. 
+
+**Root cause:** `app/units.py` had an inconsistent unit table. The docstring declares 1024-based units ("1 KB = 1024 bytes"), and the other entries (`MB`, `GB`) are all powers of 1024 — but `"KB"` was defined as `1000` (decimal). That made `parse_size("1.5 KB")` return `1500` instead of the expected `1536` (1.5 × 1024).
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024`, making the table consistent with the docstring and all three assertions in the test. The code itself (not the test) was corrected.

@@ -1,0 +1,19 @@
+I've read the books.csv file and analyzed it. Here's what I found:
+
+- **Total different books read:** 21 unique titles (there are 23 rows but "Project Hail Mary" appears twice, and "The Remains of the Day" has no author listed)
+- **Books finished between July and December:** 9 books
+
+The 9 books with end dates between July 1 and December 31, 2025 are:
+1. Dune (ended 2025-07-10)
+2. The Hobbit (ended 2025-07-19)
+3. Middlemarch (no end date listed)
+4. The Night Circus (ended 2025-09-12)
+5. Tomorrow and Tomorrow and Tomorrow (ended 2025-09-30)
+6. The Thursday Murder Club (ended 2025-10-09)
+7. Babel (ended 2025-11-05)
+8. Lessons in Chemistry (ended 2025-11-20)
+9. The Bear and the Nightingale (ended 2025-12-16)
+
+Note: Middlemarch has no end date listed, so it's unclear if it was finished. The other 8 books all have clear end dates within the July-December window.
+
+ANSWER: 21, 8

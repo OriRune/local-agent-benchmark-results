@@ -1,0 +1,7 @@
+**MAX_RETRIES** is defined in **`app/config.py`** (line 2) with a value of **`3`**:
+
+```python
+MAX_RETRIES = 3
+```
+
+It is imported into `app/net.py` (line 3) and used in the retry loop (line 8) to control how many times the downloader attempts a request.

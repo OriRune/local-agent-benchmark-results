@@ -1,0 +1,6 @@
+The log contains one error:
+
+- **Error code: `E-4471`** — "disk quota exceeded while saving part 7"
+- **On line 2417**
+
+The rest of the file is just repeated `WARN slow response` entries (every ~97 lines), but the only actual error is the single `E-4471` at line 2417.

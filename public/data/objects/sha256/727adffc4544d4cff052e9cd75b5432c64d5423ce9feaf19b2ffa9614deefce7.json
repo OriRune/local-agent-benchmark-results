@@ -1,0 +1,1 @@
+[{"args":{"content":"#!/bin/bash\n\n# 1. Open Chrome with google.com loaded\ngoogle-chrome &\n\n# 2. Open a text editor (using nano as a common default)\nnano\n\n# 3. Open file manager showing [private-home]/Documents/llama.cpp\nnautilus [private-home]/Documents/llama.cpp","path":"open_files.sh"},"name":"write_file","result":"created open_files.sh (10 lines)","status":"ok"}]

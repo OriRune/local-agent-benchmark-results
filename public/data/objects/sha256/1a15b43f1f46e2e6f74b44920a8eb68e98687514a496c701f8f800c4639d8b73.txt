@@ -1,0 +1,21 @@
+Based on the code in `app/net.py`:
+
+```python
+for attempt in range(MAX_RETRIES):  # MAX_RETRIES = 3
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+```
+
+With `MAX_RETRIES = 3`, the loop runs for `attempt = 0, 1, 2`. If every attempt fails, it sleeps:
+
+- attempt 0 → `2**0 = 1` second
+- attempt 1 → `2**1 = 2` seconds
+- attempt 2 → `2**2 = 4` seconds
+
+Then it exits the loop and raises `RuntimeError("giving up on {url}")`.
+
+**Total: 1 + 2 + 4 = 7 seconds.**
+
+(Note: the `TIMEOUT_S = 20` seconds is the per-attempt network timeout, not part of the sleep total — it only counts if a request actually hangs, which is separate from these retries.)

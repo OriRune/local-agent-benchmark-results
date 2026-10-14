@@ -1,0 +1,6 @@
+Answer using only the record below. Return just the recorded answer.
+
+An experiment records the answer to this question: How many more registered voters were there for the 2013 election compared to the 2009 election?
+The recorded answer is 258.
+
+Question: How many more registered voters were there for the 2013 election compared to the 2009 election?

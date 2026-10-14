@@ -1,0 +1,6 @@
+
+
+{
+  "answer": "The ICD-10 codes are part of the International Classification of Diseases, 10th revision, used to categorize medical conditions and causes of death in the CLEF eHealth 2018 task. The paper focuses on assigning these codes to French death certificates using a dictionary-based approach.",
+  "evidence": [1, 4, 5, 12]
+}

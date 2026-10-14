@@ -1,0 +1,7 @@
+
+
+I don't have access to git commit history or version control information through the available tools. The find_files command didn't find any files matching "commit*" in the current directory. Would you like me to:
+
+1. Look for specific commit-related files (e.g., .git logs) if you know their location?
+2. Check if there are any files in the project that might contain commit information?
+3. Help with something else related to the project files?

@@ -1,0 +1,4 @@
+{
+  "answer": "The paper extracts features using a classical sparse vectorizer (Term frequency-Inverse document frequency - TF-IDF) and a Bag of Features (BoF) technique for clustering histograms of extracted features.",
+  "evidence": [8]
+}

@@ -1,0 +1,9 @@
+Here is a chat bot template using "o" as the keyword:
+
+```
+BOT: "Please enter your location after 'o'."
+USER: "o [location]"
+BOT: "Forecast for [location]: [weather]"
+```
+
+The letter "o" appears in *BOT*, *o*, *location*, and *forecast*.

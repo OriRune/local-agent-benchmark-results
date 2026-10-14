@@ -1,0 +1,7 @@
+Done. I searched all 7 Python files (`app/__init__.py`, `app/cli.py`, `app/config.py`, `app/net.py`, `app/units.py`, `app/util.py`, `tests/test_units.py`) for TODO comments (case-insensitive, plus a check for FIXME/XXX/HACK — none found).
+
+Two TODO comments existed:
+- `app/net.py:7` — `# TODO: log each failed attempt`
+- `app/util.py:5` — `# TODO: add a helper that formats byte sizes`
+
+Both were appended to `todo.txt` as new lines in the existing `- ` list style, each with its source file and line number for reference. The three pre-existing entries were left untouched.

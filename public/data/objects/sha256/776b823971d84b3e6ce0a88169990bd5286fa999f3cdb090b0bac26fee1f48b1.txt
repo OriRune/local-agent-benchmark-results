@@ -1,0 +1,1 @@
+I searched the entire filesystem for files named **model.bin** and found **no matches**. The search covered the whole disk and all mounted drives, and no files with that exact name were located.

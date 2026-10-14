@@ -1,0 +1,26 @@
+To make 24 using the numbers 9, 5, 6, and 3 exactly once, we can try the following combination:
+
+1. Multiply 6 by 3 to get 18.
+2. Add 9 to 18 to get 27.
+3. Subtract 5 from 27 to get 22. (This doesn't work).
+
+Let's try another approach:
+1. Multiply 9 by 3 to get 27.
+2. Subtract 5 from 27 to get 22.
+3. Add 6 to 22 to get 28. (This doesn't work).
+
+Let's try:
+1. Multiply 6 by 5 to get 30.
+2. Subtract 9 from 30 to get 21.
+3. Add 3 to 21 to get 24.
+
+So the expression is: $6 * 5 - 9 + 3$.
+
+Let's verify:
+$6 * 5 = 30$
+$30 - 9 = 21$
+$21 + 3 = 24$
+
+This uses 6, 5, 9, and 3 exactly once.
+
+<answer>6*5-9+3</answer>

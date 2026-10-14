@@ -1,0 +1,19 @@
+```json
+{
+  "answer": "The paper uses two main datasets: Occupation Data and Names Data.",
+  "evidence": [
+    [
+      "Our dataset comprises of the following - 1) Occupation Data 2) Names Data. We will iterate over each of this one by one.",
+      "11"
+    ],
+    [
+      "Occupation Data: We gathered occupation lists from different sources on the internet including crowdsourced lists and government lists. Then, we classified the occupations into 2 categories - gender-specific occupation and gender-neutral occupations. These are used in the algorithm for bias checking which will be explained in the next sub-section.",
+      "12"
+    ],
+    [
+      "Names Data: We created a corpus of 5453 male and 6990 female names sourced from [ref: CMU repository of names]. For the dataset to map names to a gender, we referred to the NLTK data set and the records of baby names and their genders.",
+      "13"
+    ]
+  ]
+}
+```

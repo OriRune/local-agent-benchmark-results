@@ -1,0 +1,9 @@
+I have reorganized your sheet music folder into the "Functional" structure we discussed. 
+
+Here is a summary of the new organization:
+- **`Compositions/`**: Your personal compositions.
+- **`Study/`**: Contains `Theory/`, `Technique/`, and `Sight Reading/`.
+- **`Repertoire/`**: Contains `Classical/`, `Modern/`, and `Other/` (which includes the folders for specific artists and the recorder).
+- **`Media/`**: All your audio files.
+
+Your files are now much easier to navigate!

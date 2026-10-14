@@ -1,0 +1,6 @@
+
+
+I couldn't find any files matching "llm*", "model*", or "llama*" in the current directory or subfolders. Could you provide more details about the names or types of the LLMs you're looking for? For example:
+- Are they named something specific (e.g., "llama2", "gpt-local")?
+- Are they stored in a specific format (e.g., .bin, .pt, .gguf)?
+- Do you remember any folder names where they might be located?

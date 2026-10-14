@@ -1,0 +1,4 @@
+To get weather, type your location and the letter o.
+The bot processes your o request and shows the forecast.
+*Command: o [City]*
+*Response: Temperature data*

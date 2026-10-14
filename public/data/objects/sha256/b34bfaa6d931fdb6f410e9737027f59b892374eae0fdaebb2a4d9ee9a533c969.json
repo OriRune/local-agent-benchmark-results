@@ -1,0 +1,1 @@
+{"instruction_id_list":["change_case:capital_word_frequency","detectable_format:title"],"kwargs":[{"capital_frequency":3,"capital_relation":"at least"},{}],"origin_note":"Frozen original checks. Applicable recorded corrections appear with each attempt."}

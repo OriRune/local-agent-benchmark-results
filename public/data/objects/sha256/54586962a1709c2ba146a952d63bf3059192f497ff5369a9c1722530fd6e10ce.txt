@@ -1,0 +1,7 @@
+
+```json
+{
+  "answer": "TF-IDF features are extracted from text.",
+  "evidence": [1, 8, 9]
+}
+```

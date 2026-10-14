@@ -1,0 +1,10 @@
+*Here is a weather chat bot template* using "o" as a keyword:
+
+```
+def get_weather(location):
+    # Look up the forecast for the given location
+    forecast = lookup_forecast(location)
+    return forecast
+```
+
+The bot **asks the user for their location**, then **looks up** the corresponding weather data. The letter "o" appears many times in words like *location*, *forecast*, and *lookup*.

@@ -1,0 +1,14 @@
+I searched every folder on your computer (Desktop, Documents, Downloads, Music, Pictures) and looked for tax returns by several names (tax, return, 1040, IRS, W2). Here's what I found:
+
+**There is no 2019 tax return anywhere on your computer.**
+
+The only tax return I could find is:
+- `Documents/Personal/tax return 2024.pdf` — but this is from **2024**, not 2019. (I also tried to open it, but the file appears to be damaged or not a real PDF, so I couldn't read its contents.)
+
+So I can't tell you your 2019 refund amount — that return simply isn't on this machine.
+
+A couple of things that might help:
+- If the 2019 return is stored elsewhere (email, an app, or a different drive), let me know and I can look.
+- If you'd like, I can try to read the 2024 return instead — but it looks corrupted, so it may need to be re-saved or re-exported first.
+
+Would you like me to do any of those?

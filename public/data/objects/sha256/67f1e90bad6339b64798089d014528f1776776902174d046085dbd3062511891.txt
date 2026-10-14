@@ -1,0 +1,10 @@
+```json
+{
+  "answer": "The system uses an Occupation Data dataset and a Names Data dataset, which includes 5453 male and 6990 female names sourced from the CMU repository of names.",
+  "evidence": [
+    "The rest of the paper is organized as follows - Section 2 describes the related work, Section 3 discusses about the design and Section 4 lays out the implementation of our de-biasing system. In Section 5 we describe a walk-through of our system and in Section 6 we conclude our paper.",
+    "Our dataset comprises of the following - 1) Occupation Data 2) Names Data. We will iterate over each of this one by one.",
+    "Names Data: We created a corpus of 5453 male and 6990 female names sourced from [ref: CMU repository of names]. For the dataset to map names to a gender, we referred to the NLTK data set and the records of baby names and their genders."
+  ]
+}
+```

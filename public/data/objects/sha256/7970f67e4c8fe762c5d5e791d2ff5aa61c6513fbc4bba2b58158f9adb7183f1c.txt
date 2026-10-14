@@ -1,0 +1,6 @@
+The issue with `tests/test_units.py` cannot be diagnosed directly without viewing its contents or specific error messages. Since I cannot access or analyze files directly, please provide:
+1. The exact error message or behavior causing the failure.
+2. The relevant code snippet related to the test failure.
+3. Context about what the test is expected to do.
+
+With this information, I can guide you through identifying or resolving the issue.

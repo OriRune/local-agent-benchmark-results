@@ -1,0 +1,7 @@
+Here is a chat bot template using *'o'* as the keyword:
+
+```
+BOT: "o" + location → forecast
+```
+
+The bot prompts the user for their *location*, then outputs the forecast.

@@ -1,0 +1,16 @@
+The scratch files can't be moved outside the working folder. They're harmless underscore-prefixed files and I'll leave them. The task is complete.
+
+## Summary
+
+I wrote `README.md` for the project. Since the sandbox blocks running programs, I read `app/cli.py` directly to extract the CLI's options and their help text, then reproduced argparse's exact `--help` formatting by hand.
+
+The README documents the `tinydl` CLI, which has these arguments:
+
+| Option | Help text |
+| --- | --- |
+| `-h`, `--help` | show this help message and exit |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+| `url` | what to download (positional) |
+
+It includes an intro, an installation section (`python app/cli.py <options> <url>`), the full options table, and usage examples. I also removed the duplicate tables I'd initially included.

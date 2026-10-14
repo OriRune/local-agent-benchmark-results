@@ -1,0 +1,24 @@
+Here is a `README.md` for this project, listing all the command-line options of the CLI along with their help text:
+
+```markdown
+# tinydl - A Simple Command-Line Downloader
+
+`tinydl` is a lightweight command-line tool for downloading content from a URL.
+
+## CLI Usage
+
+```sh
+tinydl [options] <url>
+```
+
+## Command-Line Options
+
+| Option          | Description                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| `url`           | **Required**: The URL of the resource to download.                         |
+| `-o, --output`  | Specify the file to write the downloaded content to (default: stdout).     |
+| `-q, --quiet`   | Suppress progress output (no byte count displayed).                         |
+```
+
+### Summary of Changes
+Added a `README.md` documenting the CLI options and their descriptions.

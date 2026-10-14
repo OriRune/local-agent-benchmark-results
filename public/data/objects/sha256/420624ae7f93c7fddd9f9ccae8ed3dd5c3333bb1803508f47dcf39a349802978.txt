@@ -1,0 +1,8 @@
+Here is a template for a weather chat bot:
+
+```
+on location: {user_location}
+output: {weather_forecast}
+```
+
+The keyword **o** appears in words like **output**, **on**, and **location** throughout the syntax. This template captures the user's location and returns the forecast.

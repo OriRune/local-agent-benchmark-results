@@ -1,0 +1,4 @@
+{
+  "answer": "The results are evaluated using a human questionnaire in which respondents rank the captions (human, NJM, and STAIR caption) in order of funniness, and also by Bokete users' star ratings; the percentages of captions ranked 'funniest' are reported.",
+  "evidence": [12, 13, 14]
+}

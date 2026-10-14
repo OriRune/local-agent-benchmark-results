@@ -1,0 +1,25 @@
+# T2
+
+**Result:** pass · done · 2 steps · 1 calls · 2 s
+
+## user
+
+What release date is mentioned in notes.md?
+
+## assistant
+
+- call `grep` `{"pattern": "release", "path": "notes.md", "case_sensitive": false}`
+
+<details><summary>grep result (52 chars)</summary>
+
+```
+notes.md:8: - The release is planned for 14 October.
+```
+
+</details>
+
+## assistant
+
+
+The release date mentioned in notes.md is planned for 14 October.
+

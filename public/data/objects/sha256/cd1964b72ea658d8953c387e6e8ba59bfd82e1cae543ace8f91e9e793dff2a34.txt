@@ -1,0 +1,17 @@
+Let's analyze the statements to determine who is a hero and who is a villain.
+
+1.  **Olivia's Statement:** "Benjamin is a villain or Benjamin is a hero."
+    *   This statement is a tautology (it is always true, regardless of whether Benjamin is a hero or a villain).
+    *   Since Olivia told the truth, **Olivia is a hero**.
+
+2.  **Oliver's Statement:** "Olivia is a hero and Olivia is a villain."
+    *   We know from step 1 that Olivia is a hero. Therefore, the statement "Olivia is a villain" is false.
+    *   Since the statement contains a false part, the entire statement is false.
+    *   Since Oliver lied, **Oliver is a villain**.
+
+3.  **Benjamin's Statement:** "Olivia is a hero."
+    *   We know from step 1 that Olivia is indeed a hero.
+    *   Therefore, Benjamin told the truth.
+    *   Since Benjamin told the truth, **Benjamin is a hero**.
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

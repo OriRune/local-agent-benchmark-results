@@ -1,0 +1,21 @@
+Looking at this problem, I need to check if there's a cycle in the prerequisite graph. If there's a cycle, it's impossible to finish all courses.
+
+Let me trace the edges (b → a means b must be taken before a):
+
+**Checking for cycles:**
+
+1. **Cycle 1:** 13 → 1 → 5 → 13
+   - (1, 13): 13 → 1
+   - (5, 1): 1 → 5
+   - (13, 5): 5 → 13
+
+2. **Cycle 2:** 0 → 9 → 13 → 1 → 2 → 0
+   - (9, 0): 0 → 9
+   - (13, 9): 9 → 13
+   - (1, 13): 13 → 1
+   - (2, 1): 1 → 2
+   - (0, 2): 2 → 0
+
+Since there are cycles in the prerequisite graph, it is impossible to find a valid topological ordering of all 17 courses.
+
+<answer>False</answer>

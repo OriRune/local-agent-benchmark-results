@@ -1,0 +1,11 @@
+```json
+{
+  "answer": "TF-IDF features (Term frequency-Inverse document frequency) are extracted from text. The text is retrieved from the web using search engine queries, and the search engine returns metadata including text excerpts and titles associated with each term.",
+  "evidence": [
+    "We extracted features using a classical sparse vectorizer (Term frequency-Inverse document frequency - TF-IDF. In experiments, we did not find a significant performance gain using HashingVectorizer) [8]",
+    "we use images and text from the web as input data [1]",
+    "we query and cache the top texts and images associated to each term [5]",
+    "the search engine alleviates misspelled words and returns relevant or related information [12]"
+  ]
+}
+```

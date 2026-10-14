@@ -1,0 +1,15 @@
+Based on the clues provided:
+
+1.  **Clue 1** states that **Bob** is in the third house.
+2.  **Clue 2** states that **Arnold** is in the second house.
+3.  Since there are only three houses and three people (Bob, Arnold, Alice), the remaining person, **Alice**, must be in the first house.
+
+We can verify this with the other clues:
+*   **Clue 4** says the Dane is Alice, so Alice is the Dane.
+*   **Clue 5** says the dog owner is the Dane, so Alice owns the dog.
+*   **Clue 3** says Arnold is the British person, so Arnold is in the second house (Brit).
+*   **Clue 6** says the cat lover is Arnold, so Arnold has the cat.
+
+Therefore, the person in House 1 is Alice.
+
+<answer>Alice</answer>

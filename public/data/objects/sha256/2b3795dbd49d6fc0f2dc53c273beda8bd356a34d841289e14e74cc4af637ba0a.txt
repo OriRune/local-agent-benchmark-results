@@ -1,0 +1,7 @@
+The `todo.txt` file contains a list of tasks to complete. Since I don't have access to the actual project files to see what commands exist or their help text, I cannot write a README.md for this project.
+
+To help you write a comprehensive README.md with all CLI options and their help text, I would need you to:
+1. Provide the contents of the project files
+2. Or describe what the project is about
+
+Once you share the project files, I can help you write a complete README.md with all CLI options and their help text.

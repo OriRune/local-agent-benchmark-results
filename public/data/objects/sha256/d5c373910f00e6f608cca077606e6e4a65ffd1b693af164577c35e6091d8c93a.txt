@@ -1,0 +1,2 @@
+
+The file hello.txt has been created and contains the line: hello from the local agent.

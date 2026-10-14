@@ -1,0 +1,5 @@
+The fix has been applied. The issue was that `KB` was set to `1000` but should be `1024` to match the 1024-based units documented in the docstring and expected by the test.
+
+Summary:
+- Changed `UNITS["KB"]` from `1000` to `1024` in `app/units.py`
+- This now correctly implements the 1024-based units as documented: 1 KB = 1024 bytes, 1 MB = 1024² bytes, etc.

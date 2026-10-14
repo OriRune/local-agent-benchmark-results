@@ -1,0 +1,11 @@
+Looking at `app/net.py`, the `fetch` function loops over `range(MAX_RETRIES)` where `MAX_RETRIES = 3`, so it makes 3 attempts (attempt = 0, 1, 2). On each failure it calls `time.sleep(2 ** attempt)`:
+
+- attempt 0 → `2**0` = 1 second
+- attempt 1 → `2**1` = 2 seconds
+- attempt 2 → `2**2` = 4 seconds
+
+After the third failure the loop ends and it raises `RuntimeError("giving up on {url}")`.
+
+Total sleeping time = 1 + 2 + 4 = **7 seconds**.
+
+(Note: `TIMEOUT_S = 20` is the per-call network timeout for `get`, not sleep — the question asks specifically about `time.sleep`, so that doesn't count.)

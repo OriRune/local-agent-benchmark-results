@@ -1,0 +1,7 @@
+I have updated `todo.html` to use `localStorage`. 
+
+### Changes:
+*   **Persistence:** The list now saves to the browser's local storage whenever you add, toggle, edit, or delete a task.
+*   **Auto-Load:** When you refresh or reload the page, the script automatically retrieves the saved tasks from `localStorage` and renders them.
+
+You can now close the browser and reopen the file, and your tasks will still be there.

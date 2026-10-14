@@ -1,0 +1,21 @@
+The calculation shows:
+- Stage 1 provides 8526.41 m/s of delta-v
+- Stage 2 needs to provide 873.59 m/s of delta-v
+- Stage 2 propellant mass required is 629.02 kg
+
+Let me verify this is correct by checking the math:
+
+Stage 1:
+- m0_1 = 4000 + 36000 + 900 + 1200 = 42100 kg
+- mf_1 = 900 + 1200 = 2100 kg
+- delta_v_1 = 290 * 9.80665 * ln(42100/2100) = 290 * 9.80665 * ln(20.0476) ≈ 8526.41 m/s
+
+Stage 2:
+- delta_v_2_needed = 9400 - 8526.41 = 873.59 m/s
+- A = 900 + 1200 = 2100 kg
+- delta_v_2_ratio = 873.59 / (340 * 9.80665) = 873.59 / 3334.261 ≈ 0.262
+- x = 2100 * exp(0.262) - 2100 ≈ 629.02 kg
+
+The answer is 629.02 kg, which rounds to 629 kg.
+
+ANSWER: 629

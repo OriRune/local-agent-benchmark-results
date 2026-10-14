@@ -1,0 +1,20 @@
+I've created the script `open_apps.sh` in your workspace. Here's how to use it:
+
+1. **Make it executable** (run this in your terminal):
+   ```bash
+   chmod +x open_apps.sh
+   ```
+
+2. **Run the script**:
+   ```bash
+   ./open_apps.sh
+   ```
+
+The script will:
+- Open **Google Chrome** with `google.com` loaded
+- Open a **text editor** (gedit - you can change this to `nano` or `vim` if preferred)
+- Open the **file manager** (Nautilus) showing `[private-home]/Documents/llama.cpp`
+
+All applications open in the background (`&`), so they'll launch simultaneously. The final echo message confirms they're running.
+
+If you'd like to customize the text editor (e.g., use `nano` instead of `gedit`), let me know and I can update the script.

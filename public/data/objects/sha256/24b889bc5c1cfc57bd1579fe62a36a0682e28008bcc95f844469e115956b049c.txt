@@ -1,0 +1,5 @@
+Done. I've added the `format_bytes(n)` function to `app/util.py` that returns human-readable sizes like '1.5 KB', and removed the TODO comment. The function handles three cases:
+- 0 bytes returns "0 B"
+- Values less than 1024 bytes return in bytes
+- Values between 1024 and 1048576 bytes return in KB
+- Values greater than 1048576 bytes return in MB

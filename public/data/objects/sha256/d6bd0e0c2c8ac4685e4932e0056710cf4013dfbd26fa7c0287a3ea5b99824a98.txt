@@ -1,0 +1,5 @@
+I have renamed the `fetch` function to `download` in `app/net.py` and updated its usage in `app/cli.py`. I also verified that there are no other remaining references to `fetch` in the project.
+
+Summary of changes:
+- **app/net.py**: Renamed `fetch` to `download`.
+- **app/cli.py**: Updated the import statement and the function call from `fetch` to `download`.

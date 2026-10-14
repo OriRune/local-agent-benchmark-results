@@ -1,0 +1,7 @@
+# T3
+
+**Result:** fail · error · 0 steps · 0 calls · 2 s
+
+## user
+
+Change MAX_RETRIES to 5.

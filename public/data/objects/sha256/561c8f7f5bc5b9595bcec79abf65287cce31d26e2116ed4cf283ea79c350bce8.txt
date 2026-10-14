@@ -1,0 +1,1 @@
+The change has been undone. The `app/config.py` file now shows `TIMEOUT_S = 10`, reverting the commit that raised it from 10 to 20 seconds.

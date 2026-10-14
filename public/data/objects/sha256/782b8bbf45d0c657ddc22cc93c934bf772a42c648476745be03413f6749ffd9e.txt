@@ -1,0 +1,1 @@
+I found an error code in `data/events.log`. The error code is **E-4471**, located on line **2417**.

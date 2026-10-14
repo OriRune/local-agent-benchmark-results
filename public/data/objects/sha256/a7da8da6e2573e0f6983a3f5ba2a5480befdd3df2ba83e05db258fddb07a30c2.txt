@@ -1,0 +1,10 @@
+The `fetch` function in `app/net.py` retries the request `MAX_RETRIES` times. According to `app/config.py`, `MAX_RETRIES` is set to `3`.
+
+The sleep duration for each failed attempt is calculated as `2 ** attempt` seconds, where `attempt` starts at 0.
+
+The sequence of sleeps for 3 attempts is:
+1.  Attempt 0: `2 ** 0` = 1 second
+2.  Attempt 1: `2 ** 1` = 2 seconds
+3.  Attempt 2: `2 ** 2` = 4 seconds
+
+Total sleep time = 1 + 2 + 4 = 7 seconds.

@@ -1,0 +1,11 @@
+I created `README.md` in the project folder.
+
+**What I found:** The CLI is `tinydl`, defined in `app/cli.py` with `argparse`. It has exactly three entries (verified by grepping the whole project for `add_argument` — no other CLI definitions exist):
+
+- `URL` (positional) — "what to download"
+- `-o`, `--output` — "file to write (default: stdout)"
+- `-q`, `--quiet` — "no progress output"
+
+**What the README contains:** usage line, a table of every option with its help text copied verbatim from the code, examples, behaviour notes (stdout default, byte count to stderr, 3 retries / 20s timeout from `app/config.py`), and a short project layout.
+
+One note: I tried to run `build_parser().print_help()` to confirm the rendered help output, but program execution is disabled in this sandbox, so the option list is taken directly from the source rather than from a live `--help` run.

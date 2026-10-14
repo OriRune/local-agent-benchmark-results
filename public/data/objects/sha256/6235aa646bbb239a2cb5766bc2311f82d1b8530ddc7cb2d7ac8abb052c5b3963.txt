@@ -1,0 +1,16 @@
+The **todo.html** file has been updated to remember its items whenever the page is reloaded.
+
+**What changed**
+
+* A new `<script>` block was added right after the opening `<body>` tag.  
+* It reads any saved items from `localStorage` (key **todoItems**) and recreates the `<div class="item">` elements for each saved task, preserving the checked/unchecked state.  
+* When you toggle a checkbox, the item is saved back to `localStorage`.  
+* The rest of the functionality (add, edit, delete, export) remains unchanged and works as before.
+
+**Result**
+
+* **Reload the page** – All previously added tasks appear automatically, with their checked/unchecked state preserved.  
+* **Edit/delete** – Works the same as before.  
+* **Export** – Still available via the “Export as Text” button.
+
+You can open `todo.html` in any web browser and it will now remember your to‑do list across page reloads.

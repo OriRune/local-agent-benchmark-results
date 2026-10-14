@@ -1,0 +1,15 @@
+The answer is **7 seconds**.
+
+Here's how it works out from the code:
+
+**`app/net.py`** — the `fetch` function loops `for attempt in range(MAX_RETRIES)`, and on each failed attempt (an `OSError`) it sleeps `time.sleep(2 ** attempt)`:
+
+| attempt | sleep `2 ** attempt` |
+|---------|----------------------|
+| 0       | 2⁰ = 1 s             |
+| 1       | 2¹ = 2 s             |
+| 2       | 2² = 4 s             |
+
+**`app/config.py`** sets `MAX_RETRIES = 3`, so the loop runs for `attempt` values 0, 1, 2. After the third failed attempt, the loop exits and raises `RuntimeError` (no sleep after the last one).
+
+Total sleeping: 1 + 2 + 4 = **7 seconds**.

@@ -1,0 +1,8 @@
+The script has been created. You'll need to make it executable by running `chmod +x open_apps.sh` in your terminal, then you can run it with `./open_apps.sh`.
+
+The script will:
+1. Open Chrome with google.com loaded
+2. Open a text editor (tries gedit, kate, nano, or vim in order)
+3. Open a file manager showing [private-home]/Documents/llama.cpp (tries nautilus, dolphin, thunar, or xdg-open in order)
+
+All applications will open in the background.

@@ -1,0 +1,6 @@
+{
+  "answer": "Text features are extracted using a classical sparse vectorizer (Term frequency-Inverse document frequency - TF-IDF) and a bag-of-words technique.",
+  "evidence": [
+    "Text Analytics (TA): Text Classification - Function Description (D.2): analogously to (D.1), we perform clustering to group texts together that are \"distributively\" similar. Thus, for each retrieved web page (title and excerpt of its content), we perform the classification based on the main NER classes. We extracted features using a classical sparse vectorizer (Term frequency-Inverse document frequency - TF-IDF. In experiments, we did not find a significant performance gain using HashingVectorizer) - Training (D.2): with this objective in mind, we trained classifiers that rely on a bag-of-words technique."
+  ]
+}

@@ -1,0 +1,10 @@
+The total sleep time before the fetch attempts give up is calculated by summing the sleep durations for each failed attempt. The code in `app/net.py` uses a loop with `time.sleep(2 ** attempt)` for each failed attempt, where `attempt` starts at 0 and increments each time. 
+
+From `app/config.py`, `MAX_RETRIES` is set to 3. This means there are 3 attempts (attempt 0, 1, and 2). The sleep times would be:
+- Attempt 0: `2**0 = 1` second
+- Attempt 1: `2**1 = 2` seconds
+- Attempt 2: `2**2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**. 
+
+No further tool calls are needed.

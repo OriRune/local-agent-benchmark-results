@@ -1,0 +1,2 @@
+The person in House 1 is alice.  
+<answer>alice</answer>

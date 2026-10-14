@@ -1,0 +1,1 @@
+{"instruction_id_list":["detectable_format:title","length_constraints:number_sentences","length_constraints:number_words"],"kwargs":[{},{"num_sentences":5,"relation":"less than"},{"num_words":250,"relation":"at least"}],"origin_note":"Frozen original checks. Applicable recorded corrections appear with each attempt."}

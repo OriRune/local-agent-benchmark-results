@@ -1,0 +1,9 @@
+```json
+{
+  "answer": "A questionnaire where respondents rank captions by funniness",
+  "evidence": [
+    "[12]",
+    "[13]"
+  ]
+}
+```

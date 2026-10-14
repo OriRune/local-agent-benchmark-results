@@ -1,0 +1,7 @@
+Done! I've created a `README.md` file that documents all three command-line options from the CLI:
+
+1. `url` - The required argument specifying what URL to download
+2. `-o, --output` - Optional flag to specify an output file (defaults to stdout)
+3. `-q, --quiet` - Optional flag to suppress progress output
+
+The README includes a usage example and a table format for easy reference.

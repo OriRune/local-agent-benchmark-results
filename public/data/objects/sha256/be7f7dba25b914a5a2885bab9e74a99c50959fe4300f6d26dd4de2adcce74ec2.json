@@ -1,0 +1,1 @@
+{"check":{"add":true,"after_reload":{"A":true,"B2":true,"C":false},"check":true,"delete":true,"edit":true,"errors":[],"export":true,"export_sample":"To-Do List — exported 10/5/2026, 7:37:58 AM\nTotal: 2 | Done: 1 | Pending: 1\n----------------------------------------\n[x] Buy milk QX1\n[ ] Walk cat QX3\n","notes":[],"page":"todo.html","remembers_after_reload":true},"score":1}

@@ -1,0 +1,19 @@
+Looking at `app/net.py`, the retry loop is:
+
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3, so attempts 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)      # sleeps 2^attempt seconds
+```
+
+On each failed attempt it sleeps `2 ** attempt`:
+
+- attempt 0 → `2**0` = 1 s
+- attempt 1 → `2**1` = 2 s
+- attempt 2 → `2**2` = 4 s
+
+Total sleeping = 1 + 2 + 4 = **7 seconds**.
+
+(Note: this is just the `time.sleep` time. Each failed attempt also blocks up to `TIMEOUT_S` = 20 s waiting on the network call, but that's the timeout, not the `sleep`.)

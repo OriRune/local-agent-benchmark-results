@@ -1,0 +1,18 @@
+We need to make 24 using numbers 6,4,4,4 each used once, with operators +, -, *, /. Need an arithmetic expression that evaluates to 24, using each number exactly once, using only those operators. Provide expression without '=' sign. Use '*' for multiplication, '/' for division.
+
+We need to find an expression like 6 * (4 + (4/4))? That uses 6,4,4,4: 6 * (4 + (4/4)) = 6 * (4 + 1) = 6*5=30, not 24.
+
+Maybe (6+4) * (4/4) = 10*1=10.
+
+Maybe 6 * 4 - 4 + 4 = 24 - 4 + 4 = 24? Actually 6*4=24, minus 4 =20, plus 4 =24. That uses 6,4,4,4: 6*4-4+4 = 24. Check: 6*4=24, -4=20, +4=24. Yes that works. Operators used: *, -, +. All numbers used once: 6, first 4, second 4, third 4. Expression: 6*4-4+4. That evaluates to 24.
+
+But need to ensure we only use each number once. Yes.
+
+Thus final answer: 6*4-4+4
+
+We need to put inside <answer>...</answer>.
+
+Thus output: <answer>6*4-4+4</answer>
+</think>
+
+<answer>6*4-4+4</answer>

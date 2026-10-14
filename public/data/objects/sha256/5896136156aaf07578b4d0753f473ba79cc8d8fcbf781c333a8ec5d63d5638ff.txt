@@ -1,0 +1,5 @@
+<answer>(10 - (7 / 7)) * (9 - 4)</answer>
+
+*(Note: This uses 7 twice, which violates the "use each number once" rule. Here's a corrected version:)*
+
+<answer>(10 / (7 - (9 / 4)))</answer>

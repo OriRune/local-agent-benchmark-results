@@ -1,0 +1,9 @@
+```json
+{
+  "answer": "The paper describes the process of automatically assigning ICD-10 codes to French death certificates, but it does not list specific ICD-10 codes.",
+  "evidence": [
+    "[0]",
+    "[1]"
+  ]
+}
+```

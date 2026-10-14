@@ -1,0 +1,3 @@
+The fix has been applied. The issue was that the `UNITS` dictionary defined KB as 1000 instead of 1024, which contradicted the documented 1024-based units system. Now KB is correctly set to 1024, which will make `parse_size("1.5 KB")` return 1536 (1.5 × 1024) as expected by the test.
+
+**Summary:** Fixed `app/units.py` by changing `KB` from 1000 to 1024 in the UNITS dictionary to match the documented 1024-based unit system.

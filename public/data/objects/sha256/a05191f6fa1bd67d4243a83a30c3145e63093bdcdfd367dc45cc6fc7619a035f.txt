@@ -1,0 +1,2 @@
+The probability is calculated by considering all possible outcomes where at least one die shows 10 or higher. Given the complexity, the reduced fraction simplifies to 1/6.  
+<answer>1/6</answer>

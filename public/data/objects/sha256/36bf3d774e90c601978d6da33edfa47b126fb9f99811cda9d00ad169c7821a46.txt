@@ -1,0 +1,1 @@
+Done — `MAX_RETRIES` in `app/config.py` is now 5 (was 3). It's used by `app/net.py` (which imports it and loops `for attempt in range(MAX_RETRIES)`), so no other files needed changing.

@@ -1,0 +1,5 @@
+The sandbox doesn't allow running programs, but the fix is straightforward. Here's what was wrong:
+
+**Bug:** In `app/units.py`, the `"KB"` unit was mapped to `1000` (decimal) instead of `1024` (binary). The docstring says "Sizes use 1024-based units", and the test expects `parse_size("1.5 KB") == 1536` (i.e., `1.5 × 1024`).
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in the `UNITS` dictionary.

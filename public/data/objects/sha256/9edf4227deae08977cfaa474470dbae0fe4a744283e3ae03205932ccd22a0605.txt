@@ -1,0 +1,11 @@
+Based on the code:
+
+- `MAX_RETRIES = 3`
+- The sleep time is `2 ** attempt` seconds for each failed attempt
+
+The fetch function sleeps before each failed attempt:
+- Attempt 0: sleeps `2 ** 0 = 1` second
+- Attempt 1: sleeps `2 ** 1 = 2` seconds  
+- Attempt 2: sleeps `2 ** 2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**

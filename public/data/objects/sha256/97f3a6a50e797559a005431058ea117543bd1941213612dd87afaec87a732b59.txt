@@ -1,0 +1,2 @@
+
+The test failure was due to a mismatch between the test’s expectation (using binary conversion for KB) and the implementation, which used decimal conversion. The implementation was corrected to treat KB as 1024 bytes, aligning with the comment and test expectations. The code now correctly returns 512, 1536, and 2 × 1024 × 1024 for the three test cases.

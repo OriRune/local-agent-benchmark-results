@@ -1,0 +1,20 @@
+The script has been created as `show_system_info.sh`. Here's what it does:
+
+**Features:**
+- **CPU Information**: Shows model name, number of CPUs, threads, and architecture
+- **RAM Usage**: Displays memory and swap usage in human-readable format
+- **CPU Load**: Shows the current CPU usage percentage
+- **Top 5 Processes**: Lists the processes consuming the most CPU
+
+**How to use it:**
+```bash
+chmod +x show_system_info.sh
+./show_system_info.sh
+```
+
+Or without making it executable:
+```bash
+bash show_system_info.sh
+```
+
+The script uses standard Linux tools (`lscpu`, `free`, `top`, `ps`) to gather system information and displays it in a clean, formatted output.

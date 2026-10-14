@@ -1,0 +1,3 @@
+I don't see any git repository in the current folder or its parent directories. There's no .git folder that would contain commit history. The project might not be under git version control, or the repository is located elsewhere.
+
+Would you like me to check if there are any git-related files or to look at the most recent changes in the files manually? Alternatively, you could tell me where the git repository is located.

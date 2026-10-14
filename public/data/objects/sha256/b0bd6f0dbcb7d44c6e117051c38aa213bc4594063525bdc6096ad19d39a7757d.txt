@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The first dictionary (run2) contained 3,539 ICD-10 codes and the second dictionary (run1) contained 6,392 ICD-10 codes.",
+  "evidence": [4, 5]
+}
+```

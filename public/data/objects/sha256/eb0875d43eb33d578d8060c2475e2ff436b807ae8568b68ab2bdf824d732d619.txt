@@ -1,0 +1,4 @@
+{
+  "answer": "TF-IDF (Term Frequency-Inverse Document Frequency) features using a classical sparse vectorizer.",
+  "evidence": ["8"]
+}

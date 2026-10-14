@@ -1,0 +1,3 @@
+The sandbox doesn't allow running programs, but the fix is straightforward. The issue was that `"KB"` was mapped to `1000` (decimal) instead of `1024` (binary). Since the docstring explicitly states "Sizes use 1024-based units: 1 KB = 1024 bytes" and the test expects `1.5 KB == 1536`, the correct value is `1024`.
+
+**Summary:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`. The `parse_size` function was using decimal (SI) conversion for KB while the rest of the code and tests expected binary (IEC) conversion.

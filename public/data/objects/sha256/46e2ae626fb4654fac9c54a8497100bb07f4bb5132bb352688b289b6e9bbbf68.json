@@ -1,0 +1,1 @@
+[{"args":{"choices":["Syntax error","Runtime error","Logic error"],"question":"What part of tests/test_units.py is failing?"},"name":"ask_user","result":"No one is available to answer questions now. If you need the user's decision or approval, end your turn with the question as your answer; otherwise decide for yourself and say what you assumed.","status":"ok"}]

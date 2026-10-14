@@ -1,0 +1,10 @@
+The sandbox doesn't allow running tests directly. Let me verify the fix manually by checking the values:
+
+The test expects:
+- `parse_size("512 B")` → 512 (512 * 1 = 512) ✓
+- `parse_size("1.5 KB")` → 1536 (1.5 * 1024 = 1536) ✓
+- `parse_size("2 MB")` → 2 * 1024 * 1024 = 2,097,152 ✓
+
+My fix changed `UNITS["KB"]` from 1000 to 1024, which matches the test expectations. The code now correctly implements 1024-based units as indicated by the comment in the file.
+
+The fix is complete. The issue was that `UNITS["KB"]` was set to 1000 instead of 1024. I've updated it to 1024, which aligns with the test expectations and the comment in the code.

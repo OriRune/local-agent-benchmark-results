@@ -1,0 +1,5 @@
+
+{
+  "answer": "The paper does not specify the exact ICD-10 codes; it only mentions that ICD-10 codes were used.",
+  "evidence": [0, 1]
+}

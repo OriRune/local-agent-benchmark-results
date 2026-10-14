@@ -1,0 +1,6 @@
+Done. I renamed `fetch` to `download` and updated every place that used it:
+
+- **`app/net.py`**: renamed the function definition `def fetch(url, get):` → `def download(url, get):`
+- **`app/cli.py`**: updated the import `from app.net import fetch` → `from app.net import download`, and the call `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+A final search for `fetch` (case-insensitive) across the project returns no matches, so all usages are consistent.

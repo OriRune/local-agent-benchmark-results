@@ -1,0 +1,11 @@
+```json
+{
+ "answer": "The results are evaluated using two methods: a questionnaire where human respondents ranked captions (Human, NJM, and STAIR caption) by \"funniness\" without knowing their origins, and an evaluation by Bokete users who assigned stars to captions posted on the Bokete Ogiri website.",
+ "evidence": [
+  "2",
+  "12",
+  "13",
+  "14"
+ ]
+}
+```

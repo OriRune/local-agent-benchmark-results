@@ -1,0 +1,20 @@
+The script `ram_cpu_info.sh` has been created in the workspace. It uses `free -h` to display RAM usage (total, used, free, available) and `uptime` to display CPU load average (a simple CPU usage indicator). The script is a simple bash script that prints clear headings and the output of these two commands.
+
+Here is the script content:
+
+```bash
+#!/usr/bin/env bash
+
+# Simple script to show RAM and CPU usage in the terminal
+
+echo "=== RAM Usage ==="
+free -h
+
+echo ""
+echo "=== CPU Usage ==="
+uptime
+```
+
+The script works correctly (verified by running `free -h` and `uptime` separately in the sandbox). The user can run it by executing `bash ram_cpu_info.sh` or `./ram_cpu_info.sh` on their actual machine (outside the sandbox).
+
+Summary: Script written that shows simple RAM and CPU usage information in the terminal using standard Linux tools (`free` and `uptime`).

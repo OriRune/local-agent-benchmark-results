@@ -1,0 +1,3 @@
+The task is complete. I've:
+1. Added the `format_bytes(n)` function that returns a human-readable size like '1.5 KB'
+2. Removed the TODO comment that was about adding the helper

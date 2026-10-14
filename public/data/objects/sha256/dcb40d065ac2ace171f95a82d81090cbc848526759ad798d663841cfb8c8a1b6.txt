@@ -1,0 +1,13 @@
+The script has been created. You'll need to make it executable first, then run it:
+
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+The script will:
+1. Open Chrome with google.com loaded
+2. Open a text editor (gedit)
+3. Open the file manager (thunar) showing [private-home]/Documents/llama.cpp
+
+All three applications will open in separate terminal windows.

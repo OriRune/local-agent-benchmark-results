@@ -1,0 +1,15 @@
+I have created a shell script named `open_tools.sh` in the current directory.
+
+The script performs the following actions:
+1. Opens **Google Chrome** with `google.com`.
+2. Opens **gedit** (a common text editor on Linux Mint).
+3. Opens the **Nautilus** file manager at the specified path `[private-home]/Documents/llama.cpp`.
+
+To run this script, you will need to make it executable first:
+```bash
+chmod +x open_tools.sh
+```
+Then you can run it with:
+```bash
+./open_tools.sh
+```

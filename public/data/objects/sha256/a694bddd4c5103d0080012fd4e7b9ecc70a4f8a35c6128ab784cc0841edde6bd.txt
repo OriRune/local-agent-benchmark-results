@@ -1,0 +1,1 @@
+MAX_RETRIES in `app/config.py` has been changed from 3 to 5.

@@ -1,0 +1,1 @@
+The environment variable MAX_RETRIES is defined in the system configuration file (typically /etc/hosts.allow). Its value is usually a number indicating how many times the system should attempt a request before giving up. I recommend checking /etc/hosts.allow or reviewing your system’s configuration to find the exact number.

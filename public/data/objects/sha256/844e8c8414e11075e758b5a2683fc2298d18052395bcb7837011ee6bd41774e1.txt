@@ -1,0 +1,18 @@
+I've created the script. Note: the sandbox here can't change file permissions, so you'll run it with `bash` (no need to `chmod`):
+
+```
+bash [private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/47b2fc56a1d0964a62eb4ff7-8a75fe93cb/workspace/project/open_apps.sh
+```
+
+The script opens:
+1. **Chrome** with `https://www.google.com` loaded
+2. **A text editor** (`xed` — the default editor on Linux Mint)
+3. **The file manager** (`nautilus`) showing `[private-home]/Documents/llama.cpp`
+
+Each app is launched in its own background window, so all three open at once.
+
+Two small notes in case your setup differs:
+- If you use a different browser, swap `google-chrome` for `chromium` or `firefox`.
+- If `xed`/`nautilus` aren't installed, you can replace them with `nano` and `thunar` respectively.
+
+Want me to adjust the editor or file manager to match what you have installed?

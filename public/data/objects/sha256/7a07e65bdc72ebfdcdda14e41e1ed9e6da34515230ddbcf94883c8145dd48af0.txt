@@ -1,0 +1,9 @@
+```json
+{
+ "answer": "A word2vec word embedding model trained on a set of 189,206 financial articles containing 161,877,425 tokens, manually downloaded from Factiva. The articles stem from a range of sources including the Financial Times and relate to companies from the United States only.",
+ "evidence": [
+  "4",
+  "26"
+ ]
+}
+```

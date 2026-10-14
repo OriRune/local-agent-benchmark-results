@@ -1,0 +1,10 @@
+The test was failing because of an inconsistency in `app/units.py`:
+
+**The bug:** The docstring stated "1 KB = 1024 bytes" (1024-based units), but the `UNITS` dictionary had `"KB": 1000` instead of `"KB": 1024`.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`.
+
+Now the test expectations align with the code:
+- `parse_size("512 B")` = 512 × 1 = 512 ✓
+- `parse_size("1.5 KB")` = 1.5 × 1024 = 1536 ✓
+- `parse_size("2 MB")` = 2 × 1024² = 2097152 ✓

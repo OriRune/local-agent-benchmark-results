@@ -1,0 +1,41 @@
+Let's find a combination of the numbers 10, 4, 9, 7 using the allowed operators.
+
+We need to use each number exactly once with +, -, *, or /.
+
+One possible expression:
+10 * 4 * 9 / 7
+
+Calculating:
+10 * 4 = 40  
+40 * 9 = 360  
+360 / 7 ≈ 51.428...
+
+But we need an integer result. Let's try another arrangement:
+
+10 * 9 - 4 * 7 = 90 - 28 = 62
+
+Not matching. Try another:
+
+10 + 4 * 9 - 7 = 10 + 36 - 7 = 39
+
+Still not 24.
+
+Wait — let's try:
+10 / 4 + 9 / 7 = 2.5 + 1.2857 ≈ 3.78 — no.
+
+Let's think of factors of 24 using the numbers:
+
+24 = 2 * 12  
+But we don't have 2 or 12 directly.
+
+Try:
+10 * 4 - 9 - 7 = 40 - 9 - 7 = 24
+
+This works!
+
+Using the numbers: 10, 4, 9, 7.
+
+Expression: 10 * 4 - 9 - 7 = 24
+
+So the final answer is:  
+<answer>10*4 - 9 - 7</answer>

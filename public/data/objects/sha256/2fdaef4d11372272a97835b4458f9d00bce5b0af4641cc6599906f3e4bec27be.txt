@@ -1,0 +1,7 @@
+I need to find the relevant code to determine how many seconds an attempt spends sleeping before giving up. Since I found no Python files, I will search for files that might contain code, or ask the user for more context.
+
+Given the nature of the question ("If every attempt in fetch fails, how many seconds does it spend sleeping in total before it gives up? Work it out from the code."), it strongly suggests there is code related to fetching or retrying.
+
+I will start by listing the contents of the `tests/` directory, as that is a common place for test code that might contain such logic.
+
+If that doesn't yield results, I will ask you which file contains the code you are referring to.

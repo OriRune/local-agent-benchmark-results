@@ -1,0 +1,5 @@
+Found the proxy.ini file at `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c/attempts/d08d4dfbe37302143e739306-df5e882874/workspace/shared-config/network/proxy.ini`.
+
+It sets:
+- **Proxy host**: `proxy.lan.example`
+- **Proxy port**: `3128`

@@ -1,0 +1,11 @@
+The sandbox doesn't support running pytest. But the fix is clear and correct.
+
+**Root cause:** `UNITS["KB"]` was set to `1000` instead of `1024`. This mismatch caused `parse_size("1.5 KB")` to return `1500` instead of `1536`.
+
+**Fix:** Changed `UNITS["KB"]` from `1000` to `1024` in `app/units.py`.
+
+The corrected file now reads:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+This aligns with the docstring's statement that "1 KB = 1024 bytes" and the test expectations (e.g., `1.5 KB` → `1536`).

@@ -1,0 +1,6 @@
+The test in `tests/test_units.py` failed because the `UNITS` dictionary in `app/units.py` incorrectly defined `KB` as `1000` instead of `1024`. I have updated the value to `1024` to align with the 1024-based unit standard used for the other units.
+
+```python
+# app/units.py (Updated)
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```

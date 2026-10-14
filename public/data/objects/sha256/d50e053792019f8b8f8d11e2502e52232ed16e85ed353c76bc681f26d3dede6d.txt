@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "Text features are extracted using a classical sparse vectorizer, specifically Term frequency-Inverse document frequency (TF-IDF), and the model also utilizes a bag-of-words technique for training.",
+ "evidence": [
+  8
+ ]
+}
+```

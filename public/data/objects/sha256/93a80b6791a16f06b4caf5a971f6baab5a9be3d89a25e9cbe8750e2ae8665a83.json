@@ -1,0 +1,1 @@
+[{"args":{"path":".","pattern":"fetch"},"name":"find_files","result":"no files match fetch","status":"ok"},{"args":{"path":".","pattern":"retry"},"name":"find_files","result":"no files match retry","status":"ok"},{"args":{"path":".","pattern":"*sleep*"},"name":"find_files","result":"no files match *sleep*","status":"ok"}]

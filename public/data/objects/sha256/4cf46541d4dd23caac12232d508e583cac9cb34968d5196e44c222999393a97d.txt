@@ -1,0 +1,1 @@
+Add a function format_bytes(n) to app/util.py that returns a human-readable size such as '1.5 KB', and remove the TODO comment about it.

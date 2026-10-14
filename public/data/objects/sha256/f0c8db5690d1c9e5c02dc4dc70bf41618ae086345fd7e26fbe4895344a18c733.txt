@@ -1,0 +1,14 @@
+I've created a `README.md` for the project that lists every CLI command line option with its help text. The options are:
+
+| Option | Short | Description |
+|--------|-------|-------------|
+| `url` | - | what to download (required) |
+| `-o` / `--output` | - | file to write (default: stdout) |
+| `-q` / `--quiet` | - | no progress output |
+
+The README also includes:
+- Installation instructions
+- Usage syntax
+- Examples for each option
+- Configuration settings (MAX_RETRIES, TIMEOUT_S, USER_AGENT)
+- Byte size unit conversions

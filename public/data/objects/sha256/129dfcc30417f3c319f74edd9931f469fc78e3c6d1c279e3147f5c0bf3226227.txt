@@ -1,0 +1,11 @@
+Done! I've successfully:
+
+1. Added the `format_bytes(n)` function that returns human-readable byte sizes:
+   - Less than 1024 bytes: returns "X B"
+   - Less than 1 MB: returns "X.X KB"
+   - Less than 1 GB: returns "X.X MB"
+   - 1 GB or more: returns "X.X GB"
+
+2. Removed the TODO comment about adding the helper function.
+
+The function is now available in `app/util.py` and can be imported and used throughout your project.

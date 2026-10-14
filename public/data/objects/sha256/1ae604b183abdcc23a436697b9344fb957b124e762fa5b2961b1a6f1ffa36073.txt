@@ -1,0 +1,25 @@
+I found the relevant code in `app/net.py`. Let me work through it.
+
+The `fetch` function:
+
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3 → attempts 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+```
+
+If every attempt fails with `OSError`, the loop runs three times and sleeps after each failure:
+
+| attempt | `2 ** attempt` | sleep |
+|---------|----------------|-------|
+| 0 | 2⁰ = 1 | 1 s |
+| 1 | 2¹ = 2 | 2 s |
+| 2 | 2² = 4 | 4 s |
+
+Total sleeping = 1 + 2 + 4 = **7 seconds**.
+
+(Note: the 20-second `TIMEOUT_S` is the per-attempt network timeout, not the sleep — the question asks only about sleeping.)
+
+**7 seconds.**

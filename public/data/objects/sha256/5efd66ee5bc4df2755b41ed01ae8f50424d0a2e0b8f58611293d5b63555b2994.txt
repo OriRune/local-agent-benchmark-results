@@ -1,0 +1,1 @@
+Bot: *Input location* → o_forecast(location) → *Output weather forecast*. The keyword 'o' triggers the forecast module.

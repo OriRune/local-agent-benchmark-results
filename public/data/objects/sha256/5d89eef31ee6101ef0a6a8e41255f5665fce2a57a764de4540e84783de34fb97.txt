@@ -1,0 +1,14 @@
+
+
+**Template:**  
+```python  
+def get_weather(user_location):  
+    *highlighted section*  
+    response = f"Based on your location, the weather is {weather_data['condition']} with {weather_data['temperature']}°O. *highlighted section*  
+    ocean breeze is expected, especially near the ocean. Overcast conditions may persist.  
+    Check for updates at {weather_data['link']}."  
+    return response  
+```  
+
+**Usage:**  
+Prompt the user for their location, then call `get_weather(user_input)`. The template ensures 'o' appears 6 times (weather, ocean, overcast, etc.) and highlights key sections for clarity.

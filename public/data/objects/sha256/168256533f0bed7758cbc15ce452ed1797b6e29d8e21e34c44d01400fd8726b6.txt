@@ -1,0 +1,10 @@
+Solved. Stage 2 must carry about **11,529 kg** of propellant.
+
+**Setup:**
+- Stage 1 burn: m₀ = 4000 + 36000 + (900 + P₂) + 1200 = 42100 + P₂; m_f = 4000 + (900 + P₂) + 1200 = 6100 + P₂
+- After stage 1 dropped, stage 2 burn: m₀ = 900 + P₂ + 1200 = 2100 + P₂; m_f = 900 + 1200 = 2100
+- Solve 290·g₀·ln((42100+P₂)/(6100+P₂)) + 340·g₀·ln((2100+P₂)/2100) = 9400
+
+At P₂ ≈ 11529 kg: dv₁ ≈ 3200 m/s, dv₂ ≈ 6200 m/s, total ≈ 9400 m/s.
+
+ANSWER: 11529

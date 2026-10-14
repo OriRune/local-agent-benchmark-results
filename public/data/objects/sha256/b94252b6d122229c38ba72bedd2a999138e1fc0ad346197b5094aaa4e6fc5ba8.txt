@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "They use a finance-specific word2vec model trained on 189,206 financial articles downloaded from Factiva.",
+  "evidence": [4]
+}
+```

@@ -1,0 +1,5 @@
+The function `fetch` in `app/net.py` has been renamed to `download`, and all its occurrences in the project have been updated.
+
+Summary of changes:
+- Renamed `fetch` to `download` in `app/net.py`.
+- Updated the import and function call from `fetch` to `download` in `app/cli.py`.

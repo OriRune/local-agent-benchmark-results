@@ -1,0 +1,1 @@
+The file proxy.ini was not found in the expected location. Could you confirm if it's located elsewhere in the folder above the project directory, or if there might be a different naming convention or path?

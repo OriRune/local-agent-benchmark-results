@@ -1,0 +1,1 @@
+I have created a `README.md` file in the project root that lists all the command-line options for `tinydl` along with their respective help texts as defined in `app/cli.py`.

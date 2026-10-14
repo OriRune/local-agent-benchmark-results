@@ -1,0 +1,16 @@
+The most recent git commit (commit `570afee4b6a4c2bbdda0104b7939ff2c634e5256`) changed the `TIMEOUT_S` value in `app/config.py` from `10` to `20`.
+
+**Commit message:**
+`raise the download timeout from 10 to 20 seconds`
+
+**Changes:**
+```diff
+--- a/app/config.py
++++ b/app/config.py
+@@ -1,4 +1,4 @@
+ """Settings for the downloader."""
+ MAX_RETRIES = 3
+-TIMEOUT_S = 10
++TIMEOUT_S = 20
+ USER_AGENT = "tiny-downloader/0.2"
+```

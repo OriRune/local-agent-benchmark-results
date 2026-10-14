@@ -1,0 +1,50 @@
+# T2
+
+**Result:** pass · done · 3 steps · 2 calls · 5 s
+
+## user
+
+What release date is mentioned in notes.md?
+
+## assistant
+
+I'll look for notes.md in the working folder.
+
+
+
+- call `find_files` `{"pattern":"*.md"}`
+
+<details><summary>find_files result (8 chars)</summary>
+
+```
+notes.md
+```
+
+</details>
+
+## assistant
+
+- call `read_file` `{"path":"notes.md"}`
+
+<details><summary>read_file result (380 chars)</summary>
+
+```
+notes.md (10 lines)
+1	# Planning notes
+2	
+3	## 2026-09-02
+4	- Storage: decided to drop SQLite and keep plain JSON files; the data is small and JSON is easier to inspect.
+5	- Maria will look at proxy support.
+6	
+7	## 2026-09-16
+8	- The release is planned for 14 October.
+9	- Retries stay at 3 for now; revisit after the beta.
+10	- Nobody has asked for a GUI, so it is out of scope.
+```
+
+</details>
+
+## assistant
+
+The release date mentioned in notes.md is **14 October** (2026), stated under the 2026-09-16 entry: "The release is planned for 14 October."
+

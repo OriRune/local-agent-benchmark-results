@@ -1,0 +1,28 @@
+{
+  "answer": "The paper does not list specific ICD-10 codes, but mentions that the system achieved an F-score of 0.786 with precision 0.794 and recall 0.779 on the CLEF eHealth 2018 challenge.",
+  "evidence": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "answer": "Loaded language, appeal to authority, slogans, straw men, hidden ad-hominem fallacies, red herring, and other persuasion techniques (18 total).",
+  "evidence": [
+    "3"
+  ]
+}

@@ -1,0 +1,19 @@
+I have created a `README.md` file for the project. It includes a description of the tool, the usage command, and a list of all command-line options with their respective help texts as defined in `app/cli.py`.
+
+```markdown
+# tinydl
+
+A simple command-line tool to download files.
+
+## Usage
+
+```bash
+tinydl <url> [options]
+```
+
+## Options
+
+- `url`: what to download
+- `-o`, `--output`: file to write (default: stdout)
+- `-q`, `--quiet`: no progress output
+```

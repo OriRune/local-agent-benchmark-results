@@ -1,0 +1,5 @@
+I apologize for the format issue. Let's try running the find_files tool again with the correct format:
+
+```json
+{"name": "find_files", "arguments": {"pattern": "MAX_RETRIES", "path": ".", "sort": "name"}}
+```

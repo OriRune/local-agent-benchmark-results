@@ -1,0 +1,31 @@
+To solve this puzzle, let's map out the information provided:
+
+**Houses:** 1, 2, 3
+
+**Given Information:**
+1. Bob is in House 3.
+2. Arnold is in House 2.
+3. Arnold is British.
+4. Alice is the Dane.
+5. The Dane (Alice) owns the dog.
+6. Arnold owns the cat.
+
+**Deductions:**
+* **Names:** Since Bob is in House 3 and Arnold is in House 2, **Alice must be in House 1**.
+* **Nationalities:** 
+    * House 2 (Arnold) is British.
+    * House 1 (Alice) is Dane.
+    * House 3 (Bob) must be Chinese.
+* **Animals:**
+    * House 1 (Alice) has the dog.
+    * House 2 (Arnold) has the cat.
+    * House 3 (Bob) must have the bird.
+
+**Summary Table:**
+* House 1: Alice, Dane, Dog
+* House 2: Arnold, Brit, Cat
+* House 3: Bob, Chinese, Bird
+
+The question asks for the name of the person who lives in House 1.
+
+<answer>alice</answer>

@@ -1,0 +1,3 @@
+The change is undone. The file `app/config.py` now reads `TIMEOUT_S = 10`, and `git diff HEAD~1 -- app/config.py` shows no difference — meaning the file's content now matches the state before the most recent commit.
+
+**Summary:** I reverted the most recent commit (`ee00657`, "raise the download timeout from 10 to 20 seconds") by directly editing `app/config.py`, changing `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`. No git commands were used to alter anything.

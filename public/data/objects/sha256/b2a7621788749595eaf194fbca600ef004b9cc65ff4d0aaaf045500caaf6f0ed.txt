@@ -1,0 +1,18 @@
+The solver found the propellant mass for stage 2 by requiring the total delta-v to equal 9,400 m/s.
+
+**Setup:**
+
+Stage 1 (burns first, carrying stage 2 fully fueled + payload):
+- m₀ = 4000 + 36000 + 900 + P₂ + 1200 = 45100 + P₂
+- m_f = 4000 + 900 + P₂ + 1200 = 6100 + P₂
+- Δv₁ = 290 × 9.80665 × ln((45100+P₂)/(6100+P₂))
+
+After stage 1 is dropped, remaining mass = 900 + P₂ + 1200 = 2100 + P₂.
+
+Stage 2:
+- m₀ = 2100 + P₂, m_f = 2100
+- Δv₂ = 340 × 9.80665 × ln((2100+P₂)/2100)
+
+Solving Δv₁ + Δv₂ = 9400 gives P₂ ≈ 11,529 kg, which yields Δv₁ ≈ 3164 m/s and Δv₂ ≈ 6236 m/s (sum = 9400 m/s). ✓
+
+ANSWER: 11529

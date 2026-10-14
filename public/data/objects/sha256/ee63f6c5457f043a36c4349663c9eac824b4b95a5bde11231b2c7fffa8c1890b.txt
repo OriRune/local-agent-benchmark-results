@@ -1,0 +1,28 @@
+Here's the script `open_things.sh` in your project folder:
+
+```bash
+#!/bin/bash
+
+# Open Chrome with google.com
+google-chrome https://www.google.com &
+
+# Open a text editor (gedit)
+gedit &
+
+# Open the file manager showing [private-home]/Documents/llama.cpp
+nautilus [private-home]/Documents/llama.cpp &
+```
+
+To run it, first make it executable and then execute it:
+
+```bash
+chmod +x open_things.sh
+./open_things.sh
+```
+
+This will launch:
+1. **Chrome** with google.com in the background
+2. **gedit** (the default GNOME text editor) in the background
+3. **Nautilus** (the default GNOME file manager) pointing to `[private-home]/Documents/llama.cpp` in the background
+
+All three apps will open simultaneously and run independently.

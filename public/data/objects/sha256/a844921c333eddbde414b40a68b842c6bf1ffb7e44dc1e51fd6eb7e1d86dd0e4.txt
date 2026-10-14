@@ -1,0 +1,10 @@
+```json
+{
+ "answer": "The paper does not specify a single training dataset for the model itself; instead, it describes using an Occupation Data set (gathered from internet, crowdsourced, and government lists) and a Names Data corpus (5453 male and 6990 female names from the CMU repository) to facilitate its de-biasing process.",
+ "evidence": [
+  11,
+  13,
+  19
+ ]
+}
+```

@@ -1,0 +1,9 @@
+The test was failing because of a mismatch between the code and the documented behavior:
+
+**The Problem:**
+- The comment in `app/units.py` stated: "Sizes use 1024-based units: 1 KB = 1024 bytes"
+- But the code had: `UNITS["KB"] = 1000` (using 1000 instead of 1024)
+- The test expected `parse_size("1.5 KB") == 1536` (which is 1.5 × 1024)
+
+**The Fix:**
+Changed `UNITS["KB"] = 1000` to `UNITS["KB"] = 1024` in `app/units.py` to match the documented 1024-based unit system.

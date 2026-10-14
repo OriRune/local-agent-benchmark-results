@@ -1,0 +1,9 @@
+The README.md has been created with the CLI options extracted from app/cli.py. Here's what it contains:
+
+# CLI Options
+
+1. `url` - Required. What to download.
+2. `-o`/`--output` - Optional. File to write output to (default: stdout).
+3. `-q`/`--quiet` - Optional. Suppress progress output.
+
+Is this the complete list of options you wanted in the README?

@@ -1,0 +1,21 @@
+To find an expression that equals 24 using the numbers 6, 2, 2, and 4:
+
+1.  We can try to find factors of 24, such as 6 * 4 or 12 * 2.
+2.  Using the numbers 6, 2, 2, and 4:
+    *   If we use 6 and 4, we need to make 1 from the remaining 2 and 2. (2 / 2 = 1).
+    *   Expression: 6 * 4 * (2 / 2) = 24.
+    *   Wait, that uses all numbers: 6, 4, 2, 2.
+    *   Let's check: 6 * 4 * (2 / 2) = 6 * 4 * 1 = 24.
+3.  Alternatively, we can try to make 12 * 2:
+    *   Can we make 12 from 6, 4, and 2? (6 * 2 = 12, then we have 4 left? No).
+    *   Can we make 12 from 6, 2, and 2? (6 * (2 + 2) = 24? No).
+4.  Let's try another combination:
+    *   (6 + 2) * (4 - 2) = 8 * 2 = 16 (No).
+    *   (6 * 2) + (2 * 4) = 12 + 8 = 20 (No).
+    *   (6 * 4) + 2 - 2 = 24.
+    *   Let's check: 6 * 4 + 2 - 2 = 24 + 0 = 24.
+5.  Let's check the numbers used: 6, 4, 2, 2. All are used exactly once.
+
+Expression: 6 * 4 + 2 - 2
+
+<answer>6 * 4 + 2 - 2</answer>

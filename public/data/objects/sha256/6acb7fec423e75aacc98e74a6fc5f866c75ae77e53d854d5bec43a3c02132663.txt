@@ -1,0 +1,1 @@
+**Summary:** The bug was in `app/units.py` line 2 — `"KB": 1000` should have been `"KB": 1024`. The docstring and test both expect 1024-based units, but KB was incorrectly set to 1000. Changing it to 1024 makes `parse_size("1.5 KB")` return 1536 as expected.

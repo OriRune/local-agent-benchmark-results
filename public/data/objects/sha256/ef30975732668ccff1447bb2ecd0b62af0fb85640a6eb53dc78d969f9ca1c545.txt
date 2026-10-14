@@ -1,0 +1,1 @@
+I have created a `README.md` file in the project root that documents the CLI options and their help text based on the `app/cli.py` implementation.

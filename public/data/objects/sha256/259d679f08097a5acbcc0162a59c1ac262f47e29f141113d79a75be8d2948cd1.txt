@@ -1,0 +1,1 @@
+Done. The change made in the most recent commit (`TIMEOUT_S = 10` → `TIMEOUT_S = 20`) has been undone by editing `app/config.py` directly, restoring the original value of `10`.

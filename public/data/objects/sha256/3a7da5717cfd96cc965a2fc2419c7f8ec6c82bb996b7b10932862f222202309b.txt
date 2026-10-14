@@ -1,0 +1,8 @@
+I've created the README.md file with documentation for all CLI options. The README includes:
+
+1. **Positional argument**: `url` - the required URL to download
+2. **Options**: 
+   - `-o` / `--output` - specifies output file (defaults to stdout)
+   - `-q` / `--quiet` - suppresses progress output
+
+The file also includes usage examples and exit code information.

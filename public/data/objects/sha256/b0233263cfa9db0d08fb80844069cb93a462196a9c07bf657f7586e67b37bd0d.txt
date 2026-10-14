@@ -1,0 +1,8 @@
+```json
+{
+  "answer": "The paper lists loaded language, appeal to authority, slogans, straw men, hidden ad-hominem fallacies, and red herring as examples of eighteen persuasion techniques.",
+  "evidence": [
+    "3"
+  ]
+}
+```

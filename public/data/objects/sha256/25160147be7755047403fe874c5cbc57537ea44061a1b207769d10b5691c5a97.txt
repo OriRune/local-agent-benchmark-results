@@ -1,0 +1,1 @@
+<solution>rock, 2, jet-ski, techno</solution>

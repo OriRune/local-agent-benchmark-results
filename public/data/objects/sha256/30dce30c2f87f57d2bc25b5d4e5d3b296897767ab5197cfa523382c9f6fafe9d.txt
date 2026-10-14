@@ -1,0 +1,8 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function formats a byte count into a human-readable size:
+- `format_bytes(1536)` → `'1.5 KB'`
+- `format_bytes(512)` → `'512 B'`
+- `format_bytes(1048576)` → `'1.0 MB'`
+
+It steps through B → KB → MB → GB → TB, dividing by 1024 each time, and shows integers for bytes and one decimal place otherwise.

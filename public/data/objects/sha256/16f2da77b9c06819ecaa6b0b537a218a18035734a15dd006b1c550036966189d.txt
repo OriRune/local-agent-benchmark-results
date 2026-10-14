@@ -1,0 +1,5 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function iterates through size units (B, KB, MB, GB, TB, PB), dividing by 1024 until the value is under 1024, then formats it. It returns whole numbers without a decimal (e.g. `512 B`, `1 KB`) and one decimal place otherwise (e.g. `1.5 KB`).
+
+Quick trace of the example: `format_bytes(1536)` → 1536/1024 = 1.5 → `'1.5 KB'`.

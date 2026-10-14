@@ -1,0 +1,12 @@
+I have added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function converts a byte count into a human-readable string with appropriate units (B, KB, MB, GB, TB, PB).
+
+```python
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if abs(n) < 1024.0:
+            if unit == 'B':
+                return f"{int(n)} {unit}"
+            return f"{n:.1f} {unit}"
+        n /= 1024.0
+    return f"{n:.1f} PB"
+```

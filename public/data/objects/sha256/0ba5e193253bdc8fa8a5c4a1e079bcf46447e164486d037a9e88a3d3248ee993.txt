@@ -1,0 +1,9 @@
+I have created a beautiful, single-file HTML page called `books_summary.html` that showcases your reading list from last year.
+
+The page features:
+- **Elegant Typography**: Uses "Playfair Display" and "Lora" fonts for a classic, literary feel.
+- **Responsive Grid**: A clean layout that displays your books as cards.
+- **Summary Stats**: A quick overview of your reading progress (Books read, pages turned, etc.).
+- **Aesthetic Styling**: A warm, paper-like color palette (`#fdfbf7`) with soft shadows and gold-toned accents.
+
+You can open `books_summary.html` by double-clicking it in your file explorer to view the result and take your screenshot.

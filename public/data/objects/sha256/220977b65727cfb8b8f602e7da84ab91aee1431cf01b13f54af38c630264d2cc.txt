@@ -1,0 +1,1 @@
+The script `cpu_ram_info.sh` has been created successfully. It displays memory usage using `free -m` and shows a snapshot of CPU usage via `top`. You can run it in the terminal with `chmod +x cpu_ram_info.sh && ./cpu_ram_info.sh`.

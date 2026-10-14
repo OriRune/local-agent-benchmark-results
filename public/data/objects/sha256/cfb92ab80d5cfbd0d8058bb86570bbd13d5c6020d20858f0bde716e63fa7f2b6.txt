@@ -1,0 +1,1 @@
+I need to identify which file was changed in the most recent git commit to undo the change. Could you specify the file name or provide details about the change made? This will help me locate the exact file and content to revert.

@@ -1,0 +1,10 @@
+I've searched for common LLM file formats (`.gguf`, `.safetensors`, `.bin`, `.pth`, `.ckpt`, `.onnx`, `.mlm`, `.tensors`, `.huggingface`, `.ggml`) in your current working folder and the parent directories (`..` and `../..`), but **I found no matches**.
+
+This means there are no local LLM files with these common extensions in the locations I searched. Here are a few possibilities:
+
+1. **LLMs might be stored in a different location** - They could be in your home directory (`~`), `/root`, `/opt`, or another custom location
+2. **LLMs might be stored in a different format** - Some LLMs use custom formats or are stored as directories containing model files
+3. **LLMs might be installed as Python packages** - Some local LLMs are installed via pip and don't have physical model files visible in the filesystem
+
+Let me search a few more locations to help find them:
+

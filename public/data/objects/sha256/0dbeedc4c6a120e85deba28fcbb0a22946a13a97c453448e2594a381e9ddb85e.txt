@@ -1,0 +1,39 @@
+## Setting Up the Graph
+
+For each prerequisite `(a_i, b_i)`, course `b_i` must come before `a_i`, so I create an edge `b_i → a_i`.
+
+**Building the adjacency list:**
+- 0: (none)
+- 1: 12
+- 2: 4, 9
+- 3: 16, 9, 2, 5, 1
+- 4: 0
+- 5: 17, 0, 13, 6
+- 6: 10
+- 7: 8
+- 8: (none)
+- 9: 6
+- 10: 13, 3, 16, 1, 12, 2
+- 11: 16, 15, 14, 1, 17, 10
+- 12: 9, 5
+- 13: 6, 7, 17
+- 14: (none)
+- 15: 6
+- 16: 0, 13, 8
+
+## Detecting a Cycle
+
+Starting from course 10, I trace a path:
+
+$$10 \to 13 \to 6 \to 10$$
+
+Let me verify each edge:
+- `10 → 13`: from `(13, 10)` ✓
+- `13 → 6`: from `(6, 13)` ✓
+- `6 → 10`: from `(10, 6)` ✓
+
+This forms a **cycle** (10 → 13 → 6 → 10), which means there's an impossible ordering of prerequisites.
+
+Since a cycle exists, it is impossible to finish all courses.
+
+<answer>False</answer>

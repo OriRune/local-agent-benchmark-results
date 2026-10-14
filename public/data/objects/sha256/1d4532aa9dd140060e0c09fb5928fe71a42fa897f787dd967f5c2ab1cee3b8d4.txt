@@ -1,0 +1,1 @@
+Done. I've undone the most recent commit (`1b8ce3e`) by editing `app/config.py` directly. The change reverted `TIMEOUT_S` from 20 back to 10, restoring the file to its state before the last commit.

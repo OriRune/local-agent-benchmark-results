@@ -1,0 +1,24 @@
+```json
+{
+  "character_sheet": {
+    "name": "Elian Thorne",
+    "class": "Medalist",
+    "level": 1,
+    "alignment": "Neutral Good",
+    "background": "A former archivist who discovered a hidden library of ancient texts, earning the title of 'medalist' for their unique knowledge.",
+    "stats": {
+      "str": 14,
+      "dex": 16,
+      "con": 12,
+      "int": 15,
+      "wis": 14,
+      "cha": 13
+    },
+    "skills": ["Medalist", "History", "Arcane", "Medicine"],
+    "equipment": ["Rusty Dagger", "Scroll of Knowledge", "Medalist's Ring"],
+    "special_traits": {
+      "theta": "The character possesses a unique trait called 'theta', allowing them to manipulate the flow of time in small moments."
+    }
+  }
+}
+```

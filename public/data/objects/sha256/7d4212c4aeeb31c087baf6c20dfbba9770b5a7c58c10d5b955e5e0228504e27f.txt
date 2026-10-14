@@ -1,0 +1,1 @@
+I have undone the change made in the most recent git commit by changing `TIMEOUT_S` from `20` back to `10` in `app/config.py`.

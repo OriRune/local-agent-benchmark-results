@@ -1,0 +1,1 @@
+{"extracted":"tags.\n\nLet's choose $(5 + 3) * (9 - 6)$.\nOr $5 * 6 - (9 - 3)$.\nLet's go with $(5 + 3) * (9 - 6)$ as it feels very symmetric.\nExpression: (5 + 3) * (9 - 6)\n\nFinal check:\nNumbers: 5, 3, 9, 6. (All present, no duplicates, all used once).\nOperators: +, -, *.\nResult: 8 * 3 = 24.\n\n<answer>(5 + 3) * (9 - 6)","reference":"3*(9 + 5 - 6)","score":0.01}

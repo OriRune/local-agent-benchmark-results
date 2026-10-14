@@ -1,0 +1,8 @@
+The HTML page `books_reading_list.html` has been created. It displays your 2025 reading list in a clean, visually appealing table with:
+
+- Properly formatted titles, authors, genres, and dates.
+- Hover effects for better readability.
+- Missing data (like pages or authors) displayed as dashes.
+- A modern, minimalist design that is perfect for screenshots.
+
+You can open this file by double-clicking it in your file manager, and it will work offline.

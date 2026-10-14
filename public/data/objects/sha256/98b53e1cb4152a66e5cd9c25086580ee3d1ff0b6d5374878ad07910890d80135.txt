@@ -1,0 +1,7 @@
+Programs can't be run in this session, so I've verified the fix by reasoning through each test case against the corrected code:
+
+1. `parse_size("512 B")` → `int(512 * 1) = 512` == `512` ✓
+2. `parse_size("1.5 KB")` → `int(1.5 * 1024) = 1536` == `1536` ✓ (was `1500` before the fix)
+3. `parse_size("2 MB")` → `int(2 * 1024**2) = 2097152` == `2 * 1024 * 1024` ✓
+
+**Summary:** The test was failing because `app/units.py` defined `KB` as `1000`, but the file's own docstring specifies 1024-based units (`1 KB = 1024 bytes`). I changed `"KB": 1000` to `"KB": 1024`, which makes all three assertions in `test_parse_size` pass. The test itself was correct; only the code needed fixing.

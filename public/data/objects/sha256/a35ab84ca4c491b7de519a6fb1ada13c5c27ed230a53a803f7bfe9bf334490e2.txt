@@ -1,0 +1,7 @@
+{
+  "answer": "TF-IDF features and bag-of-words technique, including n-grams of POS tags.",
+  "evidence": [
+    8,
+    9
+  ]
+}

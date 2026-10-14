@@ -1,0 +1,5 @@
+I analyzed `books.csv`. Notes on the data:
+- **22 reading entries**, but **Project Hail Mary** appears twice, so there are **21 different books**.
+- **Finished between July and December 2025** (End Date falls in that range): Dune, The Hobbit, Sapiens, The Night Circus, Tomorrow and Tomorrow and Tomorrow, The Thursday Murder Club, Babel, Lessons in Chemistry, A Psalm for the Wild-Built, and The Bear and the Nightingale = **10**. (Middlemarch has no end date, and Project Hail Mary was finished in January.)
+
+ANSWER: 21, 10

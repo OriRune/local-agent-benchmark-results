@@ -1,0 +1,3 @@
+I have identified the cause of the test failure in `tests/test_units.py`. The issue was in `app/units.py`, where the constant for kilobytes (`KB`) was incorrectly set to $1000$ instead of $1024$, contradicting the requirement that sizes should be based on $1024$-based units.
+
+I have updated `app/units.py` to set `UNITS["KB"]` to $1024$. This correction ensures that the test case `parse_size("1.5 KB")` now correctly evaluates to $1536$.

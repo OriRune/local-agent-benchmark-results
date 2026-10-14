@@ -1,0 +1,7 @@
+Done! I wrote a README.md that lists every CLI option with its help text:
+
+- **`url`** (required) — the URL to download
+- **`-o, --output FILE`** — file to write to (default: stdout)
+- **`-q, --quiet`** — suppress progress output
+
+The README also includes a usage summary, installation instructions, and examples.

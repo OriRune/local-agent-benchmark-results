@@ -1,0 +1,8 @@
+The verification confirms:
+- Stage 1 provides 3,163.95 m/s of delta-v
+- Stage 2 provides 6,236.05 m/s of delta-v
+- Total: 9,400 m/s ✓
+
+Stage 2 must carry **11,529.43 kg** of propellant.
+
+ANSWER: 11529.43

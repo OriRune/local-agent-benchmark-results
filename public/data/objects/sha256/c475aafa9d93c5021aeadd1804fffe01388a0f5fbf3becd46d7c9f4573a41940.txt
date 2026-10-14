@@ -1,0 +1,1 @@
+Done. `MAX_RETRIES` is now `5` in `app/config.py`. The reference in `app/net.py` already uses the imported constant, so no other change was needed.

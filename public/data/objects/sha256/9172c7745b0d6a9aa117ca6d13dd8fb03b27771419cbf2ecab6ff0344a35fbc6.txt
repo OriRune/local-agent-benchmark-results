@@ -1,0 +1,5 @@
+*Initialize* the bot with a keyword **o** to **open** the location input.
+
+*Process* the **o**nly **o**utput **o**f the forecast.
+
+*Close* the session after **o**nly **o**ne **o**utcome.

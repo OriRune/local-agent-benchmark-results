@@ -1,0 +1,17 @@
+Looking at this problem, I need to check if there's a cycle in the prerequisite graph. If there's a cycle, it's impossible to finish all courses.
+
+Let me trace the edges (b → a means b must come before a):
+
+**Checking for cycles:**
+
+Let me trace: 10 → 13 → 6 → 10
+
+- (13, 10): 10 → 13 ✓
+- (6, 13): 13 → 6 ✓
+- (10, 6): 6 → 10 ✓
+
+This forms a cycle: **10 → 13 → 6 → 10**
+
+Since there's a cycle in the dependency graph, it's impossible to schedule all courses.
+
+<answer>False</answer>

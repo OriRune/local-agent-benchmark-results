@@ -1,0 +1,14 @@
+I've created the shell script `open_workspace.sh` in your current directory. The script will:
+
+1. **Open Chrome** with google.com loaded (tries google-chrome, chromium-browser, or chrome)
+2. **Open a text editor** (tries nano, vim, gedit, mousepad, or kate)
+3. **Open the file manager** showing `[private-home]/Documents/llama.cpp` using xdg-open
+
+To use it, make it executable and run it:
+
+```bash
+chmod +x open_workspace.sh
+./open_workspace.sh
+```
+
+If you need to specify a different text editor, you can edit the script and change the order of the `if` statements, or add your preferred editor to the list.

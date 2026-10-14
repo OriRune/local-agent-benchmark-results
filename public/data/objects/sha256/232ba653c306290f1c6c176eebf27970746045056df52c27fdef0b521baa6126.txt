@@ -1,0 +1,1 @@
+Done! I've added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function handles bytes up to TB (terabytes), returning values like `'1.5 KB'`, `'100 MB'`, etc. Integer values are displayed without a decimal point (e.g., `'100 KB'`), while non-integers use one decimal place.

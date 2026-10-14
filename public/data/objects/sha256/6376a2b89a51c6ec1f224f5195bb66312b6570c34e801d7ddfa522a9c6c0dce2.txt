@@ -1,0 +1,4 @@
+{
+  "answer": "The paper does not explicitly state a model is trained; instead, it uses Occupation Data, Names Data, and DBpedia to build a system for generating clues.",
+  "evidence": [11, 12, 13, 23, 8]
+}

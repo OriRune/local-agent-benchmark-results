@@ -1,0 +1,1 @@
+Done. I added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function handles sizes in bytes, converting to the most appropriate unit (B, KB, MB, GB, TB) with one decimal place, and returns something like `'1.5 KB'` or `'1024 B'`.

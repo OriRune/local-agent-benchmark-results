@@ -1,0 +1,12 @@
+Let me work through the code:
+
+1. **`app/config.py`** defines `MAX_RETRIES = 3`, so the loop in `fetch()` iterates with `attempt` values of **0, 1, 2** (three attempts total).
+
+2. **`app/net.py`** sleeps `2 ** attempt` seconds after each failed attempt:
+   - Attempt 0 fails → sleeps `2^0` = **1 second**
+   - Attempt 1 fails → sleeps `2^1` = **2 seconds**
+   - Attempt 2 fails → sleeps `2^2` = **4 seconds**
+
+3. After the third failed attempt, the loop exits and raises `RuntimeError`.
+
+**Total sleep time: 1 + 2 + 4 = 7 seconds.**

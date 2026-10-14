@@ -1,0 +1,5 @@
+The most recent commit (`eccf280`) changed **one line** in `app/config.py`:
+
+- **`TIMEOUT_S`** was raised from **10** to **20** seconds.
+
+That's it — a single-line change to increase the download timeout.

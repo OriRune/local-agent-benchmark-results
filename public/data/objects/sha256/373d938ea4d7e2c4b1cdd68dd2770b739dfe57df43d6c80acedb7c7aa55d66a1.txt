@@ -1,0 +1,3 @@
+No remaining references. Done.
+
+I renamed the `fetch` function to `download` in `app/net.py`, and updated both usages in `app/cli.py` (the import and the call site). The test file and other files don't reference `fetch`, so nothing else needed changing. A case-sensitive search confirms no remaining references to `fetch`.

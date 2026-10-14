@@ -1,0 +1,21 @@
+<answer>Carol</answer>
+
+Let me verify the full solution:
+
+- **House 1:** Carol, Carnations, Water, Darkness
+- **House 2:** Alice, Daffodils, Boba Tea, Butterscotch
+- **House 3:** Arnold, Lilies, Coffee, Dragonfruit
+- **House 4:** Bob, Iris, Milk, Desert
+
+Checking all clues:
+1. Carnations (H1) next to Daffodils (H2) ✓
+2. Alice = Butterscotch ✓
+3. Arnold = Dragonfruit ✓
+4. Milk in House 4 ✓
+5. Carol = Carnations ✓
+6. Dragonfruit = Lilies (H3) ✓
+7. Lilies = Coffee (H3) ✓
+8. Darkness (H1) directly left of Boba Tea (H2) ✓
+9. Alice (H2) directly left of Lilies (H3) ✓
+
+The person in House 1 is **Carol**.

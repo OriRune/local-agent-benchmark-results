@@ -1,0 +1,23 @@
+To find an expression that equals 24 using the numbers 6, 4, 4, and 4:
+
+1.  We can look for ways to multiply numbers to get 24 (e.g., 6 * 4).
+2.  If we use 6 * 4, we need to find a way to make the remaining numbers (4 and 4) result in 1 or 0 in a way that doesn't change the product, or find another combination.
+3.  Alternatively, we can look for (6 + 4 + 4 + 4) = 18 (too low) or (6 * 4) + 4 - 4 = 24.
+4.  Let's check: $6 * 4 + 4 - 4 = 24 + 4 - 4 = 24$.
+5.  Wait, the numbers are 6, 4, 4, 4.
+6.  Calculation: $6 * (4 + 4 - 4) = 6 * 4 = 24$.
+7.  Another way: $4 * (6 + 4 - 4) = 4 * 6 = 24$.
+8.  Another way: $4 * 4 + 4 + 4 = 24$ (but we only have one 6).
+9.  Let's try: $6 * 4 * (4 / 4) = 24$.
+10. Let's try: $6 * (4 / (4 / 4)) = 24$ (No, that's $6 * 4$).
+11. Let's try: $4 * (4 + 4 - 6) = 4 * 2 = 8$ (No).
+12. Let's try: $6 * 4 + 4 - 4 = 24$.
+
+Using the numbers 6, 4, 4, 4:
+$6 * 4 + 4 - 4 = 24$
+$6 * (4 + 4 - 4) = 24$
+$6 * 4 * 4 / 4 = 24$
+
+All these use the numbers 6, 4, 4, 4 exactly once.
+
+<answer>6*4+4-4</answer>

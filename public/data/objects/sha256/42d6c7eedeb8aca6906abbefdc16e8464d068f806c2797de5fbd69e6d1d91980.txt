@@ -1,0 +1,1 @@
+The release date mentioned in notes.md is **14 October** (which corresponds to 2026-10-14).

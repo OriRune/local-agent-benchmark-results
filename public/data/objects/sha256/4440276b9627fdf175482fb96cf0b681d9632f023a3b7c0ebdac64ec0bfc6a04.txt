@@ -1,0 +1,1 @@
+The value of `MAX_RETRIES` is defined in `app/config.py` as `MAX_RETRIES = 3`. It is also imported and used in `app/net.py` for loop iterations.

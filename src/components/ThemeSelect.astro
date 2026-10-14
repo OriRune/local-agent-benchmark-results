@@ -1,0 +1,15 @@
+<label class="theme-control">Theme
+  <select id="theme-preference" aria-label="Color theme">
+    <option value="system">System</option>
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+  </select>
+</label>
+<script>
+  const select = document.querySelector<HTMLSelectElement>('#theme-preference')!;
+  select.value = document.documentElement.dataset.theme || 'system';
+  select.addEventListener('change', () => {
+    document.documentElement.dataset.theme = select.value;
+    try { localStorage.setItem('agentbench-theme', select.value); } catch { /* Preference still works for this visit. */ }
+  });
+</script>

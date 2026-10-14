@@ -1,0 +1,9 @@
+I've created a `README.md` file for the project that lists all CLI options with their help text.
+
+The CLI has three options:
+
+1. **`url`** (positional argument, required) - what URL to download from
+2. **`-o` / `--output`** (short) - write output to file instead of stdout (default: stdout)
+3. **`-q` / `--quiet`** (short) - disable progress output
+
+The README was written to the project root directory (`.`).

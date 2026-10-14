@@ -1,0 +1,1 @@
+[{"args":{"path":".","pattern":"*.txt"},"name":"find_files","result":"no files match *.txt","status":"ok"},{"args":{"path":".","pattern":"*"},"name":"find_files","result":"no files match *","status":"ok"}]

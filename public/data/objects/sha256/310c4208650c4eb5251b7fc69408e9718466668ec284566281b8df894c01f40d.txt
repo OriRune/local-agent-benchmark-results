@@ -1,0 +1,9 @@
+
+
+{
+  "name": "grep",
+  "arguments": {
+    "pattern": "MAX_RETRIES = ",
+    "path": "[private-home]/Documents/agent-harness/evals/benchmark_runs/20261004-005709-b1d20c"
+  }
+}

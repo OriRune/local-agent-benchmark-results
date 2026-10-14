@@ -1,0 +1,5 @@
+Please use this *weather bot template*.
+
+`o(input_location)` -> `o(get_forecast)` -> `o(show_temp)` -> `o(show_sky)` -> `o(show_wind)` -> `o(output_result)`
+
+This *syntax pattern* uses 'o' as the command keyword.

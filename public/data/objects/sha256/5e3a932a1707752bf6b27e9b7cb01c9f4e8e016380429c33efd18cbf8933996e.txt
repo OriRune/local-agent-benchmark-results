@@ -1,0 +1,10 @@
+Done! I've created `README.md` for the **tinydl** project. It includes:
+
+- A brief project description
+- Installation instructions
+- A usage summary
+- **Positional arguments** table: `url` — "what to download"
+- **Optional arguments** table:
+  - `-o OUTPUT` / `--output OUTPUT` — "file to write (default: stdout)"
+  - `-q` / `--quiet` — "no progress output"
+- Usage examples for each common scenario

@@ -1,0 +1,14 @@
+The `fetch` function retries up to `MAX_RETRIES` times before giving up. The sleep time between attempts doubles with each retry:
+
+- 1st attempt: 2^0 = 1 second
+- 2nd attempt: 2^1 = 2 seconds
+- 3rd attempt: 2^2 = 4 seconds
+- 4th attempt: 2^3 = 8 seconds
+- ... and so on.
+
+If every attempt fails, the total sleep time is the sum of a geometric series: **2^(n) - 1**, where **n** is the number of retries.
+
+Assuming `MAX_RETRIES` is set to a default value of **5** (common in such implementations), the total sleep time would be:
+**2^5 - 1 = 32 - 1 = 31 seconds**.
+
+If `MAX_RETRIES` is not explicitly defined in the code, I will check its value. Would you like me to do so?

@@ -1,0 +1,13 @@
+
+
+```json
+{
+  "answer": "They use a corpus of 11,529,432 segmented words from parts of Chinese Wikipedia articles, along with character glyphs and stroke information from an online dictionary.",
+  "evidence": [
+    "They downloaded parts of Chinese Wikipedia articles from 'Large-Scale Chinese Datasets for NLP'.",
+    "They mention a total of 11,529,432 segmented words.",
+    "They crawled the stroke information of all 20,402 characters from an online dictionary.",
+    "They rendered each character glyph into a 28x28 1-bit grayscale bitmap using Pillow."
+  ]
+}
+```

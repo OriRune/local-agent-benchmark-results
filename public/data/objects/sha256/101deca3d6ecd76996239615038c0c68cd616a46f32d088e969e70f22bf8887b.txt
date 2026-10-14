@@ -1,0 +1,20 @@
+The reorganization is complete! Here's what I did:
+
+**New Structure Created:**
+- **01_Compositions/** - Contains "A Passing Rain Shower.pdf" and "Aquatinte VII.pdf"
+- **02_Theory/** - Contains theory books and "Em Composing Exercise 2.pdf"
+- **03_Classical/** - Contains Bach, Star Wars, Imperial March pieces
+- **04_Peaceful/** - Contains Christmas carols, Game of Thrones, and other peaceful pieces
+- **06_Recordings/** - Contains the Concertino audio recordings
+- **07_Images/** - Contains "bird calls.jpg" and "van eyck psalm 140.PNG"
+
+**Old Folders Removed:**
+- AAA My compositions/
+- Concert summer 2025/
+- Nadia Birkenstock/
+- Other harp/
+- Recorder/
+- renaissance/
+- Sight Reading/
+
+All files have been moved to their appropriate new locations. The folder is now organized by type (compositions, theory, classical, peaceful, recordings, images) which should make it much easier to find what you need!

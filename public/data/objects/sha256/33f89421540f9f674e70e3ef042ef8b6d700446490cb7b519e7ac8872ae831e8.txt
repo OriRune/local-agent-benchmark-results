@@ -1,0 +1,5 @@
+Looking for a way to make 24 using 6, 2, 2, 4:
+
+(6 - 2) × (4 + 2) = 4 × 6 = 24 ✓
+
+<answer>(6-2)*(4+2)</answer>

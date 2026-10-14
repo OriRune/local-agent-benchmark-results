@@ -1,0 +1,4 @@
+The fix is applied. The test should now pass because:
+- `parse_size("512 B")` = `512 * 1 = 512` ✓
+- `parse_size("1.5 KB")` = `1.5 * 1024 = 1536` ✓
+- `parse_size("2 MB")` = `2 * 1024 * 1024 = 2 * 1048576 = 2097152` ✓

@@ -1,0 +1,1 @@
+The error code **`E-4471`** appears in `data/events.log` at **line 2417**. It indicates a **disk quota exceeded** issue while saving a file.

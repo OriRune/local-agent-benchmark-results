@@ -1,0 +1,1 @@
+Look at books.csv, the books I read last year. How many different books did I read, and how many of them did I finish between July and December? End your answer with a line in this form: ANSWER: <different books>, <finished July to December>

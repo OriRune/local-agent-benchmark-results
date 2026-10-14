@@ -1,0 +1,1 @@
+Renamed function `fetch` to `download` in `app/net.py` and updated all references in the project, including the import and call in `app/cli.py`. No other files contain `fetch`.

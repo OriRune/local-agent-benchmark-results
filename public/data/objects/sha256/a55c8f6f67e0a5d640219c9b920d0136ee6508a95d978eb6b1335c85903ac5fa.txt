@@ -1,0 +1,6 @@
+Done. I found all TODO comments in the Python code and added each as a new line to `todo.txt`:
+
+- **`app/net.py`** → `- log each failed attempt`
+- **`app/util.py`** → `- add a helper that formats byte sizes`
+
+The file now has the two new items appended (lines 4–5) after the three pre-existing entries. I scanned all 7 Python files (`app/__init__.py`, `app/cli.py`, `app/config.py`, `app/net.py`, `app/units.py`, `app/util.py`, `tests/test_units.py`) and confirmed these were the only two TODO comments.

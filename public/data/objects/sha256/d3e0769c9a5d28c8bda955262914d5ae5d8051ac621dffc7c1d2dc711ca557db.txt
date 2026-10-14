@@ -1,0 +1,7 @@
+I created `README.md`. It documents the `tinydl` CLI (defined in `app/cli.py`), listing every command-line option with its exact help text:
+
+- **`url`** (positional) — "what to download"
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+
+I also included usage examples and the `app/config.py` settings, since they're relevant context for the downloader. Since the sandbox blocks running programs, I extracted the options directly from the `argparse` parser definition rather than from live `--help` output.

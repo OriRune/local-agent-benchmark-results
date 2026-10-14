@@ -1,0 +1,7 @@
+The task is complete. Here's what was done:
+
+1. **Renamed the function** `fetch` → `download` in `app/net.py`
+2. **Updated the import** in `app/cli.py` from `from app.net import fetch` to `from app.net import download`
+3. **Updated the call** in `app/cli.py` from `fetch(args.url, get=_get)` to `download(args.url, get=_get)`
+
+All references to `fetch` as a function have been renamed to `download`. The grep now shows no matches for "fetch", confirming all usages have been updated. The tests directory does not reference `fetch`, so no changes were needed there.

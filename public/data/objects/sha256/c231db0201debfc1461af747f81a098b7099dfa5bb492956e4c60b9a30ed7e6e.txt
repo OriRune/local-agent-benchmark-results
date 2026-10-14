@@ -1,0 +1,4 @@
+{
+  "answer": "They use Occupation Data (gathered from internet sources) and Names Data (a corpus of male/female names) for their system; they do not train a separate model on a single external dataset.",
+  "evidence": [12, 13]
+}

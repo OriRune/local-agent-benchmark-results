@@ -1,0 +1,1 @@
+I have added the `format_bytes(n)` function to `app/util.py` to return a human-readable size, and I have removed the related `TODO` comment.

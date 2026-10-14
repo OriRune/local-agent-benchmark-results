@@ -1,0 +1,1 @@
+I have updated `todo.html` to use `localStorage`. Now, your to-do list will automatically save every time you add, toggle, delete, or edit an item, and it will reload those items whenever you refresh the page.

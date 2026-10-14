@@ -1,0 +1,23 @@
+The script works! Here's a summary of what I created:
+
+**`ram_cpu_info.py`** - A Python script that displays:
+
+**RAM Information:**
+- Total RAM: 31.3 GB
+- Used RAM: 19.5 GB
+- Free RAM: 6.6 GB
+- RAM Usage: 63.8%
+- Swap Total/Used: 2.0 GB each
+
+**CPU Information:**
+- CPU Cores: 12
+- CPU Usage: 14.7%
+- Load Average: 8.71, 8.00, 7.74 (1, 5, 15 minute averages)
+
+The script uses the `psutil` library for system information and `os.getloadavg()` for load averages. To run it, simply execute:
+
+```bash
+python ram_cpu_info.py
+```
+
+I also created a bash version (`ram_cpu_info.sh`) that uses `free` and `top` commands, though it can't be run in the sandbox environment.

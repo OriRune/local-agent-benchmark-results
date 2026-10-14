@@ -1,0 +1,5 @@
+I apologize for the mistake. Let's try running the test again with the correct format.
+
+```json
+{"name": "run", "arguments": {"command": "python3 -m unittest discover -s tests"}}
+```

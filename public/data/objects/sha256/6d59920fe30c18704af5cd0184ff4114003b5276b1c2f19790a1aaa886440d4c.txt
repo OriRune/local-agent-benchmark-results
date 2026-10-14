@@ -1,0 +1,6 @@
+No remaining references to `fetch`. The rename is complete.
+
+Summary:
+- Renamed `fetch` → `download` in `app/net.py` (the definition).
+- Updated `app/cli.py`: import (`from app.net import download`) and the call (`data = download(args.url, get=_get)`).
+- Verified no other files (including `tests/test_units.py`) referenced the old name.

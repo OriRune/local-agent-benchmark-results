@@ -1,0 +1,29 @@
+The grid is provided as follows:
+
+```
+O O O X O O O X O
+X X O O O X O X X
+O O O O O O O O O
+X O O O O O O O O
+O X O O O O O O X
+O O O O O O O O X
+O O X X O O X O X
+O X O O X O X * #
+```
+
+We need to find the shortest path from `*` to `#`.
+
+1.  **Identify Coordinates:**
+    *   The grid has 8 rows and 9 columns.
+    *   The starting point `*` is located at Row 7, Column 7 (0-indexed).
+    *   The destination `#` is located at Row 7, Column 8.
+
+2.  **Analyze Neighbors:**
+    *   From the starting position `(7, 7)`, we check the adjacent cells.
+    *   **Right:** The cell at `(7, 8)` contains `#`.
+    *   Since the destination is immediately to the right of the start, the shortest path is a single move.
+
+3.  **Path:**
+    *   Move Right.
+
+<answer>right</answer>

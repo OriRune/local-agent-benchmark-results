@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "ICD-10 codes are standardized codes used to classify diseases and medical conditions, particularly for coding medical causes of death in death certificates.",
+  "evidence": [0, 3, 4, 10]
+}
+```

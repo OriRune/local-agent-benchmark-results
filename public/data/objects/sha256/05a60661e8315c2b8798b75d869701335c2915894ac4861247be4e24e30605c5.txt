@@ -1,0 +1,11 @@
+The code is in `app/net.py`. Let me work it out.
+
+With `MAX_RETRIES = 3` (from `config.py`), the loop runs `for attempt in range(3)`, so `attempt` takes the values 0, 1, 2. Each failed attempt sleeps `2 ** attempt` seconds:
+
+- attempt 0 → sleep 2⁰ = 1 s
+- attempt 1 → sleep 2¹ = 2 s
+- attempt 2 → sleep 2² = 4 s
+
+After the third failure the loop exits and raises the "giving up" error.
+
+**Total sleep = 1 + 2 + 4 = 7 seconds.**

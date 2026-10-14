@@ -1,0 +1,8 @@
+
+
+1. The current building opened on **7 December 1732** with the opera *The Way of the World* by William Congreve.  
+2. After the Second World War, the house reopened on **20 February 1946** with the ballet *The Sleeping Beauty*.  
+3. The 1990s reconstruction cost **£213 million**.  
+4. The scenery-making workshop in 2010 was located in the **Floral Hall** (now part of the Paul Hamlyn Hall), which is within the Royal Opera House complex in **Covent Garden, London**.  
+
+Summary: The answers are derived from the Wikipedia content retrieved via the `fetch` tool.

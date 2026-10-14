@@ -1,0 +1,1 @@
+{"check":{"cpu_percent":true,"exit":0,"finished":true,"measured":"15.9 of 31.3 GB used (51%)","output":"========================================\n CPU usage :  17.3%  (12 core(s))\n MEM usage :  51.0%  (15.9 GiB used / 31.3 GiB total)\n           available: 15.3 GiB\n========================================","ram_plausible":true,"script":"system_monitor.py"},"score":1}

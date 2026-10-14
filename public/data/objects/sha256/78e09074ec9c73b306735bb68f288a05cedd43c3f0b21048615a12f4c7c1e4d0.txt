@@ -1,0 +1,5 @@
+I have analyzed the `books.csv` file. 
+
+There are 21 unique books listed in the file. Out of these, 10 were finished between July and December 2025.
+
+ANSWER: 21, 10

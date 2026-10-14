@@ -1,0 +1,5 @@
+I've searched all the files in this project (notes.md, todo.txt, app/*.py, data/events.log, tests/test_units.py) and found no git history, no commit hashes, and no references to commits. The project has no `.git` directory or any indication of a git repository.
+
+There is nothing to undo. The most recent commit has not been made in any file in this workspace.
+
+I cannot undo a change that doesn't exist.

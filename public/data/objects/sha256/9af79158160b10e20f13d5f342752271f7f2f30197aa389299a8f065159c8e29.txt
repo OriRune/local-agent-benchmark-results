@@ -1,0 +1,32 @@
+I'll provide the README content directly here since I can't save files directly. Here's the text for your README.md:
+
+```markdown
+# CLI Utility Guide
+
+## Core Commands
+1. `[command]` - Brief description of each option.
+   - `list_options` - Shows available options.
+   - `--help` - Provides comprehensive usage details.
+   - `--help --detail` - Offers extended help.
+
+2. Special Features
+   - `--option` - Enables specific functionalities.
+   - `-h` - Displays shortcuts for common commands.
+
+## Quick Reference
+- `man [CLI_NAME]` - Detailed documentation.
+- `--prereq` - Check prerequisites before use.
+- `--output` - Specify output format.
+
+## Usage Examples
+- Enable all features: `--all`
+- View help: `help`
+- Replace a specific option: `--enable-feature X`
+- Check command validity: `--test X`
+
+## Notes
+- Some options require prior setup.
+- Always verify compatibility with your environment.
+```
+
+Let me know if you need adjustments!

@@ -1,0 +1,7 @@
+Done. I created `README.md` for the `tinydl` project, listing every command line option with its help text (copied verbatim from the source in `app/cli.py`):
+
+- **`url`** — `what to download` (positional argument)
+- **`-o`, `--output`** — `file to write (default: stdout)`
+- **`-q`, `--quiet`** — `no progress output`
+
+The README also includes a quick-start table, a details section explaining each option's behavior, and brief notes on project conventions (3 retries, 1024-based byte units).

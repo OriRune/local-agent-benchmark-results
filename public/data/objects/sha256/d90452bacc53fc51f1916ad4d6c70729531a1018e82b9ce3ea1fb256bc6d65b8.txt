@@ -1,0 +1,2 @@
+
+The proxy host is `proxyhost` and the port is `8080`.

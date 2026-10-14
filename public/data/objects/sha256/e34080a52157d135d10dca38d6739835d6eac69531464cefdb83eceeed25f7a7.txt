@@ -1,0 +1,15 @@
+I found a file that matches your description! Here's what I discovered:
+
+**Desktop/trip ideas 2025.txt** - This is a text file that contains trip ideas:
+```
+places to go
+- Kyoto in spring
+- road trip down the coast
+- camping at the lake
+```
+
+I also found these related files:
+- **Documents/old stuff/holidayplans.md** - A markdown file with holiday plans (Lisbon, Lake District cottage, Iceland)
+- **Documents/Personal/christmas gift ideas.txt** - A text file with "ideas" in the name but only contains its own filename
+
+The **trip ideas 2025.txt** file in your Desktop folder is likely the file you're looking for - it's a text file with "ideas" in the name and contains actual vacation/trip ideas.

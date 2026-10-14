@@ -1,0 +1,10 @@
+I see the following files in the current directory:
+- `app/`
+- `data/`
+- `tests/`
+- `notes.md`
+- `todo.txt`
+
+Could you please specify which file was changed in the most recent git commit? Once I have the file name, I can restore it to its previous state without using git.
+
+For example, was it `notes.md`, `todo.txt`, or a file inside the `app/`, `data/`, or `tests/` folders?

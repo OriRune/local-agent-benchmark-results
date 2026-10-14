@@ -1,0 +1,1 @@
+A **README.md** file has been created in the project root. It lists every command line option available in the CLI along with their usage and options. This file serves as a comprehensive reference for all the commands you can use within the project.

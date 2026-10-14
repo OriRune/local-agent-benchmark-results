@@ -1,0 +1,5 @@
+I created `hello.txt` in the working folder containing exactly one line:
+
+`hello from the local agent`
+
+The file was created successfully with the exact content specified.

@@ -1,0 +1,1 @@
+I have changed MAX_RETRIES to 5 in app/config.py. The value is now 5, and it's referenced in app/net.py as well. The change looks good. Is there anything else you need?

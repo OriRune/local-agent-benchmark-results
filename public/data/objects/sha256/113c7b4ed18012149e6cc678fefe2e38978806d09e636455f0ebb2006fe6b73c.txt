@@ -1,0 +1,4 @@
+
+<tool_call>
+{'name': 'find_files', 'arguments': {'pattern': 'llm', 'path': '.'}}
+</tool_call>

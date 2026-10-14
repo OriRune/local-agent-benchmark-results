@@ -1,0 +1,4 @@
+I have fixed the bug in `app/units.py` where the `KB` unit was incorrectly set to 1000 instead of 1024, which contradicted the docstring and the expected behavior in the tests.
+
+Summary of changes:
+- Modified `app/units.py`: Changed `UNITS["KB"]` from `1000` to `1024`.

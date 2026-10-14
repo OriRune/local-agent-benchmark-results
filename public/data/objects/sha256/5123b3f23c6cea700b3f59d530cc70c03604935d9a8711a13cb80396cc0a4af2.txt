@@ -1,0 +1,3 @@
+30,000  
+**Final Answer**  
+\boxed{30000}

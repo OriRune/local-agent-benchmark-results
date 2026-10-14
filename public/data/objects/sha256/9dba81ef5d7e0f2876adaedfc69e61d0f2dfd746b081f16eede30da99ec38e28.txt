@@ -1,0 +1,14 @@
+Now I can calculate the total sleep time:
+
+The `fetch` function loops `MAX_RETRIES` times (which is 3), and on each failed attempt it sleeps for `2 ** attempt` seconds.
+
+The loop runs for `attempt` values: 0, 1, 2 (since `range(3)` gives 0, 1, 2)
+
+Sleep times per attempt:
+- Attempt 0: `2 ** 0 = 1` second
+- Attempt 1: `2 ** 1 = 2` seconds
+- Attempt 2: `2 ** 2 = 4` seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**
+
+The function gives up after all 3 attempts fail, having slept a total of 7 seconds.

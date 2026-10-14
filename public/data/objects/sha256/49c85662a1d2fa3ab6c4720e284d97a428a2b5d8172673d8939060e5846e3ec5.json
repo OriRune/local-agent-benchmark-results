@@ -1,0 +1,1 @@
+["The user wants to know where MAX_RETRIES is defined and its value. Let me search the files.\n","Let me confirm the definition in config.py.\n","MAX_RETRIES is defined in app/config.py with a value of 3. It's imported and used in app/net.py.\n"]

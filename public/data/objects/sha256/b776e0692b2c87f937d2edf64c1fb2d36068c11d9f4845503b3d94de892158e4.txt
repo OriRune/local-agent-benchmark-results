@@ -1,0 +1,9 @@
+Your to-do list already remembers items across reloads — no change needed.
+
+It works like this:
+- **On load** (line 68): it reads your saved list from the browser's `localStorage` under the key `todos`, falling back to an empty list if there's nothing yet.
+- **On every change** (line 70): the `save()` function writes the current list back to `localStorage` — so adding, checking off, editing, or deleting is all persisted instantly.
+
+Just refresh the page and your tasks will still be there. (Note: this storage lives in the browser, so it's tied to that browser and device — clearing browser data or using a different browser would wipe it.)
+
+Want me to add anything else, like a "clear completed" button or the ability to export as a checklist with `[x]`/`[ ]` marks?

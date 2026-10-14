@@ -1,0 +1,10 @@
+I have identified that the test in `tests/test_units.py` was failing because the `app/units.py` file incorrectly defined the size multiplier for "KB" as 1000, while the tests and the docstring specified a 1024-based system.
+
+I have updated `app/units.py` to correct this inconsistency.
+
+The fix involved changing the definition of `UNITS` in `app/units.py` from:
+`UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+to:
+`UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}`
+
+The test in `tests/test_units.py` should now pass with this change.

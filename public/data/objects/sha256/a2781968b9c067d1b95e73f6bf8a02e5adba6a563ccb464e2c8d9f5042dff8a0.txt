@@ -1,0 +1,6 @@
+I have analyzed the `books.csv` file to determine the number of different books read and the number of books finished between July and December 2025.
+
+1.  **Different books read**: By identifying unique combinations of Title and Author (case-insensitive), I found there were 21 different books.
+2.  **Books finished between July and December**: I parsed the "End Date" for each entry and counted those that fell within the months of July through December 2025.
+
+ANSWER: 21, 10

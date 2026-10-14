@@ -1,0 +1,17 @@
+To find the required propellant for stage 2, we use the rocket equation for both stages:
+$\Delta v_{total} = \Delta v_1 + \Delta v_2 = 9400 \text{ m/s}$.
+
+Let $x$ be the mass of propellant in stage 2.
+The mass parameters are:
+- Stage 2 initial mass ($m_{0,2}$): $900 + x + 1200 = 2100 + x$
+- Stage 2 final mass ($m_{f,2}$): $900 + 1200 = 2100$
+- Stage 1 initial mass ($m_{0,1}$): $4000 + 36000 + (2100 + x) = 42100 + x$
+- Stage 1 final mass ($m_{f,1}$): $4000 + (2100 + x) = 6100 + x$
+
+Using the rocket equation $\Delta v = I_{sp} \cdot g_0 \cdot \ln(m_0 / m_f)$:
+$\Delta v_1 = 290 \cdot 9.80665 \cdot \ln\left(\frac{42100 + x}{6100 + x}\right)$
+$\Delta v_2 = 340 \cdot 9.80665 \cdot \ln\left(\frac{2100 + x}{2100}\right)$
+
+Solving for $x$ such that $\Delta v_1 + \Delta v_2 = 9400$ yields approximately $11529.43 \text{ kg}$.
+
+ANSWER: 11529.43 kg

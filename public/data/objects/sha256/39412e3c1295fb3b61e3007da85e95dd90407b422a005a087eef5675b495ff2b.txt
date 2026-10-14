@@ -1,0 +1,20 @@
+To solve this logic puzzle, we evaluate the statements made by each inhabitant:
+
+1.  **Olivia's statement:** "Benjamin is a villain or Benjamin is a hero."
+    *   In this world, everyone is either a hero or a villain. Therefore, this statement is a tautology (it is always true).
+    *   Since the statement is true, Olivia must be a **hero**.
+
+2.  **Oliver's statement:** "Olivia is a hero and Olivia is a villain."
+    *   It is impossible for someone to be both a hero and a villain simultaneously. Therefore, this statement is a contradiction (it is always false).
+    *   Since the statement is false, Oliver must be a **villain**.
+
+3.  **Benjamin's statement:** "Olivia is a hero."
+    *   We have already established that Olivia is a hero.
+    *   Since Benjamin's statement is true, Benjamin must be a **hero**.
+
+**Summary:**
+*   Olivia is a hero.
+*   Oliver is a villain.
+*   Benjamin is a hero.
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

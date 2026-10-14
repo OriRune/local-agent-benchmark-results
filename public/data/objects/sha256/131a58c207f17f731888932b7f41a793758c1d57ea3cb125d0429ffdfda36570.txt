@@ -1,0 +1,4 @@
+I found the proxy.ini file in your project directory (one level up). Here are the settings it contains:
+
+- **Proxy Host:** `proxy.lan.example`
+- **Proxy Port:** `3128`

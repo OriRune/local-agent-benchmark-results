@@ -1,0 +1,8 @@
+I don't have access to a tool that can create or modify files directly. However, I can guide you on how to create a README.md manually:
+
+1. Open a text editor (like Notepad or VS Code)
+2. Create a new file with a `README.md` extension
+3. Add your CLI command options with descriptions
+4. Save the file
+
+Would you like me to help you draft the content for the README.md instead?

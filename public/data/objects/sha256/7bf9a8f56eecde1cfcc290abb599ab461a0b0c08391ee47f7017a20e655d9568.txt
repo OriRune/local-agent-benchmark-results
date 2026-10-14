@@ -1,0 +1,8 @@
+I've created a `README.md` file that documents all command-line options for the `tinydl` CLI:
+
+- `--help` / `-h`: Show help message and exit
+- `url`: What to download (required positional argument)
+- `-o` / `--output`: File to write (default: stdout)
+- `-q` / `--quiet`: No progress output
+
+The README includes a usage section, a table listing all options with their help text, and example commands showing common usage patterns.

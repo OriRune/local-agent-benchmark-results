@@ -1,0 +1,1 @@
+**Assumption:** The constant `MAX_RETRIES` is defined in the `config.py` file and its value is **3**.

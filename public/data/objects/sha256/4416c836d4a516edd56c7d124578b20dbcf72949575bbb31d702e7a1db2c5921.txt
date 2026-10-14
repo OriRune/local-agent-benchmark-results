@@ -1,0 +1,18 @@
+The test `tests/test_units.py` fails because of an inconsistency in the `UNITS` dictionary in `app/units.py`.
+
+Specifically, the docstring and the test expectations indicate that the units should be 1024-based (binary prefixes), but the `KB` unit is defined as 1000:
+
+```python
+# app/units.py
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+The test expects:
+- `parse_size("1.5 KB") == 1536` (which is $1.5 \times 1024$)
+- `parse_size("2 MB") == 2 * 1024 * 1024`
+
+Because `KB` is currently `1000`, `parse_size("1.5 KB")` returns `1500` instead of `1536`.
+
+To fix this, the `KB` value in `app/units.py` should be changed from `1000` to `1024`.
+
+I could not finish the task because the `run` tool was disabled after I repeated the same call, so I could not execute the fix or verify it with a test runner.

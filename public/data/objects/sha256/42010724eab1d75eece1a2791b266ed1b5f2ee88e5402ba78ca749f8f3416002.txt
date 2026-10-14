@@ -1,0 +1,11 @@
+I've successfully added both TODO comments to the todo.txt file:
+
+1. Added "4	- log each failed attempt"
+2. Added "5	- add a helper that formats byte sizes"
+
+The todo.txt file now contains all 5 items:
+- 1	- write README
+- 2	- add proxy support
+- 3	- tag the release
+- 4	- log each failed attempt
+- 5	- add a helper that formats byte sizes

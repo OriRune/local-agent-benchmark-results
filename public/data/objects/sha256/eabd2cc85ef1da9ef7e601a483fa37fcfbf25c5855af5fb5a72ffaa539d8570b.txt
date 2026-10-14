@@ -1,0 +1,1 @@
+The file `data/events.log` does not contain any lines matching the error code pattern you're looking for (e.g., lines starting with digits followed by "ERROR"). Would you like to adjust the search pattern or check another file?

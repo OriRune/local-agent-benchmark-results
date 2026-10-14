@@ -1,0 +1,1 @@
+[{"args":{"content":"#!/bin/bash\ngoogle-chrome google.com &\ngedit &\nnautilus [private-home]/Documents/llama.cpp &","path":"open_apps.sh"},"name":"write_file","result":"created open_apps.sh (4 lines)","status":"ok"}]

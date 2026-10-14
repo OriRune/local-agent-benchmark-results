@@ -1,0 +1,3 @@
+The number of Python files in the app folder is **30**, and the largest file is **179.1 KB** (the first entry in the list). 
+
+\boxed{30 \text{ Python files, largest: 179.1 KB}}

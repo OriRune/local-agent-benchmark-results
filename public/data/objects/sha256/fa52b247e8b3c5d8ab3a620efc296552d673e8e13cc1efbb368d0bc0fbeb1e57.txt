@@ -1,0 +1,7 @@
+I have added the two TODO comments found in the Python code to `todo.txt`. The file now contains:
+
+1. Write README
+2. Add proxy support
+3. Tag the release
+4. Log each failed attempt in `app/net.py`
+5. Add a helper that formats byte sizes in `app/util.py`

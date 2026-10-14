@@ -1,0 +1,15 @@
+To make 24 using the numbers 10, 4, 9, and 7 exactly once, we can use the following logic:
+1. Subtract 7 from 9 to get 2: $(9 - 7) = 2$.
+2. Multiply the result by 10 to get 20: $2 \times 10 = 20$.
+3. Add 4 to the result to get 24: $20 + 4 = 24$.
+
+The expression is:
+$(9 - 7) * 10 + 4$
+
+Another valid solution is:
+$10 * 4 - (9 + 7)$
+$40 - 16 = 24$
+
+I will provide the first one.
+
+<answer>(9 - 7) * 10 + 4</answer>

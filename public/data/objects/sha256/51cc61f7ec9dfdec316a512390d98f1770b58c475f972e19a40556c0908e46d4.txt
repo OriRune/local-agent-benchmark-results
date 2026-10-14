@@ -1,0 +1,2 @@
+I'll create a shell script that opens Chrome with google.com, sets up a text editor, and displays the file manager showing [private-home]/Documents/llama.cpp.
+

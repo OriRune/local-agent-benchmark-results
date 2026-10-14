@@ -1,0 +1,1 @@
+To **o**perate the weather bot, users must **o**nly provide their **o**nline location **o**nce. The system will **o**utput the forecast immediately. *This simple process ensures accurate data retrieval.* Please **o**nly enter your city name **o**r zip code.

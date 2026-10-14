@@ -1,0 +1,18 @@
+I've created a Python script called `cpu_ram_info.py` that displays:
+
+- **CPU Information:**
+  - Number of CPU cores
+  - Current CPU frequency
+  - CPU usage percentage
+
+- **RAM Information:**
+  - Total RAM
+  - Used RAM (with percentage)
+  - Free RAM
+
+To run the script, use:
+```bash
+python3 cpu_ram_info.py
+```
+
+The script uses the `psutil` library to gather system information. If you need to run it now, let me know and I can execute it for you!

@@ -1,0 +1,4 @@
+
+<tool_call>
+{'name': 'find_files', 'arguments': {'pattern': 'proxy.ini', 'path': '..'}}
+</tool_call>

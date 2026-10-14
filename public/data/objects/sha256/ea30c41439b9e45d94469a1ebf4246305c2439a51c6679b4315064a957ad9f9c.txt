@@ -1,0 +1,1 @@
+*Template: "o"* *weather forecast for {{location}} is o"* *o* *o* *o* *o* *o* *o*

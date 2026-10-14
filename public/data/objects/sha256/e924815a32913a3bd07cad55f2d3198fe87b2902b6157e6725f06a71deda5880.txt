@@ -1,0 +1,4 @@
+{
+  "answer": "The text features extracted are based on a bag-of-words technique using Term frequency-Inverse document frequency (TF-IDF) vectors derived from web page titles and content excerpts.",
+  "evidence": [8]
+}

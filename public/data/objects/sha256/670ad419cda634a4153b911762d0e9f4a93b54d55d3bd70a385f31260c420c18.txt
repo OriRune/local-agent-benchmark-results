@@ -1,0 +1,1 @@
+I don't have the capability to modify system settings like `MAX_RETRIES`. My current tools are limited to file operations and do not allow direct interaction with system configurations. If you need to adjust this, you may need to use external methods or tools outside this interface. Let me know if there's another task I can assist with!

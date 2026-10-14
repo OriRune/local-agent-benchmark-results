@@ -1,0 +1,9 @@
+I created `README.md`. It documents every CLI option from `app/cli.py`'s `build_parser()`:
+
+- **`url`** — positional — "what to download"
+- **`-o` / `--output`** — "file to write (default: stdout)"
+- **`-q` / `--quiet`** — "no progress output"
+
+Along with how to run the CLI, other commands, and the project layout. The help text is copied verbatim from the argparse definitions (I couldn't run the program in the sandbox, but the strings come directly from `add_argument(..., help=...)`).
+
+Note: `size`, `--retries`, and other options mentioned in `config.py`/`todo.txt` are settings the downloader uses internally — they are **not** CLI options, so I did not list them to avoid inventing options that don't exist.

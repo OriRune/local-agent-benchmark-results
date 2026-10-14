@@ -1,0 +1,12 @@
+Done — all 31 files now sit in the new structure:
+
+- **Compositions (mine)** — 5 files (incl. untitled1.pdf)
+- **Classical** — 4 (both Prelude in C copies kept, so you can compare/delete one)
+- **Traditional & Early Music** — 5
+- **Film, Games & Modern** — 9
+- **Holiday** — 1
+- **Practice & Theory** — 3
+- **Recordings** — 3 audio files
+- **Recorder Music** — 2
+
+One note: the old folders (AAA My compositions, Nadia Birkenstock, Other harp, renaissance, Sight Reading, Concert summer 2025, and a now-empty Recorder Music/Recorder) are left behind empty — my tools don't delete folders, so feel free to remove those once you've confirmed everything looks right.

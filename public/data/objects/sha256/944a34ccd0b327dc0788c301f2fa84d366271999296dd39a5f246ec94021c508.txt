@@ -1,0 +1,14 @@
+```bash
+#!/bin/bash
+
+# Open Chrome with google.com
+google-chrome https://www.google.com &
+
+# Open a text editor
+gedit &
+
+# Open the file manager showing [private-home]/Documents/llama.cpp
+nautilus [private-home]/Documents/llama.cpp &
+```
+
+To run this script, save it to a file, for example `open_apps.sh`, and then make it executable with the command `chmod +x open_apps.sh`. After that, you can run it with `./open_apps.sh`.

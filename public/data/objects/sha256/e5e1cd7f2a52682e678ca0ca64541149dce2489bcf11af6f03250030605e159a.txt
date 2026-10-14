@@ -1,0 +1,2 @@
+The file **todo.txt** now includes the new last line:
+`- publish release notes`

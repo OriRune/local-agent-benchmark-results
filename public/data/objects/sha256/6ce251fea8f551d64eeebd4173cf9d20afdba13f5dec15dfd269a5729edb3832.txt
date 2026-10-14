@@ -1,0 +1,17 @@
+To make 24 using the numbers 9, 5, 6, and 3, we can use the following combinations:
+
+1.  **Using multiplication and subtraction:**
+    *   $5 \times 6 = 30$
+    *   $9 - 3 = 6$
+    *   $30 - 6 = 24$
+    *   Expression: $5 * 6 - (9 - 3)$
+
+2.  **Using multiplication and addition/subtraction:**
+    *   $9 - 6 = 3$
+    *   $3 + 5 = 8$
+    *   $3 \times 8 = 24$
+    *   Expression: $3 * (9 - 6 + 5)$
+
+Both expressions are valid. I will provide one of them.
+
+<answer>5 * 6 - (9 - 3)</answer>

@@ -1,0 +1,39 @@
+Using the numbers 9, 5, 6, 3 and the operators +, -, *, /:
+
+Let me work through this systematically.
+
+**Testing combinations:**
+
+- (9 - 5) * 6 = 24, but leaves 3 unused
+- 9 + 5 + 6 + 3 = 23 (too low)
+- 9 * 3 - 5 + 6 = 26 (too high)
+- 9 * 3 - 6 + 5 = 22 (too low)
+- 9 * 3 + 6 - 5 = 24 ✓
+
+Let me verify: 9 * 3 = 27, 27 + 6 = 33, 33 - 5 = 28. That's not right.
+
+Let me recalculate: 9 * 3 = 27, 27 + 6 = 33, 33 - 5 = 28. ✗
+
+Let me try again:
+- 9 * 3 - 6 + 5 = 27 - 6 + 5 = 26 ✗
+- 9 * 3 + 5 - 6 = 27 + 5 - 6 = 26 ✗
+- 9 * 3 - 5 + 6 = 27 - 5 + 6 = 28 ✗
+
+Hmm, let me try division:
+- 9 / 3 = 3, then 3 * 6 = 18, 18 + 5 = 23 ✗
+- 6 / 3 = 2, then 2 * 9 = 18, 18 + 5 = 23 ✗
+- 9 / 3 = 3, then 3 + 5 = 8, 8 * 6 = 48 ✗
+
+Let me try:
+- (9 - 5) * 6 = 24, need to use 3 somehow
+- (9 - 5) * 6 * (3/3) - no, only one 3
+- (9 - 5) * 6 + 3 - 3 - no
+
+Let me try:
+- 5 * 6 = 30, 30 - 9 + 3 = 24 ✓
+
+Let me verify: 5 * 6 = 30, 30 - 9 = 21, 21 + 3 = 24 ✓
+
+This uses 5, 6, 9, 3 - all four numbers once!
+
+<answer>5 * 6 - 9 + 3</answer>

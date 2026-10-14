@@ -1,0 +1,4 @@
+{
+  "answer": "11,529,432 segmented words (obtained from parts of Chinese Wikipedia articles downloaded from the Large-Scale Chinese Datasets for NLP).",
+  "evidence": [12]
+}

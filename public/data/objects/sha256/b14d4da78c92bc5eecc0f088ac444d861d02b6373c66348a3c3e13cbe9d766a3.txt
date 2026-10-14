@@ -1,0 +1,12 @@
+Done! I've created `open_workspace.sh` in your current workspace. 
+
+To use it:
+1. Make it executable: `chmod +x open_workspace.sh`
+2. Run it: `./open_workspace.sh`
+
+The script will:
+- Open Chrome with google.com
+- Open gedit (text editor)
+- Open Nautilus (file manager) showing [private-home]/Documents/llama.cpp
+
+All applications will open in the background (using `&`).

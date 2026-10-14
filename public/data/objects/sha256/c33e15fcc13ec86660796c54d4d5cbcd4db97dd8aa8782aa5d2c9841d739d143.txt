@@ -1,0 +1,15 @@
+[conversation part 1]  
+darth vader: i heard you assassinated a fake jedi. that is not acceptable. my reputation suffers when you act without my permission.  
+you: i thought it was a harmless prank; i did not mean to cause offense.  
+
+***  
+
+[conversation part 2]  
+darth vader: my anger rises like a storm across the galaxy. i might punish you with a lightsaber strike, i might revoke your access to the server, i might exile you to the outer rim. i might consider using the force to silence you entirely. i might impose a fine in credits and i might require you to attend a mandatory ethics briefing.  
+you: i am sorry; i did not foresee the impact.  
+
+***  
+
+[conversation part 3]  
+darth vader: i might reconsider our alliance if you repeat such actions. for now, i will monitor your logs and i might issue a formal warning. understand that future violations will not be tolerated.  
+you: i will comply, promise no more assassinations, even of fake jedi. thank you for hearing me.

@@ -1,0 +1,5 @@
+
+
+The number of residents who own all four items is determined by analyzing the overlaps using inclusion-exclusion principles. Given that everyone owns the candy hearts, the counts for exactly two or three items relate to owning one or two of the other three items (diamond ring, golf clubs, garden spade). By setting up equations based on the provided data and solving for the unknown variable representing those who own all three items (and thus all four), we find the solution. 
+
+**Answer:** 073

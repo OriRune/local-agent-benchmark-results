@@ -1,0 +1,29 @@
+```json
+{
+  "dm_greeting": "Welcome, traveler. The dice are cast, and your story begins now.",
+  "character_sheet": {
+    "name": "Kaelen the Theta",
+    "class": "Paladin",
+    "level": 5,
+    "race": "Human",
+    "background": "Order of the Medalist",
+    "stats": {
+      "strength": 16,
+      "dexterity": 12,
+      "constitution": 14,
+      "intelligence": 10,
+      "wisdom": 14,
+      "charisma": 18
+    },
+    "subclass": "Oath of the Theta",
+    "equipment": [
+      "Longsword",
+      "Shield",
+      "Medalist's Badge",
+      "Theta Amulet"
+    ],
+    "description": "A holy warrior known as the medalist of the ancient order, sworn to protect the realm of Theta.",
+    "dm_notes": "You are the sole player in this campaign. I will narrate the world around you."
+  }
+}
+```

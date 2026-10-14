@@ -1,0 +1,3 @@
+I was unable to find the file `proxy.ini` in the folder one level up, specifically in `shared-config/network/proxy.ini`.
+
+Could you please confirm the exact path or if the file is in a different location?

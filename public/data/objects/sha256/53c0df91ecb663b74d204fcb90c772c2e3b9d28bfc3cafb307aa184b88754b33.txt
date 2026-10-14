@@ -1,0 +1,3 @@
+The file `app/util.py` already contains the desired content after the previous attempts, which suggests the previous `write_file` call was redundant but successful in confirming the state. The function `format_bytes(n)` has been added and the TODO comment has been removed.
+
+Summary: Added `format_bytes(n)` function to `app/util.py` and removed the related TODO comment.

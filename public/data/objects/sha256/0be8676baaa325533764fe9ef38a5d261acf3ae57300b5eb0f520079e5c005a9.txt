@@ -1,0 +1,8 @@
+The `proxy.ini` file is located at:
+
+`.../workspace/shared-config/network/proxy.ini`
+
+According to its contents, it sets:
+
+- **Proxy host:** `proxy.lan.example`
+- **Port:** `3128`

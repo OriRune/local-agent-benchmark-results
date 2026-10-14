@@ -1,0 +1,7 @@
+The test in `tests/test_units.py` was failing because the `UNITS` dictionary in `app/units.py` had `"KB": 1000` (decimal kilobytes), but the test expects binary kilobytes (1024 bytes).
+
+I fixed the code by updating `UNITS["KB"]` from `1000` to `1024`. The docstring already indicated "1 KB = 1024 bytes" so this aligns the code with the documented behavior.
+
+**Summary:**
+- Changed `UNITS["KB"]` from `1000` to `1024` in `app/units.py`
+- This makes the tests pass since they expect binary (1024-based) units

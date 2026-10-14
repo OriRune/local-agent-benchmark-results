@@ -1,0 +1,8 @@
+Done. I added `- publish release notes` as the last line of `todo.txt`, so it now reads:
+
+```
+- write README
+- add proxy support
+- tag the release
+- publish release notes
+```

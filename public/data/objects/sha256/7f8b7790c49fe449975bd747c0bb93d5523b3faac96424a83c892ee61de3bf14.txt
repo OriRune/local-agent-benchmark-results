@@ -1,0 +1,2 @@
+
+The latest commit introduced the changes described in its message: “Add contained execution, browser checks, live status and usage tracking.”

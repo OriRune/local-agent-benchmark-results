@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The text analytics component extracts features using a classical sparse vectorizer, specifically Term frequency-Inverse document frequency (TF-IDF).",
+ "evidence": [
+  8
+ ]
+}
+```

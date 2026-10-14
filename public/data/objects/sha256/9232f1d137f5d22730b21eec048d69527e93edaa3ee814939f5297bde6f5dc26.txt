@@ -1,0 +1,13 @@
+I have reorganized your sheet music folder according to the approved structure.
+
+**Summary of changes:**
+*   **`01_Compositions/`**: Moved your original works here.
+*   **`02_Repertoire/`**: 
+    *   `By_Composer/`: Contains `Prelude in C.pdf`.
+    *   `By_Artist/`: Contains `Nadia Birkenstock/`.
+    *   `By_Theme/`: Contains concert pieces, pop culture themes (Star Wars, Stardew Valley, etc.), and other miscellaneous repertoire.
+*   **`03_Instrument_Specific/`**: Contains `Recorder/` and `Other harp/`.
+*   **`04_Studies_and_Theory/`**: Contains `Sight Reading/`, `Rhythm Drills`, and `complete_theory_text.pdf`.
+*   **`05_Unsorted/`**: Contains files that didn't clearly fit a category (like `untitled1.pdf` and `van eyck psalm 140.PNG`) or duplicates/copies.
+
+Your files are now organized and ready for use!

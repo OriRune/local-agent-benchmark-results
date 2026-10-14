@@ -1,0 +1,4 @@
+[System: **Initialize_o_bot**]
+[User: "Where am I?"]
+[Bot: "Locating **o**ptions..."]
+[Bot: "Found **o**utput for **o**vercast **o**utside: **o**ver 80% **o**ccipitation."]

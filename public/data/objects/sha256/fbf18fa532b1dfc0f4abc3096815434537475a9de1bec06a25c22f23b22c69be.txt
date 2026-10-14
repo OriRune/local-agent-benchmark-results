@@ -1,0 +1,20 @@
+
+The function format_bytes(n) has been added to app/util.py. Here is a summary of the changes:
+
+- The TODO comment was removed.
+- The function format_bytes(n) was added to app/util.py, which returns a human-readable size such as '1.5 KB'.
+
+The changes were made using the following commands:
+
+- edit_file to remove the TODO comment.
+- append_file to add the new function definition.
+
+The file app/util.py has been updated as follows:
+
+```python
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024:
+            return f"{n:.2f} {unit}"
+        n /= 1024
+```

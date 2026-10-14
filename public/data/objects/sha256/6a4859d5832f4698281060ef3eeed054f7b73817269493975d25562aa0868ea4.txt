@@ -1,0 +1,17 @@
+I've found and fixed the issue. The problem was in `app/units.py`:
+
+**The Issue:**
+The `UNITS` dictionary defined `KB` as `1000` (decimal kilobyte), but the docstring stated "Sizes use 1024-based units: 1 KB = 1024 bytes" and the test expected 1536 bytes for "1.5 KB" (1.5 × 1024), not 1500 bytes (1.5 × 1000).
+
+**The Fix:**
+Changed line 2 in `app/units.py` from:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+to:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+**What I couldn't do:**
+I couldn't actually run the tests to verify the fix because the `run` tool was denied in this sandbox session. However, the logic is clear: the comment and test expectations indicate that KB should use 1024-based units (binary kilobytes), not 1000-based (decimal kilobytes). This is the standard interpretation for file sizes in computing contexts.

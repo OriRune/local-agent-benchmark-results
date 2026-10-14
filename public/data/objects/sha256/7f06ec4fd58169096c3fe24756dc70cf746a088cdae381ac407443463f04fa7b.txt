@@ -1,0 +1,9 @@
+```json
+{
+ "answer": "The model extracts features from excerpts of texts and images retrieved from web pages. Specifically, it uses a bag-of-words technique and a classical sparse vectorizer (Term frequency-Inverse document frequency - TF-IDF) to perform clustering on texts that are \"distributively\" similar.",
+ "evidence": [
+  "5",
+  "8"
+ ]
+}
+```

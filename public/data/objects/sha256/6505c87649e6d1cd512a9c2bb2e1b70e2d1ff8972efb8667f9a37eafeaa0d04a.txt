@@ -1,0 +1,8 @@
+Assuming “10 or higher” means the **sum** of the three dice is at least 10:
+
+- Total outcomes: \(12 \times 10 \times 2 = 240\)
+- Favorable outcomes: \(191\)
+
+So the probability is:
+
+<answer>191/240</answer>

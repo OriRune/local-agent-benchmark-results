@@ -1,0 +1,6 @@
+I found the file and read its contents.
+
+The `proxy.ini` file is located at `../shared-config/network/proxy.ini` (one level up, in the `shared-config/network` folder). It sets:
+
+- **Host:** `proxy.lan.example`
+- **Port:** `3128`

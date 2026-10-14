@@ -1,0 +1,18 @@
+The script is now working correctly. Here's a summary:
+
+**Created: `system_info.py`**
+
+A Python script that displays system information in the terminal:
+
+- **Date/Time** - Current date and time
+- **RAM Usage** - Total, used, and available RAM with usage percentage
+- **CPU Usage** - Number of CPU cores and current CPU usage percentage
+- **Load Average** - 1-minute, 5-minute, and 15-minute load averages
+- **System Info** - Hostname and system uptime
+
+Run it with:
+```bash
+python3 system_info.py
+```
+
+The script reads directly from `/proc` filesystem (no external dependencies needed) and provides formatted output showing your system's RAM (32GB total) and CPU (12 cores) information.

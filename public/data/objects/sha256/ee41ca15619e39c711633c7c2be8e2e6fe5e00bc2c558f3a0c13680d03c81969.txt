@@ -1,0 +1,6 @@
+The changes have been successfully made:
+
+1. ✅ Added the `format_bytes` function that returns a human-readable size (e.g., '1.5 KB', '1.5 MB', etc.)
+2. ✅ Removed the TODO comment about it
+
+The file now has 19 lines and contains the new `format_bytes` function followed by the existing `clamp` function.

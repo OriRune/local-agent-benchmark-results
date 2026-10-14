@@ -1,0 +1,7 @@
+Done. I found every TODO comment across all Python files (in `app/` and `tests/`) and added each to `todo.txt`.
+
+**TODOs found:**
+- `app/net.py:7` — log each failed attempt
+- `app/util.py:5` — add a helper that formats byte sizes
+
+Both were appended to `todo.txt` as new lines. The existing three items were left untouched.

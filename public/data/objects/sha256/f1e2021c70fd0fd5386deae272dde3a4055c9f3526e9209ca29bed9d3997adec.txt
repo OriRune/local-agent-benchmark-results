@@ -1,0 +1,1 @@
+I have created a `README.md` file in the project root that documents the CLI usage, listing all command line options and their respective help texts.

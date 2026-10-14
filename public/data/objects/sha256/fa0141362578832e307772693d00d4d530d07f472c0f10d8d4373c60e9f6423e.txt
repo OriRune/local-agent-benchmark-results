@@ -1,0 +1,5 @@
+write_file
+{
+    "path": "todo.txt",
+    "content": "\napend-publish release notes"
+}

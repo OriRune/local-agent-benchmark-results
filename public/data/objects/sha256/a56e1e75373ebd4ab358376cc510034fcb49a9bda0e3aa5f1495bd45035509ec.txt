@@ -1,0 +1,11 @@
+```json
+{
+ "answer": "The paper does not mention training a model; instead, it describes a system that de-biases data at the source by using an Occupation Data set (gathered from crowdsourced and government lists) and a Names Data set (a corpus of 5453 male and 6990 female names from the CMU repository).",
+ "evidence": [
+  8,
+  11,
+  12,
+  13
+ ]
+}
+```

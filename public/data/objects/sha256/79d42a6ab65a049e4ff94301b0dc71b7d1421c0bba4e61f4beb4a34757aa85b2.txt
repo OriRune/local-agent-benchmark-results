@@ -1,0 +1,4 @@
+{
+  "answer": "The paper indicates training on comprehensive datasets like wordsim-240 and wordsim-296, implying substantial data usage.",
+  "evidence": [16]
+}

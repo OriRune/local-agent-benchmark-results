@@ -1,0 +1,8 @@
+{
+  "answer": "The paper does not use a dataset to train a model; instead, it uses occupation data and names data to analyze text and generate evidence for de-biasing.",
+  "evidence": [
+    11,
+    12,
+    13
+  ]
+}

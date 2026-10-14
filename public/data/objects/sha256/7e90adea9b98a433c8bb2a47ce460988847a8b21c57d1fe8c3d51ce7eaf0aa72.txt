@@ -1,0 +1,3 @@
+
+
+I've updated the MAX_RETRIES value in app/config.py from 3 to 5. The change has been made successfully.

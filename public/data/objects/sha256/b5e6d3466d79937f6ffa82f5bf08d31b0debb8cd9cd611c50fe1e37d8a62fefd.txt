@@ -1,0 +1,28 @@
+Let me set up coordinates with (row, col) starting at (0,0) in the top-left corner.
+
+```
+Row 0: O O O X O O O X O
+Row 1: X X O O O X O X X
+Row 2: O O O O O O O O O
+Row 3: X O O O O O O O O
+Row 4: O X O O O O O O X
+Row 5: O O O O O O O O X
+Row 6: O O X X O O X O X
+Row 7: O X O O X O X * #
+```
+
+The start `*` is at (7,7) and destination `#` is at (7,8).
+
+**Breadth-first search** from (7,7):
+
+- (7,7) → (7,8)=# ✓
+
+The destination is directly to the right of the start, and (7,8) is the destination cell itself.
+
+Let me verify (7,8) is indeed the `#`:
+- Row 7: O X O O X O X * #
+- Position 7 = `*`, position 8 = `#` ✓
+
+So the shortest path is simply one step to the right.
+
+<answer>right</answer>

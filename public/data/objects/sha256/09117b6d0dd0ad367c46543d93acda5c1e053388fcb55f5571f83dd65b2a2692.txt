@@ -1,0 +1,1 @@
+The release date mentioned in **notes.md** is **14 October** (referred to as "2026-09-16" in the file).

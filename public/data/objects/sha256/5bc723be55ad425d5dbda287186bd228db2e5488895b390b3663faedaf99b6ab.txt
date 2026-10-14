@@ -1,0 +1,1 @@
+Done. I changed `MAX_RETRIES` from 3 to 5 in `app/config.py`. The value is imported and used in `app/net.py`, so it will now pick up the new value of 5.

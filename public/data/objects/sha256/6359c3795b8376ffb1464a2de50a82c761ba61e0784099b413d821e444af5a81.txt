@@ -1,0 +1,17 @@
+So `MAX_RETRIES = 3`. The total sleep time is:
+
+2^0 + 2^1 + 2^2 = 1 + 2 + 4 = 7 seconds
+
+Let me verify by reading the code again to make sure I understand the loop correctly:
+
+```python
+for attempt in range(MAX_RETRIES):  # range(3) = [0, 1, 2]
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)  # 2^0, 2^1, 2^2
+```
+
+Yes, the loop runs 3 times (for attempts 0, 1, and 2), and the total sleep is 2^0 + 2^1 + 2^2 = 7 seconds.
+
+The answer is 7 seconds.

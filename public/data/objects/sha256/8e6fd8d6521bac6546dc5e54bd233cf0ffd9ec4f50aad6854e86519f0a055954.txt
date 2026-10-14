@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "Features are extracted from the title and excerpt of each retrieved web page's content, using a classical sparse vectorizer based on Term frequency-Inverse document frequency (TF-IDF).",
+  "evidence": [8]
+}
+```

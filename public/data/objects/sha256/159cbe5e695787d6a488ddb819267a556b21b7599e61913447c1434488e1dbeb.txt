@@ -1,0 +1,1 @@
+This folder does not contain a `.git` directory, so there is no Git history to revert. If you need to undo changes in a specific file or revert a specific edit, let me know which file and what change was made, and I can help revert those changes directly.
