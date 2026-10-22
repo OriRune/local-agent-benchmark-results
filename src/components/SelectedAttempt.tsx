@@ -1,3 +1,5 @@
+import GeneratedPagePreview from './GeneratedPagePreview';
+import { READING_PAGE_QUESTION } from '../lib/page-preview';
 import { useState } from 'react';
 import type { Component, Object as EvidenceObject } from '../lib/public-contract';
 import type { QuestionData } from '../lib/public-types';
@@ -47,7 +49,7 @@ const more = [
   ['input', 'Captured input and tool schemas', 'Captured input'],
 ] as const;
 
-export default function SelectedAttempt({ data, index, attemptId, editionId, href, open }: { data: QuestionData; index: AnswerIndex; attemptId: string; editionId?: string; href: (id: string) => string; open: (id: string) => void }) {
+export default function SelectedAttempt({ data, index, attemptId, editionId, releaseId, href, open }: { data: QuestionData; index: AnswerIndex; attemptId: string; editionId?: string; releaseId?: string; href: (id: string) => string; open: (id: string) => void }) {
   const q = data.question, attempt = data.attempts.find(a => a.id === attemptId)!;
   const trial = data.trials.find(t => t.id === attempt.trial_id)!;
   const config = index.configurations.find(c => c.id === trial.configuration_id)!, condition = index.conditions.find(c => c.id === trial.condition_id)!;
@@ -86,6 +88,7 @@ export default function SelectedAttempt({ data, index, attemptId, editionId, hre
       </details>
       <div className="answer-actions">{resultsHref && <a href={resultsHref}>← {model} results for this setup</a>}<CopyLink path={href(attempt.id)}/></div>
     </header>
+    {q.id === READING_PAGE_QUESTION && (editionId || releaseId) && <GeneratedPagePreview key={attempt.id} attemptId={attempt.id} questionId={q.id} releaseId={(editionId || releaseId)!} evidenceIds={[...attempt.components.tools.object_ids, ...attempt.components.checks.object_ids]}/>}
     <div className="reading-grid">
       <QuestionText data={data}/>
       <section className="reading-answer" aria-labelledby="final-answer-heading">

@@ -1,3 +1,4 @@
+import { validatePreviews } from './preview-data.mjs';
 import { cp, lstat, readdir, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve, join, relative } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -11,6 +12,7 @@ export async function packageSite(source, destination) {
   source = resolve(source); destination = resolve(destination);
   if (destination === source || destination.startsWith(source + '/')) throw new Error('Package destination must be outside the source package');
   await verifyRetained(join(source, 'public/data'));
+  await validatePreviews(join(source, 'public'));
   const inventory = [];
   async function inspect(path) {
     const info = await lstat(path);

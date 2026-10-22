@@ -1,11 +1,13 @@
 ---
+import { retiredQuestion } from '../../lib/retired-questions';
+import { archiveUrl } from '../../lib/edition-client';
 import Shell from '../../layouts/Shell.astro';import{currentData,questionData}from'../../lib/data';import QuestionAnswers,{type AnswerIndex}from'../../components/QuestionAnswers';
 export async function getStaticPaths(){const{index}=await currentData();return index.questions.map(q=>({params:{question:q.id}}));}
-const {index}=await currentData();const data=await questionData(Astro.params.question!);const q=data.question;const suite=index.suites.find(s=>s.id===q.suite_id)!;
+const {index,release}=await currentData();const data=await questionData(Astro.params.question!);const q=data.question;const suite=index.suites.find(s=>s.id===q.suite_id)!;
 // Ship only the setup metadata this question's answers refer to, not the whole index.
 const configIds=new Set(data.trials.map(t=>t.configuration_id));const configurations=index.configurations.filter(c=>configIds.has(c.id));
 const artifactIds=new Set(configurations.map(c=>c.artifact_id));const artifacts=index.artifacts.filter(a=>artifactIds.has(a.id));
 const description=index.test_descriptions?.questions[q.id];
 const answerIndex:AnswerIndex={configurations,artifacts,checkpoints:index.checkpoints.filter(c=>artifacts.some(a=>a.checkpoint_id===c.id)),conditions:index.conditions.filter(c=>configIds.has(c.configuration_id)),suites:[suite],test_descriptions:description?{version:1,questions:{[q.id]:description},suites:{}}:undefined};
 ---
-<Shell title={`${description?.title ?? q.source_id} · ${suite.name}`}><noscript><p class="warning noscript-note">This page needs JavaScript to open the exact recorded answer named in its link and to verify evidence before showing or downloading it. Without JavaScript no answer is shown, rather than a different model’s answer.</p></noscript><QuestionAnswers data={data} index={answerIndex} client:load/></Shell>
+<Shell title={`${description?.title ?? q.source_id} · ${suite.name}`}><noscript><p class="warning noscript-note">This page needs JavaScript to open the exact recorded answer named in its link and to verify evidence before showing or downloading it. Without JavaScript no answer is shown, rather than a different model’s answer.</p></noscript><>{retiredQuestion(q) ? <section class="panel"><h1>Task retired</h1><p>{retiredQuestion(q)}</p><p><a href={`/tests/${suite.id}/`}>Browse current practical tasks →</a></p><details><summary>Historical evidence</summary><p>The original question and recorded answers are preserved in the edition archive.</p><a href={archiveUrl(release.release_id, { question: q.id })}>View archived task and answers →</a></details></section> : <QuestionAnswers data={data} index={answerIndex} releaseId={release.release_id} client:load/>}</></Shell>

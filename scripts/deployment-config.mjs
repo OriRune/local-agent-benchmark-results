@@ -5,7 +5,7 @@ import { canonical } from '../src/lib/canonical.mjs';
 
 export function deploymentConfig(policy) {
   const hashes = Object.keys(policy.inline_scripts).sort().map(hash => `'sha256-${Buffer.from(hash, 'hex').toString('base64')}'`).join(' ');
-  const csp = `default-src 'self'; script-src 'self' ${hashes}; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'`;
+  const csp = `default-src 'self'; script-src 'self' ${hashes}; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'`;
   const rule = (source, values) => ({ source, headers: Object.entries(values).map(([key, value]) => ({ key, value })) });
   const immutable = 'public, max-age=31536000, immutable';
   const revalidate = 'public, max-age=0, must-revalidate';

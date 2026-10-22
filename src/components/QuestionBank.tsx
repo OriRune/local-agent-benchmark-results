@@ -1,3 +1,4 @@
+import { retiredQuestion } from '../lib/retired-questions';
 import { useEffect, useId, useRef, useState } from 'react';
 import { bankPage, bankQuery, defaultBankView, parseBankView, type BankQuestion, type BankView, type BankSearch, BANK_OUTCOMES } from '../lib/question-bank';
 import { archiveUrl, editionObject, loadEdition } from '../lib/edition-client';
@@ -35,7 +36,7 @@ export default function QuestionBank({ questions, descriptions = {}, editionId, 
     restore(); window.addEventListener('popstate', restore);
     return () => window.removeEventListener('popstate', restore);
   }, [scope]);
-  const result = bankPage(questions, view, search, configurationId, conditionId, descriptions);
+  const result = bankPage(editionId ? questions : questions.filter(q => !retiredQuestion(q)), view, search, configurationId, conditionId, descriptions);
   function choose(next: BankView) {
     history.pushState(null, '', `${location.pathname}?${bankQuery(location.search, next)}${location.hash}`);
     setView(next); setError('');

@@ -352,3 +352,21 @@ dataset keeps its original content identity. Existing inline editions remain
 supported. Ordinary pages use compact indexes and per-question shards; they do
 not fetch the full dataset. Per-object limits remain 128 MiB; reconstruction is
 bounded to 512 MiB decoded and 1,000 parts.
+
+### Saved reading-page previews
+
+`public/previews/` contains versioned, checksum-bound visual snapshots and the
+publication-cleared saved HTML for the reading-page task. Every entry names its
+release, question, exact attempt and source evidence objects. `data:validate`,
+`scan:dist` and `package:site` validate these bindings, HTML hashes and PNG hashes
+and dimensions. Preview bytes are inert JSON, never served as executable HTML.
+Readers see desktop/mobile screenshots and may explicitly download saved HTML;
+source-evidence withdrawal checks also gate previews and downloads. Model scripts
+never execute in the results site. Capture uses a separate fresh browser context
+with no filesystem exposure and all external resources/network access blocked.
+Missing saved files are shown explicitly; previews never substitute another run.
+A new results edition needs a matching preview inventory before its previews show.
+
+The sheet-music organization task (`real_linux2-R5`) is retired from current
+browsing via `retired-questions.ts`. Its immutable data and archived answers remain
+available; this presentation rule does not change grades or scoring denominators.

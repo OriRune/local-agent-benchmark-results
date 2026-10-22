@@ -24,7 +24,7 @@ function answerRows(data: QuestionData, index: AnswerIndex): AnswerRow[] {
 // is the only keyed child here. (The previous layout gave the answer viewer and
 // the history list the same key, so React dropped the old answer's fiber
 // without removing its DOM and stale answers accumulated on screen.)
-export default function QuestionAnswers({ data, index, editionId }: { data: QuestionData; index: AnswerIndex; editionId?: string }) {
+export default function QuestionAnswers({ data, index, editionId, releaseId }: { data: QuestionData; index: AnswerIndex; editionId?: string; releaseId?: string }) {
   const q = data.question, suite = index.suites.find(s => s.id === q.suite_id);
   const explanation = index.test_descriptions?.questions[q.id];
   // Static HTML cannot read the query string, so nothing is selected until the
@@ -80,7 +80,7 @@ export default function QuestionAnswers({ data, index, editionId }: { data: Ques
     {!selection ? <p className="answer-pending" role="status">Opening the requested recorded answer… This page needs JavaScript to select and verify evidence. If this message remains, no other model’s answer is shown in its place.</p>
       : selection.error ? <><p className="warning" role="alert">{selection.error}</p>{questionOnly}</>
       : !attempt ? <><p className="empty">No canonical answer has been recorded for this question yet.</p>{questionOnly}</>
-      : <SelectedAttempt key={attempt.id} data={data} index={index} attemptId={attempt.id} editionId={editionId} href={href} open={open}/>}
+      : <SelectedAttempt key={attempt.id} data={data} index={index} attemptId={attempt.id} editionId={editionId} releaseId={releaseId} href={href} open={open}/>}
     {rows.length > 0 && <AnswerList rows={rows} selectedId={attempt?.id ?? null} href={href} open={open}/>}
     <p className="footnote question-source">Source item {q.source_id}. {q.source.attribution} {q.source.url && <a href={q.source.url}>Source</a>}</p>
   </div>;

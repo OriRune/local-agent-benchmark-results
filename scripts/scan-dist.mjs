@@ -1,3 +1,4 @@
+import { validatePreviews } from './preview-data.mjs';
 import { readFile, readdir, lstat, mkdir, writeFile } from 'node:fs/promises';
 import { resolve, join, dirname } from 'node:path';
 import { pathToFileURL, fileURLToPath } from 'node:url';
@@ -76,6 +77,8 @@ export async function scanDist(root, policy) {
       for (const object of manifest.objects) allowedData.add(object.path);
     }
   } catch { add('data', 'invalid-retained-release-graph'); }
+  let previewFiles = new Set();
+  try { previewFiles = new Set((await validatePreviews(root)).files); } catch { add('previews', 'invalid-page-previews'); }
   let files = 0, decodedBytes = 0;
   async function visit(relative = '') {
     const path = join(root, relative); const stat = await lstat(path);
@@ -84,8 +87,8 @@ export async function scanDist(root, policy) {
     if (!stat.isFile()) { add(relative, 'non-regular-file'); return; }
     files++;
     const data = relative.startsWith('data/');
-    const allowed = data ? allowedData.has(relative.slice(5)) :
-      /^(?:index\.html|results\.csv|(?:archive|compare|editions|evidence|heatmap|methodology|models|questions|tests)(?:\/[A-Za-z\d_.-]+)?\/index\.html|_astro\/[A-Za-z\d_.-]+\.(?:js|css))$/.test(relative);
+    const allowed = previewFiles.has(relative) || (data ? allowedData.has(relative.slice(5)) :
+      /^(?:index\.html|results\.csv|(?:archive|compare|editions|evidence|heatmap|methodology|models|questions|tests)(?:\/[A-Za-z\d_.-]+)?\/index\.html|_astro\/[A-Za-z\d_.-]+\.(?:js|css))$/.test(relative));
     if (!allowed) add(relative, 'unexpected-file');
     if (stat.size > maxBytes) { add(relative, 'oversized-file'); return; }
     const raw = await readFile(path); let bytes;

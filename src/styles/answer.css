@@ -82,3 +82,16 @@
   .spec-list{grid-template-columns:1fr;gap:2px}.spec-list dd{margin-bottom:8px}
   .answer-rows li{grid-template-columns:1fr}.answer-row-outcome{text-align:left}
 }
+
+/* Saved web-page artifacts: screenshots keep model HTML out of the site DOM. */
+.generated-page { margin: 1.5rem 0 2rem; padding: 1.25rem; border: 1px solid var(--line); border-radius: .75rem; }
+.generated-page h3 { margin-top: .2rem; }
+.generated-page .toolbar { flex-wrap: wrap; }
+.generated-page button[aria-pressed="true"] { outline: 2px solid currentColor; outline-offset: -2px; font-weight: 700; }
+.generated-page figure { margin: 1rem 0; }
+.generated-page-canvas { max-height: 46rem; overflow: auto; border: 1px solid var(--line); border-radius: .4rem; background: #ececec; }
+.generated-page-canvas img { display: block; width: 100%; height: auto; margin: auto; }
+.generated-page-canvas.expanded img { width: auto; }
+.generated-page figcaption { margin-top: .5rem; font-size: .85rem; overflow-wrap: anywhere; }
+.preview-note { font-size: .875rem; }
+@media (max-width: 600px) { .generated-page { padding: .75rem; } .generated-page-canvas { max-height: 36rem; } }
