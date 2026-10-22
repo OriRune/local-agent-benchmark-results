@@ -1,0 +1,30 @@
+/* Semantic result colors shared by badges, question banks and chart legends.
+   Text labels and patterns remain, so color is never the sole distinction. */
+:root { --result-full:#126850; --result-partial:#285f98; --result-incorrect:#a12840; }
+:root[data-theme=dark] { --result-full:#8adab6; --result-partial:#a5ccff; --result-incorrect:#ffacb6; }
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--result-full:#8adab6;--result-partial:#a5ccff;--result-incorrect:#ffacb6}}
+[data-outcome=full_credit],[data-outcome=full]{--outcome-color:var(--result-full)}
+[data-outcome=partial_credit],[data-outcome=partial]{--outcome-color:var(--result-partial)}
+[data-outcome=incorrect]{--outcome-color:var(--result-incorrect)}
+.outcome-badge[data-outcome],.question-outcome[data-outcome],.check-state[data-outcome],.outcome-counts>[data-outcome],.outcome-label[data-outcome],.outcome-matrix td[data-outcome] a{color:var(--outcome-color,inherit)}
+.outcome-strip .partial{background:repeating-linear-gradient(135deg,#638cb5,#638cb5 3px,var(--paper) 3px,var(--paper) 6px)}
+.outcome-badge[data-outcome]{border-color:var(--outcome-color,var(--line));background:color-mix(in srgb,var(--outcome-color,transparent) 8%,var(--paper))}
+.outcome-matrix td[data-outcome=full_credit],.outcome-matrix td[data-outcome=partial_credit],.outcome-matrix td[data-outcome=incorrect]{background:color-mix(in srgb,var(--outcome-color) 8%,var(--paper))}
+.check-state{display:inline-block;border:1px solid currentColor;border-radius:4px;font-size:12px;padding:2px 6px;margin-right:7px}
+.outcome-metrics{min-width:225px;font-size:12px;line-height:1.6}
+.outcome-metrics dl{margin:0 0 12px;display:grid;gap:3px}
+.outcome-metrics dl>div{display:flex;justify-content:space-between;gap:12px}
+.outcome-metrics dt,.outcome-metrics dd{margin:0}
+.outcome-metrics dd{font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+.outcome-metrics .outcome-counts{font-size:11px}
+.comparison-grid .outcome-metrics{min-width:0}
+.comparison-grid .outcome-metrics dl>div{flex-wrap:wrap;gap:0 8px}
+.completion-note{font-size:13px;line-height:1.65;max-width:90ch;margin:18px 0}
+.completion-context{font-size:14px;max-width:80ch;line-height:1.65}
+.reading-page-assessment{background:var(--paper);border:1px solid var(--line);padding:22px;margin:22px 0;font-size:14px;line-height:1.65}
+.reading-page-assessment>p{max-width:90ch}
+.reading-checks{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+.reading-checks li{border-top:1px solid var(--line);padding:12px 0}
+.reading-checks p{margin:7px 0 0;overflow-wrap:anywhere}
+.heatmap-qualification{font-size:13px;line-height:1.6;max-width:95ch}
+@media(max-width:650px){.reading-checks{grid-template-columns:1fr}.reading-page-assessment{padding:14px}}

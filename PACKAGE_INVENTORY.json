@@ -28,8 +28,8 @@
     },
     {
       "path": "src/components/Compare.tsx",
-      "bytes": 10420,
-      "sha256": "a7f2724d7d31e676dce920ba63d93c44d13df8872f4875dae2ca1168ade3b03e"
+      "bytes": 10500,
+      "sha256": "a4fd769e403e95f861f97be10de51f52ea2e25a47adcf8511d11baaf36e7d198"
     },
     {
       "path": "src/components/ComparisonPicker.tsx",
@@ -40,6 +40,11 @@
       "path": "src/components/ComparisonTray.tsx",
       "bytes": 2971,
       "sha256": "794233ec9b0f36d059a0c713ae7ee0a46d709c73231be3f5dd7e05ede3beb2ce"
+    },
+    {
+      "path": "src/components/CompletionNote.tsx",
+      "bytes": 1276,
+      "sha256": "7f1acb9e0e17300e829212034756d03822e65ce486752480f0e720693fb2204b"
     },
     {
       "path": "src/components/EvidenceAvailability.astro",
@@ -58,8 +63,8 @@
     },
     {
       "path": "src/components/Heatmap.tsx",
-      "bytes": 12094,
-      "sha256": "c8bad2b33925577078f674b3cbcbb1be7a2d389728dd0e14b06bdbc8f19903f3"
+      "bytes": 12588,
+      "sha256": "7aedab6cf23e112bb805777ce064ab3a72d78a92a3ec40ed3b7f51c67be7b84e"
     },
     {
       "path": "src/components/ModelCatalog.tsx",
@@ -68,8 +73,8 @@
     },
     {
       "path": "src/components/ModelResults.tsx",
-      "bytes": 15672,
-      "sha256": "1b5c1be03accf2d1018121ca42090a89a77158e36c15d1bdec1f6e420312fd1a"
+      "bytes": 15827,
+      "sha256": "fe19b58ca5173e2fc86ed3ffc16cfba043f3eae7ee905cd0314df56a914696fe"
     },
     {
       "path": "src/components/ModelSources.tsx",
@@ -83,13 +88,18 @@
     },
     {
       "path": "src/components/OutcomeBar.tsx",
-      "bytes": 927,
-      "sha256": "b40acfa101c126041d43c02af0671e469ebd2554461e288413a29db5661673ed"
+      "bytes": 948,
+      "sha256": "ae93f8d98ef6ad914dd35439a3cbb3f9355a29e99a1c70eb2ae2716991ebe5ea"
+    },
+    {
+      "path": "src/components/OutcomeMetrics.tsx",
+      "bytes": 1285,
+      "sha256": "e44aeddc594f03e04008dccc622fdb60815cc25b1a8d8579007ae3ec4738e928"
     },
     {
       "path": "src/components/Overview.tsx",
-      "bytes": 15872,
-      "sha256": "ab474d99e197377ada7c0bdc809091122abbbadced221788f61ef53f20af60a2"
+      "bytes": 15760,
+      "sha256": "c44eae5863b0908ff2a928ebff9534fb14b34ae1e4ea826160ddc792892555cd"
     },
     {
       "path": "src/components/PinnedCompare.tsx",
@@ -98,13 +108,13 @@
     },
     {
       "path": "src/components/QualityTimeChart.tsx",
-      "bytes": 4731,
-      "sha256": "09b5aeb53f727dd97c6c1f7480d93ccb07142ce044117644aeddd38cf3dfb63e"
+      "bytes": 4743,
+      "sha256": "b4911ea3f9bd9220c8ebf1c3b07ac3e45912cdd6446277cd0e48f8d69b4f1991"
     },
     {
       "path": "src/components/QuantResults.tsx",
-      "bytes": 2977,
-      "sha256": "ed1191d0d760e737bc76c7364880d6626076daf828bca4850a6b2f34196a2c91"
+      "bytes": 2983,
+      "sha256": "484a123667b32ce21bcffa5a55dd32b0e6da3d5d6d460941ebabbf8470ed8b08"
     },
     {
       "path": "src/components/QuantSummary.tsx",
@@ -118,13 +128,18 @@
     },
     {
       "path": "src/components/QuestionBank.tsx",
-      "bytes": 7629,
-      "sha256": "25bf800b605a6c1adad56934ef14bf25f1068ab832ae53379d71620dc73fd020"
+      "bytes": 7881,
+      "sha256": "ae092c790cf0ca1bbafbdc2bcef117d8cc996b529c0957c25c236f2ef0d46e43"
     },
     {
       "path": "src/components/QuestionMatrix.tsx",
-      "bytes": 3428,
-      "sha256": "67da4e8b1985528126c4913d096f57c48bb95ec48988a827ceb7bce70a1cbd00"
+      "bytes": 3393,
+      "sha256": "6d542edaf7d815a776bf984538bb6ee465e67391fdfc80e6d9facb25c2a1b344"
+    },
+    {
+      "path": "src/components/ReadingPageAssessment.tsx",
+      "bytes": 2251,
+      "sha256": "5312da9155fc942b1a59971fe5bdd4fb307d66e92876f29c02c223909e757852"
     },
     {
       "path": "src/components/RelatedVersions.tsx",
@@ -133,13 +148,13 @@
     },
     {
       "path": "src/components/ScoreCell.tsx",
-      "bytes": 2653,
-      "sha256": "174a6c4b75061acfb8627619e9d763a36b867d627f4190081da199a9b77ebda0"
+      "bytes": 2691,
+      "sha256": "a562281c29d4fbf6b19481748bd9fd90216cf9ae3e19f4244e7fd8232bbb6cb9"
     },
     {
       "path": "src/components/SelectedAttempt.tsx",
-      "bytes": 13273,
-      "sha256": "8ba264b0125969d5d6afb94dbbdc50cece7194ffe1aff8fa55e00a55321e463a"
+      "bytes": 13772,
+      "sha256": "5b3f28d7f22ea2a4d28ca06be5b109161c56659144d90154538a79b707c0a912"
     },
     {
       "path": "src/components/SummaryAttribution.tsx",
@@ -193,8 +208,8 @@
     },
     {
       "path": "src/layouts/Shell.astro",
-      "bytes": 1445,
-      "sha256": "6e68c22ba6702ff7920745ec47f0ebdde392ce3a1169da008af567b40b736d6d"
+      "bytes": 1478,
+      "sha256": "913d00d3c2cd610ced4b900ded40dbaeee3681b0f993a1790054c9a1faf18780"
     },
     {
       "path": "src/lib/answer-view.ts",
@@ -288,8 +303,8 @@
     },
     {
       "path": "src/lib/heatmap.ts",
-      "bytes": 3871,
-      "sha256": "156e818ee4ce03d174b79053b9d2e877ab19cff65c2042f442c54bc3977a2c84"
+      "bytes": 3956,
+      "sha256": "2315ef27b1b4f288d1b9d0dd653202fdf6e8a4012d3b53ef3edf459c26eb8bd0"
     },
     {
       "path": "src/lib/model-mentions.ts",
@@ -300,6 +315,11 @@
       "path": "src/lib/model-view.ts",
       "bytes": 7758,
       "sha256": "219737356ef84bf22afd8303793c90e6b523df1fcd31410dfbd26ba02c94ebef"
+    },
+    {
+      "path": "src/lib/outcome-metrics.ts",
+      "bytes": 706,
+      "sha256": "be0bd2df91ac6c3a5af80886cc8699b998c1b21e98670d4398e3cd487629471c"
     },
     {
       "path": "src/lib/overview-view.ts",
@@ -367,14 +387,19 @@
       "sha256": "9430033d25d1d65aa5045f7de182e01f8dd1c885ffdb796ea3fe16dc237ec8ce"
     },
     {
+      "path": "src/lib/reading-page-checks.ts",
+      "bytes": 2945,
+      "sha256": "3dcd75d4207797b013b019acf384b0b15424baffb5cf3f6495e32d75f9717d1f"
+    },
+    {
       "path": "src/lib/reasoning.ts",
       "bytes": 847,
       "sha256": "86a69bc74fb315fe1e6b148956da8acf1ae8a3217e385b50981504402528795b"
     },
     {
       "path": "src/lib/result-status.ts",
-      "bytes": 2861,
-      "sha256": "59fa567cf84e7928f99da4c2734467e544629026bfcedff4f8fdba2f7954bf8c"
+      "bytes": 2949,
+      "sha256": "da00284880183335c08d3adc2a8e8034222289fd86dff774793cecdf560b36f3"
     },
     {
       "path": "src/lib/retired-questions.ts",
@@ -438,18 +463,18 @@
     },
     {
       "path": "src/pages/heatmap.astro",
-      "bytes": 760,
-      "sha256": "f4c191894561f499e9c83baf4af2c7d994ef8b82714db1a5ae1250440f05df11"
+      "bytes": 734,
+      "sha256": "1cfbf5b4c081dc1ca5d09c9efd4b450e32d5205b4b0c05c6c0033718f52ad196"
     },
     {
       "path": "src/pages/index.astro",
-      "bytes": 1037,
-      "sha256": "bb9f3c32190929667bee6534752740a54911a60ba9598c4049107c766742d697"
+      "bytes": 1036,
+      "sha256": "128d788d80c741d58b3297b86dab6673314e7ccd6c4757f8ed95a748b39a2b53"
     },
     {
       "path": "src/pages/methodology.astro",
-      "bytes": 10711,
-      "sha256": "62cee61bc70248c7d12e61cfa995baae4e8f6b8b816f82af5cbf52102690fa32"
+      "bytes": 14063,
+      "sha256": "e3541333a9e35626a6c51ab86da869196e5a77f17eb7c81d5c522fde0b8c2c66"
     },
     {
       "path": "src/pages/models/[slug].astro",
@@ -498,8 +523,13 @@
     },
     {
       "path": "src/styles/heatmap.css",
-      "bytes": 5169,
-      "sha256": "95e79627a5485849a45af171704007d40550b2563f8ab454de99050129eb9689"
+      "bytes": 5166,
+      "sha256": "bd656ff5c44fc7fd286437da36c052ba9f9132b6332400126b6c90addacf22de"
+    },
+    {
+      "path": "src/styles/outcomes.css",
+      "bytes": 2794,
+      "sha256": "d0c906aca7cb588c9b7a16dee03a825c4ac031212dced3b311fb2b3eec7fbc1f"
     },
     {
       "path": "scripts/check-contracts.mjs",
@@ -702,9 +732,14 @@
       "sha256": "8c55d57808036ac9b42941c26b88191326e40c1729258cb9eb3df68e5d645a66"
     },
     {
+      "path": "tests/e2e/feedback-outcomes.spec.ts",
+      "bytes": 4180,
+      "sha256": "b8c8d39c52f83945c2aa8eef9f6207397da4698faad01892fc39667deff4b7a0"
+    },
+    {
       "path": "tests/e2e/heatmap.spec.ts",
       "bytes": 4197,
-      "sha256": "213101c72ce2759806faaec450b0ee043b0ce8b75c1420810ec2c38ed9370200"
+      "sha256": "ece094a74298ae17b1939053a50a9429ddd50778c3c6fb6f5752178a83321d43"
     },
     {
       "path": "tests/e2e/journeys.spec.ts",
@@ -1293,8 +1328,8 @@
     },
     {
       "path": "tests/unit/heatmap.test.ts",
-      "bytes": 1987,
-      "sha256": "1a31777e36177be23094c84372709c521adcb752f943f9a24e76b63608400a47"
+      "bytes": 2397,
+      "sha256": "34a82b4029b2ada783231cb66421d053ad4a5186d9f46cd3c7e534e2e10a7740"
     },
     {
       "path": "tests/unit/import-release.test.ts",
@@ -1317,6 +1352,11 @@
       "sha256": "41cf748a9b43840ac1058614c1271c273e99c60cc81735eb558c1ab8cce14a78"
     },
     {
+      "path": "tests/unit/outcome-metrics.test.ts",
+      "bytes": 991,
+      "sha256": "6946bc0d9ad517181059557afd5bce21002c78bd2668eea57e4552ac6cccfc27"
+    },
+    {
       "path": "tests/unit/overview-view.test.ts",
       "bytes": 645,
       "sha256": "dd4af7edf8975d383f410692d992f9982ecb73b7f14506e584eeef14c1dcbb37"
@@ -1333,8 +1373,8 @@
     },
     {
       "path": "tests/unit/quality-index.test.ts",
-      "bytes": 3479,
-      "sha256": "447fd88929e38fe6f635cae103e756fa8797a8563468f359eddd3bb30c16bb23"
+      "bytes": 3571,
+      "sha256": "bfdb739ed780523530f41823d7b8ea2778216f58c324ce8a49dce2f2bb841d58"
     },
     {
       "path": "tests/unit/quant-summary.test.ts",
@@ -1345,6 +1385,11 @@
       "path": "tests/unit/question-bank.test.ts",
       "bytes": 3114,
       "sha256": "6d2e234056d7f3ec1477ca5ab652821b5bcbab8423ec91ded4bd079cfad1d333"
+    },
+    {
+      "path": "tests/unit/reading-page-checks.test.ts",
+      "bytes": 1532,
+      "sha256": "72322138720801c39957308c0bb5a00b4536b368db7966505eb8a63153b53fbc"
     },
     {
       "path": "tests/unit/reasoning.test.ts",
@@ -1373,8 +1418,8 @@
     },
     {
       "path": "tests/unit/setup-selection.test.ts",
-      "bytes": 2430,
-      "sha256": "a4c06af196b2a3aa9eee7efa5307762b2fda361a829e64a9f94306d04aec3513"
+      "bytes": 2474,
+      "sha256": "f0e8d59ecb9d2b441858078713e6c4b9da3255324a162c73bb863765fc2c0106"
     },
     {
       "path": "tests/unit/summary-attribution.test.ts",
@@ -232268,8 +232313,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 24831,
-      "sha256": "aa9d3d0da77527d6d723a3b62b4fac98908fc339795cf55a4e896db0a00a131a"
+      "bytes": 26042,
+      "sha256": "8a43a954f88491704e5da8d8a8a33b61c6f2e576bb31a4b8de9f710235be33ee"
     },
     {
       "path": ".gitignore",

@@ -26,6 +26,6 @@ it('combines only reviewed equivalent instruction IDs, preserving exact result r
  newer.scorer_revision='changed';expect(qualityColumns(d)).toHaveLength(10);
 });
 it('all-modes discovery includes native cloud conditions without creating an off condition',()=>{
- const d={checkpoints:[{id:'cloud',name:'Cloud',baseline_artifact_id:'weights'}],artifacts:[{id:'weights',checkpoint_id:'cloud'}],configurations:[{id:'config',artifact_id:'weights'}],conditions:[{id:'native',configuration_id:'config',kind:'baseline',reasoning_requested:'on',verification:'native_reasoning'}],aggregates:[]} as unknown as OverviewData;
+ const d={checkpoints:[{id:'cloud',name:'Cloud',baseline_artifact_id:'weights'}],artifacts:[{id:'weights',checkpoint_id:'cloud'}],configurations:[{id:'config',artifact_id:'weights'}],conditions:[{id:'native',configuration_id:'config',kind:'baseline',reasoning_requested:'on',verification:'native_reasoning'}],aggregates:[{configuration_id:'config',condition_id:'native',scored:1,planned:1,score:0.5,eligible:true}]} as unknown as OverviewData;
  expect(heatmapRows(d,'off')).toHaveLength(0);expect(heatmapRows(d,'all')).toHaveLength(1);expect(heatmapRows(d,'all')[0]!.condition.reasoning_requested).toBe('on');
 });

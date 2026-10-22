@@ -13,7 +13,7 @@ export function heatmapRows(data: OverviewData, mode: string, allSetups = false)
       return data.conditions.filter(c => c.configuration_id === config.id && c.kind === 'baseline' && visibleCondition(c) && (mode === 'all' || displayedMode(c) === mode)).map(condition => {
         const results = data.aggregates.filter(a => a.configuration_id === config.id && a.condition_id === condition.id);
         return { checkpoint, artifact, config, condition, results };
-      });
+      }).filter(row => row.results.some(result => result.scored > 0 && result.score != null));
     });
     candidates.sort((a, b) => b.results.filter(r => r.eligible).length - a.results.filter(r => r.eligible).length
       || b.results.reduce((n,r) => n + r.scored / Math.max(1,r.planned),0) - a.results.reduce((n,r) => n + r.scored / Math.max(1,r.planned),0)

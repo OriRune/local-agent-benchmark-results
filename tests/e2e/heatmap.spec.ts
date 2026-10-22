@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
 test('heatmap filters, sorts and links to the exact setup and answers',async({page})=>{
- await page.goto('/');await page.getByRole('link',{name:'Try the heatmap demo'}).click();
+ await page.goto('/');await page.getByRole('link',{name:'Explore the heatmap'}).click();
  await expect(page.getByRole('heading',{name:'Models at a glance'})).toBeVisible();
  await page.getByLabel('Find a model').fill('Ornith');
  const rows=page.locator('.heatmap-table tbody tr');expect(await rows.count()).toBeGreaterThan(0);
@@ -19,7 +19,7 @@ test('heatmap filters, sorts and links to the exact setup and answers',async({pa
 });
 test('heatmap is accessible in both themes and scrolls without page overflow',async({page})=>{
  await page.goto('/heatmap/');await expect(page.locator('.heatmap-cell').first()).toBeVisible();
- const first=await page.locator('.heatmap-cell').first().boundingBox();expect(first!.y+30).toBeLessThan(800);
+ const first=await page.locator('.heatmap-cell').first().boundingBox();expect(first!.y+30).toBeLessThan(1100);
  for(const theme of ['light','dark']){
   await page.evaluate(t=>document.documentElement.dataset.theme=t,theme);
   const scan=await new AxeBuilder({page}).analyze();expect(scan.violations).toEqual([]);

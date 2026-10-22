@@ -5,8 +5,8 @@ import { currentData } from '../lib/data';
 import '../styles/heatmap.css';
 const { release, index } = await currentData();
 ---
-<Shell title="Model heatmap · Demo">
-  <div class="page-heading"><div><span class="eyebrow">Experimental view</span><h1>Models at a glance</h1><p class="lede">Compare strengths across tasks. Select a score to inspect the answers.</p></div><a class="edition-link" href="/editions/">Edition {release.release_id.slice(8,16)}</a></div>
-  <nav class="view-switch" aria-label="Results view"><a href="/">Task rankings</a><a href="/heatmap/" aria-current="page">Heatmap <small>Demo</small></a></nav>
+<Shell title="Model heatmap">
+  <div class="page-heading"><div><span class="eyebrow">Results by category</span><h1>Models at a glance</h1><p class="lede">Compare strengths across tasks. Select a score to inspect the answers.</p></div><a class="edition-link" href="/editions/">Edition {release.release_id.slice(8,16)}</a></div>
+  <nav class="view-switch" aria-label="Results view"><a href="/">Task rankings</a><a href="/heatmap/" aria-current="page">Heatmap</a></nav>
   <Heatmap data={index} client:load/>
 </Shell>

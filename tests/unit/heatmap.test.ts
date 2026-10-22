@@ -23,3 +23,10 @@ it('keeps qualified results below eligible scores even when sorting low to high'
  const rows=heatmapRows(fixture(),'off',true);
  for(const ascending of [false,true]) expect(sortHeatmapRows(rows,'reading',ascending).map(r=>r.config.id)).toEqual(['new','old']);
 });
+it('omits unscored setups but preserves genuine zero scores and qualified results',()=>{
+ const d=fixture();
+ d.aggregates.filter(r=>r.configuration_id==='new').forEach(r=>{r.score=null;r.scored=0;});
+ expect(heatmapRows(d,'off',true).map(r=>r.config.id)).toEqual(['old']);
+ d.aggregates.filter(r=>r.configuration_id==='old').forEach(r=>r.score=0);
+ expect(heatmapRows(d,'off')[0]!.config.id).toBe('old');
+});

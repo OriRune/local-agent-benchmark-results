@@ -370,3 +370,22 @@ A new results edition needs a matching preview inventory before its previews sho
 The sheet-music organization task (`real_linux2-R5`) is retired from current
 browsing via `retired-questions.ts`. Its immutable data and archived answers remain
 available; this presentation rule does not change grades or scoring denominators.
+
+Current browsing shows `Local` on compact setup labels. Model setup selectors and
+speed groups retain explicit test-machine RAM (not a memory requirement).
+The heatmap omits setups with no scored categories; genuine zero scores remain.
+It expands vertically with the document, retaining horizontal overflow only
+where the viewport cannot fit the columns. Asterisks mark ranking qualifications,
+not partial-credit answers.
+
+Outcome metrics use assessed tasks as their denominator. Completed outputs count
+full-credit, partial-credit and incorrect assessed results; failures to finish
+remain in the overall pass-rate denominator. Technical/untested/held outcomes are
+unknown and excluded from all three rates. Nonbinary mean-credit scores retain
+their original definition. Outcome colors are centralized in `outcomes.css`.
+
+The reading-page explanation translates the original saved `check_books` record;
+it never regrades an answer. The duplicate and browser-error fields were
+informational, and the final-reply keyword requirement was not explicit in the
+prompt. See `/methodology/#reading-page-grading`. Any partial-credit revision or
+retry experiment requires a separate versioned scoring/evidence workflow.

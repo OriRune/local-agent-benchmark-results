@@ -1,8 +1,9 @@
 import type { OverviewData } from './public-types';
 import type { Aggregate, Configuration } from './public-contract';
-export function hardwareLabel(config: Configuration): string {
+export function hardwareLabel(config: Configuration, detail = false): string {
   if (config.execution_kind === 'cloud') return `Cloud · ${config.cloud_provider ?? 'provider recorded in setup'}`;
-  return config.hardware_id === 'desktop-32gb' ? 'Desktop · 32 GB RAM' : config.hardware_id === 'desktop-128gb' ? 'Desktop · 128 GB RAM' : 'Hardware profile: ' + (config.hardware_id ?? 'unrecorded');
+  if (!detail) return 'Local';
+  return config.hardware_id === 'desktop-32gb' ? 'Local · test machine with 32 GB RAM' : config.hardware_id === 'desktop-128gb' ? 'Local · test machine with 128 GB RAM' : 'Local · hardware profile: ' + (config.hardware_id ?? 'unrecorded');
 }
 export function resultStatus(config: Configuration, result?: Omit<Aggregate, 'trial_ids'>): string {
   if (config.status === 'withdrawn') return 'Withdrawn setup';

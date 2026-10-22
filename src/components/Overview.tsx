@@ -4,6 +4,8 @@ import { hardwareLabel, resultStatus } from '../lib/result-status';
 import { conditionLabel } from '../lib/reasoning';
 import { useEffect, useState } from 'react';
 import Takeaways from './Takeaways';
+import OutcomeMetrics from './OutcomeMetrics';
+import CompletionNote from './CompletionNote';
 import QualityTimeChart from './QualityTimeChart';
 import type { OverviewData } from '../lib/public-types';
 import { parseOverviewView, overviewViewQuery, type OverviewView } from '../lib/overview-view';
@@ -61,7 +63,7 @@ export default function Overview({ data, releaseId }: { data: OverviewData; rele
         {row.artifact.files.map(file => <p key={file.name}>{file.name}{file.url ? <> · <a href={file.url}>Exact GGUF file →</a></> : <small>Exact download source unresolved.</small>}{file.hash_type === 'header_1m_sha256' && <small>Historical first-MiB hash only; not a full-file identity.</small>}</p>)}
       </details>
     </td>
-    <td><span className="score number">{row.score === null ? '—' : suite.metric_kind === 'binary' ? `${row.result.full_credit}/${row.result.scored}` : `${(row.score * 100).toFixed(1)}%`}</span><small className={!row.eligible ? 'warning' : ''}>{row.result.scored}/{row.result.planned} scored</small>{!row.eligible && <small className="warning">{resultStatus(row.config, row.result)}</small>}{row.score !== null && <div className="bar" aria-hidden="true"><span style={{ width: `${row.score * 100}%` }}/></div>}</td>
+    <td><OutcomeMetrics result={row.result} binary={suite.metric_kind === 'binary'}/><small className={!row.eligible ? 'warning' : ''}>{row.result.scored}/{row.result.planned} scored</small>{!row.eligible && <small className="warning">{resultStatus(row.config, row.result)}</small>}</td>
     <td className="number">{row.config.execution_kind === 'cloud' ? <>Excluded<small>Cloud · quality only</small></> : <>{row.result.median_task_s === null ? '—' : `${row.result.median_task_s.toFixed(1)}s`}<small>median · {row.result.timed} measured</small></>}</td>
     <td className="number">{row.config.execution_kind === 'cloud' ? <>Hosted<small>{row.config.cloud_provider}</small></> : <>{formatBytes(row.artifact.total_bytes)}<small>weights, not required RAM</small></>}</td>
     <td><button disabled={!selection.ready} aria-label={`Compare ${row.checkpoint.name}`} aria-pressed={selected.some(s => s.configurationId === row.config.id && s.conditionId === row.condition.id)} onClick={() => toggle({ configurationId: row.config.id, conditionId: row.condition.id })}>{selected.some(s => s.configurationId === row.config.id && s.conditionId === row.condition.id) ? 'Added ✓' : '+ Add'}</button></td>
@@ -80,6 +82,7 @@ export default function Overview({ data, releaseId }: { data: OverviewData; rele
     {!rows.length && <p className="empty">No supported setups match these filters. Try removing the memory budget or changing the architecture.</p>}
     {!showAll && rows.some(r => !r.eligible) && <section className="panel"><h2>Results with qualifications</h2><p className="muted">{rows.filter(r => !r.eligible).length} selected setups are outside the ranked results. Each row explains whether results are missing, held, withdrawn, or require a comparison qualification. Missing results are not zeros.</p><details><summary>Inspect qualified and unavailable results</summary>{renderRows(rows.filter(r => !r.eligible))}</details></section>}
     <p className="footnote">One setup per model: eligible results first, then greatest scored coverage, then the declared baseline; score and speed never select the setup. Other quants and hardware runs remain on the model page. Ordered by recorded score within each group; ties use a stable setup order, not speed. Coverage is shown beside every score. This table ranks the selected task; the heatmap also shows a balanced overall index. Weight download size is not required RAM.</p>
+    <CompletionNote/>
     <QualityTimeChart metric={suite.metric} binary={suite.metric_kind === 'binary'} rows={chartRows}/>
     {mode !== 'all' && <details className="recorded-observations"><summary>More observations · separate download-size comparison groups</summary><Takeaways data={data} suiteId={suiteId} mode={mode} releaseId={releaseId}/></details>}
     <ComparisonTray data={data} releaseId={releaseId} suiteId={suiteId} {...selection}/>

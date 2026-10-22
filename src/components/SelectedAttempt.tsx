@@ -5,6 +5,7 @@ import type { Component, Object as EvidenceObject } from '../lib/public-contract
 import type { QuestionData } from '../lib/public-types';
 import type { AnswerIndex } from './QuestionAnswers';
 import { conditionLabel } from '../lib/reasoning';
+import ReadingPageAssessment from './ReadingPageAssessment';
 import { outcomeReasons } from '../lib/task-outcomes';
 import { availabilitySummary, checkEntries, outcomeView, referenceEntries } from '../lib/answer-view';
 import { runHardware } from '../lib/hardware';
@@ -81,6 +82,7 @@ export default function SelectedAttempt({ data, index, attemptId, editionId, rel
       <p className="answer-setup">{[artifact?.quantization, conditionLabel(condition), `${trial.kind} seed ${trial.seed}`].filter(Boolean).join(' · ')}</p>
       {!attempt.canonical && <p><span className="badge">Historical · not counted in current score</span></p>}
       <p className="answer-outcome"><span className="badge outcome-badge" data-outcome={outcome.key}>{outcome.label}</span> <strong>{outcome.credit}</strong></p>
+      {assessment?.category === 'failed_to_finish' && <p className="completion-context">This run stopped within the test’s limits without an accepted result. More budget or a retry might help; recovery was not measured. <a href="/methodology/#completion-and-retries">What this means for everyday use →</a></p>}
       <p className="answer-timing">{timing}</p>
       <details className="run-details"><summary>Test machine and run settings</summary>
         <dl className="spec-list">{settings.map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
@@ -88,6 +90,7 @@ export default function SelectedAttempt({ data, index, attemptId, editionId, rel
       </details>
       <div className="answer-actions">{resultsHref && <a href={resultsHref}>← {model} results for this setup</a>}<CopyLink path={href(attempt.id)}/></div>
     </header>
+    {q.id === READING_PAGE_QUESTION && <ReadingPageAssessment key={attempt.id} attempt={attempt} objects={data.objects}/>}
     {q.id === READING_PAGE_QUESTION && (editionId || releaseId) && <GeneratedPagePreview key={attempt.id} attemptId={attempt.id} questionId={q.id} releaseId={(editionId || releaseId)!} evidenceIds={[...attempt.components.tools.object_ids, ...attempt.components.checks.object_ids]}/>}
     <div className="reading-grid">
       <QuestionText data={data}/>
