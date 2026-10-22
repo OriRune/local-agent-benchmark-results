@@ -1,0 +1,3 @@
+
+
+Hello! To get your local weather forecast, please provide your location. *Once you provide your location, I will look up the forecast for you.* *Note: This tool works for most major cities and towns.*

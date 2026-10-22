@@ -1,3 +1,4 @@
+import { setupCandidates } from './setup-selection';
 import { visibleCondition } from './reasoning';
 import type { OverviewData } from './public-types';
 import type { Selection } from './comparison';
@@ -8,13 +9,14 @@ export type ModelView = Selection & { suiteId: string };
 export function modelDefaults(data: OverviewData, checkpointId: string): ModelView {
   const checkpoint = data.checkpoints.find(c => c.id === checkpointId);
   if (!checkpoint) throw new Error('This model is unavailable.');
-  const config = data.configurations.find(c => c.artifact_id === checkpoint.baseline_artifact_id)
-    || data.configurations.find(c => data.artifacts.some(a => a.id === c.artifact_id && a.checkpoint_id === checkpointId));
-  if (!config) throw new Error('No tested configuration is available for this model.');
-  const condition = data.conditions.find(c => c.configuration_id === config.id && c.kind === 'baseline' && visibleCondition(c) && c.reasoning_requested === 'off')
-    || data.conditions.find(c => c.configuration_id === config.id && c.kind === 'baseline' && visibleCondition(c))!;
   const suite = data.suites.find(s => s.family_id === 'basic') || data.suites[0];
-  if (!condition || !suite) throw new Error('No baseline test selection is available for this model.');
+  if (!suite) throw new Error('No test selection is available for this model.');
+  const selected = setupCandidates(data, checkpointId, suite.id)[0];
+  if (selected) return { configurationId: selected.config.id, conditionId: selected.condition.id, suiteId: suite.id };
+  const config = data.configurations.find(c => c.artifact_id === checkpoint.baseline_artifact_id) || data.configurations.find(c => data.artifacts.some(a => a.id === c.artifact_id && a.checkpoint_id === checkpointId));
+  if (!config) throw new Error('No tested configuration is available for this model.');
+  const condition = data.conditions.find(c => c.configuration_id === config.id && c.kind === 'baseline' && visibleCondition(c));
+  if (!condition) throw new Error('No baseline test selection is available for this model.');
   return { configurationId: config.id, conditionId: condition.id, suiteId: suite.id };
 }
 export function parseModelView(search: string, data: OverviewData, checkpointId: string): ModelView {

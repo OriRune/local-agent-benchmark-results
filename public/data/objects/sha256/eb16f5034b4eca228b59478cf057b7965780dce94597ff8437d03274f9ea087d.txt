@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The ICD-10 codes refer to codes from the International Classification of Diseases, 10th revision, used to annotate French death certificates. The paper's dictionaries contained 3,539 ICD-10 codes (run 2) and 6,392 ICD-10 codes (run 1). One specific example given is I509, assigned to the term 'insuffisance cardiaque aigue'. Zero to multiple ICD-10 codes could be assigned to each line of a death certificate.",
+  "evidence": [0, 3, 4, 5, 10]
+}
+```

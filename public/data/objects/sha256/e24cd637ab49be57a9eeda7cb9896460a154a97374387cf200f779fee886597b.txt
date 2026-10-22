@@ -1,0 +1,3 @@
+
+
+{"answer": "The paper does not describe training a traditional ML model. Instead, the system uses three data sources: (1) occupation lists gathered from various internet sources including crowdsourced and government lists, (2) a names corpus of 5453 male and 6990 female names sourced from the CMU repository of names, and (3) DBpedia, queried via SPARQL to retrieve evidence of real people with specific occupations, genders, timeframes, and regions.", "evidence": ["12", "13", "23"]}

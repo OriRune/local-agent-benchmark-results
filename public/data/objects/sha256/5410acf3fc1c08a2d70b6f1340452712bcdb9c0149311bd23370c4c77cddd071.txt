@@ -1,0 +1,8 @@
+I've created the script `system_monitor.sh` that displays RAM and CPU usage information. The script:
+
+- Shows CPU usage percentage by reading from `/proc/stat`
+- Displays RAM usage (total, used, and percentage) by reading from `/proc/meminfo`
+- Has fallback methods using `top` and `free` commands if `/proc` files aren't available
+- Provides a clean, formatted output in the terminal
+
+To use it, make it executable with `chmod +x system_monitor.sh` and run it with `./system_monitor.sh`.

@@ -1,0 +1,6 @@
+Done. I reverted the most recent commit's change directly by editing the file:
+
+- **Commit undone:** `1da55b2` — "raise the download timeout from 10 to 20 seconds"
+- **Change:** `app/config.py` line 3, `TIMEOUT_S = 20` → `TIMEOUT_S = 10`
+
+The file now matches its state before that commit. No git commands were used to alter history.

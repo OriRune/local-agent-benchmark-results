@@ -1,0 +1,10 @@
+
+
+Looking at this problem, I need to combine 10, 1, 2, and 6 to get 24.
+
+Let me try: (10 - 1) * 2 + 6
+= 9 * 2 + 6
+= 18 + 6
+= 24 ✓
+
+<answer>(10 - 1) * 2 + 6</answer>

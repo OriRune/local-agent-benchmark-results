@@ -1,0 +1,7 @@
+Done. Your to-do list now persists across reloads.
+
+What changed:
+- **On load** — tasks are read from `localStorage` (key `todo.tasks`) instead of starting empty
+- **On every change** — `render()` calls `save()`, which writes the current list back to storage. Since add, check-off, edit, and delete all go through `render()`, the saved state is always up to date
+
+So you can close the tab, come back later, and your items (including checked/edited ones) will still be there. Nothing else in the app was affected — the add/edit/delete/export features all still work the same way.

@@ -1,0 +1,1 @@
+<answer>False — the prerequisites contain a cycle: 9 → 10 → 8 → 9.</answer>

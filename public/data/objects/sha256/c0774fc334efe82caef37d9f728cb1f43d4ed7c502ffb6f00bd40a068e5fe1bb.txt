@@ -1,0 +1,21 @@
+The retry logic is in `app/net.py`, and the settings are in `app/config.py`.
+
+**The code:**
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3 → attempts 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)     # sleep before retrying
+raise RuntimeError(f"giving up on {url}")
+```
+
+**Working it out** — on every failed attempt it sleeps `2 ** attempt` seconds:
+
+| attempt | sleep |
+|---------|-------|
+| 0 | 2⁰ = 1 s |
+| 1 | 2¹ = 2 s |
+| 2 | 2² = 4 s |
+
+Total = 1 + 2 + 4 = **7 seconds** before it gives up and raises `RuntimeError`.

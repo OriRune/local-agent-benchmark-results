@@ -1,0 +1,4 @@
+{
+  "answer": "They do not train a model; instead, their de-biasing system uses two datasets: Occupation Data (gathered from crowdsourced and government lists) and Names Data (a corpus of 5453 male and 6990 female names sourced from the CMU repository of names).",
+  "evidence": ["[11]", "[12]", "[13]"]
+}

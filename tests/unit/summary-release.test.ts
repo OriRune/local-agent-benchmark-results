@@ -38,6 +38,35 @@ it('imports approved synthetic analysis with independently reconstructed facts a
   const destination = join(root, 'site'); expect(await importRelease(source, destination, { progress: false })).toBe(manifest.release_id);
   expect(JSON.parse(await readFile(join(destination, 'latest.json'), 'utf8')).release_id).toBe(manifest.release_id);
 });
+it('imports an attributed agent review only with separate user publication authorization', async () => {
+  const summary: PublicBenchmarkSummaryV1 = await object(manifest.summary_objects[0]!.object_id);
+  if (summary.editorial.state !== 'approved') throw new Error('Expected synthetic approved fixture');
+  const author = structuredClone(summary.generator), generated = summary.generated_at;
+  summary.editorial = { ...summary.editorial, reviewer_kind: 'agent', reviewer_name: 'Codex', publication_authorization: {
+    authorized_by: 'user', authorized_at: '2026-10-21T23:00:00Z', instruction: 'Synthetic authorization to publish.' } };
+  await save(summary);
+  await expect(verifyRelease(source)).resolves.toHaveProperty('release.release_id', manifest.release_id);
+  expect(summary.generator).toEqual(author); expect(summary.generated_at).toBe(generated);
+  summary.editorial.publication_authorization.instruction = ''; await save(summary);
+  await expect(verifyRelease(source)).rejects.toThrow();
+});
+it('verifies explicit offline source provenance and rejects invented condition-edit history', async () => {
+  const summary: PublicBenchmarkSummaryV1 = await object(manifest.summary_objects[0]!.object_id);
+  const packet = await object(manifest.summary_objects[0]!.facts_object_id);
+  const conditions = [...summary.content.verdict.condition_ids];
+  summary.provenance = { stage: 'direct', input_summary_ids: [], contributors: [] };
+  summary.editorial = { state: 'approved', edited: true, edit_author: 'Codex', reviewed_at: '2026-10-21T23:00:00Z',
+    reviewer_kind: 'agent', reviewer_name: 'Independent agent', supersedes_summary_id: null,
+    publication_authorization: { authorized_by: 'user', authorized_at: '2026-10-21T22:00:00Z', instruction: 'Synthetic authorization.' } };
+  summary.failed_response_editorial = { source_job_id: summary.job_id, source_input_sha256: 'a'.repeat(64), source_state_sha256: 'b'.repeat(64),
+    source_receipt_sha256: 'c'.repeat(64), original_content_sha256: 'd'.repeat(64), source_status: 'claims_failed',
+    source_validation_errors: 'Claim 0: wrong subject or condition', correction_kind: 'foreign_condition_ids_only', editor: 'Codex',
+    changes: [{ claim_path: 'verdict', original_condition_ids: [...conditions, 'foreign-condition'], corrected_condition_ids: conditions }] };
+  await save(summary); await expect(verifyRelease(source)).resolves.toHaveProperty('release.release_id',manifest.release_id);
+  summary.failed_response_editorial.changes[0]!.corrected_condition_ids = [];
+  expect(packet.analysis_input_hash).toBe(summary.evidence.analysis_input_hash);
+  await save(summary); await expect(verifyRelease(source)).rejects.toThrow('condition-reference edit provenance differs');
+});
 it.each(['draft', 'number', 'limitations', 'stale', 'cycle'])('rejects %s even after the attacker recomputes object and release hashes', async kind => {
   const summary: PublicBenchmarkSummaryV1 = await object(manifest.summary_objects[0]!.object_id);
   if (kind === 'draft') summary.editorial = { state: 'draft', reviewed_at: null, edited: false, supersedes_summary_id: null };

@@ -1,0 +1,9 @@
+The README.md has been created at `README.md`. It lists all three command line options from the CLI (defined in `app/cli.py`) with their exact help text:
+
+| Option | Help Text |
+|--------|-----------|
+| `URL` (positional) | what to download |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+
+The README also includes a usage summary, example commands, project structure overview, and configuration defaults from `app/config.py`.

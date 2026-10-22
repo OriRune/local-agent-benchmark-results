@@ -1,0 +1,1 @@
+I have created a `README.md` file that lists the program name, usage, and all command-line options with their corresponding help text as defined in `app/cli.py`.

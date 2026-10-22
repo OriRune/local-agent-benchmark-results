@@ -1,0 +1,11 @@
+```json
+{
+ "answer": "The system does not use a training dataset in the traditional sense; instead, it utilizes an Occupation Data set (gathered from crowdsourced and government lists), a Names Data set (sourced from the CMU repository of names, NLTK data set, and baby name records), and DBpedia for fetching evidence via SPARQL queries.",
+ "evidence": [
+  11,
+  12,
+  13,
+  23
+ ]
+}
+```

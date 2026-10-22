@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "They use 11,529,432 segmented words (obtained from parts of Chinese Wikipedia articles after word segmentation and stopword filtering).",
+  "evidence": [12]
+}
+```

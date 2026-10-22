@@ -1,0 +1,5 @@
+I found it. The file you're looking for is:
+
+**`Desktop/trip ideas 2025.txt`**
+
+This is a text file with "ideas" in the name, and "trip" is the closest match to "vacation." There's also a similar file, `Documents/Personal/Summer Break ideas.docx`, in case that's the one you meant instead.

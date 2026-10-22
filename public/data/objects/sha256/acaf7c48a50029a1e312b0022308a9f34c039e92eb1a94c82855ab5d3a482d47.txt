@@ -1,0 +1,24 @@
+# T7
+
+**Result:** fail · error · 1 steps · 1 calls · 2 s
+
+## user
+
+Add a function format_bytes(n) to app/util.py that returns a human-readable size such as '1.5 KB', and remove the TODO comment about it.
+
+## assistant
+
+- call `read_file` `{"path":"app/util.py","start_line":1,"end_line":250}`
+
+<details><summary>read_file result (131 chars)</summary>
+
+```
+app/util.py (5 lines)
+1	def clamp(x, lo, hi):
+2	    return max(lo, min(hi, x))
+3	
+4	
+5	# TODO: add a helper that formats byte sizes
+```
+
+</details>

@@ -1,0 +1,33 @@
+Looking at this problem, I need to find the probability that the sum of 1d12 + 1d10 + 1d4 ≥ 11.
+
+## Setting Up the Problem
+
+**Total outcomes:** 12 × 10 × 4 = 480
+
+I'll count outcomes where the sum ≤ 10, then subtract from 480.
+
+## Counting Sums ≤ 10
+
+For each value of the d4 (c = 1, 2, 3, 4), I need a + b ≤ 10 - c:
+
+**c = 1:** a + b ≤ 9 (a: 1-12, b: 1-10)
+→ Counting pairs: 36 outcomes
+
+**c = 2:** a + b ≤ 8
+→ Counting pairs: 28 outcomes
+
+**c = 3:** a + b ≤ 7
+→ Counting pairs: 21 outcomes
+
+**c = 4:** a + b ≤ 6
+→ Counting pairs: 15 outcomes
+
+**Total with sum ≤ 10:** 36 + 28 + 21 + 15 = **100**
+
+## Calculating the Probability
+
+**Outcomes with sum ≥ 11:** 480 - 100 = 380
+
+**Probability:** 380/480 = **19/24**
+
+<answer>19/24</answer>

@@ -1,0 +1,1 @@
+Define a function called `get_weather` that accepts a `location` parameter. Use the `requests` library to fetch data from a weather API endpoint. Store the response in a variable named `response_json`. Extract the temperature using the key `main.temp`. Return the formatted forecast to the user.

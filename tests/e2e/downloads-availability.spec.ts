@@ -12,9 +12,12 @@ test('test definitions expose recorded availability and aggregate CSV downloads 
   for (const name of ['Coding & tools', 'Reasoning', 'Instructions', 'Reading & evidence', 'Corrections']) await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
   const suite = index.suites[0];
   await page.goto(`/tests/${suite.id}/`);
+  await expect(page.getByRole('heading', { name: 'Question bank', exact: true })).toBeVisible();
+  await page.locator('.suite-method > summary').click();
   await page.getByText('Recorded evidence availability', { exact: true }).click();
   const table = page.getByRole('region', { name: 'Evidence availability counts', exact: true });
   await expect(table).toBeVisible();
+  await expect(page.locator('.suite-method')).toContainText('They are evidence-component counts, not scored questions');
   const entries = index.availability.filter((row: { suite_id: string }) => row.suite_id === suite.id);
   const total = entries.reduce((n: number, row: { count: number }) => n + row.count, 0);
   const shown = await table.locator('td').allTextContents();

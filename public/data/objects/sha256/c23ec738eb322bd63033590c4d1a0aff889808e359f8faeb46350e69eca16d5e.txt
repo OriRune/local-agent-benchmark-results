@@ -1,0 +1,9 @@
+The bookstore tells the truth, so the movie theater’s statement that the bookstore tells the truth is true. Thus the movie theater tells the truth.
+
+The library says the movie theater lies, but the movie theater tells the truth, so the library lies.
+
+The vineyard says the library tells the truth, but the library lies, so the vineyard lies.
+
+The farm says the vineyard lies, and the vineyard does lie, so the farm tells the truth.
+
+**yes, no, no**

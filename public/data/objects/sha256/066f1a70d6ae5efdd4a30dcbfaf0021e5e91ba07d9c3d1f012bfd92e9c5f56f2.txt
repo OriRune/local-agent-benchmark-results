@@ -1,0 +1,1 @@
+{"answer":"Sixteen people ranked captions for 30 images by funniness without being told their sources. The paper also compared average Bokete user star ratings for NJM and STAIR captions.","evidence":[12,13,14]}

@@ -1,0 +1,6 @@
+Done. Here's what I changed in `app/util.py`:
+
+- **Added** the `format_bytes(n)` function, which divides the byte count by 1024 until it fits in a unit (B, KB, MB, GB, TB, PB) and returns a string like `'1.5 KB'`. Values under 1024 bytes are returned as whole-byte counts (e.g. `'1 B'`).
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.
+
+Note: I couldn't execute a runtime test since the sandbox denies program execution in this session, but the implementation follows the standard formatting logic.

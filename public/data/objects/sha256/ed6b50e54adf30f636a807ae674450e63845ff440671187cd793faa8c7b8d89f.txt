@@ -1,0 +1,9 @@
+
+
+Looking at this problem, I need to use 6, 4, 4, 4 exactly once each to make 24.
+
+Let me try: 6 * 4 = 24, and I can use the remaining 4s to add and subtract:
+
+6 * 4 + 4 - 4 = 24 + 4 - 4 = 24 ✓
+
+<answer>6 * 4 + 4 - 4</answer>

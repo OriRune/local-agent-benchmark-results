@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "TF-IDF (Term frequency-Inverse document frequency) features extracted using a sparse vectorizer (bag-of-words technique)",
+  "evidence": ["8"]
+}
+```

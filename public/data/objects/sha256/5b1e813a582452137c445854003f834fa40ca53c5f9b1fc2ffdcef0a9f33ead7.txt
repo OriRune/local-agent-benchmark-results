@@ -1,0 +1,7 @@
+Let \(S_n\) be the sum of the entries in row \(n\). The recurrence gives
+\[
+S_{n+1}=2S_n+n-1,\qquad S_1=1,
+\]
+so \(S_n=2^n-n\). Since \(2^{2023}\) has units digit \(8\), the units digit of \(2^{2023}-2023\) is \(8-3=5\), choice \(\textbf{D}\).
+
+DDDDD

@@ -1,0 +1,9 @@
+I've created `README.md` for the project.
+
+The CLI (`python -m app.cli`, prog `tinydl`) is defined in `app/cli.py` using `argparse`, and it exposes exactly three options. I documented each with its help text:
+
+- **`url`** — positional argument, "what to download"
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+
+Note: I couldn't execute `--help` to confirm the rendered output, since running programs is disabled in this session. The table above is transcribed directly from the `argparse` definitions in `app/cli.py`, so it matches the source exactly.

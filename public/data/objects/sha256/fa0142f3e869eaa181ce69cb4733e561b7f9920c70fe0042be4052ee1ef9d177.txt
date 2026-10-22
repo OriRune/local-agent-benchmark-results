@@ -1,0 +1,6 @@
+Done. I searched all Python files (recursively) and found exactly two TODO comments:
+
+1. `app/net.py:7` — "log each failed attempt"
+2. `app/util.py:5` — "add a helper that formats byte sizes"
+
+Both were added as new lines to `todo.txt`, matching the existing `-` prefix style. The file now contains 5 lines (3 original + 2 new).

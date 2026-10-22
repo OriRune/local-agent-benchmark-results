@@ -1,0 +1,44 @@
+# T4
+
+**Result:** pass · error · 2 steps · 2 calls · 4 s
+
+## user
+
+Create a file hello.txt containing exactly this line: hello from the local agent
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>
+
+## assistant
+
+- call `write_file` `{"path":"hello.txt","content":"hello from the local agent\n"}`
+
+<details><summary>write_file result (27 chars)</summary>
+
+```
+created hello.txt (1 lines)
+```
+
+</details>
+
+## files changed
+
+### hello.txt (created)
+
+```
+hello from the local agent
+
+```

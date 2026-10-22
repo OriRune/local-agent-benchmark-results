@@ -1,0 +1,37 @@
+# Finding the Probability of Rolling 10 or Higher
+
+## Setup
+- **1d12** (values 1-12), **1d10** (values 1-10), **1d2** (values 1-2)
+- Total outcomes: 12 × 10 × 2 = **240**
+
+## Counting the Complement (Sum ≤ 9)
+
+**When d2 = 1** (need d12 + d10 ≤ 8):
+| d12 | Max d10 | Count |
+|-----|---------|-------|
+| 1 | 7 | 7 |
+| 2 | 6 | 6 |
+| 3 | 5 | 5 |
+| 4 | 4 | 4 |
+| 5 | 3 | 3 |
+| 6 | 2 | 2 |
+| 7 | 1 | 1 |
+Subtotal: **28**
+
+**When d2 = 2** (need d12 + d10 ≤ 7):
+| d12 | Max d10 | Count |
+|-----|---------|-------|
+| 1 | 6 | 6 |
+| 2 | 5 | 5 |
+| 3 | 4 | 4 |
+| 4 | 3 | 3 |
+| 5 | 2 | 2 |
+| 6 | 1 | 1 |
+Subtotal: **21**
+
+## Final Calculation
+- Outcomes with sum ≤ 9: 28 + 21 = **49**
+- Outcomes with sum ≥ 10: 240 − 49 = **191**
+- Since 191 is prime and doesn't divide 240, the fraction is already reduced.
+
+<answer>191/240</answer>

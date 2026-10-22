@@ -1,0 +1,8 @@
+Created `README.md`. Since running the CLI was blocked in this session, I documented the options directly from `app/cli.py`'s `build_parser()`, capturing each option with its exact help text.
+
+The README covers all three command-line options of the `tinydl` CLI:
+- `url` — positional, "what to download"
+- `-o`/`--output` — "file to write (default: stdout)"
+- `-q`/`--quiet` — "no progress output"
+
+It also includes a short project description, usage synopsis, and examples.

@@ -1,0 +1,10 @@
+I have created a Python script named `sys_info.py` that displays the current CPU and RAM usage of the computer. It uses the `psutil` library to retrieve accurate system metrics.
+
+The script provides:
+- **CPU Usage**: The current percentage of CPU being used.
+- **RAM Usage**: The amount of used RAM versus the total available RAM, along with the usage percentage.
+
+You can run the script using:
+```bash
+python3 sys_info.py
+```

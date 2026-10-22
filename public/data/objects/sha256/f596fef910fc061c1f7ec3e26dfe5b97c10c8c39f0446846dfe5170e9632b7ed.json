@@ -1,0 +1,1 @@
+["We need to make 24 using numbers 9,5,6,3 each once, using + - * /. Find expression equals 24.\n\nTry combos: 6*5=30, 30-9=21, +3=24 => (6*5 - 9) + 3 = 24. That's using each once. Expression: (6*5-9)+3. Use parentheses. That's valid.\n\nCheck: 6*5=30, 30-9=21, +3=24. Yes.\n\nThus final answer: (6*5-9)+3."]

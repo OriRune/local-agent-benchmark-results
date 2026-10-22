@@ -1,0 +1,7 @@
+I've written `README.md`. It documents every command line option of the `tinydl` CLI (`python -m app.cli`), taken directly from the argparse definition in `app/cli.py`:
+
+- **`url`** — positional, required — "what to download"
+- **`-o` / `--output`** — "file to write (default: stdout)"
+- **`-q` / `--quiet`** — "no progress output"
+
+Each entry includes the exact help text as defined in the source. (I couldn't run `--help` to cross-check, since running programs is blocked in this session, but the parser is simple enough to document accurately from the source.)

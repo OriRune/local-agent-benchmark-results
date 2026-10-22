@@ -1,0 +1,6 @@
+```text
+o("Hi! What’s your *location*?")
+o(location = {user_location})
+o(forecast = get_forecast(location))
+o("Here’s the *forecast* for {location}: {conditions}, {temperature}, and {precipitation}.")
+```

@@ -1,0 +1,8 @@
+
+
+Done. Renamed `fetch` → `download` in `app/net.py` (line 6) and updated the only other usages in `app/cli.py`:
+
+- `from app.net import fetch` → `from app.net import download`
+- `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+A project-wide search confirms no remaining references to `fetch`. (I tried a quick import check in the sandbox, but program execution is disabled in this session, so verification is by search only.)

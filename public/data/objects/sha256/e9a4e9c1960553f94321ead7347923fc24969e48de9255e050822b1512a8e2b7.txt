@@ -1,0 +1,3 @@
+
+
+Done. The most recent commit (`209a842`) had changed `TIMEOUT_S` from 10 to 20 in `app/config.py`. I edited the file directly, reverting it to `TIMEOUT_S = 10`. `git diff` confirms the file now matches the pre-commit version exactly (blob hash `8658610`), with no git commands used to modify anything.

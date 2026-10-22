@@ -1,0 +1,1 @@
+{"check":{"cpu_percent":false,"exit":0,"finished":true,"measured":"7.7 of 31.3 GB used (25%)","output":"fields: ['cpu', '333913351', '27456232', '43497859', '1073967635', '12143742', '0', '367736', '0', '1235116', '0']\nawk would print: 1491346555 1073967635","ram_plausible":false,"script":"check_stat.py"},"score":0}

@@ -70,6 +70,7 @@ export function buildSummaryPacket(data, configurationId) {
     numeric(record, 'score', record.score, 'normalized_credit'); numeric(record, 'median_task_s', record.median_task_s, 'seconds');
     numeric(record, 'generated_tokens_per_s', record.generated_tokens_per_s, 'tokens_per_second');
     for (const outcome of Object.keys(record.states).sort()) numeric(record, `states.${outcome}`, record.states[outcome], 'trials');
+    for (const outcome of Object.keys(record.outcome_counts??{}).sort()) numeric(record, `outcome_counts.${outcome}`, record.outcome_counts[outcome], 'trials');
   }
   for (const record of comparisons) {
     for (const metric of ['score_pairs', 'time_pairs', 'planned_pairs', 'improved', 'worsened', 'unchanged']) numeric(record, metric, record[metric], 'pairs');
@@ -89,14 +90,22 @@ export function buildSummaryPacket(data, configurationId) {
   ];
   if (aggregates.some(a => !a.eligible)) limitations.push('Some suite/condition results are incomplete or ineligible; their observed scores are previews.');
   if (config.compatibility !== 'known') limitations.push('Execution compatibility is uncertain; causal or superiority claims are unsupported.');
-  if (conditions.some(c => !['verified','native_reasoning'].includes(c.verification))) limitations.push('Some requested reasoning conditions lack verified control.');
-  if (conditions.some(c => c.verification === 'native_reasoning')) limitations.push('This is a native reasoning checkpoint. Its Instruct counterpart is a related checkpoint with different weights, not a matched thinking-off run of this GGUF.');
+  if(config.execution_kind==='cloud') {
+    limitations.push("Hosted provider/precision condition, not a local GGUF run. Cloud timing and memory are excluded from all local speed and memory comparisons. The hosted output allowance includes reasoning; it does not guarantee the separate local thinking cap. No verified thinking-on/off comparison was run.");
+    limitations.push(data.outcome_policy ? data.outcome_policy.description+' Authorized infrastructure retries count once per scheduled trial; original failures remain in history.' : "Resolved trials can include unscored no-answer, context-hold, review and provider-error outcomes. Scores summarize only scored trials; missing outcomes are not wrong answers or successes. Authorized infrastructure retries count once per scheduled trial; original failures remain in history.");
+    const reasons=canonicalAttempts.map(a=>a.outcome_reason??'').join(' ');
+    if(!data.outcome_policy&&(reasons.includes('finish=length')||reasons.includes('output_limit_exhausted'))) limitations.push("Some hosted trials exhausted the output allowance without a visible answer. They remain unscored; high scores among completed answers do not establish success on these missing responses.");
+    if(reasons.includes('finish=stop')) limitations.push("Some hosted trials ended normally according to the provider but supplied no visible answer. Their cause is not established by the stop marker; they remain unscored, not confirmed provider outages or ordinary wrong answers.");
+  } else {
+    if (conditions.some(c => !['verified','native_reasoning'].includes(c.verification))) limitations.push("Some requested reasoning conditions lack verified control.");
+    if (conditions.some(c => c.verification === 'native_reasoning')) limitations.push("This is a native reasoning checkpoint. Its Instruct counterpart is a related checkpoint with different weights, not a matched thinking-off run of this GGUF.");
+  }
   if (objects.some(o => o.availability === 'redacted')) limitations.push('Some selected evidence has recorded publication redactions.');
   const investigations=(data.investigations??[]).filter(r=>r.configuration_id===config.id);
   limitations.push(...investigations.map(r=>r.text));
   const counts = rows => rows.reduce((out, a) => { out[a.status] = (out[a.status] ?? 0) + 1; return out; }, {});
   const history = { canonical_outcomes: counts(canonicalAttempts), historical_attempt_incidents: counts(attempts.filter(a => !a.canonical)), unknown_attempt_attribution: attempts.filter(a => a.attempted === null).length };
-  const policies = Object.fromEntries(['schema_version', 'export_version', 'aggregation_version', 'publication_policy_hash', 'protocol_id'].map(key => [key, data[key]]));
+  const policies = Object.fromEntries(['schema_version', 'export_version', 'aggregation_version', 'publication_policy_hash', 'protocol_id', 'outcome_policy'].filter(key=>key in data).map(key => [key, data[key]]));
   const inputs = { facts_version: 'analyst-facts-v1', selection_policy: 'balanced-examples-v1', policies, subject: { checkpoint, artifact, configuration: config },
     conditions, suites, aggregates, comparisons, repetitions, history, numeric_facts: order(facts), selection, examples, objects,
     limitations: limitations.map(text => ({ id: `limitation-${digest(text).slice(0, 24)}`, text })) };
@@ -106,9 +115,37 @@ export function buildSummaryPacket(data, configurationId) {
     generation_eligibility: { eligible, reason: eligible ? null : 'No complete eligible suite in a compatible configuration.', scored_baseline_trials: aggregates.reduce((sum, a) => sum + a.scored, 0) }, inputs };
 }
 
+export function verifyEditorialReview(editorial) {
+  requireThat(['human', 'agent'].includes(editorial.reviewer_kind), 'Summary reviewer kind is not explicit');
+  if (editorial.reviewer_kind === 'agent') {
+    const authorization = editorial.publication_authorization;
+    requireThat(typeof editorial.reviewer_name === 'string' && editorial.reviewer_name.trim(), 'Agent summary reviewer must be named');
+    requireThat(authorization?.authorized_by === 'user' && typeof authorization.instruction === 'string' && authorization.instruction.trim() &&
+      typeof authorization.authorized_at === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|\+00:00)$/.test(authorization.authorized_at) && Number.isFinite(Date.parse(authorization.authorized_at)), 'Agent summary lacks separate user publication authorization');
+  }
+}
+
 export function verifySummaryDependencies(summary, packet, data) {
   requireThat(summary.summary_id === `summary-${digest(Object.fromEntries(Object.entries(summary).filter(([key]) => key !== 'summary_id')))}`, 'Summary content identity differs');
   requireThat(summary.editorial.state === 'approved' && ['direct', 'subject_synthesis'].includes(summary.provenance.stage), 'Summary is not an approved final analysis');
+  verifyEditorialReview(summary.editorial);
+  const source = summary.failed_response_editorial;
+  if (source) {
+    requireThat(!summary.editorial_basis && source.source_job_id === summary.job_id && source.source_status === 'claims_failed' &&
+      source.correction_kind === 'foreign_condition_ids_only' && summary.editorial.reviewer_kind === 'agent' &&
+      summary.provenance.stage === 'direct' && summary.provenance.contributors.length === 0 &&
+      source.source_validation_errors.split('; ').every(error => /^Claim \d+: wrong subject or condition$/.test(error)) &&
+      summary.editorial.edited && summary.editorial.edit_author === 'Codex' && summary.editorial.supersedes_summary_id === null,
+      'Offline editorial response provenance differs');
+    const claims = new Map([['verdict', summary.content.verdict], ...['strengths','weaknesses','thinking_tradeoffs','limitations','peer_comparisons'].flatMap(section => (summary.content[section] ?? []).map((claim, number) => [`${section}[${number}]`, claim]))]);
+    const seen = new Set();
+    for (const change of source.changes) {
+      const before = change.original_condition_ids, after = change.corrected_condition_ids;
+      requireThat(!seen.has(change.claim_path) && claims.has(change.claim_path) && !same(before, after) &&
+        same(before.filter(id => after.includes(id)), after) && same(claims.get(change.claim_path).condition_ids, after), 'Offline condition-reference edit provenance differs');
+      seen.add(change.claim_path);
+    }
+  } else requireThat(summary.editorial.supersedes_summary_id !== null, 'Approved revision lacks source draft or failed-response provenance');
   if (summary.editorial_basis) requireThat(summary.editorial.supersedes_summary_id === summary.editorial_basis.source_summary_id && summary.editorial.edit_author === summary.editorial_basis.edit_author, 'Editorial provenance differs from the approved revision');
   const base = buildSummaryPacket(data, summary.subject.configuration_id);
   const expected = summary.summary_schema_version === 2 ? enrichReaderPacket(base, data) : base;

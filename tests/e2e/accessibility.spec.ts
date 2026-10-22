@@ -34,6 +34,7 @@ for (const theme of ['light', 'dark'] as const) {
         await page.getByRole('button', { name: /^Compare / }).first().click();
         await expect(page.getByLabel('Comparison selection')).toBeVisible();
       }
+      if (route.name === 'suite') await page.locator('.suite-method > summary').click();
       if (route.name === 'tests' || route.name === 'suite') await page.getByText('Recorded evidence availability', { exact: true }).first().click();
       if (route.name === 'model') await expect(page.getByLabel('Thinking condition', { exact: true })).toBeVisible();
       if (route.name === 'comparison') {
@@ -42,7 +43,8 @@ for (const theme of ['light', 'dark'] as const) {
       }
       if (route.name === 'question') {
         await expect(page.locator('.evidence pre').first()).toBeVisible();
-        await page.getByText('Reveal reference answers and checks', { exact: true }).click();
+        await expect(page.locator('.grade-block .evidence[data-state=loading]')).toHaveCount(0);
+        await page.getByText('Test machine and run settings', { exact: true }).click();
       }
       const result = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
       const obscuredContrast = [];

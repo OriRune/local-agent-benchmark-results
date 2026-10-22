@@ -1,0 +1,1 @@
+Fixed. The issue was that `KB` was defined as 1000 instead of 1024 in the UNITS dictionary, which contradicted the docstring stating "1 KB = 1024 bytes" and the test expectations.

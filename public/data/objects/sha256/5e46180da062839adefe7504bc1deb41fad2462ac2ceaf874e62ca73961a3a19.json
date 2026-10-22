@@ -1,0 +1,1 @@
+["I need to make 24 using 10, 4, 9, 7 exactly once each, with +, -, *, /.\n\nLet me try different combinations:\n\n- 10 + 4 + 9 + 7 = 30 (too high)\n- 10 + 4 + 9 - 7 = 16 (too low)\n- 10 + 4 - 9 + 7 = 12 (too low)\n- 10 - 4 + 9 + 7 = 22 (close)\n- 10 * 4 - 9 - 7 = 40 - 16 = 24 ✓\n\nLet me verify: 10 * 4 = 40, 40 - 9 = 31, 31 - 7 = 24. Yes!\n\nSo the answer is 10 * 4 - 9 - 7.\n"]

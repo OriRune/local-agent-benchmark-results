@@ -1,0 +1,12 @@
+**7 seconds.**
+
+Working it out from the code:
+
+- `app/config.py` sets `MAX_RETRIES = 3`, so `fetch` in `app/net.py` tries at most 3 times (`attempt = 0, 1, 2`).
+- After each failed attempt it sleeps `2 ** attempt`:
+  - attempt 0 → 2⁰ = **1 s**
+  - attempt 1 → 2¹ = **2 s**
+  - attempt 2 → 2² = **4 s**
+- If all 3 fail, it sleeps after each, then raises `RuntimeError("giving up on {url}")`.
+
+Total sleep = 1 + 2 + 4 = **7 seconds**.

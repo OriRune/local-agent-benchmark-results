@@ -1,0 +1,40 @@
+# T6
+
+**Result:** fail · error · 2 steps · 2 calls · 8 s
+
+## user
+
+How many Python files are in the app folder, and which one is the largest?
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>
+
+## assistant
+
+- call `find_files` `{"pattern":"*.py","path":"app","sort":"size"}`
+
+<details><summary>find_files result (142 chars)</summary>
+
+```
+903 bytes  app/cli.py
+324 bytes  app/net.py
+243 bytes  app/units.py
+101 bytes  app/config.py
+100 bytes  app/util.py
+  0 bytes  app/__init__.py
+```
+
+</details>

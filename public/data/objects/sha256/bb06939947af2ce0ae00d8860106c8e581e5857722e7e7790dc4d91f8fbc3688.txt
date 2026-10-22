@@ -1,0 +1,18 @@
+## Solution
+
+Setting up the two-stage rocket equation with total Δv = 9,400 m/s:
+
+**Stage 1** (Isp = 290 s, dry 4,000 kg, propellant 36,000 kg):
+- m₀ = 4,000 + 36,000 + M₂ + 1,200 (carries stage 2 + payload)
+- m_f = 4,000 + M₂ + 1,200 (after propellant burned)
+- Δv₁ = 290 × 9.80665 × ln(m₀/m_f)
+
+**Stage 2** (Isp = 340 s, dry 900 kg, propellant p₂):
+- Δv₂ = 340 × 9.80665 × ln((900 + p₂)/900)
+
+Solving Δv₁ + Δv₂ = 9,400 m/s:
+- Δv₁ ≈ 4,568.9 m/s
+- Δv₂ ≈ 4,831.1 m/s
+- **p₂ ≈ 2,932.7 kg**
+
+ANSWER: 2932.7 kg

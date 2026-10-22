@@ -1,0 +1,3 @@
+The calculation is consistent. Stage 2 must carry 11,529.39 kg of propellant.
+
+ANSWER: 11529.39

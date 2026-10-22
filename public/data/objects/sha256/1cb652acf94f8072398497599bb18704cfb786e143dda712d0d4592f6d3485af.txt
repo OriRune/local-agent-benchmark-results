@@ -1,0 +1,8 @@
+Good news — it already does. The persistence was part of the original build:
+
+- **`load()`** (line 104) reads saved items from `localStorage` when the page opens.
+- **`save()`** (line 109) writes to `localStorage` on every change — adding, checking off, editing, deleting, or clearing.
+
+So your items are stored in the browser and will still be there when you reload or close and reopen the page. They persist as long as you use the same browser and don't clear that browser's site data.
+
+One note: this is per-browser and per-device (it's stored locally in your browser, not sent anywhere), so items won't sync across different machines. Want me to add anything else, like a way to clear all data or export/import a backup file?

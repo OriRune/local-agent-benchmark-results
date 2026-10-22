@@ -1,0 +1,27 @@
+part 1
+
+vader: you assassinated a fake jedi. do you understand the damage you have done?
+
+server: i believed the evidence was genuine, my lord. i might have acted too quickly.
+
+vader: “might have”? your hesitation now is as useless as your judgment then.
+
+***
+
+part 2
+
+server: i might have mistaken a staged lightsaber for proof. i might have trusted the wrong informant.
+
+vader: you might have questioned the evidence. you might have checked the target’s identity. instead, you killed an innocent.
+
+server: i accept responsibility.
+
+***
+
+part 3
+
+vader: responsibility will not bring the dead back. you might remember this failure the next time you are given a command.
+
+server: i will, my lord. i might never earn your trust again, but i will not repeat this mistake.
+
+vader: see that you do not.***

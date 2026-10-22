@@ -1,0 +1,8 @@
+Looking at the numbers 9, 5, 6, 3, I need to find a combination that equals 24.
+
+Let me try: (9 - 3) * 5 - 6
+- 9 - 3 = 6
+- 6 * 5 = 30
+- 30 - 6 = 24 ✓
+
+<answer>(9 - 3) * 5 - 6</answer>

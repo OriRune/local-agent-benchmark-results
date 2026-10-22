@@ -13,6 +13,8 @@ async function fixture() {
   const root = await mkdtemp(join(tmpdir(), 'dist-scan-')); roots.push(root);
   await importRelease(resolve('tests/fixtures/release-v1'), join(root, 'data'), { progress: false });
   await writeFile(join(root, 'index.html'), '<!doctype html><html><body><pre>&lt;script&gt;literal answer&lt;/script&gt;</pre></body></html>');
+  await mkdir(join(root, 'heatmap'));
+  await writeFile(join(root, 'heatmap', 'index.html'), '<!doctype html><html><body><h1>Model heatmap</h1></body></html>');
   return root;
 }
 it('finds raw and escaped credentials without returning their values', () => {

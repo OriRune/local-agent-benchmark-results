@@ -1,0 +1,21 @@
+Use coordinates consistent with the diagram:
+\[
+A=(0,0),\quad D=(0,16),\quad C=(107,16),\quad B=(107,0).
+\]
+Let \(E=(x,16)\). Since \(EF=184\) and \(FG=17\),
+\[
+F=(x+184,16),\quad H=(x,33),\quad G=(x+184,33).
+\]
+
+Write the circle through \(A,D,H,G\) as
+\[
+X^2+Y^2+pX+qY+r=0.
+\]
+Substituting \(A\) and \(D\) gives \(r=0\) and \(q=-16\). Subtracting the equations for \(H\) and \(G\) gives \(p=-(2x+184)\). Substituting \(H\) then yields
+\[
+x^2+184x-561=0=(x-3)(x+187).
+\]
+Since \(D,E,C\) occur in that order, \(0<x<107\), so \(x=3\). Therefore,
+\[
+CE=107-3=\boxed{104}.
+\]

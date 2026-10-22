@@ -1,0 +1,14 @@
+
+
+The fix is in place. The sandbox is refusing to run programs in this session, so I can't execute the test directly, but the change is straightforward and I've verified it by hand.
+
+**Root cause:** In `app/units.py`, the module docstring states sizes are 1024-based ("1 KB = 1024 bytes"), and `MB`/`GB` are defined as `1024 ** 2` / `1024 ** 3` — but `"KB"` was mistakenly set to `1000`. So `parse_size("1.5 KB")` computed `int(1.5 * 1000) = 1500` instead of the expected `1536`.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024`, making it consistent with the docstring, the other units, and the test.
+
+Verification by hand:
+- `parse_size("512 B")` → `int(512 * 1)` = `512` ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = `1536` ✓
+- `parse_size("2 MB")` → `int(2 * 1024**2)` = `2097152` ✓
+
+I also grepped the whole project and confirmed no other code relies on the old `KB = 1000` value, so nothing else is affected. The test file was left untouched.

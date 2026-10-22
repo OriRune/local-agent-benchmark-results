@@ -1,0 +1,10 @@
+I need to make 24 using 6, 2, 2, 4 with each number used once.
+
+Let me try different combinations:
+
+- 6 × 4 × (2 - 2) = 0, no
+- 6 × 4 + 2 - 2 = 24, yes!
+
+Let me verify: 6 × 4 = 24, then 24 + 2 = 26, then 26 - 2 = 24. ✓
+
+<answer>6 * 4 + 2 - 2</answer>

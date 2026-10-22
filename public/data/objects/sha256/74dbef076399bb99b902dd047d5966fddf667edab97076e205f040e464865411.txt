@@ -1,0 +1,3 @@
+
+
+{"answer": "They trained a word2vec word embedding model on a set of 189,206 financial articles (containing 161,877,425 tokens) manually downloaded from Factiva, which include sources such as the Financial Times and relate to companies from the United States.", "evidence": [4]}

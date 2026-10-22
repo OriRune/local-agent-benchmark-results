@@ -1,8 +1,10 @@
 import type {SpeedChart} from '../lib/summary-view';
+import {TestMachineNote} from './TestMachine';
 export default function SummarySpeedChart({chart}:{chart:SpeedChart}){
   return <figure className="summary-peer-chart summary-speed-chart"><figcaption><strong>Speed and task success: {chart.title}</strong><span>{chart.mode} · Matching test-machine label and settings · Across model sizes</span></figcaption>
     <p className="chart-note">Shorter task time is better only when the result is useful. These times include failures, tools and grading. Token generation speed measures a different part of the work.</p>
     <details><summary>Compare timings and outcomes</summary><div className="table-scroll" role="region" aria-label="Speed and task success" tabIndex={0}><table><thead><tr><th>Model</th><th>Typical task time</th><th>Generation speed</th><th>{chart.binary?'Tasks passed':'Average score'}</th></tr></thead><tbody>{chart.rows.map((r,i)=><tr key={i} className={r.subject?'peer-subject':''}><th scope="row">{r.href?<a href={r.href}>{r.name}</a>:r.name}{r.subject&&<small>This model</small>}</th><td>{r.median_task_s.toFixed(1)} seconds<small>{r.timed} of {r.planned} tasks timed</small></td><td>{r.generated_tokens_per_s===null?'Not fully measured':`${r.generated_tokens_per_s.toFixed(1)} tokens/s`}</td><td>{chart.binary?`${r.full_credit} of ${r.scored}`:`${(r.score*100).toFixed(1)}/100`}<small>{r.scored} of {r.planned} scored</small></td></tr>)}</tbody></table></div></details>
     <p className="chart-note">Results from this test setup, not a promise for your computer. Hardware, software, tokenizers and answer length can change the ordering. Historical runtime builds were not always captured. Comparison saved with the {chart.date} assessment.</p>
+    <TestMachineNote/>
   </figure>;
 }

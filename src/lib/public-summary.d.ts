@@ -71,6 +71,20 @@ export type PublicBenchmarkSummaryV1 = {
         edited: boolean;
         supersedes_summary_id: string;
         edit_author?: string;
+      }
+    | {
+        state: "approved";
+        reviewed_at: string;
+        reviewer_kind: "agent";
+        edited: boolean;
+        supersedes_summary_id: string | null;
+        edit_author?: string;
+        reviewer_name: string;
+        publication_authorization: {
+          authorized_by: "user";
+          authorized_at: string;
+          instruction: string;
+        };
       };
   provenance: {
     stage:
@@ -109,6 +123,32 @@ export type PublicBenchmarkSummaryV1 = {
     review_dataset_revision_id: string;
     proposal_sha256: string;
     edit_author: "Codex";
+  };
+  failed_response_editorial?: {
+    source_job_id: string;
+    source_input_sha256: string;
+    source_state_sha256: string;
+    source_receipt_sha256: string;
+    original_content_sha256: string;
+    source_status: "claims_failed";
+    source_validation_errors: string;
+    correction_kind: "foreign_condition_ids_only";
+    editor: "Codex";
+    /**
+     * @minItems 1
+     */
+    changes: [
+      {
+        claim_path: string;
+        original_condition_ids: string[];
+        corrected_condition_ids: string[];
+      },
+      ...{
+        claim_path: string;
+        original_condition_ids: string[];
+        corrected_condition_ids: string[];
+      }[]
+    ];
   };
 };
 

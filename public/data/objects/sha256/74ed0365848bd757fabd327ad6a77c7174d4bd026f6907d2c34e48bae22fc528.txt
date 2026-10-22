@@ -1,0 +1,4 @@
+{
+  "answer": "The paper defines eighteen propaganda (persuasion) techniques, ranging from emotional tactics such as loaded language, appeal to authority and slogans, to logical fallacies such as straw‑man, hidden ad‑hominem and red‑herring, among others.",
+  "evidence": [3]
+}

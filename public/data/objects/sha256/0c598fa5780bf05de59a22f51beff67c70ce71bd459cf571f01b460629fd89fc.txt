@@ -1,0 +1,36 @@
+
+
+Looking at this problem, I need to find the probability that 1d12 + 1d10 + 1d2 ≥ 10.
+
+**Total outcomes:** 12 × 10 × 2 = 240
+
+**Strategy:** Count outcomes where the sum is ≤ 9, then subtract from 240.
+
+**Case d2 = 1:** Need d12 + d10 ≤ 8
+- d12=1: d10 ≤ 7 → 7 ways
+- d12=2: d10 ≤ 6 → 6 ways
+- d12=3: d10 ≤ 5 → 5 ways
+- d12=4: d10 ≤ 4 → 4 ways
+- d12=5: d10 ≤ 3 → 3 ways
+- d12=6: d10 ≤ 2 → 2 ways
+- d12=7: d10 ≤ 1 → 1 way
+- Subtotal: 28
+
+**Case d2 = 2:** Need d12 + d10 ≤ 7
+- d12=1: d10 ≤ 6 → 6 ways
+- d12=2: d10 ≤ 5 → 5 ways
+- d12=3: d10 ≤ 4 → 4 ways
+- d12=4: d10 ≤ 3 → 3 ways
+- d12=5: d10 ≤ 2 → 2 ways
+- d12=6: d10 ≤ 1 → 1 way
+- Subtotal: 21
+
+**Total outcomes with sum ≤ 9:** 28 + 21 = 49
+
+**Outcomes with sum ≥ 10:** 240 − 49 = 191
+
+**Probability:** 191/240
+
+Since 191 is prime and doesn't divide 240, the fraction is already reduced.
+
+<answer>191/240</answer>

@@ -1,0 +1,7 @@
+Done. The rename is complete and verified:
+
+- **`app/net.py`**: `def fetch(url, get):` → `def download(url, get):`
+- **`app/cli.py`**: `from app.net import fetch` → `from app.net import download`
+- **`app/cli.py`**: `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+A project-wide search confirms no remaining references to `fetch`. (The sandbox denied running a Python compile check, but the edits are syntactically trivial renames and both files were re-read to confirm they look correct.)

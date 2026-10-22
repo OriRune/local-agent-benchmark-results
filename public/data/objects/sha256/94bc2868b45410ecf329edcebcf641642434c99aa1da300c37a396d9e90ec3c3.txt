@@ -1,0 +1,21 @@
+
+
+I read the file. Here's the breakdown:
+
+**Different books:** There are 22 data rows, but "Project Hail Mary" appears twice (rows 2 and 8, identical entries), so you read **21 different books**.
+
+**Finished between July and December 2025** (end date in that range):
+1. Dune — 2025-07-10
+2. The Hobbit — 2025-07-19
+3. Sapiens — 08/15/2025
+4. The Night Circus — 2025-09-12
+5. Tomorrow and Tomorrow and Tomorrow — 2025-09-30
+6. The Thursday Murder Club — 2025-10-09
+7. Babel — 2025-11-05
+8. Lessons in Chemistry — 2025-11-20
+9. A Psalm for the Wild-Built — 2025-11-24
+10. The Bear and the Nightingale — 2025-12-16
+
+That's **10 books**. (Middlemarch was started in August but has no end date, so it doesn't count as finished.)
+
+ANSWER: 21, 10

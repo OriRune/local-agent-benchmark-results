@@ -1,0 +1,44 @@
+# H6
+
+**Result:** fail · error · 2 steps · 2 calls · 3 s
+
+## user
+
+If every attempt in fetch fails, how many seconds does it spend sleeping in total before it gives up? Work it out from the code.
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>
+
+## assistant
+
+- call `find_files` `{"pattern":"*","path":".","sort":"name"}`
+
+<details><summary>find_files result (130 chars)</summary>
+
+```
+notes.md
+todo.txt
+app/__init__.py
+app/cli.py
+app/config.py
+app/net.py
+app/units.py
+app/util.py
+data/events.log
+tests/test_units.py
+```
+
+</details>

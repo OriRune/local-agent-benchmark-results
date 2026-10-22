@@ -1,0 +1,23 @@
+I'll solve this using BFS to find the shortest path.
+
+Let me index the grid (row, col) starting from 0:
+
+```
+Row 0: O O O X O O O X O
+Row 1: X X O O O X O X X
+Row 2: O O O O O O O O O
+Row 3: X O O O O O O O O
+Row 4: O X O O O O O O X
+Row 5: O O O O O O O O X
+Row 6: O O X X O O X O X
+Row 7: O X O O X O X * #
+```
+
+- Start `*` at (7,7)
+- Destination `#` at (7,8)
+
+Since the destination is immediately to the right of the start, the shortest path is just one step right.
+
+Let me verify: (7,7)=`*`, (7,8)=`#`. Moving right from (7,7) reaches (7,8). ✓
+
+<answer>right</answer>

@@ -1,0 +1,3 @@
+
+
+{"answer": "Text features are extracted using a classical sparse vectorizer based on Term Frequency-Inverse Document Frequency (TF-IDF), and classifiers rely on a bag-of-words technique. The text data consists of titles and content excerpts from retrieved web pages, which are clustered to group texts that are 'distributively' similar.", "evidence": ["8", "5"]}

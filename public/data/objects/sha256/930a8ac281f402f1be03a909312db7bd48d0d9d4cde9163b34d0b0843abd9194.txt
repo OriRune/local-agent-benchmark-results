@@ -1,0 +1,19 @@
+
+
+Looking at this puzzle, I need to analyze each statement:
+
+**Olivia's statement:** "Benjamin is a villain or Benjamin is a hero"
+This is a tautology — it's always true no matter what Benjamin is. Since Olivia told the truth, **Olivia is a hero**.
+
+**Oliver's statement:** "Olivia is a hero and Olivia is a villain"
+This is a contradiction — it's always false. Since Oliver lied, **Oliver is a villain**.
+
+**Benjamin's statement:** "Olivia is a hero"
+We already determined Olivia is a hero, so this statement is true. Since Benjamin told the truth, **Benjamin is a hero**.
+
+Verification:
+- Olivia (hero) tells truth: "Benjamin is a villain or hero" → True ✓
+- Oliver (villain) lies: "Olivia is a hero and a villain" → False ✓
+- Benjamin (hero) tells truth: "Olivia is a hero" → True ✓
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

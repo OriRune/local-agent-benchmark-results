@@ -1,0 +1,3 @@
+Done. I reverted the change from the most recent commit (`36f0f2d`) by editing `app/config.py` directly.
+
+The commit had raised `TIMEOUT_S` from `10` to `20`. I changed it back to `10`, so the working tree now matches the state before that commit (the diff against the commit's version shows the file restored to its original content). No git commands were used to alter history.

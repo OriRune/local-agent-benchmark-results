@@ -1,0 +1,5 @@
+I found and fixed the bug.
+
+**Why the test failed:** In `app/units.py`, the `UNITS` dictionary defined `KB` as `1000` (a decimal/SI value), but the module docstring states the code uses *1024-based units* (`1 KB = 1024 bytes`). So `parse_size("1.5 KB")` returned `int(1.5 * 1000) = 1500` instead of the expected `1536`.
+
+**Fix:** Changed `KB` from `1000` to `1024`, matching the 1024-based convention used by the other units and required by the test. The `B` and `MB` entries already matched the test, so they were left unchanged.

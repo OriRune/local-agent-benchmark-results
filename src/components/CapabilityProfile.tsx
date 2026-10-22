@@ -1,0 +1,8 @@
+import { suiteLabel } from '../lib/suite-label';
+import type { OverviewData } from '../lib/public-types';
+import { creditLabel } from '../lib/chart-data';
+import OutcomeBar from './OutcomeBar';
+
+export default function CapabilityProfile({data,configurationId,conditionId,onInspect}: {data:OverviewData;configurationId:string;conditionId:string;onInspect:(id:string)=>void}) {
+  return <section className="capability-profile" id="capabilities" aria-labelledby="capabilities-title"><h2 id="capabilities-title">What does it do well?</h2><p className="chart-description">Select a category to explore the answers. {data.outcome_policy ? 'Bars show what happened on every planned task. Incorrect answers and failures to finish both earn zero; technical problems and untested tasks stay unscored.' : 'Scores reflect assessed tasks; coverage is shown separately.'}</p><div className="capability-rows">{data.suites.map(s=>{const result=data.aggregates.find(a=>a.configuration_id===configurationId&&a.condition_id===conditionId&&a.suite_id===s.id);return <button key={s.id} className="capability-row" onClick={()=>onInspect(s.id)} aria-label={`Inspect ${s.name}`}><span>{suiteLabel(data,s)}<small>{s.metric}</small></span>{result?.outcome_counts ? <OutcomeBar result={result}/> : <span className={`profile-track ${result?.score==null?'missing-track':!result.eligible?'preview-track':''}`} aria-hidden="true"><span style={{width:`${(result?.score??0)*100}%`}}/></span>}<span className="capability-value"><strong>{creditLabel(result,s.metric_kind==='binary')}</strong><small>{result?`${result.scored}/${result.planned} scored${result.eligible?'':' · Preview'}`:'Not planned'}</small></span></button>})}</div></section>;
+}

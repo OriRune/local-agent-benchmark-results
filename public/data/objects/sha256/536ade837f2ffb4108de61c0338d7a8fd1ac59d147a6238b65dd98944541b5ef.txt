@@ -1,0 +1,1 @@
+Done. I've created a README.md that documents all CLI command line options with their help text from the `argparse` configuration in `app/cli.py`.

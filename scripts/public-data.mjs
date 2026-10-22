@@ -1,3 +1,5 @@
+import { validateOutcomeAssessment, validateScoringReview } from './task-outcomes.mjs';
+import { readDataset } from '../src/lib/dataset-parts.mjs';
 import { validateCategories } from '../src/lib/categories.mjs';
 import { searchRecords } from './search-index.mjs';
 import { createHash } from 'node:crypto';
@@ -45,7 +47,8 @@ export async function verifyRelease(root, { progress = false, releasePath = 'rel
   const datasetSchemaBytes = await readFile(new URL('dataset.schema.json', contractRoot));
   if (!ajv.validate(releaseSchema, release)) throw new Error('Invalid public release schema');
   if (release.release_id !== identity('release-', release, 'release_id')) throw new Error('Release identity mismatch');
-  if (![hash(datasetSchemaBytes), hash(await readFile(new URL('legacy-dataset.schema.json', contractRoot))), hash(await readFile(new URL('reader-dataset.schema.json', contractRoot)))].includes(release.contract_sha256)) throw new Error('Public contract pack differs');
+  // Optional cloud metadata preserves compatibility with the pre-cloud pack.
+  if (![hash(datasetSchemaBytes), '195686ed016adb130210fa9bbf0519d32455978beb9146519f4bf25587bedb03', '694c0baa6225fe5eb9b19f5429318f3523ac89ec6eee15edd71dcc6502a9e5e2', '5b98a967ff0a175876cb931da7faab45f37ed77e94598b9c20bf9b979d6e27ca', 'e72531ad79d8de3fc148f54be97640ff1dca08d69d4b884c8e886b0c0e57629c', '63e5bf3ab8ddb3b5f5fe15c1ca9321895e9acc1b9d1c683b99043501d4f34baf', hash(await readFile(new URL('legacy-dataset.schema.json', contractRoot))), hash(await readFile(new URL('reader-dataset.schema.json', contractRoot)))].includes(release.contract_sha256)) throw new Error('Public contract pack differs');
   const records = new Map(release.objects.map(o => [o.id, o]));
   if (records.size !== release.objects.length) throw new Error('Duplicate object identity');
   let count = 0;
@@ -55,7 +58,7 @@ export async function verifyRelease(root, { progress = false, releasePath = 'rel
   }
   const required = [release.dataset_object_id, release.index_object_id, ...Object.values(release.model_objects), ...Object.values(release.question_objects), ...release.summary_objects.flatMap(s => [s.object_id, s.facts_object_id])];
   if (required.some(id => !records.has(id))) throw new Error('Dangling release reference');
-  const dataset = JSON.parse(await readObject(root, records.get(release.dataset_object_id)));
+  const dataset = await readDataset(release, async id => JSON.parse(await readObject(root, records.get(id))));
   if (!ajv.validate(JSON.parse(datasetSchemaBytes), dataset)) throw new Error(`Invalid public dataset: ${ajv.errors?.[0]?.instancePath}`);
   if (dataset.dataset_revision_id !== identity('dataset-', dataset, 'dataset_revision_id') || dataset.dataset_revision_id !== release.dataset_revision_id) throw new Error('Dataset identity mismatch');
   validateCategories(dataset);
@@ -67,15 +70,33 @@ export async function verifyRelease(root, { progress = false, releasePath = 'rel
   function get(kind, id) { const record = indexes[kind].get(id); if (!record) throw new Error(`Dangling ${kind} reference`); return record; }
   for (const c of dataset.checkpoints) if (get('artifacts', c.baseline_artifact_id).checkpoint_id !== c.id) throw new Error('Mismatched baseline artifact');
   for (const a of dataset.artifacts) get('checkpoints', a.checkpoint_id);
-  for (const c of dataset.configurations) get('artifacts', c.artifact_id);
+  for (const c of dataset.configurations) {
+    get('artifacts', c.artifact_id);
+    if ((c.execution_kind === 'cloud' || c.runtime === 'openrouter') && (c.speed_eligible !== false || c.hardware_id !== null || !c.cloud_provider)) throw new Error('Cloud provider/speed policy missing');
+  }
+  const protocols = dataset.protocol_ids ?? [dataset.protocol_id];
+  if (!protocols.includes(dataset.protocol_id)) throw new Error('Primary protocol absent');
   for (const c of dataset.conditions) {
+    if (!protocols.includes(c.protocol_id)) throw new Error('Undeclared condition protocol');
     get('configurations', c.configuration_id);
     if(c.verification==='native_reasoning' && (c.reasoning_requested!=='on'||dataset.conditions.some(other=>other.configuration_id===c.configuration_id&&other.reasoning_requested==='off'))) throw new Error('Native reasoning cannot have an off toggle');
     if(c.observed_reasoning==='enabled' && (c.reasoning_requested!=='off'||c.verification==='verified'||!c.presentation_included)) throw new Error('Observed reasoning is not a verified toggle');
   }
   const canonicalResults = new Map();
   for (const a of dataset.attempts) {
-    get('trials', a.trial_id);
+    validateOutcomeAssessment(a);
+    if (dataset.outcome_policy && a.canonical && !a.assessment) throw new Error('Missing versioned outcome assessment');
+    const trial = get('trials', a.trial_id);
+    if(a.scoring_review) {
+      const original=get('attempts',a.scoring_review.source_attempt_id);
+      validateScoringReview(a,original,trial.question_id);
+      if(a.id!=='attempt-'+hash(canonical([original.id,a.scoring_review,a.components.checks])).slice(0,24)) throw new Error('Scoring revision identity differs');
+      const receipt=JSON.parse(await readObject(root,records.get(a.components.checks.object_ids[0])));
+      const originalChecks=JSON.parse(await readObject(root,records.get(original.components.checks.object_ids[0])));
+      if(receipt.score!==a.score||canonical(receipt.reference)!==canonical(a.scoring_review.reviewed_reference)||receipt.original_attempt_id!==original.id||canonical(receipt.original_checks)!==canonical(originalChecks))throw new Error('Review receipt differs from grade/history');
+    }
+    const config = get('configurations', trial.configuration_id);
+    if (config.speed_eligible === false && [a.wall_s, a.usage.generation_s, a.usage.prefill_s, ...Object.entries(a.resources).filter(([k]) => k !== 'method').map(([,v]) => v)].some(v => v !== null)) throw new Error('Cloud speed/resource measurements forbidden');
     if (a.canonical) {
       if (canonicalResults.has(a.trial_id)) throw new Error('Duplicate canonical outcome');
       canonicalResults.set(a.trial_id, a);
@@ -94,6 +115,12 @@ export async function verifyRelease(root, { progress = false, releasePath = 'rel
     const scored = observed.filter(r => r.status === 'scored');
     const score = scored.length ? scored.reduce((sum, r) => sum + r.score, 0) / scored.length : null;
     if (scored.length !== a.scored || (score === null ? a.score !== null : a.score === null || Math.abs(score - a.score) > 1e-9)) throw new Error('Aggregate credit differs from recorded outcomes');
+    if (a.outcome_counts) {
+      const counts=Object.fromEntries(Object.keys(a.outcome_counts).map(k=>[k,0]));
+      counts.untested=plan.length-observed.length;
+      for(const r of observed) { if(!r.assessment) throw new Error('Missing assessed outcome'); counts[r.assessment.category]++; }
+      if(canonical(counts)!==canonical(a.outcome_counts)) throw new Error('Outcome counts differ from canonical trials');
+    }
     if (a.eligible && (!a.planned || a.scored !== a.planned || a.ineligible_reasons.length)) throw new Error('Incomplete result marked eligible');
   }
   function refs(value) {

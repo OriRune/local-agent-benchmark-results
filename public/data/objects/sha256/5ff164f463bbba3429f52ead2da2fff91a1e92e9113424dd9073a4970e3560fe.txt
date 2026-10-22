@@ -1,0 +1,6 @@
+Done. I reverted the change from the most recent commit (b2bdf70) by editing `app/config.py` directly, without using git.
+
+- The commit `b2bdf70` ("raise the download timeout from 10 to 20 seconds") changed `TIMEOUT_S` from `10` to `20`.
+- I edited `app/config.py` to change `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`.
+
+The file now matches its state before that commit. No git commands were used to modify anything.

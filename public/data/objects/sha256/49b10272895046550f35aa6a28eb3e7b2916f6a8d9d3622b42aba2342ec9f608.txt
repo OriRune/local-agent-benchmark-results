@@ -1,0 +1,16 @@
+
+
+Done. I searched all Python files and found two TODO comments:
+
+1. `app/net.py:7` — `# TODO: log each failed attempt`
+2. `app/util.py:5` — `# TODO: add a helper that formats byte sizes`
+
+Both were appended to `todo.txt` as new lines, matching the existing `- ` list style:
+
+```
+- write README
+- add proxy support
+- tag the release
+- TODO: log each failed attempt
+- TODO: add a helper that formats byte sizes
+```

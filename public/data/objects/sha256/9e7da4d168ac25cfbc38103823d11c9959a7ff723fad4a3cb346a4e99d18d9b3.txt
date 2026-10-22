@@ -1,0 +1,1 @@
+The rename is fully complete. All three occurrences of `fetch` referencing `app.net` have been updated to `download` across `app/net.py` and `app/cli.py`. No further action is needed.

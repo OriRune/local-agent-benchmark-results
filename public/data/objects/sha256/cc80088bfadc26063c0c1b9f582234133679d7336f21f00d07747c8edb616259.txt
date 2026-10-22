@@ -1,0 +1,4 @@
+{
+  "answer": "They use a word2vec model trained on a large corpus of financial news articles (≈189,206 articles from Factiva) as their finance‑specific word embedding.",
+  "evidence": [4, 17]
+}

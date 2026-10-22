@@ -1,0 +1,14 @@
+The most recent git commit (`e26e870`) changed `app/config.py`, flipping `TIMEOUT_S` from `10` to `20`. I undid that change directly by editing the file:
+
+- **File**: `app/config.py`
+- **Change**: `TIMEOUT_S = 20` → `TIMEOUT_S = 10`
+
+The file now reads:
+```
+"""Settings for the downloader."""
+MAX_RETRIES = 3
+TIMEOUT_S = 10
+USER_AGENT = "tiny-downloader/0.2"
+```
+
+This was done by direct file editing, not via git commands.

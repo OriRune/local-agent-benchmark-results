@@ -1,0 +1,7 @@
+The README.md is written and verified. It lists all three CLI options from `app/cli.py` with their exact help text:
+
+- **`url`** (positional) — "what to download"
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+
+I also included a brief project description, the usage form (`tinydl [options] <url>`), and examples. The help text is copied verbatim from the argparse definitions, so it matches what `tinydl --help` would print.

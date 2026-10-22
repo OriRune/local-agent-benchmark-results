@@ -1,0 +1,15 @@
+Each resident owns at least one of the four things, since everyone owns a bag of candy hearts. Let \(x\) be the number who own all four, and \(y\) the number who own exactly one.
+
+Counting residents gives
+\[
+y+437+234+x=900,
+\]
+so \(y+x=229\).
+
+Counting ownerships using the four item totals gives
+\[
+y+2(437)+3(234)+4x=195+367+562+900=2024.
+\]
+Thus \(y+4x=448\). Subtracting \(y+x=229\) yields \(3x=219\), so \(x=73\).
+
+073

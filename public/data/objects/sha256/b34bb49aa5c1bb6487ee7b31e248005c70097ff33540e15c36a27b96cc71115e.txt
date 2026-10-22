@@ -1,0 +1,7 @@
+The loop runs `MAX_RETRIES = 3` times, sleeping `2 ** attempt` seconds after each failed attempt:
+
+- Attempt 0: sleep 2⁰ = 1s
+- Attempt 1: sleep 2¹ = 2s
+- Attempt 2: sleep 2² = 4s
+
+Total: 1 + 2 + 4 = **7 seconds**

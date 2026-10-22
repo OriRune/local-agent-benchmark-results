@@ -478,6 +478,24 @@
         "name": {
           "type": "string"
         },
+        "execution_kind": {
+          "enum": [
+            "local",
+            "cloud"
+          ]
+        },
+        "speed_eligible": {
+          "type": "boolean"
+        },
+        "cloud_provider": {
+          "type": "string"
+        },
+        "upstream_model": {
+          "type": "string"
+        },
+        "execution_protocol": {
+          "type": "string"
+        },
         "runtime": {
           "anyOf": [
             {
@@ -649,7 +667,14 @@
           ]
         },
         "temperature": {
-          "type": "number"
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "seed": {
           "type": "integer"
@@ -1244,6 +1269,12 @@
               "type": "null"
             }
           ]
+        },
+        "assessment": {
+          "$ref": "#/$defs/assessment"
+        },
+        "scoring_review": {
+          "$ref": "#/$defs/scoringReview"
         }
       },
       "required": [
@@ -1408,6 +1439,9 @@
               "type": "null"
             }
           ]
+        },
+        "outcome_counts": {
+          "$ref": "#/$defs/outcomeCounts"
         }
       },
       "required": [
@@ -1668,6 +1702,31 @@
           "items": {
             "$ref": "#/$defs/context_followup"
           }
+        },
+        "protocol_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^protocol-[a-f0-9]{64}$"
+          }
+        },
+        "outcome_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "version": {
+              "const": "task-outcomes-v1"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "version",
+            "description"
+          ]
         }
       },
       "required": [
@@ -2019,7 +2078,14 @@
           ]
         },
         "temperature": {
-          "type": "number"
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "allowed": {
           "type": "boolean"
@@ -2317,6 +2383,163 @@
         "outcome",
         "completion_credit",
         "source_sha256"
+      ]
+    },
+    "assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policy_version": {
+          "const": "task-outcomes-v1"
+        },
+        "category": {
+          "enum": [
+            "full_credit",
+            "partial_credit",
+            "incorrect",
+            "failed_to_finish",
+            "technical_error",
+            "untested",
+            "review",
+            "unresolved"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "recorded_status": {
+          "type": "string"
+        },
+        "recorded_score": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence_sha256": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "saved_agent_verdict": {
+          "enum": [
+            "pass",
+            "fail",
+            "review",
+            null
+          ]
+        }
+      },
+      "required": [
+        "policy_version",
+        "category",
+        "reason",
+        "recorded_status",
+        "recorded_score",
+        "evidence_sha256",
+        "saved_agent_verdict"
+      ]
+    },
+    "outcomeCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "full_credit": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "partial_credit": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "incorrect": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed_to_finish": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "technical_error": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "untested": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "review": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unresolved": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "full_credit",
+        "partial_credit",
+        "incorrect",
+        "failed_to_finish",
+        "technical_error",
+        "untested",
+        "review",
+        "unresolved"
+      ]
+    },
+    "scoringReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policy_version": {
+          "enum": [
+            "drop-adjudication-v1",
+            "scoring-adjudication-v2"
+          ]
+        },
+        "source_attempt_id": {
+          "type": "string"
+        },
+        "original_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "reviewed_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "reason": {
+          "type": "string"
+        },
+        "reviewed_reference": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "decision_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "policy_version",
+        "source_attempt_id",
+        "original_score",
+        "reviewed_score",
+        "reason",
+        "reviewed_reference",
+        "decision_sha256"
       ]
     }
   }

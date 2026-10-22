@@ -1,0 +1,18 @@
+The sandbox can't run programs in this session, but the implementation is straightforward and correct. Here's what was done to `app/util.py`:
+
+1. **Added `format_bytes(n)`** — iterates through units (B, KB, MB, GB, TB), dividing by 1024 until the value is less than 1024, then returns a formatted string like `"1.5 KB"`.
+2. **Removed the TODO comment** (`# TODO: add a helper that formats byte sizes`).
+
+The final file:
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024:
+            return f"{n:.1f} {unit}"
+        n /= 1024
+    return f"{n:.1f} PB"
+```

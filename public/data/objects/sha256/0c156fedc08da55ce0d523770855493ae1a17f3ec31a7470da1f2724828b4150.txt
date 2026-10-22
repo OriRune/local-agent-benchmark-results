@@ -1,0 +1,12 @@
+I need to make 24 using 10, 4, 9, 7 with each number used once.
+
+Let me try different combinations:
+
+- 10 + 4 + 9 - 7 = 16
+- 10 - 4 + 9 + 7 = 22
+- 10 + 4 - 9 + 7 = 12
+- 10 * 4 - 9 - 7 = 40 - 16 = 24 ✓
+
+Let me verify: 10 * 4 = 40, 40 - 9 = 31, 31 - 7 = 24. Correct!
+
+<answer>10 * 4 - 9 - 7</answer>

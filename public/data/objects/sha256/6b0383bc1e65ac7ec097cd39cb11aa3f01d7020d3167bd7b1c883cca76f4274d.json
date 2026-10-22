@@ -1,0 +1,1 @@
+[{"args":{"path":"."},"name":"list_dir","result":"app/\ndata/\ntests/\nnotes.md  (340 bytes)\ntodo.txt  (53 bytes)","status":"ok"},{"args":{"end_line":-1,"path":"todo.txt","start_line":1},"name":"read_file","result":"todo.txt (3 lines, showing 1-1)\n1\t- write README\n[2 more lines: call read_file with start_line=2]","status":"ok"}]

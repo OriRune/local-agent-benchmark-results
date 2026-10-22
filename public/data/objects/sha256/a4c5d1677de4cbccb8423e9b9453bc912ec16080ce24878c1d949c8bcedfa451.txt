@@ -1,0 +1,13 @@
+Looking at 8, 5, 5, 9, I need to find a combination that gives 24.
+
+Let me try: (9 - 5) × 5 - 8 = 4 × 5 - 8 = 20 - 8 = 12. No.
+
+Let me try: 8 × (9 - 5) - 5 = 32 - 5 = 27. No.
+
+Let me try: (9 - 5) × 8 - 5 = 32 - 5 = 27. No.
+
+Let me try: 8 / (5 - 9/5) = 8 / (16/5) = 40/16 = 2.5. No.
+
+Let me try: 5 × 5 - 9 + 8 = 25 - 9 + 8 = 24. Yes!
+
+<answer>5 * 5 - 9 + 8</answer>

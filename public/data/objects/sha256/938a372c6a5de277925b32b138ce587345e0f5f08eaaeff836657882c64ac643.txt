@@ -1,0 +1,16 @@
+Step-by-step reasoning:
+
+1. There are only two positions: 1 (left) and 2 (right).
+2. “The person who is a videographer is somewhere to the left of the person who watches animation” means the videographer must be in position 1, and the person who watches animation must be in position 2.
+3. “The person who is pakistani is on the immediate left or immediate right of the person who is a videographer” means the pakistani person is adjacent to the videographer. Since the videographer is in position 1, the pakistani person must be in position 2.
+4. Therefore:
+   - Position 1: videographer, nigerian, thriller
+   - Position 2: freelancer, pakistani, animation
+
+Answers in order:
+- Job of the person who is pakistani: freelancer
+- Movie genre of the person who is pakistani: animation
+- Movie genre watched by the person in position 1: thriller
+- Position of the person who is a videographer: 1
+
+<solution>freelancer, animation, thriller, 1</solution>

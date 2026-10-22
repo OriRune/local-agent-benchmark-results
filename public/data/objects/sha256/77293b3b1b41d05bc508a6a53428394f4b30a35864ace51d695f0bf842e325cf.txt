@@ -1,0 +1,6 @@
+The script **open_resources.sh** has been created in the current project folder. It launches Chrome with Google, opens the default text editor (Xed), and opens the file manager (Nemo) at the directory containing `llama.cpp`. You can run it with:
+
+```bash
+chmod +x open_resources.sh   # make it executable (if needed)
+./open_resources.sh
+```

@@ -62,6 +62,13 @@ charts. An uncovered selection is labeled explicitly; changed supporting results
 invalidate the old assessment. Release validation independently reconstructs these
 dependencies. Native Instruct/Reasoning families retain separate checkpoint
 identities and are never folded into this section.
+New `checkpoint-quant-facts-v2` packets require an explicit set of completed
+configuration IDs and the hash of its readiness/selection evidence. Quality
+groups match suite, task controls and recorded context. Each row preserves its
+execution profile, so differing CPU MoE offload or hardware can qualify a
+descriptive quality comparison without establishing a quantization effect.
+Task times are compared only with identical execution profiles and complete
+timing coverage. Historical v1 packets retain their original reconstruction.
 Their question links select the matching recorded answer. Overview filters and
 model selections are URL-backed; a shared comparison tray carries working
 selections between the overview and model pages, with explicit removal controls.
@@ -73,6 +80,12 @@ summary's recorded approval, dependency hash, numeric claims, coverage limitatio
 and provenance graph before import. Model pages show analysis only for the selected
 configuration, retaining its stored analyst/date and contributor identities.
 Unreviewed or missing analysis gets factual copy without an authorship badge.
+Evidence review and permission to publish are separate. Agent-reviewed revisions
+name their agent reviewer and record the user's publication authorization; their
+byline says agent reviewed and never claims human review. Human-reviewed revisions
+retain their original labels. Both paths require review of the exact content and
+evidence, preserve the original analyst and generation time, and create a new
+immutable summary identity.
 Claims render as escaped text with numeric values from validated references and
 expandable evidence. Summary revision selection, generation and actual editorial
 review happen in the private publication workspace, never in Vercel or the browser.
@@ -197,7 +210,7 @@ those tools and source catalogs are deliberately absent from this website packag
 
 | Update | Preparation in the private workspace |
 | --- | --- |
-| Additional results | Capture a stable snapshot, export and validate it, then recompute facts. Regenerate only summaries whose subject evidence changed. |
+| Additional results | Capture a stable snapshot, export and validate it, then recompute facts. Review affected narratives and comparison claims; keep valid summaries, make targeted edits, or regenerate when needed. |
 | New model or quantization | Update `publication/catalogs/models.json` with checkpoint, artifact, configuration and baseline identities. Keep unknown sizes or exact GGUF URLs unknown until verified. |
 | New or changed test | Update `publication/catalogs/suites.json` with scoring, selection, source terms and evidence metadata. Changed questions get new versioned identities. Existing evidence types need data changes only; a new evidence type requires a renderer and contract checks. |
 | New analyst or prompt | Explicitly change the private generator configuration/policy, validate access with a bounded request, and generate a new immutable revision. Earlier summaries keep their original model, settings and date. |
@@ -206,7 +219,9 @@ For Astra summaries, use the private CLI's `summaries plan`, `summaries generate
 `summaries review` and `summaries approve` stages. Production generation uses
 `codex exec` with ChatGPT account authentication. Resume the same job directory to
 reuse completed analyses; do not automatically retry an uncertain invocation.
-Review each claim against its linked evidence before recording a human decision.
+Review each claim against its linked evidence before recording an editorial decision.
+An agent decision requires separate user publication authorization and must never
+be labeled as human review.
 Validation alone does not approve a draft. Preserve original machine attribution
 when editing, and select approved revisions when assembling the new release.
 
@@ -327,3 +342,13 @@ The Tests index groups suites under the five named capabilities. Each suite and
 its definition page expose availability counts for full, redacted, source-link-only,
 not-recorded and withheld components. Counts include question definitions and
 all saved attempts, including historical attempts; they are not a score denominator.
+
+Large full-facts packages use a `dataset-parts-v1` descriptor at
+`release.dataset_object_id`. It contains ordinary dataset metadata and ordered
+object-ID lists for `attempts` and `trials` (at most 1,000 rows per part). Resolve
+those IDs through the release manifest, verify each object's checksum, and
+concatenate each list to reconstruct the original dataset. The reconstructed
+dataset keeps its original content identity. Existing inline editions remain
+supported. Ordinary pages use compact indexes and per-question shards; they do
+not fetch the full dataset. Per-object limits remain 128 MiB; reconstruction is
+bounded to 512 MiB decoded and 1,000 parts.

@@ -1,0 +1,8 @@
+*Prompt:* “What city or postal code should I check?”
+```text
+on_location(location) {
+  forecast = get_forecast(location);
+  output("Forecast for " + location + ": " + forecast);
+}
+```
+*Response:* “Here’s the forecast for {location}: {forecast}.”

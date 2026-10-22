@@ -1,0 +1,7 @@
+
+
+Looking at this problem, I need to combine 10, 4, 9, and 7 to get 24.
+
+Let me try: 10 * 4 = 40, then 40 - 9 = 31, then 31 - 7 = 24. ✓
+
+<answer>10 * 4 - 9 - 7</answer>

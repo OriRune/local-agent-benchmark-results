@@ -1,0 +1,33 @@
+# Course Schedule - Cycle Detection
+
+## Setting Up the Graph
+
+Each prerequisite `(a, b)` means course `b` must be taken before `a`, creating a directed edge `b → a`.
+
+**Edges (b → a):**
+- 3 → 5, 3 → 7, 3 → 2
+- 2 → 4, 2 → 7
+- 4 → 0, 4 → 1
+- 1 → 6
+
+## Topological Sort (Kahn's Algorithm)
+
+**In-degrees:**
+| Node | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|------|---|---|---|---|---|---|---|---|
+| In-degree | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 2 |
+
+**Processing:**
+1. **Queue: [3]** → process 3, frees 2 (in-degree 0)
+2. **Queue: [5, 2]** → process 5; process 2, frees 4 and 7
+3. **Queue: [4, 7]** → process 4, frees 0 and 1; process 7
+4. **Queue: [0, 1]** → process 0; process 1, frees 6
+5. **Queue: [6]** → process 6
+
+**All 8 courses processed** with no remaining nodes having non-zero in-degree.
+
+## Conclusion
+
+Since every course was successfully placed in a valid order (e.g., 3 → 2 → 4 → 1 → 6, 3 → 5, 3 → 7), there is **no circular dependency**.
+
+<answer>True</answer>

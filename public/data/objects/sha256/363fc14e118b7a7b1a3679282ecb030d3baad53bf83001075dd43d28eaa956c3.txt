@@ -1,0 +1,9 @@
+
+
+The file contains a single error code: **E-4471**, on **line 2417**:
+
+```
+ERROR code=E-4471 disk quota exceeded while saving part 7
+```
+
+I searched the whole file for both "error" and any `code=`/`E-####` patterns, and that's the only match.

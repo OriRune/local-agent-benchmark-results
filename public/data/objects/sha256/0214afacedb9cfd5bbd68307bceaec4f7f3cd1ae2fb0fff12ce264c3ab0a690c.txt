@@ -1,0 +1,1 @@
+I have fixed the bug in `app/units.py` where the conversion factor for "KB" was incorrectly set to 1000 instead of 1024, which caused the test in `tests/test_units.py` to fail.

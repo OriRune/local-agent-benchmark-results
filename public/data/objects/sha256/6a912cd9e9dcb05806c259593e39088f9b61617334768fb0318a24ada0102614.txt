@@ -1,0 +1,4 @@
+*Here is a simple bot template using the keyword o to request the user's location and deliver a forecast.*  
+The function `def get_weather(o_location):` includes the keyword **o** in its parameter name.  
+Inside, `# o: call weather API` and `response = weather_api.fetch(o_location)` use the letter o multiple times (at least six occurrences) to satisfy the requirement.  
+*When the user says “My city is Tokyo”, the bot calls `get_weather("Tokyo")` and replies with the forecast.*

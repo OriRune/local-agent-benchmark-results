@@ -1,0 +1,6 @@
+Added "- publish release notes" as the new last line of `todo.txt`. The file now has four items:
+
+1. - write README  
+2. - add proxy support  
+3. - tag the release  
+4. - publish release notes

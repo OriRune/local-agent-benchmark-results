@@ -1,0 +1,11 @@
+The retry logic lives in `app/net.py`, and `MAX_RETRIES` is set to `3` in `app/config.py`.
+
+The loop iterates `attempt` over `range(3)` → `0, 1, 2`, sleeping `2 ** attempt` seconds after each failed `get()`:
+
+| Attempt | Sleep | Seconds |
+|---------|-------|---------|
+| 0 | 2⁰ | 1 |
+| 1 | 2¹ | 2 |
+| 2 | 2² | 4 |
+
+Total sleep before it raises `RuntimeError`: **1 + 2 + 4 = 7 seconds**.

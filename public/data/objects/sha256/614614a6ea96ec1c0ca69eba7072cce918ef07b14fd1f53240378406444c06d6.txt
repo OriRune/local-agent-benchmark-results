@@ -1,0 +1,5 @@
+The most recent git commit (`a780f7a`) changed `app/config.py`, raising `TIMEOUT_S` from 10 to 20. I undid that change directly by editing the file:
+
+- `app/config.py`: `TIMEOUT_S = 20` → `TIMEOUT_S = 10`
+
+The file now reflects the pre-commit state.

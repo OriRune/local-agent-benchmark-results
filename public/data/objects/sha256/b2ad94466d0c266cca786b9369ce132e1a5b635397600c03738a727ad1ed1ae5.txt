@@ -1,0 +1,8 @@
+The fix is confirmed correct by inspection. The change was:
+
+**`app/units.py`**: Changed `"KB": 1000` → `"KB": 1024` in the `UNITS` dictionary.
+
+The root cause was that `KB` was mapped to `1000` (decimal/SI prefix) while the docstring and test both expect 1024-based (binary) units. With the fix:
+- `parse_size("512 B")` → 512 × 1 = **512** ✓
+- `parse_size("1.5 KB")` → 1.5 × 1024 = **1536** ✓ (was 1500 before)
+- `parse_size("2 MB")` → 2 × 1024² = **2097152** ✓

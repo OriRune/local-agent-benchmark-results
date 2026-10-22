@@ -160,5 +160,19 @@ export interface PublicCheckpointQuantSummaryV1 {
         edited: boolean;
         supersedes_summary_id: string;
         edit_author?: string;
+      }
+    | {
+        state: "approved";
+        reviewed_at: string;
+        reviewer_kind: "agent";
+        edited: boolean;
+        supersedes_summary_id: string;
+        edit_author?: string;
+        reviewer_name: string;
+        publication_authorization: {
+          authorized_by: "user";
+          authorized_at: string;
+          instruction: string;
+        };
       };
 }

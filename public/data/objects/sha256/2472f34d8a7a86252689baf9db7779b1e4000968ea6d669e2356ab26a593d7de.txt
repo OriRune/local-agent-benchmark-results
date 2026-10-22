@@ -1,0 +1,4 @@
+{
+  "answer": "They do not train a model; their system uses a dictionary-based approach with two datasets: Occupation Data and Names Data.",
+  "evidence": [11, 12, 13, 18, 19, 20]
+}

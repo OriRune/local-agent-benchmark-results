@@ -1,0 +1,18 @@
+
+
+Done — I created `open_apps.sh` in the working folder. It:
+
+1. **Chrome** — opens `https://www.google.com` (tries `google-chrome`, `google-chrome-stable`, then Chromium as fallbacks, and `xdg-open` as a last resort).
+2. **Text editor** — tries `gnome-text-editor`, `gedit`, `kate`, `xed` in order.
+3. **File manager** — opens `nautilus` (or Dolphin/Thunar) pointed at `[private-home]/Documents/llama.cpp`, with a warning if that folder doesn't exist.
+
+Each app launches in the background so the script returns immediately.
+
+To run it:
+
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+(or just `bash open_apps.sh` if you skip the chmod).

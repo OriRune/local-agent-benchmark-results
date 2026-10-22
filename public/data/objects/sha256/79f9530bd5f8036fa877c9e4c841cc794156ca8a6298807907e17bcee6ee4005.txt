@@ -1,0 +1,12 @@
+Here is a template where you can insert your *location*, and the bot will retrieve the current *weather forecast* for you.
+
+```python
+def get_weather(location):
+    # o: obtain the location from the user
+    # o: open the weather API connection
+    # o: output the forecast to the user
+    forecast = fetch_forecast(location)
+    return forecast
+```
+
+This simple loop offers options, so just provide one location now.

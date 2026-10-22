@@ -1,0 +1,8 @@
+**Definition**
+
+- **File:** `app/config.py`  
+- **Line 2:** `MAX_RETRIES = 3`
+
+**Value**
+
+- `MAX_RETRIES` is defined as **`3`**.

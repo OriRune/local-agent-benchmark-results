@@ -1,0 +1,6 @@
+Confirmed — the persistence is already wired up:
+
+- **`load()`** (line 97) reads the items from `localStorage` when the page opens.
+- **`save()`** (line 102) writes them back every time you add, check, edit, or delete.
+
+So just open `todo.html` in your browser, add some items, reload — they'll still be there. No changes were needed.

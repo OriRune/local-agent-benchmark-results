@@ -1,0 +1,1 @@
+{"answer":"Results are evaluated by having respondents rank human, NJM, and STAIR captions for 30 images by funniness; 16 questionnaires were completed. The paper also reports average star ratings from Bokete users for NJM and STAIR captions.","evidence":[12,13,14]}

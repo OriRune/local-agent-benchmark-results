@@ -1,0 +1,7 @@
+
+
+Looking at this problem, I need to combine 9, 5, 6, and 3 to get 24.
+
+Let me try: 6 * 5 = 30, then 30 - 9 = 21, then 21 + 3 = 24. ✓
+
+<answer>6 * 5 - 9 + 3</answer>

@@ -1,0 +1,4 @@
+{
+  "answer": "The paper does not provide a list of ICD-10 codes. It only explicitly mentions code I509 (for 'insuffisance cardiaque aiguë') in examples [8] and [10]. It also references dictionaries containing 3,539 and 6,392 ICD-10 codes (paragraphs [5], [12]), but no full code inventory is given.",
+  "evidence": [8, 10, 5, 12]
+}

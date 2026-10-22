@@ -1,0 +1,9 @@
+I've written `README.md` for the project.
+
+The CLI (`app/cli.py`, program name `tinydl`) uses `argparse` with exactly three options, which I documented with their help text:
+
+- **`url`** — positional argument, help: *"what to download"*
+- **`-o`, `--output`** — help: *"file to write (default: stdout)"*
+- **`-q`, `--quiet`** — help: *"no progress output"*
+
+I based the help text directly on the source rather than guessing, and included a short usage section and example. Note that I couldn't execute `--help` to cross-check (running programs is disabled in this session), but the parser is fully visible in the source, so the documentation matches the code.

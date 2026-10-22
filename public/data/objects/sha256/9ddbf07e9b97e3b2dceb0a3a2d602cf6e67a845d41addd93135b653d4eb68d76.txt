@@ -1,0 +1,26 @@
+Looking at the grid, let me identify the positions of the start (*) and destination (#).
+
+Let me index the grid with rows (0-7, top to bottom) and columns (0-8, left to right):
+
+```
+       Col: 0 1 2 3 4 5 6 7 8
+Row 0:    O O O X O O O X O
+Row 1:    X X O O O X O X X
+Row 2:    O O O O O O O O O
+Row 3:    X O O O O O O O O
+Row 4:    O X O O O O O O X
+Row 5:    O O O O O O O O X
+Row 6:    O O X X O O X O X
+Row 7:    O X O O X O X * #
+```
+
+**Locating start and destination:**
+- Row 7: `O X O O X O X * #`
+  - Column 7 = `*` (start)
+  - Column 8 = `#` (destination)
+
+The start is at position (7, 7) and the destination is at position (7, 8). These two cells are **horizontally adjacent** — the destination is immediately to the right of the start.
+
+Therefore, the shortest path is simply one move to the right.
+
+<answer>right</answer>

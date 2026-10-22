@@ -1,0 +1,1 @@
+The `README.md` has been created in the project root. It lists all CLI options extracted from `app/cli.py` along with their help text.

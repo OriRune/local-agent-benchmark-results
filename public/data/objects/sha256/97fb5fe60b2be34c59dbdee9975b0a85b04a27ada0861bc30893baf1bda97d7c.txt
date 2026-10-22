@@ -1,0 +1,38 @@
+# T8
+
+**Result:** fail · error · 2 steps · 2 calls · 7 s
+
+## user
+
+Find every TODO comment in the Python code and add each one as a new line to todo.txt.
+
+## assistant
+
+- call `find_files` `{"pattern":"*.py","path":".","sort":"name"}`
+
+<details><summary>find_files result (96 chars)</summary>
+
+```
+app/__init__.py
+app/cli.py
+app/config.py
+app/net.py
+app/units.py
+app/util.py
+tests/test_units.py
+```
+
+</details>
+
+## assistant
+
+- call `grep` `{"pattern":"TODO","path":".","glob":"*.py","case_sensitive":false}`
+
+<details><summary>grep result (109 chars)</summary>
+
+```
+app/net.py:7:     # TODO: log each failed attempt
+app/util.py:5: # TODO: add a helper that formats byte sizes
+```
+
+</details>

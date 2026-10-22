@@ -1,0 +1,11 @@
+vader: you have failed me. you killed a man who was not even a jedi. you might think your eagerness is a virtue, but it is a flaw.
+server: my lord, i thought he was a threat.
+vader: your judgment might be as flawed as your loyalty.
+***
+server: i only wished to serve you. i thought he might be hiding his powers.
+vader: you acted without orders. you might have compromised the entire operation.
+server: i apologize, lord vader.
+***
+vader: apologies are useless. you might find that my patience has reached its limit.
+server: please, have mercy.
+vader: you might survive this day, but do not fail me again.

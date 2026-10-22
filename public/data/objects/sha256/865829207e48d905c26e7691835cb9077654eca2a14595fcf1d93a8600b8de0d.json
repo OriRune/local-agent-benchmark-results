@@ -1,0 +1,1 @@
+[{"args":{"path":"."},"name":"list_dir","result":"app/\ndata/\ntests/\nnotes.md  (340 bytes)\ntodo.txt  (53 bytes)","status":"ok"},{"args":{"path":".git","pattern":"HEAD","sort":"name"},"name":"find_files","result":".git/HEAD\n.git/logs/HEAD","status":"ok"}]

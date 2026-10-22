@@ -1,0 +1,19 @@
+I've reviewed `books.csv`. Here's my analysis:
+
+**Different books:** There are 22 data rows, but "Project Hail Mary" appears twice (lines 2 and 8, identical). That leaves **21 unique titles**.
+
+**Finished July–December 2025** (has an End Date in that range):
+1. Dune — 2025-07-10
+2. The Hobbit — 2025-07-19
+3. Sapiens — 2025-08-15
+4. The Night Circus — 2025-09-12
+5. Tomorrow and Tomorrow and Tomorrow — 2025-09-30
+6. The Thursday Murder Club — 2025-10-09
+7. Babel — 2025-11-05
+8. Lessons in Chemistry — 2025-11-20
+9. A Psalm for the Wild-Built — 2025-11-24
+10. The Bear and the Nightingale — 2025-12-16
+
+That's **10 books**. (Piranesi and Middlemarch have no end date, so they weren't finished; the rest ended Jan–June.)
+
+ANSWER: 21, 10

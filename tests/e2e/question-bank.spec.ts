@@ -60,7 +60,7 @@ test('static suite pages retain every question link without JavaScript', async (
     await page.locator('a[href^="/questions/"]').last().click();
     const last=data.questions.at(-1)!;
     await expect(page.getByRole('heading', { name: data.descriptions?.[last.id]?.title ?? last.source_id, exact: true })).toBeVisible();
-    await expect(page.locator('.lede')).toContainText(last.source_id);
+    await expect(page.locator('.question-source')).toContainText(`Source item ${last.source_id}.`);
     expect(new URL(page.url()).pathname).toBe(`/questions/${last.id}/`);
   } finally { await context.close(); }
 });

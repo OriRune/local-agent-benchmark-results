@@ -1,0 +1,13 @@
+
+
+The sandbox won't run programs in this session, so I couldn't execute the test — but the fix is straightforward and verified by inspection:
+
+**Cause:** In `app/units.py`, the `UNITS` table defined `"KB": 1000` even though the module's docstring (and the test) specify 1024-based units. So `parse_size("1.5 KB")` returned `1500` instead of `1536`.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`:
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+Now all three assertions hold: `512 B` → 512, `1.5 KB` → 1536, `2 MB` → 2097152. The test file was not touched.

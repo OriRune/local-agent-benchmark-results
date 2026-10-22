@@ -1,0 +1,7 @@
+I have created a shell script named `setup_workspace.sh` in the current directory. This script is designed for Linux Mint and will open Google Chrome to google.com, the default text editor (`xed`), and the file manager (`nemo`) pointing to `[private-home]/Documents/llama.cpp`.
+
+To run the script, you can use the following commands in your terminal:
+```bash
+chmod +x setup_workspace.sh
+./setup_workspace.sh
+```

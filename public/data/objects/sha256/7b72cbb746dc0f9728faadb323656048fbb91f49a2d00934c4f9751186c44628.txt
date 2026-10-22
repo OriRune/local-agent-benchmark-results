@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "They use a word2vec word embedding model trained on 189,206 financial articles (161,877,425 tokens) manually downloaded from Factiva, with 300-dimensional vectors.",
+  "evidence": [4, 17]
+}
+```

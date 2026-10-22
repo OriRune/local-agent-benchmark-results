@@ -38,11 +38,9 @@ test('summary category evidence opens exact model answers and code in the pinned
  const trialIds=new Set(question.trials.filter(t=>t.configuration_id===config.id&&t.condition_id===a.condition_id).map(t=>t.id));
  const attempt=question.attempts.find(x=>x.canonical&&trialIds.has(x.trial_id))!;
  await link.click();
- await expect(page.getByLabel('Tested configuration and trial',{exact:true})).toHaveValue(attempt.id);
+ await expect(page.locator('.selected-attempt')).toHaveAttribute('data-attempt-id',attempt.id);
  await expect(page.getByRole('heading',{name:'Original final answer',exact:true})).toBeVisible();
  await expect(page.getByText('Code and saved file changes',{exact:true})).toBeVisible();
  await page.getByText('Code and saved file changes',{exact:true}).click();
- await expect(page.getByRole('button',{name:'Read artifacts',exact:true})).toBeVisible();
- await page.getByRole('button',{name:'Read artifacts',exact:true}).click();
  await expect(page.locator('details[open] .evidence pre').first()).toBeVisible();
 });

@@ -1,0 +1,7 @@
+{
+  "answer": "They use a word2vec word embedding model trained on financial news articles from Factiva.",
+  "evidence": [
+    4,
+    17
+  ]
+}

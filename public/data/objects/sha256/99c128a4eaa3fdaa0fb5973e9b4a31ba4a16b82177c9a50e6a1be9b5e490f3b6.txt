@@ -1,0 +1,4 @@
+{
+  "answer": "The results are evaluated using two methods: (1) a human questionnaire in which 16 respondents ranked captions (human, NJM, and STAIR caption) in order of funniness, and (2) Bokete user star ratings on the Bokete Ogiri website, where the NJM averaged 3.23 stars versus 1.71 stars for STAIR captions.",
+  "evidence": [12, 13, 14]
+}

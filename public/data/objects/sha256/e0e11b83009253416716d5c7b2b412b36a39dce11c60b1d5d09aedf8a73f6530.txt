@@ -1,0 +1,9 @@
+{
+  "answer": "They do not train a model; they use an occupation dataset (lists from internet, crowdsourced, and government sources) and a names dataset (CMU repository of names, with NLTK/baby-name records for gender), and DBpedia for evidence.",
+  "evidence": [
+    11,
+    12,
+    13,
+    23
+  ]
+}

@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "They obtained 11,529,432 segmented words, and crawled the stroke information of all 20,402 characters.",
+  "evidence": [12]
+}
+```

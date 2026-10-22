@@ -1,0 +1,7 @@
+Detailed reasoning
+
+Using \((x,1)\), then \((1,x+f(x))\), and \((x,1+f(1)/x)\) gives expressions 9, 7, and 6. Equating the latter two results yields expression 10, which makes \(f\) affine on \(x>1\), as in expression 3. Substitution into the functional equation gives \(f(x)=x+1\) for \(x>1\), expression 8.
+
+For \(x>1\) and \(y\leq1\), the input \(xy+f(x)\) is greater than \(x>1\), giving expressions 4 and 2. These imply \(f(y)=y+1\), expression 1.
+
+Answer: 9, 7, 6, 10, 3, 8, 5, 4, 2, 1

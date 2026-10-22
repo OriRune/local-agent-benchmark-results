@@ -1,0 +1,1 @@
+{"answer":"ICD-10 codes are classification codes assigned to causes of death. In the paper’s example, “insuffisance cardiaque aigue” is assigned code I509.","evidence":[0,3,10]}

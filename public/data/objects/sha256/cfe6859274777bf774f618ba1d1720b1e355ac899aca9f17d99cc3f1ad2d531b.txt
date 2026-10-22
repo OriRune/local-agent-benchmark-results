@@ -1,0 +1,21 @@
+
+
+Looking at this puzzle, I need to determine who is a hero (always tells truth) and who is a villain (always lies).
+
+Let me denote: E, O, M, Em, S = each person is a hero (true) or villain (false).
+
+**Olivia's statement:** ¬(¬E → O) = ¬(E ∨ O) = ¬E ∧ ¬O
+- If O = true: statement requires ¬O = true → contradiction. So **O = false**.
+- If O = false: statement must be false → ¬E ∧ true must be false → **E = true**.
+
+**Elizabeth's statement:** (S ↔ ¬M) ↔ (Em ∧ ¬Em)
+- (Em ∧ ¬Em) is always FALSE
+- So statement = ¬(S ↔ ¬M) = S ↔ M
+- Since E = true, statement must be true → **S = M**
+
+**Mia's statement:** (Em ↔ E) ↔ M
+- Since E = true: Em ↔ M
+- If M = true: Em must be true. If M = false: Em must be false.
+- So **Em = M**
+
+**Emily's statement:** (

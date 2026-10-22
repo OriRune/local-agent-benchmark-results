@@ -1,0 +1,1 @@
+Here is a *chat bot template* that collects the user's **location** and returns the weather forecast. The bot saves the input as a variable named `location`, then queries a weather API. It then formats the results and displays the forecast to the user.

@@ -27,6 +27,14 @@ export interface PublicBenchmarkFactsV1 {
   memory_fits?: MemoryFit[];
   investigations?: Investigation[];
   context_followups?: ContextFollowup[];
+  /**
+   * @minItems 1
+   */
+  protocol_ids?: [string, ...string[]];
+  outcome_policy?: {
+    version: "task-outcomes-v1";
+    description: string;
+  };
 }
 export interface Checkpoint {
   id: string;
@@ -76,6 +84,11 @@ export interface Configuration {
   id: string;
   artifact_id: string;
   name: string;
+  execution_kind?: "local" | "cloud";
+  speed_eligible?: boolean;
+  cloud_provider?: string;
+  upstream_model?: string;
+  execution_protocol?: string;
   runtime: string | null;
   runtime_build: string | null;
   template_override_id: string | null;
@@ -109,7 +122,7 @@ export interface Condition {
     | "native_reasoning";
   probe_version: string | null;
   verification_scope: string | null;
-  temperature: number;
+  temperature: number | null;
   seed: number;
   kind: "baseline" | "repeat";
   max_tokens: number | null;
@@ -207,6 +220,8 @@ export interface Attempt {
   supersedes_attempt_ids: string[];
   correction_ids: string[];
   outcome_reason: string | null;
+  assessment?: Assessment;
+  scoring_review?: ScoringReview;
 }
 export interface Usage {
   generated_tokens: number | null;
@@ -219,6 +234,38 @@ export interface Resources {
   device_vram_used_bytes: number | null;
   available_ram_bytes: number | null;
   method: string;
+}
+export interface Assessment {
+  policy_version: "task-outcomes-v1";
+  category:
+    | "full_credit"
+    | "partial_credit"
+    | "incorrect"
+    | "failed_to_finish"
+    | "technical_error"
+    | "untested"
+    | "review"
+    | "unresolved";
+  reason: string;
+  recorded_status: string;
+  recorded_score: number | null;
+  /**
+   * @minItems 1
+   */
+  evidence_sha256: [string, ...string[]];
+  saved_agent_verdict: "pass" | "fail" | "review" | null;
+}
+export interface ScoringReview {
+  policy_version: "drop-adjudication-v1" | "scoring-adjudication-v2";
+  source_attempt_id: string;
+  original_score: number;
+  reviewed_score: number;
+  reason: string;
+  /**
+   * @minItems 1
+   */
+  reviewed_reference: [string, ...string[]];
+  decision_sha256: string;
 }
 export interface Aggregate {
   id: string;
@@ -238,6 +285,7 @@ export interface Aggregate {
   median_task_s: number | null;
   timed: number;
   generated_tokens_per_s: number | null;
+  outcome_counts?: OutcomeCounts;
 }
 export interface States {
   scored: number;
@@ -248,6 +296,16 @@ export interface States {
   interrupted: number;
   pending: number;
   not_scheduled: number;
+}
+export interface OutcomeCounts {
+  full_credit: number;
+  partial_credit: number;
+  incorrect: number;
+  failed_to_finish: number;
+  technical_error: number;
+  untested: number;
+  review: number;
+  unresolved: number;
 }
 export interface Object {
   id: string;
@@ -312,7 +370,7 @@ export interface Repetition {
   suite_id: string;
   condition_ids: string[];
   reasoning_requested: "on" | "off";
-  temperature: number;
+  temperature: number | null;
   allowed: boolean;
   full_credit_repetitions: number;
   planned_repetitions: number;

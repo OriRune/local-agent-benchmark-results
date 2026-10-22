@@ -1,0 +1,3 @@
+The bookstore tells the truth, so the movie-theater person’s claim is true. The library person’s claim that the movie-theater person lies is therefore false, and the vineyard person’s claim that the library person tells the truth is false. Since the vineyard person lies, the farm person’s claim that the vineyard person lies is true.
+
+**yes, no, no**

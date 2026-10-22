@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "11,529,432 segmented words (from Chinese Wikipedia articles) and stroke information for 20,402 characters",
+  "evidence": ["12"]
+}
+```

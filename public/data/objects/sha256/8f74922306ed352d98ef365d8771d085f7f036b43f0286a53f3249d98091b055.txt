@@ -1,0 +1,10 @@
+The fix is confirmed. The file now correctly has `"KB": 1024` instead of `"KB": 1000`.
+
+**The bug:** In `app/units.py`, the `UNITS` dictionary had `"KB": 1000`, but the module's own docstring states "1 KB = 1024 bytes" and the test expects `parse_size("1.5 KB") == 1536` (i.e., 1.5 × 1024 = 1536). With the old value of 1000, it would have returned 1500.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` so that KB (and by extension MB and GB which were already correct) consistently use 1024-based units as documented and expected.
+
+All three test assertions now pass:
+- `parse_size("512 B")` = 512 × 1 = **512** ✓
+- `parse_size("1.5 KB")` = 1.5 × 1024 = **1536** ✓
+- `parse_size("2 MB")` = 2 × 1024² = **2097152** ✓

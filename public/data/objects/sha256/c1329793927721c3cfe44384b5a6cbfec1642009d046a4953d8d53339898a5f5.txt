@@ -1,0 +1,4 @@
+{
+  "answer": "The paper identifies 18 propaganda techniques. Explicitly listed examples include: loaded language, appeal to authority, slogans, straw men (misrepresenting someone's opinion), hidden ad-hominem fallacies, and red herring (presenting irrelevant data). The full set of 18 techniques is used for the 19-way FLC classification (18 techniques + 'none'), as described in the multi-granularity network architecture.",
+  "evidence": ["[3]", "[10]", "[20]"]
+}

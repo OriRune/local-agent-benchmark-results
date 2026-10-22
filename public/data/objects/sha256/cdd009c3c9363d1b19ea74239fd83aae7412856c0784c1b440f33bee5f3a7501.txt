@@ -1,0 +1,21 @@
+I'll analyze this grid using BFS to find the shortest path.
+
+**Grid with coordinates (row, col), 0-indexed:**
+- Start `*`: (4, 1)
+- Destination `#`: (4, 10)
+
+**BFS exploration** (tracking distances from start):
+
+From (4,1), the path expands through open cells. Key finding: the destination (4,10) is only reachable via row 2 (since rows 3, 4, 5 are blocked at column 10).
+
+The shortest path goes:
+- Up to row 2 (reaching (2,1) at distance 3)
+- Right along row 2 to (2,10) at distance 12
+- Down to (4,10) at distance 14
+
+**Path verification:**
+- (4,1) → up → (3,1) → up → (2,1) → right → (2,2) → right → (2,3) → right → (2,4) → right → (2,5) → right → (2,6) → right → (2,7) → right → (2,8) → right → (2,9) → right → (2,10) → down → (3,10) → down → (4,10) ✓
+
+All cells are open 'O'. Total: 14 moves.
+
+<answer>up up right right right right right right right right right down down</answer>

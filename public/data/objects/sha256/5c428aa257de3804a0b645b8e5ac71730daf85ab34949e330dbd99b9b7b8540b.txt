@@ -1,0 +1,1 @@
+The line `- publish release notes` has been added as the last line of `todo.txt`. The file now contains four tasks, with the new item at the end.

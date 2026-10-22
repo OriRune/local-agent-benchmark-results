@@ -1,0 +1,7 @@
+The most recent commit is **0214e13a** ("raise the download timeout from 10 to 20 seconds"), made by `eval` on Wed Oct 14, 2026.
+
+It made a single change in `app/config.py`:
+
+- `TIMEOUT_S` was changed from **10** to **20** (seconds)
+
+That's the only change in the commit — 1 file, 1 line modified.

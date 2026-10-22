@@ -1,0 +1,3 @@
+The release date mentioned in notes.md is **14 October** (October 14, 2026, based on the context of the September 2026 planning notes).
+
+This appears on line 8 under the 2026-09-16 section: "The release is planned for 14 October."

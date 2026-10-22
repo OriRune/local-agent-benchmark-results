@@ -1,0 +1,1 @@
+The most recent git commit (`0d6a9deb555352efd278de1ad589c6632968f775`) increased the `TIMEOUT_S` setting in `app/config.py` from 10 to 20 seconds.

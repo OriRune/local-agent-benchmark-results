@@ -1,0 +1,3 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function iterates through units (B, KB, MB, GB, TB, PB), dividing by 1024 until the value is below 1024, then formats with one decimal place (or as an integer for whole bytes). For example, `format_bytes(1536)` returns `'1.5 KB'`.

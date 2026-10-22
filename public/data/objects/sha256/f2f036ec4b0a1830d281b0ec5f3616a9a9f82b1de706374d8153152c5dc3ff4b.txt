@@ -1,0 +1,1 @@
+**Template:** `on_location="{user_location}" → get_forecast(location="{user_location}", period="today") → "Forecast for *{location}*: *{conditions}*, high {high}°, low {low}°, rain chance {precipitation}%, wind {wind}."`

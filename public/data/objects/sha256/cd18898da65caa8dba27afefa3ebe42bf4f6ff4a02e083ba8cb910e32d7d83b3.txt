@@ -1,0 +1,1 @@
+{"answer":"Results are evaluated through a blind questionnaire: 16 respondents rank captions for 30 images by funniness, comparing human captions, NJM, and STAIR captions. The paper also compares the average Bokete star ratings for NJM and STAIR captions.","evidence":[12,13,14]}

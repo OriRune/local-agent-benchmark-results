@@ -1,0 +1,4 @@
+{
+  "answer": "Via a human funniness ranking questionnaire (30 image themes, rankings with hidden origins) and Bokete star average comparison between generated and baseline captions.",
+  "evidence": [12, 13, 14]
+}

@@ -1,0 +1,25 @@
+[conversation part 1]
+
+vader: you have failed me. you struck down a counterfeit jedi, and called it a victory.
+
+server: i believed the disguise. the target might have been convincing, but i should have verified the signal.
+
+vader: belief is no substitute for obedience. your mistake might have compromised the entire operation.
+
+***
+[conversation part 2]
+
+server: i understand your anger, my lord. i might have mistaken the decoy’s weapon for the real one.
+
+vader: you might have looked closer. you might have questioned the witnesses. you might have waited for my command.
+
+server: yes, my lord. i will not act on appearances again.
+
+***
+[conversation part 3]
+
+vader: see that you do not. another blunder might be your last.
+
+server: understood. next time, i will confirm the target before i move.
+
+vader: there will be no next time for excuses. there will only be results.

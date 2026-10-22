@@ -1,0 +1,7 @@
+The most recent git commit (91c2148, by eval, dated Wed Oct 14 2026) changed **1 file** with **1 insertion and 1 deletion**:
+
+- **`app/config.py`** — raised the download timeout from 10 to 20 seconds:
+  ```diff
+  -TIMEOUT_S = 10
+  +TIMEOUT_S = 20
+  ```

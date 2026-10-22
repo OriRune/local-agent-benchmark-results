@@ -1,0 +1,1 @@
+{"answer":"The results are evaluated by having 16 respondents rank captions for 30 images by funniness, without being told whether they came from humans, NJM, or the STAIR baseline. The paper also compares average star ratings given by Bokete users for NJM and STAIR captions.","evidence":[12,13,14]}

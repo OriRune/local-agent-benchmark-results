@@ -1,0 +1,3 @@
+The two‑stage rocket equation gives a required stage‑2 propellant mass of about **4673 kg** (the root of the delta‑v balance equation).  
+
+ANSWER: 4673 kg

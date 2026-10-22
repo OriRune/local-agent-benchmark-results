@@ -1,0 +1,5 @@
+`MAX_RETRIES` is defined in **app/config.py** as:
+
+```python
+MAX_RETRIES = 3
+```

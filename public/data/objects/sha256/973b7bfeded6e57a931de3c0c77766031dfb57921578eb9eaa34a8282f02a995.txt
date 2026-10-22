@@ -1,0 +1,17 @@
+Let me verify the fix by tracing through the logic:
+
+**Before fix** (`"KB": 1000`):
+- `parse_size("1.5 KB")` = `1.5 * 1000` = `1500` ❌ (test expects `1536`)
+
+**After fix** (`"KB": 1024`):
+- `parse_size("512 B")` = `512 * 1` = `512` ✓
+- `parse_size("1.5 KB")` = `1.5 * 1024` = `1536` ✓
+- `parse_size("2 MB")` = `2 * 1024²` = `2097152` ✓
+
+The fix is correct.
+
+## Summary
+
+**Root cause:** In `app/units.py`, the `UNITS` dictionary had `"KB": 1000`, treating kilobytes as 1000 bytes (decimal/SI units). This contradicted both the module's docstring ("Sizes use 1024-based units: 1 KB = 1024 bytes") and the test's expectation.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024`, making the KB conversion factor consistent with the 1024-based convention used for MB and GB. Now `parse_size("1.5 KB")` correctly returns `1536` instead of `1500`.

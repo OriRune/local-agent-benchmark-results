@@ -1,0 +1,19 @@
+I was unable to search for local LLMs on your system. The sandbox environment restricts access to paths outside the current project folder (`[private-home]/Documents/agent-harness/...`), so I cannot access your home directory where LLMs are typically stored (like `~/.cache/huggingface`, `~/models`, etc.).
+
+To find your local LLMs, please run these commands manually in your terminal:
+
+```bash
+# Common locations to check:
+ls -la ~/.cache/huggingface/
+ls -la ~/models/
+ls -la ~/llms/
+ls -la ~/Documents/models/
+
+# Search for common LLM file formats:
+find ~ -type f \( -name "*.gguf" -o -name "*.safetensors" -o -name "*.bin" -o -name "*.pt" \) 2>/dev/null
+
+# Search for model directories:
+find ~ -type d -name "*model*" -o -name "*llm*" -o -name "*checkpoint*" 2>/dev/null
+```
+
+Once you find them, you can share the locations and I can help you organize or document them.

@@ -1,0 +1,1 @@
+Done. I reverted the change from the most recent commit (`e05be04`, "raise the download timeout from 10 to 20 seconds") by editing `app/config.py` directly, changing `TIMEOUT_S = 20` back to `TIMEOUT_S = 10`. The file now matches its pre-commit state (the working-tree blob hash matches the original `8658610`). No git commands were used to alter history or the index.

@@ -1,0 +1,17 @@
+
+
+**Setup**
+
+- Stage 1: m0 = 4000 + 36000 + 900 + P + 1200 = 42100 + P; mf = 6100 + P
+  → dv₁ = 290 × 9.80665 × ln((42100 + P)/(6100 + P))
+- Stage 2: m0 = 900 + P + 1200; mf = 2100
+  → dv₂ = 340 × 9.80665 × ln((2100 + P)/2100)
+
+Solving dv₁ + dv₂ = 9400 m/s by bisection:
+
+- P ≈ 11,529.4 kg
+- dv₁ ≈ 3,163.95 m/s, dv₂ ≈ 6,236.05 m/s (sum = 9,400 m/s ✓)
+
+Stage 2 must carry about **11,529 kg** of propellant (≈ 11,530 kg).
+
+ANSWER: 11529 kg

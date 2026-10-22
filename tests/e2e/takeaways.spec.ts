@@ -2,12 +2,19 @@ import { expect, test } from '@playwright/test';
 
 test('homepage observations disclose scope and lead to pinned comparable evidence', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('.stamp')).toContainText('Campaign started');
+  await expect(page.locator('main')).toContainText('Campaign started');
+  const thinking = page.getByLabel('Thinking', { exact: true });
+  await expect(thinking).toHaveValue('all');
+  await expect(page.locator('.recorded-observations')).toHaveCount(0);
+  await thinking.selectOption('off');
+  await page.locator('.recorded-observations > summary').click();
   const region = page.getByRole('region', { name: 'Recorded takeaways', exact: true });
   await expect(region.getByRole('heading', { name: 'Highest observed score in this group', exact: true })).toBeVisible();
-  await expect(region).toContainText('complete baseline setups with matching test controls');
+  await expect(region).toContainText('complete baseline results for this test, across all models');
+  await expect(region).toContainText('Search filters do not change these comparison groups');
   const first = region.locator('article').first();
   await first.getByText('How this observation was selected', { exact: true }).click();
+  await expect(first).toContainText('largest group with matching test controls within one download-size band');
   await expect(first).toContainText('takeaways-v1');
   await expect(first).toContainText('Supporting facts: fact-');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);

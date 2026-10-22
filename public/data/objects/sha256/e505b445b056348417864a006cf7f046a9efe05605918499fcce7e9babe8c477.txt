@@ -1,0 +1,19 @@
+Looking at this problem with 2 people in positions 1 and 2:
+
+**From Clue 2:** The videographer is to the left of the animation watcher. With only 2 positions, this means:
+- Position 1 = videographer
+- Position 2 = watches animation
+
+**From Clue 1:** The pakistani person is immediately adjacent to the videographer. Since the videographer is in position 1, the pakistani person must be in position 2 (the only adjacent spot).
+
+**Filling in the rest:**
+- Position 1: videographer, thriller, nigerian
+- Position 2: freelancer, animation, pakistani
+
+**Answers:**
+1. Job of pakistani person: **freelancer**
+2. Movie genre of pakistani person: **animation**
+3. Movie genre of person in position 1: **thriller**
+4. Position of videographer: **1**
+
+<solution>freelancer, animation, thriller, 1</solution>

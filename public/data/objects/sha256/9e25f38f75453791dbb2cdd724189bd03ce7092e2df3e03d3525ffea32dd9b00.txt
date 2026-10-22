@@ -1,0 +1,17 @@
+The sandbox won't execute programs in this session, so I can't run the test directly, but I've verified the fix by hand:
+
+- `parse_size("512 B")` → `int(512 * 1)` = **512** ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = **1536** ✓
+- `parse_size("2 MB")` → `int(2 * 1024²)` = **2097152** = 2 × 1024 × 1024 ✓
+
+## Summary
+
+**Why the test failed:** In `app/units.py`, the `UNITS` dict had `"KB": 1000` (decimal), while the docstring and the rest of the table declared 1024-based units. So `parse_size("1.5 KB")` returned `1500` instead of the expected `1536`.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`, making the whole table consistently 1024-based:
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+The test was left untouched.

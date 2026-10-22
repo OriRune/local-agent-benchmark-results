@@ -1,0 +1,4 @@
+Done. Here's what I did:
+
+- **Added** `format_bytes(n)` to `app/util.py`. It divides the byte count by 1024 repeatedly until it falls below 1024, then formats it with one decimal place (e.g. `'1.5 KB'`, `'2.0 MB'`). Bytes are shown as integers (e.g. `'512 B'`).
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.

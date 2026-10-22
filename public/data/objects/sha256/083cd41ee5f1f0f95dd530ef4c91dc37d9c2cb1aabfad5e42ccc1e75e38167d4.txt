@@ -1,0 +1,11 @@
+Use `o` as the template keyword:
+
+```text
+o ask_location: "What city or ZIP code should I use?"
+o get_forecast: fetch_weather(location, days=5)
+o respond: "Forecast for {location}: {forecast.summary}. High: {forecast.high}; low: {forecast.low}."
+o on_error: "I couldn't find that location—please try another city or ZIP code."
+```
+
+*User prompt:* What city or ZIP code should I use?  
+*Bot response:* Forecast for {location}: {forecast.summary}. High: {forecast.high}; low: {forecast.low}.

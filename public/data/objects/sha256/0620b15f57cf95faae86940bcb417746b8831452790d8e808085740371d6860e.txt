@@ -1,0 +1,1 @@
+README.md created with documentation for the `tinydl` CLI command and its options: `URL` (positional), `-o/--output`, and `-q/--quiet`.

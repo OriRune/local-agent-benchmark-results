@@ -1,0 +1,6 @@
+Done. The function `fetch` has been renamed to `download`, and all usages updated:
+
+- **`app/net.py`** — function definition `def fetch(...)` → `def download(...)`
+- **`app/cli.py`** — import `from app.net import fetch` → `from app.net import download`, and call `fetch(args.url, ...)` → `download(args.url, ...)`
+
+A final grep confirms no remaining references to `fetch` anywhere in the project.

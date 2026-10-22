@@ -1,0 +1,27 @@
+## Answer: 7 seconds
+
+Here's the work-out from the code:
+
+**`app/config.py`** sets `MAX_RETRIES = 3`.
+
+**`app/net.py`** contains the retry loop:
+
+```python
+def fetch(url, get):
+    for attempt in range(MAX_RETRIES):          # attempt = 0, 1, 2
+        try:
+            return get(url, timeout=TIMEOUT_S)
+        except OSError:
+            time.sleep(2 ** attempt)            # sleep before retrying
+    raise RuntimeError(f"giving up on {url}")
+```
+
+If **every** attempt fails, the loop runs all 3 iterations and sleeps `2 ** attempt` after each failure (including the sleep after the final attempt, before the `RuntimeError` is raised):
+
+| attempt | sleep | seconds |
+|---------|-------|---------|
+| 0 | 2⁰ | 1 |
+| 1 | 2¹ | 2 |
+| 2 | 2² | 4 |
+
+**Total = 1 + 2 + 4 = 7 seconds.**

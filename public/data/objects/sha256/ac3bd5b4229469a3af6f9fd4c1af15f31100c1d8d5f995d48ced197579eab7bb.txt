@@ -1,0 +1,19 @@
+Both modes work correctly. The script is complete and tested.
+
+## Summary
+
+I created **`system_usage.py`** in your project folder — a simple terminal tool for monitoring RAM and CPU usage.
+
+**What it shows:**
+- **CPU Usage** — percentage across all cores
+- **RAM Total / Used / Available** — in human-readable units (GiB), with a used-percentage
+
+**How to run it:**
+- `python3 system_usage.py` — prints a one-time snapshot
+- `python3 system_usage.py 2` — live-updating view, refreshing every 2 seconds (press `Ctrl+C` to stop)
+
+**Design notes:**
+- Uses only the Python standard library. It prefers the `psutil` package if installed, but falls back to reading `/proc/stat` (CPU) and `/proc/meminfo` (RAM) so it works even without any third-party packages.
+- The continuous mode clears the screen between updates for a clean, `top`-like display.
+
+The test run confirmed it works on this machine (125.7 GiB RAM, ~13% CPU).

@@ -1,0 +1,6 @@
+The fix has been applied. The issue was that the `UNITS` dictionary in `app/units.py` had `"KB": 1000`, but the test expects 1024-based units (1.5 KB = 1536 bytes = 1.5 * 1024). Changed `"KB"` from 1000 to 1024 to match the 1024-based unit system described in the module docstring.
+
+The corrected `app/units.py` now has:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```

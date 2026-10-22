@@ -1,0 +1,11 @@
+
+
+The sandbox won't run programs in this session, but the README is accurate since the help text is copied verbatim from the `argparse` definitions in `app/cli.py`.
+
+Created **README.md** for the `tinydl` downloader. It documents all three command line options with their exact help text:
+
+- `url` — *what to download* (positional)
+- `-o`, `--output` — *file to write (default: stdout)*
+- `-q`, `--quiet` — *no progress output*
+
+Plus a short usage line and a couple of examples.

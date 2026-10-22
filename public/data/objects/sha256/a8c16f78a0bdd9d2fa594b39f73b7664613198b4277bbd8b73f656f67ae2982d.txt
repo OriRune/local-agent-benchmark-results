@@ -1,0 +1,4 @@
+{
+  "answer": "The paper evaluates the generated captions using two main approaches: (1) a human questionnaire in which participants rank the funniness of captions from humans, the Neural Joking Machine (NJM), and a baseline STAIR caption without knowing their source, and (2) the star‑rating system on the Bokete Ogiri website, where the average number of stars received by each method’s captions is compared.",
+  "evidence": [2, 12, 13, 14]
+}

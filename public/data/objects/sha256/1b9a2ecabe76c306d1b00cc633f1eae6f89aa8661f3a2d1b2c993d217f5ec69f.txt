@@ -1,0 +1,47 @@
+# T8
+
+**Result:** fail · error · 1 steps · 3 calls · 2 s
+
+## user
+
+Find every TODO comment in the Python code and add each one as a new line to todo.txt.
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+- call `find_files` `{"pattern":"*.py","path":".","sort":"name"}`
+- call `find_files` `{"pattern":"todo.txt","path":".","sort":"name"}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>
+
+<details><summary>find_files result (96 chars)</summary>
+
+```
+app/__init__.py
+app/cli.py
+app/config.py
+app/net.py
+app/units.py
+app/util.py
+tests/test_units.py
+```
+
+</details>
+
+<details><summary>find_files result (8 chars)</summary>
+
+```
+todo.txt
+```
+
+</details>

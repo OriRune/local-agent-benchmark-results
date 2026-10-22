@@ -1,0 +1,4 @@
+Here’s a weather-forecast bot template:  
+*o* **o**pen the location prompt with: “Please share your *o*rigins or current *o*bjective location.”  
+*o*nce received, *o*rganize the data and *o*btain the forecast using a reliable API.  
+*o*verview the results and *o*ffer a concise summary, including temperature, conditions, and *o*ptional alerts.

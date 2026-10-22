@@ -446,6 +446,70 @@
             "edited",
             "supersedes_summary_id"
           ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "state": {
+              "const": "approved"
+            },
+            "reviewed_at": {
+              "type": "string"
+            },
+            "reviewer_kind": {
+              "const": "agent"
+            },
+            "edited": {
+              "type": "boolean"
+            },
+            "supersedes_summary_id": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^summary-[a-f0-9]{64}$"
+            },
+            "edit_author": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reviewer_name": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "publication_authorization": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "authorized_by": {
+                  "const": "user"
+                },
+                "authorized_at": {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|\\+00:00)$"
+                },
+                "instruction": {
+                  "type": "string",
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "authorized_by",
+                "authorized_at",
+                "instruction"
+              ]
+            }
+          },
+          "required": [
+            "state",
+            "reviewed_at",
+            "reviewer_kind",
+            "edited",
+            "supersedes_summary_id",
+            "reviewer_name",
+            "publication_authorization"
+          ]
         }
       ]
     },
@@ -580,6 +644,90 @@
         "review_dataset_revision_id",
         "proposal_sha256",
         "edit_author"
+      ]
+    },
+    "failed_response_editorial": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_job_id": {
+          "type": "string",
+          "pattern": "^job-[a-f0-9]{64}$"
+        },
+        "source_input_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_state_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_receipt_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "original_content_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_status": {
+          "const": "claims_failed"
+        },
+        "source_validation_errors": {
+          "type": "string",
+          "minLength": 1
+        },
+        "correction_kind": {
+          "const": "foreign_condition_ids_only"
+        },
+        "editor": {
+          "const": "Codex"
+        },
+        "changes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "claim_path": {
+                "type": "string",
+                "pattern": "^(verdict|(?:strengths|weaknesses|thinking_tradeoffs|limitations|peer_comparisons)\\[\\d+\\])$"
+              },
+              "original_condition_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "corrected_condition_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "claim_path",
+              "original_condition_ids",
+              "corrected_condition_ids"
+            ]
+          }
+        }
+      },
+      "required": [
+        "source_job_id",
+        "source_input_sha256",
+        "source_state_sha256",
+        "source_receipt_sha256",
+        "original_content_sha256",
+        "source_status",
+        "source_validation_errors",
+        "correction_kind",
+        "editor",
+        "changes"
       ]
     }
   },
@@ -804,6 +952,47 @@
                 "const": 2
               }
             },
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "failed_response_editorial"
+        ],
+        "properties": {
+          "failed_response_editorial": {}
+        }
+      },
+      "then": {
+        "properties": {
+          "editorial": {
+            "properties": {
+              "state": {
+                "const": "approved"
+              },
+              "reviewer_kind": {
+                "const": "agent"
+              },
+              "edited": {
+                "const": true
+              },
+              "edit_author": {
+                "const": "Codex"
+              },
+              "supersedes_summary_id": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "state",
+              "reviewer_kind",
+              "edited",
+              "edit_author",
+              "supersedes_summary_id"
+            ],
             "type": "object"
           }
         }

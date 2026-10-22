@@ -1,0 +1,7 @@
+Looking at 6, 4, 4, 4, I need to find a combination that equals 24.
+
+Let me try: 6 × 4 = 24, then I need the two remaining 4s to cancel out.
+
+Checking: 6 × 4 + 4 - 4 = 24 + 4 - 4 = 24 ✓
+
+<answer>6 * 4 + 4 - 4</answer>

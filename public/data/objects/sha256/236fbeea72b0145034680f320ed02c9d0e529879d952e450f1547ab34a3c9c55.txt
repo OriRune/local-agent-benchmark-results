@@ -1,0 +1,5 @@
+Looking at these numbers, I need to find a combination that equals 24.
+
+Let me try: 10 * 4 = 40, then 40 - 9 = 31, then 31 - 7 = 24. ✓
+
+<answer>10 * 4 - 9 - 7</answer>

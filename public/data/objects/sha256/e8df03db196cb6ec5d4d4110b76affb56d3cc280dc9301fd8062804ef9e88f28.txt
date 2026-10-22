@@ -1,0 +1,8 @@
+The fix is applied. The problem was that `UNITS["KB"]` was set to `1000` (decimal) while the docstring states "1 KB = 1024 bytes" and the other units (MB, GB) use 1024-based exponents.
+
+**Change made:** `app/units.py` line 2 — changed `"KB": 1000` to `"KB": 1024`.
+
+This makes all three test cases pass:
+- `parse_size("512 B")` → `512 × 1 = 512` ✓
+- `parse_size("1.5 KB")` → `int(1.5 × 1024) = 1536` ✓
+- `parse_size("2 MB")` → `2 × 1024² = 2097152` ✓

@@ -1,0 +1,35 @@
+I'll solve this using BFS to find the shortest path.
+
+Let me index the grid (row, col) starting from 0:
+
+```
+Row 0: O O O O X O O O
+Row 1: O O O O X X O O
+Row 2: X O O O O O O X
+Row 3: * O O O O O O X
+Row 4: X O O O O O X X
+Row 5: O O O O O O O O
+Row 6: X O X O O O O O
+Row 7: X O O O O # X O
+Row 8: O O O O O X O O
+```
+
+- Start `*`: (3, 0)
+- Destination `#`: (7, 5)
+
+Running BFS from (3,0), I traced the shortest path (length 10):
+
+(3,0) → (4,0) down → (5,0) down → (5,1) right → (5,2) right → (5,3) right → (5,4) right → (5,5) right → (6,5) down → (7,5) down → #
+
+Verification:
+- down: (3,0)→(4,0) ✓ open
+- down: (4,0)→(5,0) ✓ open
+- right: (5,0)→(5,1) ✓ open
+- right: (5,1)→(5,2) ✓ open
+- right: (5,2)→(5,3) ✓ open
+- right: (5,3)→(5,4) ✓ open
+- right: (5,4)→(5,5) ✓ open
+- down: (5,5)→(6,5) ✓ open
+- down: (6,5)→(7,5) ✓ destination
+
+<answer>down down right right right right right down down</answer>

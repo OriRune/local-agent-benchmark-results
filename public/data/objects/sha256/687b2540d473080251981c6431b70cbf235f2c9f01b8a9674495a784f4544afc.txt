@@ -1,0 +1,1 @@
+*User: What is the weather in {o:location}?* *Bot: Forecast output: {o:forecast} for {o:location}.*

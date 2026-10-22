@@ -1,0 +1,1 @@
+All changes are complete. The function `fetch` has been renamed to `download` in `app/net.py`, and all usages in `app/cli.py` have been updated accordingly. The only remaining references to "download" are in comments/strings and in `app/config.py` which is unrelated to the function rename.

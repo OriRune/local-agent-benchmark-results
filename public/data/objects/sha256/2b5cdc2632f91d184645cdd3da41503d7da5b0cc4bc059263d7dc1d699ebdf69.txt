@@ -1,0 +1,4 @@
+{
+  "answer": "The system uses Occupation Data and Names Data for bias detection and evidence generation, as described in Sections 11–13.",
+  "evidence": [11, 12, 13]
+}

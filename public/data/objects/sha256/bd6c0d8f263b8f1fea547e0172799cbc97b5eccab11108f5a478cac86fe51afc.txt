@@ -1,0 +1,4 @@
+The file `../shared-config/network/proxy.ini` sets:
+
+- **Host:** `proxy.lan.example`
+- **Port:** `3128`

@@ -1,0 +1,12 @@
+I need to make 24 using 6, 4, 4, 4.
+
+Let me work through this:
+- 6 × 4 = 24
+- Then I need the two remaining 4s to not change the value
+- 4 / 4 = 1, so multiplying by it keeps 24
+
+So: 6 × 4 × 4 / 4 = 24
+
+Verification: 6 × 4 = 24, 24 × 4 = 96, 96 / 4 = 24 ✓
+
+<answer>6 * 4 * 4 / 4</answer>

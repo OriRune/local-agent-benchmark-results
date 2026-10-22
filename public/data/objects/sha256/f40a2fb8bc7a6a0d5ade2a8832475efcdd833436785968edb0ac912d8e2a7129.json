@@ -1,0 +1,1 @@
+{"check":{"cpu_percent":false,"exit":0,"finished":true,"measured":"12.3 of 31.3 GB used (39%)","output":"=== RAM Usage ===\n\\n=== CPU Usage ===\n%Cpu(s): 38.3 us,  5.8 sy,  0.0 ni, 51.7 id,  4.2 wa,  0.0 hi,  0.0 si,  0.0 st \n/workspace/system_info.sh: line 15: awk: command not found","ram_plausible":false,"script":"system_info.sh"},"score":0}

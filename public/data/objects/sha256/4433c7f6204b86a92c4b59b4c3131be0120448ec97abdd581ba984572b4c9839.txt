@@ -1,0 +1,5 @@
+
+
+The sandbox can't run programs in this session, so I verified by hand: with `KB = 1024`, the assertions now hold — `512 B` → 512, `1.5 KB` → 1.5 × 1024 = 1536, `2 MB` → 2 × 1024².
+
+**Fix:** in `app/units.py`, the `UNITS` table had `"KB": 1000` while the module's docstring and all other units are 1024-based. I changed it to `"KB": 1024`, so `parse_size("1.5 KB")` now correctly returns 1536. No changes to the test.

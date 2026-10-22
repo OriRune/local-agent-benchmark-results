@@ -1,0 +1,6 @@
+I found a few files that might be what you're looking for:
+
+- `Desktop/trip ideas 2025.txt` (contains a list of places like Kyoto and a road trip)
+- `Documents/old stuff/holidayplans.md` (contains plans for Lisbon, Lake District, and Iceland)
+
+There was also a file called `Documents/Personal/Summer Break ideas.docx`, but it appears to be damaged and couldn't be read.

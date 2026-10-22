@@ -1,0 +1,21 @@
+I've fixed the bug. Here's what was wrong:
+
+## Root Cause
+
+The `UNITS` dictionary in `app/units.py` had an inconsistent conversion factor for kilobytes:
+
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+`"KB"` was set to `1000` (decimal/metric), while all the other units used `1024`-based (binary) factors. This contradicted both the module docstring — *"Sizes use 1024-based units: 1 KB = 1024 bytes"* — and the test's expectation.
+
+## The Fix
+
+Changed `"KB"` from `1000` to `1024`:
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+Now `parse_size("1.5 KB")` correctly returns `1.5 * 1024 = 1536`, matching the test's expectation, while the other two assertions (`"512 B" == 512` and `"2 MB" == 2*1024*1024`) were already passing.

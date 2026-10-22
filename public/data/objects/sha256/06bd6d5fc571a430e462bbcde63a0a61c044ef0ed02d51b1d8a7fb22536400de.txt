@@ -1,0 +1,6 @@
+Fixed. The bug was in `app/units.py`: the `KB` unit was set to `1000` (decimal) instead of `1024` (binary), which contradicted the module's own docstring ("Sizes use 1024-based units: 1 KB = 1024 bytes") and caused `parse_size("1.5 KB")` to return `1500` instead of the expected `1536`.
+
+I changed `"KB": 1000` to `"KB": 1024`. All three assertions in the test now pass:
+- `parse_size("512 B") == 512` ✓
+- `parse_size("1.5 KB") == 1536` ✓
+- `parse_size("2 MB") == 2097152` ✓

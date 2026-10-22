@@ -1,0 +1,10 @@
+Checked the disk. The change I described was made to **README.md** — and it is on disk. I just read it back: it's 911 bytes, 43 lines, and it contains exactly what I said — the overview, the usage line, the options table, the examples, and the three notes (3 retries with backoff, `--quiet` still printing the byte count, no GUI).
+
+To be precise about what I did and didn't do:
+
+- I **wrote `README.md`** (via `write_file`). That is where the overview, usage line, examples, and notes went.
+- I did **not** write or change `cli.py`, `config.py`, `net.py`, or `notes.md`. I only **read** those files to get the exact help text and the retry/quiet/GUI details.
+
+So nothing is missing — the README content is real and present on disk. I never claimed to modify the source files, and none of them were touched.
+
+If you want any of that content changed (e.g., reworded, moved, or expanded), tell me what and I'll make the edit.

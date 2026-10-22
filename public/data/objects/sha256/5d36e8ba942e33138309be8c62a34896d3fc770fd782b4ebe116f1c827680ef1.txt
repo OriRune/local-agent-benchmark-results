@@ -1,0 +1,1 @@
+*o*: {location} *forecast*: {o} {o} {o} {o} {o}.

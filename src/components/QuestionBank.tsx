@@ -1,12 +1,14 @@
-import { useEffect, useId, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { bankPage, bankQuery, defaultBankView, parseBankView, type BankQuestion, type BankView, type BankSearch, BANK_OUTCOMES } from '../lib/question-bank';
 import { archiveUrl, editionObject, loadEdition } from '../lib/edition-client';
+import { outcomeText } from './QuestionMatrix';
 import type { TestDescription } from '../lib/public-types';
 
 export default function QuestionBank({ questions, descriptions = {}, editionId, releaseId = editionId, configurationId, conditionId }: {
   questions: BankQuestion[]; editionId?: string; releaseId?: string; configurationId?: string; conditionId?: string;
   descriptions?: Record<string,TestDescription>;
 }) {
+  const bankRef=useRef<HTMLDivElement>(null);
   const [view, setView] = useState(defaultBankView), [error, setError] = useState(''), [ready, setReady] = useState(false);
   const [search, setSearch] = useState<BankSearch>();
   const [loading, setLoading] = useState(false), [searchError, setSearchError] = useState(''), [checked, setChecked] = useState(false);
@@ -26,6 +28,7 @@ export default function QuestionBank({ questions, descriptions = {}, editionId, 
     finally { setLoading(false); }
   }
   useEffect(() => { if (view.search || view.outcome) void loadSearch(); }, [view.search, view.outcome, releaseId]);
+  useEffect(()=>{if(!configurationId||!conditionId||!bankRef.current)return;const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){void loadSearch();observer.disconnect();}},{rootMargin:'200px'});observer.observe(bankRef.current);return()=>observer.disconnect();},[releaseId,configurationId,conditionId]);
   const id = useId(), scope = questions.map(question => question.id).join(',');
   useEffect(() => {
     function restore() { try { setView(parseBankView(location.search)); setError(''); } catch (error) { setError((error as Error).message); } setReady(true); }
@@ -45,7 +48,7 @@ export default function QuestionBank({ questions, descriptions = {}, editionId, 
       : `/questions/${question.id}/${Object.keys(values).length ? '?' + new URLSearchParams(values) : ''}`;
   }
   if (error) return <div><p role="alert">{error}</p><button onClick={() => choose(defaultBankView())}>Reset question filters</button></div>;
-  return <div className="question-bank">
+  return <div className="question-bank" ref={bankRef}>
     <div className="toolbar" role="search" aria-label="Question bank" onFocusCapture={() => void loadSearch()}>
       <label htmlFor={`${id}-search`}>Find a question</label>
       <input id={`${id}-search`} type="search" disabled={!ready} value={view.search} onChange={event => {
@@ -65,7 +68,7 @@ export default function QuestionBank({ questions, descriptions = {}, editionId, 
     {checked && !search && <p>This older edition supports ID and title search only.</p>}
     {view.outcome && !search && <p role="alert">Outcome results are unavailable until this edition’s search index loads.</p>}
     <p role="status">{result.count ? `${result.start + 1}–${result.start + result.rows.length} of ${result.count} matching questions` : 'No matching questions.'} · {result.total} in this version</p>
-    <ul className="question-list">{result.rows.map(question => <li key={question.id}><a href={href(question)}>{question.source_id} · {descriptions[question.id]?.title ?? question.title}</a>{descriptions[question.id] && <p>{descriptions[question.id]!.description}</p>}<small>{question.scoring_status}</small></li>)}</ul>
+    <ul className="question-list">{result.rows.map(question => <li key={question.id}><a href={href(question)}>{descriptions[question.id]?.title ?? question.title}</a>{configurationId && conditionId && search && <span className="question-outcome">{outcomeText(search.questions.find(q=>q.question_id===question.id)?.outcomes.find(o=>o.configuration_id===configurationId&&o.condition_id===conditionId))}</span>}{descriptions[question.id] && <p>{descriptions[question.id]!.description}</p>}<small>{question.source_id} · {question.scoring_status}</small></li>)}</ul>
     {result.pages > 1 && <nav className="toolbar" aria-label="Question pages">
       <button disabled={!ready || result.page === 1} onClick={() => choose({ ...view, page: result.page - 1 })}>Previous questions</button>
       <span>Page {result.page} of {result.pages}</span>

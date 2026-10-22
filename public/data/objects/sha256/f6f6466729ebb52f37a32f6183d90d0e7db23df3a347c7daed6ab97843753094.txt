@@ -1,0 +1,16 @@
+The relevant code is in `app/net.py`, and the settings are in `app/config.py`.
+
+**The logic:**
+- `MAX_RETRIES = 3`, so `for attempt in range(MAX_RETRIES)` iterates with `attempt = 0, 1, 2`.
+- On each failed attempt (an `OSError`), it sleeps `2 ** attempt` seconds before retrying.
+
+**Sleep per attempt:**
+| attempt | sleep `2 ** attempt` |
+|---------|----------------------|
+| 0       | 1 s                  |
+| 1       | 2 s                  |
+| 2       | 4 s                  |
+
+The `time.sleep(2 ** attempt)` runs after *every* failed attempt — including the last one — before the loop exits and raises `RuntimeError`.
+
+**Total = 1 + 2 + 4 = 7 seconds.**

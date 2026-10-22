@@ -1,0 +1,16 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The new function:
+```python
+def format_bytes(n):
+    units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
+    size = float(n)
+    for unit in units:
+        if size < 1024 or unit == units[-1]:
+            if unit == 'B':
+                return f'{int(size)} {unit}'
+            return f'{size:.1f} {unit}'
+        size /= 1024
+```
+
+It divides by 1024 until the value is under 1024, then formats with one decimal place (e.g. `1536` → `'1.5 KB'`, `1073741824` → `'1.0 GB'`, `512` → `'512 B'`). I verified the file contents; the sandbox doesn't allow running Python here, so I confirmed the logic by inspection rather than execution.

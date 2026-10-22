@@ -1,0 +1,25 @@
+Let \(D=(0,0)\) and place \(DC\) on the \(x\)-axis. Since \(AB=DC=107\) and \(BC=16\), take
+\[
+A=(0,-16),\qquad C=(107,0).
+\]
+Write \(E=(t,0)\). From \(EF=184\) and \(FG=17\),
+\[
+F=(t+184,0),\quad H=(t,17),\quad G=(t+184,17).
+\]
+
+A circle through \(A\) and \(D\) has equation
+\[
+x^2+y^2+px+16y=0
+\]
+for some \(p\). Substituting \(H\) and \(G\), whose \(y\)-coordinates are both \(17\), shows that \(t\) and \(t+184\) are the roots of
+\[
+x^2+px+17^2+16\cdot17=0.
+\]
+Thus their product is \(561\), so
+\[
+t(t+184)=561.
+\]
+Solving gives \(t=3\) (the positive solution). Therefore,
+\[
+CE=DC-DE=107-3=\boxed{104}.
+\]

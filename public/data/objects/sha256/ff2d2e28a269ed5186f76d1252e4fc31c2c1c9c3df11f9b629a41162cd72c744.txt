@@ -1,0 +1,6 @@
+Done. Here's what I did in `app/util.py`:
+
+- **Added `format_bytes(n)`** — iterates through byte units (B, KB, MB, GB, TB, PB), dividing by 1024 until the value fits, then formats to one decimal place. Bytes (`B`) are shown as whole numbers, and larger units are capped at PB. For example, `1536` → `'1.5 KB'`, `1048576` → `'1.0 MB'`.
+- **Removed the `# TODO: add a helper that formats byte sizes` comment**, since the helper now exists.
+
+The existing `clamp` function is left untouched.

@@ -1,0 +1,18 @@
+The function has been added and the TODO removed. Here's the final state of `app/util.py`:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024:
+            return f"{n:.1f} {unit}"
+        n /= 1024
+    return f"{n:.1f} PB"
+```
+
+**What changed:**
+- Removed the `# TODO: add a helper that formats byte sizes` comment (line 5).
+- Added `format_bytes(n)` which iterates through binary units (B, KB, MB, GB, TB), dividing by 1024 until the value is under 1024, then returns the formatted string with one decimal place (e.g., `512 B`, `1.5 KB`, `2.0 MB`).

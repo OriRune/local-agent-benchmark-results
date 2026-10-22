@@ -1,0 +1,15 @@
+Looking at this problem, I need to determine if the prerequisite graph has any cycles (if it does, all courses cannot be finished).
+
+**Building the directed graph** where an edge from b → a means "b must be taken before a":
+
+Let me trace a potential cycle starting from course 10:
+
+1. **10 → 13**: From prerequisite (13, 10) — take 10 before 13 ✓
+2. **13 → 6**: From prerequisite (6, 13) — take 13 before 6 ✓  
+3. **6 → 10**: From prerequisite (10, 6) — take 6 before 10 ✓
+
+This gives us the cycle: **10 → 13 → 6 → 10**
+
+Since there is a cycle in the dependency graph, it is impossible to complete all courses.
+
+<answer>False</answer>

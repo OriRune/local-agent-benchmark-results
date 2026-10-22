@@ -1,0 +1,22 @@
+Here's what I found from your books.csv:
+
+**Different books:** You have 22 entries in the file, but "Project Hail Mary" appears twice (same title, author, dates, and pages). That leaves **21 different books**.
+
+**Finished July–December:** Looking at the End Date column (which uses a mix of formats: `YYYY-MM-DD`, `MM/DD/YYYY`, and `Mon DD YYYY`), 10 books have end dates falling between July 1 and December 31, 2025:
+
+| # | Title | End Date |
+|---|-------|----------|
+| 1 | Dune | 2025-07-10 |
+| 2 | The Hobbit | 2025-07-19 |
+| 3 | Sapiens | 08/15/2025 |
+| 4 | The Night Circus | 2025-09-12 |
+| 5 | Tomorrow and Tomorrow and Tomorrow | 2025-09-30 |
+| 6 | The Thursday Murder Club | 2025-10-09 |
+| 7 | Babel | 2025-11-05 |
+| 8 | Lessons in Chemistry | 2025-11-20 |
+| 9 | A Psalm for the Wild-Built | 2025-11-24 |
+| 10 | The Bear and the Nightingale | 2025-12-16 |
+
+(Note: *Middlemarch* has no end date, so it's not counted as finished in that period.)
+
+ANSWER: 21, 10

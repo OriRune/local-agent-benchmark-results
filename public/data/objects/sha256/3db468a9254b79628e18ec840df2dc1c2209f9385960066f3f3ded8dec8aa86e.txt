@@ -1,0 +1,7 @@
+The most recent git commit (hash `23f88c9`) is titled **"raise the download timeout from 10 to 20 seconds"**.
+
+It changed a single line in one file:
+
+- **`app/config.py`** — changed `TIMEOUT_S = 10` to `TIMEOUT_S = 20` (the downloader's timeout setting, doubled from 10 to 20 seconds).
+
+That's the only change: 1 insertion, 1 deletion in a single file.

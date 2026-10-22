@@ -1,0 +1,13 @@
+Since everyone owns candy hearts, the 437 residents who own exactly two things each own one of the other three items, and the 234 who own exactly three each own two of them.
+
+The total number of ring, golf-club, and spade ownerships is
+\[
+195+367+562=1124.
+\]
+If \(x\) residents own all three of those items, then
+\[
+437+2(234)+3x=1124.
+\]
+Thus \(3x=219\), so \(x=73\).
+
+073

@@ -1,0 +1,7 @@
+I have created a `README.md` file that lists the program name and all its command-line options with their corresponding help text.
+
+**README.md content:**
+- Program: `tinydl`
+- `url`: what to download
+- `-o, --output`: file to write (default: stdout)
+- `-q, --quiet`: no progress output

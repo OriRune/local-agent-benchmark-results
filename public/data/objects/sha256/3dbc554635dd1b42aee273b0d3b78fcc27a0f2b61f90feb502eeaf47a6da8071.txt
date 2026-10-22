@@ -1,0 +1,22 @@
+Looking at this problem, I need to determine if the prerequisite graph has a cycle (if it does, not all courses can be finished).
+
+**Building the graph:** Each prerequisite (a_i, b_i) means b_i → a_i (b_i must be taken before a_i).
+
+**Searching for a cycle:**
+
+Let me trace edges from key nodes:
+- From course **1** (edges where b_i = 1): 1→8, 1→6, 1→10, 1→2, **1→5**, 1→14, 1→15, 1→4
+- From course **5** (edges where b_i = 5): **5→13**, 5→9, 5→6
+- From course **13** (edges where b_i = 13): **13→1**
+
+This gives us the cycle: **1 → 5 → 13 → 1**
+
+Since there's a cycle in the prerequisite graph, it's impossible to finish all courses.
+
+**Verification with Kahn's algorithm:**
+- In-degrees: [3, 2, 1, 0, 1, 2, 3, 2, 3, 3, 1, 3, 3, 2, 3, 3, 3]
+- Only node 3 has in-degree 0 initially
+- After processing node 3, no node reaches in-degree 0
+- Topological sort fails (can't process all 17 nodes)
+
+<answer>False</answer>

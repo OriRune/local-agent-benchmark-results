@@ -1,0 +1,20 @@
+The solution converges to a total delta-v of exactly 9,400 m/s.
+
+**Solution:**
+
+Let X = mass at start of stage 2 burn = (stage 2 dry + stage 2 propellant + payload).
+
+**Stage 1:**
+- m₀ = 4,000 + 36,000 + X = 40,000 + X
+- m_f = 4,000 + X
+- Δv₁ = 290 × 9.80665 × ln((40,000 + X)/(4,000 + X))
+
+**Stage 2:**
+- m₀ = X, m_f = 900 + 1,200 = 2,100
+- Δv₂ = 340 × 9.80665 × ln(X/2,100)
+
+Solving Δv₁ + Δv₂ = 9,400 gives X ≈ 13,629.43 kg, so stage 2 propellant = X − 900 − 1,200 ≈ 11,529.43 kg.
+
+This splits the delta-v as Δv₁ ≈ 3,164 m/s and Δv₂ ≈ 6,236 m/s.
+
+ANSWER: 11529.43 kg

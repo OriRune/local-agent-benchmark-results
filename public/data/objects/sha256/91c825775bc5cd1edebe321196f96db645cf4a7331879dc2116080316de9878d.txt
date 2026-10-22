@@ -1,0 +1,1 @@
+{"answer":"ICD-10 codes identify causes of death using the International Classification of Diseases, 10th revision. The paper gives I509 as the code for “insuffisance cardiaque aigue”; its dictionaries contained 3,539 codes (run 2) and 6,392 codes (run 1).","evidence":[0,5,10]}

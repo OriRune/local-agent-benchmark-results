@@ -1,0 +1,25 @@
+Looking at this problem, I need to determine if the prerequisite graph has a cycle (which would make it impossible to finish all courses).
+
+**Building the directed graph** (prerequisite → course):
+- 5→4, 5→1, 5→0, 5→10
+- 4→9, 4→0, 4→6
+- 0→10, 0→1, 0→2
+- 1→2, 10→7, 10→3
+- 2→6, 9→3, 3→8
+
+**Performing topological sort (Kahn's algorithm):**
+
+In-degrees: 5→0, 4→1, 9→1, 0→2, 1→2, 10→2, 2→2, 6→2, 7→1, 3→2, 8→1
+
+1. Start with **5** (in-degree 0) → removes edges to 4,1,0,10
+2. **4** becomes 0 → removes edges to 9,0,6
+3. **9** becomes 0 → removes edge to 3
+4. **0** becomes 0 → removes edges to 10,1,2
+5. **10** becomes 0 → removes edges to 7,3
+6. **1** becomes 0 → removes edge to 2
+7. **7,3,2** become 0 → process them
+8. **8,6** become 0 → process them
+
+All 11 courses processed successfully — **no cycle exists**.
+
+<answer>True</answer>

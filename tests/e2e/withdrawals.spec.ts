@@ -29,7 +29,7 @@ test('withdrawn evidence blocks cached downloads and explains old pinned links w
     const result = await withdrawEvidence(source, { objectIds: [objectId], reason: 'Synthetic evidence removed by the owner.', withdrawnAt: '2026-10-09T00:00:00.000Z', out });
     expect(result.retired_editions).toEqual([old]); served = out;
     let downloads = 0; page.on('download', () => downloads++);
-    await answer.getByRole('button', { name: 'Download text', exact: true }).click();
+    await answer.getByRole('button', { name: 'Download original final answer', exact: true }).click();
     await expect(page.getByRole('alert')).toContainText('This evidence was intentionally withdrawn');
     expect(downloads).toBe(0);
     await page.goto(archiveUrl(old, { question }));

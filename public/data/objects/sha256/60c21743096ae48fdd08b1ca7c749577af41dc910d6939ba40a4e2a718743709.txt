@@ -1,0 +1,10 @@
+I've created the shell script `open-apps.sh` in the current working folder. 
+
+To use it:
+1. Make it executable: `chmod +x open-apps.sh`
+2. Run it: `./open-apps.sh`
+
+The script will launch:
+1. Chrome with google.com loaded
+2. gedit (the default text editor on Linux Mint)
+3. The file manager (nemo) showing `[private-home]/Documents/llama.cpp`

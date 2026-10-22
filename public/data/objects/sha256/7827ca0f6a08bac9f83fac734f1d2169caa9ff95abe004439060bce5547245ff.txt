@@ -1,0 +1,14 @@
+The missing parts correspond to the following expressions:
+
+1 → expression 1  
+2 → expression 2  
+3 → expression 3  
+4 → expression 4  
+5 → expression 6  
+6 → expression 8  
+7 → expression 7  
+8 → expression 9  
+9 → expression 10  
+10 → expression 5  
+
+**Answer:** 1, 2, 3, 4, 6, 8, 7, 9, 10, 5

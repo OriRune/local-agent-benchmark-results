@@ -1,0 +1,6 @@
+Done. Here's what I changed in `app/util.py`:
+
+- **Added** `format_bytes(n)`, which divides the value by 1024 as it walks through units (B, KB, MB, GB, TB, PB) and returns a string like `'1.5 KB'`. Bytes are returned as integers (e.g. `'512 B'`), while larger units are formatted to one decimal place.
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.
+
+The `clamp` function is left unchanged. Note I couldn't execute a live test run (the sandbox disallows running programs this session), but the function logic is verified by inspection.

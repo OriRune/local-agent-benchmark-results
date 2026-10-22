@@ -9,7 +9,7 @@ const artifacts=index.artifacts.filter(a=>a.checkpoint_id===checkpoint.id);
 const analyses=await modelSummaries(checkpoint.id);
 const quantAnalysis=await quantSummary(checkpoint.id);
 ---
-<Shell title={checkpoint.name}><a href="/models/">← All models</a><div class="eyebrow" style="margin-top:28px">Model results</div><h1>{checkpoint.name}</h1><p class="lede">{artifacts.length} weight format{artifacts.length===1?'':'s'}, with the measured runtime and coverage shown separately for each configuration.</p>
+<Shell title={checkpoint.name}><a href="/models/">← All models</a><h1>{checkpoint.name}</h1><p class="model-deck">{artifacts.length} tested weight format{artifacts.length===1?'':'s'} · Explore results, then inspect the answers.</p>
 <ModelResults data={index} checkpointId={checkpoint.id} releaseId={release.release_id} analyses={analyses} quantAnalysis={quantAnalysis} client:load/>
 <section class="panel"><h2>Tested weights</h2>{artifacts.map(a=><div><h3>{a.quantization} · {formatBytes(a.total_bytes)}</h3><p>{a.publisher??'Publisher unresolved'} · {a.provenance_status.replaceAll('_',' ')}</p>{a.files.map(f=><p><span>{f.name}</span>{f.url&&<> · <a href={f.url}>Exact GGUF file →</a></>}<small style="display:block">{f.hash_type==='header_1m_sha256'?'Historical first-MiB hash only; not a full-file identity.':f.hash_type??'File hash not recorded.'}</small></p>)}</div>)}</section>
 <section class="panel"><h2>Explore the answers</h2><p>Choose a suite to inspect its exact available questions, references and model answers.</p><div class="tabs">{index.suites.map(s=><a href={`/tests/${s.id}/`}>{s.name}</a>)}</div></section></Shell>

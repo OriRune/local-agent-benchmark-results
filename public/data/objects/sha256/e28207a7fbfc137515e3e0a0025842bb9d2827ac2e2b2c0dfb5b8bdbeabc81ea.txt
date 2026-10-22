@@ -1,0 +1,12 @@
+
+
+**7 seconds total.**
+
+From `app/net.py`:
+- `MAX_RETRIES = 3` (in `app/config.py`), so the loop runs with `attempt` = 0, 1, 2
+- Each failed attempt sleeps `2 ** attempt` seconds:
+  - attempt 0 → 2⁰ = 1 s
+  - attempt 1 → 2¹ = 2 s
+  - attempt 2 → 2² = 4 s
+
+Total: 1 + 2 + 4 = **7 seconds**, after which it raises `RuntimeError("giving up on {url}")`.

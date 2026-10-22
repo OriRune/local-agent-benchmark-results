@@ -1,0 +1,3 @@
+Done. I reverted the change directly in `app/config.py`, restoring `TIMEOUT_S` from `20` back to `10` — undoing what the most recent commit (`f54a62c`) introduced, without using git to modify anything.
+
+The working tree now shows this as an unstaged change (the commit itself is still on the branch, as requested).

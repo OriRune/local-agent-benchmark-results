@@ -1,0 +1,7 @@
+Done! I've created `hello.txt` containing exactly the line:
+
+```
+hello from the local agent
+```
+
+The file has been verified to contain the correct content.

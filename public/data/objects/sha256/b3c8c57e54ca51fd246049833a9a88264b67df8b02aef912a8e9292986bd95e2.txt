@@ -1,0 +1,22 @@
+```json
+{
+  "name": "Kaelen Swifthand",
+  "race": "Human",
+  "class": "Rogue (Arcane Trickster)",
+  "level": 4,
+  "background": "Charlatan",
+  "ability_scores": {
+    "strength": 10,
+    "dexterity": 16,
+    "constitution": 12,
+    "intelligence": 14,
+    "wisdom": 8,
+    "charisma": 12
+  },
+  "proficiency_bonus": "+2",
+  "skills": ["Stealth", "Perception", "Arcana", "Deception"],
+  "equipment": "Leather armor, rapier, two daggers, thieves' kit, component pouch, hooded lantern",
+  "features": "Sneak Attack, Mage Hand",
+  "notes": "A celebrated medalist of the theta circuit, renowned for blending illusion with larceny."
+}
+```

@@ -1,0 +1,45 @@
+# T2
+
+**Result:** fail · error · 2 steps · 2 calls · 3 s
+
+## user
+
+What release date is mentioned in notes.md?
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>
+
+## assistant
+
+- call `read_file` `{"path":"notes.md","start_line":1,"end_line":100}`
+
+<details><summary>read_file result (380 chars)</summary>
+
+```
+notes.md (10 lines)
+1	# Planning notes
+2	
+3	## 2026-09-02
+4	- Storage: decided to drop SQLite and keep plain JSON files; the data is small and JSON is easier to inspect.
+5	- Maria will look at proxy support.
+6	
+7	## 2026-09-16
+8	- The release is planned for 14 October.
+9	- Retries stay at 3 for now; revisit after the beta.
+10	- Nobody has asked for a GUI, so it is out of scope.
+```
+
+</details>

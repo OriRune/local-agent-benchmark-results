@@ -1,0 +1,7 @@
+Done. I renamed the function and updated every usage:
+
+- **`app/net.py`** — `def fetch(url, get):` → `def download(url, get):`
+- **`app/cli.py`** — import `from app.net import fetch` → `from app.net import download`
+- **`app/cli.py`** — call site `data = fetch(...)` → `data = download(...)`
+
+A project-wide search confirms no references to `fetch` remain, and the three `download` references in `cli.py`/`net.py` are the intended changes (the other `download` hits in `cli.py` and `config.py` are pre-existing strings/comments unrelated to this rename).

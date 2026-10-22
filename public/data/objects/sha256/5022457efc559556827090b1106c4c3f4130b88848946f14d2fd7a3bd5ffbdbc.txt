@@ -1,0 +1,14 @@
+Let \(D=(0,0)\), so \(C=(107,0)\) and \(A=(0,-16)\). Write \(E=(x,0)\). Since \(EF=184\), the other rectangle’s upper vertices are \(H=(x,17)\) and \(G=(x+184,17)\).
+
+A circle through \(D\) has equation \(X^2+Y^2+pX+qY=0\). Since it also passes through \(A\), we get \(q=16\). Thus, for points on the circle with \(Y=17\), their \(X\)-coordinates satisfy
+\[
+X^2+pX+17^2+16\cdot17=0.
+\]
+The coordinates \(x\) and \(x+184\) of \(H\) and \(G\) are roots, so their product is \(561\):
+\[
+x(x+184)=561.
+\]
+Solving gives \(x=3\) or \(x=-187\). As \(E\) lies between \(D\) and \(C\), \(x=3\). Therefore,
+\[
+CE=107-3=\boxed{104}.
+\]

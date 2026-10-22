@@ -1,0 +1,9 @@
+I've created `README.md`.
+
+I inspected `app/cli.py` (the CLI entry point, program name `tinydl`) and listed every argument defined in `build_parser()`:
+
+- `url` — positional, "what to download"
+- `-o` / `--output FILE` — "file to write (default: stdout)"
+- `-q` / `--quiet` — "no progress output"
+
+The README contains a table mapping each option to its exact help text, plus usage notes and examples. I couldn't execute `--help` (the sandbox denies program runs), so the option list is derived directly from the source rather than captured output.

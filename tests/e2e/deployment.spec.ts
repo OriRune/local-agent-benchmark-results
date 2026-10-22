@@ -28,7 +28,7 @@ test('browser enforces deployment CSP while overview, archive and evidence remai
   await page.locator('a[href*="question="]').first().click();
   await expect(page.locator('.evidence pre').first()).toBeVisible();
   const download = page.waitForEvent('download');
-  await page.getByRole('button', { name: 'Download text', exact: true }).first().click();
+  await page.getByRole('button', { name: /^Download original / }).first().click();
   expect(await (await download).failure()).toBeNull();
   expect(await page.evaluate(() => (window as any).__cspViolations)).toEqual([]);
   expect(errors).toEqual([]);

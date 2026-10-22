@@ -1,0 +1,25 @@
+# T8
+
+**Result:** fail · error · 1 steps · 1 calls · 2 s
+
+## user
+
+Find every TODO comment in the Python code and add each one as a new line to todo.txt.
+
+## assistant
+
+- call `find_files` `{"pattern":"*.py","path":".","sort":"name"}`
+
+<details><summary>find_files result (96 chars)</summary>
+
+```
+app/__init__.py
+app/cli.py
+app/config.py
+app/net.py
+app/units.py
+app/util.py
+tests/test_units.py
+```
+
+</details>

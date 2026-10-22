@@ -1,0 +1,1 @@
+Here is a template where the bot collects your *location* and returns the *weather forecast*. The script prompts: "Please provide your current location so I can show you today's conditions." It then processes the input and outputs a *concise summary* of upcoming weather. This approach keeps interactions *smooth and efficient* for every user.

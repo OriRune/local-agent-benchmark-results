@@ -1,0 +1,42 @@
+## Setting Up the Problem
+
+I have three dice rolled together:
+- **d12**: values 1–12
+- **d10**: values 1–10  
+- **d2**: values 1–2
+
+**Total outcomes** = 12 × 10 × 2 = **240**
+
+I need to count outcomes where the **sum ≥ 10**.
+
+## Counting Favorable Outcomes
+
+Let me split by the d2 roll (c = 1 or 2), then count valid (d12, d10) pairs.
+
+**Case c = 1:** need d12 + d10 ≥ 9
+
+Counting pairs where d12 + d10 ≤ 8:
+$$7+6+5+4+3+2+1 = 28$$
+
+So pairs with sum ≥ 9: $120 - 28 = 92$
+
+**Case c = 2:** need d12 + d10 ≥ 8
+
+Counting pairs where d12 + d10 ≤ 7:
+$$6+5+4+3+2+1 = 21$$
+
+So pairs with sum ≥ 8: $120 - 21 = 99$
+
+## Total
+
+$$\text{Favorable} = 92 + 99 = 191$$
+
+**Verification (complement):** sum ≤ 9 gives $28 + 21 = 49$, and $240 - 49 = 191$ ✓
+
+## Probability
+
+$$\frac{191}{240}$$
+
+Since 191 is prime and doesn't divide 240, this is already reduced.
+
+<answer>191/240</answer>

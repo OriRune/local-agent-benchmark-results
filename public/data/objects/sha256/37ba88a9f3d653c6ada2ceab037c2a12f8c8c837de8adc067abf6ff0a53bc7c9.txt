@@ -1,0 +1,23 @@
+The task is complete. I've added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment.
+
+**Changes made:**
+- Removed the `# TODO: add a helper that formats byte sizes` comment
+- Added `format_bytes(n)` which walks through units (B, KB, MB, GB, TB) dividing by 1024 until the value fits, then formats it — bytes as an integer, larger units with one decimal place (e.g. `1536 → '1.5 KB'`, `1024**2 → '1.0 MB'`)
+
+The file now reads:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    """Return a human-readable size, e.g. '1.5 KB'."""
+    for unit in ("B", "KB", "MB", "GB", "TB"):
+        if abs(n) < 1024:
+            return f"{n:.1f} {unit}" if unit != "B" else f"{n:.0f} B"
+        n /= 1024
+    return f"{n:.1f} PB"
+```
+
+Note: I was unable to execute the code to run a live test (the sandbox denied program execution in this session), but I verified the file contents by reading it back and the logic is straightforward and correct.

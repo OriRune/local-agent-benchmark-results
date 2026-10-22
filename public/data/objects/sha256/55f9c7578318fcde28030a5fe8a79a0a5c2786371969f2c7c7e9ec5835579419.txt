@@ -1,0 +1,25 @@
+
+
+Both modes work. The script is ready:
+
+**`system_info.py`** — a dependency-free Python script that reads `/proc/meminfo` and `/proc/stat` directly:
+
+- **One-time snapshot** (default): `python3 system_info.py`
+- **Live view**: `python3 system_info.py --watch` — refreshes every 2 seconds, Ctrl+C to stop
+
+It shows:
+- **CPU usage** as a percentage with a small progress bar (measured between two `/proc/stat` samples)
+- **RAM**: percent used, plus used/total in human-readable units (MiB/GiB)
+- **Swap**: same, or "(none configured)" if the machine has no swap
+
+Example output:
+```
+=== System info  (2026-10-16 22:13:38) ===
+CPU usage:    2.6%  [#.............................]
+RAM:         35.7%  [###########...................]
+             11.2 GiB used of 31.3 GiB
+Swap:        35.6%  [###########...................]
+             3.6 GiB used of 10.0 GiB
+```
+
+Note: I also left a small `_test_watch.py` helper in the folder that I used to verify the `--watch` mode — you can ignore or remove it.

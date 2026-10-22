@@ -1,0 +1,1 @@
+Here is a template for your weather chat bot. BOT asks the user to share their *location* so it can show the *weather forecast*. The user then enters their city, and the bot replies with the forecast.

@@ -1,0 +1,28 @@
+# H2
+
+**Result:** fail · error · 1 steps · 1 calls · 2 s
+
+## user
+
+Rename the function fetch in app/net.py to download, and update every place in the project that uses it.
+
+## assistant
+
+- call `find_files` `{"pattern":"*","path":".","sort":"name"}`
+
+<details><summary>find_files result (130 chars)</summary>
+
+```
+notes.md
+todo.txt
+app/__init__.py
+app/cli.py
+app/config.py
+app/net.py
+app/units.py
+app/util.py
+data/events.log
+tests/test_units.py
+```
+
+</details>

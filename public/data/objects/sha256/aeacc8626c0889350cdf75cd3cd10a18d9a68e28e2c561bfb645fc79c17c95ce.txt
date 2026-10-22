@@ -1,0 +1,9 @@
+
+
+Created `README.md` for the project. I based it on the CLI definition in `app/cli.py` (program name `tinydl`) and listed every command line option with its exact help text:
+
+- **`url`** — what to download (required positional)
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+
+The README also includes a short description of what the tool does (fetch with up to 3 retries, write to file or stdout) and two usage examples.

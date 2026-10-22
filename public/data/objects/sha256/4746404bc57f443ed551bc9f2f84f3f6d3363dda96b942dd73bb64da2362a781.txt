@@ -1,0 +1,3 @@
+
+
+Done. `MAX_RETRIES` in `app/config.py` is now `5` (was `3`).

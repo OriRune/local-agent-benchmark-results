@@ -1,0 +1,21 @@
+| Day | Destination | Activities |
+| :--- | :--- | :--- |
+| 1 | Delhi | Arrival, visit Red Fort and Jama Masjid |
+| 2 | Delhi | Explore Qutub Minar, Lotus Temple, and India Gate |
+| 3 | Agra | Visit the Taj Mahal and Agra Fort |
+| 4 | Agra $\rightarrow$ Jaipur | Stop at Fatehpur Sikri, arrive in Jaipur |
+| 5 | Jaipur | Visit Amber Fort and Hawa Mahal |
+| 6 | Jaipur | Explore City Palace and Jantar Mantar |
+| 7 | Delhi | Return to Delhi for departure |
+
+******
+
+| Day | Destination | Activities |
+| :--- | :--- | :--- |
+| 1 | Beijing | Visit Forbidden City and Tiananmen Square |
+| 2 | Beijing | Explore the Great Wall and Summer Palace |
+| 3 | Xi'an | Travel to Xi'an, explore the Muslim Quarter |
+| 4 | Xi'an | Visit the Terracotta Army and Ancient City Wall |
+| 5 | Shanghai | Travel to Shanghai, walk along The Bund |
+| 6 | Shanghai | Visit Yu Garden and shop on Nanjing Road |
+| 7 | Shanghai | Final sightseeing and departure |

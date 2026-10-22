@@ -15,8 +15,8 @@ export type SpeedChart = {title:string;mode:string;date:string;binary:boolean;ro
 export type PeerChart = { id: string; title: string; description: string; metric: string; metricExplanation: string; mode: string; cohort: string; date: string; binary:boolean; uniformCoverage:string|null; ceiling:boolean; stale:boolean; otherMode?:string; moe:boolean;
   rows: {name:string;score:number;scored:number;planned:number;subject:boolean;rank:number;tied:boolean;size?:number|null;gap:string;href?:string}[] };
 export type SummaryReference = { id: string; label: string; detail: string; href?: string; answersHref?:string; group?: string; context?: string; chart?: PeerChart; speedChart?:SpeedChart; overview?: {label:string;detail:string}[]; metric?:string };
-export type SummaryView = { summary: PublicBenchmarkSummaryV1; references: Record<string, SummaryReference>; modelMentions?: ModelMention[]; comparisonRefreshNeeded?: boolean; visibleLimitations?: (Claim | ReaderClaim)[] };
-export type SummaryPacket = { peer_refresh_needed?: boolean; inputs: {
+export type SummaryView = { summary: PublicBenchmarkSummaryV1; references: Record<string, SummaryReference>; modelMentions?: ModelMention[]; comparisonRefreshNeeded?: boolean; comparisonEvidenceDate?: string; visibleLimitations?: (Claim | ReaderClaim)[] };
+export type SummaryPacket = { peer_refresh_needed?: boolean; analysis_input_hash?: string; origin_dataset_revision_id?: string; inputs: {
   subject?: { configuration: {name:string}; checkpoint?: {parameters:{total_billions:number|null;active_billions?:number|null}} };
   suites?: {id:string;name:string;description:string;metric:string;metric_kind:string}[];
   conditions?: {id:string;reasoning_requested:string;observed_reasoning?:string;verification?:string;kind:string}[];
@@ -87,6 +87,15 @@ export function summaryClaimText(claim: Claim | ReaderClaim): string {
   });
 }
 export function summaryView(summary: PublicBenchmarkSummaryV1, packet: SummaryPacket, edition?: { releaseId: string; checkpointId: string }): SummaryView {
+  // A later approval alone does not refresh a retained historical cohort.
+  const basis = summary.editorial_basis;
+  const reviewedAt = summary.editorial.reviewed_at;
+  const currentEditorialEvidence = summary.editorial.state === 'approved' && basis && reviewedAt &&
+    !packet.peer_refresh_needed && basis.review_dataset_revision_id !== basis.source_dataset_revision_id &&
+    packet.origin_dataset_revision_id === basis.review_dataset_revision_id &&
+    packet.analysis_input_hash === summary.evidence.analysis_input_hash &&
+    Date.parse(reviewedAt) >= Date.parse(summary.generated_at);
+  const comparisonEvidenceDate = (currentEditorialEvidence ? reviewedAt : summary.generated_at).slice(0,10);
   const claims = [summary.content.verdict, ...summary.content.strengths, ...summary.content.weaknesses, ...summary.content.thinking_tradeoffs, ...summary.content.limitations, ...('peer_comparisons' in summary.content ? summary.content.peer_comparisons : [])];
   const used = new Set(claims.flatMap(c => c.evidence_refs));
   const references: Record<string, SummaryReference> = {};
@@ -137,7 +146,7 @@ export function summaryView(summary: PublicBenchmarkSummaryV1, packet: SummaryPa
       const rows=[{...peer.subject_timing,name:packet.inputs.subject?.configuration.name??'This model',score:peer.subject_score,scored:peer.subject_scored,planned:peer.subject_planned,subject:true,href:answerLink(edition?.checkpointId??summary.subject.checkpoint_id,summary.subject.configuration_id,peer.condition_id)},...peer.members.map(m=>({...(m as typeof m & TimingRow),subject:false,href:answerLink(m.checkpoint_id,m.configuration_id,m.condition_id,m.slug)}))];
       if(rows.some(r=>!Number.isFinite(r.median_task_s)||r.median_task_s<0||r.timed!==r.planned||r.scored!==r.planned||r.generated_tokens_per_s!==null&&(!Number.isFinite(r.generated_tokens_per_s)||r.generation_timed!==r.planned)))throw new Error('Invalid or incomplete speed evidence');
       rows.sort((a,b)=>a.median_task_s-b.median_task_s||a.name.localeCompare(b.name));
-      references[peer.id]={id:peer.id,label:`Speed: ${suite?.name??'Recorded tasks'}`,detail:`${mode(peer.condition_id)}. Matching test-machine label and execution settings; spans model sizes. Timings include unsuccessful tasks, so read them alongside quality.`,speedChart:{title:suite?.name??'Recorded tasks',mode:mode(peer.condition_id),date:summary.generated_at.slice(0,10),binary:suite?.metric_kind==='binary',rows}};
+      references[peer.id]={id:peer.id,label:`Speed: ${suite?.name??'Recorded tasks'}`,detail:`${mode(peer.condition_id)}. Matching test-machine label and execution settings; spans model sizes. Timings include unsuccessful tasks, so read them alongside quality.`,speedChart:{title:suite?.name??'Recorded tasks',mode:mode(peer.condition_id),date:comparisonEvidenceDate,binary:suite?.metric_kind==='binary',rows}};
       continue;
     }
     const rows = [{name:packet.inputs.subject?.configuration.name ?? 'This model',score:peer.subject_score,scored:peer.subject_scored,planned:peer.subject_planned,subject:true,size:packet.inputs.subject?.checkpoint?.parameters.total_billions,href:undefined as string | undefined},
@@ -152,7 +161,7 @@ export function summaryView(summary: PublicBenchmarkSummaryV1, packet: SummaryPa
     const memory = peer.category?.profile;
     const memoryType = ({system_ram:'system RAM',gpu_vram:'VRAM',unified_memory:'unified memory'} as Record<string,string>)[memory?.memory_type ?? ''] ?? memory?.memory_type ?? 'memory';
     const cohort = peer.kind === 'family' ? `${peer.category?.family} · Instruct versus reasoning checkpoint` : peer.kind === 'memory' ? `Verified within ${peer.category?.budget_gb ?? '?'} GB ${memoryType} · ${memory?.context_tokens ?? 'unspecified'} token context${memory?.other_memory_gb ? ` · plus ${memory.other_memory_gb} GB other memory` : ''}` : `${band} · ${peer.category?.architecture === 'moe' ? 'MoE (total parameters)' : peer.category?.architecture ?? 'same architecture'}`;
-    const chart: PeerChart = {id:peer.id,title:suite?.name ?? 'Recorded test category',description:suite?.description ?? '',metric:suite?.metric ?? 'Average credit',metricExplanation:/f1/i.test(suite?.metric ?? '') ? 'Answer overlap with the reference answer; partial matches earn credit.' : suite?.metric_kind === 'binary' ? 'Share of tasks that passed the recorded checks.' : 'Average credit per task; partly correct results can earn partial credit.',mode:mode(peer.condition_id),cohort,date:summary.generated_at.slice(0,10),binary,moe:peer.category?.architecture==='moe',stale:!!packet.peer_refresh_needed,
+    const chart: PeerChart = {id:peer.id,title:suite?.name ?? 'Recorded test category',description:suite?.description ?? '',metric:suite?.metric ?? 'Average credit',metricExplanation:/f1/i.test(suite?.metric ?? '') ? 'Answer overlap with the reference answer; partial matches earn credit.' : suite?.metric_kind === 'binary' ? 'Share of tasks that passed the recorded checks.' : 'Average credit per task; partly correct results can earn partial credit.',mode:mode(peer.condition_id),cohort,date:comparisonEvidenceDate,binary,moe:peer.category?.architecture==='moe',stale:!!packet.peer_refresh_needed,
       uniformCoverage:rows.every(r=>r.scored===rows[0]!.scored && r.planned===rows[0]!.planned) ? `${rows[0]!.scored} of ${rows[0]!.planned} tasks scored for each model` : null,
       ceiling:rows.filter(r=>Math.abs(r.score-1)<1e-9).length>1,
       otherMode:other ? `Other mode, this model only: ${mode(other.condition_id).toLowerCase()} · ${scoreText(other.score,other.suite_id)}.` : undefined,
@@ -166,5 +175,5 @@ export function summaryView(summary: PublicBenchmarkSummaryV1, packet: SummaryPa
   const modelMentions = (packet.inputs.reader_context?.records ?? []).flatMap(peer => peer.members)
     .filter(member => member.configuration_id !== summary.subject.configuration_id)
     .map(member => ({name:member.name,href:(edition ? archiveUrl(edition.releaseId,{checkpoint:member.checkpoint_id,configuration:member.configuration_id}) : `/models/${encodeURIComponent(member.slug)}/?${new URLSearchParams({configuration:member.configuration_id})}`)+'#model-analysis'}));
-  return { summary, references, modelMentions, visibleLimitations, ...(packet.peer_refresh_needed ? {comparisonRefreshNeeded:true} : {}) };
+  return { summary, references, modelMentions, visibleLimitations, comparisonEvidenceDate, ...(packet.peer_refresh_needed ? {comparisonRefreshNeeded:true} : {}) };
 }

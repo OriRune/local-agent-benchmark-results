@@ -1,0 +1,8 @@
+I need to make 24 using 10, 1, 2, 6 exactly once.
+
+Let me try: (10 - 1) * 2 + 6
+- 10 - 1 = 9
+- 9 * 2 = 18
+- 18 + 6 = 24 ✓
+
+<answer>(10 - 1) * 2 + 6</answer>

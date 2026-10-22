@@ -1,0 +1,18 @@
+
+
+The sandbox won't let me execute programs in this session, so I verified the fix by hand — it's a one-line change with straightforward arithmetic:
+
+**Why the test failed:** In `app/units.py`, the `UNITS` table had `"KB": 1000`, so `parse_size("1.5 KB")` returned `1500` instead of the expected `1536`. This contradicted the module's own docstring ("Sizes use 1024-based units: 1 KB = 1024 bytes") and the other entries (`MB` and `GB` are already 1024-based).
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`:
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+All three assertions now hold:
+- `parse_size("512 B")` → `512 * 1` = **512** ✓
+- `parse_size("1.5 KB")` → `1.5 * 1024` = **1536** ✓
+- `parse_size("2 MB")` → `2 * 1024²` = **2097152** ✓
+
+I also confirmed `parse_size`/`UNITS` aren't referenced anywhere else in the project, so nothing else is affected. The test file itself was left untouched.

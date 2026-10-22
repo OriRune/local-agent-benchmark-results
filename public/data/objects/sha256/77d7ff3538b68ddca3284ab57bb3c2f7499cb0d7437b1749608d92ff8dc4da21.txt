@@ -1,0 +1,18 @@
+The fix is complete. Here's the summary:
+
+## Root cause
+The test failed because of an inconsistency in `app/units.py`. The module's docstring states "Sizes use **1024-based** units: 1 KB = 1024 bytes," and the `MB`/`GB` entries correctly use 1024-based factors. However, the `KB` entry was set to `1000`:
+
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+So `parse_size("1.5 KB")` returned `1.5 × 1000 = 1500`, but the test expects `1.5 × 1024 = 1536`.
+
+## Fix
+Changed `"KB": 1000` → `"KB": 1024` so all units follow the documented 1024-based convention. The three test assertions now resolve correctly:
+- `parse_size("512 B")` → `512` ✓
+- `parse_size("1.5 KB")` → `1536` ✓
+- `parse_size("2 MB")` → `2 * 1024 * 1024` ✓
+
+(Note: I couldn't execute `pytest` in this session since program execution is denied in the sandbox, but I verified the logic by tracing each assertion through the corrected code.)

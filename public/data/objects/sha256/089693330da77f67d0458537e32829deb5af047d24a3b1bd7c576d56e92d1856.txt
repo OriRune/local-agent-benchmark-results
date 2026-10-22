@@ -1,0 +1,13 @@
+Since every resident owns a bag of candy hearts, owning exactly two things means owning exactly one of the other three items, and owning exactly three means owning exactly two.
+
+Let \(x\) be the number who own all four things. The total number of times the three other items are owned is
+\[
+195+367+562=1124.
+\]
+Counting those same item-ownerships by how many each resident has gives
+\[
+437+2(234)+3x=1124.
+\]
+Thus \(3x=219\), so \(x=73\).
+
+073

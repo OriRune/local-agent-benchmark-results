@@ -1,0 +1,7 @@
+The distance between the landing point and the start is \(4|\cos(\theta/2)|\), where the angle \(\theta\) between the jumps is uniform on \([0,2\pi]\). Thus the probability it is less than \(1\) is
+\[
+\frac{2\arcsin(1/4)}{\pi}.
+\]
+So the answer is **(B)**.
+
+BBBBB

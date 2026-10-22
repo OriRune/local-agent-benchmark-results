@@ -1,0 +1,10 @@
+Confirmed — persistence is already fully wired in. No changes needed.
+
+Here's how it works:
+- **`load()`** (line 158) reads your saved items from `localStorage` when the page opens.
+- **`save()`** (line 163) writes the current items back to `localStorage`.
+- Every action that changes the list — **add**, **toggle done**, **edit**, **delete**, **clear completed** — calls `save()` right after, so the latest state is always stored.
+
+So when you reload or close and reopen the page, `load()` restores everything exactly as you left it, including which items are checked off.
+
+One note: this storage is per-browser and per-device (it's stored in that browser's `localStorage`), so it won't carry over if you clear browser data or open it in a different browser. Want me to add anything else, like a "clear all" button or a search filter?

@@ -85,7 +85,7 @@ export async function scanDist(root, policy) {
     files++;
     const data = relative.startsWith('data/');
     const allowed = data ? allowedData.has(relative.slice(5)) :
-      /^(?:index\.html|results\.csv|(?:archive|compare|editions|evidence|methodology|models|questions|tests)(?:\/[A-Za-z\d_.-]+)?\/index\.html|_astro\/[A-Za-z\d_.-]+\.(?:js|css))$/.test(relative);
+      /^(?:index\.html|results\.csv|(?:archive|compare|editions|evidence|heatmap|methodology|models|questions|tests)(?:\/[A-Za-z\d_.-]+)?\/index\.html|_astro\/[A-Za-z\d_.-]+\.(?:js|css))$/.test(relative);
     if (!allowed) add(relative, 'unexpected-file');
     if (stat.size > maxBytes) { add(relative, 'oversized-file'); return; }
     const raw = await readFile(path); let bytes;

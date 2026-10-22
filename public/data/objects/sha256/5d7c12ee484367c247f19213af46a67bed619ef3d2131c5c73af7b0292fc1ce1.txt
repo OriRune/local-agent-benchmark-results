@@ -1,0 +1,8 @@
+
+
+Done. I found two TODO comments in the Python code and appended them to todo.txt, matching its existing "- item" format:
+
+- `app/net.py:7` — "log each failed attempt"
+- `app/util.py:5` — "add a helper that formats byte sizes"
+
+todo.txt now has 5 lines, with the two new entries at the bottom.

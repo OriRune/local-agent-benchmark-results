@@ -1,0 +1,13 @@
+Since everyone owns a bag of candy hearts, owning exactly two of the four things means owning exactly one of the other three, and owning exactly three means owning exactly two of the other three.
+
+The total number of ownerships of the other three things is
+\[
+195+367+562=1124.
+\]
+The 437 residents with exactly one of those things account for 437 ownerships, and the 234 residents with exactly two account for \(2\cdot234=468\). If \(x\) residents own all three other things, they account for \(3x\) ownerships. Thus
+\[
+437+468+3x=1124,
+\]
+so \(x=73\).
+
+Therefore, the number who own all four things is **073**.

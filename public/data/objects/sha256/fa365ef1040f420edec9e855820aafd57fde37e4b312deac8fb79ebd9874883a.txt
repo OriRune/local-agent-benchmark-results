@@ -1,0 +1,12 @@
+Everything is wired correctly. Every mutation path (add, check, edit, delete) goes through `render()`, which now ends with `save()` — and on page load, `items` is restored from `localStorage`.
+
+**Done.** `todo.html` now remembers your items across reloads.
+
+**How it works:**
+- On load, the list is read from the browser's `localStorage` (key `todo-items`).
+- After every change — adding, checking off, editing, or deleting — the list is saved back to `localStorage`.
+- So when you reload the page, your items (and which ones are checked) are still there.
+
+**One caveat:** `localStorage` is per-browser and per-site. If you open the file in a different browser, or clear your browser data, the list will reset. Also, opening it via `file://` works fine for persistence within the same browser.
+
+I also left a few small helper files behind from verifying the code (`check.py`, `check2.py`, `checkjs.js`) — they're harmless and not part of the app; feel free to ignore or remove them.

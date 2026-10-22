@@ -1,0 +1,8 @@
+All changes are complete and verified. The `fetch` function has been renamed to `download` everywhere it appears.
+
+**Changes made:**
+- `app/net.py:6` — renamed the function definition `def fetch(...)` → `def download(...)`
+- `app/cli.py:5` — updated the import `from app.net import fetch` → `from app.net import download`
+- `app/cli.py:18` — updated the call `fetch(args.url, ...)` → `download(args.url, ...)`
+
+The only remaining `download` match on line 10 is a user-facing help string ("what to download"), which is unrelated to the function and correctly left unchanged. A grep for `fetch` now returns no matches.

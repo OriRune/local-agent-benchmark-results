@@ -1,0 +1,19 @@
+
+
+Looking at this puzzle, I need to determine who lives in House 1.
+
+**Step 1: Assign names to houses.**
+- Clue 1: Bob is in House 3.
+- Clue 2: Arnold is in House 2.
+- Therefore: **Alice is in House 1.**
+
+**Step 2: Verify with remaining clues (for completeness).**
+- Clue 3: Arnold (House 2) is the Brit.
+- Clue 4: The Dane is Alice → House 1 is the Dane.
+- Clue 5: The dog owner is the Dane → Alice (House 1) has the dog.
+- Clue 6: The cat lover is Arnold → House 2 has the cat.
+- Remaining: Bob (House 3) has the bird and is Chinese.
+
+Everything is consistent.
+
+<answer>Alice</answer>

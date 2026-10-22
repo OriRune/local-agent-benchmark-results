@@ -1,0 +1,6 @@
+I need to make 24 using 10, 4, 9, 7 exactly once.
+
+Let me try combinations:
+- (9 - 7) * 10 + 4 = 2 × 10 + 4 = 20 + 4 = 24 ✓
+
+<answer>(9 - 7) * 10 + 4</answer>

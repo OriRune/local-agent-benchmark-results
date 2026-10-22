@@ -1,0 +1,1 @@
+{"answer":"A questionnaire asked 16 respondents to rank human captions, NJM captions, and STAIR baseline captions by funniness, without revealing their sources. The paper also reports average Bokete star ratings for NJM and STAIR captions.","evidence":[12,13,14]}

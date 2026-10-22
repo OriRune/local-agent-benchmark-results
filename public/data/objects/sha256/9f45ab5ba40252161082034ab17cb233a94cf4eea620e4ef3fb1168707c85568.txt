@@ -1,0 +1,37 @@
+## Setting Up the Problem
+
+**Total possible outcomes:**
+$$12 \times 10 \times 4 = 480$$
+
+I'll count the **complement** (sum ≤ 10) and subtract from the total.
+
+Let the dice be $a$ (d12), $b$ (d10), $c$ (d4), where I need $a + b + c \leq 10$.
+
+## Counting the Complement (sum ≤ 10)
+
+For each value of $c$, I count pairs $(a,b)$ where $a + b \leq 10 - c$:
+
+**When c = 1** (need $a+b \leq 9$):
+$$1+2+3+4+5+6+7+8 = 36$$
+
+**When c = 2** (need $a+b \leq 8$):
+$$1+2+3+4+5+6+7 = 28$$
+
+**When c = 3** (need $a+b \leq 7$):
+$$1+2+3+4+5+6 = 21$$
+
+**When c = 4** (need $a+b \leq 6$):
+$$1+2+3+4+5 = 15$$
+
+**Total complement:**
+$$36 + 28 + 21 + 15 = 100$$
+
+## Computing the Probability
+
+**Favorable outcomes (sum ≥ 11):**
+$$480 - 100 = 380$$
+
+**Probability:**
+$$\frac{380}{480} = \frac{19}{24}$$
+
+<answer>19/24</answer>

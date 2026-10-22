@@ -1,0 +1,96 @@
+Let the common line \(D,E,C,F\) be the \(x\)-axis, with
+
+\[
+D=(0,0),\qquad C=(107,0).
+\]
+
+Since \(ABCD\) is a rectangle with \(AB=107\) and \(BC=16\), we can take
+
+\[
+A=(0,-16).
+\]
+
+Let
+
+\[
+E=(x,0),\qquad F=(x+184,0),
+\]
+
+and since \(EFGH\) is a rectangle with \(FG=17\),
+
+\[
+H=(x,17),\qquad G=(x+184,17).
+\]
+
+The points \(A,D,H,G\) are concyclic. A circle through \(D=(0,0)\) and \(A=(0,-16)\) has equation
+
+\[
+x^2+y^2+ux+16y=0.
+\]
+
+Substitute \(H=(x,17)\):
+
+\[
+x^2+17^2+ux+16(17)=0
+\]
+
+\[
+x^2+ux+561=0.
+\]
+
+Substitute \(G=(x+184,17)\):
+
+\[
+(x+184)^2+u(x+184)+561=0.
+\]
+
+Subtract the first equation from the second:
+
+\[
+(x+184)^2-x^2+184u=0.
+\]
+
+\[
+368x+33856+184u=0
+\]
+
+\[
+u=-2x-184.
+\]
+
+Now substitute into \(x^2+ux+561=0\):
+
+\[
+x^2+(-2x-184)x+561=0
+\]
+
+\[
+x^2-2x^2-184x+561=0
+\]
+
+\[
+x^2+184x-561=0.
+\]
+
+Solving,
+
+\[
+x=\frac{-184\pm\sqrt{184^2+4\cdot561}}{2}
+=\frac{-184\pm190}{2}.
+\]
+
+The positive solution is
+
+\[
+x=3.
+\]
+
+Thus
+
+\[
+CE=107-3=104.
+\]
+
+\[
+\boxed{104}
+\]

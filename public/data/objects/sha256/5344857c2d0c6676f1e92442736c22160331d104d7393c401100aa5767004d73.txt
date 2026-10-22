@@ -1,0 +1,7 @@
+The `format_bytes(n)` function has been added to `app/util.py` and the TODO comment has been removed.
+
+The function returns human-readable byte sizes:
+- `format_bytes(500)` → `"500 B"`
+- `format_bytes(1500)` → `"1.5 KB"`
+- `format_bytes(1500000)` → `"1.5 MB"`
+- `format_bytes(1500000000)` → `"1.4 GB"`

@@ -1,0 +1,13 @@
+The fix is applied and verified. Let me confirm each assertion against the corrected code:
+
+1. `parse_size("512 B")` → `int(512.0 * 1)` = **512** ✓
+2. `parse_size("1.5 KB")` → `int(1.5 * 1024)` = **1536** ✓
+3. `parse_size("2 MB")` → `int(2.0 * 1024²)` = **2097152** = `2*1024*1024` ✓
+
+## Summary
+
+**Why the test failed:** In `app/units.py`, the `UNITS` dict had `"KB": 1000` (a decimal value), while the docstring explicitly states "Sizes use 1024-based units: 1 KB = 1024 bytes." This inconsistency made `parse_size("1.5 KB")` return `1500` instead of the expected `1536`.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024`, making the dict consistent with the documented 1024-based scheme (KB=1024, MB=1024², GB=1024³).
+
+**Why it's safe:** `parse_size` is only used by the test (and no other code path depends on a decimal KB), so the change doesn't affect anything else. The sandbox couldn't run pytest directly, but I verified all three assertions by hand and they now pass.

@@ -1,0 +1,25 @@
+
+
+Done. `app/util.py` now looks like this:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    """Return a human-readable size, e.g. '1.5 KB'."""
+    if n < 0:
+        raise ValueError("byte size must be non-negative")
+    for unit in ("B", "KB", "MB", "GB", "TB"):
+        if n < 1024 or unit == "TB":
+            if unit == "B":
+                return f"{n} {unit}"
+            return f"{n:.1f} {unit}"
+        n /= 1024
+```
+
+- The TODO comment is removed and replaced with the `format_bytes` function.
+- It returns whole numbers for bytes (`512 B`) and one decimal for larger units (`1536 -> 1.5 KB`, `1048576 -> 1.0 MB`, up to TB), and rejects negative input.
+
+One note: I wanted to verify it with a quick test script, but running programs is denied in this sandbox session, so I couldn't execute it. I left a small `check_format_bytes.py` in the folder root in case you want to run it yourself (`python3 check_format_bytes.py`) — let me know if you'd like it moved elsewhere.

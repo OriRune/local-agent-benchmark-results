@@ -1,0 +1,25 @@
+The geometry gives the equations  
+
+\[
+\begin{cases}
+h^2+64=(h-e)^2+625\\[2pt]
+h^2+64=(h-e-184)^2+625
+\end{cases}
+\]
+
+from the circle through \(A(0,0), D(0,16), H(e,33), G(e+184,33)\).  
+Solving these yields  
+
+\[
+e^2+184e-561=0\quad\Longrightarrow\quad e=3\ (\text{positive solution}).
+\]
+
+Since \(C\) is at \((107,16)\),  
+
+\[
+CE = 107-e = 107-3 = 104.
+\]
+
+Thus the required length is  
+
+**104**.

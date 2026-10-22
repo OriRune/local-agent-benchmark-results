@@ -1,0 +1,27 @@
+Found it. The relevant code is in `app/net.py`:
+
+```python
+def fetch(url, get):
+    for attempt in range(MAX_RETRIES):
+        try:
+            return get(url, timeout=TIMEOUT_S)
+        except OSError:
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"giving up on {url}")
+```
+
+with `MAX_RETRIES = 3` (from `app/config.py`).
+
+**Worked out from the code:**
+
+The loop `range(MAX_RETRIES)` = `range(3)` runs `attempt` over **0, 1, 2**. On every failed attempt it sleeps `2 ** attempt` seconds:
+
+| Attempt | Sleep | Seconds |
+|---------|-------|---------|
+| 0 | 2⁰ | 1 |
+| 1 | 2¹ | 2 |
+| 2 | 2² | 4 |
+
+After the third failure there's no extra sleep — it just raises `RuntimeError`.
+
+**Total = 1 + 2 + 4 = 7 seconds.**

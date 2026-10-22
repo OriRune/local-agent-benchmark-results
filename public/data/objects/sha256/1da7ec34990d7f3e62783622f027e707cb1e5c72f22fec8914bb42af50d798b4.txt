@@ -1,0 +1,23 @@
+The only place the code sleeps is `app/net.py:12`:
+
+```python
+def fetch(url, get):
+    for attempt in range(MAX_RETRIES):        # MAX_RETRIES = 3 → attempts 0, 1, 2
+        try:
+            return get(url, timeout=TIMEOUT_S)
+        except OSError:
+            time.sleep(2 ** attempt)          # exponential backoff
+    raise RuntimeError(f"giving up on {url}")
+```
+
+With `MAX_RETRIES = 3`, if every attempt raises `OSError`, the sleep runs after each one:
+
+| attempt | sleep |
+|---|---|
+| 0 | 2⁰ = 1 s |
+| 1 | 2¹ = 2 s |
+| 2 | 2² = 4 s |
+
+**Total sleep = 1 + 2 + 4 = 7 seconds.**
+
+(The 20 s `TIMEOUT_S` is a network timeout, not a sleep, so it doesn't count.)

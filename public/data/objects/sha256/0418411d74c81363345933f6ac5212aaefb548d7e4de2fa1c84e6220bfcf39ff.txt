@@ -1,0 +1,5 @@
+Created `hello.txt` containing exactly:
+
+```text
+hello from the local agent
+```

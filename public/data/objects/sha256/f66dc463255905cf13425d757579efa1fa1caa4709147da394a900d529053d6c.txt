@@ -1,0 +1,23 @@
+# T4
+
+**Result:** fail · error · 1 steps · 1 calls · 2 s
+
+## user
+
+Create a file hello.txt containing exactly this line: hello from the local agent
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>

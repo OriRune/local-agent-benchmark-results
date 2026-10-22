@@ -395,6 +395,67 @@
             "edited",
             "supersedes_summary_id"
           ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "state": {
+              "const": "approved"
+            },
+            "reviewed_at": {
+              "type": "string"
+            },
+            "reviewer_kind": {
+              "const": "agent"
+            },
+            "edited": {
+              "type": "boolean"
+            },
+            "supersedes_summary_id": {
+              "type": "string",
+              "pattern": "^quant-summary-[a-f0-9]{64}$"
+            },
+            "edit_author": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reviewer_name": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "publication_authorization": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "authorized_by": {
+                  "const": "user"
+                },
+                "authorized_at": {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|\\+00:00)$"
+                },
+                "instruction": {
+                  "type": "string",
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "authorized_by",
+                "authorized_at",
+                "instruction"
+              ]
+            }
+          },
+          "required": [
+            "state",
+            "reviewed_at",
+            "reviewer_kind",
+            "edited",
+            "supersedes_summary_id",
+            "reviewer_name",
+            "publication_authorization"
+          ]
         }
       ]
     }

@@ -1,0 +1,10 @@
+I've done a thorough search of your entire directory — including all subfolders in Documents, Desktop, Downloads, Music, Pictures, and every file type (PDF, DOCX, TXT, XLSX, etc.) — and I was unable to find a 2019 tax return.
+
+The only tax-related file I found is **"tax return 2024.pdf"** in `Documents/Personal/`, but even that file appears to be damaged and couldn't be opened.
+
+It's possible your 2019 tax return:
+- Is stored elsewhere (not in this folder)
+- Has a different file name than expected
+- May be in a format I didn't search for
+
+Would you like me to look in a different location, or do you recall any other details about the file name or where it might be stored?

@@ -1,0 +1,5 @@
+The fix is done.
+
+**Root cause:** In `app/units.py`, the `UNITS` dictionary mapped `"KB"` to `1000` (decimal/SI value), but the module documents that sizes use 1024-based units (`1 KB = 1024 bytes`). So `parse_size("1.5 KB")` returned `1500` instead of the expected `1536`, failing the test.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024`, making it consistent with the docstring and the other binary units (`MB`, `GB`). The `B`, `MB`, and `GB` entries were already correct, so no other changes were needed.

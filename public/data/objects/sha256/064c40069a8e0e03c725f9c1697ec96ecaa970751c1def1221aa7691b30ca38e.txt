@@ -1,0 +1,12 @@
+Here is a template for a weather chat bot:
+
+```
+*Weather Bot Template*:
+1. **o**btain the user's location
+2. **o**rder a forecast from the weather API tool
+3. **o**utput the conditions to the user
+```
+
+This template uses the keyword "o" to mark each step.
+
+The *keyword "o"* appears repeatedly to highlight the action verbs, and the *Weather Bot Template* title frames the whole design.

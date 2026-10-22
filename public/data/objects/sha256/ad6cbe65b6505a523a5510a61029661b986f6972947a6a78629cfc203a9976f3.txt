@@ -1,0 +1,4 @@
+{
+  "answer": "A word2vec word embedding model trained on 189,206 financial articles (161,877,425 tokens) downloaded from Factiva.",
+  "evidence": ["4", "17"]
+}

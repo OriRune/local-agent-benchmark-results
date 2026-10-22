@@ -1,0 +1,7 @@
+I've created `README.md`. It documents every command line option defined in `app/cli.py`:
+
+- **Positional argument** `url` — "what to download"
+- **`-o` / `--output`** — "file to write (default: stdout)"
+- **`-q` / `--quiet`** — "no progress output"
+
+Each entry is paired with its exact help text as defined in the `build_parser()` function, plus a short usage overview and a note about the tool's retry/backoff behavior.

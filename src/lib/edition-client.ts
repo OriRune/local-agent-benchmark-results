@@ -1,3 +1,5 @@
+import { readDataset } from './dataset-parts.mjs';
+import type { PublicBenchmarkFactsV1 } from './public-contract';
 import { assertEditionAvailable } from './withdrawal-client';
 import type { PublicResultsReleaseV1 } from './public-release';
 import type { OverviewData } from './public-types';
@@ -30,7 +32,7 @@ export async function loadEdition(id: string): Promise<Edition> {
       const response = await fetch(`/data/releases/${id}/release.json`);
       if (!response.ok || !response.body) throw new Error('This results edition is unavailable.');
       const release = JSON.parse(new TextDecoder().decode(await readBounded(response.body, 16 * 1024 ** 2))) as PublicResultsReleaseV1;
-      if (release.schema_version !== 1 || release.release_id !== id || !Array.isArray(release.objects) || release.objects.length > 40000) throw new Error('Unsupported results edition.');
+      if (release.schema_version !== 1 || release.release_id !== id || !Array.isArray(release.objects) || release.objects.length > 60000) throw new Error('Unsupported results edition.');
       const bytes = new TextEncoder().encode(canonical(Object.fromEntries(Object.entries(release).filter(([key]) => key !== 'release_id'))));
       const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))].map(n => n.toString(16).padStart(2, '0')).join('');
       if (`release-${hash}` !== id) throw new Error('Results edition checksum differs.');
@@ -45,4 +47,8 @@ export async function loadEdition(id: string): Promise<Edition> {
     promise.catch(() => cache.delete(id));
   }
   return cache.get(id)!;
+}
+
+export async function editionDataset(edition: Edition): Promise<PublicBenchmarkFactsV1> {
+  return readDataset(edition.release, (id: string) => editionObject(edition, id));
 }

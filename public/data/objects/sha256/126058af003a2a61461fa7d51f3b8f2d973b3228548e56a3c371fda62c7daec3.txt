@@ -1,0 +1,10 @@
+Done. I reverted the change from the most recent commit (`54a1092`) by editing `app/config.py` directly.
+
+The commit had raised `TIMEOUT_S` from `10` to `20`. I changed it back to `10` in the file itself, without using any git commands to alter history or the working tree state. The file now reads:
+
+```python
+"""Settings for the downloader."""
+MAX_RETRIES = 3
+TIMEOUT_S = 10
+USER_AGENT = "tiny-downloader/0.2"
+```

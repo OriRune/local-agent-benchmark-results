@@ -1,0 +1,6 @@
+Use `o` as the template’s declaration keyword:
+
+o ask_location = ask("What city or ZIP code should I use?")
+o location = {{user.location | default: ask_location}}
+o forecast = get_weather_forecast({{location}}, days=5)
+o response = "Forecast for *{{location}}*: *{{forecast}}*"

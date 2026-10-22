@@ -1,0 +1,5 @@
+I have searched all Python files in the project for TODO comments. I found two:
+- `# TODO: log each failed attempt` in `app/net.py`
+- `# TODO: add a helper that formats byte sizes` in `app/util.py`
+
+These have been added to `todo.txt`.

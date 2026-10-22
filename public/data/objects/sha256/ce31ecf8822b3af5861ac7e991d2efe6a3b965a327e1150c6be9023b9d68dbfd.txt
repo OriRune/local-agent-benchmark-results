@@ -1,0 +1,11 @@
+Let me work through the code.
+
+`MAX_RETRIES = 3`, so the loop runs for `attempt` values of 0, 1, and 2. Each failed attempt sleeps for `2 ** attempt` seconds:
+
+- Attempt 0: `2 ** 0` = 1 second
+- Attempt 1: `2 ** 1` = 2 seconds
+- Attempt 2: `2 ** 2` = 4 seconds
+
+Total: 1 + 2 + 4 = **7 seconds**
+
+Every attempt sleeps before giving up (the sleep happens on the `OSError` path, and the loop only exits early on a successful return), so it spends **7 seconds** sleeping in total.

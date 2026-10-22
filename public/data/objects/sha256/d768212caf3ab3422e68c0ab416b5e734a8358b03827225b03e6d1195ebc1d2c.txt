@@ -1,0 +1,15 @@
+That's already built in! The file I created uses **`localStorage`** to persist your items. Every time you add, check off, edit, or delete an item, it's automatically saved to the browser's local storage — so reloading the page or even closing and reopening the tab will keep your list intact.
+
+The relevant bits in `todo.html` are:
+
+```javascript
+// Load saved items on page open
+let items = JSON.parse(localStorage.getItem('todo-items') || '[]');
+
+// Save after every change
+function save() {
+    localStorage.setItem('todo-items', JSON.stringify(items));
+}
+```
+
+`save()` is called after every add, toggle, delete, and edit action. No changes needed — your list is already persistent. Just open `todo.html` in your browser and try it out!

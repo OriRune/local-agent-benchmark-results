@@ -1,0 +1,15 @@
+The fix is in place. 
+
+**Summary:**
+
+The test in `tests/test_units.py` was failing because of a bug in `app/units.py`, not the test. The `KB` unit was incorrectly mapped to `1000` (the decimal/SI value) instead of `1024`.
+
+- Before: `parse_size("1.5 KB")` → `int(1.5 × 1000)` = `1500` ❌ (expected `1536`)
+- After: `parse_size("1.5 KB")` → `int(1.5 × 1024)` = `1536` ✓
+
+The fix aligns `KB` with the module's documented "1024-based units" convention and with the already-correct `MB`/`GB` entries. All three assertions now pass:
+- `parse_size("512 B")` → `512` ✓
+- `parse_size("1.5 KB")` → `1536` ✓
+- `parse_size("2 MB")` → `2097152` ✓
+
+(Note: I couldn't execute `pytest` since the sandbox's `run` tool is disabled in this session, so I verified the logic by tracing through the code.)

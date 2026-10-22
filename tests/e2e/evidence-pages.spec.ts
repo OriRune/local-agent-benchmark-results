@@ -21,10 +21,10 @@ test('long real evidence is fully paginated, searchable and downloadable', async
     const part = await pre.textContent();
     expect(part!.length).toBeLessThanOrEqual(24_000);
     reconstructed += part;
-    if (await page.getByRole('button', { name: 'Next page', exact: true }).isDisabled()) break;
-    const before = await page.getByRole('group', { name: 'Saved object pages' }).textContent();
-    await page.getByRole('button', { name: 'Next page', exact: true }).click();
-    await expect(page.getByRole('group', { name: 'Saved object pages' })).not.toHaveText(before!);
+    if (await page.getByRole('button', { name: 'Next part', exact: true }).isDisabled()) break;
+    const before = await page.getByRole('group', { name: 'Saved object parts' }).textContent();
+    await page.getByRole('button', { name: 'Next part', exact: true }).click();
+    await expect(page.getByRole('group', { name: 'Saved object parts' })).not.toHaveText(before!);
   } while (reconstructed.length < text.length);
   expect(reconstructed).toBe(text);
   const query = text.slice(-40).trim();
@@ -35,7 +35,7 @@ test('long real evidence is fully paginated, searchable and downloadable', async
   await page.getByRole('button', { name: 'Find next', exact: true }).click();
   await expect(page.getByRole('status')).toContainText('No match in the complete text.');
   const download = page.waitForEvent('download');
-  await page.getByRole('button', { name: 'Download text', exact: true }).click();
+  await page.getByRole('button', { name: 'Download original saved object', exact: true }).click();
   const result = await download;
   expect(createHash('sha256').update(await readFile((await result.path())!)).digest('hex')).toBe(object!.id);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
@@ -56,7 +56,7 @@ test('long public question IDs fit the screen and both evidence downloads remain
   const attempt = data.attempts.find((a: { canonical: boolean; status: string; components: { answer: { object_ids: string[] } } }) => a.canonical && a.status === 'scored' && a.components.answer.object_ids.length);
   expect(attempt).toBeTruthy();
   await page.goto(`/questions/${q.id}/?attempt=${attempt.id}`);
-  await expect(page.getByLabel('Tested configuration and trial', { exact: true })).toHaveValue(attempt.id);
+  await expect(page.locator('.selected-attempt')).toHaveAttribute('data-attempt-id', attempt.id);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
   expect(await page.evaluate(() => document.documentElement.clientWidth)).toBe(page.viewportSize()!.width);
   for (const [label, component] of [['Question', data.question.components.prompt], ['Final answer', attempt.components.answer]] as const) {
@@ -64,7 +64,7 @@ test('long public question IDs fit the screen and both evidence downloads remain
     await expect(pre).toBeVisible();
     const evidence = page.locator('.evidence').filter({ has: pre });
     const downloaded = page.waitForEvent('download');
-    await evidence.getByRole('button', { name: component.object_ids.length === 1 ? 'Download text' : 'Download part 1', exact: true }).click();
+    await evidence.getByRole('button', { name: component.object_ids.length === 1 ? `Download original ${label.toLowerCase()}` : `Download original ${label.toLowerCase()}, part 1 of ${component.object_ids.length}`, exact: true }).click();
     expect(await readFile((await (await downloaded).path())!)).toEqual(await bytes(component.object_ids[0]));
   }
 });

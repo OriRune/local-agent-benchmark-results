@@ -1,0 +1,8 @@
+No changes needed — the persistence is already built in:
+
+- **`load()`** (line 157) reads your saved items from `localStorage` when the page opens, so the list repopulates automatically on reload.
+- **`save()`** (line 166) writes the items back to `localStorage` on every change — adding, checking off, editing, deleting, or clearing completed tasks.
+
+So just open `todo.html`, add some tasks, reload the page, and they'll still be there. The data is stored locally in your browser under the key `todo-items-v1` (nothing is sent anywhere).
+
+One note: it's tied to the specific browser/profile you're using. If you clear that browser's site data or open it in a different browser, the list starts fresh. Want me to add a small "clear all" button, or is everything covered?

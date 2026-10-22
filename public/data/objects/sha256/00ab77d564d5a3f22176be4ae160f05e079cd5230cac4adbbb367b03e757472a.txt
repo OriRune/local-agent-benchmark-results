@@ -1,0 +1,1 @@
+Done. The most recent commit (`32246b2`, "raise the download timeout from 10 to 20 seconds") had changed `TIMEOUT_S` from 10 to 20 in `app/config.py`. I edited the file directly (no git commands used for the change) to restore `TIMEOUT_S = 10`. The file now matches its pre-commit state — `git diff` confirms the working tree is exactly the reverse of that commit.

@@ -1,0 +1,8 @@
+Done. The rename is complete and verified:
+
+**Changes made (3 places):**
+1. `app/net.py:6` — `def fetch(url, get):` → `def download(url, get):`
+2. `app/cli.py:5` — `from app.net import fetch` → `from app.net import download`
+3. `app/cli.py:18` — `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+**Verification:** A project-wide search for `fetch` now returns no matches, so every usage has been updated. The function body, docstring, and the `TODO` comment in `net.py` were left untouched. (I couldn't run a syntax check — the sandbox blocks running programs in this session — but the edits are simple identifier renames and the files are unchanged otherwise.)

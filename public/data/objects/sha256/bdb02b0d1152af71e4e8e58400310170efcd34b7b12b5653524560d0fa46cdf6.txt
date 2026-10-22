@@ -1,0 +1,5 @@
+The most recent commit (by `eval`, Oct 20 2026) changed a single line in `app/config.py`:
+
+- **`TIMEOUT_S`** was raised from **10** to **20** seconds.
+
+That's the only change — one line modified in one file.

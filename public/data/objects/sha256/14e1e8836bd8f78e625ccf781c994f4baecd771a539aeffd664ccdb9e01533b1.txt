@@ -1,0 +1,2 @@
+The **app** folder contains **6 Python files**.  
+The largest of them is **`cli.py`**, which is **903 bytes** in size.

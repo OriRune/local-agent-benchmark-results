@@ -1,0 +1,1 @@
+Done. The function `fetch` has been renamed to `download` in `app/net.py`, and all usages have been updated in `app/cli.py` (both the import statement and the function call).

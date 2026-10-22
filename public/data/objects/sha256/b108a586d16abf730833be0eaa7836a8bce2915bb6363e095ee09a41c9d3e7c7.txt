@@ -1,0 +1,21 @@
+# T3
+
+**Result:** fail · error · 1 steps · 1 calls · 1 s
+
+## user
+
+Change MAX_RETRIES to 5.
+
+## assistant
+
+- call `grep` `{"pattern":"MAX_RETRIES","path":".","glob":"*","case_sensitive":true}`
+
+<details><summary>grep result (145 chars)</summary>
+
+```
+app/config.py:2: MAX_RETRIES = 3
+app/net.py:3: from app.config import MAX_RETRIES, TIMEOUT_S
+app/net.py:8:     for attempt in range(MAX_RETRIES):
+```
+
+</details>

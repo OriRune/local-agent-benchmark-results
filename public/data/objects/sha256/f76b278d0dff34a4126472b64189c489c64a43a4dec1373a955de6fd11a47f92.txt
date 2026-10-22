@@ -1,0 +1,10 @@
+Looking at these numbers, I need to find a combination that equals 24.
+
+Let me try: 6 * 4 = 24, then I need to use the two 2's without changing the value.
+
+**6 * 4 + 2 - 2**
+- 6 * 4 = 24
+- 24 + 2 = 26
+- 26 - 2 = 24 ✓
+
+<answer>6 * 4 + 2 - 2</answer>

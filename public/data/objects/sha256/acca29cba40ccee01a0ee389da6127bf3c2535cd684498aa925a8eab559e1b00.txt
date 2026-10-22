@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "Text features are extracted using Term Frequency-Inverse Document Frequency (TF-IDF) via a classical sparse vectorizer and a bag-of-words technique, as well as n-grams of POS tags.",
+  "evidence": [8, 9]
+}
+```

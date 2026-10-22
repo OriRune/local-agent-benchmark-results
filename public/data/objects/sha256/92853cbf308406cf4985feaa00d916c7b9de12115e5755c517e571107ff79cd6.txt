@@ -1,0 +1,1 @@
+{"answer":"The paper explicitly gives I509 for “insuffisance cardiaque aigue.” Its dictionaries contained 3,539 ICD-10 codes in run 2 and 6,392 in run 1.","evidence":[5,10]}

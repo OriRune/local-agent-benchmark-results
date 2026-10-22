@@ -1,0 +1,4 @@
+{
+  "answer": "They extracted 100 sentences from the CoNLL‑2003 English NER training data.",
+  "evidence": [28]
+}

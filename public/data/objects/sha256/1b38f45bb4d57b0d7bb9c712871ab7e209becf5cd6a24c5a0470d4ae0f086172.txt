@@ -1,0 +1,19 @@
+# H4
+
+**Result:** fail · error · 1 steps · 1 calls · 2 s
+
+## user
+
+data/events.log is long. Which error code does it contain, and on which line?
+
+## assistant
+
+- call `find_files` `{"pattern":"events.log","path":".","sort":"name"}`
+
+<details><summary>find_files result (15 chars)</summary>
+
+```
+data/events.log
+```
+
+</details>

@@ -1,0 +1,1 @@
+The most recent git commit (dd86fa4) changed **`app/config.py`** — a single line, raising the download timeout from 10 to 20 seconds.

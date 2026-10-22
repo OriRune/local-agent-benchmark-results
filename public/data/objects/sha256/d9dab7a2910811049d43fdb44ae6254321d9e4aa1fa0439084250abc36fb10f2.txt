@@ -1,0 +1,48 @@
+# H2
+
+**Result:** fail · error · 2 steps · 2 calls · 3 s
+
+## user
+
+Rename the function fetch in app/net.py to download, and update every place in the project that uses it.
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>
+
+## assistant
+
+- call `read_file` `{"path":"app/net.py","start_line":1,"end_line":200}`
+
+<details><summary>read_file result (375 chars)</summary>
+
+```
+app/net.py (13 lines)
+1	import time
+2	
+3	from app.config import MAX_RETRIES, TIMEOUT_S
+4	
+5	
+6	def fetch(url, get):
+7	    # TODO: log each failed attempt
+8	    for attempt in range(MAX_RETRIES):
+9	        try:
+10	            return get(url, timeout=TIMEOUT_S)
+11	        except OSError:
+12	            time.sleep(2 ** attempt)
+13	    raise RuntimeError(f"giving up on {url}")
+```
+
+</details>

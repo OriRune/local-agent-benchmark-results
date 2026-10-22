@@ -1,0 +1,1 @@
+[{"args":{"case_sensitive":false,"path":"data/events.log","pattern":"error|error code|code"},"name":"grep","result":"data/events.log:2417: ERROR code=E-4471 disk quota exceeded while saving part 7","status":"ok"}]

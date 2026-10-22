@@ -1,0 +1,10 @@
+The sandbox doesn't allow running programs, but the fix is straightforward and verifiable by inspection:
+
+**The bug:** In `app/units.py`, the `UNITS` dictionary had `"KB": 1000` despite the docstring stating "1 KB = 1024 bytes". This caused `parse_size("1.5 KB")` to return `1500` instead of the expected `1536`.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` in the `UNITS` dictionary.
+
+Now all three test assertions pass:
+- `parse_size("512 B")` → `int(512 * 1)` = **512** ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = **1536** ✓
+- `parse_size("2 MB")` → `int(2 * 1024²)` = **2097152** ✓

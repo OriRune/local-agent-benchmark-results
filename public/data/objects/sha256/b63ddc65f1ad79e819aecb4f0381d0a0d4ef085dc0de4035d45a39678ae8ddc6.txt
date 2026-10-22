@@ -1,0 +1,23 @@
+# T7
+
+**Result:** fail · error · 1 steps · 1 calls · 1 s
+
+## user
+
+Add a function format_bytes(n) to app/util.py that returns a human-readable size such as '1.5 KB', and remove the TODO comment about it.
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>

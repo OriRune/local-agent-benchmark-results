@@ -1,0 +1,6 @@
+
+
+{
+  "answer": "The results are evaluated using a questionnaire in which respondents rank captions (from humans, NJM, and STAIR caption) in order of 'funniness' without knowing their origins. A total of 30 themes were selected from the Bokete Ogiri website, and 16 questionnaires were completed. Additionally, the NJM's generated captions were posted to the Bokete Ogiri website, where user star ratings were compared (NJM averaged 3.23 stars vs. STAIR caption's 1.71 stars).",
+  "evidence": ["12", "13", "14"]
+}

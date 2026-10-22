@@ -1,12 +1,12 @@
-export type OverviewView = { suiteId: string; mode: 'off' | 'on'; search: string; showAll: boolean; grouping?: 'parameters' | 'memory' | 'download'; architecture?: 'dense' | 'moe' | 'unknown'; budget?: number; memoryType?: 'system_ram' | 'gpu_vram' | 'unified_memory'; estimates?: boolean };
+export type OverviewView = { suiteId: string; mode: 'all' | 'off' | 'on'; search: string; showAll: boolean; grouping?: 'parameters' | 'memory' | 'download'; architecture?: 'dense' | 'moe' | 'unknown'; budget?: number; memoryType?: 'system_ram' | 'gpu_vram' | 'unified_memory'; estimates?: boolean };
 export function parseOverviewView(search: string, suiteIds: string[], defaultSuite: string): OverviewView {
   const query = new URLSearchParams(search);
   for (const key of ['suite', 'thinking', 'q', 'all', 'group', 'architecture', 'budget', 'memory', 'estimates']) if (query.getAll(key).length > 1) throw new Error('Duplicate overview filter.');
   const suiteId = query.get('suite') ?? defaultSuite;
   if (!suiteIds.includes(suiteId)) throw new Error('The requested test version is unavailable in this edition.');
-  const mode = query.get('thinking') ?? 'off';
-  if (mode !== 'off' && mode !== 'on') throw new Error('The requested thinking filter is unavailable.');
-  const all = query.get('all') ?? '0';
+  const mode = query.get('thinking') ?? 'all';
+  if (mode !== 'all' && mode !== 'off' && mode !== 'on') throw new Error('The requested thinking filter is unavailable.');
+  const all = query.get('all') ?? '1';
   if (all !== '0' && all !== '1') throw new Error('The requested result view is unavailable.');
   const result: OverviewView = { suiteId, mode, search: query.get('q') ?? '', showAll: all === '1' };
   const grouping = query.get('group'), architecture = query.get('architecture'), memory = query.get('memory'), budget = query.get('budget'), estimates = query.get('estimates');
@@ -20,7 +20,7 @@ export function parseOverviewView(search: string, suiteIds: string[], defaultSui
 export function overviewViewQuery(view: OverviewView): string {
   const query = new URLSearchParams({ suite: view.suiteId, thinking: view.mode });
   if (view.search) query.set('q', view.search);
-  if (view.showAll) query.set('all', '1');
+  query.set('all', view.showAll ? '1' : '0');
   if (view.grouping) query.set('group',view.grouping);
   if (view.architecture) query.set('architecture',view.architecture);
   if (view.budget) query.set('budget',String(view.budget));

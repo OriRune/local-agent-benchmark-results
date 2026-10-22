@@ -2,4 +2,4 @@
 import Shell from '../layouts/Shell.astro';import PinnedCompare from '../components/PinnedCompare';import{currentData}from'../lib/data';
 const{release,index}=await currentData();const records=new Map(release.objects.map(o=>[o.id,o]));const questionObjects=Object.fromEntries(Object.entries(release.question_objects).map(([id,object])=>[id,records.get(object)!]));
 ---
-<Shell title="Compare measured configurations"><div class="eyebrow">Same tasks · Visible tradeoffs</div><h1>Compare the evidence.</h1><p class="lede">Put two to four configurations side by side, then inspect their answers to the same question.</p><PinnedCompare index={index} releaseId={release.release_id} questionObjects={questionObjects} client:load/></Shell>
+<Shell title="Compare measured configurations"><h1>Compare models</h1><p class="lede">Put two to four configurations side by side, then inspect their answers to the same question.</p><PinnedCompare index={index} releaseId={release.release_id} questionObjects={questionObjects} client:load/></Shell>

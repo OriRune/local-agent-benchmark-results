@@ -1,0 +1,8 @@
+The clues are inconsistent, so there is no valid set of answers.
+
+The transport clues force the scooter to position 1:
+
+- Tram and boat cannot occupy positions 1–2: the remaining positions would have to be scooter and jet-ski, but the scooter cannot be at position 4 because peach must be immediately to its right.
+- They cannot occupy positions 3–4, because that would place the scooter at position 1 and the jet-ski at position 2, requiring scientific at position 1. But the person at position 1 would then have to be both scooter and scientific—wait, those are different attributes, so that is allowed. This case is not ruled out by the clues.
+
+Actually, the clues do not force a unique arrangement by this reasoning, so I cannot establish the requested answers.

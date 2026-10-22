@@ -1,0 +1,5 @@
+**Definition:**  
+- File: `app/config.py` (line 2)  
+- Value: `MAX_RETRIES = 3`
+
+The constant is imported from `app.config` and used in `app/net.py` to limit the number of retry attempts (e.g., `for attempt in range(MAX_RETRIES):`).

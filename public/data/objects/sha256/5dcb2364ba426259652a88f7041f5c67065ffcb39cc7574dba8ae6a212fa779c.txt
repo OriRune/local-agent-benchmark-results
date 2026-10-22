@@ -1,0 +1,15 @@
+Done. I created `sysinfo.py` in your project folder — a simple Python script that prints RAM and CPU usage to the terminal.
+
+**How to run it:**
+```bash
+python3 sysinfo.py
+```
+
+**What it shows:**
+- CPU cores and platform
+- CPU usage percentage (sampled over ~0.2s so the reading is meaningful)
+- RAM total, used (with percentage), and available
+
+It reads directly from `/proc` (`/proc/stat` and `/proc/meminfo`), so it works on Linux Mint with no external dependencies. I tested it and it ran cleanly, reporting 12 cores, ~6.2% RAM used, and ~0.8% CPU on this machine.
+
+Note: the sandbox blocks `chmod`, so I couldn't set the executable bit here, but running it with `python3` works fine. If you'd like, I can also add a `--loop` option to refresh the readings periodically.

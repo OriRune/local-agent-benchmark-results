@@ -1,0 +1,1 @@
+[{"args":{"end_line":200,"path":"todo.txt","start_line":1},"name":"read_file","result":"todo.txt (3 lines)\n1\t- write README\n2\t- add proxy support\n3\t- tag the release","status":"ok"},{"args":{"path":"todo.txt","text":"- publish release notes"},"name":"append_file","result":"appended to todo.txt (+1 -0 lines)","status":"ok"}]

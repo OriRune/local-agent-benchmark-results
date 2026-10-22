@@ -1,0 +1,4 @@
+{
+  "answer": "ICD‑10 codes are the standardized disease identifiers from the International Classification of Diseases, 10th revision, used to code the causes of death in the French death certificates. In this study the dictionary contained 3,539 distinct ICD‑10 codes in run 2 and 6,392 codes in run 1, and an example code is I509 for “insuffisance cardiaque aigue”.",
+  "evidence": [0, 5, 10]
+}

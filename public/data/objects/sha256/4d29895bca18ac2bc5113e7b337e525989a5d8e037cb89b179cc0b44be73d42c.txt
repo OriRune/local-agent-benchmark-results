@@ -1,0 +1,10 @@
+Based on the code in `app/net.py` and `app/config.py`, the `fetch` function uses an exponential backoff strategy for retries.
+
+1. In `app/config.py`, `MAX_RETRIES` is set to `3`.
+2. In `app/net.py`, the `fetch` function iterates through `range(MAX_RETRIES)`, which means `attempt` takes the values `0`, `1`, and `2`.
+3. For each failed attempt, the program sleeps for `2 ** attempt` seconds:
+   - Attempt 0: $2^0 = 1$ second
+   - Attempt 1: $2^1 = 2$ seconds
+   - Attempt 2: $2^2 = 4$ seconds
+
+Total sleep time = $1 + 2 + 4 = 7$ seconds.

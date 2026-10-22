@@ -1,0 +1,12 @@
+I've created `README.md` for the project. Here's a summary of what it documents:
+
+The CLI is **`tinydl`** (entry point `python -m app.cli`), defined in `app/cli.py`. The README lists every command-line option with its exact help text, taken directly from the argparse definitions:
+
+- **`url`** — positional argument, *"what to download"*
+- **`-o`, `--output OUTPUT`** — *"file to write (default: stdout)"*
+- **`-q`, `--quiet`** — *"no progress output"*
+- **`-h`, `--help`** — auto-added by argparse, *"show this help message and exit"*
+
+Each option is presented in a table alongside its help text, plus a usage line and a couple of examples.
+
+Note: I couldn't execute `--help` to confirm the rendered output, since the sandbox denies running programs in this session. The option list and help text are transcribed verbatim from the source, so they match what `python -m app.cli --help` would display.

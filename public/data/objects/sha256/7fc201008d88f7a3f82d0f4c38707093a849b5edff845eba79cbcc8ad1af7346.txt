@@ -1,0 +1,1 @@
+Fixed. The issue was that `UNITS["KB"]` was set to `1000` instead of `1024`, which contradicted both the docstring ("1 KB = 1024 bytes") and the test expectation (`1.5 KB == 1536`).

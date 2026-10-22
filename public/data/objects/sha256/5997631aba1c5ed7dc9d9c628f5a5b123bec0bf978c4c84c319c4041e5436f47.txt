@@ -1,0 +1,9 @@
+The sandbox doesn't allow running pytest, but I can verify the logic manually:
+
+- `parse_size("512 B")` → `int(float("512") * 1)` = **512** ✓
+- `parse_size("1.5 KB")` → `int(float("1.5") * 1024)` = **1536** ✓
+- `parse_size("2 MB")` → `int(float("2") * 1024**2)` = **2097152** ✓
+
+All three assertions now pass.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` in the `UNITS` dictionary in `app/units.py`. The original code used the decimal (SI) definition of KB (1000 bytes), but the docstring and tests both expect the binary definition (1024 bytes), consistent with the other units (MB, GB) which were already using 1024-based values.

@@ -1,0 +1,7 @@
+The to‑do list now saves its items in **localStorage**, so they persist across page reloads. The script now:
+
+- Loads saved items on page load.
+- Saves the list whenever items are added, edited, deleted, or checked/unchecked.
+- Restores the checked state and text when the page is reopened.  
+
+Open `todo.html` in a browser, use it as before, and your list will be remembered.

@@ -1,0 +1,10 @@
+The solution checks out: Stage 1 provides ~3164 m/s and Stage 2 provides ~6236 m/s, totaling exactly 9,400 m/s.
+
+**Setup:**
+- Stage 2 burn: m₀ = 900 + prop₂ + 1200, m_f = 900 + 1200 = 2100 kg
+- Stage 1 burn: m₀ = 4000 + 36000 + (2100 + prop₂), m_f = 4000 + (2100 + prop₂)
+- Constraint: Δv₁ + Δv₂ = 9,400 m/s
+
+Solving numerically gives prop₂ ≈ 11,529.4 kg.
+
+ANSWER: 11529.43 kg

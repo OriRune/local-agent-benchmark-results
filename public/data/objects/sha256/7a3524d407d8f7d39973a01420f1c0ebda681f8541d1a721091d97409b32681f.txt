@@ -1,0 +1,8 @@
+
+
+Done. In `app/util.py`:
+
+- Added `format_bytes(n)`, which scales by 1024 through B → KB → MB → GB → TB → PB and returns e.g. `format_bytes(1536)` → `'1.5 KB'`, `format_bytes(512)` → `'512 B'` (whole bytes stay integers; larger units get one decimal).
+- Removed the `# TODO: add a helper that formats byte sizes` comment.
+
+Note: I wrote a quick `test_format_bytes.py` to verify it, but the sandbox refused to run programs in this session, so I couldn't execute it — the code is verified by inspection only. I can't delete files, so that test file is still in the project root; let me know if you'd like to keep or discard it.

@@ -1,0 +1,5 @@
+The three substitutions are \((x,1)\), \((1,x+f(x))\), and \((x,1+f(1)/x)\), corresponding to expressions 9, 7, and 6. Equating the latter two gives expression 10. The affine form is expression 3, and solving for its coefficients gives expression 8.
+
+For the final part, take \(x>1\) and \(y\le 1\), giving expressions 5 and 4. Substitution yields expression 2, which establishes expression 1.
+
+Answer: 9, 7, 6, 10, 3, 8, 5, 4, 2, 1

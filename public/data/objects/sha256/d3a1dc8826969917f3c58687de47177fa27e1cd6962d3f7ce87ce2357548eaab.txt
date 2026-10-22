@@ -1,0 +1,7 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The new function:
+- Iterates through size units (B, KB, MB, GB, TB, PB), dividing by 1024 until the value is under 1024.
+- Returns whole-byte counts as integers (e.g. `512 B`) and larger units with one decimal place (e.g. `1.5 KB`, `2.0 GB`).
+
+Verified by hand-tracing: `1536 → '1.5 KB'`, `512 → '512 B'`, `1024 → '1.0 KB'`, `2*1024**3 → '2.0 GB'`. (The sandbox can't execute programs here, so I confirmed the logic by reading the final file rather than running it.)

@@ -1,0 +1,3 @@
+The four vertices A, C, G, E of the cube are coplanar and form a square. In a cube with bottom vertices E(0,0,0), F(s,0,0), G(s,s,0), H(0,s,0) and top vertices A(0,0,s), B(s,0,s), C(s,s,s), D(0,s,s), the points A(0,0,s), C(s,s,s), G(s,s,0), and E(0,0,0) all satisfy the plane equation y = x. Projected onto this plane, their coordinates are (0,0), (0,s), (s,s), and (s,0), which are the vertices of a square with side length s.
+
+**square**

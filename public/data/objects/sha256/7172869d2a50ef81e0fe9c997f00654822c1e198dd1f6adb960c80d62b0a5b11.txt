@@ -1,0 +1,5 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function iterates through byte units (B, KB, MB, GB, TB, PB), dividing by 1024 until the value is under 1024, then returns a formatted string like `'1.5 KB'`. Whole byte counts return e.g. `'500 B'`, while larger values return one decimal place (e.g. `'1.0 KB'`, `'1.0 GB'`).
+
+Note: I couldn't run a live test since the sandbox blocks program execution, but the logic is straightforward and matches the requested `'1.5 KB'` output for 1536 bytes.

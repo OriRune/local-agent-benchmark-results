@@ -1,0 +1,1 @@
+["I need to make 24 using 6, 2, 2, 4 with basic arithmetic operations.\n\nLet me try different combinations:\n\n6 * 4 = 24, then I need to use 2 and 2 such that they contribute a factor of 1 or add 0.\n- 6 * 4 * (2 - 2) = 0, no\n- 6 * 4 + 2 - 2 = 24 ✓\n\nThat works! 6 * 4 + 2 - 2 = 24.\n\nLet me verify: 6 * 4 = 24, + 2 = 26, - 2 = 24. Yes!"]

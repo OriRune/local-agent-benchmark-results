@@ -1,0 +1,5 @@
+I found and fixed the bug.
+
+**Why the test failed:** `app/units.py` defined the `KB` multiplier as `1000` (decimal/metric), but the module docstring explicitly states "Sizes use 1024-based units: 1 KB = 1024 bytes," and the test expects `parse_size("1.5 KB") == 1536` (i.e., 1.5 × 1024). The inconsistent `1000` value broke the calculation.
+
+**Fix:** Changed `KB` from `1000` to `1024` so all units are consistently 1024-based, matching both the documented contract and the test expectations (`1.5 KB → 1536`, `2 MB → 2 × 1024²`, `512 B → 512`).

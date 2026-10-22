@@ -1,0 +1,12 @@
+I found the file. The best match is:
+
+**`Desktop/trip ideas 2025.txt`** — a text file listing places to go:
+- Kyoto in spring
+- Road trip down the coast
+- Camping at the lake
+
+This is the closest match to "vacation ideas" (a text file about trip/vacation ideas).
+
+One note: there's also `Documents/Personal/Summer Break ideas.docx`, which is thematically similar, but it appears to be corrupted — it can't be opened ("the file seems damaged or is not really a .docx file"). If that's the one you were thinking of, it may need to be recovered or replaced.
+
+Was `trip ideas 2025.txt` the file you were looking for?

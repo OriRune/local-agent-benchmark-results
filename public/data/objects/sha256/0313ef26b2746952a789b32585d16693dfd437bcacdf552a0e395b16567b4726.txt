@@ -1,0 +1,24 @@
+
+
+Looking at the grid, I need to find the position of `*` and `#`.
+
+Let me map out the grid (row, col):
+
+```
+Row 0: O O O X O O O X O
+Row 1: X X O O O X O X X
+Row 2: O O O O O O O O O
+Row 3: X O O O O O O O O
+Row 4: O X O O O O O O X
+Row 5: O O O O O O O O X
+Row 6: O O X X O O X O X
+Row 7: O X O O X O X * #
+```
+
+The start `*` is at position (7, 7) and the destination `#` is at position (7, 8).
+
+These two cells are directly adjacent — `#` is immediately to the right of `*`.
+
+So the shortest path is simply one move: **right**.
+
+<answer>right</answer>

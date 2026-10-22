@@ -1,0 +1,6 @@
+{
+  "answer": "TF-IDF bag-of-words features extracted from retrieved web page titles and excerpts.",
+  "evidence": [
+    8
+  ]
+}

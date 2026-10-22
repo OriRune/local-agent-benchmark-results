@@ -1,0 +1,9 @@
+
+
+Good news — that's already built in. The file saves your list to the browser's localStorage on every change (add, check, edit, delete) and reloads it when the page opens, so your items survive a refresh or closing the tab.
+
+One thing to know: localStorage is tied to the browser and the file's location, so:
+- Use the same browser (and profile) to see your list
+- If you move or copy `todo.html` to a different path, the saved list won't follow it — the new location starts empty
+
+If you'd like, I can add a "Clear all" button or an import option so you can carry the list between locations.

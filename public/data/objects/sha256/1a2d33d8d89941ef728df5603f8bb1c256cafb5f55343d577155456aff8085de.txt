@@ -1,0 +1,17 @@
+The solution is verified. Here's the breakdown:
+
+**Stage 1** (burns first, carrying stage 2 + payload):
+- m₀ = 4000 + 36000 + 900 + 4673.4 + 1200 = 46,773.4 kg
+- m_f = 900 + 4673.4 + 1200 = 6,773.4 kg
+- Δv₁ = 290 × 9.80665 × ln(46773.4/6773.4) = 290 × 9.80665 × ln(6.9054) ≈ **5495.3 m/s**
+
+**Stage 2** (after stage 1 is dropped):
+- m₀ = 900 + 4673.4 + 1200 = 6,773.4 kg
+- m_f = 900 + 1200 = 2100 kg
+- Δv₂ = 340 × 9.80665 × ln(6773.4/2100) = 340 × 9.80665 × ln(3.2254) ≈ **3904.7 m/s**
+
+**Total** = 5495.3 + 3904.7 = **9400.0 m/s** ✓
+
+Solving Δv₁ + Δv₂ = 9400 for stage 2's propellant (by bisection) gives ≈ 4673 kg.
+
+ANSWER: 4673

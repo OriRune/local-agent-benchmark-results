@@ -7,7 +7,7 @@ import SummarySpeedChart from './SummarySpeedChart';
 import { modelMentionParts } from '../lib/model-mentions';
 
 export default function ModelSummary({ analysis, configurationId }: { analysis?: SummaryView; configurationId: string }) {
-  if (!analysis || analysis.summary.editorial.state !== 'approved' || analysis.summary.subject.configuration_id !== configurationId) return <section id="model-analysis" className="facts"><h2>Factual assessment</h2><p>No approved cloud analysis is available for this configuration. The results below are recorded benchmark facts.</p></section>;
+  if (!analysis || analysis.summary.editorial.state !== 'approved' || analysis.summary.subject.configuration_id !== configurationId) return <p id="model-analysis" className="footnote">No reviewed summary yet. The charts show recorded benchmark results.</p>;
   const { summary, references, modelMentions = [] } = analysis;
   const displayedCharts=new Set<string>();
   function claim(value: Claim | ReaderClaim, index: number, showCharts=false) {
@@ -20,7 +20,7 @@ export default function ModelSummary({ analysis, configurationId }: { analysis?:
   }
   return <section id="model-analysis" className="panel" aria-label="Reviewed model analysis"><h2>Model analysis</h2>
     <p className="muted">This analysis covers this configuration across its recorded thinking conditions and test suites.</p>
-    {analysis.comparisonRefreshNeeded && <p className="muted">Newer peer results are available. This assessment and its supporting charts preserve the comparisons available on {summary.generated_at.slice(0,10)}.</p>}
+    {analysis.comparisonRefreshNeeded && <p className="muted">Newer peer results are available. This assessment retains an earlier peer cohort; its supporting comparisons date to {analysis.comparisonEvidenceDate ?? summary.generated_at.slice(0,10)}.</p>}
     {claim(summary.content.verdict, 0)}
     <SummaryAttribution summary={summary}/>
     <div>

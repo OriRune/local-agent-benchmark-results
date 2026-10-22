@@ -1,0 +1,10 @@
+I've created `README.md`. Here's a summary of what I did:
+
+I examined the project (a small CLI downloader called **tinydl**) and found the single command line parser in `app/cli.py`. The `build_parser()` function defines exactly three options, which I documented in a table with their help text plus a short details section and examples.
+
+The options are:
+- `url` — what to download (required positional)
+- `-o`, `--output` — file to write (default: stdout)
+- `-q`, `--quiet` — no progress output
+
+Note: I couldn't run `python -m app.cli --help` to confirm live output because the sandbox forbids executing programs, so I derived the options directly from the source. The README is written to `README.md` in the project root.

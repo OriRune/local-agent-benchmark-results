@@ -19,7 +19,8 @@ it('binds descriptions to task content while allowing additional models',()=>{
 });
 it('shows human task labels in lists, keeps exact configuration links and escapes prose',()=>{
   const html=renderToStaticMarkup(createElement(QuestionBank,{questions:[question],descriptions:{q1:entry},configurationId:'quant8',conditionId:'on',editionId:'release-'+ 'a'.repeat(64)}));
-  expect(html).toContain('T1 · Change a project setting');
+  expect(html).toContain('Change a project setting</a>');
+  expect(html).toContain('T1 · primary');
   expect(html).toContain(entry.description);
   expect(html).toContain('configuration=quant8');
   expect(html).toContain('condition=on');

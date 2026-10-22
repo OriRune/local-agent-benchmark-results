@@ -1,0 +1,9 @@
+I've created `README.md` for the project. It lists every CLI option from `app/cli.py` with its exact help text:
+
+| Option | Help text |
+| --- | --- |
+| `URL` | what to download |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+
+The README also includes a brief description of the tool, the usage line, and a few examples. All help text was taken verbatim from the `argparse` definitions in `app/cli.py`.

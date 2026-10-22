@@ -1,0 +1,9 @@
+I've created `README.md` for the project.
+
+The CLI (`app/cli.py`, program name `tinydl`) defines exactly three command line arguments, and I listed all of them with their help text:
+
+- **`url`** (positional argument) — "what to download"
+- **`-o`, `--output`** — "file to write (default: stdout)"
+- **`-q`, `--quiet`** — "no progress output"
+
+I verified these directly from the argparse definition in the source (the sandbox couldn't run the program to print `--help`, so I read the code instead). I also added a short usage section and a couple of notes drawn from the config and source files, since a README usually benefits from that context.

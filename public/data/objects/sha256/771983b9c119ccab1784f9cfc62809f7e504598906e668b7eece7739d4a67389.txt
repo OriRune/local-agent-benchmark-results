@@ -1,0 +1,3 @@
+The videographer must be in position 1 because they are to the left of the person who watches animation. With only two people, the animation watcher is in position 2. The Pakistani person must be adjacent to the videographer, so they are in position 2. Therefore, the Pakistani person is a freelancer and watches animation, while the person in position 1 watches thriller. The videographer is in position 1.
+
+<solution>freelancer, animation, thriller, 1</solution>

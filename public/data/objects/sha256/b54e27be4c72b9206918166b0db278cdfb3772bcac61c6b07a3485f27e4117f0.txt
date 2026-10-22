@@ -1,0 +1,4 @@
+{
+  "answer": "They use two datasets: an Occupation Data set (≈996 occupations gathered from various sources) and a Names Data set (5,453 male and 6,990 female names).",
+  "evidence": [11, 12, 13]
+}

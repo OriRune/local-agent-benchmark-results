@@ -1,0 +1,17 @@
+Let me analyze each statement.
+
+**Olivia's statement:** "Benjamin is a villain or Benjamin is a hero"
+This is a logical tautology — everyone is either a hero or a villain. This statement is always TRUE. Since Olivia tells the truth, **Olivia is a hero**.
+
+**Oliver's statement:** "Olivia is a hero and Olivia is a villain"
+This is a contradiction — Olivia cannot be both. This statement is always FALSE. Since Oliver lies, **Oliver is a villain**.
+
+**Benjamin's statement:** "Olivia is a hero"
+We established Olivia is indeed a hero, so this statement is TRUE. Since Benjamin tells the truth, **Benjamin is a hero**.
+
+**Verification:**
+- Olivia (hero) tells truth ✓
+- Oliver (villain) lies ✓
+- Benjamin (hero) tells truth ✓
+
+<answer>Olivia is a hero, Oliver is a villain, and Benjamin is a hero</answer>

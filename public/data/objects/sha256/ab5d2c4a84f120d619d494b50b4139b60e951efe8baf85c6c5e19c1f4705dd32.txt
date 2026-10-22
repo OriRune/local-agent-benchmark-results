@@ -1,0 +1,23 @@
+Set \(D=(0,0)\), so \(C=(107,0)\) and \(A=(0,-16)\). Let \(DE=t\). Since the rectangles have sides \(EF=184\) and \(FG=17\), we can write
+\[
+E=(t,0),\quad H=(t,17),\quad G=(t+184,17).
+\]
+
+Write the circle through \(A,D,H,G\) as \(x^2+y^2+px+qy+r=0\). Since it passes through \(D=(0,0)\), \(r=0\). Passing through \(A=(0,-16)\) gives \(q=16\).
+
+Substituting \(H\) and \(G\) into the circle equation and subtracting yields
+\[
+p=-2t-184.
+\]
+Using \(H\) then gives
+\[
+t^2+pt+561=0
+\quad\Longrightarrow\quad
+t^2+184t-561=0.
+\]
+Thus \(t=3\) or \(t=-187\). Since \(E\) lies between \(D\) and \(C\), \(t=DE=3\).
+
+Therefore,
+\[
+CE=DC-DE=107-3=\boxed{104}.
+\]

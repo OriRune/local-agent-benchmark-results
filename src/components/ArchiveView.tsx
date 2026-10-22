@@ -1,7 +1,7 @@
+import { editionDataset } from '../lib/edition-client';
 import { useEffect, useState } from 'react';
 import { archiveUrl, editionObject, loadEdition, requestedEdition, type Edition } from '../lib/edition-client';
 import type { QuestionData } from '../lib/public-types';
-import type { PublicBenchmarkFactsV1 } from '../lib/public-contract';
 import type { PublicBenchmarkSummaryV1 } from '../lib/public-summary';
 import { summaryView, type SummaryPacket, type SummaryView } from '../lib/summary-view';
 import ModelResults from './ModelResults';
@@ -29,7 +29,7 @@ export default function ArchiveView() {
         if (!questionId && !checkpoint && !object && query.get('attempt')) {
           // An unqualified attempt link needs the full saved inventory. Ordinary
           // question links avoid this download and resolve through a small shard.
-          const data = await editionObject<PublicBenchmarkFactsV1>(edition, edition.release.dataset_object_id);
+          const data = await editionDataset(edition);
           const attempt = data.attempts.find(a => a.id === query.get('attempt'));
           questionId = data.trials.find(t => t.id === attempt?.trial_id)?.question_id ?? null;
           if (!questionId) throw new Error('This attempt is unavailable in the pinned edition.');
@@ -75,11 +75,7 @@ export default function ArchiveView() {
   const suite = index.suites.find(s => s.id === (question?.question.suite_id ?? view.suite));
   return <><section className="facts"><strong>Pinned edition</strong><p style={{ overflowWrap: 'anywhere' }}>{release.release_id}</p><p>These results and analyses belong to this saved edition. <a href="/">Current results →</a> · <a href={archiveUrl(release.release_id)}>Edition contents →</a></p></section>
     {checkpoint && <><h2>{index.checkpoints.find(c => c.id === checkpoint)!.name}</h2><ModelResults key={release.release_id + checkpoint} data={index} checkpointId={checkpoint} releaseId={release.release_id} analyses={view.analyses} quantAnalysis={view.quantAnalysis} archived/></>}
-    {question && <><h2>{question.question.source_id} · {question.question.title}</h2><p>{suite?.name} · {question.question.scoring_status}</p><section className="panel"><TestExplanation explanation={index.test_descriptions?.questions[question.question.id]}/><h3>Original question</h3><EvidenceViewer component={question.question.components.prompt} objects={question.objects} label="Question" auto/>
-      <details><summary>Supplied context</summary><EvidenceViewer component={question.question.components.context} objects={question.objects} label="Context"/></details>
-      <details><summary>Reference answers and scoring checks</summary><EvidenceViewer component={question.question.components.reference} objects={question.objects} label="References"/><EvidenceViewer component={question.question.components.checks} objects={question.objects} label="Reference checks"/></details>
-      {question.question.branches.map(branch => <details key={branch.id}><summary>{branch.name}</summary><EvidenceViewer component={branch.prompt} objects={question.objects} label="Branch question"/><EvidenceViewer component={branch.reference} objects={question.objects} label="Branch reference"/></details>)}
-      <p className="footnote">{question.question.source.attribution}</p></section><QuestionAnswers key={release.release_id + question.question.id} data={question} index={index} editionId={release.release_id}/></>}
+    {question && <QuestionAnswers key={release.release_id + question.question.id} data={question} index={index} editionId={release.release_id}/>}
     {view.object && <section className="panel"><h2>Exact saved object</h2><EvidenceViewer objects={[edition.objects.get(view.object)!]} label="Saved object" auto component={{ object_ids: [view.object], availability: edition.objects.get(view.object)!.availability, origin: 'derived', reason: 'Object bytes from the pinned public release.', redaction_rule_ids: [], source: { name: 'Public results edition', revision: release.release_id, item: view.object, attribution: 'See the source components in this edition for attribution.', url: null, terms_url: null } }}/></section>}
     {!checkpoint && !question && !view.object && <>
       {suite ? <section className="panel"><h2>{suite.name}</h2><p>{suite.description}</p><TestExplanation category explanation={index.test_descriptions?.suites[suite.id]}/><p>{suite.metric} · {suite.scoring}</p><QuestionBank key={release.release_id + suite.id} questions={index.questions.filter(q => q.suite_id === suite.id)} descriptions={index.test_descriptions?.questions} editionId={release.release_id}/></section> : <>

@@ -1,0 +1,1 @@
+[{"args":{"command":"import scipy.optimize as so, math\nG=9.80665\nf=lambda x:290*G*math.log((42100+x)/(6100+x))+340*G*math.log((2100+x)/2100)-9400\nx=so.brentq(f,0,10000)\nprint(x, f(x))"},"name":"run","result":"error: one command per call; no line breaks","status":"error"}]

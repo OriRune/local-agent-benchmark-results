@@ -1,0 +1,11 @@
+The retry logic is in `app/net.py`. Let me work through it.
+
+`MAX_RETRIES = 3`, so the loop runs for `attempt = 0, 1, 2`. Each failed attempt sleeps `2 ** attempt` seconds:
+
+- Attempt 0: sleeps `2 ** 0 = 1` second
+- Attempt 1: sleeps `2 ** 1 = 2` seconds
+- Attempt 2: sleeps `2 ** 2 = 4` seconds
+
+After the third attempt fails, it raises `RuntimeError` (no sleep).
+
+**Total sleeping time: 1 + 2 + 4 = 7 seconds.**

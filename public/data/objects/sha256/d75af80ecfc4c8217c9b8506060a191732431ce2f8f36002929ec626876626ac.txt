@@ -1,0 +1,12 @@
+I have created a shell script named `open_workspace.sh` in the current directory. This script uses `xdg-open` to ensure that the default browser and file manager are used, and `xed` (the default text editor for Linux Mint) to open the editor.
+
+The script performs the following actions:
+1. Opens `google.com` in the default web browser.
+2. Opens the `xed` text editor.
+3. Opens the file manager at `[private-home]/Documents/llama.cpp`.
+
+To run the script, you can use the following commands in your terminal:
+```bash
+chmod +x open_workspace.sh
+./open_workspace.sh
+```

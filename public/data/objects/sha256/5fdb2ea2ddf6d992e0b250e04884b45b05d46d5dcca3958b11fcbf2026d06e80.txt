@@ -1,0 +1,14 @@
+I have identified all `TODO` comments in the Python files and added them to `todo.txt`.
+
+**TODOs found:**
+- `app/net.py`: `log each failed attempt`
+- `app/util.py`: `add a helper that formats byte sizes`
+
+**Updated `todo.txt`:**
+```
+- write README
+- add proxy support
+- tag the release
+- log each failed attempt
+- add a helper that formats byte sizes
+```

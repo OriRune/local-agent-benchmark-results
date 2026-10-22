@@ -1,0 +1,23 @@
+# H6
+
+**Result:** fail · error · 1 steps · 1 calls · 1 s
+
+## user
+
+If every attempt in fetch fails, how many seconds does it spend sleeping in total before it gives up? Work it out from the code.
+
+## assistant
+
+- call `list_dir` `{"path":"."}`
+
+<details><summary>list_dir result (60 chars)</summary>
+
+```
+app/
+data/
+tests/
+notes.md  (340 bytes)
+todo.txt  (53 bytes)
+```
+
+</details>

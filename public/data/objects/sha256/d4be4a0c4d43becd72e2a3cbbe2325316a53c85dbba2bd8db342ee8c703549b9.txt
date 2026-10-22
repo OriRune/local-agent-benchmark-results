@@ -1,0 +1,7 @@
+
+
+Looking at this problem, I need to combine 6, 2, 2, and 4 to get 24.
+
+Let me try: (6 - 2) * (4 + 2) = 4 * 6 = 24 ✓
+
+<answer>(6 - 2) * (4 + 2)</answer>

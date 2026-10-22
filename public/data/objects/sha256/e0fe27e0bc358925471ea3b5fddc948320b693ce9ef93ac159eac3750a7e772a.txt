@@ -1,0 +1,17 @@
+## Solving the Logic Puzzle
+
+**Placing the people (Clues 1 & 2):**
+- Bob is in House 3
+- Arnold is in House 2
+- Therefore, **Alice is in House 1**
+
+**Verifying consistency with remaining clues:**
+- Clue 3: Arnold (House 2) is British ✓
+- Clue 4: The Dane is Alice (House 1) ✓
+- Clue 6: Arnold (House 2) owns the cat ✓
+- Clue 5: The dog owner is the Dane = Alice (House 1) ✓
+- Remaining: Bob (House 3) is Chinese and owns the bird ✓
+
+Everything is consistent.
+
+<answer>Alice</answer>

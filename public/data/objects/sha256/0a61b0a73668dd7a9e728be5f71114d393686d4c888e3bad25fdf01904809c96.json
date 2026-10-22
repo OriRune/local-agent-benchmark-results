@@ -1,0 +1,1 @@
+["The user wants to search this directory and find the largest files along with their locations. Let's use find_files with sort set to size.\n","The user wants to know the largest files and their locations. I've already obtained the list. Let me present the top files in a clean format. The list is sorted by size in descending order. I'll present the top ~20 or so files.\n"]

@@ -1,0 +1,3 @@
+The release date mentioned in notes.md is **14 October** (from the 2026-09-16 planning notes: "The release is planned for 14 October.").
+
+Note that the other dates in the file — 2026-09-02 and 2026-09-16 — are just the dates of the planning note entries, not the release date.

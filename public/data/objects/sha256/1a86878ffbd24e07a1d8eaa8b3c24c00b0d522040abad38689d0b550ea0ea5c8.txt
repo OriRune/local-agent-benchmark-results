@@ -1,0 +1,16 @@
+I have created a `README.md` file that lists the command line options for the `tinydl` CLI and their corresponding help text, based on the implementation in `app/cli.py`.
+
+**README.md content:**
+# tinydl
+
+A simple command-line tool to download content from a URL.
+
+## Usage
+
+`tinydl [options] url`
+
+## Options
+
+- `url`: what to download
+- `-o`, `--output`: file to write (default: stdout)
+- `-q`, `--quiet`: no progress output

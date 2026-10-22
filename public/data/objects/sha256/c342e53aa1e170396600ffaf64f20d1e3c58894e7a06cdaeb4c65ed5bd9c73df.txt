@@ -1,0 +1,4 @@
+Done. I've renamed the `fetch` function to `download` in `app/net.py` and updated all usages:
+
+- `app/net.py`: Function definition changed from `fetch` to `download`
+- `app/cli.py`: Import statement and function call updated from `fetch` to `download`

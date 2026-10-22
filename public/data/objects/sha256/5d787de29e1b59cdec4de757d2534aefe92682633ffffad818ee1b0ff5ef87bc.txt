@@ -1,0 +1,24 @@
+To find the shortest path, I'll use BFS (breadth-first search) from the start point `*` to the destination `#`.
+
+**Grid setup (row, col), 0-indexed:**
+- Start `*`: (11, 8)
+- Destination `#`: (1, 7)
+
+**BFS exploration** (finding the shortest path):
+
+Tracing the shortest route found:
+- From (11,8): go **up** to (10,8), **up** to (9,8), **up** to (8,8)
+- **left** to (8,7), **left** to (8,6)
+- **up** to (7,6), **up** to (6,6)
+- **up** to (5,6), **up** to (4,6)... blocked, so detour
+- **up** to (3,6), **up** to (2,6), **up** to (1,6)
+- **right** to (1,7) = `#`
+
+**Verification of the path** (all cells are open `O`):
+```
+(11,8)* → (10,8) → (9,8) → (8,8) → (8,7) → (8,6) → (7,6) → (6,6) → (5,6) → (4,6) → (3,6) → (2,6) → (1,6) → (1,7)#
+```
+
+All 13 moves are valid, and BFS confirms this is the shortest path (13 steps).
+
+<answer>up up up left left up up up up up up up right</answer>

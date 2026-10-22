@@ -1,0 +1,1 @@
+{"answer":"ICD-10 codes are codes from the International Classification of Diseases, 10th revision, used to code causes of death. The paper’s example maps “insuffisance cardiaque aigue” to I509; its dictionaries contained 3,539 and 6,392 distinct codes.","evidence":[0,3,5,10]}

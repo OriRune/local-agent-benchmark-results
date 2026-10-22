@@ -1,0 +1,11 @@
+I found several files related to "vacation":
+
+1. **Documents/Work/HR/vacation policy 2026.pdf** - A PDF about vacation policy
+2. **Documents/Work/HR/vacation request form.docx** - A Word document (`.docx`) about vacation requests
+3. **Pictures/Vacation 2023/** - Contains two JPG images (IMG_0412.jpg and IMG_0413.jpg)
+
+The most likely candidates for a "word file or text file, or maybe markdown" would be:
+- **vacation request form.docx** (Word document)
+- **vacation policy 2026.pdf** (PDF document)
+
+Would you like me to look at the contents of either of these files?

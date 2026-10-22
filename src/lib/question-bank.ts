@@ -21,15 +21,15 @@ export function bankQuery(search: string, view: BankView): string {
   if (view.page !== 1) query.set('bank_page', String(view.page));
   return query.toString();
 }
-export const BANK_OUTCOMES = ['full', 'partial', 'zero', 'blocked', 'review', 'infra_error', 'context_limit', 'interrupted', 'pending', 'not_scheduled'];
-export type BankSearch = { version: number; suite_id: string; questions: { question_id: string; prompt: string; availability: string; outcomes: { configuration_id: string; condition_id: string; status: string; credit: string; count: number }[] }[] };
+export const BANK_OUTCOMES = ['full', 'partial', 'incorrect', 'failed_to_finish', 'technical_error', 'untested', 'unresolved', 'zero', 'blocked', 'review', 'infra_error', 'context_limit', 'interrupted', 'pending', 'not_scheduled'];
+export type BankSearch = { version: number; suite_id: string; questions: { question_id: string; prompt: string; availability: string; outcomes: { configuration_id: string; condition_id: string; status: string; credit: string; category?: string; count: number }[] }[] };
 export function bankPage(questions: BankQuestion[], view: BankView, search?: BankSearch, configurationId?: string, conditionId?: string, descriptions:Record<string,TestDescription> = {}) {
   const needle = view.search.trim().toLowerCase();
   const matching = questions.filter(question => {
     const extra = search?.questions.find(row => row.question_id === question.id);
     return (view.status === 'all' || question.scoring_status === view.status)
       && `${question.source_id} ${question.title} ${descriptions[question.id]?.title ?? ''} ${descriptions[question.id]?.description ?? ''} ${extra?.prompt ?? ''}`.toLowerCase().includes(needle)
-      && (!view.outcome || extra?.outcomes.some(outcome => (!configurationId || outcome.configuration_id === configurationId) && (!conditionId || outcome.condition_id === conditionId) && (outcome.credit === view.outcome || outcome.status === view.outcome)));
+      && (!view.outcome || extra?.outcomes.some(outcome => (!configurationId || outcome.configuration_id === configurationId) && (!conditionId || outcome.condition_id === conditionId) && (outcome.credit === view.outcome || outcome.status === view.outcome || outcome.category === view.outcome)));
   });
   const pages = Math.max(1, Math.ceil(matching.length / BANK_PAGE_SIZE));
   const page = Math.min(view.page, pages), start = (page - 1) * BANK_PAGE_SIZE;

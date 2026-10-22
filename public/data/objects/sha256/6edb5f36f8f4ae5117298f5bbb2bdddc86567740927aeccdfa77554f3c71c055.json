@@ -1,0 +1,1 @@
+[{"args":{"command":"import subprocess\nfor args in [['git','status','--short'], ['git','log','-1','--stat','--oneline'], ['git','show','-1','--format=fuller','--']]:\n    p=subprocess.run(args,capture_output=True,text=True)\n    print('$',' '.join(args),'\\n',p.stdout,p.stderr)\n"},"name":"run","result":"error: one command per call; no line breaks","status":"error"}]

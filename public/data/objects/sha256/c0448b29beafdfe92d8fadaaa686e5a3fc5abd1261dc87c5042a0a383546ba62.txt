@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "They use two datasets: (1) Occupation Data, gathered from different sources on the internet including crowdsourced lists and government lists, classified into gender-specific and gender-neutral occupations; and (2) Names Data, a corpus of 5453 male and 6990 female names sourced from the CMU repository of names, with gender mapping referred to from the NLTK data set and baby name records. They also use DBpedia for fetching counter-evidence examples.",
+  "evidence": [11, 12, 13, 23]
+}
+```

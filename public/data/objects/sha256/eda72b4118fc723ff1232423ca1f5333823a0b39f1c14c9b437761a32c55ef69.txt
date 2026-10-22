@@ -1,0 +1,21 @@
+
+
+Done. `app/util.py` now has:
+
+```python
+def format_bytes(n):
+    """Return a human-readable size, e.g. '1.5 KB'."""
+    if n < 0:
+        raise ValueError("size must be non-negative")
+    for unit in ("B", "KB", "MB", "GB", "TB", "PB"):
+        if n < 1024 or unit == "PB":
+            if unit == "B":
+                return f"{n} {unit}"
+            return f"{n:.1f} {unit}"
+        n /= 1024
+```
+
+- The TODO comment was removed and replaced with the function.
+- It uses 1024-based units, whole bytes for the B range, and one decimal place otherwise: `format_bytes(1536)` → `'1.5 KB'`, `format_bytes(512)` → `'512 B'`, `format_bytes(1048576)` → `'1.0 MB'`.
+
+One note: I created a small check script to verify it, but the sandbox denied running programs in this session, so I verified the logic by hand instead. The script is left as `_check_format_bytes.py.bak` in the project root — feel free to remove it.

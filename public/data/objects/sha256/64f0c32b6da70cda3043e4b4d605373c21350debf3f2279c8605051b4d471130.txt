@@ -1,0 +1,19 @@
+The solution checks out: dv1 + dv2 = 9400 m/s exactly.
+
+**Solution summary:**
+
+Let p₂ = stage 2 propellant mass.
+
+**Stage 1** (carries payload + stage 1 + stage 2, then drops its dry mass):
+- m₀ = 1200 + 4000 + 36000 + 900 + p₂ = 42100 + p₂
+- m_f = 1200 + 4000 + 900 + p₂ = 6100 + p₂
+- Δv₁ = 290 × 9.80665 × ln((42100+p₂)/(6100+p₂))
+
+**Stage 2** (carries payload + stage 2, drops stage 2 dry mass):
+- m₀ = 1200 + 900 + p₂ = 2100 + p₂
+- m_f = 1200 + 900 = 2100
+- Δv₂ = 340 × 9.80665 × ln((2100+p₂)/2100)
+
+Solving Δv₁ + Δv₂ = 9400 m/s gives p₂ ≈ 11,529 kg (Δv₁ ≈ 3164 m/s, Δv₂ ≈ 6236 m/s).
+
+ANSWER: 11529.43 kg

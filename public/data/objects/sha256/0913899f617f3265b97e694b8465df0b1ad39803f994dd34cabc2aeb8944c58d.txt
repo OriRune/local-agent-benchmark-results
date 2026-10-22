@@ -1,0 +1,5 @@
+Done. I undid the change from the most recent commit by editing `app/config.py` directly (no git commands used to modify state).
+
+- The last commit (`162d7d7`) raised `TIMEOUT_S` from `10` to `20`.
+- I reverted the file by editing `TIMEOUT_S` back to `10`.
+- The working-tree diff now shows exactly the reverse of that commit, restoring the original content.

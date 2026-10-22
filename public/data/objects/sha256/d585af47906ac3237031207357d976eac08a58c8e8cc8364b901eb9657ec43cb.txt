@@ -1,0 +1,14 @@
+To solve the logic puzzle, we can list the houses and assign the characteristics based on the clues provided:
+
+1.  **House 3:** Bob (Clue 1)
+2.  **House 2:** Arnold (Clue 2)
+3.  **House 1:** Since Bob is in House 3 and Arnold is in House 2, the only remaining person, Alice, must be in House 1.
+
+Let's verify the other details to ensure consistency:
+- **House 2 (Arnold):** British (Clue 3), Cat lover (Clue 6).
+- **House 1 (Alice):** Dane (Clue 4), Dog owner (Clue 5).
+- **House 3 (Bob):** Chinese (remaining nationality), Bird owner (remaining animal).
+
+All clues are satisfied. The person who lives in House 1 is Alice.
+
+<answer>alice</answer>

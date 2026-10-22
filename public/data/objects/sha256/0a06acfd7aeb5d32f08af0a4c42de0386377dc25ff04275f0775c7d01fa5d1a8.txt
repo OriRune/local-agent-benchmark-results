@@ -1,0 +1,8 @@
+If the angle between the two jumps is \(\theta\), the distance from the start is \(4\cos(\theta/2)\), with \(\theta\) uniform on \([0,\pi]\). The distance is less than \(1\) when \(\theta>2\arccos(1/4)\), so the probability is
+\[
+\frac{\pi-2\arccos(1/4)}{\pi}
+=\frac{2\arcsin(1/4)}{\pi}.
+\]
+The answer is \(\boxed{\textbf{B}}\).
+
+BBBBB

@@ -1,0 +1,17 @@
+The HTML file already includes localStorage persistence! I coded it so the list automatically remembers items when you reload. Here's how it works:
+
+**Already implemented in `todo_list.html`:**
+
+1. **Automatic saving** - After every add, edit, delete, or toggle action, the tasks are saved to `localStorage` (lines 165-166)
+2. **Automatic loading** - On page load, it reads from `localStorage` if available (line 84)
+3. **Persistent storage** - Tasks remain even after closing the browser/tab
+
+**How to test it:**
+1. Open `todo_list.html` in a browser
+2. Add a few tasks
+3. Reload the page (F5 or refresh button)
+4. Your tasks will still be there!
+
+The storage key is `'tasks'` in the browser's localStorage. If you ever want to clear it, you can do so from the browser's developer tools (Application > Local Storage).
+
+Is there anything specific about the persistence you'd like me to adjust or explain further?

@@ -1,0 +1,12 @@
+I've created `README.md` for the project.
+
+The CLI (`tinydl`, entry point `app/cli.py`) defines three options, and I documented each with its exact help text:
+
+| Option | Help text |
+| --- | --- |
+| `url` | what to download |
+| `-o`, `--output FILE` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+| `-h`, `--help` | (argparse built-in) show this help message and exit |
+
+I derived these directly from the `argparse` definitions in `app/cli.py` (the sandbox couldn't run the program to dump `--help`, but the source is unambiguous). The README also includes a usage section, examples, the config constants behind the CLI's behavior, and a brief project layout.

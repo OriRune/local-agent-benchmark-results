@@ -1,0 +1,23 @@
+Working it out from the code:
+
+**`app/net.py`** — the `fetch` function:
+```python
+for attempt in range(MAX_RETRIES):
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+raise RuntimeError(f"giving up on {url}")
+```
+
+**`app/config.py`** — `MAX_RETRIES = 3`.
+
+So the loop runs for `attempt = 0, 1, 2`. If every attempt raises `OSError`, it sleeps `2 ** attempt` each time:
+
+| attempt | sleep |
+|---------|-------|
+| 0 | 2⁰ = 1 s |
+| 1 | 2¹ = 2 s |
+| 2 | 2² = 4 s |
+
+**Total sleep = 1 + 2 + 4 = 7 seconds** before it gives up (raises `RuntimeError`).

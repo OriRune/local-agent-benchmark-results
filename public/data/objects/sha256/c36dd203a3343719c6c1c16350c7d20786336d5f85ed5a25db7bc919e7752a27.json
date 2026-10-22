@@ -1,0 +1,1 @@
+[{"args":{"command":"python - <<'PY'\nimport os\nprint(os.getcwd())\nPY"},"name":"run","result":"error: one command per call; no line breaks","status":"error"},{"args":{"path":"."},"name":"list_dir","result":"app/\ndata/\ntests/\nnotes.md  (340 bytes)\ntodo.txt  (53 bytes)","status":"ok"}]

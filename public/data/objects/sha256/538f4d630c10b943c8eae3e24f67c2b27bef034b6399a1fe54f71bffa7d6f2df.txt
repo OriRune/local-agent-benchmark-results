@@ -1,0 +1,13 @@
+Now I can calculate the total sleep time. Looking at the code:
+
+- `MAX_RETRIES = 3`, so the loop runs for `attempt` values: 0, 1, 2
+- Sleep time per attempt: `2 ** attempt` seconds
+
+Let me work it out:
+- Attempt 0: `2^0 = 1` second
+- Attempt 1: `2^1 = 2` seconds  
+- Attempt 2: `2^2 = 4` seconds
+
+Total sleep time: 1 + 2 + 4 = **7 seconds**
+
+Note that after the 3rd failed attempt (when `attempt = 2`), the loop exits and raises `RuntimeError` - no additional sleep happens after the final failure.

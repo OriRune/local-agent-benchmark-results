@@ -1,0 +1,8 @@
+```json
+{
+ "answer": "The researchers used parts of Chinese Wikipedia articles, which resulted in 11,529,432 segmented words.",
+ "evidence": [
+  12
+ ]
+}
+```

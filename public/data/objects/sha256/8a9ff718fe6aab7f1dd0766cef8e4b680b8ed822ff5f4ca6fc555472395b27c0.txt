@@ -1,0 +1,16 @@
+To solve this logic puzzle, we can set up a grid for the 5 houses and fill in the information based on the clues provided.
+
+1.  **Initial Placements:**
+    *   Clue 7: House 2 loves yellow.
+    *   Clue 1: House 5 has the cat.
+    *   Clue 14: The cat lover is the Dane. (House 5 = Dane, Cat)
+    *   Clue 10: The person who loves yellow (House 2) uses a OnePlus 9.
+    *   Clue 12: The person who loves yellow (House 2) is the bird keeper.
+
+2.  **Determining the German and White Lover:**
+    *   Clue 6: The person who loves white is directly left of the German.
+    *   Clue 5: The German uses a Samsung Galaxy S21.
+    *   The German cannot be in House 2 (Yellow) or House 5 (Dane).
+    *   If the German is in House 3, the white lover is in House 2 (but House 2 is yellow).
+    *   If the German is in House 4, the white lover is in House 3. This is possible.
+    *   If

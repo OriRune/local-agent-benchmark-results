@@ -1,0 +1,7 @@
+Let \(S_n\) be the sum of row \(n\). From row \(n\) to row \(n+1\), the adjacent-sum contributions total \(2S_n-2\), and the added \(1\)'s (including the endpoints) total \(n+1\). Thus
+\[
+S_{n+1}=2S_n+n-1.
+\]
+Since \(S_1=1\), this gives \(S_n=2^n-n\). The units digit of \(2^{2023}\) is \(8\), and \(2023\) ends in \(3\), so the units digit of \(S_{2023}\) is \(8-3=5\). The answer is **D**.
+
+DDDDD

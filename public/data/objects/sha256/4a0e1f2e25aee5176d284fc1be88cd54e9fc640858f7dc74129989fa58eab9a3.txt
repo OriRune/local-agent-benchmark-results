@@ -1,0 +1,8 @@
+{
+  "answer": "ICD-10 codes are codes from the International Classification of Diseases, 10th revision, used to code medical causes in death certificates, such as I509 for “insuffisance cardiaque aigue.”",
+  "evidence": [
+    0,
+    3,
+    10
+  ]
+}

@@ -1,0 +1,22 @@
+The script is complete and working. I created `system_info.py` in your project folder.
+
+**What it does:**
+- **RAM Usage** — reads `/proc/meminfo` to show used memory, total memory, percentage used, and available memory (in MB).
+- **CPU Usage** — samples `/proc/stat` twice over a 0.5s interval to compute the current CPU utilization percentage, and reports the number of logical CPUs.
+
+**How to run it:**
+```bash
+python3 system_info.py
+```
+
+Example output from the test run:
+```
+============================================================
+        System Information - RAM & CPU Usage
+============================================================
+RAM Usage: 9859.5 MB / 128738.8 MB (7.7% used) | Available: 118879.3 MB
+CPU Usage: 3.3% (12 logical CPU(s))
+============================================================
+```
+
+It uses only Python's standard library (no external dependencies) and works on Linux via `/proc`.

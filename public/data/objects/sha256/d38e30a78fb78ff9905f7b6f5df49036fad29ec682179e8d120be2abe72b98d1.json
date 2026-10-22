@@ -1,0 +1,1 @@
+[{"args":{"path":"."},"name":"list_dir","result":"app/\ndata/\ntests/\nnotes.md  (340 bytes)\ntodo.txt  (53 bytes)","status":"ok"},{"args":{"path":".git"},"name":"list_dir","result":"branches/\nhooks/\ninfo/\nlogs/\nobjects/\nrefs/\nCOMMIT_EDITMSG  (49 bytes)\nconfig  (92 bytes)\ndescription  (73 bytes)\nHEAD  (21 bytes)\nindex  (945 bytes)","status":"ok"}]

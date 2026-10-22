@@ -1,0 +1,23 @@
+Let me work through this from the code.
+
+**The relevant code (`app/net.py`):**
+
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+```
+
+**The math:**
+
+The loop runs for `attempt = 0, 1, 2` (since `MAX_RETRIES = 3`). Every attempt fails, so it sleeps after each one with `2 ** attempt`:
+
+- Attempt 0: `2 ** 0 = 1` second
+- Attempt 1: `2 ** 1 = 2` seconds
+- Attempt 2: `2 ** 2 = 4` seconds
+
+**Total: 1 + 2 + 4 = 7 seconds**
+
+The key detail is that the sleep happens *inside* the loop body, after each failed attempt — including the final one — before the `RuntimeError` is raised. So it sleeps three times, for a total of **7 seconds**.
