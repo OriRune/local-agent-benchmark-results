@@ -19,7 +19,7 @@ test('summary category evidence opens exact model answers and code in the pinned
  // Rendering-only claim backed by this edition's actual identifiers; no approval or release write.
  const fact={id:'fact-test',record_id:a.id,metric:'score',value:a.score,unit:'normalized_credit',condition_id:a.condition_id,suite_id:a.suite_id};
  const claim={text:'Small coding tasks.',evidence_refs:[fact.id],numeric_facts:[],condition_ids:[a.condition_id],scope:'measured_fact',illustration:false};
- const summary={subject:{configuration_id:config.id,checkpoint_id:cp.id},content:{output_schema_version:1,verdict:claim,strengths:[],weaknesses:[],thinking_tradeoffs:[],limitations:[]}} as unknown as PublicBenchmarkSummaryV1;
+ const summary={generated_at:new Date().toISOString(),editorial:{state:'draft',reviewed_at:null,edited:false,supersedes_summary_id:null},subject:{configuration_id:config.id,checkpoint_id:cp.id},content:{output_schema_version:1,verdict:claim,strengths:[],weaknesses:[],thinking_tradeoffs:[],limitations:[]}} as unknown as PublicBenchmarkSummaryV1;
  const packet:SummaryPacket={inputs:{suites:data.suites,conditions:data.conditions,numeric_facts:[fact],limitations:[],examples:[]}};
  const view=summaryView(summary,packet,{releaseId:rid,checkpointId:cp.id});
  await page.goto('/');

@@ -43,3 +43,20 @@ footer .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap}footer .the
 .outcome-explanation{border-left:3px solid var(--accent,#137b73);padding:.1rem 1rem;margin:1rem 0}
 .outcome-matrix td[data-outcome="failed_to_finish"]{background:color-mix(in srgb,#b36d13 12%,transparent)}
 @media(max-width:720px){.capability-row .outcome-distribution{grid-column:1/-1;grid-row:2;margin-top:.3rem}.capability-row:has(.outcome-distribution) .capability-value{grid-row:1}}
+
+/* Keep the first result in reach on compact screens without reducing controls. */
+@media(max-width:650px){
+ main.wrap{padding-top:8px}
+ h1{line-height:1.16;margin:2px 0 4px}
+ .page-heading .lede{line-height:1.35;margin:4px 0 2px}
+ .page-heading>div:last-child{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px;margin:0 0 4px}
+ .page-heading>div:last-child br{display:none}
+ .edition-link{display:inline-block;margin:0}
+ .task-selector{padding:2px 0 4px}
+ .task-selector .tabs{margin:3px 0}
+ .suite-caption{line-height:1.32;margin:3px 0 5px}
+ .suite-caption small{margin:2px 0}
+ .advanced-filters{margin:4px 0 2px}
+ .result-context{line-height:1.35;margin-top:6px}
+ .section-title{margin-top:8px}
+}

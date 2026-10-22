@@ -473,8 +473,8 @@
     },
     {
       "path": "src/styles/explore.css",
-      "bytes": 16431,
-      "sha256": "9942f00b3dae3e42e5a1db86721aff32ec7dc731f515a8acba440c0c62455733"
+      "bytes": 17141,
+      "sha256": "e22c67853a01dd137722d083cef0b3835a7676442d0c95ed7200f952d392105a"
     },
     {
       "path": "src/styles/global.css",
@@ -728,8 +728,8 @@
     },
     {
       "path": "tests/e2e/summary-links.spec.ts",
-      "bytes": 3942,
-      "sha256": "4c5a9452558f4b9739b935f06fa1145b4364840c2425d79ab98eec735fb62ca1"
+      "bytes": 4063,
+      "sha256": "11f77995583e202977a754e5bc421b0b9abc7160089fcbf89dfc94261000a765"
     },
     {
       "path": "tests/e2e/summary-presentation.spec.ts",
