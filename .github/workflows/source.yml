@@ -35,6 +35,8 @@ jobs:
           import { importRelease } from './scripts/import-data.mjs';
           if (process.env.CI !== 'true') throw new Error('Fixture replacement is CI-only');
           await rm('public/data', { recursive: true, force: true });
+          // Production previews are bound to their real release and exact attempts.
+          await rm('public/previews', { recursive: true, force: true });
           await importRelease('tests/fixtures/edition-history-v1/release', 'public/data');
           await importRelease('tests/fixtures/edition-history-v1/regraded', 'public/data');
           JS
