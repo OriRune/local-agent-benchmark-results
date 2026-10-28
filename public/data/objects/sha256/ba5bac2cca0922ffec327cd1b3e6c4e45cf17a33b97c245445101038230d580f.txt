@@ -1,0 +1,17 @@
+I apologize, but I'm unable to search outside the current project directory due to the sandbox restrictions. The current workspace is empty, and the sandbox only allows access within the project folder.
+
+To help you find your local LLMs, I'd need to ask:
+
+**Where are your LLMs typically stored?** Common locations people use include:
+- `~/models/` or `~/Documents/models/`
+- `~/LLMs/` or `~/local-llms/`
+- `~/.cache/huggingface/`
+- `/mnt/data/models/`
+
+Alternatively, if you'd like, I can provide you with a command to run in your terminal that would search for common LLM file types across your system:
+
+```bash
+find ~ -type f \( -name "*.gguf" -o -name "*llama*.bin" -o -name "*mistral*.bin" -o -name "config.json" \) 2>/dev/null
+```
+
+Would you like to tell me where you typically store your models, or would you prefer to run this search command yourself?

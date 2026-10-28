@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The results are evaluated using a human questionnaire where respondents rank captions by funniness without knowing their origin, and by comparing the average number of stars received when captions are posted on the Bokete Ogiri website.",
+  "evidence": [12, 13, 14]
+}
+```

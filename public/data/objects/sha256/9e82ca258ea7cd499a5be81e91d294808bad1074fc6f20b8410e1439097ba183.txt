@@ -1,0 +1,31 @@
+The two-stage rocket problem is solved by applying the Tsiolkovsky rocket equation to each stage sequentially.
+
+**Given:**
+- Total Δv required: 9400 m/s
+- Payload: 1200 kg
+- Stage 1: dry mass 4000 kg, propellant 36000 kg, Isp = 290 s
+- Stage 2: dry mass 900 kg, Isp = 340 s
+- g₀ = 9.80665 m/s²
+
+**Stage 1 burn:**
+- Initial mass (m₀₁) = 4000 + 36000 + 900 + m₂_prop + 1200 = 42100 + m₂_prop
+- Final mass (m_f₁) = 4000 + 900 + m₂_prop + 1200 = 6100 + m₂_prop
+- Δv₁ = 290 × 9.80665 × ln[(42100 + m₂_prop) / (6100 + m₂_prop)]
+
+**Stage 2 burn:**
+- Initial mass (m₀₂) = 900 + m₂_prop + 1200 = 2100 + m₂_prop
+- Final mass (m_f₂) = 900 + 1200 = 2100
+- Δv₂ = 340 × 9.80665 × ln[(2100 + m₂_prop) / 2100]
+
+**Total Δv = Δv₁ + Δv₂ = 9400 m/s**
+
+Solving this equation numerically (e.g., by bisection) yields:
+
+**m₂_prop ≈ 11529.433 kg**
+
+Verification:
+- Δv₁ ≈ 3163.95 m/s
+- Δv₂ ≈ 6236.05 m/s
+- Total ≈ 9400.00 m/s
+
+ANSWER: 11529.433 kg

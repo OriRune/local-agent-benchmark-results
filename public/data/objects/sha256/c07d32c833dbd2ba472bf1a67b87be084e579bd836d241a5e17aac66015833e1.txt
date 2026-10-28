@@ -1,0 +1,16 @@
+The code is already set up to remember items on reload. Looking at line 128, it retrieves items from localStorage on page load:
+
+```javascript
+let todos = JSON.parse(localStorage.getItem('todos')) || [];
+```
+
+And `saveTodos()` is called whenever items are added, edited, or deleted.
+
+The list **already remembers items** when you reload the page. The data is stored in your browser's localStorage.
+
+If you're testing and not seeing items persist, try:
+1. Adding a few tasks
+2. Refreshing the page (F5 or Ctrl+R)
+3. The tasks should still be there
+
+If you want to clear the list, you can either delete all tasks manually or clear your browser's localStorage for this site.

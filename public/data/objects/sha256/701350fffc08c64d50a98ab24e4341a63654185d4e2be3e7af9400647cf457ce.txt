@@ -1,0 +1,12 @@
+You read **15 different books** last year (2025), and **8 of them** were finished between July and December. The books finished in that period are:
+
+- The Hobbit
+- Middlemarch
+- The Night Circus
+- The Thursday Murder Club
+- The Bear and the Nightingale
+- Babel
+- Lessons in Chemistry
+- Tomorrow and Tomorrow and Tomorrow
+
+ANSWER: 15, 8

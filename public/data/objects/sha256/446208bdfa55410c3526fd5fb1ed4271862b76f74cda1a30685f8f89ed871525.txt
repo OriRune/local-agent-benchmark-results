@@ -1,0 +1,13 @@
+I fixed the `parse_size` function in `app/units.py` so that it uses 1024-based units for all conversions, not just for MB and GB.
+
+The UNITS dictionary now correctly maps:
+- "KB" → 1024 (instead of 1000)
+- "MB" → 1024 ** 2
+- "GB" → 1024 ** 3
+
+This ensures:
+- `parse_size("512 B")` returns `512`
+- `parse_size("1.5 KB")` returns `1536` (1.5 × 1024)
+- `parse_size("2 MB")` returns `2097152` (2 × 1024 × 1024)
+
+The test expectations are now met by the implementation.

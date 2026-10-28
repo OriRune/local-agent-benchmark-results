@@ -1,0 +1,4 @@
+{
+  "answer": "The results are evaluated using a human questionnaire in which respondents rank captions from humans, the NJM, and the STAIR caption by funniness, and by comparing average star ratings on Bokete, where the NJM averaged 3.23 stars versus 1.71 stars for the STAIR caption.",
+  "evidence": [12, 13, 14]
+}

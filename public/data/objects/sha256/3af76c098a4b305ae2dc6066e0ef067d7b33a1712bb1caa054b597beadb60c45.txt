@@ -1,0 +1,7 @@
+Created `README.md` with every CLI option from `app/cli.py` and its help text:
+
+- `url` — what to download
+- `-o`, `--output` — file to write (default: stdout)
+- `-q`, `--quiet` — no progress output
+
+Also included a short usage line and a one-line description of what the tool does (fetches a URL, retries up to 3 times, 20 s timeout).

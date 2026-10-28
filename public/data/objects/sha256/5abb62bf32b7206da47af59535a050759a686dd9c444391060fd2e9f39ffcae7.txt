@@ -1,0 +1,10 @@
+Worked out from the code:
+
+- `MAX_RETRIES = 3`, so the `for attempt in range(MAX_RETRIES)` loop runs for `attempt = 0, 1, 2`.
+- On each failed attempt it sleeps `2 ** attempt` seconds before the next try:
+  - attempt 0 → `2 ** 0` = **1s**
+  - attempt 1 → `2 ** 1` = **2s**
+  - attempt 2 → `2 ** 2` = **4s**
+- After the third attempt fails, the loop ends and it immediately `raise`s `RuntimeError` — no further sleep.
+
+Total sleeping before giving up: **1 + 2 + 4 = 7 seconds**.

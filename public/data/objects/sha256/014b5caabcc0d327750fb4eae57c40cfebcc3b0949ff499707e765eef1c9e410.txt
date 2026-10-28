@@ -1,0 +1,11 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment. The function converts bytes to a human-readable string like `'1.5 KB'`:
+
+- `format_bytes(1536)` → `'1.5 KB'`
+- `format_bytes(1024)` → `'1.0 KB'`
+- `format_bytes(1048576)` → `'1.0 MB'`
+- `format_bytes(5)` → `'5 B'`
+- `format_bytes(0)` → `'0 B'`
+
+It scales through B, KB, MB, GB, TB, PB, EB, showing whole numbers for bytes and one decimal place for larger units.
+
+Note: I created a quick test script to verify the behavior, but the sandbox wouldn't let me run it, so I renamed it to `test_format.py.bak` to keep the workspace clean. Let me know if you'd like it removed or kept.

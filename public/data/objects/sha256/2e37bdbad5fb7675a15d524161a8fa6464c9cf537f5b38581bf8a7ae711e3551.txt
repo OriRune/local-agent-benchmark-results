@@ -1,0 +1,37 @@
+The geometry gives the coordinates  
+
+- \(A(0,0),\; D(0,16),\; C(107,16)\)  
+- \(E(x_E,16),\; F(x_F,16)\) with \(EF = x_F-x_E =184\)  
+- \(H(x_E,33),\; G(x_F,33)\) because the height of rectangle \(EFGH\) is \(FG=17\).
+
+Since \(A, D, H, G\) are concyclic, the circle through \(A\) and \(D\) must have its centre on the perpendicular bisector of \(AD\), i.e. at \((a,8)\).  
+Using the points \(A\) and \(D\) gives the centre’s \(y\)-coordinate \(b=8\).
+
+For the circle to also pass through \(H\) and \(G\),
+
+\[
+(x_E-a)^2 = a^2-561,\qquad (x_F-a)^2 = a^2-561 .
+\]
+
+Thus \(x_E\) and \(x_F\) are symmetric about \(a\):
+\[
+x_E = a-d,\; x_F = a+d,\; d=\sqrt{a^2-561}.
+\]
+
+Because \(EF = x_F-x_E = 2d = 184\), we have \(d = 92\).  
+Hence \(\sqrt{a^2-561}=92\) giving \(a^2 = 9025\) and \(a = 95\).
+
+Therefore  
+
+\[
+x_E = 95-92 = 3,\qquad x_F = 95+92 = 187.
+\]
+
+Finally,
+\[
+CE = |107 - x_E| = 107 - 3 = 104.
+\]
+
+The required length is **104**.
+
+**Answer:** 104

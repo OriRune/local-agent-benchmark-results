@@ -1,0 +1,9 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment about it.
+
+The function walks through the units B, KB, MB, GB, TB, PB, EB, ZB, YB and returns a string like:
+- `1536` → `'1.5 KB'`
+- `1024` → `'1 KB'` (whole numbers drop the trailing `.0`)
+- `1073741824` → `'1 GB'`
+- `0` → `'0 B'`
+
+One note: I tried to verify it by running a quick test script, but the sandbox refused to run programs in this session, so the behavior above is what the code is written to produce rather than an executed check. The test script `check_format_bytes.py` is still sitting in the working folder if you'd like to run it yourself or have me delete it (files can't be deleted, only moved).

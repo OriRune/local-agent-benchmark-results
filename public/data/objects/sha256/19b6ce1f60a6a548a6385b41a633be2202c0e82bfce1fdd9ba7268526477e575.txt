@@ -1,0 +1,4 @@
+{
+  "answer": "They use a 300-dimensional word2vec word embedding model trained on financial news articles.",
+  "evidence": [4, 17]
+}

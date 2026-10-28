@@ -1,0 +1,9 @@
+Done. The test failed because `app/units.py` defined `KB` as 1000 (decimal), while both the docstring ("1 KB = 1024 bytes") and the test expect 1024-based units — so `parse_size("1.5 KB")` returned 1500 instead of 1536.
+
+I fixed the code by changing `"KB": 1000` to `"KB": 1024` in the `UNITS` dict. With that, all three assertions hold:
+
+- `parse_size("512 B")` → 512
+- `parse_size("1.5 KB")` → 1.5 × 1024 = 1536
+- `parse_size("2 MB")` → 2 × 1024² = 2097152
+
+The test file was left untouched. (I attempted to run the test in the sandbox, but it refused to execute programs, so I verified the fix by tracing the logic directly.)

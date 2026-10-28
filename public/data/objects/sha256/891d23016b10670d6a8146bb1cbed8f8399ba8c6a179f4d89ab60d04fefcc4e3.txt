@@ -1,0 +1,23 @@
+The fetch retry logic is in `app/net.py`, with the limits in `app/config.py`.
+
+**The code:**
+```python
+for attempt in range(MAX_RETRIES):      # MAX_RETRIES = 3 → attempt = 0, 1, 2
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)        # sleeps 2^attempt after each failed attempt
+raise RuntimeError(f"giving up on {url}")
+```
+
+**Sleep per attempt** (every attempt fails → `OSError` each time):
+
+| attempt | sleep `2 ** attempt` |
+|---|---|
+| 0 | 1 s |
+| 1 | 2 s |
+| 2 | 4 s |
+
+**Total = 1 + 2 + 4 = 7 seconds.**
+
+So before it gives up and raises `RuntimeError`, `fetch` sleeps a total of **7 seconds**. (This includes the 4-second sleep after the final, third attempt — the loop sleeps before checking that the range is exhausted.)

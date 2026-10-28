@@ -1,0 +1,35 @@
+We need the probability that the sum of
+
+- 1d20
+- 1d11
+- 1d11
+- 1d8
+- 1d4
+
+is at least 34.
+
+Total number of equally likely outcomes:
+
+\[
+20 \cdot 11 \cdot 11 \cdot 8 \cdot 4 = 77440
+\]
+
+Counting the outcomes with sum at least 34 gives:
+
+\[
+19800
+\]
+
+So the probability is:
+
+\[
+\frac{19800}{77440}
+\]
+
+Reducing:
+
+\[
+\frac{19800}{77440}=\frac{45}{176}
+\]
+
+<answer>45/176</answer>

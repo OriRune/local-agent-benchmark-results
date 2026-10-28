@@ -1,0 +1,3 @@
+It's already there — the file already uses `localStorage` to save and restore your tasks. On page load it reads from `localStorage`, and every change (add, edit, check, delete) writes back to it. So if you reload the page, your list will be exactly as you left it.
+
+No changes needed — you're all set!

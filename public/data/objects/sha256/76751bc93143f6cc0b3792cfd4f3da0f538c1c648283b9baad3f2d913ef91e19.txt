@@ -1,0 +1,13 @@
+I solved the two-stage rocket problem numerically.
+
+**Setup:**
+- Stage 1: m0 = 4000 + 36000 + 900 + P + 1200, mf = 4000 + 900 + P + 1200
+- Stage 2: m0 = 900 + P + 1200, mf = 900 + 1200
+- dv1 = 290 × 9.80665 × ln(m0/mf), dv2 = 340 × 9.80665 × ln(m0/mf), with dv1 + dv2 = 9400
+
+**Result:**
+- Stage 1 Δv ≈ 3164 m/s
+- Stage 2 Δv ≈ 6236 m/s
+- Stage 2 propellant P ≈ 11,529 kg
+
+ANSWER: 11529 kg

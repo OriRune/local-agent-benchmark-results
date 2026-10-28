@@ -1,0 +1,4 @@
+{
+  "answer": "The paper identifies eighteen persuasion/propaganda techniques, including examples such as loaded language, appeal to authority, slogans, straw man, hidden ad-hominem fallacies, and red herring.",
+  "evidence": [3]
+}

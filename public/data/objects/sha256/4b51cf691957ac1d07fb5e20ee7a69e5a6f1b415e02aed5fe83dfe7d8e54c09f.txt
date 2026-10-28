@@ -1,0 +1,1 @@
+The bug was in `app/units.py`: the `UNITS` dictionary had `"KB": 1000` instead of `"KB": 1024`. The docstring says "1 KB = 1024 bytes" and the test expects `1.5 KB == 1536` (i.e., `1.5 × 1024`), but the code was using 1000 as the multiplier for KB, giving `1.5 × 1000 = 1500` instead of 1536. I changed `1000` to `1024` to match the documented and expected behavior.

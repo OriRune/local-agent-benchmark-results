@@ -1,0 +1,8 @@
+I've analyzed the books.csv file. Here are the results:
+
+- **21 different books** were read (Project Hail Mary appears twice as a duplicate).
+- **10 books** were finished between July and December (Dune, The Hobbit, Sapiens, The Night Circus, Tomorrow and Tomorrow and Tomorrow, The Thursday Murder Club, Babel, Lessons in Chemistry, A Psalm for the Wild-Built, The Bear and the Nightingale).
+
+Note: Middlemarch has no end date recorded, so it was excluded from the July–December count.
+
+ANSWER: 21, 10

@@ -1,0 +1,3 @@
+I updated `app/units.py` to use binary units (1024-based) for "KB" and "MB" (e.g., `"KB": 1024` instead of `"KB": 1000`). This aligns the code with the test's expectations.
+
+Now the test in `tests/test_units.py` should pass for `"1.5 KB"` (1.5 * 1024 = 1536).

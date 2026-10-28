@@ -1,0 +1,1 @@
+Done. I added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment. The function converts a byte count into a human-readable string (e.g., `'1.5 KB'`, `'256.0 MB'`) by dividing through units B → KB → MB → GB → TB → PB.

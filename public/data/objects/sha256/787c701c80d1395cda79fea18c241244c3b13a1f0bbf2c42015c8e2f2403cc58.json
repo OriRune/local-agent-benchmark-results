@@ -1,0 +1,1 @@
+["I need to make 24 using the numbers 6, 4, 4, 4 with basic arithmetic operations.\n\nLet me try different combinations:\n\n- 6 * 4 = 24, but I still have two 4s left. I need to use all four numbers.\n- 6 * 4 + 4 - 4 = 24. That works! 6 * 4 + 4 - 4 = 24.\n\nLet me verify: 6 * 4 = 24, 24 + 4 = 28, 28 - 4 = 24. Yes!\n\nThat uses 6, 4, 4, 4 each exactly once."]

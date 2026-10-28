@@ -1,0 +1,5 @@
+Done. Summary of changes:
+
+- **`app/util.py`**: Added `format_bytes(n)` which scales the value by 1024 through the units B, KB, MB, GB, TB, PB, EB, formats with one decimal place (dropping a trailing `.0`), and returns e.g. `'1.5 KB'`, `'1 KB'`, `'0 B'`. The `# TODO: add a helper that formats byte sizes` comment was removed.
+- Verified the logic by hand (the sandbox refused to run the test program): `1536 → '1.5 KB'`, `1024 → '1 KB'`, `1048576 → '1 MB'`, `1572864 → '1.5 MB'`, `0 → '0 B'`.
+- Note: I created a small `test_format_bytes.py` to check the function, but the sandbox wouldn't run it, so I left it in place (files can't be deleted here). The other TODO in `app/net.py` ("log each failed attempt") is unrelated and was left untouched.

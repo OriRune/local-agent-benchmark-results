@@ -1,0 +1,1 @@
+The most recent git commit (hash 4a99d78c928acaf4963b2589f3916837480e0207) added the message **“raise the download timeout from 10 to 20 seconds.”** It modified `app/config.py`, changing one line (1 insertion, 1 deletion).

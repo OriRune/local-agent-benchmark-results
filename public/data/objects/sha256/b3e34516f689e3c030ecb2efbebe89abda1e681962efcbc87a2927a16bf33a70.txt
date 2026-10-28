@@ -1,0 +1,14 @@
+Done. I found two TODO comments in the Python code and added each as a new line to `todo.txt`.
+
+**TODOs found:**
+- `app/net.py:7` — log each failed attempt
+- `app/util.py:5` — add a helper that formats byte sizes
+
+**`todo.txt` now contains:**
+```
+- write README
+- add proxy support
+- tag the release
+- log each failed attempt
+- add a helper that formats byte sizes
+```

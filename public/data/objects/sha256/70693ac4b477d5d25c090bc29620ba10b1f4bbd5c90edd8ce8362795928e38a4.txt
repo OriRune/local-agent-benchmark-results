@@ -1,0 +1,4 @@
+Done. Here's what I changed in `app/util.py`:
+
+- **Added** the `format_bytes(n)` function, which scales the value through B/KB/MB/GB/TB/PB units and returns a string like `'1.5 KB'`. For whole byte counts it returns an integer (e.g. `'512 B'`), and everything else is formatted to one decimal place.
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.

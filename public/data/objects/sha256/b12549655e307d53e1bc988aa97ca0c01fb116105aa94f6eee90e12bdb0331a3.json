@@ -1,0 +1,1 @@
+["The question asks how much data they use to train the embeddings.\n\nLooking through the paper, paragraph [12] states: \"Finally, we get 11,529,432 segmented words.\" This is the training data size.\n\nNo other paragraph provides a different number for the training corpus size."]

@@ -1,0 +1,5 @@
+The file contains one error line:
+
+- **Line 2417**: `ERROR code=E-4471 disk quota exceeded while saving part 7`
+
+The error code is **E-4471**, and it appears on **line 2417**.

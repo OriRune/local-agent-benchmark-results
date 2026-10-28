@@ -1,0 +1,3 @@
+Done. I reverted the change made in the most recent commit (`fb98690`, "raise the download timeout from 10 to 20 seconds") by editing `app/config.py` directly.
+
+The file now has `TIMEOUT_S = 10` again, restoring the original value that was changed to `20` in that commit. No git commands were used to make this change.

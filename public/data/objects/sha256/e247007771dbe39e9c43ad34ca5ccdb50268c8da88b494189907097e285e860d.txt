@@ -1,0 +1,5 @@
+The sandbox can't execute programs in this session, so I verified the fix by inspection instead.
+
+**Why the test failed:** In `app/units.py`, the `UNITS` table defined `"KB": 1000` (decimal), but the module's docstring says sizes use 1024-based units, and the test expects `parse_size("1.5 KB") == 1536` (i.e. KB = 1024 bytes). With the old value, `1.5 KB` parsed to 1500 instead of 1536.
+
+**Fix applied:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py` (line 2). The test file was not touched.

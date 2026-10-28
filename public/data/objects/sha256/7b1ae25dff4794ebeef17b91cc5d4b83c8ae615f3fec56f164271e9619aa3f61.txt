@@ -1,0 +1,4 @@
+{
+  "answer": "The paper defines propaganda types as the eighteen persuasion techniques annotated in the corpus (e.g., loaded language, appeal to authority, slogans, straw‑man, hidden ad‑homine, red herring, etc.).",
+  "evidence": [3, 4]
+}

@@ -1,0 +1,9 @@
+The answer is **2933 kg**.
+
+Here's the breakdown:
+
+- **Stage 1** burns 36,000 kg of propellant, giving a delta-v of about 5,467 m/s.
+- **Stage 2** needs 2,933 kg of propellant to provide the remaining ~3,933 m/s of delta-v.
+- Together they achieve the required 9,400 m/s total delta-v.
+
+ANSWER: 2933 kg

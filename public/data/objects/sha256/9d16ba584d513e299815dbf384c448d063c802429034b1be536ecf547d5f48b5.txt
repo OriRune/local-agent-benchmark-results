@@ -1,0 +1,4 @@
+{
+  "answer": "They use a domain‑specific word2vec embedding model that they trained on a large corpus of financial news articles.",
+  "evidence": [4, 17]
+}

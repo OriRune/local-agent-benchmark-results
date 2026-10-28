@@ -1,0 +1,7 @@
+The sandbox doesn't allow running pytest directly, but I can verify the logic manually:
+
+- `parse_size("1.5 KB")` with `KB=1024`: `int(float(1.5) * 1024)` = `int(1536.0)` = `1536` ✓
+- `parse_size("2 MB")` with `MB=1024**2`: `int(float(2) * 1048576)` = `int(2097152.0)` = `2097152` ✓
+- `parse_size("512 B")` with `B=1`: `int(float(512) * 1)` = `512` ✓
+
+The fix is correct. The bug was in `app/units.py` where `"KB"` was mapped to `1000` instead of `1024`, contradicting both the docstring and the test's expectation.

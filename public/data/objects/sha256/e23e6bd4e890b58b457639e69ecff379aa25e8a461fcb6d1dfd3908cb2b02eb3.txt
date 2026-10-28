@@ -1,0 +1,1 @@
+Implemented `format_bytes(n)` in `app/util.py` to provide human‑readable byte sizes and removed the placeholder TODO comment. The function validates input, handles negative values, and formats sizes using binary (1024) units. Syntax errors fixed.

@@ -1,0 +1,1 @@
+The to‑do list now saves its items in **localStorage**, so they persist across page reloads. Open `todo.html` in a browser, add or edit tasks, and they’ll be retained when you refresh or revisit the page. The export functionality remains unchanged.

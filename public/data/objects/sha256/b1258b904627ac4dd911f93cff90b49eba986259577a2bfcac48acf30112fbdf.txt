@@ -1,0 +1,1 @@
+The `format_bytes` helper has been added to **app/util.py**, providing a human‑readable byte size format and removing the previous TODO comment.

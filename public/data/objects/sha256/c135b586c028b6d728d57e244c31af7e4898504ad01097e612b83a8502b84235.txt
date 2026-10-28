@@ -1,0 +1,3 @@
+The fix is correct. The problem was that `UNITS["KB"]` was set to `1000` instead of `1024`. The comment explicitly states "1 KB = 1024 bytes," and the test expects `1.5 KB` to equal `1536` (which is `1.5 * 1024 = 1536`). With `1000`, it would have returned `1500`, causing the test failure.
+
+Now `UNITS["KB"]` is `1024`, matching the 1024-based unit system the code is supposed to use.

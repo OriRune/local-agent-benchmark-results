@@ -1,0 +1,1 @@
+The README.md has been created at the project root. It lists every command-line option from `app/cli.py` — the positional `url` argument, `-o`/`--output`, and `-q`/`--quiet` — along with their help texts and a brief description of the tool's behavior.

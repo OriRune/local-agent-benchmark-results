@@ -1,0 +1,6 @@
+The file now contains the `format_bytes(n)` function and the TODO comment has been removed. The function:
+
+- Handles singular "1 byte" vs plural "N bytes" for sub-1024 values
+- Formats values in KB, MB, GB, TB, and PB as appropriate
+- Returns human-readable strings like "1.5 KB", "256.0 MB", etc.
+- The TODO comment about adding this helper has been removed

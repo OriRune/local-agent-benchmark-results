@@ -31,6 +31,10 @@ export type SummaryPacket = { peer_refresh_needed?: boolean; analysis_input_hash
 } };
 
 const metricLabels: Record<string,string> = {
+  'outcome_counts.full_credit':'Full-credit answers', 'outcome_counts.partial_credit':'Partially correct answers',
+  'outcome_counts.incorrect':'Incorrect completed answers', 'outcome_counts.failed_to_finish':'Failed to finish',
+  'outcome_counts.technical_error':'Unscored technical errors', 'outcome_counts.review':'Awaiting assessment',
+  'outcome_counts.unresolved':'Unresolved outcomes', 'outcome_counts.untested':'Untested tasks',
   score:'Score', full_credit:'Full-credit results', partial_credit:'Partial-credit results', zero_credit:'No-credit results',
   planned:'Tasks planned', scored:'Tasks scored', timed:'Tasks timed', median_task_s:'Typical time per task (median)',
   generated_tokens_per_s:'Generation speed', score_pairs:'Tasks compared with thinking off and on', time_pairs:'Tasks timed in both modes', planned_pairs:'Paired tasks planned',

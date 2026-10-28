@@ -1,0 +1,4 @@
+{
+  "answer": "They use a dataset consisting of Occupation Data and Names Data (occupation lists and a corpus of male/female names).",
+  "evidence": [11, 12, 13]
+}

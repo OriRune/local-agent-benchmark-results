@@ -1,0 +1,10 @@
+I couldn't find your 2019 tax return in this folder, so I can't tell you the refund amount from what's here.
+
+What I searched:
+- **File names** for `tax`, `2019`, `1040`, `refund` — the only tax-related file is `Documents/Personal/tax return 2024.pdf` (it's also corrupted and won't open).
+- **File contents** for "tax", "2019", "refund" — no matches.
+- **Every folder**: Desktop, Documents (Personal, Work/HR, School, Recipes, old stuff), Downloads, Music, Pictures (2024, Screenshots, Vacation 2023).
+
+**Where might the 2019 return be?** A different folder or computer, or stored online (e.g., IRS.gov's "Get Transcript" or your tax preparer's portal)? If you can point me to it, I'll pull the refund amount for you.
+
+(One note: I left a small helper file `scan_xlsx.py` in the folder from my search — I can't delete files, but it's harmless.)

@@ -1,0 +1,5 @@
+The file **hello.txt** has been created in the project folder with the single line:
+
+```
+hello
+```

@@ -1,0 +1,8 @@
+Looking at these numbers, I need to find a combination that gives 24.
+
+Let me try: (10 - 1) * 2 + 6
+- 10 - 1 = 9
+- 9 * 2 = 18
+- 18 + 6 = 24 ✓
+
+<answer>(10 - 1) * 2 + 6</answer>

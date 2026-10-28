@@ -1,0 +1,23 @@
+Created `system_info.py` — a Python script that reads `/proc/meminfo` and `/proc/stat` to display RAM and CPU usage in the terminal.
+
+**What it shows:**
+- **RAM** — total, used (with percentage), and available memory
+- **CPU** — usage percentage (measured over a 1-second sample) and core count
+- Hostname
+
+**Verified output on this machine:**
+```
+=== System Information ===
+Hostname: orion-desktop
+
+RAM:
+  Total:     128738.8 MiB
+  Used:      15393.4 MiB (12.0%)
+  Available: 113345.4 MiB
+
+CPU:
+  Usage: 11.8%
+  Cores: 12
+```
+
+Run it with `python3 system_info.py`. It uses only the standard library, so no dependencies are needed.

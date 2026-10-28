@@ -1,0 +1,3 @@
+The four points **A, C, G, E** lie in one plane and form a rectangle (a diagonal cross-section of the cube). Since “rectangle” is not one of the listed choices, the closest listed shape is:
+
+**square**

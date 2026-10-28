@@ -1,0 +1,3 @@
+The code in `app/units.py` has been fixed to use 1024-based units for "KB", which matches the test's expectation. The multiplier for "KB" was changed from 1000 to 1024.
+
+Now the test should pass.

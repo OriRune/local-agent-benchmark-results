@@ -1,0 +1,4 @@
+{
+  "answer": "They trained the embeddings on a corpus of Chinese Wikipedia articles that yielded 11,529,432 segmented words.",
+  "evidence": [12]
+}

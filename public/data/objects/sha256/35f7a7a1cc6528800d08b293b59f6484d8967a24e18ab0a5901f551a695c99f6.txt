@@ -1,0 +1,7 @@
+Done. I added the `format_bytes(n)` function to `app/util.py` and removed the TODO comment.
+
+The function:
+- Iterates through size units (B, KB, MB, GB, TB, PB), dividing by 1024 at each step.
+- Returns integer bytes for values under 1024 (e.g., `'512 B'`) and one-decimal values for larger units (e.g., `'1.5 KB'`).
+
+For example, `format_bytes(1536)` returns `'1.5 KB'`.

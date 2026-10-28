@@ -1,0 +1,1 @@
+["We need to edit todo.txt in the workspace folder. Let's list directory.","Read todo.txt.","We need to add a new line \"- publish release notes\" as a new last line. So we need to edit file: append new line. Use append_file."]

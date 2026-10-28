@@ -1,0 +1,10 @@
+The fix has been made. The issue was that `UNITS["KB"]` was set to `1000` instead of `1024`, which contradicted the docstring "1 KB = 1024 bytes" and caused the test for "1.5 KB" to fail (1.5 * 1000 = 1500 instead of 1.5 * 1024 = 1536).
+
+Changed line 2 in `app/units.py` from:
+```python
+UNITS = {"B": 1, "KB": 1000, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+to:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```

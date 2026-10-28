@@ -1,0 +1,7 @@
+I found a close match: **`Desktop/trip ideas 2025.txt`** — a text file with a short list of trip/vacation ideas (Kyoto in spring, a coastal road trip, camping at the lake).
+
+There's no file literally named "vacation ideas," but this is the best match. The other candidates are:
+- `Documents/Personal/Summer Break ideas.docx` (Word file)
+- `Documents/Work/HR/vacation request form.docx` (work-related, not ideas)
+
+Is `trip ideas 2025.txt` the file you were looking for?

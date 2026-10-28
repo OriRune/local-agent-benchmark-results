@@ -1,0 +1,1 @@
+Done. In `app/config.py`, `MAX_RETRIES` is now set to 5 (was 3). It's the only place the constant is defined — `app/net.py` just imports it, so the retry loop there picks up the new value automatically.

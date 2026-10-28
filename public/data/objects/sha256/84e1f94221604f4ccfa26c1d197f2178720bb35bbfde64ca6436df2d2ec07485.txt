@@ -1,0 +1,19 @@
+The file has been updated. The `format_bytes(n)` function was added and the TODO comment was removed. Here's what the function does:
+
+- Iterates through units `B`, `KB`, `MB`, `GB`, `TB` (and falls back to `PB` for extremely large sizes)
+- Divides `n` by 1024 each time until it's below 1024, then returns a string like `"1.5 KB"` or `"500.0 B"`
+
+The updated `app/util.py` now reads:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024.0:
+            return f"{n:.1f} {unit}"
+        n /= 1024.0
+    return f"{n:.1f} PB"
+```

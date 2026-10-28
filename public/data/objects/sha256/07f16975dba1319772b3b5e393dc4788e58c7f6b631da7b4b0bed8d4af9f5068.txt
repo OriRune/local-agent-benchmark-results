@@ -1,0 +1,15 @@
+Done. I created **`open-workspace.sh`** in the project folder. Run it with:
+
+```
+bash open-workspace.sh
+```
+
+(or `chmod +x open-workspace.sh && ./open-workspace.sh`)
+
+What it does — each app is launched in the background so all three open at once and the script exits immediately:
+
+1. **Chrome with google.com** — tries `google-chrome`, then `google-chrome-stable`, `chromium`, `chromium-browser`, and falls back to `xdg-open https://www.google.com`.
+2. **A text editor** — opens the first one it finds: `gedit`, `xedit`, `code`, `mousepad`, `pluma`, `vim`, or `nano`.
+3. **File manager at `[private-home]/Documents/llama.cpp`** — tries `nemo` (Mint's default), then `nautilus`, `dolphin`, `thunar`, falling back to `xdg-open`.
+
+I verified the target folder exists (it's the llama.cpp repo). If you'd prefer a specific text editor, just tell me and I'll pin the script to that one.

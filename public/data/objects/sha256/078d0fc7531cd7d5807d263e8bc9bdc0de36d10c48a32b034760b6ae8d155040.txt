@@ -1,0 +1,8 @@
+{
+  "answer": "The system uses a dataset comprising Occupation Data (gathered from internet sources and classified into gender-specific and gender-neutral categories) and Names Data (a corpus of 5453 male and 6990 female names sourced from the CMU repository of names, mapped to gender using NLTK and baby name records).",
+  "evidence": [
+    "11",
+    "12",
+    "13"
+  ]
+}

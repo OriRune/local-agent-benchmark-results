@@ -1,0 +1,6 @@
+The change made in the most recent commit has been undone by editing the file directly.
+
+**Summary:**
+- The most recent commit (`2b7b820`) raised `TIMEOUT_S` in `app/config.py` from `10` to `20`.
+- I edited `app/config.py` to restore `TIMEOUT_S = 10`.
+- No git commands were used to modify anything; only the file was edited directly.

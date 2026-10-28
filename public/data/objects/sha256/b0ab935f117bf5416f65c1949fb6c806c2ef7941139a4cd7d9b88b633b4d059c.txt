@@ -1,0 +1,9 @@
+Done. I've created a README.md that documents all CLI command line options:
+
+- **Positional argument**: `url` (what to download)
+- **Optional arguments**:
+  - `-h`, `--help` (show help)
+  - `-o`, `--output` (file to write, default stdout)
+  - `-q`, `--quiet` (no progress output)
+
+The README also includes installation instructions, usage examples, and configuration details.

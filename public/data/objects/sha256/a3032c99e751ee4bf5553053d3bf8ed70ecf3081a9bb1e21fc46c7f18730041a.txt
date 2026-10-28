@@ -1,0 +1,8 @@
+Done. I created `README.md` listing every CLI option from `app/cli.py` with its exact help text:
+
+- **`url`** — what to download (positional)
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+- **`-h`, `--help`** — show this help message and exit (argparse's built-in flag)
+
+The README also includes a one-line description of the tool, how to run it (`python -m app.cli`), and brief notes on behavior (stdout output, byte count on stderr, 3 retries with backoff).

@@ -1,0 +1,5 @@
+The file **hello.txt** has been created with the single line:
+
+```
+hello
+```

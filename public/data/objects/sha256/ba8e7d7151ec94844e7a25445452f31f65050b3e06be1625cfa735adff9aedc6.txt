@@ -1,0 +1,12 @@
+I found and fixed the bug.
+
+**Root cause:** In `app/units.py`, the `UNITS` dictionary defined `"KB": 1000`, but the module's docstring states *"Sizes use 1024-based units: 1 KB = 1024 bytes"*, and the test expects `parse_size("1.5 KB") == 1536` (i.e., `1.5 × 1024`). The `1000` value (a decimal/decimal-SI conversion) was inconsistent with the 1024-based convention used everywhere else in the file and with the test.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024`.
+
+This makes all three assertions pass:
+- `parse_size("512 B") == 512` ✓
+- `parse_size("1.5 KB") == 1536` ✓
+- `parse_size("2 MB") == 2097152` ✓
+
+I modified only the source code (`app/units.py`), not the test.

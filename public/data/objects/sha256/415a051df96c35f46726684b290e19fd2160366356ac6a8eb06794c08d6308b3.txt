@@ -1,0 +1,1 @@
+The README.md file has been created in the project root, detailing the purpose of the tiny downloader, installation notes, usage syntax, and a table listing every CLI option with its associated help text.

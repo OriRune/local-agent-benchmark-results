@@ -1,0 +1,1 @@
+Done. I created `hello.txt` and verified its contents: it contains exactly the single line `hello from the local agent`.

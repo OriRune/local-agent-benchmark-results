@@ -1,0 +1,1 @@
+Done. The function `fetch` in `app/net.py` is now `download`, and its two usages in `app/cli.py` (the import on line 5 and the call on line 18) were updated. A grep confirms no `fetch` references remain anywhere in the project.

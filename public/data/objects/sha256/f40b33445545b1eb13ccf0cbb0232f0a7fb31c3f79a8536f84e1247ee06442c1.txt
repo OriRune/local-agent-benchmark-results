@@ -1,0 +1,30 @@
+Looking at the CSV, I need to count unique books and those finished between July and December.
+
+**Unique books** (21 total — "Project Hail Mary" appears twice in the data but is one book):
+
+1. Project Hail Mary
+2. The Remains of the Day
+3. Piranesi
+4. The Left Hand of Darkness
+5. Circe
+6. Educated
+7. A Gentleman in Moscow
+8. The Martian
+9. Braiding Sweetgrass
+10. Station Eleven
+11. Dune
+12. The Hobbit
+13. Sapiens
+14. Middlemarch (no end date — not finished)
+15. The Night Circus
+16. Tomorrow and Tomorrow and Tomorrow
+17. The Thursday Murder Club
+18. Babel
+19. Lessons in Chemistry
+20. A Psalm for the Wild-Built
+21. The Bear and the Nightingale
+
+**Finished between July and December** (10 books):
+- Dune (Jul 10), The Hobbit (Jul 19), Sapiens (Aug 15), The Night Circus (Sep 12), Tomorrow and Tomorrow and Tomorrow (Sep 30), The Thursday Murder Club (Oct 9), Babel (Nov 5), Lessons in Chemistry (Nov 20), A Psalm for the Wild-Built (Nov 24), The Bear and the Nightingale (Dec 16)
+
+ANSWER: 21, 10

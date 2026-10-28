@@ -1,0 +1,6 @@
+Done. The rename is complete:
+
+- **`app/net.py`** — `def fetch(url, get):` → `def download(url, get):`
+- **`app/cli.py`** — `from app.net import fetch` → `from app.net import download`, and `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+A project-wide search for `fetch` turned up only these three usages (the test file `tests/test_units.py` tests `parse_size` and doesn't use it), so there are no other call sites to update. I couldn't run the test suite since program execution is blocked in this session, but the changes are mechanical and the imports/calls now match the new name.

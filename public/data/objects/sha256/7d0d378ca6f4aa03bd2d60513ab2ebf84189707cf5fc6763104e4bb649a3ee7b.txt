@@ -1,0 +1,4 @@
+Found it. The proxy is set to:
+
+- **Host:** `proxy.lan.example`
+- **Port:** `3128`

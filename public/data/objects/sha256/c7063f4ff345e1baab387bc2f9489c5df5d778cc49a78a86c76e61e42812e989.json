@@ -1,0 +1,1 @@
+{"check":{"add":true,"after_reload":{"A":true,"B2":false,"C":false},"check":true,"delete":true,"edit":false,"errors":[],"export":false,"export_sample":"To-Do List\n========================================\n\n1. [✓] Completed - Buy milk QX1\n2. [ ] Pending - Walk dog QX2\n","notes":["found no way to edit an item"],"page":"todo.html","remembers_after_reload":false},"score":0}

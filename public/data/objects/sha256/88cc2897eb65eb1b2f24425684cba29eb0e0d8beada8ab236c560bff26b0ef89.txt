@@ -1,0 +1,1 @@
+Implemented a fix in **app/units.py** by correcting the `KB` unit conversion from `1000` to `1024`, aligning it with binary-based size calculations. This resolves the failing test in `tests/test_units.py`.

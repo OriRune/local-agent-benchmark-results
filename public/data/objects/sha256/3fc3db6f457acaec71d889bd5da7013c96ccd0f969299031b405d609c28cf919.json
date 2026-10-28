@@ -1,0 +1,1 @@
+["I need to find where MAX_RETRIES is defined in the project files and change it to 5.","I found MAX_RETRIES defined in app/config.py at line 2, set to 3. I need to change it to 5.","The change is done. MAX_RETRIES was changed from 3 to 5 in app/config.py."]

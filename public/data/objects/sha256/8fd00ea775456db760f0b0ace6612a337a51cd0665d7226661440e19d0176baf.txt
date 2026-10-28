@@ -1,0 +1,1 @@
+{"answer": "TF-IDF (Term Frequency-Inverse Document Frequency) features extracted from retrieved web page titles and content excerpts, along with POS tag n-grams and the positional information of the named entity candidate in the sentence.", "evidence": [8, 9, 5]}

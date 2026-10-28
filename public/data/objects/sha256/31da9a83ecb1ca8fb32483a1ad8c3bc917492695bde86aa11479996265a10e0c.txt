@@ -1,0 +1,16 @@
+Total outcomes: \(12 \times 10 \times 2 = 240\).
+
+Count the complement, sums \(\le 9\):
+
+- If the d2 is 1, need d12 + d10 \(\le 8\): \(28\) outcomes.
+- If the d2 is 2, need d12 + d10 \(\le 7\): \(21\) outcomes.
+
+So sums \(\le 9\): \(28 + 21 = 49\).
+
+Thus sums \(\ge 10\): \(240 - 49 = 191\).
+
+\[
+\frac{191}{240}
+\]
+
+<answer>191/240</answer>

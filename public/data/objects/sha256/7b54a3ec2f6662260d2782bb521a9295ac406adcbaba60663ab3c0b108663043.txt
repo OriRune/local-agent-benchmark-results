@@ -1,0 +1,10 @@
+When every attempt fails, the loop runs for the three attempts defined by `MAX_RETRIES = 3`.  
+During each failed attempt it sleeps `2 ** attempt` seconds:
+
+- attempt 0 → \(2^0 = 1\) s  
+- attempt 1 → \(2^1 = 2\) s  
+- attempt 2 → \(2^2 = 4\) s  
+
+The total sleep time before the function finally raises is:
+
+\(1 + 2 + 4 = 7\) seconds.

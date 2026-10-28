@@ -1,0 +1,1 @@
+Done. The most recent git commit (`09b56cc` — "raise the download timeout from 10 to 20 seconds") changed `TIMEOUT_S` from `10` to `20` in `app/config.py`. I've reverted it directly by editing the file, setting `TIMEOUT_S = 10` again.

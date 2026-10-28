@@ -1,0 +1,6 @@
+The sandbox doesn't allow running programs. However, the fix is complete. The issue was that `UNITS["KB"]` was set to `1000` instead of `1024`, which contradicted both the test expectations and the docstring. I changed it to `1024`.
+
+The test should now pass:
+- `"512 B"` → 512 * 1 = 512 ✓
+- `"1.5 KB"` → 1.5 * 1024 = 1536 ✓
+- `"2 MB"` → 2 * 1024² = 2 * 1048576 = 2097152 ✓

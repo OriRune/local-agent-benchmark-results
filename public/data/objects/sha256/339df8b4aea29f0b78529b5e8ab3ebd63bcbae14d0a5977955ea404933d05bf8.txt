@@ -1,0 +1,18 @@
+I found a couple of candidates. Here's what's in the directory:
+
+**Most likely match:**
+- **`Desktop/trip ideas 2025.txt`** — a text file. Contents:
+  ```
+  places to go
+  - Kyoto in spring
+  - road trip down the coast
+  - camping at the lake
+  ```
+  "trip ideas" is very close to "vacation ideas," and the content is clearly about vacation/travel plans.
+
+**Other candidate:**
+- **`Documents/Personal/Summer Break ideas.docx`** — a Word file, but it appears to be **corrupted** (it's a zip archive that won't open as a valid .docx), so I couldn't read its contents.
+
+There's also `Documents/Personal/christmas gift ideas.txt`, but that's about gifts, not vacations.
+
+Which one did you mean — the **trip ideas** text file, or the **Summer Break ideas** Word file? If it's the Word file, I can try to recover its contents.

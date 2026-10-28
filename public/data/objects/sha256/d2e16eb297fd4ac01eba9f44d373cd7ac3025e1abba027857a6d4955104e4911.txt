@@ -1,0 +1,1 @@
+{"answer": "11,529,432 segmented words from Chinese Wikipedia articles.", "evidence": [12]}

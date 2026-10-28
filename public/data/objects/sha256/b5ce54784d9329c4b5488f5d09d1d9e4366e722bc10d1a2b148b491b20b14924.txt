@@ -1,0 +1,6 @@
+The fix I made is correct. The issue was that `UNITS["KB"]` was set to `1000` instead of `1024`, which contradicts the docstring stating "Sizes use 1024-based units: 1 KB = 1024 bytes". The test expects 1.5 KB to equal 1536 bytes (1.5 * 1024), which confirms the code should use 1024 for KB.
+
+The fix changes:
+- `"KB": 1000` → `"KB": 1024`
+
+This makes the implementation consistent with the documented 1024-based units and passes the test assertions.

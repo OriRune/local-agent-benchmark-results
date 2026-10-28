@@ -1,0 +1,1 @@
+{"answer": "word2vec", "evidence": ["[4] describes training a word2vec word embedding model on 189,206 financial articles from Factiva, and [17] confirms using the word2vec model trained over the financial text to convert words into 300-dimensional vectors."]}

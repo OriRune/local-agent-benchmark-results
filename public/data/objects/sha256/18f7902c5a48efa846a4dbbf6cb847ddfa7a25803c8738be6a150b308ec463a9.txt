@@ -1,0 +1,16 @@
+Done. `app/util.py` now contains:
+
+```python
+def format_bytes(n):
+    """Return a human-readable size, e.g. '1.5 KB'."""
+    for unit in ("B", "KB", "MB", "GB", "TB"):
+        if abs(n) < 1024 or unit == "TB":
+            value = f"{n:.1f}".rstrip("0").rstrip(".")
+            return f"{value} {unit}"
+        n /= 1024
+```
+
+- The `# TODO: add a helper that formats byte sizes` comment was removed and replaced with the function.
+- It uses 1024-based units, so `format_bytes(1536)` → `'1.5 KB'`, `format_bytes(100)` → `'100 B'`, `format_bytes(1536000)` → `'1.5 MB'`, and it caps out at TB.
+
+Note: I created a small `_check_format_bytes.py` script to verify the output, but the sandbox refused to run programs in this session, so I verified the behavior by hand instead. The script is still in the folder if you'd like to run it yourself.

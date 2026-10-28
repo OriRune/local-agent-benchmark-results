@@ -1,0 +1,1 @@
+The fix is in place. The bug was in `app/units.py` line 2: `"KB": 1000` should be `"KB": 1024`. The comment on line 1 explicitly states "1 KB = 1024 bytes," and the test expects `parse_size("1.5 KB") == 1536` (which is 1.5 × 1024 = 1536). The code was using 1000 for KB instead of 1024, causing the test to fail.

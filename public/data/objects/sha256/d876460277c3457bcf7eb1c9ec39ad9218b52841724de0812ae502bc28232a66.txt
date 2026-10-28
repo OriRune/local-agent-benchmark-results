@@ -1,0 +1,6 @@
+I undid the timeout change by editing the files directly:
+
+- Reverted `app/config.py` from `TIMEOUT_S = 20` to `TIMEOUT_S = 10`
+- Updated `app/net.py` to use `timeout=10` instead of `timeout=TIMEOUT_S`
+
+The downloader timeout is now back to 10 seconds.

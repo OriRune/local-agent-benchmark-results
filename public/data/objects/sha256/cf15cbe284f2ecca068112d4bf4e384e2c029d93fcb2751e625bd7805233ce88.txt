@@ -1,0 +1,8 @@
+Fixed. The test failed because `app/units.py` defined `KB` as 1000, so `parse_size("1.5 KB")` returned 1500 instead of the expected 1536 — contradicting the module's own docstring ("1 KB = 1024 bytes") and the other 1024-based entries.
+
+I changed `"KB": 1000` to `"KB": 1024` in `app/units.py`. All three assertions now hold:
+- `parse_size("512 B")` → 512 ✓
+- `parse_size("1.5 KB")` → 1.5 × 1024 = 1536 ✓
+- `parse_size("2 MB")` → 2 × 1024² = 2097152 ✓
+
+(The sandbox refused to run pytest, so I verified the arithmetic by hand rather than executing the test.)

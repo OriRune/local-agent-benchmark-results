@@ -1,0 +1,1 @@
+Implemented `format_bytes(n)` in **app/util.py**, providing a human‑readable byte size formatter and removed the placeholder TODO comment. The new function handles conversion to appropriate units (B, KB, MB, etc.) with proper formatting and validation.

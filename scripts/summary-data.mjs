@@ -98,7 +98,7 @@ export function buildSummaryPacket(data, configurationId) {
     if(reasons.includes('finish=stop')) limitations.push("Some hosted trials ended normally according to the provider but supplied no visible answer. Their cause is not established by the stop marker; they remain unscored, not confirmed provider outages or ordinary wrong answers.");
   } else {
     if (conditions.some(c => !['verified','native_reasoning'].includes(c.verification))) limitations.push("Some requested reasoning conditions lack verified control.");
-    if (conditions.some(c => c.verification === 'native_reasoning')) limitations.push("This is a native reasoning checkpoint. Its Instruct counterpart is a related checkpoint with different weights, not a matched thinking-off run of this GGUF.");
+    if (conditions.some(c => c.verification === 'native_reasoning')) limitations.push(conditions.some(c => c.reasoning_effort != null) ? "This is a native reasoning condition at its recorded effort, not a matched thinking-on/off experiment." : "This is a native reasoning checkpoint. Its Instruct counterpart is a related checkpoint with different weights, not a matched thinking-off run of this GGUF.");
   }
   if (objects.some(o => o.availability === 'redacted')) limitations.push('Some selected evidence has recorded publication redactions.');
   const investigations=(data.investigations??[]).filter(r=>r.configuration_id===config.id);

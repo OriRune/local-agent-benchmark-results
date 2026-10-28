@@ -1,0 +1,8 @@
+Done. Changes in `app/util.py`:
+
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment.
+- **Added** `format_bytes(n)`, which converts a byte count into a human-readable string using binary (1024-based) units:
+  - `0` → `'0 B'`, `1536` → `'1.5 KB'`, `1048576` → `'1.0 MB'`, `1500000` → `'1.4 MB'`, `1073741824` → `'1.0 GB'`
+  - Bytes are shown as whole integers; larger units get one decimal place.
+
+Note: I created a small `check_format_bytes.py` to run a quick test, but the sandbox denied program execution in this session, so the function was verified by inspection rather than execution. I left that file in place — say the word if you'd like it removed.

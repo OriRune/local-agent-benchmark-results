@@ -1,0 +1,38 @@
+```json
+{
+  "character_sheet": {
+    "name": "Thalor the Theta",
+    "class": "Arcane Medalist",
+    "level": 1,
+    "race": "Half-Elf",
+    "alignment": "Chaotic Neutral",
+    "ability_scores": {
+      "strength": 10,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 18,
+      "wisdom": 13,
+      "charisma": 15
+    },
+    "hit_points": 6,
+    "armor_class": 12,
+    "proficiencies": [
+      "Arcana",
+      "History",
+      "Investigation"
+    ],
+    "spells_known": [
+      "Theta Blast",
+      "Mage Hand",
+      "Read Magic"
+    ],
+    "special_ability": "Medalist's Insight - Once per long rest, add +theta to an ability check or attack roll.",
+    "equipment": [
+      "Quarterstaff",
+      "Spellbook of Theta",
+      "Scholar's Robes"
+    ],
+    "backstory": "Thalor seeks the ultimate medal of mastery, a golden theta symbolizing arcane supremacy."
+  }
+}
+```

@@ -1,0 +1,1 @@
+All references are updated. The function `fetch` in `app/net.py` has been renamed to `download`, and both the import and the call site in `app/cli.py` have been updated accordingly. No other files in the project reference `fetch`.

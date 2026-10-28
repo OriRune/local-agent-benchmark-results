@@ -1,0 +1,1 @@
+The change was actually made: in the previous turn I called `write_file` and created `README.md`, and I just re-read it to confirm it's on disk with the content I described (the description line and the options table). No further change is needed — `net.py` and `config.py` were only read, not modified, and that's what the sentence meant.

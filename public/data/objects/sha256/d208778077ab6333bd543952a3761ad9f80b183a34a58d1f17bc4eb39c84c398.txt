@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "Text features extracted include TF-IDF (Term frequency-Inverse document frequency) sparse vectors, using a bag-of-words technique, based on titles and excerpts of web pages retrieved for query terms.",
+  "evidence": [8]
+}
+```

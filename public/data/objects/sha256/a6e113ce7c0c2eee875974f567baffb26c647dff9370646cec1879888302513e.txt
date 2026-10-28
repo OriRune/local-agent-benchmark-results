@@ -1,0 +1,6 @@
+Here’s a concise weather forecast chatbot template with the letter **o** appearing at least 6 times:
+
+---
+
+**Hello!** I’m your friendly weather **o**bserver. Please share your **loca**tion so I can provide the latest **f**orecast. I’ll check the **o**utlook for you—just let me know where you’re **o**r planning to be! For example, say *"I’m in New York"* or *"I’m heading to London tomorrow."*
+**O**nce you share your **loca**tion, I’ll fetch the current weather **o**utput for you. Stay tuned for updates!

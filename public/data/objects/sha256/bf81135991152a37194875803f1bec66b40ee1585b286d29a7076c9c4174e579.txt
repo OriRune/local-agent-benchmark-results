@@ -1,0 +1,1 @@
+{"answer": "Human evaluation using a questionnaire that asks respondents to rank captions by funniness, and by comparing the number of stars received on Bokete.", "evidence": [12, 13, 14]}

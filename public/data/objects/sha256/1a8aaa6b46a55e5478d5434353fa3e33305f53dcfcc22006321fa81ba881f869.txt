@@ -1,0 +1,1 @@
+Done. Renamed `fetch` to `download` in `app/net.py` and updated the two usages in `app/cli.py` (the import and the call in `main`). A project-wide search confirms no remaining references to `fetch`.

@@ -1,0 +1,9 @@
+Done. I created `README.md` documenting every command-line option of the `tinydl` CLI.
+
+The options come from the `argparse` parser in `app/cli.py`:
+
+- **`url`** (positional) — `what to download`
+- **`-o`, `--output`** — `file to write (default: stdout)`
+- **`-q`, `--quiet`** — `no progress output`
+
+Each entry lists the option flags plus its exact help text as defined in the source.

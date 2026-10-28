@@ -1,0 +1,5 @@
+In `app/config.py` at line 2:
+
+```
+MAX_RETRIES = 3
+```

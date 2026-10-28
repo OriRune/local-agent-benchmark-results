@@ -1,0 +1,39 @@
+Let’s solve this step by step.
+
+We need to make 24 using 10, 4, 9, 7, each exactly once, with +, -, *, /.
+
+Try combinations.
+
+Idea: 24 = 4 * 6, so if we can make 6 from 10, 9, 7, then multiply by 4.
+
+Can we make 6 from 10, 9, 7?
+
+Try: 10 - 9 = 1, 1 + 7 = 8 — no.
+
+Try: 9 - 7 = 2, 10 - 2 = 8 — no.
+
+Try: 10 + 9 = 19, 19 - 7 = 12 — no.
+
+Try: 7 + 9 = 16, 16 - 10 = 6 — yes!
+
+So: (7 + 9 - 10) = 6, then 4 * 6 = 24.
+
+So expression: 4 * (7 + 9 - 10)
+
+Check: 7 + 9 = 16, 16 - 10 = 6, 4 * 6 = 24. Correct.
+
+All numbers used once: 4, 7, 9, 10 — yes.
+
+Operators: +, -, * — allowed.
+
+Now format: no '=', no target number in expression, use * and /.
+
+So: 4 * (7 + 9 - 10)
+
+But parentheses are allowed? The problem doesn’t forbid them, and we need to control order.
+
+Yes, parentheses are fine as long as we only use allowed operators.
+
+Final answer:
+
+<answer>4 * (7 + 9 - 10)</answer>

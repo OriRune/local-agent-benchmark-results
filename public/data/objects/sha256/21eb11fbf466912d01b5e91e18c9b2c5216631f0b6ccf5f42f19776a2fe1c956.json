@@ -1,0 +1,1 @@
+["We need to create hello.txt in the current working folder (the specified path). Use write_file. Ensure content exactly \"hello\". The user says \"containing exactly this line: hello\". Probably just \"hello\". No newline? Usually text file ends with newline but not required. We'll write file with \"hello\". Use write_file."]

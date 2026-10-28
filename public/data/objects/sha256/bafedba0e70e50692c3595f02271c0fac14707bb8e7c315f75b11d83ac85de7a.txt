@@ -1,0 +1,25 @@
+The script **open_resources.sh** has been created in the current workspace. It launches:
+
+1. Google Chrome loading `https://www.google.com`
+2. The text editor `gedit`
+3. The file manager `nemo` showing the file `[private-home]/Documents/llama.cpp`
+
+```bash
+#!/usr/bin/env bash
+
+# Open Google Chrome with google.com
+google-chrome "https://www.google.com" &
+
+# Open a text editor (gedit)
+gedit &
+
+# Open the file manager (nemo) showing the specified file
+nemo "[private-home]/Documents/llama.cpp" &
+```
+
+Make it executable before running:
+
+```bash
+chmod +x open_resources.sh
+./open_resources.sh
+```

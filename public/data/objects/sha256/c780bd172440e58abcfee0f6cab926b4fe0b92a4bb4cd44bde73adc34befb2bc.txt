@@ -1,0 +1,1 @@
+I found `MAX_RETRIES` defined in `config.py` with a value of `3`.

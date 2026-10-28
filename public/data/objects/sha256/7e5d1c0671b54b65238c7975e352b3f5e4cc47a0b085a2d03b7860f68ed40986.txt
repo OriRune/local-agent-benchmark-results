@@ -1,0 +1,20 @@
+Done. `app/util.py` now contains:
+
+```python
+def format_bytes(n):
+    """Return a human-readable size, e.g. '1.5 KB'."""
+    units = ["B", "KB", "MB", "GB", "TB", "PB", "EB"]
+    value = float(n)
+    i = 0
+    while abs(value) >= 1024 and i < len(units) - 1:
+        value /= 1024
+        i += 1
+    if i == 0:
+        return f"{value:.0f} B"
+    return f"{value:.1f} {units[i]}"
+```
+
+- The TODO comment (`# TODO: add a helper that formats byte sizes`) was removed and replaced by the function.
+- Behavior: `format_bytes(1536)` → `'1.5 KB'`, `format_bytes(100)` → `'100 B'`, `format_bytes(1048576)` → `'1.0 MB'`, `format_bytes(0)` → `'0 B'`.
+
+Note: I created a small `test_format_bytes.py` to verify the function, but the sandbox refused to run it in this session, so I verified the logic by hand instead. I couldn't delete that file (files aren't deleted here) — let me know if you'd like it moved elsewhere.

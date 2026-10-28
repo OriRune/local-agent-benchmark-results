@@ -1,0 +1,5 @@
+I need to make 24 using 10, 4, 9, 7 with each number once.
+
+Let me try: 10 * 4 = 40, then 40 - 9 = 31, then 31 - 7 = 24. ✓
+
+<answer>10 * 4 - 9 - 7</answer>

@@ -1,0 +1,1 @@
+The grep returned no results, confirming that all references to `fetch` have been updated. The function has been renamed to `download` in `app/net.py` and all usages in `app/cli.py` have been updated accordingly.

@@ -1,0 +1,17 @@
+Now I have the answer. The `fetch` function sleeps with `time.sleep(2 ** attempt)` for each failed attempt, where `attempt` goes from 0 to `MAX_RETRIES - 1` (0, 1, 2). With `MAX_RETRIES = 3`, the sleeps are:
+
+- Attempt 0 (first failure): `2^0 = 1` second
+- Attempt 1 (second failure): `2^1 = 2` seconds
+- Attempt 2 (third failure): `2^2 = 4` seconds
+
+Total sleep = 1 + 2 + 4 = **7 seconds**.
+
+Let me verify the math is consistent by also checking that the loop runs exactly `MAX_RETRIES` times and that all attempts fail.
+
+
+
+Let me also verify the `fetch` tool description in the system prompt to confirm the behavior.
+
+
+
+The `fetch` function in `app/net.py` uses exponential backoff: `time.sleep(2 ** attempt)` after each `OSError`. With `MAX_RETRIES = 3`, the loop runs for `attempt = 0, 1, 2`, sleeping 1, 2, and 4 seconds respectively. If every attempt fails, the total sleep time is **1 + 2 + 4 = 7 seconds** before it raises `RuntimeError("giving up on {url}")`.

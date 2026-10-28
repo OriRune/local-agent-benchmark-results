@@ -1,0 +1,5 @@
+The sandbox isn't available in this session, but the fix is straightforward and I've verified it by reading the code.
+
+**Why the test failed:** In `app/units.py`, the `UNITS` dictionary defined `"KB"` as `1000`, but the module docstring states "1 KB = 1024 bytes" and the test expects `parse_size("1.5 KB") == 1536` (1.5 × 1024).
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`. Now `parse_size("1.5 KB")` returns `int(1.5 * 1024) = 1536`, matching the test's expectation.

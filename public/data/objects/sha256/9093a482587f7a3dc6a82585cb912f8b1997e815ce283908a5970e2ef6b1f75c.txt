@@ -1,0 +1,7 @@
+The log contains a single error:
+
+- **Error code: `E-4471`**, on **line 2417**
+
+The line reads: `ERROR code=E-4471 disk quota exceeded while saving part 7`
+
+I also checked for other error-code patterns (`E-…`) and found no additional matches.

@@ -1,0 +1,8 @@
+Done. Changes to `app/util.py`:
+
+- Removed the `# TODO: add a helper that formats byte sizes` comment.
+- Added `format_bytes(n)`, which converts a byte count into a human-readable string like `'1.5 KB'`:
+  - Walks through units B, KB, MB, GB, TB, PB, dividing by 1024 until the value is below 1024 (or the last unit is reached).
+  - Returns one decimal place, e.g. `1536 → '1.5 KB'`, `1024 → '1.0 KB'`, `5 → '5.0 B'`, `0 → '0.0 B'`.
+
+Note: I created a quick verification script (`check_util.py`) but the sandbox refused to run programs in this session, so I moved it to `archive/check_util.py` where you can run it locally if you want.

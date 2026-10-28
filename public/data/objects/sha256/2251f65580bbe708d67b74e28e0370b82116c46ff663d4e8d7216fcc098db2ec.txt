@@ -1,0 +1,3 @@
+The bug is in `app/units.py`. The `UNITS` dictionary maps `"KB"` to `1000` instead of `1024`. The docstring says "1 KB = 1024 bytes," and the test expects `parse_size("1.5 KB")` to return `1536` (i.e., `1.5 * 1024`), but the code uses `1000`, returning `1500` instead.
+
+I already fixed the file by changing `"KB": 1000` to `"KB": 1024` in `UNITS`. However, the sandbox blocked my attempt to run the test to verify the fix, so I cannot confirm the tests pass.

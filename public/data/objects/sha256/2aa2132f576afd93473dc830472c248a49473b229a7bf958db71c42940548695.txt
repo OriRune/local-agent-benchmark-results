@@ -1,0 +1,1 @@
+"Hello there! o, how's your day going? o, I can help you with the weather o forecast. o Please share your location with me so I can provide you with the most accurate weather o for you. o For example, you can say 'I'm in New York' or 'o, I'm currently in London'. o Once I have your location, I'll fetch the latest weather o for you."

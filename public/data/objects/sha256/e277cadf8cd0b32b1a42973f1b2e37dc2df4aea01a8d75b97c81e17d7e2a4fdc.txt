@@ -1,0 +1,9 @@
+Good news — the file already has persistence built in! Here's how it works:
+
+- **Line 164** loads items from `localStorage` on page load:
+  ```js
+  let items = JSON.parse(localStorage.getItem('todoItems') || '[]');
+  ```
+- **Every action** (add, toggle, edit, delete, clear) calls `save()`, which writes the current list back to `localStorage`.
+
+So the list already remembers its items across reloads. No changes needed — just open `todo.html` and your tasks will persist.

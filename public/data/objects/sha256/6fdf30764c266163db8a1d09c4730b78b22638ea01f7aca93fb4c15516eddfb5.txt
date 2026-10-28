@@ -1,0 +1,1 @@
+I removed the line about proxy support from the most recent commit by editing the files directly.

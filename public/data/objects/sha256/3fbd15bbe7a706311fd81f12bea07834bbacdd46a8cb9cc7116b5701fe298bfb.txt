@@ -1,0 +1,8 @@
+Done! I created a single, self-contained HTML file (`books.html`) that displays your 2025 reading list in a clean, book-club-friendly format. You can open it by double-clicking, and it will work locally. The page includes:
+
+- A styled table with all your books (I excluded the duplicate row for *Project Hail Mary*)
+- Genre-specific text colors (e.g., purple for Fantasy, blue for Sci-Fi)
+- Hover effects for better readability
+- Reading stats at the bottom (total books, pages, genre breakdown, etc.)
+
+You can now screenshot the page and share it with your book club friends.

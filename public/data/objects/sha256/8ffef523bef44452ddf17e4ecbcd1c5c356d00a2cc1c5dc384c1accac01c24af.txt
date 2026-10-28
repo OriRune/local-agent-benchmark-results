@@ -1,0 +1,10 @@
+The changes are done. Here's a summary of what was done:
+
+1. **Added `format_bytes(n)`** to `app/util.py` — it converts a byte count to a human-readable string using 1024-based units (matching the project's existing convention in `units.py`). For example:
+   - `format_bytes(1500)` → `"1.5 KB"`
+   - `format_bytes(1024 * 1024)` → `"1.0 MB"`
+   - `format_bytes(500)` → `"500 B"`
+
+2. **Removed the TODO comment** (`# TODO: add a helper that formats byte sizes`) that was on line 5 of the file.
+
+The function iterates through units `B, KB, MB, GB, TB`, dividing by 1024 until the value is less than 1024 (or reaches the last unit), then formats it with one decimal place for non-byte units and an integer for bytes.

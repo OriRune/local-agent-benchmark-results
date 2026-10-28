@@ -1,0 +1,7 @@
+The README.md has been created at the project root. It lists every command line option from the CLI (`app/cli.py`) along with its help text:
+
+- **`URL`** (positional) — "what to download"
+- **`-o` / `--output`** — "file to write (default: stdout)"
+- **`-q` / `--quiet`** — "no progress output"
+
+The README also includes usage examples, a project structure overview, and relevant notes from the codebase.

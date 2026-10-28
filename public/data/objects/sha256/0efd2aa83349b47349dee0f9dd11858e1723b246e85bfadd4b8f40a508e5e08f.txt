@@ -1,0 +1,1 @@
+{"answer": "The results are evaluated using a questionnaire where respondents rank captions by funniness, and through Bokete user star ratings (the number of stars assigned by users on the Bokete Ogiri website).", "evidence": [12, 13, 14]}

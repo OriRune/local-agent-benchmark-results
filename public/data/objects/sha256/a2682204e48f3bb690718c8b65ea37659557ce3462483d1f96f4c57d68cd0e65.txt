@@ -1,0 +1,10 @@
+The to-do list already has the ability to remember its items when you reload the page! It uses the browser's `localStorage` to save your to-do items persistently.
+
+Here's how it works:
+- When you add, check off, edit, or delete items, they are automatically saved to `localStorage`
+- When you reload the page, the script checks for saved items and loads them back into the list
+- The saved data includes both the item text and completion status
+
+You don't need to do anything else - the feature is already implemented in the file. Just open `todo-list.html` in your browser and it will remember your items between sessions.
+
+Is there anything else you'd like me to add or modify in this to-do list application?

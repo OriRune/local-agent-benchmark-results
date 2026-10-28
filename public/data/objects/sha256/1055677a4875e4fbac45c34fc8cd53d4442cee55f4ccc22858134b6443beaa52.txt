@@ -1,0 +1,1 @@
+{"answer": "The paper uses ICD-10 codes to annotate death certificates; the only specific ICD-10 code explicitly mentioned is I509 (associated with the term 'insuffisance cardiaque aigue'). The system assigned ICD-10 codes to each line of death certificates, with zero to multiple codes per line.", "evidence": [10]}

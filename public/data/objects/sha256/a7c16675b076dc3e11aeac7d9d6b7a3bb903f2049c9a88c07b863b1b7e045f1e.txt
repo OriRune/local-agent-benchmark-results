@@ -1,0 +1,8 @@
+Good news — it already does that. I built persistence into the first version:
+
+- On page load, `load()` (line 55) reads the saved items from `localStorage` and restores them, including their checked state.
+- Every change — adding, checking off, editing, deleting, or clearing done items — calls `save()` (line 58), which writes the list back to `localStorage`.
+
+So if you reload the page, your items (and which ones are checked) come right back. No changes needed.
+
+One caveat: `localStorage` is tied to the browser and the file's location, so items persist per browser on this machine — if you open the file in a different browser, it starts fresh. If you'd like, I can add a "load from file" option so you can restore a list from a previously exported `.txt` file.

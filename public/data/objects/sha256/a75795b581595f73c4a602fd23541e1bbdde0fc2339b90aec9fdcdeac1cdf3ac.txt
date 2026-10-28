@@ -1,0 +1,10 @@
+The `fetch` function retries up to `MAX_RETRIES` = 3 times.  
+On each failed attempt it sleeps for `2 ** attempt` seconds:
+
+* attempt 0 → sleep 1 s  
+* attempt 1 → sleep 2 s  
+* attempt 2 → sleep 4 s  
+
+The total sleep time when every attempt fails is:
+
+**1 + 2 + 4 = 7 seconds**.

@@ -1,0 +1,1 @@
+Implemented a fix in **app/units.py** by correcting the byte conversion for kilobytes. Updated the `UNITS` dictionary to use `1024` for `"KB"` instead of `1000`, aligning the parsing logic with binary (1024‑based) units as required by the tests. This resolves the failing test in `tests/test_units.py`.

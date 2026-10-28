@@ -1,0 +1,1 @@
+<solution>rock, 4, scooter, boat</solution>

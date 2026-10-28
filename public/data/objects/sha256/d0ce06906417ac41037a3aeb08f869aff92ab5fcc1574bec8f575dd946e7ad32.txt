@@ -1,0 +1,13 @@
+The script has been created successfully. Here's what I've written:
+
+**Created: `system_info.sh`**
+
+The script displays:
+- **CPU Usage** - Reads from `/proc/stat` to calculate CPU utilization percentage
+- **RAM Usage** - Reads from `/proc/meminfo` to show total, used, and percentage
+
+**To use it:**
+1. Make it executable: `chmod +x system_info.sh`
+2. Run it: `./system_info.sh`
+
+The script includes fallback methods in case certain files aren't available, and provides a clean formatted output showing the current system's RAM and CPU usage information.

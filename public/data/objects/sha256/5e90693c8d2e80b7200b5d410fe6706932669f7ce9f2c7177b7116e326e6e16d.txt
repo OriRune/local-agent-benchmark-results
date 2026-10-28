@@ -1,0 +1,11 @@
+Done. I created `README.md` based on `app/cli.py`, which defines the CLI (`prog="tinydl"`) with exactly three options:
+
+| Option | Help text |
+| --- | --- |
+| `url` | what to download |
+| `-o`, `--output` | file to write (default: stdout) |
+| `-q`, `--quiet` | no progress output |
+
+The README also includes a usage line and a short "Behavior" section covering stdout vs. file output, the byte-count stderr message (suppressed by `--quiet`), and the retry/backoff behavior from `app/net.py` (3 retries, 20 s timeout).
+
+Note: I couldn't run the parser to dump its exact `--help` output (the sandbox denied program execution), so the option list and help texts are taken directly from the `add_argument` calls in `app/cli.py` — which is what argparse prints verbatim. I also left a small helper script `tools/_dump_help.py` in place in case you'd like to run it yourself to verify the exact help text.

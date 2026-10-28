@@ -1,0 +1,1 @@
+["The question asks which finance-specific word embedding model they use. The paper states in [4] that they trained a word2vec model on financial articles, and in [17] that the BLSTM models use \"the word2vec model trained over the financial text.\" The answer is a word2vec model trained on financial text."]

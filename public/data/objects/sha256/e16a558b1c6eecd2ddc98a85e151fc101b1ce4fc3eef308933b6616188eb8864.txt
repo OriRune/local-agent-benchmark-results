@@ -1,0 +1,7 @@
+I found several files that could match. The most likely candidates are:
+
+- **Desktop/trip ideas 2025.txt** — a text file on the Desktop
+- **Documents/Personal/Summer Break ideas.docx** — a Word document in Personal
+- **Documents/Personal/christmas gift ideas.txt** — a text file in Personal
+
+The one that best fits "vacation ideas" is **Desktop/trip ideas 2025.txt**. Would you like me to open it, or did you mean one of the others?

@@ -1,0 +1,11 @@
+The code in **app/net.py** sleeps for `2 ** attempt` seconds after each failed try, and the loop runs for `MAX_RETRIES` attempts (the value is defined in **app/config.py**).
+
+* `MAX_RETRIES = 3`
+* Sleep times per attempt:
+  * attempt 0 → \(2^{0} = 1\) s  
+  * attempt 1 → \(2^{1} = 2\) s  
+  * attempt 2 → \(2^{2} = 4\) s  
+
+If every attempt fails, the total sleep time is:
+
+\(1 + 2 + 4 = 7\) seconds.

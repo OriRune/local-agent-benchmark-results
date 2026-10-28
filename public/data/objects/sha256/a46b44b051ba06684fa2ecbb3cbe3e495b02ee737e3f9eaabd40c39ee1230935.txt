@@ -1,0 +1,10 @@
+Done. The rename is complete and verified:
+
+**Changes made:**
+- `app/net.py` — `def fetch(url, get):` → `def download(url, get):`
+- `app/cli.py:5` — `from app.net import fetch` → `from app.net import download`
+- `app/cli.py:18` — `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+**Verification:** A project-wide search for `fetch` now returns no matches, and all three call/import sites reference `download`. The tests (`tests/test_units.py`) and data files never referenced the function, so no other changes were needed.
+
+Note: I created a small `check_rename.py` script to verify the imports at runtime, but the sandbox refused to run it in this session, so I verified via content search instead. That script is still in the project root — let me know if you'd like to do anything with it.

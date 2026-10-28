@@ -1,0 +1,7 @@
+I've created a README.md that documents all CLI command line options for the tinydl project. The README includes:
+
+- Usage instructions
+- A table of all positional arguments and options with their descriptions
+- Examples showing various usage patterns
+- Configuration details
+- Information about supported byte size units

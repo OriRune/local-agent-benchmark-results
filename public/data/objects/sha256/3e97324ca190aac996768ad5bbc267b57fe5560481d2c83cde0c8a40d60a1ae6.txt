@@ -1,0 +1,16 @@
+Let me verify the July-December count manually. The books finishing between July and December (inclusive) are:
+
+1. Dune (Jul 10)
+2. The Hobbit (Jul 19)
+3. Sapiens (Aug 15)
+4. The Night Circus (Sep 12)
+5. Tomorrow and Tomorrow and Tomorrow (Sep 30)
+6. The Thursday Murder Club (Oct 9)
+7. Babel (Nov 5)
+8. Lessons in Chemistry (Nov 20)
+9. A Psalm for the Wild-Built (Nov 24)
+10. The Bear and the Nightingale (Dec 16)
+
+That's 10 books. Note that "Project Hail Mary" appears twice in the CSV (rows 2 and 8) but is one unique book. "Middlemarch" has no end date (ongoing), so it's excluded.
+
+ANSWER: 21, 10

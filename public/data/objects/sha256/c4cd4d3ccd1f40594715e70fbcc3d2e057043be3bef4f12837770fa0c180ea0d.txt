@@ -1,0 +1,1 @@
+MAX_RETRIES is defined in the file `[private-home]/Documents/agent-harness/evals/benchmark_runs/20261021-171454-tuned-ten-ram128/attempts/9e8c6f8c7c3909dfaf1c5b91-b8f1922143/workspace/project/app/config.py` at line 2, and its value is `3`.

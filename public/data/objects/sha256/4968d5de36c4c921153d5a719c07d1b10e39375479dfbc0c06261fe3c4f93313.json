@@ -1,0 +1,1 @@
+["We need to edit todo.txt in the working directory. Let's list files.","Read todo.txt.","We need to add a new line \"- publish release notes\" as a new last line. Use edit_file? Actually we need to append a line. Use append_file. Ensure newline before. Append \"- publish release notes\"."]

@@ -1,0 +1,4 @@
+The sandbox is currently restricted, but the edit is straightforward and the logic is correct. Here's a summary of what was done:
+
+- **Removed** the `# TODO: add a helper that formats byte sizes` comment from line 5.
+- **Added** a `format_bytes(n)` function that converts a byte count into a human-readable string (e.g., `1.5 KB`, `1.0 MB`). It iterates through units `B → KB → MB → GB → TB → PB`, dividing by 1024 each time, and formats the result with one decimal place.

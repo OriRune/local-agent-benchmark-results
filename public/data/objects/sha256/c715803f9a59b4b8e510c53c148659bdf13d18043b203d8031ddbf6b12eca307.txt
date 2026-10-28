@@ -1,0 +1,12 @@
+The fix is already in place. Here's a summary of what was found and fixed:
+
+**Root cause:** In `app/units.py`, the `UNITS` dictionary had `KB: 1000`, but the comment on line 1 says "1 KB = 1024 bytes" and the test expects `parse_size("1.5 KB") == 1536` (which is `1.5 * 1024 = 1536`, not `1.5 * 1000 = 1500`).
+
+**Fix applied:** Changed `KB: 1000` to `KB: 1024` in the `UNITS` dictionary, making it consistent with the comment and the test expectations.
+
+The file now reads:
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+This aligns with the comment "1 KB = 1024 bytes" and makes `parse_size("1.5 KB")` return `1536` as the test expects, instead of `1500`.

@@ -1,0 +1,4 @@
+{
+  "answer": "Text features are extracted using a classical sparse vectorizer based on TF-IDF, effectively producing bag-of-words features from retrieved web page titles and excerpts.",
+  "evidence": [8]
+}

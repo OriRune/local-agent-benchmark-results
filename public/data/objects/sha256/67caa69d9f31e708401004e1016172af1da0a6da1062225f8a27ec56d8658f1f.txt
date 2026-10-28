@@ -1,0 +1,5 @@
+Implemented the fix for byte-size parsing:
+
+- Updated `app/units.py` to correct the `KB` unit conversion from 1000 to 1024, aligning with the expected 1024-based units.
+
+All tests in `tests/test_units.py` should now pass.

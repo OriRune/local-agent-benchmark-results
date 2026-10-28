@@ -1,0 +1,7 @@
+Done.
+
+**Why the test failed:** `app/units.py` defined `KB` as `1000`, so `parse_size("1.5 KB")` returned 1500 instead of the expected 1536. This contradicted the module's own docstring ("1 KB = 1024 bytes") and the other entries (`MB = 1024²`, `GB = 1024³`).
+
+**Fix:** changed the `KB` value from `1000` to `1024` in `app/units.py`. The test file was not touched.
+
+(Note: the sandbox refused to execute programs in this session, so I verified the fix by re-reading the file; the three assertions in `tests/test_units.py` now all hold: 512, 1536, and 2·1024².)

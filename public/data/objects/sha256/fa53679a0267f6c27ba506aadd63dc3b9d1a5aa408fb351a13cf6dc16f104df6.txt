@@ -1,0 +1,9 @@
+Now I can work it out. With `MAX_RETRIES = 3`, the loop runs for `attempt = 0, 1, 2` (three attempts). Each failed attempt sleeps `2 ** attempt` seconds:
+
+- Attempt 0 (first failure): `2^0 = 1` second
+- Attempt 1 (second failure): `2^1 = 2` seconds
+- Attempt 2 (third failure): `2^2 = 4` seconds
+
+Total sleep = 1 + 2 + 4 = **7 seconds**.
+
+Note: the `TIMEOUT_S = 20` is the timeout for the `get()` call itself, not a sleep — it's unrelated to the sleep calculation. The sleep is purely the exponential backoff `2 ** attempt` summed over the three failed attempts.

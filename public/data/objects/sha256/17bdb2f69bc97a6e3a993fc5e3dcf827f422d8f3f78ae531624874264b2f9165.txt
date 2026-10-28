@@ -1,0 +1,36 @@
+The total number of equally likely outcomes is:
+
+\[
+12 \times 10 \times 2 = 240
+\]
+
+We want the probability that the sum is at least 10. It is easier to count the complement: sum \(\le 9\).
+
+- If the d2 rolls 1, then the d12 and d10 must sum to at most 8:  
+  \[
+  7+6+5+4+3+2+1 = 28
+  \]
+- If the d2 rolls 2, then the d12 and d10 must sum to at most 7:  
+  \[
+  6+5+4+3+2+1 = 21
+  \]
+
+So the number of outcomes with sum \(\le 9\) is:
+
+\[
+28 + 21 = 49
+\]
+
+Thus the number of outcomes with sum \(\ge 10\) is:
+
+\[
+240 - 49 = 191
+\]
+
+So the probability is:
+
+\[
+\frac{191}{240}
+\]
+
+<answer>191/240</answer>

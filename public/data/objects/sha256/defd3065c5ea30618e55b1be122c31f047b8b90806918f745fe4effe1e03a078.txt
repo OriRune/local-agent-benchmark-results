@@ -1,0 +1,1 @@
+Done. The most recent commit (`f2742a5`, "raise the download timeout from 10 to 20 seconds") had changed `TIMEOUT_S` from `10` to `20` in `app/config.py`. I reverted that line directly by editing the file, so `app/config.py` is now back to its pre-commit state (`TIMEOUT_S = 10`). Git was only used to inspect the commit, not to make any changes.

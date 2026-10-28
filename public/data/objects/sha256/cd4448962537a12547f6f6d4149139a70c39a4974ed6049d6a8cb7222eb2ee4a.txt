@@ -1,0 +1,3 @@
+The two-stage rocket must carry **3,924.01 kg** of propellant for stage 2 to achieve the total delta-v of 9,400 m/s.
+
+ANSWER: 3924.01

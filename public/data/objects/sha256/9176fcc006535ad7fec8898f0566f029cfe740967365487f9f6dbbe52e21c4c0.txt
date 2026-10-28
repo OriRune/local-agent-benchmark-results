@@ -1,0 +1,6 @@
+Done. `app/util.py` now contains:
+
+- `format_bytes(n)` — converts a byte count to a human-readable string with one decimal place, e.g. `format_bytes(1536)` → `'1.5 KB'` (binary 1024-based scaling through B, KB, MB, GB, TB, PB).
+- The `# TODO: add a helper that formats byte sizes` comment has been removed.
+
+Note: I created a small `check_util.py` to verify the function, but the sandbox refused to run programs in this session, so I couldn't execute it — you can run `python3 check_util.py` yourself or delete it if you don't need it.

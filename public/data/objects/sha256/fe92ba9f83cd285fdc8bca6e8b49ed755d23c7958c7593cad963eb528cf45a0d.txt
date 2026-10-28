@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "They use a word2vec model trained on 189,206 financial articles (161,877,425 tokens) from Factiva, including sources like the Financial Times, covering US companies only.",
+  "evidence": [4]
+}
+```

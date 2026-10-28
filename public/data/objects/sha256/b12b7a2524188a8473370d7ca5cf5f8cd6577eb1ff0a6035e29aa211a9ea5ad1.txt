@@ -1,0 +1,19 @@
+The script works. Here's a summary:
+
+**`sysinfo.py`** — a small, dependency-free Python script that prints RAM and CPU usage to the terminal:
+
+```
+=== System Information ===
+CPU usage :   2.2%
+RAM total : 125.7 GiB
+RAM used  :  9.2 GiB
+RAM free  : 116.5 GiB
+```
+
+How it works:
+- **CPU**: samples the aggregate `cpu` line in `/proc/stat` twice, 0.5s apart, and computes the non-idle fraction as a percentage.
+- **RAM**: reads `/proc/meminfo` for `MemTotal` and `MemAvailable`, then derives used/free amounts.
+
+Everything is read from the kernel's `/proc` filesystem, so it needs no extra packages. Run it anytime with `python3 sysinfo.py`.
+
+Note: I couldn't `chmod +x` it inside the sandbox (attribute changes are blocked there), but the file is created and runs fine via `python3`. On your desktop you can make it directly executable with `chmod +x sysinfo.py` and run `./sysinfo.py`.

@@ -1,0 +1,22 @@
+I've made the change. Here's the final `app/util.py`:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    """Return a human-readable size, e.g. '1.5 KB'."""
+    units = ["B", "KB", "MB", "GB", "TB", "PB"]
+    value = float(n)
+    for unit in units:
+        if abs(value) < 1024 or unit == units[-1]:
+            return f"{value:.1f} {unit}"
+        value /= 1024
+```
+
+**What I did:**
+- Added `format_bytes(n)` that walks through the units B → KB → MB → GB → TB → PB, dividing by 1024 until the value is under 1024, and formats with one decimal (e.g. `1536` → `'1.5 KB'`, `5` → `'5.0 B'`).
+- Removed the `# TODO: add a helper that formats byte sizes` comment.
+
+Note: I couldn't execute a quick sanity check in the sandbox (programs can't be run in this session), but the logic is straightforward and verified by inspection. I also left a stray test file (`.check_util.py`) from an aborted check attempt — you can delete it if you like.

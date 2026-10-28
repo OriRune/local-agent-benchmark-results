@@ -1,0 +1,1 @@
+Implemented `format_bytes(n)` in `app/util.py` to provide human‑readable byte size strings and removed the placeholder TODO comment. The new function supports binary units from bytes up to yottabytes.

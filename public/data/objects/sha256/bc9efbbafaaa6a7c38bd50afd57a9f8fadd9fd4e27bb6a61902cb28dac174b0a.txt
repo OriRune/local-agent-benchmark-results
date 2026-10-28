@@ -1,0 +1,7 @@
+Created `README.md` for the project. It documents the `tinydl` CLI (entry point `app/cli.py`) with a table of every command line option and its exact help text:
+
+- `url` — what to download
+- `-o`, `--output` — file to write (default: stdout)
+- `-q`, `--quiet` — no progress output
+
+It also notes the implicit `-h`/`--help` flag, the usage line (`python -m app.cli URL [options]`), and a few behavioral details (bytes count goes to stderr unless quiet; 3 retries with a 20s timeout).

@@ -1,0 +1,1 @@
+The edit is done. The TODO comment was removed and the `format_bytes(n)` function was added to `app/util.py`. It converts byte sizes into human-readable strings like `'1.5 KB'`, using units B, KB, MB, GB, TB with 1024-based scaling.

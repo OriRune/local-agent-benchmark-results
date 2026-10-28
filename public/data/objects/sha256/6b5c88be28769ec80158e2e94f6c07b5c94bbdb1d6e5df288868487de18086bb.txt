@@ -1,0 +1,1 @@
+Done. I've added the `format_bytes(n)` function to `app/util.py` that converts a byte count into a human-readable string like "1.5 KB", and removed the TODO comment.

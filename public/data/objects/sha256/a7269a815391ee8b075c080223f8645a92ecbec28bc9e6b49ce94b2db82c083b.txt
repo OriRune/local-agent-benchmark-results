@@ -1,0 +1,4 @@
+{
+  "answer": "ICD-10 codes are codes from the International Classification of Diseases, 10th revision, used to automatically code death certificates in the task.",
+  "evidence": [0, 4, 5]
+}

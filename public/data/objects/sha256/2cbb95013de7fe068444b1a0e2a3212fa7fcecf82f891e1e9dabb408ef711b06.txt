@@ -1,0 +1,20 @@
+The script has been successfully created and executed. Here's the output showing the computer's RAM and CPU usage:
+
+```
+==================================================
+System Usage Information
+================================================================
+
+RAM Usage:
+  Total: 125.72 GB
+  Used: 12.18 GB
+  Free: 9.19 GB
+  Available: 112.29 GB
+  Percentage Used: 10.7%
+
+CPU Usage:
+  Cores: 12
+  Percentage Used: 4.2%
+```
+
+The script now works correctly and displays the information as requested.

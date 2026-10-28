@@ -5,6 +5,7 @@ import { verifyEditorialReview } from './summary-data.mjs';
 const digest = value => createHash('sha256').update(canonical(value)).digest('hex');
 const ordered = values => [...values].sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0);
 const pick = (value,keys) => Object.fromEntries(keys.map(k=>[k,value[k]??null]));
+const qualityProfile = (config,v2) => profile(v2?{...config,speed_eligible:true}:config);
 const CONTROLS=['reasoning_requested','observed_reasoning','reasoning_effort','thinking_tokens','temperature','kind','protocol_id','seed','max_tokens','agent_steps','agent_seconds','question_seconds'];
 /**
  * @param {any} data
@@ -34,9 +35,9 @@ export function quantPacket(data,checkpointId,{artifactIds=null,suiteIds=null,po
     const config=configs.get(aggregate.configuration_id),condition=conditions.get(aggregate.condition_id);
     if(condition.kind!=='baseline'||condition.presentation_included===false)continue;
     coverage.push(pick(aggregate,['id','configuration_id','condition_id','suite_id','planned','scored','eligible']));
-    const execution=profile(config);
+    const execution=qualityProfile(config,v2);
     if(!aggregate.eligible||!execution)continue;
-    if(v2&&(aggregate.scored!==aggregate.planned||aggregate.planned<=0||config.execution_kind==='cloud'||config.speed_eligible===false||config.runtime==='openrouter'))continue;
+    if(v2&&(aggregate.scored!==aggregate.planned||aggregate.planned<=0||config.execution_kind==='cloud'||config.runtime==='openrouter'))continue;
     const controls=pick(condition,CONTROLS),key=digest({suite_id:aggregate.suite_id,control:controls,...(v2?{context:execution.observed.context}:{execution})});
     if(!grouped.has(key))grouped.set(key,[]);
     grouped.get(key).push({aggregate,config,condition,controls,execution});
@@ -48,11 +49,11 @@ export function quantPacket(data,checkpointId,{artifactIds=null,suiteIds=null,po
     if(selected.size<2)continue;
     const first=selected.values().next().value,rows=[];
     for(const [artifactId,{aggregate,config,condition}] of [...selected].sort(([a],[b])=>a<b?-1:a>b?1:0)) {
-      rows.push({artifact_id:artifactId,configuration_id:config.id,condition_id:condition.id,aggregate_id:aggregate.id,...pick(aggregate,['score','planned','scored','full_credit','timed','median_task_s']),...(v2?{execution_profile:profile(config)}:{})});
+      rows.push({artifact_id:artifactId,configuration_id:config.id,condition_id:condition.id,aggregate_id:aggregate.id,...pick(aggregate,['score','planned','scored','full_credit','timed','median_task_s']),...(v2?{execution_profile:qualityProfile(config,v2)}:{})});
       aggregate.trial_ids.forEach(id=>trialIds.add(id));
     }
     const group={suite_id:first.aggregate.suite_id,controls:first.controls,...(v2?{context:first.execution.observed.context}:{execution:first.execution}),rows,
-      timing_comparable:rows.every(r=>r.timed===r.planned&&r.median_task_s!==null)&&(!v2||rows.every(r=>canonical(r.execution_profile)===canonical(rows[0].execution_profile)&&Number.isFinite(r.median_task_s)&&r.median_task_s>=0)),causal_quant_effect_verified:false};
+      timing_comparable:rows.every(r=>configs.get(r.configuration_id).speed_eligible!==false&&r.timed===r.planned&&r.median_task_s!==null)&&(!v2||rows.every(r=>canonical(r.execution_profile)===canonical(rows[0].execution_profile)&&Number.isFinite(r.median_task_s)&&r.median_task_s>=0)),causal_quant_effect_verified:false};
     group.id='quant-group-'+digest(group).slice(0,24);groups.push(group);
   }
   if(groups.length){const memberConfigs=new Set(groups.flatMap(g=>g.rows.map(r=>r.configuration_id))),memberArtifacts=new Set(groups.flatMap(g=>g.rows.map(r=>r.artifact_id)));artifacts=artifacts.filter(a=>memberArtifacts.has(a.id));configurations=configurations.filter(c=>memberConfigs.has(c.id));configs=new Map(configurations.map(c=>[c.id,c]));coverage=coverage.filter(a=>memberConfigs.has(a.configuration_id));}

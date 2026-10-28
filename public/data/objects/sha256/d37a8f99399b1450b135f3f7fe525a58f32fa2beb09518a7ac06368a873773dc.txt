@@ -1,0 +1,12 @@
+Here are the largest files in this directory, along with their sizes and locations:
+
+1. **43.8 GB** - `autotune/models/qwen38-flash-next/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf`
+2. **32.8 GB** - `autotune/models/benchmark-followup/Ling-3.0-flash-IQ2_XXS.gguf`
+3. **26.8 GB** - `autotune/models/qwen38-flash-next/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf`
+4. **17.9 GB** - `autotune/models/benchmark-followup/North-Mini-Code-1.0-UD-Q4_K_M.gguf`
+5. **17.1 GB** - `autotune/models/benchmark-followup/GLM-4.7-Flash-Q4_K_M.gguf`
+6. **14.8 GB** - `autotune/models/benchmark-followup/Trinity-Mini-Q4_K_M.gguf`
+7. **11.3 GB** - `autotune/models/benchmark-followup/gpt-oss-20b-MXFP4.gguf`
+8. **10.8 GB** - `autotune/models/benchmark-followup/Muse-Glimmer-30B-IQ3_XXS.gguf`
+9. **10.1 GB** - `autotune/models/benchmark-followup/google_gemma-4-31B-it-IQ2_XXS.gguf`
+10. **5.5 GB** - `autotune/models/benchmark-followup/Ternary-Bonsai-2-27B-PTQ1_0.gguf`

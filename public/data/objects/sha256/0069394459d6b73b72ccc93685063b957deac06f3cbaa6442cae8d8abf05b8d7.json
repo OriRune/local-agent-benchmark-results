@@ -1,0 +1,1 @@
+{"check":{"add":true,"after_reload":{"A":true,"B2":false,"C":false},"check":true,"delete":true,"edit":false,"errors":[],"export":false,"export_sample":"=== TO-DO LIST ===\n\n[✓] Buy milk QX1\n[ ] Walk dog QX2\n\n=== END OF LIST ===","notes":[],"page":"todo.html","remembers_after_reload":false},"score":0}

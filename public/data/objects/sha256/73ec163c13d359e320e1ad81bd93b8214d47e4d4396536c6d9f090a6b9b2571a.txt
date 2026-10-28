@@ -1,0 +1,23 @@
+The sandbox doesn't allow running shell scripts directly. The script is created and ready to use. Let me provide a summary:
+
+---
+
+The script `./system_info.sh` has been created. Here's what it does:
+
+**Static Information (printed once):**
+- CPU model, architecture, and number of cores
+- Load averages (1, 5, and 15 minutes)
+- Total, used, free, and available RAM with percentage usage
+
+**Live Monitoring (continuous loop):**
+- Refreshes every 1 second
+- Shows live RAM usage and load average in a single-line update
+- Press `Ctrl+C` to exit
+
+**To run it:**
+```bash
+chmod +x ./system_info.sh
+./system_info.sh
+```
+
+The script uses `/proc/meminfo` and `/proc/loadavg` (standard Linux procfs) and `awk` for calculations, so it works on this system without needing `bc` or any external tools beyond standard shell utilities.

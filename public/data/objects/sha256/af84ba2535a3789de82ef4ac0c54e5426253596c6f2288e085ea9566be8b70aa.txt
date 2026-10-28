@@ -1,0 +1,1 @@
+Created `README.md` at the project root. It lists all three CLI options (`url`, `-o/--output`, `-q/--quiet`) with their help text from `app/cli.py`, plus usage examples.

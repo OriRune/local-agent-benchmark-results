@@ -1,0 +1,3 @@
+Good news — the list already remembers its items across reloads. It saves to the browser's `localStorage` on every change (line 49 loads them back on page load, and `save()` writes them after each add/check/edit/delete).
+
+So no changes are needed: add a few items, reload the page, and they'll still be there, including their checked state.

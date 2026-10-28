@@ -1,0 +1,1 @@
+The HTML page has been created as **books.html** in the current folder. Opening it in a browser will display a nicely styled table of all the books you read last year, ready for a screenshot and sharing with your book club.

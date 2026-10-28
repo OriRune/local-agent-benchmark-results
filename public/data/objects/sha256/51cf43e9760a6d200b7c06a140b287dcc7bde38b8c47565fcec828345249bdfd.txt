@@ -1,0 +1,1 @@
+I have written a `README.md` that documents all command line options of the `tinydl` CLI tool (`url`, `-o/--output`, `-q/--quiet`) with their help texts, plus usage examples and a brief feature overview.

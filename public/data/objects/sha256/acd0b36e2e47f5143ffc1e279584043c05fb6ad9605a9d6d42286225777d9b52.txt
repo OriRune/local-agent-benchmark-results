@@ -1,0 +1,10 @@
+The most recent git commit changed the file `app/config.py` by raising the download timeout from 10 to 20 seconds. The diff shows:
+
+```diff
+@@ -1,4 +1,4 @@
+ """Settings for the downloader."""
+ MAX_RETRIES = 3
+-TIMEOUT_S = 10
++TIMEOUT_S = 20
+ USER_AGENT = "tiny-downloader/0.2"
+```

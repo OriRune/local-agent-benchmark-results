@@ -1,0 +1,6 @@
+Done. The rename is complete:
+
+- **app/net.py** — `def fetch(url, get):` → `def download(url, get):`
+- **app/cli.py** — `from app.net import fetch` → `from app.net import download`, and the call `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+A project-wide search confirms no remaining references to `fetch` (tests, data, and other files never used it). I also created a small `_check_rename.py` verification script, but the sandbox refused to run it in this session; it's a temporary file you can delete if you don't want it around.

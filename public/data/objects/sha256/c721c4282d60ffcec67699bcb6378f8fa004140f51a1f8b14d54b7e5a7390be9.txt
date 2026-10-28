@@ -1,0 +1,1 @@
+Done. I renamed `fetch` to `download` in `app/net.py` and updated both `app/cli.py` references (the import and the call site). No other files in the project reference `fetch`.

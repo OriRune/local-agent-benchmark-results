@@ -1,0 +1,17 @@
+Done. `app/util.py` now contains:
+
+```python
+def format_bytes(n):
+    """Return a human-readable byte size, e.g. '1.5 KB'."""
+    units = ["B", "KB", "MB", "GB", "TB", "PB"]
+    value = float(n)
+    i = 0
+    while value >= 1024 and i < len(units) - 1:
+        value /= 1024
+        i += 1
+    if i == 0:
+        return f"{int(value)} B"
+    return f"{value:.1f} {units[i]}"
+```
+
+The `# TODO: add a helper that formats byte sizes` comment was removed and replaced with the function. It scales in 1024 steps (e.g. 1536 → `1.5 KB`, 1048576 → `1.0 MB`) and shows whole bytes without decimals below 1 KB (e.g. 512 → `512 B`). I couldn't run a quick test in the sandbox this session, but the file has been verified by reading it back.

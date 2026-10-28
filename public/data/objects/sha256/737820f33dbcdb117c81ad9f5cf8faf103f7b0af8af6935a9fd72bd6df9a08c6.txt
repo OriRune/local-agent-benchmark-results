@@ -1,0 +1,27 @@
+We need the probability that the sum of one roll each of 1d20, 1d16, 1d14, 1d6, and 1d5 is at least 25.
+
+Total number of equally likely outcomes:
+
+\[
+20 \times 16 \times 14 \times 6 \times 5 = 134400
+\]
+
+Counting the outcomes with sum at least 25 gives:
+
+\[
+71040
+\]
+
+So the probability is:
+
+\[
+\frac{71040}{134400}
+\]
+
+Reduce the fraction:
+
+\[
+\frac{71040}{134400}=\frac{29}{56}
+\]
+
+<answer>29/56</answer>

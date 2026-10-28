@@ -1,0 +1,1 @@
+Done. The TODO comment was removed and `format_bytes(n)` was added to `app/util.py`. The function iterates through units (B → KB → MB → GB → TB → PB), dividing by 1024 each time, and returns a human-readable string like `'1.5 KB'`.

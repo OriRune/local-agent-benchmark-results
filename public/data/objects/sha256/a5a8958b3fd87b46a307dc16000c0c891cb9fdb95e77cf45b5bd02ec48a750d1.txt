@@ -1,0 +1,9 @@
+There are **5 Python files** in the `app` folder:
+
+- `app/cli.py` (903 bytes)
+- `app/net.py` (324 bytes)
+- `app/units.py` (243 bytes)
+- `app/config.py` (101 bytes)
+- `app/util.py` (100 bytes)
+
+The largest Python file is **`cli.py`** with **903 bytes**.

@@ -1,0 +1,1 @@
+{"answer": "The paper identifies eighteen persuasion techniques as the propaganda types. The ones explicitly named are: loaded language, appeal to authority, slogans, straw man (misrepresenting someone's opinion), hidden ad-hominem fallacies, and red herring (presenting irrelevant data).", "evidence": [3]}

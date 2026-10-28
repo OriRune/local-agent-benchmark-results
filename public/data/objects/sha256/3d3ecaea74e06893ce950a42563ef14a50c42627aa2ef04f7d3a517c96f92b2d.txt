@@ -1,0 +1,6 @@
+{
+  "answer": "The features extracted from text are Term frequency-Inverse document frequency (TF-IDF) features, which are used to create a classical sparse vectorizer for text classification.",
+  "evidence": [
+    "8"
+  ]
+}

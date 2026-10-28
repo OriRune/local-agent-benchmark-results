@@ -1,0 +1,2 @@
+The latest commit (hash a5960dc2f1bb3edf2b4b71ea49eb41444b6d7db0) updates the downloader’s timeout setting.  
+It changes the `TIMEOUT_S` constant in **app/config.py** from 10 seconds to 20 seconds, thereby raising the download timeout from 10 s to 20 s.

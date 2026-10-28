@@ -1,0 +1,1 @@
+The file has been updated correctly. The TODO comment was removed and the `format_bytes(n)` function was added. It works by dividing the input by 1024 iteratively through the units (B → KB → MB → GB → TB), stopping when the value is below 1024, and returning a formatted string like `'1.5 KB'`.

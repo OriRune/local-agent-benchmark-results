@@ -1,0 +1,1 @@
+Done. I added a `format_bytes(n)` function to `app/util.py` that converts a byte count into a human-readable string (e.g., `1.5 KB`, `256.0 MB`), and removed the TODO comment. The function iterates through units (B, KB, MB, GB, TB, PB) and formats the value to one decimal place once it drops below 1024.

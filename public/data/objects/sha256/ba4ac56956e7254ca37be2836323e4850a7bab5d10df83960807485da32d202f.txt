@@ -1,0 +1,1 @@
+README.md created with all CLI options and their help text from the argparse configuration in `app/cli.py`.

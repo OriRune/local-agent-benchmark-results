@@ -1,0 +1,3 @@
+The fix has been applied. The issue was on line 2 where `"KB": 1000` was incorrectly set to 1000 instead of 1024. This contradicted both the comment in the file ("Sizes use 1024-based units: 1 KB = 1024 bytes") and the test expectation.
+
+**Summary**: Changed `UNITS["KB"]` from 1000 to 1024 to make the function consistent with 1024-based byte units as documented.

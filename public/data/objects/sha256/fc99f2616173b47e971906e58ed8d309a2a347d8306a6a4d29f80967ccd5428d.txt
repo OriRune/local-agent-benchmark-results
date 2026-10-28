@@ -1,0 +1,1 @@
+*Bot Template*: When a user provides their location, the bot will *obtain* the current weather forecast for that location. The bot should *output* the forecast, including temperature and conditions. *Operation* requires the user's location input to proceed. The bot *notifies* the user with the forecast details.

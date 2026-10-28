@@ -1,0 +1,7 @@
+The README.md has been written. It lists all three command-line options from `app/cli.py`:
+
+- **`url`** (positional) — what to download
+- **`--output` / `-o`** — file to write (default: stdout)
+- **`--quiet` / `-q`** — no progress output
+
+Each option is presented with its short and long forms, a description, and examples of usage.

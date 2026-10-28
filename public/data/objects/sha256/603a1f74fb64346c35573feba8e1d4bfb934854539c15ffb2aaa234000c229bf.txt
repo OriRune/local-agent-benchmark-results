@@ -1,0 +1,21 @@
+| Day | India Itinerary |
+|---|---|
+| 1 | Delhi: India Gate, Qutub Minar, Humayun's Tomb |
+| 2 | Agra: Taj Mahal, Agra Fort, Mehtab Bagh |
+| 3 | Jaipur: Amber Fort, City Palace, Hawa Mahal |
+| 4 | Udaipur: City Palace, Lake Pichola, Jagdish Temple |
+| 5 | Varanasi: Ganga ghats, Dashashwamedh, Sarnath |
+| 6 | Rishikesh: Ganga aarti, Laxman Jhula, Ram Jhula |
+| 7 | Delhi: Lotus Temple, Akshardham, Qutub Minar |
+
+******
+
+| Day | China Itinerary |
+|---|---|
+| 1 | Beijing: Forbidden City, Temple of Heaven, Summer Palace |
+| 2 | Beijing: Great Wall at Badaling, Ming Tombs |
+| 3 | Xi'an: Terracotta Army, City Wall, Muslim Quarter |
+| 4 | Chengdu: Giant Panda Base, Wuhou Shrine, Kuanzhai Alley |
+| 5 | Chongqing: Hongya Cave, Yangtze River cruise, Jiefangbei |
+| 6 | Guilin: Li River cruise, Elephant Trunk Hill, West Street |
+| 7 | Shanghai: The Bund, Yu Garden, Shanghai Tower |

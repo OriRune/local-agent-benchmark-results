@@ -1,0 +1,1 @@
+Max retries has been changed from 3 to 5 in the config.py file.

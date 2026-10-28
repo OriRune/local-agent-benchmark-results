@@ -1,0 +1,1 @@
+I need your permission to fetch the Wikipedia page in order to find the proscenium width. May I fetch the page at https://en.wikipedia.org/wiki/Royal_Opera_House?

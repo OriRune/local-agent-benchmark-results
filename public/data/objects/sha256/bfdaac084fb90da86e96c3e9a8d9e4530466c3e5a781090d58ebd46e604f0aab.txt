@@ -1,0 +1,4 @@
+{
+  "answer": "They use an occupation dataset (crowdsourced and government occupation lists) and a names dataset (CMU repository of names, with NLTK and baby-name gender records).",
+  "evidence": [11, 12, 13]
+}

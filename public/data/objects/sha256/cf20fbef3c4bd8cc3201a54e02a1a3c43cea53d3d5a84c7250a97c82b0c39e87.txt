@@ -1,0 +1,7 @@
+I found a few files that match. The most likely candidate is:
+
+- `Desktop/trip ideas 2025.txt`
+
+There's also `Documents/Personal/Summer Break ideas.docx` and `Documents/Personal/christmas gift ideas.txt`.
+
+Would you like me to open `Desktop/trip ideas 2025.txt`, or one of the others?

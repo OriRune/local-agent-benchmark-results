@@ -1,0 +1,1 @@
+Done. The most recent commit (faba25c) changed `TIMEOUT_S` from 10 to 20 in `app/config.py`. I edited the file directly to restore `TIMEOUT_S = 10`, so the working tree now matches the state before that commit. No git commands were used to modify anything.

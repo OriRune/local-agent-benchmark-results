@@ -1,0 +1,3 @@
+The units digit repeats every 20 rows, and for \(n\equiv 3\pmod{20}\) the units digit is 5. Since \(2023\equiv 3\pmod{20}\), the answer is **C**.
+
+CCCCC

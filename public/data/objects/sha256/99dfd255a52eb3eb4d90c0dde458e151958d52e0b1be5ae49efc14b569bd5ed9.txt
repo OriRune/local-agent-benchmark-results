@@ -1,0 +1,1 @@
+{"answer": "A word2vec model trained on 189,206 financial articles from Factiva (US companies only).", "evidence": [4]}

@@ -1,0 +1,7 @@
+Done.
+
+- Renamed the function `fetch` to `download` in `app/net.py`
+- Updated the import statement in `app/cli.py` from `fetch` to `download`
+- Updated the function call in `app/cli.py` from `fetch` to `download`
+
+The function is now called `download` everywhere in the project.

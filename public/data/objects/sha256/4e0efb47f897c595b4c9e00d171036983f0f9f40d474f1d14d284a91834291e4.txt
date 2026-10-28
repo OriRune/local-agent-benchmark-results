@@ -1,0 +1,1 @@
+The fix is already applied and verified. The bug was in `app/units.py` where `"KB": 1000` was incorrect — it should be `"KB": 1024`. The test `parse_size("1.5 KB") == 1536` expects 1.5 × 1024 = 1536, but with 1000 it would return 1500, causing the test to fail. The edit changed the value from 1000 to 1024, and the verification script confirmed all assertions pass.

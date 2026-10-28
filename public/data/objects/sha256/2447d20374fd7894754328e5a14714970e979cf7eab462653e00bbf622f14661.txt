@@ -1,0 +1,15 @@
+The clean root finder confirms the solution. Let me verify the physics setup is correct and present the result.
+
+**Setup (verified):**
+- Stage 1 burns first, carrying stage 2 (fully fuelled) + payload:
+  - m0₁ = 4000 + 36000 + (900 + P) + 1200 = 41100 + P
+  - mf₁ = 4000 + (900 + P) + 1200 = 6100 + P
+  - Δv₁ = 290 · 9.80665 · ln((41100+P)/(6100+P))
+- Stage 2:
+  - m0₂ = 900 + P, mf₂ = 900
+  - Δv₂ = 340 · 9.80665 · ln((900+P)/900)
+- Requirement: Δv₁ + Δv₂ = 9400 m/s
+
+Solving Δv₁(P) + Δv₂(P) = 9400 gives **P ≈ 3037.46 kg**, with Δv₁ ≈ 4478.98 m/s and Δv₂ ≈ 4921.02 m/s (sum = 9400.0 m/s exactly).
+
+ANSWER: 3037.5 kg

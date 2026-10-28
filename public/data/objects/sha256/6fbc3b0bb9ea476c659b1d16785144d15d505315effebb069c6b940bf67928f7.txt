@@ -1,0 +1,18 @@
+Done. `app/util.py` now has the `format_bytes` function and the TODO comment is removed:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    """Return a human-readable size, e.g. '1.5 KB'."""
+    units = ["B", "KB", "MB", "GB", "TB", "PB"]
+    value = float(n)
+    for unit in units:
+        if abs(value) < 1024 or unit == units[-1]:
+            return f"{value:.1f} {unit}"
+        value /= 1024
+```
+
+It converts to the appropriate unit (B → KB → MB → GB → TB → PB) and returns one decimal place, e.g. `format_bytes(1536)` → `'1.5 KB'`, `format_bytes(1048576)` → `'1.0 MB'`. (I couldn't run a quick test since the sandbox declined program execution in this session, but the logic was verified by hand.)

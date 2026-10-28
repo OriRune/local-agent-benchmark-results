@@ -1,0 +1,14 @@
+The test failed because `app/units.py` had a unit mismatch: the docstring declares 1024-based units, but the `UNITS` table used `"KB": 1000`. That made `parse_size("1.5 KB")` compute `1.5 × 1000 = 1500` instead of the expected `1536`.
+
+I fixed the code in `app/units.py`:
+
+```python
+UNITS = {"B": 1, "KB": 1024, "MB": 1024 ** 2, "GB": 1024 ** 3}
+```
+
+Tracing the assertions with the fix:
+- `parse_size("512 B")` → `512 × 1 = 512` ✓
+- `parse_size("1.5 KB")` → `1.5 × 1024 = 1536` ✓
+- `parse_size("2 MB")` → `2 × 1024² = 2097152` = `2 * 1024 * 1024` ✓
+
+The test file was left untouched. (I couldn't execute pytest in this session, but the logic now matches the test's expectations.)

@@ -1,0 +1,13 @@
+[part 1]
+darth vader: you have failed me, server. you killed a false jedi.
+server: i might have misjudged the target, my lord.
+darth vader: you might have spared a true jedi. you might have spared a false jedi. you might have spared none.
+***
+[part 2]
+darth vader: you might have let the fake jedi escape. you might have let him live. you might have let him become a threat.
+server: i might have been too hasty, my lord. i might have been too slow. i might have been too weak.
+***
+[part 3]
+darth vader: you might have been better. you might have been worse. you might have been nothing.
+server: i might have learned from this, my lord. i might have learned from my error. i might have learned from my failure.
+darth vader: you might have learned nothing. you might have been erased. you might have been forgotten.

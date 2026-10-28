@@ -1,0 +1,4 @@
+{
+  "answer": "ICD-10 codes are codes from the International Classification of Diseases, 10th revision, used to assign medical causes on death certificates.",
+  "evidence": [0, 3, 4]
+}

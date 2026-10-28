@@ -1,0 +1,1 @@
+{"answer": "They use two datasets: (1) Occupation Data gathered from crowdsourced and government lists on the internet, and (2) Names Data, a corpus of 5453 male and 6990 female names sourced from the CMU repository of names, with gender mapping via NLTK and baby name records.", "evidence": [11, 12, 13]}

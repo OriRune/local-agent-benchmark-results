@@ -1,0 +1,18 @@
+The sleep logic is in `app/net.py`:
+
+```python
+for attempt in range(MAX_RETRIES):   # MAX_RETRIES = 3
+    try:
+        return get(url, timeout=TIMEOUT_S)
+    except OSError:
+        time.sleep(2 ** attempt)
+raise RuntimeError(...)
+```
+
+If every attempt fails, it sleeps once per attempt with exponential backoff:
+
+- attempt 0 → sleep(2⁰) = 1 s
+- attempt 1 → sleep(2¹) = 2 s
+- attempt 2 → sleep(2²) = 4 s
+
+Total = 1 + 2 + 4 = **7 seconds** of sleeping before it gives up (the final `RuntimeError` is raised without any additional sleep).

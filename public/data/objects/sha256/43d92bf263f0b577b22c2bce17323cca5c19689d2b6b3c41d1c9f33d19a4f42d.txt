@@ -1,0 +1,7 @@
+Done. I created `README.md` in the project root. It lists every CLI option from `app/cli.py` with its exact help text:
+
+- `url` — "what to download"
+- `-o`, `--output` — "file to write (default: stdout)"
+- `-q`, `--quiet` — "no progress output"
+
+It also includes a short usage line and a brief note on behavior (retries with backoff, byte count printed to stderr unless quiet), all taken from the actual source.

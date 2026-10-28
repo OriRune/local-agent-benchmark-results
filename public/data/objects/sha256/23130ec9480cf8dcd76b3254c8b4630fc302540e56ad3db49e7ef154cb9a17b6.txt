@@ -1,0 +1,7 @@
+Created `README.md` based on `app/cli.py`, which defines the `tinydl` CLI with exactly three options:
+
+- `url` — what to download (positional)
+- `-o`, `--output` — file to write (default: stdout)
+- `-q`, `--quiet` — no progress output
+
+The README also documents the usage line, the behavior (output destination, byte count printed to stderr unless quiet), and the retry/timeout settings from `app/config.py`.

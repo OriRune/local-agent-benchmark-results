@@ -1,0 +1,38 @@
+I need to count the unique books and those finished between July and December 2025.
+
+From the file, the unique titles are:
+1. Project Hail Mary
+2. The Remains of the Day
+3. Piranesi
+4. the left hand of darkness
+5. Circe
+6. Educated
+7. A Gentleman in Moscow
+8. The Martian
+9. Braiding Sweetgrass
+10. Station Eleven
+11. Dune
+12. The Hobbit
+13. Middlemarch
+14. The Thursday Murder Club
+15. Lessons in Chemistry
+16. Babel
+17. A Psalm for the Wild-Built
+18. The Bear and the Nightingale
+19. Sapiens
+20. The Night Circus
+21. Tomorrow and Tomorrow and Tomorrow
+
+Books finished between July and December 2025:
+- Dune (2025-07-10)
+- The Hobbit (2025-07-19)
+- Sapiens (2025-08-15)
+- The Night Circus (2025-09-12)
+- Tomorrow and Tomorrow and Tomorrow (2025-09-30)
+- The Thursday Murder Club (2025-10-09)
+- Lessons in Chemistry (2025-11-20)
+- Babel (2025-11-05)
+- A Psalm for the Wild-Built (2025-11-24)
+- The Bear and the Nightingale (2025-12-16)
+
+ANSWER: 21, 10

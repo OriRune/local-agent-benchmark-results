@@ -1,0 +1,5 @@
+The answer is **11529.43 kg** (≈ 11529 kg).
+
+Here is the final answer line:
+
+ANSWER: 11529.43

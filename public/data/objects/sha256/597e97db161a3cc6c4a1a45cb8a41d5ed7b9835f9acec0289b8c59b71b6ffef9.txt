@@ -1,0 +1,1 @@
+{"answer": "ICD-10 codes are the International Classification of Diseases, 10th revision codes used to classify diseases and health conditions, assigned to death certificates in the CépiDC corpus for the CLEF eHealth 2018 challenge.", "evidence": [0, 3, 4, 5]}

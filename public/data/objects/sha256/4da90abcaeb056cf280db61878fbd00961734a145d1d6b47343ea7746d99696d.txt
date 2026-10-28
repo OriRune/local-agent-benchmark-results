@@ -1,0 +1,19 @@
+## Solution
+
+**Setup** — Let stage 2 propellant = *x*. The mass carried by stage 1 (its "stack") is:
+- Stage 2 + payload mass: M₂ = 900 + x + 1200 = 2100 + x
+
+**Stage 1** (carries everything, then drops):
+- m₀ = 4000 + 36000 + M₂, mf = 4000 + M₂
+- Δv₁ = 290 × 9.80665 × ln[(42100 + x)/(6100 + x)]
+
+**Stage 2** (after stage 1 jettisoned):
+- m₀ = M₂ = 2100 + x, mf = 900 + 1200 = 2100
+- Δv₂ = 340 × 9.80665 × ln[(2100 + x)/2100]
+
+**Constraint:** Δv₁ + Δv₂ = 9400 m/s. Solving numerically:
+
+- x ≈ **11,529 kg**
+- Δv₁ ≈ 3164 m/s, Δv₂ ≈ 6236 m/s, total = 9400 m/s ✓
+
+ANSWER: 11,529 kg

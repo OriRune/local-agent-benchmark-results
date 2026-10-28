@@ -1,0 +1,9 @@
+Looking at the numbers 6, 4, 4, 4, I need to find a way to make 24.
+
+Let me try: 6 × 4 = 24, then I need the two remaining 4's to cancel out.
+
+- 6 * 4 = 24
+- 24 + 4 = 28
+- 28 - 4 = 24 ✓
+
+<answer>6 * 4 + 4 - 4</answer>

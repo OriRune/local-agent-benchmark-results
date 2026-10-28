@@ -1,0 +1,6 @@
+I checked books.csv (22 reading entries).
+
+- **Different books: 21** — "Project Hail Mary" appears twice (identical rows), so it counts once.
+- **Finished between July and December: 10** — Dune (Jul 10), The Hobbit (Jul 19), Sapiens (Aug 15), The Night Circus (Sep 12), Tomorrow and Tomorrow and Tomorrow (Sep 30), The Thursday Murder Club (Oct 9), Babel (Nov 5), Lessons in Chemistry (Nov 20), A Psalm for the Wild-Built (Nov 24), and The Bear and the Nightingale (Dec 16). Middlemarch has no end date, so it doesn't count.
+
+ANSWER: 21, 10

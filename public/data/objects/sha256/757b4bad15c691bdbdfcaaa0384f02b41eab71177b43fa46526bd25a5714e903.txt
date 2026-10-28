@@ -1,0 +1,6 @@
+The sandbox won't execute programs in this session, so I verified the function by inspection instead. The logic checks out: `format_bytes(1536)` → `1.5 KB`, `format_bytes(1024)` → `1 KB`, `format_bytes(0)` → `0 B`, `format_bytes(5368709120)` → `5 GB`.
+
+Done. Summary:
+
+- **`app/util.py`**: removed the `# TODO: add a helper that formats byte sizes` comment and added `format_bytes(n)`, which converts bytes to a human-readable string using 1024-based units (B, KB, MB, GB, TB, PB, EB), e.g. `format_bytes(1536)` → `'1.5 KB'`.
+- I also created `test_format_bytes.py` at the project root as a quick check script, but the sandbox refused to run it, so I verified the output by hand. It's not needed — feel free to remove it.

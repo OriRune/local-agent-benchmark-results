@@ -1,0 +1,1 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment. The function converts a byte count into a human-readable string using powers of 1024 (so 1024 → "1.0 KB", 1536 → "1.5 KB", etc.), falling through to PB for very large values.

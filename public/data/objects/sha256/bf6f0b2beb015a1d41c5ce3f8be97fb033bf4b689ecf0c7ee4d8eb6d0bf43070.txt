@@ -1,0 +1,9 @@
+Now I can work it out. With `MAX_RETRIES = 3`, the loop runs for attempts 0, 1, and 2. Each time it fails with an `OSError`, it sleeps for `2 ** attempt` seconds:
+
+- Attempt 0: `2^0 = 1` second
+- Attempt 1: `2^1 = 2` seconds
+- Attempt 2: `2^2 = 4` seconds
+
+Total sleep = 1 + 2 + 4 = **7 seconds**.
+
+So if every attempt fails, `fetch` spends **7 seconds** sleeping before raising `RuntimeError`.

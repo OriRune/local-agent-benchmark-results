@@ -1,0 +1,9 @@
+The sandbox can't run programs in this session, so I verified the fix by hand against the assertions:
+
+- `parse_size("512 B")` → `int(512 * 1)` = **512** ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = **1536** ✓
+- `parse_size("2 MB")` → `int(2 * 1024²)` = **2097152** = `2 * 1024 * 1024` ✓
+
+**Root cause:** in `app/units.py`, the `UNITS` table defined `"KB": 1000`, contradicting both the module's own docstring ("1 KB = 1024 bytes") and the test's expectation. `1.5 * 1000 = 1500`, so the second assertion failed.
+
+**Fix:** changed `"KB": 1000` to `"KB": 1024` in `app/units.py`. The test file was left untouched.

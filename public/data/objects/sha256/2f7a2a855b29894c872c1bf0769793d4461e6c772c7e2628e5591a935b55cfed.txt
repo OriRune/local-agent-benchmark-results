@@ -1,0 +1,18 @@
+```json
+{
+  "character_name": "Elara",
+  "class": "Wizard",
+  "level": 1,
+  "race": "Human",
+  "background": "Theta Medalist",
+  "stats": {
+    "strength": 10,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 16,
+    "wisdom": 10,
+    "charisma": 8
+  },
+  "notes": "The theta frequency resonates with the medallist's arcane focus."
+}
+```

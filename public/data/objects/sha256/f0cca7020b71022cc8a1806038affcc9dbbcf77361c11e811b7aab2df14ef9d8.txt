@@ -1,0 +1,8 @@
+I found a file called "trip ideas 2025.txt" in the Desktop folder. Here is its content:
+
+```
+places to go
+- Kyoto in spring
+- road trip down the coast
+- camping at the lake
+```

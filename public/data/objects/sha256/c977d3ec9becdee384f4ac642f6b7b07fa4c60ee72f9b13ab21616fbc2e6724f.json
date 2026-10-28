@@ -1,0 +1,1 @@
+{"check":{"cpu_percent":false,"exit":0,"finished":true,"measured":"15.1 of 125.7 GB used (12%)","output":"=== System Information ===\nHostname: orion-desktop\n\nRAM:\n  Total:     128738.8 MiB\n  Used:      15402.0 MiB (12.0%)\n  Available: 113336.8 MiB\n\nCPU:\n  Usage: 10.2%\n  Cores: 12","ram_plausible":false,"script":"system_info.py"},"score":0}

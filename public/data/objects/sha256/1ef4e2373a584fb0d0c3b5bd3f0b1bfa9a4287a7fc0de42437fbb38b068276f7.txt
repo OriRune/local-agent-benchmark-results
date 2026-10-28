@@ -1,0 +1,1 @@
+{"answer": "They do not train a model; they use a corpus of 5,453 male and 6,990 female names from the CMU repository and NLTK, plus occupation lists from internet sources and government data.", "evidence": [11, 12, 13]}

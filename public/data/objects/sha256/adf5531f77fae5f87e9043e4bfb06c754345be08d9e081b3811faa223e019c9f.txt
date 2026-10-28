@@ -1,0 +1,8 @@
+The loop in `fetch` runs `MAX_RETRIES = 3` times, and each failed attempt sleeps for `2 ** attempt` seconds, with `attempt` starting at 0.
+
+So the sleeps are:
+- attempt 0: 2⁰ = 1 second
+- attempt 1: 2¹ = 2 seconds
+- attempt 2: 2² = 4 seconds
+
+Total: 1 + 2 + 4 = **7 seconds** before it raises `RuntimeError` and gives up.

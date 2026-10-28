@@ -1,0 +1,4 @@
+{
+  "answer": "The text features are bag‑of‑words vectors computed with TF‑IDF (term frequency‑inverse document frequency).",
+  "evidence": [8]
+}

@@ -1,0 +1,1 @@
+*Template:* o: {location} -> {weather forecast}; *Bot:* Please provide your location, and I will show the forecast.

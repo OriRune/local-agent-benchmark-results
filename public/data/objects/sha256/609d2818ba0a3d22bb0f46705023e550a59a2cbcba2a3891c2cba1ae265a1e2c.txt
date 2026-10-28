@@ -1,0 +1,9 @@
+**7 seconds.**
+
+From `app/net.py`, `fetch` loops `for attempt in range(MAX_RETRIES)` with `MAX_RETRIES = 3` (from `app/config.py`), so `attempt` takes values 0, 1, 2. Each failed attempt sleeps `2 ** attempt` seconds:
+
+- attempt 0 → sleep(2⁰) = 1 s
+- attempt 1 → sleep(2¹) = 2 s
+- attempt 2 → sleep(2²) = 4 s
+
+Total: 1 + 2 + 4 = **7 seconds**, after which it raises `RuntimeError("giving up on {url}")`.

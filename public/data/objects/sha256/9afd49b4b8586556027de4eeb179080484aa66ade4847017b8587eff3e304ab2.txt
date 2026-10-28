@@ -1,0 +1,8 @@
+{
+  "answer": "The paper does not describe training a model; instead, it uses a dataset comprising Occupation Data (lists from internet sources) and Names Data (5453 male and 6990 female names from the CMU repository of names).",
+  "evidence": [
+    "11",
+    "12",
+    "13"
+  ]
+}

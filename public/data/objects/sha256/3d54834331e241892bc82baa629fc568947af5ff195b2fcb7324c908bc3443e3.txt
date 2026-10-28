@@ -1,0 +1,7 @@
+Created `README.md` with the full CLI reference for `tinydl` (from `app/cli.py`):
+
+- **Positional:** `url` — what to download
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+
+Each entry uses the exact help text from the argparse definitions.

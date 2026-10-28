@@ -1,0 +1,6 @@
+Done. The rename is complete and verified:
+
+- **app/net.py** — `def fetch(url, get)` → `def download(url, get)`
+- **app/cli.py** — import updated to `from app.net import download`, and the call in `main()` is now `data = download(args.url, get=_get)`
+
+A project-wide search confirms no remaining references to `fetch` anywhere (the only usages were those three).

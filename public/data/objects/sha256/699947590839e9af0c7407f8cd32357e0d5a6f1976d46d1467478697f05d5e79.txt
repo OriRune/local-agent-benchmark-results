@@ -1,0 +1,10 @@
+Looking at the grid, let me identify the coordinates (row, column):
+
+Row 7: `O X O O X O X * #`
+- (7,0)=O, (7,1)=X, (7,2)=O, (7,3)=O, (7,4)=X, (7,5)=O, (7,6)=X, (7,7)=**\***, (7,8)=**#**
+
+The starting point `*` is at position (7,7) and the destination `#` is at position (7,8) — directly to the right.
+
+Since the destination is immediately adjacent to the start, moving **right** once reaches the destination.
+
+<answer>right</answer>

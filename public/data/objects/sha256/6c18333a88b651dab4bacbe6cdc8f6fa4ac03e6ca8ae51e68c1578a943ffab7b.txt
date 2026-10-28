@@ -1,0 +1,7 @@
+The `fetch` function in `app/net.py` uses exponential backoff with `MAX_RETRIES = 3`. The loop runs for `attempt` in `range(3)` (values 0, 1, 2), and on each failure it sleeps `2 ** attempt` seconds:
+
+- Attempt 0: `2^0 = 1` second
+- Attempt 1: `2^1 = 2` seconds
+- Attempt 2: `2^2 = 4` seconds
+
+**Total sleep = 1 + 2 + 4 = 7 seconds** before it gives up.

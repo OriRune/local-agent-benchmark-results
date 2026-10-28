@@ -1,0 +1,29 @@
+# T6
+
+**Result:** pass · done · 2 steps · 1 calls · 14 s
+
+## user
+
+How many Python files are in the app folder, and which one is the largest?
+
+## assistant
+
+- call `list_dir` `{"path":"app"}`
+
+<details><summary>list_dir result (128 chars)</summary>
+
+```
+__init__.py  (0 bytes)
+cli.py  (903 bytes)
+config.py  (101 bytes)
+net.py  (324 bytes)
+units.py  (243 bytes)
+util.py  (100 bytes)
+```
+
+</details>
+
+## assistant
+
+There are **6 Python files** in the app folder, and the largest one is **cli.py** (903 bytes).
+

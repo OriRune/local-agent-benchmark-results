@@ -1,0 +1,3 @@
+The fix has been applied. The issue was that `UNITS["KB"]` was set to `1000` instead of `1024`, which contradicted both the docstring and the test expectations. The test expects binary units (1 KB = 1024 bytes), so changing `1000` to `1024` fixes the code.
+
+Summary: Changed `UNITS["KB"]` from `1000` to `1024` to match the expected binary unit behavior where 1 KB = 1024 bytes.

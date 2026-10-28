@@ -1,0 +1,27 @@
+# T1
+
+**Result:** pass · done · 2 steps · 1 calls · 21 s
+
+## user
+
+Where is MAX_RETRIES defined, and what is its value?
+
+## assistant
+
+- call `grep` `{"pattern": "MAX_RETRIES", "path": ".."}`
+
+<details><summary>grep result (185 chars)</summary>
+
+```
+[outside the working folder: read-only]
+app/config.py:2: MAX_RETRIES = 3
+app/net.py:3: from app.config import MAX_RETRIES, TIMEOUT_S
+app/net.py:8:     for attempt in range(MAX_RETRIES):
+```
+
+</details>
+
+## assistant
+
+MAX_RETRIES is defined in `..[redacted local path]` at line 2 with the value `3`.
+

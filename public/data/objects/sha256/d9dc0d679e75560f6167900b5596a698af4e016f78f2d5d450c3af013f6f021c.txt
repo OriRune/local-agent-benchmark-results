@@ -1,0 +1,17 @@
+Done. The script is at `open-workspace.sh` in the project folder.
+
+**What it does** (each app is launched in the background, so the script returns immediately):
+
+1. **Chrome** — tries `google-chrome`, then `google-chrome-stable`, then `chromium`/`chromium-browser`, opening `https://www.google.com` (falls back to `xdg-open` if none are installed).
+2. **Text editor** — tries `gedit`, `kate`, `mousepad`, `xed`, `leafpad`, then `nano`.
+3. **File manager** — tries `nemo` (Mint's default), then `nautilus`, `thunar`, `dolphin`, `xfe`, `pcmanfm`, opening `[private-home]/Documents/llama.cpp`.
+
+**To run it:**
+
+```bash
+bash open-workspace.sh
+```
+
+(or `chmod +x open-workspace.sh` first, then `./open-workspace.sh`).
+
+Note: I couldn't verify which of these binaries are actually installed on your machine (the sandbox here can't run programs), so the fallback chain covers the common Linux Mint options — it will pick the first one that exists and warn on stderr if a category has no match.

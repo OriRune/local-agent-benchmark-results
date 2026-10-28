@@ -1,0 +1,1 @@
+Bot template: Get weather for {location} and show forecast on {weather}. *Highlighted section* for {location} and *another highlighted part* on {weather}.

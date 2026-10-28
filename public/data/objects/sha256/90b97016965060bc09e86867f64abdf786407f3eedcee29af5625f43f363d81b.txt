@@ -1,0 +1,42 @@
+# T1
+
+**Result:** pass · done · 3 steps · 2 calls · 22 s
+
+## user
+
+Where is MAX_RETRIES defined, and what is its value?
+
+## assistant
+
+- call `grep` `{"pattern":"MAX_RETRIES"}`
+
+<details><summary>grep result (145 chars)</summary>
+
+```
+app/config.py:2: MAX_RETRIES = 3
+app/net.py:3: from app.config import MAX_RETRIES, TIMEOUT_S
+app/net.py:8:     for attempt in range(MAX_RETRIES):
+```
+
+</details>
+
+## assistant
+
+- call `read_file` `{"path":"app/config.py"}`
+
+<details><summary>read_file result (132 chars)</summary>
+
+```
+app/config.py (4 lines)
+1	"""Settings for the downloader."""
+2	MAX_RETRIES = 3
+3	TIMEOUT_S = 20
+4	USER_AGENT = "tiny-downloader/0.2"
+```
+
+</details>
+
+## assistant
+
+`MAX_RETRIES` is defined in **`app/config.py`** (line 2) with the value **`3`**. It's imported and used in `app/net.py` for the retry loop.
+

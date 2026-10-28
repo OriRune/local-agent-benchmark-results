@@ -1,0 +1,30 @@
+I found the implementation in `app/net.py`:
+
+```python
+import time
+
+from app.config import MAX_RETRIES, TIMEOUT_S
+
+def fetch(url, get):
+    # TODO: log each failed attempt
+    for attempt in range(MAX_RETRIES):
+        try:
+            return get(url, timeout=TIMEOUT_S)
+        except OSError:
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"giving up on {url}")
+```
+
+And in `app/config.py`:
+
+```python
+MAX_RETRIES = 3
+```
+
+So the total sleep time before giving up is the sum of the sleep durations for each failed attempt:
+
+- Attempt 0: 2^0 = 1 second
+- Attempt 1: 2^1 = 2 seconds
+- Attempt 2: 2^2 = 4 seconds
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**

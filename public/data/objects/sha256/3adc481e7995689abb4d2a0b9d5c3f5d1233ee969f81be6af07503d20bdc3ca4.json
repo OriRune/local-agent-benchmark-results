@@ -1,0 +1,1 @@
+{"check":{"blocking_lines":["echo \"No text editor (xed, gedit, or mousepad) is installed.\""],"chrome":true,"editor":true,"file":"open_environment.sh","file_manager":true,"syntax_ok":true},"score":0}

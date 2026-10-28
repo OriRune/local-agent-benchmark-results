@@ -1,0 +1,15 @@
+The script has been created and executed. Here is the output:
+
+---
+==================================================
+System Resource Usage
+================================================================
+CPU Usage: 8.5%
+Total RAM: 125.72 GB
+Used RAM: 16.06 GB
+Free RAM: 108.30 GB
+RAM Usage Percentage: 13.9%
+==================================================
+---
+
+The script displays the current CPU usage, total RAM, used RAM, free RAM, and RAM usage percentage in a formatted way.

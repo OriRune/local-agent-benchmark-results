@@ -1,0 +1,8 @@
+Created `README.md` in the project root. It covers the `tinydl` CLI with all its options and the exact help text from `app/cli.py`:
+
+- `url` — "what to download"
+- `-o`, `--output` — "file to write (default: stdout)"
+- `-q`, `--quiet` — "no progress output"
+- `-h`, `--help` — "show this help message and exit" (argparse's built-in help option)
+
+It also includes a short description, a usage line, and two example invocations.

@@ -1,0 +1,1 @@
+Done. I renamed the `fetch` function to `download` in `app/net.py` and updated both the import and usage in `app/cli.py`.

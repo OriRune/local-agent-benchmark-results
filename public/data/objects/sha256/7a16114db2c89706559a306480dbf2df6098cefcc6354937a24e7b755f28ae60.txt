@@ -1,0 +1,4 @@
+Prompt the user with *Enter your city or zip code* and store the input in the placeholder {{o_location}}.  
+Use the keyword o_forecast to call the weather API with the value of {{o_location}}.  
+Parse the API response and format the result as *Today's forecast for {{o_location}}: {{o_forecast}}*.  
+Return the formatted forecast to the user, ensuring the keyword o_output is set for any follow‑up actions.

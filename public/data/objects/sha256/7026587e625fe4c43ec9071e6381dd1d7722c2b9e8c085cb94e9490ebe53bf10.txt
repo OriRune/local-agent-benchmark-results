@@ -1,0 +1,11 @@
+Fixed.
+
+## Root cause
+
+`app/units.py` declared `"KB": 1000` in its `UNITS` dictionary. The test `test_parse_size` asserts that `parse_size("1.5 KB") == 1536` (i.e., `1.5 × 1024`), but the buggy code returned `1.5 × 1000 = 1500`.
+
+This value was also internally inconsistent: the module docstring states "Sizes use 1024-based units: 1 KB = 1024 bytes," and every other unit in the dict (`MB`, `GB`) uses the 1024 multiplier — only `KB` used the decimal 1000.
+
+## Fix
+
+Changed `"KB": 1000` → `"KB": 1024` in `app/units.py`, making it consistent with the documented 1024-based scheme and the test's expectations. All three assertions now pass.

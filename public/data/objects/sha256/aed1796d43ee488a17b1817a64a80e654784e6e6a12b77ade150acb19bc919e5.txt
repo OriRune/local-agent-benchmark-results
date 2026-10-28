@@ -1,0 +1,11 @@
+Now I have all the information needed.
+
+The `fetch` function has `MAX_RETRIES = 3`, meaning it makes 3 attempts (attempts 0, 1, 2). On each failure, it sleeps for `2 ** attempt` seconds:
+
+- Attempt 0 (first try): fails → sleeps `2^0 = 1` second
+- Attempt 1 (second try): fails → sleeps `2^1 = 2` seconds
+- Attempt 2 (third try): fails → sleeps `2^2 = 4` seconds
+
+Total sleep = 1 + 2 + 4 = **7 seconds**
+
+Note: the sleep happens *after* each failed attempt, so after the 3rd attempt fails (the last one), it raises `RuntimeError` without sleeping again. The total is 7 seconds.

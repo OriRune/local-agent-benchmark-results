@@ -1,0 +1,31 @@
+We need determine if the prerequisite graph has a cycle.
+
+Edges are of the form prerequisite -> course:
+
+- 2 -> 4, 11, 0, 14
+- 19 -> 13, 9, 2, 8, 10, 0
+- 9 -> 13, 16, 14, 3, 23, 10, 7
+- 10 -> 17, 15, 8, 12, 7, 23, 11
+- 7 -> 24, 11, 19, 12, 17, 13
+- 13 -> 0, 15, 2, 8, 1
+- 8 -> 11, 12, 2
+- 12 -> 14, 24, 4
+- 3 -> 24, 2
+- 17 -> 20, 6, 5, 24
+- 11 -> 20
+- 15 -> 20
+- 16 -> 22
+- 22 -> 21
+- 23 -> 21
+- 1 -> 21
+- 24 -> 18
+- 0 -> 5
+- 4 -> 14
+
+There is a cycle:
+
+19 -> 9 -> 10 -> 7 -> 19
+
+Since there is at least one cycle, it is impossible to finish all courses.
+
+<answer>False</answer>

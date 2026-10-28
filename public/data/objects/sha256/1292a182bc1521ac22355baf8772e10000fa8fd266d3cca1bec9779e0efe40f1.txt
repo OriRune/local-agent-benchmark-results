@@ -1,0 +1,69 @@
+Let \(n_1,n_2,n_3,n_4\) be the numbers of residents who own exactly 1, 2, 3, and 4 of the four items.
+
+Since every resident owns candy hearts, the possible numbers of items owned are 1, 2, 3, or 4.
+
+We are given:
+
+\[
+n_2=437,\qquad n_3=234
+\]
+
+and
+
+\[
+n_1+n_2+n_3+n_4=900
+\]
+
+so
+
+\[
+n_1+n_4=900-437-234=229.
+\]
+
+Now count total item-ownerships. The total number of owned items is
+
+\[
+195+367+562+900=2024.
+\]
+
+On the other hand, the total number of item-ownerships is
+
+\[
+n_1+2n_2+3n_3+4n_4.
+\]
+
+Thus,
+
+\[
+n_1+2(437)+3(234)+4n_4=2024.
+\]
+
+Compute:
+
+\[
+n_1+874+702+4n_4=2024
+\]
+
+\[
+n_1+4n_4=448.
+\]
+
+We also have
+
+\[
+n_1+n_4=229.
+\]
+
+Subtracting gives:
+
+\[
+3n_4=219
+\]
+
+\[
+n_4=73.
+\]
+
+So the number of residents who own all four items is
+
+073

@@ -1,0 +1,9 @@
+Let me work through the logic.
+
+The `fetch` function loops `for attempt in range(MAX_RETRIES)`, where `MAX_RETRIES = 3`. So `attempt` takes the values `0, 1, 2`. On each failed attempt, it sleeps `2 ** attempt` seconds.
+
+- Attempt 0: sleeps `2 ** 0 = 1` second
+- Attempt 1: sleeps `2 ** 1 = 2` seconds
+- Attempt 2: sleeps `2 ** 2 = 4` seconds
+
+Total = 1 + 2 + 4 = **7 seconds**

@@ -1,0 +1,1 @@
+[{"args":{"path":"..","pattern":"sleep|time.sleep"},"name":"grep","result":"[outside the working folder: read-only]\napp/net.py:12:             time.sleep(2 ** attempt)","status":"ok"}]

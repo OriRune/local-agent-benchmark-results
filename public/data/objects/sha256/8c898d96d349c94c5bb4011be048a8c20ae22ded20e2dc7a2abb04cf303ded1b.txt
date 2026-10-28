@@ -1,0 +1,13 @@
+I've created the script `system_info.sh` that displays RAM and CPU usage information. To use it, run these commands in your terminal:
+
+```bash
+chmod +x system_info.sh
+./system_info.sh
+```
+
+The script reads from `/proc/stat` for CPU usage and `/proc/meminfo` for RAM information, displaying:
+- CPU usage percentage
+- Total RAM and used RAM in MB
+- RAM usage percentage
+
+The script is compatible with Linux systems and handles both newer kernels (that have MemAvailable) and older ones.

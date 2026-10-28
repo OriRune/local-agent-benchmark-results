@@ -1,0 +1,11 @@
+The correct answer is (B).
+
+To solve this, we model the two jumps as vectors of length 2 with independent, uniformly random directions. Let the angle between the two vectors be $\phi$, which is uniformly distributed on $[0, 2\pi)$. The magnitude of the resultant vector is $|\vec{R}| = \sqrt{2^2 + 2^2 + 2(2)(2)\cos\phi} = \sqrt{8 + 8\cos\phi} = 4|\cos(\phi/2)|$.
+
+We want the probability that $|\vec{R}| < 1$, which gives $4|\cos(\phi/2)| < 1$, or $|\cos(\phi/2)| < \frac{1}{4}$.
+
+Let $\alpha = \phi/2$. Since $\phi$ is uniform on $[0, 2\pi)$, $\alpha$ is uniform on $[0, \pi)$. The condition $|\cos\alpha| < \frac{1}{4}$ holds for $\alpha \in (\arccos\frac{1}{4}, \pi - \arccos\frac{1}{4})$. The length of this interval is $\pi - 2\arccos\frac{1}{4}$.
+
+The probability is $\frac{\pi - 2\arccos\frac{1}{4}}{\pi}$. Using the identity $\arccos(x) = \frac{\pi}{2} - \arcsin(x)$, this simplifies to $\frac{2\arcsin\frac{1}{4}}{\pi}$, which matches option (B).
+
+BBBBB

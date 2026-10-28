@@ -1,0 +1,1 @@
+["We need to change MAX_RETRIES to 5 in some file. We need to locate where MAX_RETRIES is defined. Use grep.","Open app/config.py.","We need to change MAX_RETRIES to 5. Use edit_file."]

@@ -1,0 +1,23 @@
+We need to form 24 using the numbers 6, 2, 2, 4 exactly once, with operations +, -, *, /.
+
+Let's explore possibilities:
+
+1. Try combining 6 and 4 first:
+   - 6 * 4 = 24. Then we have 2 and 2 left. We need to use them without changing the result.
+   - 24 * (2/2) = 24 * 1 = 24. This works!
+   - Expression: 6 * 4 * (2 / 2)
+
+Check: 6 * 4 = 24, 2 / 2 = 1, 24 * 1 = 24. Uses each number once: 6, 4, 2, 2.
+
+Another possibility:
+2. (6 - 2) * (4 + 2) = 4 * 6 = 24. Uses 6, 2, 4, 2. Also valid.
+   Expression: (6 - 2) * (4 + 2)
+
+Both are valid. Let's pick one.
+
+The first one: 6 * 4 * (2 / 2)
+The second one: (6 - 2) * (4 + 2)
+
+Both are correct. I'll provide the second one as it's a common pattern.
+
+<answer>(6 - 2) * (4 + 2)</answer>

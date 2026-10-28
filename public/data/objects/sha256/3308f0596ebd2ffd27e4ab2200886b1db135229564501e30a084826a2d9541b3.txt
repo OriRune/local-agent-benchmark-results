@@ -1,0 +1,1 @@
+Done. I added "- publish release notes" as the last line of todo.txt.

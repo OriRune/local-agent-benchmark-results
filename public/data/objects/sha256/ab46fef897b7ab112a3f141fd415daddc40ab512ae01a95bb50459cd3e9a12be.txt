@@ -1,0 +1,17 @@
+We have two positions: 1 and 2.
+
+1. “The person who is a videographer is somewhere to the left of the person who watches animation.”  
+   With only two people, this means:
+   - Position 1 is the videographer.
+   - Position 2 watches animation.
+
+2. “The person who is pakistani is on the immediate left or immediate right of the person who is a videographer.”  
+   Since the videographer is at position 1, the pakistani person must be at position 2.
+
+3. Since the pakistani person is at position 2 and the videographer is at position 1, the pakistani person cannot be the videographer. Therefore, the pakistani person is a freelancer.
+
+4. Position 2 watches animation, so the pakistani person watches animation.
+
+5. Position 1 is the videographer and does not watch animation, so position 1 watches thriller.
+
+<solution>freelancer, animation, thriller, 1</solution>

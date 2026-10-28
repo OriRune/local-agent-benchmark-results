@@ -1,0 +1,1 @@
+["We need to change a constant MAX_RETRIES in the project. Need to locate the file containing MAX_RETRIES. Use grep.","We have config file app/config.py with MAX_RETRIES = 3. Need to change to 5. Let's read file to edit.","Now edit file replacing line 2. Use edit_file."]

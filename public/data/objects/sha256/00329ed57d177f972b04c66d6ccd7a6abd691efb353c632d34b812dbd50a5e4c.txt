@@ -1,0 +1,14 @@
+The script is ready. Here's what it does:
+
+1. **Opens Chrome** with `google-chrome https://www.google.com &` — launches Chrome with google.com loaded in the background so it doesn't block the terminal.
+2. **Opens a text editor** with `xed &` — launches `xed` (the default text editor on Linux Mint/Xfce) in the background.
+3. **Opens the file manager** with `nautilus [private-home]/Documents/llama.cpp` — launches Nautilus (Linux Mint's default file manager) showing the `llama.cpp` file.
+
+The script is at:
+`[private-home]/Documents/agent-harness/evals/benchmark_runs/20261021-171454-tuned-ten-ram128/attempts/3ad30eac0ce90b08b0ba0fdf-bea54ad33d/workspace/project/open_things.sh`
+
+To run it, make it executable first:
+```
+chmod +x open_things.sh
+./open_things.sh
+```

@@ -1,0 +1,7 @@
+The code in `app/net.py` retries `MAX_RETRIES` times (which is 3 in `app/config.py`), sleeping `2 ** attempt` seconds after each failed attempt:
+
+- attempt 0: 2⁰ = 1 s
+- attempt 1: 2¹ = 2 s
+- attempt 2: 2² = 4 s
+
+Total sleep before giving up: **7 seconds**.

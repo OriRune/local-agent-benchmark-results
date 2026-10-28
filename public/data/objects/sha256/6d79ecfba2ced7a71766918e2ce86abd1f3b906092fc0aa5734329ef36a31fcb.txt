@@ -1,0 +1,4 @@
+{
+  "answer": "They do not train a model; their system is a rule-based, dictionary-driven de-biasing tool that uses external datasets for named entity and occupation recognition, and queries DBpedia for evidence.",
+  "evidence": [11, 12, 13, 14, 23]
+}

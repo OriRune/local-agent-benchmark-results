@@ -1,0 +1,8 @@
+Confirmed — the persistence is in place:
+
+- **`load()`** (line 133) reads your saved items from `localStorage` when the page opens
+- **`save()`** (line 143) writes them back after every add, check-off, edit, or delete
+
+So when you reload the page, your list comes back exactly as you left it — including which items are checked off. No changes needed.
+
+One caveat worth knowing: `localStorage` is per-browser and per-site, so the list lives in the browser where you opened the file. If you open it in a different browser (or a private/incognito window), it starts empty. If you'd like, I can add a "Clear all" button or a JSON backup/restore option — just say the word.

@@ -1,0 +1,9 @@
+Based on the code:
+
+- `MAX_RETRIES = 3` means the loop runs for `attempt` values: 0, 1, 2 (3 attempts total)
+- On each failed attempt, it sleeps for `2 ** attempt` seconds:
+  - Attempt 0: sleeps `2^0 = 1` second
+  - Attempt 1: sleeps `2^1 = 2` seconds
+  - Attempt 2: sleeps `2^2 = 4` seconds
+
+Total sleep time before giving up: **7 seconds**

@@ -1,0 +1,23 @@
+I've created the shell script `open_apps.sh` in your working directory with the following content:
+
+```bash
+#!/bin/bash
+
+# Open Chrome with google.com
+google-chrome "https://www.google.com" &
+
+# Open a text editor (using gedit as a common default)
+gedit &
+
+# Open file manager showing [private-home]/Documents/llama.cpp
+nautilus "[private-home]/Documents/llama.cpp" &
+```
+
+The script is ready to use. To make it executable and run it, open a terminal in the project directory and run:
+
+```bash
+chmod +x open_apps.sh
+./open_apps.sh
+```
+
+This will open Chrome with google.com loaded, gedit (a common text editor), and the file manager showing the llama.cpp directory. If you prefer a different text editor (like VS Code, nano, etc.), let me know and I can modify the script.

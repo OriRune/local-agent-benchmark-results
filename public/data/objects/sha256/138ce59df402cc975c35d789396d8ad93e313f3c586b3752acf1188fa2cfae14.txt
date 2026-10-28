@@ -1,0 +1,11 @@
+Now I can work it out from the code.
+
+The `fetch` function loops over `range(MAX_RETRIES)`, which is `range(3)`, so attempts 0, 1, and 2. On each failed attempt, it sleeps for `2 ** attempt` seconds:
+
+- Attempt 0: `2^0 = 1` second
+- Attempt 1: `2^1 = 2` seconds
+- Attempt 2: `2^2 = 4` seconds
+
+After the third attempt fails, the loop ends and it raises `RuntimeError`.
+
+Total sleep time = 1 + 2 + 4 = **7 seconds**.

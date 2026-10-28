@@ -1,0 +1,9 @@
+| Day | India Itinerary | China Itinerary |
+| :--- | :--- | :--- |
+| 1 | Arrive in Delhi; visit India Gate and Qutub Minar | Arrive in Beijing; visit the Forbidden City |
+| 2 | Visit Humayun's Tomb and Akshardham Temple; evening walk in Old Delhi | Visit the Temple of Heaven and Wangfujing Street |
+| 3 | Day trip to Agra: visit the Taj Mahal and Agra Fort | Day trip to the Great Wall of China (Badaling section) |
+| 4 | Travel to Jaipur; visit Amber Fort and Hawa Mahal | Travel to Xi'an; visit the Terracotta Warriors |
+| 5 | Explore Jaipur City Palace and Nahargarh Fort; evening cultural show | Explore the Xi'an City Wall and Muslim Quarter |
+| 6 | Travel to Varanasi; evening Ganga Aarti at Dashashwamedh Ghat | Travel to Shanghai; visit the Bund and Yu Garden |
+| 7 | Morning boat ride on the Ganges; depart from Varanasi | Visit the French Concession and Nanjing Road; depart from Shanghai |

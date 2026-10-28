@@ -1,0 +1,1 @@
+["The user is asking where MAX_RETRIES is defined and what its value is. I need to search for this within the project folder. Let me try searching for MAX_RETRIES using grep.\n","Let me read the config file to check the context.\n","MAX_RETRIES is defined on line 2 of app/config.py, and its value is 3. It's imported in app/net.py, where it's used in the retry loop.\n"]

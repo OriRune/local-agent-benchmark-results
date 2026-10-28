@@ -1,0 +1,2 @@
+Use *o* as the location keyword: `o: {location}`.
+Then return *forecast* for that location.

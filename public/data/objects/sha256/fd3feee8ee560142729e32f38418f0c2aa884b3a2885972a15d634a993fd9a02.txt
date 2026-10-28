@@ -1,0 +1,13 @@
+The script is written and ready. I couldn't execute it in the sandbox (shells are blocked there), but it's a straightforward script — run it yourself with:
+
+```
+bash open-workspace.sh
+```
+
+**What it does** (file: `open-workspace.sh` in the working folder):
+
+1. **Chrome** — launches `google-chrome https://www.google.com`
+2. **Text editor** — tries `gedit` (the default on Linux Mint), falling back to `kate`, `mousepad`, or `xdg-open` if none are installed
+3. **File manager** — tries `nemo` (Mint's default), falling back to `nautilus` or `xdg-open`, all pointed at `[private-home]/Documents/llama.cpp`
+
+Each app is launched in the background (`&`) so the script returns immediately and all three windows open. If you'd like a specific editor (e.g., VS Code, `code`) instead of gedit, just tell me and I'll swap it in.

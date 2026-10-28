@@ -1,0 +1,1 @@
+All occurrences of `fetch` have been renamed to `download`, and every call site and import has been updated. The remaining "download" hits are unrelated (a help string and a config docstring). No remaining `fetch` references exist.

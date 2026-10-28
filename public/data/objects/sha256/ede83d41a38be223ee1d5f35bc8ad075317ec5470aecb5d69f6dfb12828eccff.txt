@@ -1,0 +1,9 @@
+Total sleep time: **3 seconds**.
+
+From `app/net.py`, each failed attempt sleeps `2 ** attempt` seconds, and `MAX_RETRIES = 3` (in `app/config.py`), so the loop runs with `attempt` = 0, 1, 2:
+
+- attempt 0 → `2 ** 0` = 1 s
+- attempt 1 → `2 ** 1` = 2 s
+- attempt 2 → `2 ** 2` = 4 s
+
+Wait — that's 1 + 2 + 4 = **7 seconds**, not 3. Let me correct myself: the total is **7 seconds** before `fetch` gives up and raises `RuntimeError`.

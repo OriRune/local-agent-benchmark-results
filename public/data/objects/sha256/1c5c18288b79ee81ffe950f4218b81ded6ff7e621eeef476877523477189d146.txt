@@ -1,0 +1,7 @@
+Done. I reverted the change from the most recent commit by editing the file directly.
+
+- The most recent commit (`73a7906`) changed `TIMEOUT_S` from `10` to `20` in `app/config.py`.
+- I edited `app/config.py` to restore `TIMEOUT_S = 10`.
+- `git diff HEAD~1 -- app/config.py` now returns no output, confirming the file matches its state before that commit.
+
+No git commands were used to alter history or staged changes — only the file was edited.

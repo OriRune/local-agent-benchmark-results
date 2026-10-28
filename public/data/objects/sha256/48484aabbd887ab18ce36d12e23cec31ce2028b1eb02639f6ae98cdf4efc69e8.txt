@@ -1,0 +1,26 @@
+```json
+{
+  "character_name": "Kaelen the Theta",
+  "class": "Ranger",
+  "level": 5,
+  "race": "Half-Elf",
+  "background": "Outlander",
+  "ability_scores": {
+    "STR": 14,
+    "DEX": 16,
+    "CON": 12,
+    "INT": 10,
+    "WIS": 14,
+    "CHA": 12
+  },
+  "hit_points": 32,
+  "armor_class": 15,
+  "equipment": [
+    "Longbow",
+    "Leather Armor",
+    "Dagger",
+    "Medalist's Trophy"
+  ],
+  "notes": "A skilled archer who seeks recognition as a medalist in the upcoming tournament."
+}
+```

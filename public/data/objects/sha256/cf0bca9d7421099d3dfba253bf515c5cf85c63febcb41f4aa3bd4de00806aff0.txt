@@ -1,0 +1,8 @@
+The test failed because of a unit-conversion bug in `app/units.py`: the `UNITS` table mapped `"KB"` to **1000**, while the module docstring and the test both define KB as 1024-based (1 KB = 1024 bytes). So `parse_size("1.5 KB")` returned 1500 instead of the expected 1536.
+
+Fix applied — changed `"KB": 1000` to `"KB": 1024` in the `UNITS` dict. With this, all three assertions pass:
+- `parse_size("512 B")` → 512 ✓
+- `parse_size("1.5 KB")` → 1.5 × 1024 = 1536 ✓
+- `parse_size("2 MB")` → 2 × 1024² ✓
+
+No other code in the project depends on the old KB value, so the change is safe.

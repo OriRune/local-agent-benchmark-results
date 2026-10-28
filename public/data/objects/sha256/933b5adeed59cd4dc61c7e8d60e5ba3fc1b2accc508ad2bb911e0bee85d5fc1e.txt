@@ -1,0 +1,15 @@
+Solved. Setting up the two-stage rocket equation:
+
+**Stage 1** (burns first, carrying fully-fuelled stage 2 + payload):
+- m0 = 4,000 + 36,000 + (900 + P + 1,200) = 42,100 + P
+- mf = 4,000 + 900 + P + 1,200 = 6,100 + P
+- Δv₁ = 290 × 9.80665 × ln((42,100 + P)/(6,100 + P))
+
+**Stage 2** (after stage 1 is dropped):
+- m0 = 900 + P + 1,200 = 2,100 + P
+- mf = 900 + 1,200 = 2,100
+- Δv₂ = 340 × 9.80665 × ln((2,100 + P)/2,100)
+
+Solving Δv₁ + Δv₂ = 9,400 m/s by bisection gives P ≈ 11,529.4 kg, with Δv₁ ≈ 3,164 m/s and Δv₂ ≈ 6,236 m/s (sum = 9,400 m/s exactly).
+
+ANSWER: 11529 kg

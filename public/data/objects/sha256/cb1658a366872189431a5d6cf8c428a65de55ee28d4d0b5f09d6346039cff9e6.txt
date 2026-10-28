@@ -1,0 +1,4 @@
+{
+  "answer": "The paper does not describe training a model; it describes a de-biasing system that uses static datasets (Occupation Data and Names Data) and queries DBpedia for evidence, not a trained ML model.",
+  "evidence": [11, 12, 13, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+}

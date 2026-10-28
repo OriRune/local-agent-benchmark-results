@@ -1,0 +1,8 @@
+You're right to call that out, and I want to be plain: I did **not** change `config.py`, `net.py`, or `cli.py`. I only created `README.md` (one `write_file` call).
+
+What I meant by "derived from" was that I *read* those files (via `read_file`) to make the README accurate — I did not write or modify them. To be clear about what actually changed on disk this session:
+
+- **Created:** `README.md`
+- **Unchanged:** `app/cli.py`, `app/config.py`, `app/net.py`, `app/units.py`, `app/util.py`, `app/__init__.py`, `tests/test_units.py`, `data/events.log`, `notes.md`, `todo.txt`
+
+The behaviour notes in the README (3 retries, 20s timeout, output/progress) are accurate because I read them from those files — they reflect the existing code, not any edits I made. No further change is needed, since the source files were never touched.

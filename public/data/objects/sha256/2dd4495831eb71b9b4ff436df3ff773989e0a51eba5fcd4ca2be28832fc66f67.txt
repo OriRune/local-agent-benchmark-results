@@ -1,0 +1,10 @@
+**Why the test failed:** `app/units.py`'s docstring and the test both treat units as 1024-based, but the `UNITS` table defined `"KB": 1000`. So `parse_size("1.5 KB")` returned `int(1.5 * 1000) = 1500`, while the test expects `1536`.
+
+**Fix:** changed `"KB": 1000` to `"KB": 1024` in `app/units.py` (line 2). I checked the rest of the project first — nothing else depends on the old mapping.
+
+With the corrected table, each assertion holds:
+- `parse_size("512 B")` → `int(512 * 1)` = 512 ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = 1536 ✓
+- `parse_size("2 MB")` → `int(2 * 1024²)` = 2097152 ✓
+
+One caveat: the sandbox refused to run programs in this session, so I verified the fix by hand rather than by executing `pytest` — you may want to run `python3 -m pytest tests/test_units.py` to confirm.

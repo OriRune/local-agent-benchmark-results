@@ -1,0 +1,8 @@
+Done. In `app/util.py`:
+
+- Removed the `# TODO: add a helper that formats byte sizes` comment.
+- Added `format_bytes(n)`, which returns a human-readable size like `'1.5 KB'`:
+  - Whole bytes are shown as integers (e.g. `1536` → `'1.5 KB'`, `1023` → `'1023 B'`).
+  - Larger units (KB, MB, GB, TB, PB) are shown with one decimal place, e.g. `1048576` → `'1.0 MB'`.
+
+Note: I tried to verify it with a quick test script, but the sandbox denied running programs in this session, so the function is untested here — the logic is straightforward and matches the expected outputs.

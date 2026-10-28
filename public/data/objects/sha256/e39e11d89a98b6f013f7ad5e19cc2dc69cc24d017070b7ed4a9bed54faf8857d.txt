@@ -1,0 +1,6 @@
+Here’s a chatbot template where *o* appears 6+ times:  
+**Bot:** "Hello! Please tell me your *location* so I can fetch the *forecast* for you."  
+**User:** "[City Name]"  
+**Bot:** "Got it! I’ll look up the *current* conditions and *outlook* for [City Name]—hold on a moment."  
+**Bot:** "Okay! Today’s forecast shows *mostly* sunny skies with a high of 75°F and a *breezy* wind out of the southwest."  
+**Bot:** "Don’t forget your *sunglasses* and a *bottle* of water if you’re heading out!"

@@ -1,0 +1,8 @@
+Created `system_usage.py` — a small Python script that reads `/proc/meminfo` and `/proc/stat` and prints RAM and CPU usage. Verified it runs:
+
+```
+RAM:  12493.5 MiB used / 128738.8 MiB total (9.7%)
+CPU: 2.3% used over the last second
+```
+
+Run it with `python3 system_usage.py`. It needs no dependencies and works on any Linux system.

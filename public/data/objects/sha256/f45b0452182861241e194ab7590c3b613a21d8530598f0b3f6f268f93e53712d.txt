@@ -1,0 +1,7 @@
+The `fetch` function uses exponential backoff with `MAX_RETRIES = 3` and sleeps `2 ** attempt` seconds on each failure:
+
+- Attempt 0 (first failure): `2⁰ = 1` second
+- Attempt 1 (second failure): `2¹ = 2` seconds
+- Attempt 2 (third failure): `2² = 4` seconds
+
+**Total sleep = 1 + 2 + 4 = 7 seconds** before it raises `RuntimeError` and gives up.

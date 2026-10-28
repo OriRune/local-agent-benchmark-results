@@ -1,0 +1,4 @@
+{
+  "answer": "The results are evaluated by having human judges rank the funniness of captions in a questionnaire (comparing human‑written, NJM‑generated, and baseline STAIR captions) and by comparing the number of stars the captions receive on the Bokete site.",
+  "evidence": [12, 13, 14]
+}

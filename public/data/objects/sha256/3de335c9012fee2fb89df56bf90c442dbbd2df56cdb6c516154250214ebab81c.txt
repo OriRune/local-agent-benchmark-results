@@ -1,0 +1,4 @@
+I added the following TODO comments from the Python code to `todo.txt`:
+
+- `app/net.py:7:     # TODO: log each failed attempt`
+- `app/util.py:5: # TODO: add a helper that formats byte sizes`

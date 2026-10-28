@@ -1,0 +1,17 @@
+The calculation shows that stage 2 must carry 11,529.45 kg of propellant to achieve the total delta-v of 9,400 m/s.
+
+Let me verify the calculations manually:
+
+**Stage 1:**
+- m0_1 = 42,100 + 11,529.45 = 53,629.45 kg
+- mf_1 = 6,100 + 11,529.45 = 17,629.45 kg
+- Δv_1 = 290 × 9.80665 × ln(53,629.45 / 17,629.45) = 290 × 9.80665 × ln(3.042) = 290 × 9.80665 × 1.1126 = 3,163.95 m/s ✓
+
+**Stage 2:**
+- m0_2 = 2,100 + 11,529.45 = 13,629.45 kg
+- mf_2 = 2,100 kg
+- Δv_2 = 340 × 9.80665 × ln(13,629.45 / 2,100) = 340 × 9.80665 × ln(6.49) = 340 × 9.80665 × 1.870 = 6,236.05 m/s ✓
+
+Total: 3,163.95 + 6,236.05 = 9,400.00 m/s ✓
+
+ANSWER: 11529.45

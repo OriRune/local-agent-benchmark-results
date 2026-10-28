@@ -1,0 +1,1 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment. The function converts a byte count into a human-readable string like `'1.5 KB'`, scaling through B, KB, MB, and GB as appropriate.

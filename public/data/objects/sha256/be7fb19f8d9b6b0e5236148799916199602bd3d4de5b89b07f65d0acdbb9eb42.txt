@@ -1,0 +1,13 @@
+The function has been added and the TODO comment removed. The file now contains:
+
+```python
+def format_bytes(n):
+    """Return a human-readable byte size, e.g. '1.5 KB'."""
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if n < 1024:
+            return f"{n:.1f} {unit}" if unit != 'B' else f"{n} {unit}"
+        n /= 1024
+    return f"{n:.1f} PB"
+```
+
+The loop divides `n` by 1024 until it finds the right unit, returning values like `1.5 KB` or `2.0 MB`. The `if unit != 'B'` guard avoids a leading space for bytes (e.g. `500 B` instead of `500  B`). The TODO comment has been removed.

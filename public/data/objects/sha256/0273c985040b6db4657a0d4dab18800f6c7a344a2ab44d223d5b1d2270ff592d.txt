@@ -1,0 +1,14 @@
+I searched the workspace for any files whose names contain “vacation” or “ideas”. The only match that looks like a notes file about vacation‑type plans is:
+
+**Desktop/trip ideas 2025.txt**
+
+Contents of the file:
+
+```
+places to go
+- Kyoto in spring
+- road trip down the coast
+- camping at the lake
+```
+
+If this isn’t the file you were looking for, let me know and I can keep searching.

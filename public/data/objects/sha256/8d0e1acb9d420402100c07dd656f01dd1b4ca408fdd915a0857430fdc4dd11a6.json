@@ -1,0 +1,1 @@
+["The user wants to change MAX_RETRIES to 5. I need to find the file that contains MAX_RETRIES. Let me try searching for it.\n","MAX_RETRIES is in app/config.py. Let's read it and edit it.\n","The user is asking to change MAX_RETRIES to 5. I'll edit app/config.py.\n","Done. Short summary.\n"]

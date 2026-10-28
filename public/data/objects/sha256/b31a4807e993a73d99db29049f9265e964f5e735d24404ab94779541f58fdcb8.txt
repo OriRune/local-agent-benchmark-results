@@ -1,0 +1,18 @@
+The script has been created successfully. To make it executable, you'll need to run this command in your terminal:
+
+```bash
+chmod +x open_apps.sh
+```
+
+Then you can run it with:
+
+```bash
+./open_apps.sh
+```
+
+The script will:
+1. Open Chrome with google.com loaded
+2. Open gedit (a common text editor)
+3. Open the file manager showing [private-home]/Documents/llama.cpp
+
+Note: If your system uses a different file manager (like nemo for Cinnamon) or text editor (like pluma, kate, or vscode), you can modify the script accordingly.

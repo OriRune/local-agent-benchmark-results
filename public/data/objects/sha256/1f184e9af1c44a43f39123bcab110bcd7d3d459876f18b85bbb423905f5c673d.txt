@@ -1,0 +1,4 @@
+Here’s a weather-forecast bot template:  
+*o* **o** *o* **o** *o* **o**  
+To proceed, please share your location—*highlighted section*: **"I'm in Paris"**—and the bot will respond with *highlighted section*: **"Current conditions: 18°C, partly cloudy"**.  
+o o o o o o

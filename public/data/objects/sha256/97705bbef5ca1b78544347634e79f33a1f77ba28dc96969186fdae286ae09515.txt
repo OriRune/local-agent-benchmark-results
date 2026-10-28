@@ -1,0 +1,8 @@
+Fixed. The bug was in `app/units.py`: the `UNITS` table had `"KB": 1000`, but the module's own docstring states sizes are 1024-based ("1 KB = 1024 bytes"), and the test expects `parse_size("1.5 KB") == 1536` (1.5 × 1024). With `KB = 1000` the function returned `1500`, failing that assertion.
+
+I changed `"KB": 1000` to `"KB": 1024`, making the table consistent with the documented scheme. Now:
+- `parse_size("512 B")` → 512 ✓
+- `parse_size("1.5 KB")` → 1536 ✓
+- `parse_size("2 MB")` → 2 × 1024 × 1024 ✓
+
+The test file was left untouched. (Note: the sandbox refused to execute the test run, so I verified the fix by tracing the arithmetic rather than executing pytest.)

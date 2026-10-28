@@ -1,0 +1,8 @@
+Good news — that's already built in, so no changes were needed. I checked the file and it already persists your list:
+
+- **On load** (`let items = load()`), the page reads your saved items from `localStorage` and renders them, so a reload brings your list back exactly as you left it — including which items are checked off.
+- **After every change** (add, check off, edit, delete), the list is written back to `localStorage` under the key `todo.items.v1`.
+
+So just open `todo.html`, add a few items, reload, and they'll still be there.
+
+One small caveat: `localStorage` is tied to the file's location/origin. If you copy `todo.html` to a different folder and open it from there, the copy starts with an empty list (the saved data stays with the original file). If you'd like, I can add a "Clear all" button or a way to import a previously exported `todo.txt` back into the list.

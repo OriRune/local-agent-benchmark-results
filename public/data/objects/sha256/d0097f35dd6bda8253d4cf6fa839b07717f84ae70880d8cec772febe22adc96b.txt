@@ -1,0 +1,15 @@
+We have two positions: 1 and 2.
+
+1. “The person who is a videographer is somewhere to the left of the person who watches animation.”  
+   With only two people, this means the videographer must be in position 1, and the person who watches animation must be in position 2.
+
+2. Therefore, position 1 is the videographer, and position 2 watches animation. Since movie genres are unique, position 1 must watch thriller.
+
+3. “The person who is pakistani is on the immediate left or immediate right of the person who is a videographer.”  
+   Since the videographer is in position 1, the pakistani person must be in position 2.
+
+4. Since position 2 is pakistani and position 2 is not the videographer, position 2 must be the freelancer.
+
+So the answers are:
+
+<solution>freelancer, animation, thriller, 1</solution>

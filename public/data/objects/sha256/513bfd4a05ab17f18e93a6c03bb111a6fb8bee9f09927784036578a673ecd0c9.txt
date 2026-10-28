@@ -1,0 +1,7 @@
+Every attempt in `fetch` spends `2 ** attempt` seconds sleeping before retrying, with `MAX_RETRIES = 3`. So the total sleep time before giving up is:
+
+- 1st attempt: `2 ** 0 = 1` second
+- 2nd attempt: `2 ** 1 = 2` seconds
+- 3rd attempt: `2 ** 2 = 4` seconds
+
+Total sleep time = `1 + 2 + 4 = 7` seconds.

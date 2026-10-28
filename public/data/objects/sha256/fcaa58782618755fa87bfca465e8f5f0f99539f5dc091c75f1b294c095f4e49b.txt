@@ -1,0 +1,6 @@
+The `README.md` file has been updated with all command-line options and their help texts. Here’s a summary of the changes:
+
+- Added a **Global Options** section listing `-r RETRIES`, `-t TIMEOUT`, and `-u USER_AGENT` with their descriptions.
+- Updated the **Examples** section to include two new commands demonstrating the use of global options:
+  1. Download with a custom timeout and user agent.
+  2. Download with 5 retries and a custom timeout.

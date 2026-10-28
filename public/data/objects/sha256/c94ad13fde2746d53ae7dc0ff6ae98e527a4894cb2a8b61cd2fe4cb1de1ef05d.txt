@@ -1,0 +1,5 @@
+I have created a `README.md` file that lists the command line options for the CLI based on the `app/cli.py` file. The options and their help texts are:
+
+- `URL`: The URL of the file to download.
+- `-o FILE`, `--output FILE`: Write the downloaded data to a file instead of stdout.
+- `-q`, `--quiet`: Suppress progress output.

@@ -1,0 +1,6 @@
+Implemented the requested rename:
+
+- **app/net.py**: Renamed the `fetch` function to `download`.
+- **app/cli.py**: Updated import to `download` and changed the call site accordingly.
+
+All references to the old `fetch` name have been removed and replaced with `download`.

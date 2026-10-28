@@ -1,0 +1,6 @@
+All done. Here's a summary of the changes:
+
+1. **`app/net.py`** — Renamed `def fetch(url, get)` → `def download(url, get)`
+2. **`app/cli.py`** — Updated the import `from app.net import fetch` → `from app.net import download` and the call site `fetch(args.url, get=_get)` → `download(args.url, get=_get)`
+
+A grep confirms there are no remaining references to `fetch` anywhere in the project.

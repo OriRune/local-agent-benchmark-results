@@ -1,0 +1,8 @@
+Good — the persistence is already in place. The code:
+
+1. **Loads** from `localStorage` on page load (`localStorage.getItem(STORAGE_KEY)`)
+2. **Saves** to `localStorage` every time items change (`localStorage.setItem(STORAGE_KEY, ...)`)
+
+So when you reload the page, your to-do items will still be there. The app is already fully persistent — no changes needed.
+
+If you're seeing issues on your end, it might be because the browser's `localStorage` was cleared or you're opening the file via `file://` in a way that restricts storage. Try opening it through a local server (e.g., `python -m http.server`) or just refresh the page normally — your items should persist.

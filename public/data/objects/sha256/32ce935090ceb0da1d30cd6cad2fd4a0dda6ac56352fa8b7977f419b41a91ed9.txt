@@ -1,0 +1,15 @@
+Done. I created `open_all.sh` in the working folder (`.../workspace/project/open_all.sh`). It launches all three at once:
+
+1. **Chrome** with `https://www.google.com` — tries `google-chrome`, `google-chrome-stable`, `chromium`, `chromium-browser`, and falls back to `xdg-open` if none are found.
+2. **A text editor** — tries `gedit`, `kate`, `mousepad`, `xed`, `leafpad`, `vim`, `nano` in order.
+3. **The file manager** showing `[private-home]/Documents/llama.cpp` — tries `nemo` (Mint's default), `nautilus`, `thunar`, `dolphin`, `pcmanfm`, falling back to `xdg-open`.
+
+Each app is started in the background so they all open simultaneously, and the script prints a warning to stderr if an app can't be found.
+
+To run it:
+
+```bash
+bash open_all.sh
+```
+
+(or `chmod +x open_all.sh && ./open_all.sh` if you prefer to run it directly).

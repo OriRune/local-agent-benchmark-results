@@ -1,0 +1,3 @@
+I searched the entire folder (Desktop, Documents, Downloads, Music, Pictures, and all subfolders) and found **no 2019 tax return**. The only tax-related file is `Documents/Personal/tax return 2024.pdf`, and it appears to be corrupted — I couldn't read it.
+
+So I can't tell you your 2019 refund amount from what's in this folder. If the 2019 return is stored somewhere else (a different machine, email, or a folder I don't have access to), let me know where and I'll take a look.

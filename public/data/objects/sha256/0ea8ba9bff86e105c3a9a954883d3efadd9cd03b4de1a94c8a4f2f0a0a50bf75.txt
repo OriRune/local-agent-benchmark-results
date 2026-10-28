@@ -1,0 +1,6 @@
+Implemented the rename of `fetch` to `download`:
+
+- Updated `app/net.py` to define `download` instead of `fetch`.
+- Modified `app/cli.py` to import `download` and use it for data retrieval.
+
+All references to the old function name have been replaced throughout the project.

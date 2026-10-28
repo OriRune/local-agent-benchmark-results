@@ -1,0 +1,8 @@
+{
+  "answer": "The results are evaluated using a questionnaire where respondents rank the captions provided by humans, the Neural Joking Machine (NJM), and the baseline STAIR caption in order of 'funniness'. Additionally, the funniness is evaluated by the average number of stars assigned by users on the Bokete Ogiri website.",
+  "evidence": [
+    "12",
+    "13",
+    "14"
+  ]
+}

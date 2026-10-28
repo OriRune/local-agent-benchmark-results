@@ -1,0 +1,6 @@
+The script **sysinfo.sh** has been created in the current directory. It displays RAM usage, CPU details, and current CPU usage percentages when run. You can execute it with:
+
+```bash
+chmod +x sysinfo.sh
+./sysinfo.sh
+```

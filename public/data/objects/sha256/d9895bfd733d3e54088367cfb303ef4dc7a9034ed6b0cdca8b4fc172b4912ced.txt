@@ -1,0 +1,8 @@
+Good news — it already does that. I built persistence into the file from the start:
+
+- **On page load** (line 45): `let items = JSON.parse(localStorage.getItem('todos') || '[]');` — the list is restored from `localStorage`.
+- **On every change** (line 50): `save()` writes the current items back to `localStorage` whenever you add, check off, edit, or delete.
+
+So if you add items, reload the page, they'll still be there. No changes needed.
+
+One small caveat: `localStorage` is tied to the page's origin, so if you open the file from a different location (e.g., a different folder or a different machine), it starts with a fresh list. Opening the same `todo-list.html` file in the same browser will always remember your items.

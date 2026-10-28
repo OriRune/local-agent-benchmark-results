@@ -1,0 +1,11 @@
+I've created a beautiful HTML page for you to screenshot and share with your book club friends. The file `books.html` is ready to use.
+
+You can open it by double-clicking it in your file manager, or by running:
+
+```bash
+xdg-open books.html
+```
+
+It will display a clean, responsive grid of all the books you read in 2025, with their titles, authors, genres, and reading dates. The total pages and book count are summarized at the top.
+
+Would you like me to make any adjustments to the layout or styling?

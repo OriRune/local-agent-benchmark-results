@@ -1,0 +1,6 @@
+No change was needed — and I want to be precise about what was done:
+
+- **`README.md` was created on disk** by the `write_file` call in the previous turn. I just re-read it to confirm: it's there (39 lines), with the options table, usage line, examples, and the notes section.
+- **`app/net.py` and `app/config.py` were never written or changed.** I only *read* them (with `read_file`) to source the facts for the README's Notes section: `MAX_RETRIES = 3` / `TIMEOUT_S = 20` in `config.py`, and the exponential-backoff loop in `net.py`. The phrase "notes on retries/timeout *from* app/net.py and app/config.py" meant "based on the contents of those files," not that I modified them.
+
+So to answer plainly: the only file changed in this session is `README.md` (created via `write_file`), and that change is already on disk. There is nothing further to write or edit.

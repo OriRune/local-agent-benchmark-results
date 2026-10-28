@@ -1,0 +1,31 @@
+## Analysis
+
+I need to determine if the course dependency graph contains a cycle. If it's a DAG (Directed Acyclic Graph), all courses can be finished.
+
+**Parsing prerequisites** (prerequisites[i] = (a, b) means b must be taken before a, so edge b → a):
+
+| Edge | Meaning |
+|------|---------|
+| 3 → 5 | course 3 before 5 |
+| 3 → 7 | course 3 before 7 |
+| 2 → 4 | course 2 before 4 |
+| 4 → 0 | course 4 before 0 |
+| 1 → 6 | course 1 before 6 |
+| 4 → 1 | course 4 before 1 |
+| 2 → 7 | course 2 before 7 |
+| 3 → 2 | course 3 before 2 |
+
+**Building in-degrees:**
+- 0: 1, 1: 1, 2: 1, 3: **0**, 4: 1, 5: 1, 6: 1, 7: 2
+
+**Kahn's Topological Sort:**
+
+1. Start: node **3** (in-degree 0) → frees 5, 2
+2. Process **5**, **2** → 2 frees 4, 7
+3. Process **4**, **7** → 4 frees 0, 1
+4. Process **0**, **1** → 1 frees 6
+5. Process **6**
+
+All **8 courses** were successfully processed with no cycle detected.
+
+<answer>True</answer>

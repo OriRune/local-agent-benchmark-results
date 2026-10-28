@@ -1,0 +1,48 @@
+Let \(x\) be the number of residents who own all four items.
+
+Since every resident owns a bag of candy hearts, we can count only the other three items: diamond ring, golf clubs, and garden spade.
+
+Total ownerships of these three items:
+
+\[
+195+367+562=1124
+\]
+
+Now count the same total by how many of the four items each resident owns:
+
+- Residents who own exactly two of the four items own exactly one of the three non-candy items:  
+  \[
+  437 \cdot 1 = 437
+  \]
+
+- Residents who own exactly three of the four items own exactly two of the three non-candy items:  
+  \[
+  234 \cdot 2 = 468
+  \]
+
+- Residents who own all four items own all three of the non-candy items:  
+  \[
+  x \cdot 3 = 3x
+  \]
+
+Thus,
+
+\[
+437+468+3x=1124
+\]
+
+\[
+905+3x=1124
+\]
+
+\[
+3x=219
+\]
+
+\[
+x=73
+\]
+
+Since the answer must be written as exactly three digits, the number is:
+
+073

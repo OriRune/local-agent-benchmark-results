@@ -1,0 +1,1 @@
+*Welcome to the weather bot* — please offer your location. I will obtain the forecast for you. *Your location is key* — I will show the outlook. I will show the forecast for your area.

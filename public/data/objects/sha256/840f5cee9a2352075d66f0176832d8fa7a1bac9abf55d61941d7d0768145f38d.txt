@@ -1,0 +1,5 @@
+The sandbox won't run programs in this session, but the fix is straightforward and verifiable by inspection:
+
+**Why the test failed:** In `app/units.py`, the `UNITS` table defined `"KB": 1000`, while the module docstring and the test both treat units as 1024-based (1 KB = 1024 bytes). So `parse_size("1.5 KB")` returned `1500` instead of the expected `1536`.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`, making the table consistent with the documented 1024-based units. The test was left untouched.

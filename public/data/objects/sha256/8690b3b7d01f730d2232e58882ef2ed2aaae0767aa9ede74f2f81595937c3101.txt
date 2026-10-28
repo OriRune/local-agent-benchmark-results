@@ -1,0 +1,7 @@
+Done. Here's what was wrong and what I changed:
+
+**Cause:** `app/units.py` had `UNITS = {"B": 1, "KB": 1000, ...}` — it treated KB as 1000 bytes, but the module's own docstring says "1 KB = 1024 bytes" and the test expects `parse_size("1.5 KB") == 1536`. With the buggy value, `1.5 × 1000 = 1500`, so the second assertion failed (the "512 B" and "2 MB" assertions would have passed).
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`. Now `1.5 × 1024 = 1536`, and all three assertions match.
+
+One note: the sandbox refused to run any program in this session, so I verified by reading the code and computing the values rather than executing the test. I also created a small `check_units.py` helper while investigating — since I can't delete files, feel free to remove it.

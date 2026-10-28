@@ -1,0 +1,1 @@
+["We need to change MAX_RETRIES constant to 5 in the code. Need to locate where MAX_RETRIES is defined. Use find_files.","Open config file.","We need to change MAX_RETRIES to 5. Use edit_file with old_text exactly \"MAX_RETRIES = 3\"."]

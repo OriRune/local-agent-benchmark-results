@@ -1,0 +1,12 @@
+Fixed. Here's what was wrong and why:
+
+**Root cause:** In `app/units.py`, the `UNITS` table mapped `"KB"` to `1000`, even though the module's own docstring declares 1024-based units ("1 KB = 1024 bytes") and the other entries (`MB`, `GB`) are 1024-based. So `parse_size("1.5 KB")` returned `1500` instead of the expected `1536`, failing the second assertion in `tests/test_units.py`.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`. The test file was left untouched.
+
+**Verification:** With the corrected table,
+- `parse_size("512 B")` → `int(512.0 * 1)` = 512 ✓
+- `parse_size("1.5 KB")` → `int(1.5 * 1024)` = 1536 ✓
+- `parse_size("2 MB")` → `int(2.0 * 1024²)` = 2097152 = 2 × 1024 × 1024 ✓
+
+(Note: I couldn't execute pytest in this session — the sandbox denied program runs — so verification was done by re-reading the edited file and checking the arithmetic by hand.)

@@ -1,0 +1,1 @@
+Created `hello.txt` containing exactly the line `hello from the local agent` (with a standard trailing newline). Verified by reading it back.

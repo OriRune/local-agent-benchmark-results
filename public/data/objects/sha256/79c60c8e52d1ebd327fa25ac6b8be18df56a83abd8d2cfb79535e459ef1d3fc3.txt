@@ -1,0 +1,8 @@
+Done. I created `README.md` in the project root, based on the parser in `app/cli.py`. It lists every command line option of the `tinydl` CLI with its exact help text:
+
+- `url` — "what to download"
+- `-o`, `--output` — "file to write (default: stdout)"
+- `-q`, `--quiet` — "no progress output"
+- `--help` — "show this help message and exit" (argparse's built-in, noted as such)
+
+It also includes a one-line description of the tool, how to run it (`python -m app.cli`), and short usage examples showing the stdout/byte-count behavior and quiet mode.

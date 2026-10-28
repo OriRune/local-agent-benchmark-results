@@ -1,0 +1,1 @@
+The fix is applied. The bug was in `app/units.py` line 2: `"KB"` was mapped to `1000` instead of `1024`. The test expects `1.5 KB = 1536` bytes (`1.5 * 1024`), which is consistent with the docstring stating "1 KB = 1024 bytes". Changing `1000` to `1024` makes the code match both the docstring and the test expectations.

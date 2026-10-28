@@ -1,0 +1,11 @@
+**7 seconds total.**
+
+From `app/net.py`, `fetch` loops `for attempt in range(MAX_RETRIES)` and, when `get` raises `OSError`, sleeps `2 ** attempt` seconds. With `MAX_RETRIES = 3` (from `app/config.py`):
+
+- attempt 0 fails → sleep 2⁰ = **1 s**
+- attempt 1 fails → sleep 2¹ = **2 s**
+- attempt 2 fails → sleep 2² = **4 s**
+
+Then the loop ends and it raises `RuntimeError("giving up on ...")`.
+
+Total: 1 + 2 + 4 = **7 seconds**.

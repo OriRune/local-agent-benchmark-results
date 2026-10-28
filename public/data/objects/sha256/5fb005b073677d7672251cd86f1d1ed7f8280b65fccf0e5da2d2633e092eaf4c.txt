@@ -1,0 +1,6 @@
+```json
+{
+  "answer": "The propaganda types include loaded language, appeal to authority, slogans, straw man, hidden ad-hominem fallacies, red herring, and other logical fallacies.",
+  "evidence": [3, 4, 14]
+}
+```

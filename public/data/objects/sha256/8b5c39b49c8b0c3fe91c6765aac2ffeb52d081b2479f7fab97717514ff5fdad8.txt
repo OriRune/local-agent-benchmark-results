@@ -1,0 +1,4 @@
+The TODO comments have been extracted from the Python files and added as new lines to `todo.txt`. The file now includes the tasks:
+
+- `# TODO: log each failed attempt`
+- `# TODO: add a helper that formats byte sizes`

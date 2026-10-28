@@ -1,0 +1,23 @@
+The sandbox can't run programs in this session, so I verified the logic by hand: `format_bytes(1536)` → `1.5 KB`, `format_bytes(1024)` → `1.0 KB`, `format_bytes(1048576)` → `1.0 MB`, `format_bytes(0)` → `0 B`, and it handles negatives too.
+
+Done. `app/util.py` now contains:
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def format_bytes(n):
+    """Return a human-readable size, e.g. format_bytes(1536) -> '1.5 KB'."""
+    units = ["B", "KB", "MB", "GB", "TB", "PB", "EB"]
+    n = float(n)
+    i = 0
+    while abs(n) >= 1024 and i < len(units) - 1:
+        n /= 1024
+        i += 1
+    if i == 0:
+        return f"{int(n)} {units[i]}"
+    return f"{n:.1f} {units[i]}"
+```
+
+The TODO comment was removed, and the new function returns whole bytes as `N B` (no decimal) and scaled units with one decimal place, e.g. `'1.5 KB'`.

@@ -1,0 +1,16 @@
+Done. I created `open_workspace.sh` in the working folder.
+
+**What it does:**
+1. **Chrome** — opens `https://www.google.com` (tries `google-chrome`, then `google-chrome-stable`, then `chromium`)
+2. **Text editor** — opens `gedit` (falls back to `kate`, `xed`, `mousepad`)
+3. **File manager** — opens `nautilus` pointed at `[private-home]/Documents/llama.cpp` (falls back to `thunar`, `dolphin`, `nemo`)
+
+Each app is launched in the background (`&`), so the script returns immediately and all three windows come up. If a given app isn't installed, it prints a warning and skips it rather than failing.
+
+**To run it:**
+```bash
+chmod +x open_workspace.sh
+./open_workspace.sh
+```
+
+Note: I couldn't syntax-check it inside the sandbox (shell execution is blocked there), but the script is straightforward bash and I've verified its contents line by line.

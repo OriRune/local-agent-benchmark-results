@@ -1,0 +1,5 @@
+I wasn't able to determine which specific applications are installed on this system. The sandbox restricted my ability to inspect `/usr/bin/` or run `which` for common browsers, editors, and file managers. I also couldn't verify the existence of `[private-home]/Documents/llama.cpp` or check the display environment.
+
+Here's what I can still do: I'll write a shell script that attempts to launch the three items using common defaults, with fallbacks. The script will try the most typical applications for each category and print informative messages if something isn't found.
+
+Let me write the script:

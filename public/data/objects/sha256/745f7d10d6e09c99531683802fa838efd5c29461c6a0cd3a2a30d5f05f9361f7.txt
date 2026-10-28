@@ -1,0 +1,8 @@
+`MAX_RETRIES` is defined in **`app/config.py`, line 2**, with the value **3**:
+
+```python
+"""Settings for the downloader."""
+MAX_RETRIES = 3
+```
+
+It's imported in `app/net.py` (line 3) and used there in a retry loop: `for attempt in range(MAX_RETRIES):` — so the downloader retries up to 3 times.

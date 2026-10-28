@@ -1,0 +1,1 @@
+["The user is asking where MAX_RETRIES is defined and what its value is. Let me search for it within the workspace.\n","MAX_RETRIES is defined on line 2 of app/config.py, and its value is 3. Let me quickly check the file to confirm.\n","Confirmed. MAX_RETRIES is defined on line 2 of app/config.py, and its value is 3. It's imported and used in app/net.py.\n"]

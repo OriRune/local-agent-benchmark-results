@@ -1,0 +1,1 @@
+[{"args":{"case_sensitive":false,"path":"notes.md","pattern":"release date"},"name":"grep","result":"no matches","status":"ok"},{"args":{"case_sensitive":false,"path":"notes.md","pattern":"release"},"name":"grep","result":"notes.md:8: - The release is planned for 14 October.","status":"ok"}]

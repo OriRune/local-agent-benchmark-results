@@ -1,0 +1,5 @@
+Implemented the correction for byte-size parsing:
+
+- Updated `app/units.py` to set the `KB` unit to 1024 (consistent with 1024‑based units) instead of the incorrect 1000 value.
+
+This aligns the parsing logic with the expected behavior, ensuring that `parse_size("1.5 KB")` correctly evaluates to 1536 bytes and all related tests now pass.

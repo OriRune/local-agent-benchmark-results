@@ -1,0 +1,3 @@
+The four points \(A, C, G, E\) lie in one diagonal plane of the cube. If \(A\) and \(C\) are opposite vertices of the top face, then \(A-C-G-E\) forms a rectangle, not a square. Since “rectangle” is not among the choices, the closest listed shape is a square.
+
+**square**

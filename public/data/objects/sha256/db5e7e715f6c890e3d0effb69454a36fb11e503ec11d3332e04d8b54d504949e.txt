@@ -1,0 +1,4 @@
+{
+  "answer": "Text features are extracted using TF-IDF (Term frequency-Inverse document frequency) with a classical sparse vectorizer, based on a bag-of-words technique.",
+  "evidence": [8]
+}

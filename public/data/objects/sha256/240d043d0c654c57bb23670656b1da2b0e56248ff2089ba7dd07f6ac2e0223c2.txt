@@ -1,0 +1,1 @@
+The fix is applied. The bug was in `app/units.py` line 2: `"KB"` was mapped to `1000` instead of `1024`. This caused `parse_size("1.5 KB")` to return `1500` instead of the expected `1536` (`1.5 * 1024`). The change aligns the code with the docstring and the test expectations.

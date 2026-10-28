@@ -1,0 +1,1 @@
+{"answer": "TF-IDF (Term Frequency-Inverse Document Frequency) features are extracted from text.", "evidence": [8]}

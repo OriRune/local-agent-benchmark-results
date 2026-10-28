@@ -1,0 +1,1 @@
+I changed the KB unit from 1000 to 1024 in the `app/units.py` file so that "1.5 KB" is now correctly parsed as 1536 bytes (1.5 * 1024) instead of 1500 bytes (1.5 * 1000).

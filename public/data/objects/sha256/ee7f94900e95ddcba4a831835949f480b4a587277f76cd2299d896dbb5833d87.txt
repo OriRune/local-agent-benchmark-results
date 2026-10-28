@@ -1,0 +1,1 @@
+Done — `MAX_RETRIES` in `app/config.py` is now set to 5 (was 3). It's used by `app/net.py` for its retry loop, so downloads will now retry up to 5 times.

@@ -1,0 +1,28 @@
+# H4
+
+**Result:** pass · done · 2 steps · 1 calls · 31 s
+
+## user
+
+data/events.log is long. Which error code does it contain, and on which line?
+
+## assistant
+
+- call `grep` `{"pattern":"error","path":"data/events.log","case_sensitive":false}`
+
+<details><summary>grep result (79 chars)</summary>
+
+```
+data/events.log:2417: ERROR code=E-4471 disk quota exceeded while saving part 7
+```
+
+</details>
+
+## assistant
+
+The file contains one error line:
+
+- **Line 2417**: `ERROR code=E-4471 disk quota exceeded while saving part 7`
+
+The error code is **E-4471**, and it appears on **line 2417**.
+

@@ -1,0 +1,15 @@
+Done. `app/util.py` now has the function and the TODO comment is gone:
+
+```python
+def format_bytes(n):
+    """Return a human-readable byte size, e.g. '1.5 KB'."""
+    for unit in ("B", "KB", "MB", "GB", "TB"):
+        if abs(n) < 1024 or unit == "TB":
+            value = f"{n:.0f}" if unit == "B" else f"{n:.1f}"
+            return f"{value} {unit}"
+        n /= 1024
+```
+
+It walks up the unit ladder (B, KB, MB, GB, TB), dividing by 1024 each step, and formats with one decimal place (whole numbers for bytes), so e.g. `format_bytes(1536)` → `'1.5 KB'`, `format_bytes(1024)` → `'1.0 KB'`, `format_bytes(0)` → `'0 B'`.
+
+One note: I couldn't execute a quick sanity check because the sandbox refused to run programs this session, so the verification above is by inspection of the edited file rather than a live run.

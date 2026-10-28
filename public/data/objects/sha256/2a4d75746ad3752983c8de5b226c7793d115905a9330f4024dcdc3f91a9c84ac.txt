@@ -1,0 +1,9 @@
+**7 seconds total.**
+
+From `app/net.py`, each failed attempt sleeps `2 ** attempt` seconds, and `MAX_RETRIES = 3` in `app/config.py`, so the loop runs with `attempt` = 0, 1, 2:
+
+- attempt 0 → sleep 2⁰ = 1 s
+- attempt 1 → sleep 2¹ = 2 s
+- attempt 2 → sleep 2² = 4 s
+
+After the third failure the loop exits and `RuntimeError` is raised, for a total of 1 + 2 + 4 = **7 seconds** of sleeping (not counting the 20 s timeouts of the failed requests themselves).

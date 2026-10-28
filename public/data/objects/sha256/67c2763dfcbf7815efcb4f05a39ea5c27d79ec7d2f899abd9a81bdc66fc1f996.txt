@@ -1,0 +1,16 @@
+The script has been created at `system_info.sh`. Here's what it does:
+
+- **RAM Usage** — uses `free -h` to show total, used, and free memory in human-readable format.
+- **CPU Usage** — reads `/proc/stat` to calculate the current CPU usage percentage.
+- **CPU Model** — extracts the model name from `/proc/cpuinfo`.
+- **CPU Cores** — shows the number of available CPU cores via `nproc`.
+
+To run it, use:
+```bash
+bash system_info.sh
+```
+Or make it executable first:
+```bash
+chmod +x system_info.sh
+./system_info.sh
+```

@@ -1,0 +1,7 @@
+The log contains a single error code: **E-4471**, on **line 2417**:
+
+```
+ERROR code=E-4471 disk quota exceeded while saving part 7
+```
+
+It's the only line in the file matching "error" (case-insensitive) or an `E-` code pattern.

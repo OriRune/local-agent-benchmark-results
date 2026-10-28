@@ -1,0 +1,4 @@
+{
+  "answer": "They train on 11,529,432 segmented words from parts of Chinese Wikipedia articles, using stroke and glyph data for 20,402 Chinese characters.",
+  "evidence": [12]
+}

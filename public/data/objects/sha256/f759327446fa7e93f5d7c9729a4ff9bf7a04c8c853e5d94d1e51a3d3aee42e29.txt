@@ -1,0 +1,13 @@
+I've fixed the bug. Running pytest is blocked in this sandbox, but I verified the fix by reading the updated file and confirming the logic.
+
+## Summary
+
+**The bug:** In `app/units.py`, the `UNITS` dictionary defined `"KB": 1000`, but the module is documented as using 1024-based units ("1 KB = 1024 bytes").
+
+**Why the test failed:**
+- `parse_size("1.5 KB")` computed `1.5 * 1000 = 1500`, but the test expects `1536` (i.e., `1.5 * 1024`).
+- The other assertions passed because `B` and `MB` were already correct.
+
+**The fix:** Changed `"KB": 1000` to `"KB": 1024` to match the 1024-based convention stated in the module docstring and expected by the test.
+
+The test (`tests/test_units.py`) was left unchanged, as instructed.

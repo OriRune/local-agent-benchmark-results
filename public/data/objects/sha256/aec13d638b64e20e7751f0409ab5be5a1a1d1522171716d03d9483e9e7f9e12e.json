@@ -1,0 +1,1 @@
+["I need to make 24 using 10, 4, 9, 7 with basic arithmetic operations.\n\nLet me try different combinations:\n\n- 10 + 4 + 9 + 7 = 30 (too high)\n- 10 - 4 + 9 + 7 = 22 (close)\n- 10 * 4 - 9 - 7 = 24? 40 - 9 - 7 = 24. Yes!\n\nLet me verify: 10 * 4 = 40, 40 - 9 = 31, 31 - 7 = 24. ✓\n\nThat works!"]

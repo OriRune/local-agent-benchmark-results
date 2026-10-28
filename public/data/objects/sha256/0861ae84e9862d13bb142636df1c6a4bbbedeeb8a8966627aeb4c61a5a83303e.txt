@@ -1,0 +1,1 @@
+{"answer": "Human evaluation via a questionnaire ranking captions by \"funniness,\" and Bokete user star ratings.", "evidence": [12, 13, 14]}

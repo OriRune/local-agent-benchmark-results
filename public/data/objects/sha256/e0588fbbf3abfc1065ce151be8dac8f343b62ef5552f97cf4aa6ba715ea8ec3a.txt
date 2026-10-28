@@ -1,0 +1,6 @@
+Done. I created `system_info.py` in the project folder and verified it runs. It reads `/proc/meminfo` and `/proc/stat` (no external dependencies) and prints:
+
+- **RAM**: total, used (with percentage), and available memory in GB
+- **CPU**: number of cores and current usage percentage (measured by sampling `/proc/stat` twice, 1 second apart)
+
+Run it with `python3 system_info.py`.

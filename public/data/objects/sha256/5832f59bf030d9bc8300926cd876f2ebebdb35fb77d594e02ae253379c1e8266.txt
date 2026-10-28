@@ -1,0 +1,4 @@
+{
+  "answer": "They use two datasets: an Occupation dataset (a list of 996 occupations gathered from various internet sources, classified into gender‑specific and gender‑neutral) and a Names dataset (5,453 male and 6,990 female names sourced from the CMU name repository).",
+  "evidence": [11, 12, 13]
+}

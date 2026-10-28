@@ -1,0 +1,2 @@
+I have most of the page built but I'm missing the CSS for the genre rows and book cards, and I haven't added the monthly reading log yet. Let me finish it now.
+

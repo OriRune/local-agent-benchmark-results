@@ -1,0 +1,7 @@
+Created `README.md` in the project root. It lists every option from the `tinydl` CLI in `app/cli.py` with its exact help text:
+
+- **`url`** — what to download
+- **`-o`, `--output`** — file to write (default: stdout)
+- **`-q`, `--quiet`** — no progress output
+
+I also added a short intro and a usage line, since these were the only options defined in the parser.

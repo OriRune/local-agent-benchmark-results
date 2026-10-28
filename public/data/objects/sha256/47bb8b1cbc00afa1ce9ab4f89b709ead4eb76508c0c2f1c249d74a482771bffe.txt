@@ -1,0 +1,14 @@
+Done. I created `system_usage.py` in the project folder — a self-contained Python script (no third-party packages) that reads `/proc/meminfo` and `/proc/stat` directly.
+
+**What it shows:**
+- **RAM** — used / total in MiB, with percentage used and MiB available
+- **CPU** — usage percentage, sampled over a 1-second interval
+
+**Example output:**
+```
+=== System usage ===
+RAM:  15488 MiB used / 128739 MiB total (12.0% used, 113251 MiB available)
+CPU:  9.0% used (sampled over 1 second)
+```
+
+Run it with `python3 system_usage.py`. It's verified to run correctly twice in the sandbox.

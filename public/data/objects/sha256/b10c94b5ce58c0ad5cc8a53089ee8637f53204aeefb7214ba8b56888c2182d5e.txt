@@ -1,0 +1,9 @@
+The fix is correct. Here's the summary:
+
+**Bug**: In `app/units.py`, the `UNITS` dictionary had `"KB"` mapped to `1000` instead of `1024`. The docstring says "1 KB = 1024 bytes" and the test expects 1024-based units, but the code was using 1000.
+
+**Fix**: Changed `"KB": 1000` to `"KB": 1024` on line 2.
+
+This fixes both failing assertions:
+- `parse_size("1.5 KB")` now correctly returns `1.5 * 1024 = 1536` (was returning `1500`)
+- `parse_size("2 MB")` now correctly returns `2 * 1024 * 1024 = 2097152` (was returning `2000000`)

@@ -1,0 +1,5 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment about it.
+
+The function walks through the units B, KB, MB, GB, TB, PB, EB, ZB, YB and returns a string like `1.5 KB`, dropping the decimal for whole values (e.g. `1024` → `1 KB`, `0` → `0 B`).
+
+I wrote a quick test script (`check_format_bytes.py`) to verify the behavior, but the sandbox refused to run programs in this session, so I confirmed the code by reading it back instead. If you'd like, I can delete that test file — let me know.

@@ -1,0 +1,10 @@
+I found two files that match your description of "something like 'vacation ideas'":
+
+1. **`Desktop/trip ideas 2025.txt`** — a plain text file. Its contents are a short list of places to go:
+   - Kyoto in spring
+   - road trip down the coast
+   - camping at the lake
+
+2. **`Documents/Personal/Summer Break ideas.docx`** — a Word document. I could not read its contents: the file appears to be damaged (it isn't a valid .docx archive), and the sandbox wouldn't let me run a script to inspect it further.
+
+I could not determine which of the two is the one you meant — neither is literally named "vacation ideas," and I couldn't open the .docx to compare its contents. If you remember any detail (e.g., where it was, or what it contained), I can narrow it down.

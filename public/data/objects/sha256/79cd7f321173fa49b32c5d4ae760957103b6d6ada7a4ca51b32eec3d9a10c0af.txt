@@ -1,0 +1,7 @@
+The README.md has been created at the project root. It documents all three CLI options from `app/cli.py`:
+
+- **`URL`** — the positional argument for the download target
+- **`-o` / `--output`** — write to a file instead of stdout
+- **`-q` / `--quiet`** — suppress progress output
+
+The file also includes a usage line, a description of each option, and a note about the retry/timeout behavior defined in `app/config.py` and `app/net.py`.

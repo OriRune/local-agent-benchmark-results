@@ -1,0 +1,5 @@
+README.md created with documentation for all CLI options:
+- `url` (positional): what to download
+- `-o, --output`: file to write (default: stdout)
+- `-q, --quiet`: no progress output
+- `-h, --help`: show help message and exit (automatically provided by argparse)

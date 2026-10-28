@@ -1,0 +1,1 @@
+*Bot template*: "Hello, I am a weather bot. *Please offer your location* so I can show the forecast. I will show the weather for tomorrow."

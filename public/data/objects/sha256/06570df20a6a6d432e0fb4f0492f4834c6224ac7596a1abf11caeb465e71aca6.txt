@@ -1,0 +1,4 @@
+{
+  "answer": "TF-IDF sparse vectorizer (bag-of-words) features extracted from the titles and excerpts of retrieved web pages.",
+  "evidence": [8]
+}

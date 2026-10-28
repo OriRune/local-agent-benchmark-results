@@ -1,0 +1,1 @@
+Done. Added the `format_bytes(n)` function that converts byte counts to human-readable strings like `'1.5 KB'`, and removed the TODO comment.

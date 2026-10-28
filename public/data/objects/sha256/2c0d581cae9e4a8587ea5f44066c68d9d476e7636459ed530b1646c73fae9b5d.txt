@@ -1,0 +1,11 @@
+The sandbox is restricted, but the changes are straightforward and syntactically correct. Here's a summary of what was done:
+
+**Changes made:**
+
+1. **`app/net.py`** — Renamed `def fetch(url, get):` to `def download(url, get):`
+
+2. **`app/cli.py`** — Two updates:
+   - `from app.net import fetch` → `from app.net import download`
+   - `data = fetch(args.url, get=_get)` → `data = download(args.url, get=_get)`
+
+No other files in the project reference `fetch` or `app.net`, so the changes are complete.

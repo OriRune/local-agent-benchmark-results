@@ -1,0 +1,7 @@
+Fixed. Summary:
+
+**Cause:** In `app/units.py`, the `UNITS` table defined `"KB": 1000`, but the module's docstring (and the test) state units are 1024-based — so `parse_size("1.5 KB")` returned `1500` instead of the expected `1536`.
+
+**Fix:** Changed `"KB": 1000` to `"KB": 1024` in `app/units.py`. No other code uses `UNITS`/`parse_size`, so nothing else is affected.
+
+I couldn't execute the test (the sandbox denied program runs in this session), but the assertions now hold by direct calculation: `512 B → 512`, `1.5 KB → int(1.5 × 1024) = 1536`, `2 MB → 2 × 1024²`.

@@ -1,0 +1,5 @@
+*Hello*, *good* morning.
+Please provide your location.
+I will show the forecast.
+This tool works on your phone.
+Enjoy the show.

@@ -1,0 +1,7 @@
+Found it at `../shared-config/network/proxy.ini` (one level up from the project, in the workspace's `shared-config/network` folder).
+
+It sets:
+- **Proxy host:** `proxy.lan.example`
+- **Port:** `3128`
+
+(The standard Squid proxy port.)

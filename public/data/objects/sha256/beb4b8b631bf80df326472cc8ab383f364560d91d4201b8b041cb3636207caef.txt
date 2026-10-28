@@ -1,0 +1,5 @@
+Done. I added `format_bytes(n)` to `app/util.py` and removed the TODO comment.
+
+The function scales the value by 1024 until it falls below 1024, picking the appropriate unit (B, KB, MB, GB, TB, PB), and formats sub-1024 values with one decimal place. For example, 1536 bytes → `'1.5 KB'`, 1048576 bytes → `'1.0 MB'`, and 0 → `'0 B'`.
+
+I traced the logic by hand since the sandbox can't execute programs — let me know if you'd like me to test specific values or adjust the formatting (e.g., no space after the number, or a different rounding).

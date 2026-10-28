@@ -1,0 +1,1 @@
+["We need to make 24 using numbers 10,4,9,7 each once, using + - * /. Find expression equals 24.\n\nTry combinations.\n\nWe can try (10+4) + (9-7) = 14+2=16 no.\n\n(10*4) - (9+7)=40-16=24! Yes uses each number once: 10*4 - (9+7) = 24. Use parentheses.\n\nExpression: 10*4-(9+7)\n\nThat's valid.\n\nReturn in <answer>10*4-(9+7)</answer>."]

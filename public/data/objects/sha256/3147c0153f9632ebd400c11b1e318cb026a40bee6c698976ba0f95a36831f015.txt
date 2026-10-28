@@ -1,0 +1,13 @@
+In the file `../app/net.py`, the `fetch` function uses `time.sleep(2 ** attempt)` to sleep between retries. The `attempt` variable starts at 0 and increments with each retry.
+
+Here’s the breakdown of the total sleep time before giving up:
+- **First attempt (attempt=0):** `2 ** 0 = 1` second
+- **Second attempt (attempt=1):** `2 ** 1 = 2` seconds
+- **Third attempt (attempt=2):** `2 ** 2 = 4` seconds
+- **Fourth attempt (attempt=3):** `2 ** 3 = 8` seconds
+- **Fifth attempt (attempt=4):** `2 ** 4 = 16` seconds
+
+The total sleep time is the sum of these intervals:
+**1 + 2 + 4 + 8 + 16 = 31 seconds**
+
+So, the `fetch` function spends a total of **31 seconds** sleeping before it gives up.

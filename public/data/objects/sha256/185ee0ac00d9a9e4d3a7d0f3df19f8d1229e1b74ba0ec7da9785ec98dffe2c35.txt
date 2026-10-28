@@ -1,0 +1,7 @@
+Done. I created a `README.md` that documents the `tinydl` CLI with all its options:
+
+- **Positional**: `url` — the URL to download
+- **`-o` / `--output`** — write to a file instead of stdout
+- **`-q` / `--quiet`** — suppress progress output on stderr
+
+The README also includes usage examples and a description of what the tool does.
