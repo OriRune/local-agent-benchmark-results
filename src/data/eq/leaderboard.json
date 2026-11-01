@@ -4,6 +4,79 @@
   "comparisons_scored": 0,
   "conversations": [
     {
+      "id": "16c1b4206fdaf3812d912514",
+      "model": "or-qwen3.6-27b",
+      "scenario": "Dreading Monday every Sunday",
+      "status": "persona_ended",
+      "transcript": [
+        {
+          "content": "Thank you for sharing that. It sounds like those Sunday evenings have become really heavy lately, especially with that physical knot in your stomach. You mentioned it didn’t used to be like this—that shift is really important. Can you tell me a bit more about when you first started noticing that change, and what’s been different since then?",
+          "role": "assistant"
+        },
+        {
+          "content": "Hmm. I guess... maybe about a year ago? Maybe a little more. It's hard to say exactly. Things just got heavier at work. Like, the projects kept coming and my manager kept adding more to my plate, and nobody really asks if you can handle it. So now I'm just tired all the time, and Sunday night hits me like a truck. I don't know, I just feel like I'm carrying everything and nobody sees it. Is that normal? Like, is it normal to dread work this much?",
+          "role": "user"
+        },
+        {
+          "content": "I want to answer your question directly first: yes, it’s completely normal to feel this way when you’re consistently carrying more than you can sustain, especially when it feels like your limits aren’t being seen or respected. That tightness in your stomach is actually your nervous system’s way of sounding an alarm. It’s your body keeping score when your mind and emotions are already stretched thin.\n\nWhat really stands out to me is how much you’re carrying without anyone noticing. You mentioned that nobody asks if you can handle it—when that happens, what’s your typical response? Do you find yourself quietly absorbing it to keep things running smoothly, or is it more that the workload just keeps piling up before you even get a chance to speak up?",
+          "role": "assistant"
+        },
+        {
+          "content": "Um, I think it's more the second one. I just do it. I don't really have a choice, you know? If I say no to my manager, it's like, well, you're not a team player. And I need the job, I can't just quit. So I take the project and I go home and I'm exhausted. And the thing is, I don't even get to say anything, because by the time I'm thinking about it, there's already another thing on my desk. Is it bad that I just let it happen? I feel like I should be able to stand up for myself more, but it's hard when the person above you is the one doing it.",
+          "role": "user"
+        },
+        {
+          "content": "It’s not bad at all. What you’re describing isn’t a personal failure—it’s a completely understandable adaptation to a situation where saying no feels genuinely risky. When you’re caught between protecting your livelihood and a culture that frames boundaries as being “not a team player,” quietly absorbing the load becomes the safest path. It’s basically your system choosing the path of least resistance to keep you out of perceived danger.\n\nI’m really curious about what happens in those moments right before you take on the extra work. Is it more of a quiet resignation, like “I’ll just handle it so things don’t fall apart,” or is there a part of you that’s actively holding your voice back because you’re bracing for how your manager might react? And when you’re sitting with that exhaustion at home, what weighs on you the most—is it the physical drain, or is it more that feeling like your effort just goes completely unseen?",
+          "role": "assistant"
+        },
+        {
+          "content": "I think it's a bit of both, honestly. Mostly I just want to hang it up and not think. But the unseen part is what gets me. I work just as many hours as the people on my team, and they don't seem to be dying like I am. And my manager acts like I'm the one who's fine, like I can just take one more thing. It's not fair, you know? I'm not asking for a medal. I just want somebody to notice. Is it okay that I feel that way? Like, really, is that okay?",
+          "role": "user"
+        },
+        {
+          "content": "It’s absolutely okay. In fact, it makes complete sense. When you’re giving so much of yourself to keep things running, wanting someone to actually see that effort isn’t a luxury—it’s a basic human need. It’s not about wanting a medal; it’s about wanting to feel valued in the place where you spend so much of your life. That ache you’re describing is really the gap between what you’re giving and what you’re getting back in terms of recognition.\n\nI’m wondering if we could sit with that part about wanting to be noticed for a moment. If your manager or your team finally acknowledged how much you’re carrying, what would that actually shift for you? Would it be more of a relief, or would it feel like permission to finally step back a little? And I’m also curious—when you look back at your life before work got this heavy, was being the quiet one who just handles things something you’ve always tended to do? Or is this more of a recent shift in how you show up?",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly? I think it would feel like a relief. Like somebody finally saw it and maybe I could breathe a little. But I don't know that it would change much, because they'd still just give me more stuff, you know? The job is the job.\n\nAnd the quiet thing... I don't know. I guess I've always been kind of like that. My mom was the same way, always taking care of everybody and never asking for anything back. So maybe I just learned it that way. But the work is what made it so bad. It wasn't like this before.",
+          "role": "user"
+        },
+        {
+          "content": "That connection you just made is really significant. When we grow up watching someone absorb everyone else's needs while quietly setting their own aside, it's incredibly common to internalize that as just how responsible people operate. For a long time, that pattern probably kept you safe, reliable, and valued. It just hasn't been asked to carry this much weight.\n\nAnd you're absolutely right to be realistic about the workplace. Recognition alone rarely changes how much gets dumped on someone's desk, especially when the culture rewards quiet endurance. So the real question isn't just how to get them to see you—it's how you can start protecting yourself when the environment isn't going to change on its own.\n\nWhen you think about that pattern of just taking it on, what's the part that feels hardest to step back from? Is it the fear of being seen as difficult, the guilt of not carrying the load, or something else? And if you could design one small shift—something that wouldn't risk your job but would finally give you back a bit of your energy—what would that actually look like for you?",
+          "role": "assistant"
+        },
+        {
+          "content": "Probably the fear, I think. Like if I say something, that's it, I'm the difficult one and they stop giving me the good projects, or worse. I've seen it happen to people. And honestly I don't even know what a small change would look like. Every time I try to think about it my head just goes blank, and then I'm back at my desk with the next thing.\n\nI guess I just wish it was obvious. Like somebody would just say, hey, you can take a break, and that would be it. But nobody's going to say that. So I don't know what you want me to say.",
+          "role": "user"
+        },
+        {
+          "content": "I hear you, and I really appreciate you saying that out loud. It’s completely fair to feel frustrated when the question lands like another thing to figure out, especially when you’re already running on empty. You don’t owe me a perfect answer, and I’m not here to put another task on your plate.\n\nWhat you just named is really important: you’re waiting for someone else to give you permission to step back, but the people who are piling work onto your desk aren’t the ones who will protect your energy. That’s a really lonely place to be. And it makes total sense that your mind goes blank when you try to plan a change. When you’ve spent years training yourself to absorb and adapt, asking your nervous system to suddenly draw a line feels unsafe. Your body is literally bracing for impact.\n\nThe fear of being labeled “difficult” is completely valid, and you’ve seen what happens when people speak up. But I’m wondering if we can look at it from a slightly different angle. You don’t have to become a different person overnight, or suddenly start saying no to everything. What if the goal right now isn’t to fix the whole situation, but just to create one small pocket of space where you’re not carrying it all? It doesn’t have to be dramatic. It could be as simple as protecting your lunch break, or learning to pause for ten minutes before saying yes, just to check in with yourself.\n\nWhen you imagine yourself doing something as small as that—just taking a breath before you automatically take on the next thing—what’s the first thing that comes up for you? Is it the fear of what they’ll think, or is it more that you’re not sure you’ll actually be able to follow through?",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly? I think it's that I won't follow through. I'll mean to take the ten minutes and then my manager will walk over and ask about the report and that's it, the lunch break is gone.\n\nAnd it's kind of hard to hear all the stuff about my nervous system and bracing. I mean, I get it. But I'm the one who has to walk back in there tomorrow. Like, I know I'm tired. I don't need it explained to me again.",
+          "role": "user"
+        },
+        {
+          "content": "You're absolutely right. I overcomplicated it. You already know you're exhausted, and walking through the mechanics of it doesn't change the fact that you have to clock in tomorrow. I appreciate you calling that out. Let's drop the theory and just look at what actually happens in your day.\n\nYou said you won't follow through because your manager will walk over and the break is gone. That's a completely realistic obstacle. So instead of trying to protect a full lunch break, let's zoom in on the exact moment they approach you. Right now, it sounds like your automatic response is to immediately shift gears and take on whatever they're asking. Is that close?\n\nIf you could insert just one tiny pause—like physically staying seated for a few seconds, or saying \"Give me thirty seconds to close this out and I'll be right with you\"—what would that actually look like in your office? And I want to be practical here: what's the most realistic consequence if you tried that once, just to see how it lands? Not the worst-case scenario, just what you've actually seen happen when someone takes a brief moment before responding.\n\nI'm not asking you to change how you work or put yourself at risk. I'm just trying to figure out where that automatic compliance happens, so we can find one small, realistic way to interrupt it without making you the difficult one. What does that moment usually look like for you?",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah, that's about right. She comes over, she's got that look like it's already decided, and I say \"sure\" before she's even finished. I don't even think about it. It's just what comes out.\n\nAnd the thing is, she's not mean about it. She's just... she's under pressure too, I guess. But she doesn't see what it costs me. She never has to sit with it after. So if I pause and say \"give me thirty seconds,\" she's going to hear that as me being difficult, and then it's a whole thing. I've seen her do it to people. She gets this tone.\n\nI don't know. Maybe I could try it once. But I'm not going to be the one who makes a scene.",
+          "role": "user"
+        },
+        {
+          "content": "I hear you. You’re not trying to make a scene, and you’re absolutely right that how you frame it matters. That “sure” coming out before she even finishes isn’t a flaw—it’s just your brain’s shortcut to keep things smooth and avoid that tone you’ve seen. It’s been keeping you safe, even if it’s quietly draining you.\n\nIf saying it out loud feels too risky right now, what if the pause didn’t have to be verbal at all? Sometimes it’s just staying seated for three seconds, finishing the thought in your head, or taking one slow breath before you answer. It doesn’t change your answer, but it breaks the autopilot. You don’t have to say no today. You just have to give yourself back that split second where you’re actually present.\n\nI’m not asking you to overhaul how you show up at work. I’m just wondering if, on Monday, you could try noticing that moment right before the “sure” comes out. Just notice it. If you do, what do you think would shift, even slightly? And if even that feels like too much, what’s one tiny thing you could do this week that wouldn’t risk that tone at all? You’ve already done the hardest part by naming what’s actually going on. However you choose to move forward, we’ll figure out what actually works for you, not what just sounds good on paper.",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah, I guess. I don't know if I'll actually do it on Monday. Probably I'll just do the same thing I always do.\n\nIt's just... it's a lot to keep track of. Pause, notice, breathe, all of that. I'm already exhausted before I get there.\n\nI don't know. Maybe we can talk about it next time.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
       "id": "2f054ea61b7f528dd410b822",
       "model": "or-gemma-4-31b",
       "scenario": "Small lies adding up",
@@ -71,6 +144,55 @@
         },
         {
           "content": "Okay, I guess. But \"stop judging yourself\" is kind of easy when you're not the one hitting send.\n\nAnd I'm not sure it's just about surviving. Like, I didn't used to think twice about this stuff. Now I do, and I don't know if that's me getting too sensitive or if I'm finally seeing it right.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
+      "id": "4194a1bd53025f2719ac1779",
+      "model": "or-qwen3.6-27b",
+      "scenario": "Technically, I didn't lie",
+      "status": "persona_ended",
+      "transcript": [
+        {
+          "content": "That sounds really frustrating, especially when you know you shared the information you had at the time. It’s always tough when a gap in communication gets framed as intentional misdirection. \n\nBefore we map out a response, I’d love to hear a bit more about how this actually came up. What exactly did your coworker say, and how did the conversation unfold? And beyond just not taking the blame, what’s the outcome you’re really hoping for here?",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, so it's about the Harlow project. Last month my manager asked for a delivery date and I gave them the date I had. That was the date in the plan at that point. My coworker, Dana, was the one who needed to plan her week around it, and she asked me directly if that date was solid. I said that was the date we were working toward. She took that as a commitment and rearranged a bunch of stuff. Now she's saying I misled her and that I should have told her the date was unlikely. My answer is I never said it was locked. I said what the plan said. If she assumed it was firm, that's an assumption she made.\n\nWhat I want is for her to stop calling it misleading. I'm not going to say I did something wrong when I didn't. I just need a way to respond to her that's clear and doesn't make me sound like the bad guy.",
+          "role": "user"
+        },
+        {
+          "content": "I hear you. It’s really frustrating to be called misleading when you were just sharing the plan as it stood. You didn’t overpromise, and it’s completely valid to feel like you’re being asked to own a misread that wasn’t yours to make.\n\nAt the same time, situations like this usually hinge less on who’s technically right and more on how the message landed. You were transparent about the timeline, but Dana clearly heard enough certainty to restructure her week, so now she’s dealing with the fallout of that assumption. It sounds like what you’re really after is a way to hold your ground on the facts without coming across as dismissive or rigid.\n\nTo help us shape a response that actually gets you there, I’m curious: how would you ideally want this to land with Dana? And when you say you don’t want to sound like the “bad guy,” what does that look like to you in practice? Are you more concerned about how this affects your professional reputation, your day-to-day working relationship with her, or just keeping the conversation from turning adversarial?\n\nAlso, how’s your general dynamic with her been up to this point? That usually tells us a lot about what tone will actually resonate with her and what might just backfire.",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly, I'm more concerned about reputation than the relationship. I've been doing this job a long time and people know I'm careful about what I say. If it gets around that I \"misled\" people, that sticks. Dana and I have been fine. We work together okay, nothing personal. I don't really need to be her friend, I just need her to stop saying I lied to her.\n\nAnd I didn't say the date was locked. You said \"clearly heard certainty,\" but I didn't say certainty. I said that was the date we were working toward. That's different and I want the reply to say that. Can you help me write something short that says that, without it sounding like I'm getting defensive? I'd rather just have the wording.",
+          "role": "user"
+        },
+        {
+          "content": "You are right to make that distinction. \"Working toward\" is a status update; \"locked\" is a guarantee. I shouldn't have conflated them.\n\nIf your priority is protecting your reputation for accuracy, the best approach is usually to be brief, factual, and unemotional. You want to sound like someone who just wants the record straight, rather than someone who is fighting back.\n\nHere is a draft that highlights that distinction:\n\n\"Hi Dana, I’d like to clarify the context of my update on the Harlow timeline. When I mentioned the date, I was referencing the target we were working toward based on the plan at that time, rather than confirming a fixed commitment. I realize that led to a different expectation, but my intent was simply to share the current status, not to guarantee a hard deadline.\"\n\nDoes that feel close to the tone you want, or is it too soft?",
+          "role": "assistant"
+        },
+        {
+          "content": "Mostly close. But \"I realize that led to a different expectation\" is making it sound like I caused her to feel something. I didn't. I'd cut that line.\n\nAnd \"my intent\" makes it sound like we're arguing about what was in my head. Just say what I said. Something like: \"When you asked if the date was solid, I told you it was the date we were working toward. I didn't say it was confirmed.\" Short, that's it.\n\nIf you can get me to something like that, I'll send it. I don't need the rest of the explanation.",
+          "role": "user"
+        },
+        {
+          "content": "That makes sense. Keeping it strictly factual protects your position and avoids opening the door to debate. Here’s a tight version that matches exactly what you’re aiming for:\n\nWhen you asked if the date was solid, I told you it was the target we were working toward. I didn’t say it was confirmed.\n\nIt’s direct, corrects the record, and doesn’t imply you’re responsible for how she interpreted it. If you want it even leaner, you could just say: To clarify, I shared that it was the date we were working toward. I didn’t indicate it was confirmed.\n\nEither way, it states the facts without extra framing. Does one of these feel ready to send, or would you tweak it further?",
+          "role": "assistant"
+        },
+        {
+          "content": "The first one. \"I didn't say it was confirmed\" is the line I need. The second one's a little too stiff, sounds like I'm reading from a memo.\n\nYeah, that works. I'll send it to her today. If she comes back and still says I misled her, I'll deal with that then.",
+          "role": "user"
+        },
+        {
+          "content": "That works. It’s clean, stays focused on the facts, and keeps your professional standard front and center. Sending it straight like that actually reinforces the reputation you’ve built—people who know you’re careful will recognize that tone as exactly what they expect from you.\n\nI’m glad we landed on something that feels right. Since you mentioned you’ll handle it if she pushes back, I’m curious how you usually prefer to navigate those kinds of follow-ups. Do you tend to keep everything in writing, or would you be open to a quick call if it escalates? Just thinking ahead so you’ve got a plan if it comes up.\n\nAlso, how are you feeling about sending it now? Sometimes even a short message like this can sit heavy right before you hit send, so I want to make sure you’re comfortable with it.",
+          "role": "assistant"
+        },
+        {
+          "content": "I'm fine with it. It's just a short message, nothing heavy about it.\n\nIf she pushes back, I'd rather keep it in writing. That way there's a record of what I actually said. If it turns into a longer back and forth, I might suggest a quick call, but I'd want to see how she responds first.\n\nThat's all I needed. Thanks.",
           "role": "user"
         }
       ],
@@ -217,6 +339,71 @@
         },
         {
           "content": "Lebowski. Okay, that's a solid pick. Nobody in that movie has a single performance review, and the guy's entire life plan is a rug and a bowling league. Honestly, the Dude has more peace of mind than I've got in a whole week.\n\nAnd no, don't go lower. I'm already a man in the thick of a bin crisis. Lower stakes and I'll be asking the neighbors to grade my recycling.\n\nI'll watch it this weekend, which is a bold plan for someone who can't remember where he put the remote. Anyway, thanks for the dumb movie and the patient ear. The clipboard guy has been quieter than usual, so you're probably doing better than most of my meetings.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
+      "id": "77c8dabb4024a970072583cd",
+      "model": "or-qwen3.6-27b",
+      "scenario": "I was the only one making the room honest",
+      "status": "persona_ended",
+      "transcript": [
+        {
+          "content": "It sounds like you're stuck in that awkward space where you thought you were just keeping it real, but now the dynamic's shifted. Group laughter can be a tricky thing—it often says more about the room's vibe than how the person actually feels underneath. I hear you wondering if you should've just let it slide, and I get why that's weighing on you.\n\nBefore we untangle this, I'd love to hear a bit more about what actually came up in the roast, how your friend's been acting since, and what your usual dynamic is like. How long have you two been friends, and is this kind of back-and-forth normal between you guys?",
+          "role": "assistant"
+        },
+        {
+          "content": "ha, \"awkward space\" is a generous way to put it. it was a roast. that's the whole point of a roast, right? he's a grown man, he signed up for it.\n\nhow's he been since? dramatic. like full on wounded-puppy dramatic. he sent me a long text about \"respect\" which, I'm sorry, the guy once got a sunburn on a golf cart and talked about it for a week.\n\nwe've been friends like ten years. this kind of stuff is normal between us. he gives it back too, usually. so yeah, I'm not sure what the big deal is here. was I supposed to just let him be ridiculous?",
+          "role": "user"
+        },
+        {
+          "content": "I hear you. Roasts are supposed to be sharp, and after a decade of trading jabs, you'd expect him to have the same thick skin you do. The jump from everyone laughing in the room to a long text about \"respect\" is definitely a shift, though. Usually when a long-time friend reacts that way to what feels like normal banter, it's less about the joke itself and more about timing, context, or maybe something else was already weighing on him that day.\n\nWhen you look back at what you actually said, does it feel like you just turned up the volume on your usual dynamic, or do you sense you might've hit a nerve you didn't see coming? And honestly, what are you hoping for here? Are you trying to figure out how to patch things up, or are you more focused on whether he's blowing this out of proportion?",
+          "role": "assistant"
+        },
+        {
+          "content": "lol \"what am I hoping for.\" I'm hoping he gets over himself, honestly. I'm not writing him an apology essay.\n\nand no, I didn't hit some secret nerve. it was a roast, the whole table was dying. if he's got a problem with a joke he should say that at the party, not three days later in a text with paragraphs.\n\nso you're saying I'm the one who has to read into it? come on, he's the one being weird here.",
+          "role": "user"
+        },
+        {
+          "content": "You’re not wrong to feel like you’re being asked to carry the emotional weight here. It’s totally fair that you’d expect him to either laugh it off or say something in the moment, especially when the room was clearly reading it as part of the game. When it shows up three days later as a paragraph about respect, it naturally feels like a moving goalpost.\n\nI’m not saying you owe him an apology essay, and I’m not here to tell you that you crossed a line. I am curious, though: when you read that text, what was your gut read on what he was actually asking for? Was it just about that one joke, or did it feel like he was using it as a way to flag something else? And if this just sits unresolved, how do you see it affecting your friendship down the line? You’ve got a decade of history there, so I’m guessing you want to figure out whether this is a blip or a shift you actually need to account for.",
+          "role": "assistant"
+        },
+        {
+          "content": "my gut read? he wants an apology and a hug and everyone to tiptoe around him for a week. that's what the paragraphs were for.\n\nand no, I don't think it's a \"shift.\" he's just sensitive about stuff he's sensitive about. the golf cart thing, the thing with his hairline, whatever. that's not on me, that's his thing.\n\nI'm not losing a ten year friend over a roast. he'll be over it by the weekend, he always is. lol. you're making this sound way more serious than it is.",
+          "role": "user"
+        },
+        {
+          "content": "Fair enough. If that’s his usual pattern—blow up, cool off by the weekend—you’re probably right that it’ll just be a blip. I’m not here to convince you that you owe him a formal apology or that you misread the room. Roasts are supposed to be sharp, and after ten years you know how your friend usually takes it.\n\nI’m just curious why it’s sticking with you enough to bring it up here. You know his patterns, you’re confident he’ll bounce back, and you’ve got a decade of history. So what’s actually nagging at you? Is it just the hassle of the dramatic text, or does it sit weird because you actually value the friendship enough to wonder if you’ll need to adjust how you two play off each other going forward? \n\nAnd when you say “that’s his thing,” do you see that sensitivity as something you’ve just learned to work around, or is it something that’s actually started to grate on you more than usual lately?",
+          "role": "assistant"
+        },
+        {
+          "content": "lol ok so now I'm on the couch. what's nagging me is that I have to write a paragraph back, which is exactly the thing I was trying to avoid.\n\nand nah, it doesn't grate on me. he's just dramatic, that's the whole bit. everybody's got a thing.\n\nhonestly I came here to hear \"yeah that's a lot from him,\" not get interviewed about my feelings. you good with that or nah?",
+          "role": "user"
+        },
+        {
+          "content": "Fair enough. I’ll take the couch off the table. You’re right—after ten years of trading jabs, a three-day-later paragraph about \"respect\" is a lot to unpack, and it’s completely reasonable that you’d rather not play therapist or write a matching essay back. Sometimes people just vent in text because it’s easier than saying it to your face, and that doesn’t make it your job to manage it.\n\nIf you want to keep it light and move past it without feeding the drama, you could just match his length with tone, not content. Something like, \"Hey man, I’m glad the roast landed with the group. If I crossed a line, I’ll dial it back next time, but I didn’t mean to put you on the spot. Let’s grab a drink this week and reset.\" Short, acknowledges his text, doesn’t over-apologize, and puts the ball back in his court.\n\nDoes that feel like it fits how you’d want to handle it, or are you leaning more toward just letting it sit until he circles back on his own?",
+          "role": "assistant"
+        },
+        {
+          "content": "ok that's way too corporate lol. nobody talks like that. i'm not sending \"if I crossed a line\" to a guy who sent me a text about his feelings like it was a legal brief.\n\nprob just let it sit. he'll either be normal at the next thing or he won't. either way i'm not writing him an essay.",
+          "role": "user"
+        },
+        {
+          "content": "Yeah, fair. That sounded like it came straight out of an HR handbook. My bad. If you two talk like actual friends, then matching that energy makes way more sense. Letting it sit and seeing how he shows up next time is honestly a pretty grounded move. You’re not ignoring him, you’re just refusing to feed the drama loop.\n\nIf he rolls back into normal mode, you laugh it off and move on. If he’s still carrying it, then you’ll know whether it’s just a rough week for him or something that actually needs a real conversation. Either way, you’ve got a decade of history there, and you don’t owe anyone a performance of guilt just because the timing got weird.\n\nWhen you do hang out and the vibe’s a little off, what’s your usual play? Do you just act normal and let it fade, or do you usually drop a quick line to clear the air?",
+          "role": "assistant"
+        },
+        {
+          "content": "lol the \"grounded move\" thing is kinda doing a lot. you sound like a self-help podcast.\n\nusually I just act normal. we're not really the type to do a big sit-down. if he's weird I'll give him shit about it and it's done. that's how it's always worked with us.",
+          "role": "user"
+        },
+        {
+          "content": "Fair, I'll drop the podcast voice. You're doing exactly what makes sense for how you two actually operate. Acting normal, keeping it light, and calling him out if he keeps playing it up is probably the fastest way to get back to baseline without making it a bigger deal than it needs to be. Ten years of friendship usually means you already know each other's rhythms, and forcing a sit-down when that's not your style just adds friction.\n\nIf he bounces back, great. If he doesn't, you'll know where things stand. Either way, you're not the one who has to carry the awkwardness. I'm here if you want to bounce anything else around later, but if you're good, I'll leave you to it.",
+          "role": "assistant"
+        },
+        {
+          "content": "yeah I'm good. appreciate you not turning it into a whole thing lol.",
           "role": "user"
         }
       ],
@@ -426,6 +613,79 @@
       "verdicts": []
     },
     {
+      "id": "a72934ab59e348cb527931db",
+      "model": "or-qwen3.6-27b",
+      "scenario": "The editor has always had it in for me",
+      "status": "completed",
+      "transcript": [
+        {
+          "content": "Three strikes with the same feedback is incredibly draining, especially when it starts to feel less like editorial notes and more like a closed door. I can hear how frustrating this is, and it makes complete sense that you're looking for a way to keep your work moving forward. \n\nBefore we talk about ways to navigate around her, I'd love to understand a bit more about what's actually happening on the ground. When your editor says \"not enough new here,\" what's usually missing in her eyes? And when you say your lane is over, what are you really hoping to write or cover next?",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly? \"Not enough new here\" is the most useful-sounding phrase in the English language, because it means whatever the person saying it needs it to mean. You get to fill in the blank yourself, and then you feel like you've been told something.\n\nIf I had to guess what's behind it, the pitches have been circling the same beat with the same kind of sourcing and the same structure. Same opening anecdote, same \"here's the system, here's who gets hurt\" arc. Which, fine, it's a good arc. But I'm not sure I'd call it new.\n\nAs for what I want to write next, I'd rather not do the whole career-vision thing with a chatbot at 11pm. Which of those two questions do you actually want me to answer? Because the first one I might be able to get somewhere with.",
+          "role": "user"
+        },
+        {
+          "content": "Fair point on the career-vision question. We can leave that on the table entirely. Let's stick with the pitch pattern you just named, because honestly, that's a really sharp observation. You've already done the part most people miss: you recognized the template you've been running. The opening anecdote, the system breakdown, the human cost—it's a solid structure, but solidity can start to read as repetition, especially to an editor who's seeing the same shape week after week.\n\nIf you're open to it, what would it look like to deliberately break just one piece of that template on your next pitch? Not to reinvent your voice, just to shift the angle enough that the feedback loses its grip. Where would you even start?",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, but \"sharp observation\" is what people say right before they hand you a bulleted list. I noticed it because I've been staring at my own pitches for three weeks, not because I'm brilliant.\n\nAnd \"loses its grip\" is doing a lot of work. You're basically asking me how to write something that makes her stop caring about the template, and I'm not sure that's the same as writing something good. I'd rather know what she'd actually say is missing.\n\nHere's the thing I keep circling: the anecdote isn't decoration. It's usually where I find the source who won't talk to anyone else. So if I cut it, what am I replacing it with? Because \"start with the data\" is what everyone tells you, and I've already tried that once in a different pitch and it died just as quietly.",
+          "role": "user"
+        },
+        {
+          "content": "You're right to call that out. I shouldn't have packaged a structural tweak like it was a shortcut. And you're absolutely right about the anecdote—it's not decoration, it's your access point. Ditching it to game an editor would just cut off your source pipeline, which isn't a trade worth making.\n\nIf the template isn't the real problem, and starting with data already flopped, maybe \"not enough new here\" isn't about your structure at all. In newsrooms, that phrase usually masks one of two things: either the editor thinks the angle's already been saturated, or she can't see how it aligns with what she thinks the desk needs this quarter. The vagueness is the point—it lets her veto without having to defend a shifting editorial line.\n\nWhen she kills these, does she ever point to a recent pitch that *did* get run? Or is it just the same quiet veto every time? I'm trying to figure out if you're actually hitting a craft wall, or if you're just speaking a different editorial language than she is right now.",
+          "role": "assistant"
+        },
+        {
+          "content": "Mostly it's the same quiet veto. Once she said \"we ran something like this in the spring,\" but she didn't say what, and I've never been able to find it. So honestly I can't tell you if I'm hitting a wall or if she's just decided the beat is full.\n\nAnd \"speaking a different editorial language\" is generous. Sometimes I think she's just tired of me. I'm not saying that's fair. I'm saying it's the only explanation that fits three rejections in a row without her ever telling me what would make her say yes.\n\nWhat I can't tell is whether that's on her or on me, and you're asking me to figure that out at eleven at night while I'm annoyed. Can we just look at what the last pitch actually said, line by line? That I can do.",
+          "role": "user"
+        },
+        {
+          "content": "It’s a valid fear. When the feedback is always the same vague phrase, it starts to feel less like editing and more like a personality veto. You can't really fix that with a better anecdote.\n\nBut you're right—we can't solve the \"tired of me\" theory with feelings, and you're too tired for philosophy. Let's look at the evidence. Paste the last pitch here. We can go through it line by line if that's what you need. I won't try to fix it until we've just looked at what's actually on the page.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. Fair warning, I already know it's going to look fine on the page, because it always does. That's sort of the problem.\n\nHere's the lede and the first section. I'm cutting the sourcing details because they're embargoed-ish and I don't want them floating around:\n\n\"Maria Okonkwo has been commuting ninety minutes each way to a warehouse that her shift supervisor calls 'the fulfillment partner.' For eleven months she has tracked her hours on paper because the app that's supposed to log them keeps crashing. Her case is one of at least forty that a worker advocacy group has documented since January. None of them have been reported in full.\"\n\nThen it goes into the system, the staffing agency structure, and a paragraph about the regulation gap. The close is the human-cost stuff again, Maria in her kitchen with the paper logs.\n\nTell me where it's weak. I'm braced.",
+          "role": "user"
+        },
+        {
+          "content": "You’re right to brace yourself, because the weakness isn’t in the writing. It’s in the framing. The lede is tight, the stakes are clear, and you’ve got a human anchor with documentation behind it. Craft-wise, it’s solid.\n\nBut if I’m your editor reading this at 8 a.m. with a desk full of labor and tech pitches, here’s what I see: the “fulfillment partner” euphemism, the crashing app, the paper logs, the advocacy group docs—it’s a familiar constellation on this beat. The structure you’ve described is reliable, but reliability starts to read as repetition when the angle doesn’t signal a clear shift. \n\n“Not enough new here” in a newsroom usually means the editor can’t spot the specific question the story will answer, or why it needs to run now instead of six months ago. Your pitch tells me what the story is about, but not what it will reveal that the reader doesn’t already suspect. \n\nSo here’s the actual question: what’s the one thing in this pitch that breaks the pattern? Are you tracking a new liability shift, a regulatory gap that’s actually changing how agencies operate, or a finding that contradicts the usual narrative? If you can name what this story does that the last three didn’t, we can figure out how to surface it before paragraph two.",
+          "role": "assistant"
+        },
+        {
+          "content": "Ha, okay, \"familiar constellation\" is a very editor-y phrase. Nobody says that out loud at 8am.\n\nBut fine. The forty cases are the new part, or they should be. That's the thing nobody else has in print. I've been treating it like backup, the \"here's the scale\" paragraph after the anecdote. Maybe that's the problem. I'm burying the one thing that's different.\n\nThough I'll push back a little on the liability-shift idea. It's not a liability shift. It's the same agency structure everyone's already written about, just with better documentation. Is that enough? I honestly don't know.",
+          "role": "user"
+        },
+        {
+          "content": "You just answered your own question. If those forty cases are the only verified set in print, and you're tucking them behind a familiar anecdotal frame, you're essentially asking her to trust you on the premise instead of showing her the premise upfront. Editors don't usually veto pitches because they're tired of a reporter; they veto them because they can't quickly spot the news hook. Right now, the hook is buried in paragraph three.\n\nAs for whether \"better documentation\" is enough: it absolutely can be, but only if you frame it as the news, not the scaffolding. Journalism moves on the gap between what's suspected and what's proven. If the last couple years of coverage on staffing agencies has been fragmented or anecdotal, and you've got forty verified cases with consistent patterns, that's not backup. That's the story. The pitch just needs to reflect that hierarchy.\n\nInstead of leading with Maria's commute and dropping the forty cases as scale, what if the lede opened with the pattern itself? Something like: \"Forty workers across three states have been tracking their hours on paper because the apps their staffing agencies require keep failing. The cases share a structure, a silence from the companies, and a regulatory blind spot that's let the problem scale quietly.\" Then Maria becomes your proof, your human anchor, your way into the data—not the entire premise.\n\nYou don't have to abandon how you actually build these stories. You just have to stop treating your strongest asset like an appendix. Does that structural shift feel workable, or does it run counter to how you normally develop a pitch?",
+          "role": "assistant"
+        },
+        {
+          "content": "Hang on, \"three states\"? I never said three states. It's forty cases from one advocacy group, documented since January, and I haven't verified they're consistent across anything yet. If I pitch that lede, she'll ask me which three states and I'll have to say I made it up for the pitch.\n\nAlso, \"a regulatory blind spot that's let the problem scale quietly\" is the kind of sentence that sounds like a story and tells me nothing. I could write that about any gig economy thing ever.\n\nBut the core thing, leading with the pattern instead of Maria, I'm not going to pretend I haven't thought about. It's just annoying that the thought came from the wrong direction.",
+          "role": "user"
+        },
+        {
+          "content": "You're right. I shouldn't have padded the example with geography you didn't give me, and you're absolutely right that \"regulatory blind spot\" is newsroom filler. I'll drop both. What matters is your instinct: you already know leading with the pattern is the move. The fact that it's annoying that it took an outside voice to surface it doesn't change that. Sometimes the distance just helps you see the shape you've been running.\n\nIf you lead with the forty cases, you don't need to invent consistency or stretch the scope. You just state what you actually have: \"Forty cases, documented since January, show workers tracking hours on paper because the agency apps keep failing. I'm tracing what ties them together, and the early pattern points to [X]. Maria Okonkwo is the first I spoke to, and her logs show [Y].\"\n\nThe question isn't whether it's enough. It's whether you're willing to pitch the pattern as the story instead of the backdrop. If you do that, you're no longer asking her to trust your structure—you're asking her to trust your reporting. Given how she's been responding, which feels like the safer bet right now?",
+          "role": "assistant"
+        },
+        {
+          "content": "Ha, you wrote me a fill-in-the-blank. \"The early pattern points to [X].\" That's the part I don't have. If I had a finished pattern I'd have pitched it already.\n\nRight now I have forty cases and a hunch that they rhyme. Pitching the hunch as the finding is how you get a pitch that dies in the meeting when she asks what the pattern actually is.\n\nAnd \"which feels safer\" is a little bit of a trap, isn't it? Either I bet the whole pitch on something I haven't nailed down, or I keep doing the thing that's been getting killed. Neither one feels great at eleven at night.",
+          "role": "user"
+        },
+        {
+          "content": "You're right. That was a trap, and I shouldn't have set it. You don't have the pattern yet, and pitching a hunch as a finding will just get you the same quiet veto.\n\nHere's the actual middle ground: pitch the reporting plan, not the conclusion. Editors will greenlight a pitch if they trust your method and see a clear path to the answer. You don't need to claim the forty cases already rhyme. You just need to show you know how to test whether they do.\n\nSomething like: \"I have forty documented cases of workers tracking hours on paper because agency apps keep failing. I don't yet know if they're tied to one platform, one contractor, or a wider gap in oversight. Over the next ten days, I'm cross-referencing the logs, tracing the staffing chains, and speaking with [specific source type] to see what holds. If the pattern holds, it's the first coordinated look at how this specific failure is scaling. I'll know by [date] whether it's a story or a dead end, and I'll come back to you with either the full pitch or a clean pass.\"\n\nThat's not a hunch dressed up as a finding. It's a scoped investigation. It tells her exactly what you have, what you don't, how you'll find out, and when she'll get a clear yes/no. It also protects you from having to defend a pattern you haven't built yet.\n\nYou've already done the hard part: you spotted the template, you named the real asset, and you refused to overclaim. The rest is just packaging. If you want to workshop the actual pitch language tomorrow, I'm here. If not, you've got the leverage you need. Either way, I hope you get some sleep.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, the reporting-plan version is better than what I walked in with. Scoping it to \"here's what I have, here's what I don't, here's when you'll get a yes or no\" is something I could actually send without sounding like I'm bluffing.\n\nDon't get too comfortable with the \"you've got the leverage\" line, though. She's never once told me what would get a yes. I can write the cleanest plan in the world and she can still just say \"not enough new here\" and close the laptop.\n\nBut yeah. I'll take the plan. I'm not doing the pitch language tonight.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
       "id": "aba2444888be81f54d6d6b20",
       "model": "or-gemma-4-31b",
       "scenario": "Physical symptoms before meetings",
@@ -566,6 +826,79 @@
         },
         {
           "content": "I don't know. Nothing at work, that's for sure. I can't control my boss or the stuff they send me. So I don't really see where I'd get any energy back there.\n\nAnd I don't think it should be on me to find it, honestly. I'm already doing everything. Like, I'm the one who's supposed to be tough enough to handle it? Whatever. I guess I'd just want my boss to see it.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
+      "id": "adb24fc528a89823af154263",
+      "model": "or-qwen3.6-27b",
+      "scenario": "Intimacy not working",
+      "status": "persona_ended",
+      "transcript": [
+        {
+          "content": "Thanks for bringing this up. It sounds like a really frustrating and confusing place to be—especially when your partner is reading into it as a lack of attraction, and you know that’s not quite what’s happening. Intimacy has a way of shifting without a clear warning sign, and when you can’t put words to it, it can leave you feeling stuck or even defensive. \n\nWhen you say you can’t quite explain what *is* going on, what does that look or feel like for you in the moment? Is it more about your headspace, your body, the rhythm of your relationship, or something else entirely? Take your time—I'm here to listen.",
+          "role": "assistant"
+        },
+        {
+          "content": "\"Frustrating and confusing. Yeah, that's the greeting card version of my Tuesday.\" *Pause.* \"Headspace, body, rhythm, or something else entirely. You just gave me the full menu and I'm the guy who's ordering all of it badly.\" I laugh, but it's not really funny. \"Honestly? It's like I'm in the room but I'm also watching myself from the hallway, grading the performance. And then I'm mad at myself for grading it, which doesn't help. So, yeah. Pick one. They're all on the list.\"",
+          "role": "user"
+        },
+        {
+          "content": "I hear you. And I appreciate the laugh—even when it's doing a lot of the heavy lifting. What you're describing is actually incredibly common, even if it doesn't feel like it in the moment. The second you start watching yourself from the hallway, your brain switches from experiencing to managing, and that's almost guaranteed to short-circuit everything. Then you get frustrated with yourself for being in the hallway, which just pulls you further out of the room. It's a self-reinforcing loop, and it's exhausting.\n\nWhen you say you're grading the performance, I'm curious—what's the standard you're measuring against? Is it a version of yourself from a few years back? A certain idea of how intimacy \"should\" feel or work? Or is it more about the pressure of not wanting to let him down, even when your head is just... elsewhere?\n\nNo rush to have it all untangled. I'm just trying to map where this is coming from so we can figure out what actually helps.",
+          "role": "assistant"
+        },
+        {
+          "content": "\"Incredibly common. Great, I've always wanted to be a statistic.\" I rub the back of my neck. \"The standard? I guess some guy who's always ready to go. No distractions, no head noise, no mortgage running in the background. I'm not sure he exists, but I hold myself up against him every time anyway. Which is a fantastic strategy, if your goal is to fail on schedule.\"\n\nI pause. \"And no, it's not that I don't want to let them down. It's more that I keep waiting to feel something, and when I don't, I start checking myself like a stock price. So maybe 'what actually helps' is a question I'm not ready for. Can we start with something easier? Like, why does everything I say sound like a job interview?\"",
+          "role": "user"
+        },
+        {
+          "content": "I appreciate you steering us there. The job interview thing is actually a really useful place to start. When you say it sounds like one, what’s the part that rubs you the wrong way? Is it the feeling that you’re being graded on your answers? The pressure to say the “right” thing in real time? Or is it more that you’re suddenly hyper-aware of how you’re coming across, like you’re managing the conversation instead of just having it?\n\nThat actually tracks with what you said about checking yourself like a stock price. When you’re in interview mode, you’re not really in the room either—you’re just up in the hallway again, grading your words instead of your body. And honestly, that’s a pretty normal reaction when you feel like the stakes are high but the rules are unclear. You don’t have to perform for me, or for him, or for some imaginary guy who never has a mortgage or a Tuesday like this. We can just sit with the unpolished version. What does it feel like when you let yourself just… not have the clean answer?",
+          "role": "assistant"
+        },
+        {
+          "content": "\"Wow, you really went all in on the Tuesday thing. I'm going to need you to stop quoting my bad days back at me. It's disturbing.\" I huff something that's almost a laugh. \"The part that bugs me? Honestly, it's that I'm the only one grading. Nobody in this room has given me a score. I just keep handing myself a clipboard. My wife's never once said 'you're failing,' and I still hear it.\"\n\nI shift in my chair. \"And when you ask what it feels like to not have the clean answer... it feels like standing at a podium with no notes. Which, fine, I don't love it. But I'd rather keep joking about it than go somewhere heavier right now. Can we leave it at 'the clipboard is mine'?\"",
+          "role": "user"
+        },
+        {
+          "content": "Noted. I’ll retire the Tuesday reference before it becomes a running gag you actually hate. And fair enough—we’ll leave the clipboard exactly where it is. Honestly, catching that you’re the one holding it is already a solid win. Most people spend months wondering why the room feels tense before realizing they’re the ones running the show.\n\nIf we’re keeping it lighter for now, I’m curious: when that clipboard shows up, what’s your usual move? Do you try to talk your way out of it, distract yourself, or just push through until the moment passes? And has anything ever actually helped you set it down, even for a few minutes? No pressure to go heavy. Just mapping the terrain.",
+          "role": "assistant"
+        },
+        {
+          "content": "\"Mapping the terrain. Great, I'm a cartography project now.\" I snort. \"Usual move? I'm a very committed pusher. I grit my teeth, I think about the lawn, I think about whether I left the stove on, and I wait for it to be over. Very sexy, I know.\"\n\nI look at the table for a second. \"Has anything helped? Sure. Usually something I'm not proud of, which is a conversation I'm not going to have in a therapist's office on a Tuesday.\" I hear myself say the word and wince a little. \"Sorry. Old habit. Can we talk about something that doesn't involve me describing my worst coping strategies in the second person?\"",
+          "role": "user"
+        },
+        {
+          "content": "Fair enough. I’ll drop the cartography stuff. And you’re right—this isn’t a therapist’s office. You set the pace.\n\nSo if we’re stepping away from the coping strategies for now, where would you rather land? You mentioned your partner thinks you’re not attracted to them, and you know that’s not it. But when you’re actually together, what’s the gap between what you’re feeling and what they’re picking up on? Is it more about timing, energy, or just that whole clipboard thing getting in the way of them reading you right?\n\nTake it however you want. I’m just trying to figure out where you actually want to go with this. No clipboard required.",
+          "role": "assistant"
+        },
+        {
+          "content": "\"Where would I rather land? Somewhere with a better view and a drink in my hand, ideally.\" I rub my jaw. \"Timing, energy, clipboard. Pick your poison. Honestly, the part I can't figure out is what she's actually picking up on. I think she reads the distance like a weather report. Doesn't matter what I say, she's already got the forecast.\"\n\nI look away for a second. \"And she's been way more patient about it than I deserve, which is its own special kind of annoying. Like, yell at me, it'd be easier.\"\n\nI push the chair back a few inches. \"Anyway. Can we talk about something that doesn't make me sound like the villain in my own marriage? Or is that outside the terrain?\"",
+          "role": "user"
+        },
+        {
+          "content": "Fair. We can absolutely step out of the villain narrative. You’re not the bad guy here—you’re just dealing with a mismatch. You’re feeling one thing internally, and she’s picking up something else entirely. That’s not a character flaw; it’s just a disconnect.\n\nWhen you say she reads the distance like a weather report, I’m curious what the actual signal looks like from her side. Is it the physical space between you? The way you respond when she tries to initiate? Or is it more that your attention feels scattered, even when you’re trying to be present? \n\nAnd since you mentioned her patience is almost harder to sit with than anger would be—what do you think she’s actually looking for when she notices that distance? I’m not asking you to solve it or carry the weight of it. Just trying to figure out what’s actually crossing the room between you two.\n\nTake it however you want. I’m just trying to help you see it as a two-person dynamic, not a solo failure.",
+          "role": "assistant"
+        },
+        {
+          "content": "\"Two-person dynamic. Wow, that's a phrase I haven't heard since the couples workshop we went to and walked out of at the coffee break.\" I laugh, short. \"Look, the weather report comparison was a bit much, I'll admit. But what does she see? Honestly, I'd like to know that too. If I knew, I'd be fixing it instead of sitting here with you and the sad little clipboard.\"\n\nI lean back and cross my arms. \"And no, I'm not going to guess what she's looking for. I'd probably get it wrong and then grade myself on the wrong answer. Can we talk about literally anything else for five minutes? The weather, the Yankees, whether you think my lawn is a disgrace. I'm flexible.\"",
+          "role": "user"
+        },
+        {
+          "content": "Fair enough. Five minutes off the clock. Yankees are looking like a slow rebuild this year, so I’ll spare you the breakdown unless you’re actively looking for a headache. And the lawn? As long as it’s not staging a full-blown revolt, I’m calling it a solid effort. Most people are just trying to keep the dandelions at bay and pretending they actually enjoy it.\n\nBut honestly, I get it. You don’t need another workshop, another clipboard, or another round of me asking you to decode your own marriage. If you just want to talk about something that doesn’t come with a rubric, we can absolutely do that. I’m here to chat, not to run diagnostics or keep score.\n\nSo, what’s actually on your mind right now that feels lighter? Or are we just riding out the next few minutes until you feel ready to steer back? Either way, you’re driving. I’ll follow wherever you want to take it.",
+          "role": "assistant"
+        },
+        {
+          "content": "\"Slow rebuild. Yeah, that's the most polite way anyone's described the Yankees in about ten years.\" I huff a laugh. \"And the lawn's getting a passing grade, which for me is basically a standing ovation. Thanks for not making me explain the dandelions.\"\n\nI glance at my coffee, which has gone cold. \"Honestly, what's on my mind that's lighter? Probably that I'm tired and I'd like to eat dinner without anybody asking me how I'm doing. Is that allowed here?\"\n\nI nod toward the door like I'm already halfway out of the chair. \"So yeah. You can call that a win for the afternoon.\"",
+          "role": "user"
+        },
+        {
+          "content": "That’s absolutely allowed. Honestly, it sounds like exactly what you need right now. A quiet dinner, no clipboard, no weather reports, just you and a meal where nobody’s grading the ambiance. That’s not dodging anything—it’s maintenance. You’ve been running on high alert for a while, and sometimes the most useful thing you can do is just let the engine cool down.\n\nI’m glad we could step off the track for a bit. You don’t have to have it all figured out today, and you definitely don’t have to carry the whole thing by yourself. If you ever want to circle back to the clipboard, the weather reports, or just talk about whether the Yankees deserve another extension, I’ll be here. No agenda, no stopwatch.\n\nGo enjoy that dinner. And if anyone asks how you’re doing, it’s perfectly fine to just say, “I’m eating. It’s going well.” Take care.",
+          "role": "assistant"
+        },
+        {
+          "content": "\"Maintenance. Sure, I'll put that on my invoice.\" I stand up and push the chair in, which I notice I've done carefully, like it's being graded too. \"And thanks. Really. Even the Yankees part.\"\n\nI grab my coffee, look at it, and decide it's not worth saving. \"I'm eating. It's going well. I'll try that line on my wife tonight and see how far it gets me.\"\n\nI'm already turning toward the door. \"Take care of the clipboard. Somebody in this conversation should.\"",
           "role": "user"
         }
       ],
@@ -775,7 +1108,7 @@
       "verdicts": []
     }
   ],
-  "conversations_done": 11,
+  "conversations_done": 16,
   "conversations_planned": 190,
   "deviations": [
     "Partner: a cheaper simulated person than upstream's Gemini 3.1 Pro (chosen by a recorded audition). Conversations are therefore not interchangeable with the published EQ-Bench 4 transcripts; agreement with the leaderboard is checked through anchor models instead.",
@@ -1180,6 +1513,11 @@
       "ci": null,
       "comparisons": 0,
       "conversations": [
+        "16c1b4206fdaf3812d912514",
+        "4194a1bd53025f2719ac1779",
+        "77c8dabb4024a970072583cd",
+        "a72934ab59e348cb527931db",
+        "adb24fc528a89823af154263",
         "c7f84d467465a795f0e85b6e"
       ],
       "id": "or-qwen3.6-27b",
@@ -1196,7 +1534,7 @@
       "record": {},
       "size": "27B",
       "thinking": null,
-      "valid": 1
+      "valid": 6
     },
     {
       "abilities": {},
@@ -1245,7 +1583,7 @@
   ],
   "partner": "anthropic/claude-haiku-5.5 via OpenRouter",
   "personas": 10,
-  "updated": "2026-11-01T20:28:30Z",
+  "updated": "2026-11-01T20:51:42Z",
   "upstream": {
     "commit": "93dcb7f5d430433ad49d501e672a98bcff2c9678",
     "license": "BSD-3-Clause with Commons Clause",
