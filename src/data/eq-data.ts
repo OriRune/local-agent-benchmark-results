@@ -1,0 +1,4 @@
+import raw from './eq/leaderboard.json';
+interface Model {id:string; name:string; kind:string; quant:string|null; size:string|null; thinking:boolean|null; rating:number|null; raw:number|null; ci:number[]|null; anchor:number|null; comparisons:number; abilities:Record<string,number>; per_judge:Record<string,number|null>; valid:number; planned:number; record:Record<string,{won:number;tied:number;lost:number}>; conversations:string[]}
+interface Conversation {id:string;model:string;scenario:string;status:string;transcript:{role:string;content:string}[];verdicts:{judge:string;order:string;status:string;model_a:string;model_b:string;outcome_for_a:number|null;dimensions:Record<string,{winner:string;margin:number}>}[]}
+export const data = raw as unknown as Omit<typeof raw,'models'|'conversations'> & {models:Model[];conversations:Conversation[]};

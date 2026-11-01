@@ -1,0 +1,8 @@
+---
+import Frame from '../../../components/eq/Frame.astro';
+import { data } from '../../../data/eq-data';
+export function getStaticPaths(){ return data.models.map(model=>({params:{id:model.id},props:{model}})); }
+const { model } = Astro.props;
+const conversations=data.conversations.filter(c=>c.model===model.id);
+---
+<Frame title={model.name}><p><a href="/eq/">← Leaderboard</a></p><h1>{model.name}</h1><p><span class="badge">{model.kind}</span> {model.quant} {model.size} {model.thinking == null ? '' : `· Thinking ${model.thinking ? 'on' : 'off'}`}</p><p>{model.comparisons < 4 ? 'In progress' : `Rating ${model.rating}`} · {model.comparisons} comparisons · {model.valid}/{model.planned} valid conversations</p><section class="panel"><h2>Abilities</h2><p>Relative to the models here, on a 1–10 scale.</p><ul>{data.dimensions.map(d=><li>{d.replaceAll('_',' ')}: {(model.abilities as Record<string,number>)[d] ?? 'Not rated'}</li>)}</ul></section><section class="panel"><h2>Record against opponents</h2><p class="muted">Counts are individual valid judgments, including both orders.</p><ul>{Object.entries(model.record as Record<string,{won:number,tied:number,lost:number}>).map(([id,r])=><li>{data.models.find(m=>m.id===id)?.name ?? id}: {r.won} won, {r.tied} tied, {r.lost} lost</li>)}</ul>{Object.keys(model.record).length===0 && <p>No valid judgments yet.</p>}</section><section class="panel"><h2>Conversations</h2><ul>{conversations.map(c=><li><a href={`/eq/conversations/${c.id}/`}>{c.scenario}</a> · {c.status.replaceAll('_',' ')}</li>)}</ul>{!conversations.length && <p>No conversations yet.</p>}</section></Frame>
