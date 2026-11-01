@@ -2,3 +2,7 @@
 
 .eq .table-scroll{max-width:100%}.eq .board{width:max-content;min-width:100%;overflow-wrap:normal}.eq .board th,.eq .board td{white-space:nowrap;overflow-wrap:normal;word-break:normal}.eq-page .masthead nav a[href="/compare/"]{color:var(--muted)}.eq-page .masthead nav a[href="/eq/"]{color:var(--accent)}
 .eq .traitbar{position:relative;background:var(--line);height:3px;width:min(240px,100%);margin:6px 0 14px}.eq .traitbar span{position:absolute;background:var(--accent);height:3px;min-width:2px}.eq .style-profile{padding-left:20px}.eq .table-scroll{overflow-x:auto}
+
+/* Keep the overview readable; detailed scores remain on each model page. */
+.eq{min-width:0;overflow-wrap:anywhere}.eq .board{width:100%;min-width:0;table-layout:fixed}.eq .board th,.eq .board td{white-space:normal;overflow-wrap:anywhere}.eq .board .detail-column{display:none}.eq .leaderboard th:first-child{width:46px}.eq .leaderboard th:nth-child(2){width:40%}.eq .rankbar{min-width:0}.eq .prompt-text{white-space:pre-wrap}.eq section[id]{scroll-margin-top:24px}
+@media(max-width:600px){.eq .board thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.eq .board,.eq .board tbody,.eq .board tr{display:block;width:100%}.eq .board tr{padding:12px;border-bottom:1px solid var(--line)}.eq .board td{display:block;border:0;padding:6px 0}.eq .leaderboard td:first-child{display:none}.eq .board td[data-label]::before{content:attr(data-label) ": ";font-weight:650}.eq .board .detail-column{display:none}}
