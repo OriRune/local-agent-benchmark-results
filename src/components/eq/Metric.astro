@@ -1,0 +1,20 @@
+---
+interface Props {label:string;value?:number;values:number[];description:string;styleTrait?:boolean;ci?:number[]|null;count?:number}
+const {label,value,values,description,styleTrait=false,ci,count}=Astro.props;
+const avg=values.length ? values.reduce((a,b)=>a+b,0)/values.length : null;
+const delta=value!=null && avg!=null ? value-avg : null;
+const position=(v:number)=>styleTrait ? v*10 : (v-1)/9*100;
+const high=styleTrait ? description.split('High = ')[1]?.split('; low =')[0] : null;
+---
+<div class="eq-metric">
+  <div class="metric-heading"><strong>{label}</strong><span class="metric-value">{value==null ? 'Not scored' : value.toFixed(1)}{value!=null && <small> / 10</small>}</span></div>
+  {high && <p class="metric-direction">Higher = {high}</p>}
+  <div class="metric-track" role="img" aria-label={`${label}: ${value?.toFixed(1) ?? 'not scored'} of 10. ${avg==null ? '' : `Scored-model mean ${avg.toFixed(1)}.`}`}>
+    {value!=null && <span class="metric-fill" style={`width:${position(value)}%`}></span>}
+    {ci && <span class="metric-ci" style={`left:${ci[0]*10}%;width:${(ci[1]-ci[0])*10}%`} title={`95% interval ${ci.map(v=>v.toFixed(1)).join('–')}`}></span>}
+    {avg!=null && <span class="metric-mean" style={`left:${position(avg)}%`} title={`Scored-model mean ${avg.toFixed(1)}`}></span>}
+  </div>
+  <div class="metric-scale"><span>{styleTrait ? '0 · less' : '1 · lower relative score'}</span><span>{styleTrait ? '10 · more' : '10 · higher relative score'}</span></div>
+  <p class="metric-context">{avg!=null ? `Mean ${avg.toFixed(1)} across ${values.length} scored models` : 'No scored models yet'}{delta!=null && ` · ${Math.abs(delta).toFixed(1)} ${delta>=0 ? 'above' : 'below'} mean`}{ci && ` · 95% interval ${ci.map(v=>v.toFixed(1)).join('–')}`}{count!=null && ` · ${count} conversations`}</p>
+  <details class="metric-help"><summary>What does “{label}” mean?</summary><p>{description}</p>{styleTrait && <p>This describes a tendency, not whether it was appropriate. Above or below the mean is not a verdict on quality.</p>}</details>
+</div>
