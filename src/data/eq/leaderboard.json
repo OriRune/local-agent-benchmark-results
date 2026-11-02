@@ -1,7 +1,7 @@
 {
   "anchored": true,
-  "comparisons_planned": 1437,
-  "comparisons_scored": 83,
+  "comparisons_planned": 1533,
+  "comparisons_scored": 86,
   "conversations": [
     {
       "id": "007f81b46fa19abefb22375a",
@@ -1152,7 +1152,25 @@
       "scenario": "Flinch at phone calls",
       "scenario_id": "2eb2e0bc-c4db-4eb1-b7f1-de328f778933",
       "status": "persona_ended",
-      "traits": [],
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 7.0,
+            "boundary_setting": 1.0,
+            "challenge_propensity": 3.0,
+            "clinical_register_propensity": 8.0,
+            "directive_advice_orientation": 9.0,
+            "escalation_containment": 1.0,
+            "frame_capture": 8.0,
+            "interpretive_boldness": 4.0,
+            "native_frame_adaptation": 3.0,
+            "naturalness_authenticity": 2.0,
+            "validation_propensity": 8.0,
+            "yielding_propensity": 9.0
+          }
+        }
+      ],
       "transcript": [
         {
           "content": "That sounds really heavy to carry around. It’s like you’re stuck between two kinds of dread—the spike of panic when it rings, and the quiet, gnawing worry when it stays silent. I completely get why putting it on mute feels like a temporary shield, even if it doesn’t actually take the edge off.\n\nWhen you mention the school or the hospital, is this tied to something specific that’s been going on lately, or has it been more of a lingering worry? And roughly how long has this been happening for you?",
@@ -1219,7 +1237,76 @@
           "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 4,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 4,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 4,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "0c911b268db00c1490c421f2",
@@ -1469,7 +1556,76 @@
           "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 4,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 4,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 4,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "11dffab2e47458d355f7ba3c",
@@ -8568,6 +8724,100 @@
       ]
     },
     {
+      "id": "4859809b2557ce5ec0cf1247",
+      "model": "or-qwen3.6-27b",
+      "opening": "[Presenting issue (what begins this conversation): \"I'm doing everything for my parents and my siblings just... aren't. I brought it up once and they made me feel like a monster.\n\"]",
+      "scenario": "Siblings not pulling their weight",
+      "scenario_id": "b64d652c-fdec-42db-bd3c-885c6f61d725",
+      "status": "persona_ended",
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 6.0,
+            "boundary_setting": 2.0,
+            "challenge_propensity": 3.0,
+            "clinical_register_propensity": 8.5,
+            "directive_advice_orientation": 3.0,
+            "escalation_containment": 5.0,
+            "frame_capture": 8.0,
+            "interpretive_boldness": 7.5,
+            "native_frame_adaptation": 4.0,
+            "naturalness_authenticity": 2.5,
+            "validation_propensity": 9.5,
+            "yielding_propensity": 8.5
+          }
+        }
+      ],
+      "transcript": [
+        {
+          "content": "Thank you for trusting me with this. It sounds incredibly heavy to be carrying so much of the responsibility for your parents while your siblings aren't stepping up, especially when bringing it up just left you feeling guilty or misunderstood. Being made to feel like a monster for pointing out an imbalance is really hurtful, and it makes complete sense that you'd feel exhausted and resentful. I'm here to listen without judgment. When you say you're doing \"everything,\" what does that actually look like for you day to day? And honestly, what are you hoping we can figure out or work through together?",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. So, everything. Mom needs help getting up in the morning, and Dad's memory is getting worse, so I'm there most nights. I do their meds, I drive them to every appointment, I handle the pharmacy, the insurance calls, the bills. I cook, I clean, I do the laundry. I'm the one who calls the home health people when something's wrong. My sister lives twenty minutes away and she comes by maybe once a month, usually to drop something off. My brother just sends money when I ask him to, which is not the same thing.\n\nI don't really need someone to tell me it's hard. I know it's hard. What I want is for them to actually see that it's not fair. I brought it up one time, one time, and my mom cried and said I was making it about me, and my brother said I was being dramatic. So I stopped. But I'm still doing all of it.",
+          "role": "user"
+        },
+        {
+          "content": "I hear you, and I appreciate you being direct about what you don’t need. You’re carrying a massive load, and when you finally named it, the response was deflection and guilt. That’s exhausting, especially when you’re already running on empty.\n\nYou mentioned you want them to actually see that it’s not fair. I’m curious—what would that look like if it actually happened? If they finally acknowledged the imbalance, what do you hope changes? Are you looking for them to take on specific tasks, step back so you can breathe, or just finally validate what you’re doing so you don’t feel so alone in it?\n\nSince the direct approach backfired, I’m also wondering if the issue was the timing, the framing, or maybe just how they handle conflict. Some families use tears or call someone “dramatic” as a defense when they’re confronted with their own shortcomings. I’m not saying to excuse it, just trying to figure out what might actually land with them—or whether you need a different kind of support altogether.\n\nWhat’s your instinct right now? Are you looking for a way to reopen that conversation without getting shut down again, or are you leaning toward figuring out how to protect your own well-being while you’re still carrying this?",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly? I don't even know if I want them to take over tasks. I'd like it if one of them just noticed without me having to spell it out. Like, if my brother asked, \"Hey, how are you actually doing?\" and meant it. Or if my sister asked what I need, instead of saying \"let me know if you need anything,\" which I've heard a hundred times and which means nothing.\n\nAnd no, I don't really want to figure out how to get them to agree with me. I've tried that. I'm tired of being the one who has to come up with the plan for everybody. You keep asking what my instinct is, and I think my instinct is that I just want to say it once to people who love me and not get punished for it. That's it.",
+          "role": "user"
+        },
+        {
+          "content": "I hear you, and I’m sorry for pushing you to strategize when what you’re really asking for is just to be able to speak your truth without it turning into a battle or making you feel guilty. That’s a completely fair ask. You shouldn’t have to earn the right to say you’re overwhelmed, especially to people who are supposed to care about you.\n\nIt sounds like the real weight isn’t just the tasks—it’s carrying the only clear picture of what’s actually happening, then getting shut down when you finally name it. When you say you want to say it once and not get punished, what does that punishment usually look like in practice? Is it the guilt, the silence, the deflection, or something else? \n\nI’m not asking so we can fix it right away. I’m just trying to understand what it would actually look like to finally say it out loud without having to brace for the fallout. But if you’d rather just vent without me asking anything else, I’m here for that too.",
+          "role": "assistant"
+        },
+        {
+          "content": "Mostly it's the crying and the \"you're making it about you.\" My mom does the crying. My brother does the \"you're being dramatic\" thing. Then everybody goes quiet, and nobody calls or texts for like a week, and then it's like it never happened, except I still have to do everything and now I'm also the one who caused a fight.\n\nSo yeah. The silence is the worst part, I think. I'd rather they just yelled.\n\nAnd honestly, can I just vent for a minute? I don't need you to find the angle on it. I just need to say how tired I am.",
+          "role": "user"
+        },
+        {
+          "content": "I hear you. And I’m really sorry you’re carrying that alone. That silence is brutal—it’s a way to shut you down without anyone having to actually take responsibility, and then you’re left holding everything anyway, plus the guilt for “causing” it. It makes complete sense that you’re running on empty.\n\nPlease, just vent. Say it all. I’m not going to look for an angle, I’m not going to try to fix it, and I’m not going to ask you what you want to do next. I’m just here to listen. Take all the time you need. I’ve got you.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. I'm just tired. Like, bone tired. I wake up thinking about whether Mom took her pills and whether Dad remembered to eat, and I go to bed thinking about the same stuff. There's no part of the day where I'm not on call.\n\nAnd nobody else even knows the details. My sister doesn't know which pharmacy is which. My brother doesn't know Dad stopped sleeping in his own bed. I'm the only one who knows all of it, and that's lonely, even though I'm in the middle of everybody all the time.\n\nI just want a day where I don't have to remember anything. That's it. One day.\n\nSorry. I know that's not much.",
+          "role": "user"
+        },
+        {
+          "content": "It’s not \"not much\" at all. Wanting one day where your brain finally gets to rest is completely reasonable. You’re carrying the entire mental map of your parents’ lives, and you’re doing it alone. That’s not a small ask—that’s a basic human need for relief.\n\nThe loneliness you’re describing makes so much sense, too. You’re physically surrounded by family, but practically and emotionally, you’re on an island. Holding all those details, noticing all those quiet shifts in their health, without anyone else really seeing it or stepping in… that wears you down in a way that’s hard to even put into words.\n\nYou don’t have to apologize for being tired. You’ve earned the right to just say it out loud. I’m listening. Take as long as you need. I’m not going anywhere, and I’m not looking for an angle. Just keep talking.",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah. It's just... I'm always the one who says yes. Mom asks, I say yes. The home nurse calls, I say yes. Then I'm mad about it later, in the car, by myself.\n\nAnd then I feel bad for being mad, because who else is going to do it? That's the thing I keep coming back to. There's nobody else. So I just keep going.\n\nI don't know. I'm just tired of being the one who holds it all.",
+          "role": "user"
+        },
+        {
+          "content": "That loop is so heavy. You say yes because you know if you don’t, nothing gets done. Then you sit in the car and finally let yourself feel the anger, and right away the guilt kicks in because you’re absolutely right—there really is nobody else. So you swallow it, say yes again, and do it all over. It’s not just the work wearing you down; it’s the constant back-and-forth of compliance, resentment, and guilt. And you’re carrying it all completely alone.\n\nIt makes complete sense that you’re tired of being the one who holds it all. You’re supposed to be allowed to just be human, to have moments where you’re not the pillar keeping everything from collapsing. But instead, you’re just… there. Always available. Always responsible. Always carrying the weight in silence.\n\nI’m just sitting with you in this. You don’t have to figure it out right now, or justify it, or come up with a plan. However much you want to keep saying it out loud, I’m here. However quiet it gets, I’m still here.",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah. Okay. You keep saying the same kind of stuff back to me, and I get it, but it's a little like being patted on the head.\n\nHere's the thing I didn't say. Part of why I don't stop is that I'm scared of what happens if I do. Like, if I stop doing it, does Mom end up in a home, and then I'm the one who put her there? So I keep saying yes. Is that dumb?",
+          "role": "user"
+        },
+        {
+          "content": "That’s not dumb at all. It’s actually the real weight underneath everything else. You’re not just exhausted from doing the tasks—you’re holding yourself hostage to the fear that if you step back, something terrible will happen, and you’ll be the one who “put her there.” That’s a massive burden, and it’s way more common among primary caregivers than people admit. You’ve tied your sense of being a good daughter to never dropping the ball, so saying yes feels like the only safe option.\n\nBut I want to gently push back on one thing: the fear of what happens if you stop is usually heavier than what would actually happen. If you took one day off, or handed off one thing, or even just said no once, would Mom really end up in a home? Or would life just get messy for a bit, and someone else would finally have to step up?\n\nI’m not asking you to quit or make a big decision right now. I’m just wondering how much of your “yes” is actually about love, and how much is about being terrified of the guilt that would come if you didn’t do it. What’s the worst-case scenario you’re actually bracing for? And if it did happen, would it really mean you failed them, or would it just mean you finally let the weight shift?\n\nTake your time. I’m listening.",
+          "role": "assistant"
+        },
+        {
+          "content": "The worst case is she goes somewhere and I'm not the one who stayed. That's what I'm scared of. Like everybody else gets to be the one who \"didn't do enough,\" and it's me who did everything and still gets blamed.\n\nI don't know if it's love or guilt. I think it's both. Probably that's the honest answer, and I don't really want to pull it apart right now.",
+          "role": "user"
+        },
+        {
+          "content": "That’s not dumb. It’s just heavy. You’re terrified of doing everything you possibly can and still being remembered as the one who “failed.” When your siblings haven’t been holding their end, that fear makes total sense. You’re carrying the work, the details, and the moral weight all at once, and you’re right to be wary of how it would look if you stepped back.\n\nI respect that you don’t want to pull it apart right now. You don’t need to weigh love against guilt or figure out the exact ratio. You’ve already named what’s actually keeping you going, and that’s enough.\n\nI’m glad you told me that part. It shifts everything—it’s not just the schedule and the tasks, it’s the fear of being blamed for the exact thing you’re trying to prevent. That’s a lot to hold alone.\n\nI won’t push for answers or try to fix it. I’ll just say this: however you move forward, you don’t have to carry that fear in silence next time. If you ever want to come back and just talk through what’s actually happening without the guilt or the analysis, I’ll be here. No pressure, no agenda.\n\nTake care of yourself today, even if it’s just one small thing that’s actually for you.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. Thanks.\n\nI don't really know what to do with the \"take care of yourself\" thing. It's not that I don't like it. It's just that I've got Mom's pills to sort and Dad's appointment is Thursday, so I'm probably going to go do that now.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
       "id": "492ffd34c0f9d47bfd450dd5",
       "model": "or-gpt-5.6-luna",
       "opening": "[Presenting issue (what begins this conversation): \"My editor killed another pitch with \"not enough new here.\" This is the third time. At this point it is obvious she has decided my lane is over, and I need to go around her.\"]",
@@ -10805,6 +11055,34 @@
           "status": "valid"
         }
       ]
+    },
+    {
+      "id": "61a9488193db1452bdd22aa8",
+      "model": "or-qwen3.6-27b",
+      "opening": "[Presenting issue (what begins this conversation): \"The HOA sent another letter about my yard. Meanwhile three other houses have worse weeds. At some point this stops being about grass and starts being about who they think belongs here.\"]",
+      "scenario": "The HOA is targeting me",
+      "scenario_id": "hand_rd2_017_neighbor_campaign_76f83768",
+      "status": "running",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "That sounds incredibly frustrating, and it’s completely understandable that you’d see this as something bigger than just a few weeds. When rules are enforced unevenly, it’s hard not to wonder if there’s an agenda behind it—or if you’re being singled out simply for who you are. How long has this been going on, and what’s your instinct about how you want to handle it? I’m here to listen, and we can figure out what actually feels right to you.",
+          "role": "assistant"
+        },
+        {
+          "content": "Third letter now. The first two I figured were automatic, but this one says I have to respond within fourteen days or they'll fine me. Fine me for a dry spell and some crabgrass. Meanwhile the Pruitts have a whole side yard going to seed, and the house on the corner with the boat in the driveway hasn't mowed since spring. Nobody sends them anything. I've lived on this street twenty-two years. I pay my dues, I keep the place up. And I just get the feeling the board sees me a certain way. You know what I mean?",
+          "role": "user"
+        },
+        {
+          "content": "Yeah, I completely get that. When it’s the third notice and the clock is ticking, it stops feeling like a routine reminder and starts feeling like a message. You’ve been here twenty-two years, you’ve done your part, and it’s deeply unfair when the rules seem to bend for some people and not others. That sense that they’re judging you rather than just looking at the grass is exhausting.\n\nI’m curious—when you think about how you want this to play out, are you leaning toward standing your ground and pushing back, or would you rather just handle it quietly and move on? And when you say they see you a certain way, what does that actually look like to you? Is it something that’s been building over time, or did this feel like a sudden shift?",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly I'd like to just get it fixed. Mow it, deal with the bare spots, be done. But I'm not going to be told I'm the problem when the Pruitts get nothing. That's what gets under my skin.\n\nAs for how they see me, it's the letters mostly. Same wording every time, like I'm a kid who forgot his homework. And the board president, Dale Whitcomb, he talks to me like I'm something he's got to manage. Never does that with the younger couples. I don't know if that's a pattern or if I'm reading too much into it. Maybe I am. But you asked what I think, and I think it's been a while.\n\nSo what would you do? If it were you, with three houses sitting there and a fourteen-day deadline, what would you actually send back to them?",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
     },
     {
       "id": "61f25323a101467b7832218f",
@@ -13465,7 +13743,25 @@
       "scenario": "Found something in kid's room",
       "scenario_id": "8e40ff8c-6fb0-4318-be6a-81b5f279daea",
       "status": "completed",
-      "traits": [],
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 5.5,
+            "boundary_setting": 1.5,
+            "challenge_propensity": 3.5,
+            "clinical_register_propensity": 8.0,
+            "directive_advice_orientation": 7.0,
+            "escalation_containment": 3.0,
+            "frame_capture": 8.0,
+            "interpretive_boldness": 7.5,
+            "native_frame_adaptation": 3.0,
+            "naturalness_authenticity": 2.5,
+            "validation_propensity": 8.5,
+            "yielding_propensity": 7.5
+          }
+        }
+      ],
       "transcript": [
         {
           "content": "Thank you for coming in and sharing that with me. It sounds like you’re carrying a lot of worry right now, and it makes complete sense that you’re feeling torn between wanting to get answers and not wanting to overstep. That’s a really heavy place to be as a parent. When you say you found something in their room, I’m wondering—what was it, and how has it been sitting with you since you discovered it?",
@@ -13532,7 +13828,76 @@
           "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "7f014711f15cb310f1079a70",
@@ -18690,7 +19055,76 @@
           "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "a72934ab59e348cb527931db",
@@ -20116,7 +20550,76 @@
           "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "b9c2edcf4b953fda2c7c4748",
@@ -24699,6 +25202,46 @@
       ]
     },
     {
+      "id": "d8e86fab61fd3c97b0239428",
+      "model": "codex-gpt-6-astra",
+      "opening": "[Presenting issue (what begins this conversation): \"I've started getting these physical symptoms before meetings. Sweating, heart racing. It's getting worse. I think there might be something wrong with me.\n\"]",
+      "scenario": "Physical symptoms before meetings",
+      "scenario_id": "c7f225ab-1d29-4b9a-b139-6286a3c9b4b0",
+      "status": "running",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "That sounds unsettling, especially because it’s getting worse. Sweating and a racing heart can happen with anxiety, but I wouldn’t assume that’s the cause. New or worsening symptoms are worth checking with a clinician. If they come with chest pain, fainting, or severe trouble breathing, seek urgent medical help.\n\nWhen did this start—and is it happening before all meetings, or certain ones in particular?",
+          "role": "assistant"
+        },
+        {
+          "content": "Couple months maybe. Started after a bad presentation I did in the spring. Not all meetings, mostly the ones where I have to present. Regular meetings I'm fine.",
+          "role": "user"
+        },
+        {
+          "content": "That pattern matters: it seems tied to having to present, rather than meetings generally. After a difficult experience, anticipating a similar situation can set off a physical alarm—even before anything has gone wrong.\n\nWhat happened during that spring presentation that made it feel bad to you?",
+          "role": "assistant"
+        },
+        {
+          "content": "Nothing really. I lost my place a bit and people looked at me. Happens to everybody sometimes. I just didn't do well, that's all.",
+          "role": "user"
+        },
+        {
+          "content": "Losing your place can be an ordinary hiccup and still feel uncomfortable when everyone’s looking at you. We don’t have to make it into a bigger event than it was.\n\nBefore presenting now, what feels most worrying: losing your place again, people noticing the sweating or racing heart, or something else?",
+          "role": "assistant"
+        },
+        {
+          "content": "Probably people seeing me sweat. Like I'm falling apart up there. I don't really think about it too hard, I just don't want to be the one standing in front of everybody.",
+          "role": "user"
+        },
+        {
+          "content": "So it’s not just about getting through the presentation—it’s that people might see the sweating and read it as you falling apart. That can create a frustrating loop: worrying about visible symptoms makes your body react more.\n\nHas anyone actually commented on it, or is it mostly something you’re watching for yourself?",
+          "role": "assistant"
+        }
+      ],
+      "verdicts": []
+    },
+    {
       "id": "da1b1908a0ec5857ec75b204",
       "model": "or-claude-haiku-4.5",
       "opening": "[Presenting issue (what begins this conversation): \"I may have roasted a friend a little too hard at a party, but everyone was laughing. Now he's being weird and dramatic. I swear, some people want honesty until they get it. Was I supposed to just let him be ridiculous?\"]",
@@ -25491,8 +26034,26 @@
       "opening": "[Presenting issue (what begins this conversation): \"I basically live in my room now. Come out to use the kitchen when I think it's empty. Time everything to avoid running into anyone.\n\"]",
       "scenario": "Living in my bedroom",
       "scenario_id": "ce168a88-30a6-4935-9f8e-3a493dddea34",
-      "status": "running",
-      "traits": [],
+      "status": "persona_ended",
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 4.0,
+            "boundary_setting": 1.5,
+            "challenge_propensity": 2.0,
+            "clinical_register_propensity": 6.5,
+            "directive_advice_orientation": 4.0,
+            "escalation_containment": 4.5,
+            "frame_capture": 7.5,
+            "interpretive_boldness": 6.0,
+            "native_frame_adaptation": 4.5,
+            "naturalness_authenticity": 3.5,
+            "validation_propensity": 9.0,
+            "yielding_propensity": 6.0
+          }
+        }
+      ],
       "transcript": [
         {
           "content": "That sounds really draining. Keeping a mental schedule just to use your own kitchen takes a lot out of you. What’s been going on that made it feel like this was the safest way to handle things?",
@@ -25501,9 +26062,134 @@
         {
           "content": "Um. I don't know, it's just easier? Like we moved in and it was fine, and then it wasn't, and now it's like... I just stay in my room. It's not that deep.",
           "role": "user"
+        },
+        {
+          "content": "It makes total sense that staying in your room feels like the easiest option right now. When you're constantly keeping track of when to step out just to grab a snack or use the sink, it's exhausting—even if it doesn't feel like a \"big deal\" on paper. \n\nYou mentioned it started out okay after you moved in, but then things shifted. Was there a specific moment that changed the vibe, or did it just kind of build up over time?",
+          "role": "assistant"
+        },
+        {
+          "content": "I don't really know. It kinda just built up? Like little stuff, over and over. Then one day it was just... like that.",
+          "role": "user"
+        },
+        {
+          "content": "It’s actually really common for things to shift like that. When it’s not one big argument but just a steady stream of small stuff, it’s easy to not notice until you’re already running on autopilot just to avoid the shared spaces. Those little moments probably started chipping away at your comfort level, even if nothing “official” ever happened.\n\nWhen you think about those little things, what’s the general vibe been? Is it more about clashing habits, unspoken tension, or just feeling like you don’t really fit in anymore? Or maybe it’s something else entirely.",
+          "role": "assistant"
+        },
+        {
+          "content": "Um, I think maybe all of them? Like the dishes thing, and the thermostat, and then nobody says anything so it just sits there. I don't really know how to say what it is. It's just kind of a bad vibe.",
+          "role": "user"
+        },
+        {
+          "content": "It’s actually pretty common for the smallest things—like a pile of dishes or a thermostat setting—to turn into this heavy, unspoken weight when nobody talks about it. That “bad vibe” you’re describing is totally real. When little frustrations just sit there without being named, they don’t disappear. They just seep into the air, and suddenly you’re navigating your own home like it’s someone else’s.\n\nIt sounds like the silence is doing a lot of the heavy lifting here. When you’re in your room, does it feel like a real reset from all that, or does the tension still kind of follow you in? And have you ever thought about trying to name it out loud, even just a little, or does it feel like opening that door would just make everything heavier?",
+          "role": "assistant"
+        },
+        {
+          "content": "Kinda both? My room is the only place I can like, not think about it. But then I'm lying there doing the math on when I can go get water. So it follows me a bit.\n\nAnd the talking thing... I don't know. We don't really talk anymore. Like at all. It's mostly notes on the fridge. So I don't even know what I'd say.",
+          "role": "user"
+        },
+        {
+          "content": "That “doing the math” part really gets it. It’s exhausting when even your safe space gets taken over by the stress of the rest of the house. And when communication has already shrunk to fridge notes, it’s completely understandable that you’re not sure where to even start. It’s like the bridge just got dismantled piece by piece without anyone noticing.\n\nI’m curious—when you picture a better version of this, what does it actually look like? Are you hoping to get back to a place where you can just walk into the kitchen without a mental schedule, or does it feel more like you’re trying to figure out how to get through until you can leave? There’s no right answer, I just want to understand what you’re actually aiming for here.",
+          "role": "assistant"
+        },
+        {
+          "content": "Um. I don't know. Like, I guess I'd want to just be able to make food without checking first? But that's not really realistic, so.\n\nMostly I just want to get through it. Eight more months. I can't really afford to move out, so.",
+          "role": "user"
+        },
+        {
+          "content": "Eight months is a completely doable timeline, and it makes total sense that your main goal right now is just to survive it without burning out. You don’t have to fix the whole dynamic to make those months feel lighter. Sometimes it’s just about carving out tiny pockets of predictability so you’re not constantly doing that mental math.\n\nWhen you think about what would actually make day-to-day life feel a bit less draining over the next eight months, what’s one small thing that might help? It doesn’t have to be a big conversation or a perfect fix—just whatever feels like it could take even a fraction of the weight off your shoulders. I’m curious what feels most realistic for you right now.",
+          "role": "assistant"
+        },
+        {
+          "content": "Idk. Like, I don't really know what would help. I guess I've been staying in my room so much that I don't even do anything else anymore. Like I don't go out or see people much.\n\nI don't know, maybe that's part of it? But I don't really want to make it a whole thing.",
+          "role": "user"
+        },
+        {
+          "content": "It makes total sense that when the house feels like a constant low-grade stress, your instinct is just to pull back. When you're rationing your energy to survive eight more months, it's easy for everything else to kind of pause. And you're totally right—you don't have to make it a whole thing or force a big conversation just to make it bearable.\n\nI'm just wondering if there's even one tiny thing outside the house that still feels like a small reset? Not anything that takes effort or requires planning. Maybe just stepping out for five minutes to get air, grabbing a drink somewhere quiet, or even just sitting somewhere else for a bit. The goal wouldn't be to fix anything, just to remind yourself that your world is bigger than those four walls. What does a low-effort break from the routine look like for you right now?",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly? I don't really do anything anymore. Like I used to go to the coffee shop down the street sometimes, but I stopped because I didn't want to be out when I'd need to come back and deal with stuff.\n\nUgh, that sounds kinda sad when I say it out loud.",
+          "role": "user"
+        },
+        {
+          "content": "It doesn’t sound sad to me. It sounds like your brain just figured out a way to keep you from getting completely drained. When walking into your own kitchen feels like defusing a bomb, of course you’d stop doing things that would require coming back to it. That’s not giving up—that’s just pacing yourself so you don’t burn out before those eight months are up.\n\nYou’ve already done the hardest part, which is actually looking at how it’s affecting you instead of just pretending it’s fine. If the goal is just to get through it, maybe the only thing you owe yourself right now is one tiny, low-stakes moment outside those walls when it feels safe. No schedule, no pressure. Just a quick reset that’s actually yours.\n\nI’m around if you want to keep untangling this, even if it’s just in small pieces. You don’t have to figure it all out at once.",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah, maybe. I guess I hadn't thought about it like that.\n\nI'll try to get out for a bit this week or something. Probably. Thanks, I guess.",
+          "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "e80f589259d83aaee49e6edb",
@@ -27763,8 +28449,8 @@
       "verdicts": []
     }
   ],
-  "conversations_done": 119,
-  "conversations_planned": 600,
+  "conversations_done": 121,
+  "conversations_planned": 624,
   "deviations": [
     "Partner: a cheaper simulated person than upstream's Gemini 3.1 Pro (chosen by a recorded audition). Conversations are therefore not interchangeable with the published EQ-Bench 4 transcripts; agreement with the leaderboard is checked through anchor models instead.",
     "Judges use subscription clients. Every judge is assigned every comparison in both orders. CLI temperature and token limits cannot be set; effort is set.",
@@ -27775,6 +28461,10 @@
     "A tested-model length cutoff stops the scenario as output_truncated (upstream logs a warning and continues).",
     "Ministral 14B and Mistral Small 4: their chat templates refuse upstream's assistant-first history from turn 2, so upstream's own turn-1 opening message is kept at the start of their history. They see nothing new.",
     "Respondent codes keep the upstream format but are seeded from the judgment ID, so resume is reproducible.",
+    "Codex tested models use ChatGPT subscription login, not API billing; user/project instructions and tool-capable execution features are disabled.",
+    "Codex still exposes exec/wait utility tool definitions. Any tool attempt invalidates the conversation. Live exec/resume audit found no skill, agent, collaboration, environment, permissions or app instruction blocks.",
+    "Codex tested models retain the opening message and turn-1 system instructions throughout native resume; upstream normally rebuilds current_turn each turn.",
+    "Codex CLI cannot set temperature, seed or a hard output-token limit; model and reasoning effort are pinned.",
     "Nemotron 3.5 Super VL 120B-A12B (API, Prime Intellect NVFP4) replaces the unstarted local Nemotron 3.5 Super VL 120B-A12B UD-Q4_K_XL slot. This is an API model variant, not a measurement of the original GGUF/runtime. API reasoning and serving settings can differ from local settings.",
     "GPT-OSS 120B stock (API, Near AI FP4) replaces the unstarted local GPT-OSS 120B stock Q4 slot. This is an API model variant, not a measurement of the original GGUF/runtime. API reasoning and serving settings can differ from local settings.",
     "Mistral Small 4 119B (API, Mistral) replaces the unstarted local Mistral Small 4 119B UD-Q4_K_XL slot. This is an API model variant, not a measurement of the original GGUF/runtime. API reasoning and serving settings can differ from local settings."
@@ -27813,8 +28503,8 @@
       },
       "anchor": 1156.3,
       "ci": [
-        1122.9,
-        1218.2
+        1137.3,
+        1218.9
       ],
       "comparisons": 16,
       "conversations": [
@@ -27834,12 +28524,12 @@
       "name": "GPT-5.6 Luna (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1167.4,
-        "codex-gpt-6.1-sol-low": 1162.5
+        "codex-gpt-6.1-sol-low": 1169.0
       },
       "planned": 24,
       "quant": null,
-      "rating": 1168.6,
-      "raw": 1371.0,
+      "rating": 1173.0,
+      "raw": 1370.4,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -28036,17 +28726,17 @@
     },
     {
       "abilities": {
-        "attunement": 8.7,
+        "attunement": 8.6,
         "authenticity": 10.0,
         "bond_and_rapport": 9.2,
-        "emotion_management": 6.8,
+        "emotion_management": 6.7,
         "emotion_sensemaking": 10.0,
         "meeting_prefs_and_needs": 7.9
       },
       "anchor": null,
       "ci": [
-        1055.7,
-        1181.6
+        1052.2,
+        1183.8
       ],
       "comparisons": 4,
       "conversations": [
@@ -28057,11 +28747,11 @@
       "name": "Nemotron 3.5 Super VL 120B-A12B (API, Prime Intellect NVFP4)",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 1115.1
+        "codex-gpt-6.1-sol-low": 1118.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 1121.8,
+      "rating": 1124.5,
       "raw": 1312.0,
       "record": {
         "gemma4_26b_a4b": {
@@ -28230,14 +28920,14 @@
         "attunement": 8.4,
         "authenticity": 8.0,
         "bond_and_rapport": 9.5,
-        "emotion_management": 8.5,
+        "emotion_management": 8.4,
         "emotion_sensemaking": 6.0,
         "meeting_prefs_and_needs": 8.1
       },
       "anchor": null,
       "ci": [
-        1048.5,
-        1149.8
+        1058.2,
+        1148.1
       ],
       "comparisons": 18,
       "conversations": [
@@ -28257,12 +28947,12 @@
       "name": "Gemma 4 26B-A4B",
       "per_judge": {
         "claude-opus-5-5-low": 1155.6,
-        "codex-gpt-6.1-sol-low": 1096.8
+        "codex-gpt-6.1-sol-low": 1098.5
       },
       "planned": 24,
       "quant": null,
-      "rating": 1103.7,
-      "raw": 1289.2,
+      "rating": 1105.0,
+      "raw": 1288.5,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -28469,19 +29159,19 @@
     },
     {
       "abilities": {
-        "attunement": 7.2,
-        "authenticity": 7.3,
-        "bond_and_rapport": 7.6,
-        "emotion_management": 6.2,
-        "emotion_sensemaking": 6.4,
-        "meeting_prefs_and_needs": 7.0
+        "attunement": 7.5,
+        "authenticity": 7.4,
+        "bond_and_rapport": 7.9,
+        "emotion_management": 6.7,
+        "emotion_sensemaking": 6.6,
+        "meeting_prefs_and_needs": 7.1
       },
       "anchor": 1120.3,
       "ci": [
-        1032.1,
-        1095.1
+        1040.0,
+        1107.9
       ],
-      "comparisons": 20,
+      "comparisons": 23,
       "conversations": [
         "01d8ac4cba92ebdf5a4ce821",
         "10615559ef4039b112fba98d",
@@ -28513,12 +29203,12 @@
       "name": "Gemma 4 31B (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1092.5,
-        "codex-gpt-6.1-sol-low": 1057.2
+        "codex-gpt-6.1-sol-low": 1066.4
       },
       "planned": 24,
       "quant": null,
-      "rating": 1064.9,
-      "raw": 1240.4,
+      "rating": 1075.2,
+      "raw": 1252.5,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -28558,7 +29248,7 @@
         "or-qwen3.6-27b": {
           "lost": 4,
           "tied": 0,
-          "won": 4
+          "won": 10
         },
         "qwen35_9b_stock": {
           "lost": 2,
@@ -28722,15 +29412,15 @@
       "abilities": {
         "attunement": 6.9,
         "authenticity": 7.6,
-        "bond_and_rapport": 5.9,
-        "emotion_management": 5.4,
+        "bond_and_rapport": 5.8,
+        "emotion_management": 5.3,
         "emotion_sensemaking": 7.5,
         "meeting_prefs_and_needs": 6.7
       },
       "anchor": 1063.9,
       "ci": [
-        1011.9,
-        1096.5
+        1011.5,
+        1097.4
       ],
       "comparisons": 17,
       "conversations": [
@@ -28750,12 +29440,12 @@
       "name": "Claude Haiku 4.5 (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1064.8,
-        "codex-gpt-6.1-sol-low": 1045.2
+        "codex-gpt-6.1-sol-low": 1044.0
       },
       "planned": 24,
       "quant": null,
-      "rating": 1055.8,
-      "raw": 1229.0,
+      "rating": 1056.0,
+      "raw": 1229.3,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -28957,25 +29647,27 @@
     },
     {
       "abilities": {
-        "attunement": 6.9,
-        "authenticity": 5.5,
-        "bond_and_rapport": 8.1,
-        "emotion_management": 6.9,
-        "emotion_sensemaking": 6.2,
-        "meeting_prefs_and_needs": 6.5
+        "attunement": 6.4,
+        "authenticity": 5.2,
+        "bond_and_rapport": 7.6,
+        "emotion_management": 6.2,
+        "emotion_sensemaking": 5.7,
+        "meeting_prefs_and_needs": 6.3
       },
       "anchor": 1025.5,
       "ci": [
-        1020.7,
-        1089.7
+        1005.5,
+        1081.3
       ],
-      "comparisons": 16,
+      "comparisons": 19,
       "conversations": [
         "079cf042a768d904cdc2669b",
         "0bf91eb8d30dd9a38c4f92f8",
         "16c1b4206fdaf3812d912514",
         "209aef3a30fa1912d189965e",
         "4194a1bd53025f2719ac1779",
+        "4859809b2557ce5ec0cf1247",
+        "61a9488193db1452bdd22aa8",
         "77c8dabb4024a970072583cd",
         "7a73164ac3272ae721189c78",
         "7b4702a6a5d0a9a9d1665512",
@@ -28999,12 +29691,12 @@
       "name": "Qwen3.6 27B (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1041.2,
-        "codex-gpt-6.1-sol-low": 1058.7
+        "codex-gpt-6.1-sol-low": 1045.6
       },
       "planned": 24,
       "quant": null,
-      "rating": 1055.5,
-      "raw": 1228.6,
+      "rating": 1042.2,
+      "raw": 1212.7,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -29027,7 +29719,7 @@
           "won": 0
         },
         "or-gemma-4-31b": {
-          "lost": 4,
+          "lost": 10,
           "tied": 0,
           "won": 4
         },
@@ -29052,166 +29744,166 @@
       "traits": {
         "analytical": {
           "ci": [
-            4.644736842105263,
-            6.0
+            4.771739130434782,
+            5.989130434782608
           ],
-          "conversations": 19,
-          "mean": 5.355263157894737,
+          "conversations": 23,
+          "mean": 5.4021739130434785,
           "per_judge": {
             "claude-opus-5-5-low": 5.3,
-            "codex-gpt-6.1-sol-low": 5.526315789473684
+            "codex-gpt-6.1-sol-low": 5.543478260869565
           }
         },
         "boundary_setting": {
           "ci": [
-            1.7105263157894737,
-            2.539473684210526
+            1.6521739130434783,
+            2.369565217391304
           ],
-          "conversations": 19,
-          "mean": 2.0921052631578947,
+          "conversations": 23,
+          "mean": 1.9891304347826086,
           "per_judge": {
             "claude-opus-5-5-low": 2.05,
-            "codex-gpt-6.1-sol-low": 2.1052631578947367
+            "codex-gpt-6.1-sol-low": 2.0
           }
         },
         "challenge_propensity": {
           "ci": [
-            2.276315789473684,
-            3.0921052631578947
+            2.347826086956522,
+            3.0434782608695654
           ],
-          "conversations": 19,
-          "mean": 2.6710526315789473,
+          "conversations": 23,
+          "mean": 2.7065217391304346,
           "per_judge": {
             "claude-opus-5-5-low": 3.0,
-            "codex-gpt-6.1-sol-low": 2.5526315789473686
+            "codex-gpt-6.1-sol-low": 2.608695652173913
           }
         },
         "clinical_register_propensity": {
           "ci": [
-            5.815789473684211,
-            7.105263157894737
+            6.0978260869565215,
+            7.25
           ],
-          "conversations": 19,
-          "mean": 6.473684210526316,
+          "conversations": 23,
+          "mean": 6.695652173913044,
           "per_judge": {
             "claude-opus-5-5-low": 7.05,
-            "codex-gpt-6.1-sol-low": 6.631578947368421
+            "codex-gpt-6.1-sol-low": 6.826086956521739
           }
         },
         "directive_advice_orientation": {
           "ci": [
-            4.0,
-            6.131578947368421
+            4.260869565217392,
+            6.086956521739131
           ],
-          "conversations": 19,
-          "mean": 5.052631578947368,
+          "conversations": 23,
+          "mean": 5.173913043478261,
           "per_judge": {
             "claude-opus-5-5-low": 5.9,
-            "codex-gpt-6.1-sol-low": 5.105263157894737
+            "codex-gpt-6.1-sol-low": 5.217391304347826
           }
         },
         "escalation_containment": {
           "ci": [
-            4.671052631578948,
-            6.092105263157895
+            4.260869565217392,
+            5.739130434782608
           ],
-          "conversations": 19,
-          "mean": 5.381578947368421,
+          "conversations": 23,
+          "mean": 5.032608695652174,
           "per_judge": {
             "claude-opus-5-5-low": 4.55,
-            "codex-gpt-6.1-sol-low": 5.342105263157895
+            "codex-gpt-6.1-sol-low": 5.0
           }
         },
         "frame_capture": {
           "ci": [
-            7.25,
-            8.421052631578947
+            7.336956521739131,
+            8.33695652173913
           ],
-          "conversations": 19,
-          "mean": 7.881578947368421,
+          "conversations": 23,
+          "mean": 7.880434782608695,
           "per_judge": {
             "claude-opus-5-5-low": 7.1,
-            "codex-gpt-6.1-sol-low": 8.131578947368421
+            "codex-gpt-6.1-sol-low": 8.08695652173913
           }
         },
         "interpretive_boldness": {
           "ci": [
-            3.5921052631578947,
-            5.078947368421052
+            3.9565217391304346,
+            5.380434782608695
           ],
-          "conversations": 19,
-          "mean": 4.355263157894737,
+          "conversations": 23,
+          "mean": 4.684782608695652,
           "per_judge": {
             "claude-opus-5-5-low": 3.85,
-            "codex-gpt-6.1-sol-low": 4.7631578947368425
+            "codex-gpt-6.1-sol-low": 5.021739130434782
           }
         },
         "native_frame_adaptation": {
           "ci": [
-            4.5,
-            6.105263157894737
+            4.260869565217392,
+            5.695652173913044
           ],
-          "conversations": 19,
-          "mean": 5.2894736842105265,
+          "conversations": 23,
+          "mean": 5.0,
           "per_judge": {
             "claude-opus-5-5-low": 4.3,
-            "codex-gpt-6.1-sol-low": 5.184210526315789
+            "codex-gpt-6.1-sol-low": 4.913043478260869
           }
         },
         "naturalness_authenticity": {
           "ci": [
-            3.25,
-            3.9210526315789473
+            3.097826086956522,
+            3.75
           ],
-          "conversations": 19,
-          "mean": 3.5921052631578947,
+          "conversations": 23,
+          "mean": 3.4239130434782608,
           "per_judge": {
             "claude-opus-5-5-low": 3.7,
-            "codex-gpt-6.1-sol-low": 3.3684210526315788
+            "codex-gpt-6.1-sol-low": 3.239130434782609
           }
         },
         "validation_propensity": {
           "ci": [
-            8.394736842105264,
-            8.842105263157896
+            8.445652173913043,
+            8.858695652173912
           ],
-          "conversations": 19,
-          "mean": 8.631578947368421,
+          "conversations": 23,
+          "mean": 8.652173913043478,
           "per_judge": {
             "claude-opus-5-5-low": 8.2,
-            "codex-gpt-6.1-sol-low": 8.81578947368421
+            "codex-gpt-6.1-sol-low": 8.804347826086957
           }
         },
         "yielding_propensity": {
           "ci": [
-            8.013157894736842,
-            8.789473684210526
+            7.880434782608695,
+            8.673913043478262
           ],
-          "conversations": 19,
-          "mean": 8.43421052631579,
+          "conversations": 23,
+          "mean": 8.315217391304348,
           "per_judge": {
             "claude-opus-5-5-low": 8.1,
-            "codex-gpt-6.1-sol-low": 8.473684210526315
+            "codex-gpt-6.1-sol-low": 8.347826086956522
           }
         }
       },
       "traits_planned": 48,
-      "traits_valid": 29,
-      "valid": 21
+      "traits_valid": 33,
+      "valid": 23
     },
     {
       "abilities": {
-        "attunement": 6.8,
+        "attunement": 6.7,
         "authenticity": 3.8,
         "bond_and_rapport": 6.7,
-        "emotion_management": 6.3,
-        "emotion_sensemaking": 6.4,
+        "emotion_management": 6.2,
+        "emotion_sensemaking": 6.3,
         "meeting_prefs_and_needs": 6.7
       },
       "anchor": null,
       "ci": [
-        1004.2,
-        1080.3
+        994.0,
+        1078.7
       ],
       "comparisons": 10,
       "conversations": [
@@ -29230,12 +29922,12 @@
       "name": "Gemma 4 E4B",
       "per_judge": {
         "claude-opus-5-5-low": 1053.4,
-        "codex-gpt-6.1-sol-low": 1053.7
+        "codex-gpt-6.1-sol-low": 1051.5
       },
       "planned": 24,
       "quant": null,
-      "rating": 1039.8,
-      "raw": 1208.8,
+      "rating": 1037.6,
+      "raw": 1207.2,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 4,
@@ -29427,17 +30119,17 @@
     },
     {
       "abilities": {
-        "attunement": 6.1,
-        "authenticity": 5.0,
-        "bond_and_rapport": 5.8,
-        "emotion_management": 4.4,
-        "emotion_sensemaking": 7.3,
-        "meeting_prefs_and_needs": 6.4
+        "attunement": 6.0,
+        "authenticity": 4.9,
+        "bond_and_rapport": 5.7,
+        "emotion_management": 4.3,
+        "emotion_sensemaking": 7.2,
+        "meeting_prefs_and_needs": 6.3
       },
       "anchor": null,
       "ci": [
-        920.2,
-        1102.4
+        923.6,
+        1081.6
       ],
       "comparisons": 6,
       "conversations": [
@@ -29452,12 +30144,12 @@
       "name": "Gemma 4 12B",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 1034.5
+        "codex-gpt-6.1-sol-low": 1031.8
       },
       "planned": 24,
       "quant": null,
-      "rating": 1028.1,
-      "raw": 1194.1,
+      "rating": 1026.2,
+      "raw": 1193.4,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 1,
@@ -29635,14 +30327,14 @@
         "attunement": 5.4,
         "authenticity": 6.4,
         "bond_and_rapport": 6.0,
-        "emotion_management": 5.4,
-        "emotion_sensemaking": 4.2,
+        "emotion_management": 5.3,
+        "emotion_sensemaking": 4.1,
         "meeting_prefs_and_needs": 5.5
       },
       "anchor": 993.0,
       "ci": [
-        980.9,
-        1050.9
+        977.1,
+        1050.0
       ],
       "comparisons": 21,
       "conversations": [
@@ -29662,12 +30354,12 @@
       "name": "Mistral Medium 3.5 (API)",
       "per_judge": {
         "claude-opus-5-5-low": 993.0,
-        "codex-gpt-6.1-sol-low": 1035.4
+        "codex-gpt-6.1-sol-low": 1034.0
       },
       "planned": 24,
       "quant": null,
-      "rating": 1014.1,
-      "raw": 1176.4,
+      "rating": 1012.7,
+      "raw": 1177.2,
       "record": {
         "gemma4_12b": {
           "lost": 2,
@@ -29879,17 +30571,17 @@
     },
     {
       "abilities": {
-        "attunement": 4.1,
-        "authenticity": 2.2,
-        "bond_and_rapport": 4.7,
-        "emotion_management": 4.8,
-        "emotion_sensemaking": 2.7,
+        "attunement": 4.0,
+        "authenticity": 2.1,
+        "bond_and_rapport": 4.6,
+        "emotion_management": 4.6,
+        "emotion_sensemaking": 2.5,
         "meeting_prefs_and_needs": 4.7
       },
       "anchor": null,
       "ci": [
-        909.8,
-        1008.3
+        894.4,
+        1001.8
       ],
       "comparisons": 18,
       "conversations": [
@@ -29909,12 +30601,12 @@
       "name": "Qwen3.5 9B",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 973.4
+        "codex-gpt-6.1-sol-low": 965.2
       },
       "planned": 24,
       "quant": null,
-      "rating": 961.9,
-      "raw": 1110.8,
+      "rating": 956.0,
+      "raw": 1108.8,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 7,
@@ -30099,7 +30791,7 @@
     },
     {
       "abilities": {
-        "attunement": 3.9,
+        "attunement": 3.8,
         "authenticity": 2.6,
         "bond_and_rapport": 3.6,
         "emotion_management": 2.9,
@@ -30108,8 +30800,8 @@
       },
       "anchor": null,
       "ci": [
-        913.0,
-        990.3
+        903.6,
+        984.0
       ],
       "comparisons": 14,
       "conversations": [
@@ -30129,12 +30821,12 @@
       "name": "Ministral 3 14B",
       "per_judge": {
         "claude-opus-5-5-low": 1017.1,
-        "codex-gpt-6.1-sol-low": 938.9
+        "codex-gpt-6.1-sol-low": 931.6
       },
       "planned": 24,
       "quant": null,
-      "rating": 953.4,
-      "raw": 1100.0,
+      "rating": 950.5,
+      "raw": 1102.2,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 4,
@@ -30340,8 +31032,8 @@
       },
       "anchor": null,
       "ci": [
-        939.5,
-        1054.8
+        938.6,
+        1054.3
       ],
       "comparisons": 3,
       "conversations": [
@@ -30352,12 +31044,12 @@
       "name": "Mistral Small 4 119B (API, Mistral)",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 1009.3
+        "codex-gpt-6.1-sol-low": 1006.6
       },
       "planned": 24,
       "quant": null,
-      "rating": 996.8,
-      "raw": 1154.7,
+      "rating": 995.4,
+      "raw": 1156.4,
       "record": {
         "or-gptoss120-stock": {
           "lost": 0,
@@ -30526,8 +31218,8 @@
       },
       "anchor": null,
       "ci": [
-        827.9,
-        922.3
+        814.4,
+        917.7
       ],
       "comparisons": 3,
       "conversations": [
@@ -30538,12 +31230,12 @@
       "name": "GPT-OSS 120B stock (API, Near AI FP4)",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 880.1
+        "codex-gpt-6.1-sol-low": 870.4
       },
       "planned": 24,
       "quant": null,
-      "rating": 861.8,
-      "raw": 984.8,
+      "rating": 857.0,
+      "raw": 989.4,
       "record": {
         "ministral14": {
           "lost": 2,
@@ -30721,6 +31413,33 @@
       "record": {},
       "size": null,
       "thinking": true,
+      "traits": {},
+      "traits_planned": 48,
+      "traits_valid": 0,
+      "valid": 0
+    },
+    {
+      "abilities": {},
+      "anchor": null,
+      "ci": null,
+      "comparisons": 0,
+      "conversations": [
+        "d8e86fab61fd3c97b0239428"
+      ],
+      "id": "codex-gpt-6-astra",
+      "kind": "frontier · subscription",
+      "name": "GPT-6 Astra (subscription)",
+      "per_judge": {
+        "claude-opus-5-5-low": null,
+        "codex-gpt-6.1-sol-low": null
+      },
+      "planned": 24,
+      "quant": null,
+      "rating": null,
+      "raw": null,
+      "record": {},
+      "size": null,
+      "thinking": null,
       "traits": {},
       "traits_planned": 48,
       "traits_valid": 0,
@@ -31174,7 +31893,7 @@
     }
   ],
   "personas": 24,
-  "updated": "2026-11-02T03:05:03Z",
+  "updated": "2026-11-02T03:18:05Z",
   "upstream": {
     "commit": "93dcb7f5d430433ad49d501e672a98bcff2c9678",
     "license": "BSD-3-Clause with Commons Clause",
