@@ -1,0 +1,95 @@
+---
+import { isScore, type RadarAxis, type RadarSeries } from '../../lib/eq-radar';
+interface Props { id: string; title: string; axes: RadarAxis[]; subject: RadarSeries; comparisons: RadarSeries[]; minimum: number }
+const { id, title, axes, subject, comparisons, minimum } = Astro.props;
+const comparison = comparisons[0];
+const payload = JSON.stringify({ axes, subject, comparisons, minimum });
+---
+<figure class="eq-radar" data-radar data-radar-config={payload}>
+  <figcaption><h3 id={`${id}-heading`}>{title}</h3></figcaption>
+  <div class="radar-selector" hidden><label for={`${id}-compare`}>Compare with</label><select id={`${id}-compare`} data-compare>{comparisons.map(s => <option value={s.id}>{s.label}</option>)}</select></div>
+  <canvas width="440" height="400" role="img" aria-label={`${title}: ${subject.label}. Scale ${minimum} to 10, increasing outward. Solid shape: this model; dashed shape: selected comparison. Exact values below.`} data-subject-scored={subject.values.filter(isScore).length}>
+    Radar profile; exact values are available below.
+  </canvas>
+  <noscript><p>The interactive chart needs JavaScript. Expand “View chart values” for the scores.</p></noscript>
+  <div class="radar-key"><span><i class="radar-swatch subject"></i>This model</span><span><i class="radar-swatch comparison"></i><span data-comparison-name>{comparison?.label}</span></span></div>
+  <p class="radar-status" aria-live="polite" data-comparison-note>Comparing with {comparison?.label}.</p>
+  {!subject.values.some(isScore) && <p class="notice">No scores for this model yet. The comparison is shown for context.</p>}
+  {subject.values.some(isScore) && !subject.values.every(isScore) && <p class="notice">Incomplete profile: missing scores are left unplotted, not treated as zero.</p>}
+  <details class="radar-values"><summary>View chart values</summary><table><caption class="sr-only">{title}: exact scores</caption><thead><tr><th scope="col">Dimension</th><th scope="col">This model</th><th scope="col" data-comparison-header>{comparison?.label}</th></tr></thead><tbody>{axes.map((axis, i) => <tr><th scope="row">{axis.label}</th><td>{isScore(subject.values[i]) ? subject.values[i]!.toFixed(1) : 'Not scored'}</td><td data-comparison-value>{isScore(comparison?.values[i]) ? comparison!.values[i]!.toFixed(1) : 'Not scored'}</td></tr>)}</tbody></table></details>
+</figure>
+<script>
+  import { geometry, point, isScore, type RadarAxis, type RadarSeries } from '../../lib/eq-radar';
+  for (const figure of document.querySelectorAll<HTMLElement>('[data-radar]')) {
+    const config = JSON.parse(figure.dataset.radarConfig!) as {axes: RadarAxis[]; subject: RadarSeries; comparisons: RadarSeries[]; minimum: number};
+    const select = figure.querySelector<HTMLSelectElement>('[data-compare]')!;
+    const canvas = figure.querySelector('canvas')!;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) continue;
+    figure.querySelector<HTMLElement>('.radar-selector')!.hidden = false;
+    let comparison = config.comparisons[0];
+    let hitPoints: {x:number;y:number;label:string}[] = [];
+    const draw = () => {
+      const rect = canvas.getBoundingClientRect();
+      if (!rect.width) return;
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = Math.round(rect.width * ratio);
+      canvas.height = Math.round(rect.width * 400 / 440 * ratio);
+      ctx.setTransform(canvas.width / 440, 0, 0, canvas.height / 400, 0, 0);
+      ctx.clearRect(0, 0, 440, 400);
+      const style = getComputedStyle(figure);
+      const color = (name:string) => style.getPropertyValue(name).trim();
+      const rings = [0.25, 0.5, 0.75, 1];
+      ctx.strokeStyle = color('--line'); ctx.lineWidth = 1; ctx.setLineDash([]);
+      for (const radius of rings) {
+        ctx.beginPath();
+        config.axes.forEach((_, i) => {const p = point(i, config.axes.length, 120 * radius); if (i) ctx.lineTo(p.x, p.y); else ctx.moveTo(p.x, p.y);});
+        ctx.closePath(); ctx.stroke();
+      }
+      for (const [i, axis] of config.axes.entries()) {
+        const end = point(i, config.axes.length, 120), label = point(i, config.axes.length, 160);
+        ctx.beginPath(); ctx.moveTo(220, 200); ctx.lineTo(end.x, end.y); ctx.stroke();
+        ctx.fillStyle = style.color; ctx.font = `600 ${rect.width < 360 ? 16 : 14}px system-ui, sans-serif`; ctx.textAlign = 'center';
+        axis.shortLabel.forEach((line, n) => ctx.fillText(line, label.x, label.y - (axis.shortLabel.length - 1) * 8 + n * 16));
+      }
+      ctx.font = '11px system-ui, sans-serif'; ctx.textAlign = 'left';
+      for (const radius of [0, ...rings]) {
+        const text = String(config.minimum + radius * (10 - config.minimum));
+        ctx.strokeStyle = color('--paper'); ctx.lineWidth = 3;
+        ctx.strokeText(text, 225, 200 - radius * 120 + 4);
+        ctx.fillStyle = color('--muted'); ctx.fillText(text, 225, 200 - radius * 120 + 4);
+      }
+      hitPoints = [];
+      for (const [index, series] of [config.subject, comparison].entries()) {
+        const shape = geometry(series.values, config.minimum), path = new Path2D(shape.path);
+        const ink = color(index ? '--warn' : '--accent');
+        ctx.lineWidth = 2.5; ctx.lineJoin = 'round'; ctx.strokeStyle = ink; ctx.fillStyle = ink;
+        if (!index && shape.complete) {ctx.globalAlpha = .14; ctx.fill(path); ctx.globalAlpha = 1;}
+        ctx.setLineDash(index ? [6, 5] : []); ctx.stroke(path); ctx.setLineDash([]);
+        shape.points.forEach((p, i) => {
+          if (!p) return;
+          ctx.beginPath(); ctx.arc(p.x, p.y, 4, 0, 2 * Math.PI); ctx.fill();
+          ctx.strokeStyle = color('--paper'); ctx.lineWidth = 1.5; ctx.stroke();
+          hitPoints.push({...p, label:`${config.axes[i].label}: ${series.values[i]?.toFixed(1)} · ${series.label}`});
+        });
+      }
+    };
+    canvas.addEventListener('pointermove', event => {
+      const rect = canvas.getBoundingClientRect();
+      const x = (event.clientX - rect.left) * 440 / rect.width, y = (event.clientY - rect.top) * 400 / rect.height;
+      canvas.title = hitPoints.filter(p=>Math.hypot(p.x-x,p.y-y)<12).map(p=>p.label).join('\n');
+    });
+    canvas.addEventListener('pointerleave', () => {canvas.title = '';});
+    select.addEventListener('change', () => {
+      comparison = config.comparisons.find(s => s.id === select.value)!;
+      for (const label of figure.querySelectorAll('[data-comparison-name], [data-comparison-header]')) label.textContent = comparison.label;
+      figure.querySelector('[data-comparison-note]')!.textContent = `Comparing with ${comparison.label}.${comparison.values.every(isScore) ? '' : ' Missing scores are left unplotted.'}`;
+      figure.querySelectorAll('[data-comparison-value]').forEach((cell, i) => {cell.textContent = isScore(comparison.values[i]) ? comparison.values[i]!.toFixed(1) : 'Not scored';});
+      draw();
+    });
+    new ResizeObserver(draw).observe(canvas);
+    new MutationObserver(draw).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', draw);
+    draw();
+  }
+</script>

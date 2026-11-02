@@ -5,5 +5,6 @@ export default defineConfig({
   output: 'static',
   integrations: [react()],
   trailingSlash: 'always',
-  vite: { build: { sourcemap: false } },
+  // Keep the EQ chart client external to comply with the inline-script allowlist.
+  vite: { build: { sourcemap: false, assetsInlineLimit: (file) => file.includes('Radar.astro') ? false : undefined } },
 });
