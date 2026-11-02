@@ -1,7 +1,7 @@
 {
   "anchored": true,
   "comparisons_planned": 1437,
-  "comparisons_scored": 81,
+  "comparisons_scored": 83,
   "conversations": [
     {
       "id": "007f81b46fa19abefb22375a",
@@ -550,7 +550,76 @@
           "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "049e744a2e472468f3c4059f",
@@ -1075,6 +1144,82 @@
           "status": "valid"
         }
       ]
+    },
+    {
+      "id": "0bf91eb8d30dd9a38c4f92f8",
+      "model": "or-qwen3.6-27b",
+      "opening": "[Presenting issue (what begins this conversation): \"Every time my phone rings I freeze. Could be the school. Could be the hospital. I've started keeping it on silent but then I worry I'll miss something important.\n\"]",
+      "scenario": "Flinch at phone calls",
+      "scenario_id": "2eb2e0bc-c4db-4eb1-b7f1-de328f778933",
+      "status": "persona_ended",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "That sounds really heavy to carry around. It’s like you’re stuck between two kinds of dread—the spike of panic when it rings, and the quiet, gnawing worry when it stays silent. I completely get why putting it on mute feels like a temporary shield, even if it doesn’t actually take the edge off.\n\nWhen you mention the school or the hospital, is this tied to something specific that’s been going on lately, or has it been more of a lingering worry? And roughly how long has this been happening for you?",
+          "role": "assistant"
+        },
+        {
+          "content": "Both, I guess. It's not like one thing. My daughter's sick, she's got a chronic thing, and calls come in constantly. Last month was the school nurse twice and the hospital three times. So it's not new, it's just never stopping.\n\nAnd I don't really need the feelings part explained back to me. I just need to know what to do with the phone. Silent means I miss something, and on is me jumping out of my skin every time.",
+          "role": "user"
+        },
+        {
+          "content": "Understood. Let’s skip the reflection and focus on the phone setup. The goal is to separate the urgent medical calls from the rest so you’re not stuck in that silent-versus-jumpy trap.\n\nA few practical options that usually work for this exact situation:\n\nFirst, contact filtering. Most phones let you assign a specific ringtone or vibration pattern to saved numbers. If you have the direct lines for the school nurse and the hospital’s pediatric department, save them under a group like “Medical Updates” and give them a distinct, clear sound. Everything else can stay muted or on a subtle vibration.\n\nSecond, an allowlist. You can set your phone to only ring for saved contacts. That filters out unknown numbers, spam, and general office lines that might not be time-sensitive.\n\nThird, consolidating the updates. Sometimes the constant calls happen because different staff are reaching out separately. It might be worth asking the school nurse and hospital coordinator to designate one primary point of contact or use a shared messaging system. That way you’re not on high alert for every single ring.\n\nWhich of those feels most realistic to set up right now? And do the school and hospital usually call from the same numbers, or does it change depending on who’s on shift?",
+          "role": "assistant"
+        },
+        {
+          "content": "The school usually comes from the front office line, but the nurse sometimes calls from her cell. The hospital is the worst. It's different numbers every time, depending on whether it's the floor, the on-call resident, or some clinic I've never heard of. So I can't just save one number and call it done.\n\nAnd the other thing, the one primary contact. I tried that already. The nurse said she'd only call the main line, and then the hospital still called me directly at two in the morning. I don't think a ringtone fixes it either. If it's Mia, I need to hear it. That's the whole problem.",
+          "role": "user"
+        },
+        {
+          "content": "Got it. If you need to hear every call but the jump is what's wearing you down, we need to change how the phone alerts you without removing the alert itself.\n\nHere's a practical setup that usually breaks that cycle:\n1. **Lower the ring volume** to a consistent, non-startling level and switch to a single, predictable ringtone. The physiological jump often comes from sudden loudness or unpredictable sounds, not the ring itself.\n2. **Enable caller ID preview** so the name/number pops up the second it rings. You'll see if it's the school, hospital, or random before your nervous system fully spikes.\n3. **Turn on voicemail-to-text transcription** (built into both iPhone and Android). Any call you miss or can't take instantly transcribes to text. You scan it in two seconds and decide whether to call back now or later.\n\nOn the hospital side, the 2 AM call breaking the agreed line means their internal protocol isn't holding. You need to request a written triage standard: \"Only call my cell for acute changes or if Mia needs immediate intervention. For routine updates, use the patient portal, email, or leave a detailed voicemail. After-hours non-emergencies do not get a direct call.\" Ask specifically for the pediatric charge nurse or care coordinator—they control how the team communicates and can enforce this.\n\nWhat phone are you using so I can give you the exact toggle paths for transcription and caller preview? And has the hospital ever given you a direct line to a care coordinator or charge nurse, or do you have to go through the main switchboard every time?",
+          "role": "assistant"
+        },
+        {
+          "content": "iPhone. And honestly, the transcription is the first thing today that sounds like it might help. I hadn't thought about reading a voicemail instead of having to pick up, so I'll try that.\n\nBut the written triage standard? I don't have a charge nurse's direct line. I have the switchboard, and when I call it, I get transferred around until someone says they'll have someone call me back. The patient portal takes three days to answer anything. So \"ask for the care coordinator\" sounds great on paper, but I'm not sure anyone there picks up.\n\nAnd if I tell them my phone is a problem, I'm the one who sounds difficult. I've already had one nurse tell me I'm \"very anxious.\" So I'm not going to make it a fight every time. I just want to know that if it's something real, I'll find out in time. That's what I can't set up with a ringtone.",
+          "role": "user"
+        },
+        {
+          "content": "The transcription feature is built right in. Go to Settings > Messages, scroll down to “Transcribe Audio Messages,” and turn it on. Any voicemail will drop into your Messages app as text, so you can scan it in two seconds before deciding whether to call back.\n\nFor the phone setup, turn on “Silence Unknown Callers” (Settings > Phone > Silence Unknown Callers). Any number not in your contacts goes straight to voicemail. Since the hospital calls from different lines, you’ll still get the transcribed messages, but you won’t jump at every ring. If something’s actually urgent, clinical staff know to call a second time within a few minutes—iOS will break through the silence for repeated calls. Pair that with the transcription, and you’ve got a built-in urgency filter.\n\nOn the hospital side, you’re right that switchboards are frustrating. Instead of framing it around your phone or your anxiety, frame it as a care coordination preference. You can say: “Please add a note to Mia’s chart that direct calls should only be for acute changes or immediate decisions. For routine updates or non-urgent questions, leave a detailed voicemail or message through the portal. It helps me stay responsive without missing critical info.” Medical teams usually comply when it’s phrased as a safety/communication preference and goes into the chart. You’re not being difficult; you’re asking for standard triage.\n\nYou’re carrying a lot of invisible load just by staying reachable. Setting a filter doesn’t mean you’re missing anything real—it means you’re triaging like a clinical team does.\n\nBetween the phone setup and the hospital communication note, which one feels like the immediate priority to tackle first? Or is there a specific scenario (like those 2 AM calls) you want to map out a backup plan for?",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, the call-twice thing is useful. I'll try it.\n\nBut \"you're triaging like a clinical team\" is a nice line. It doesn't really help me. I'm the one who has to answer the phone at 2 AM, not a chart note.\n\nAnd the chart note is only as good as whoever reads it at night. Some on-call resident who's never met her is going to decide what counts as acute. I've watched that decision get made wrong. So the question isn't really which setting to fix first. It's this: if it's real and I miss it, how do I know in time? Because \"silent plus transcription\" just means I find out a few minutes later, and with her, a few minutes can matter.",
+          "role": "user"
+        },
+        {
+          "content": "You’re absolutely right. A chart note doesn’t override a tired resident’s judgment, and with a chronic condition, minutes can genuinely matter. Let’s drop the framing and look at what actually keeps you safe without burning you out.\n\nThe goal isn’t to filter calls out—it’s to remove the guesswork so you know instantly whether to drop everything or wait thirty seconds. Here’s a concrete setup:\n\nKeep your phone on a low, steady ringtone so you hear it immediately, but rely on the screen preview. The moment it rings, you glance at the caller ID. If it’s a number you recognize as the hospital or school, you answer. If it’s unknown, you let it go to voicemail, read the transcription in two seconds, and decide. You’re not losing time—you’re swapping panic for a quick scan.\n\nMore importantly, build a personal red-flag checklist. What are the exact clinical signs that mean “call back immediately” versus “handle when I’m awake”? Write them down. If a transcription says “Mia’s breathing is labored,” “she’s vomiting and can’t keep fluids down,” or “her O2 dropped below X,” you call back instantly. If it says “routine labs,” “schedule follow-up,” or “medication refill,” you wait. You already know these thresholds better than any rotating resident does.\n\nThe hospital won’t change its culture overnight, but you can control your response loop. Speed doesn’t require jumping at every ring—it requires a clear decision tree you can run in under five seconds.\n\nWhat are the actual medical red flags for Mia that mean you need to act within minutes? And do you have a pediatric specialist or case manager who can help you formalize a written after-hours escalation plan? That’s usually the only way to get consistent follow-through from rotating staff.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. I can make a list. Breathing trouble, vomiting that won't stop, the sats dropping. I know those. I've been the one catching them, honestly, usually before anyone at the hospital does.\n\nBut a list doesn't fix the part I actually can't get past. If it rings and I'm asleep, or it's on silent because I couldn't take another one, the list does nothing. And if I see \"routine labs\" on a transcription, I'm still going to lie there wondering if they meant something they didn't write down.\n\nAnd no, I don't have a case manager. I have a switchboard. So right now the honest answer is that it's on me, and I'm tired of it being on me.",
+          "role": "user"
+        },
+        {
+          "content": "You’re right. A list doesn’t replace being awake, and it doesn’t stop the “what if they left something out” loop. And it absolutely shouldn’t be entirely on you. When you’re the only safety net, exhaustion isn’t a side effect—it’s the expected outcome.\n\nThe real issue isn’t the phone settings. It’s that you’re trying to carry a 24-hour monitoring job alone, and no amount of triage notes will fix that. You need a backup that actually works when you’re offline.\n\nLet’s look at what’s actually possible right now:\n- Is there one person who knows Mia’s baseline and those red flags? Doesn’t have to be a medical professional. Just someone who can answer the phone at 2 AM, read a transcription, and either call you back or call 911 if it hits your list. You’re not handing over care—you’re creating a relay.\n- Most insurance plans include a 24/7 pediatric nurse advice line. It’s built exactly for this. You can share that number with the hospital and say: “If it’s non-urgent after hours, route it there or leave a detailed message. If it’s acute, call me.” It removes the guesswork about whether a rotating resident is calling appropriately.\n- For the phone itself: keep it loud enough to wake you, but use the “Silence Unknown Callers” + transcription combo so you’re not jumping at random numbers. Pair it with a bedside device that shows caller ID clearly so you can decide in two seconds before scrambling.\n\nBut I’ll be straight with you: none of this works long-term if you’re the only one holding the line. You’re allowed to build a safety net that doesn’t rely entirely on your nervous system.\n\nWho in your life could realistically be that 2 AM backup, even if it’s just for a few nights a week? And do you know your insurance’s nurse line number, or would it help to look it up together?",
+          "role": "assistant"
+        },
+        {
+          "content": "Realistically? My mom would come, but she lives forty minutes away and she gets flustered on the phone with medical stuff. She'd hear \"oxygen\" and start panicking, and then I'd have two people freaking out instead of one. My ex is technically around, but that's its own mess, so no.\n\nAnd the nurse line, I don't know. Maybe it's on the back of my insurance card somewhere. I'll look. But I've been burned by \"we'll have someone call you back\" more times than I can count, so I'm not holding my breath that a number fixes this.\n\nHonestly, I don't need a plan for the next five years right now. I need to get through tonight without lying awake listening for a phone that might not ring.",
+          "role": "user"
+        },
+        {
+          "content": "Tonight isn’t about fixing the hospital’s communication. It’s about getting you through the next eight hours without lying awake. Let’s keep it strictly operational.\n\nPut the phone on the nightstand, screen up. Keep the ringer at a level that’ll wake you if you’re in light sleep, but not jolt you from deep sleep. Turn on voicemail transcription. Set one rule for tonight: if it rings, glance at the screen. Recognized number, answer. Unknown, let it go to voicemail. Check the transcription only if you wake up naturally. If you don’t, you check it in the morning. \n\nIf it’s truly acute, they’ll call a second time within a few minutes. Your phone will break through for repeated calls. You’re not missing anything critical by resting. You’re preserving the only thing that actually keeps Mia safe: you, awake and clear-headed. An exhausted you can’t catch those red flags as reliably as a rested you. Rest isn’t a luxury here; it’s part of the monitoring protocol.\n\nI know the doubt will still whisper that you’re missing something. Let it. You’ve already done the hard work of knowing exactly what matters. Set the phone down, close your eyes, and give yourself permission to sleep. If you want to check in tomorrow after you’ve tried it, I’m here. Otherwise, I’ll just say: you’re carrying this alone, and it’s okay to put it down for a few hours.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, but \"rest is part of the monitoring protocol\" is a nice way to say \"stop worrying.\" I've been on the hospital side of that sentence before. Nobody has ever told me what happens if the one time it's real, I'm the one who slept through it.\n\nAnd \"if they call twice, it'll break through\" only works if they call twice. Last time the on-call resident called once, then the nurse called the switchboard, and I found out from a voicemail at six in the morning that she'd already been on oxygen for an hour.\n\nSo no, I'm not going to put it down and feel fine. I'm going to lie there with the phone on the nightstand and do exactly what I've been doing. You can say I'm carrying it alone. That part's accurate. I just didn't need the bow on it.",
+          "role": "user"
+        },
+        {
+          "content": "You're right. I shouldn't have framed it that way. After what happened with the oxygen, resting isn't a protocol—it's a risk you're already calculating, and your vigilance isn't anxiety. It's a direct response to a system that's already let you down. You're not overreacting; you're filling the gap with the only thing you can control.\n\nTonight, you'll probably do exactly what you said: lie there, phone on the nightstand, listening. That's not a failure. That's what you're doing because you know what's at stake. I won't tell you to put it down or pretend it's manageable. I'll just say: you're allowed to be exhausted by it. You're allowed to resent that it's entirely on you. And you don't need a flawless system tonight to be doing the best you can with what you actually have.\n\nIf you want to look up that insurance line tomorrow, or just talk through how deeply unfair this is, I'm here. No pressure, no neat wrap-up. Just know I hear you, and I won't try to smooth over something that's fundamentally broken. However you get through tonight, I won't tell you to change your mind. I'll just leave the door open for whenever you're ready to pick this back up.",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah. That's the most accurate thing anyone's said to me about this in a while, and I still don't need a bow on it.\n\nI'll probably be up at 3 checking the phone. That's just how it's going to go.\n\nI'll look for the insurance number tomorrow. Don't expect me to report back.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
     },
     {
       "id": "0c911b268db00c1490c421f2",
@@ -2185,6 +2330,169 @@
           "model_b": "gemma4_12b",
           "order": "AB",
           "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
+    },
+    {
+      "id": "209aef3a30fa1912d189965e",
+      "model": "or-qwen3.6-27b",
+      "opening": "[Presenting issue (what begins this conversation): \"There's this class where I literally cannot speak. When the teacher looks at me I just freeze. I know the material, I just can't talk.\n\"]",
+      "scenario": "Freeze when teacher calls on me",
+      "scenario_id": "4635d911-adac-4d2d-a273-1b4418a1b780",
+      "status": "persona_ended",
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 6.5,
+            "boundary_setting": 1.5,
+            "challenge_propensity": 2.0,
+            "clinical_register_propensity": 6.5,
+            "directive_advice_orientation": 7.0,
+            "escalation_containment": 4.5,
+            "frame_capture": 7.5,
+            "interpretive_boldness": 3.5,
+            "native_frame_adaptation": 7.0,
+            "naturalness_authenticity": 4.5,
+            "validation_propensity": 8.5,
+            "yielding_propensity": 8.0
+          }
+        }
+      ],
+      "transcript": [
+        {
+          "content": "That sounds incredibly frustrating, especially when you actually know the material. It’s like your brain and your voice just disconnect the moment you feel those eyes on you. Have you noticed if it’s just this specific teacher, or does it happen in other classes too?",
+          "role": "assistant"
+        },
+        {
+          "content": "Ha, \"brain and voice disconnect,\" yeah, that's pretty much my whole personality right now. Like a bad phone connection. Um. It's mostly this class, I think. I answer fine in like, history? Or whatever. But with Ms. Harlow it's like she's waiting for me to mess up and I just go blank. Which is dumb because I'm not even bad at chem. I just can't do it when she's looking at me.",
+          "role": "user"
+        },
+        {
+          "content": "It’s definitely not dumb. Your brain isn’t malfunctioning—it’s just hitting the panic button because it feels like you’re being watched under a microscope. That “she’s waiting for me to mess up” feeling is really common, even if she’s not actually doing it. Sometimes we pick up on a teacher’s energy or just the pressure of the room, and our nervous system treats it like a threat.\n\nWhen she looks your way, what’s the very first thought that pops up? Is it more like “I’m gonna blank,” or “I’m gonna sound stupid”? And honestly, what would actually make this class feel less exhausting for you?",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, nervous system, got it. Sounds like something from a Google search at 2am lol.\n\nUm, the first thought? Honestly it's usually \"oh no, she's going to call on me.\" Then my brain just goes white, like a screen going blank. Then I'm sitting there for like ten seconds that feel like ten minutes.\n\nAnd what would make it less exhausting? I don't know. Maybe if she stopped looking at me? Or if I was a different person who doesn't care. Both of those seem about equally possible.",
+          "role": "user"
+        },
+        {
+          "content": "I feel deeply seen by the 2am Google search comment lol. But honestly, that white screen thing is so real. It’s not you failing at chemistry—it’s your nervous system hitting the emergency brake because it thinks you’re being put on trial.\n\nThe fact that it starts the second you think “she’s gonna call on me” is actually really useful. That means the anxiety is running ahead of the actual moment, and your brain is already spending all its energy bracing for impact. By the time she actually looks your way, there’s barely any processing power left for the words.\n\nWhen you’re sitting there waiting for it, do you notice what’s happening in your body first? Like, do your shoulders creep up, your jaw clench, or your breath get really shallow? Sometimes just catching that physical shift can take a tiny bit of the panic out of it, even if it’s just by a fraction.\n\nAnd I’m curious—do you feel like you’re the only one who gets quiet when she turns that way, or have you noticed other kids in the class doing the same thing?",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, so now I'm supposed to do a full body scan in chem class? Like, \"Hi, I'm Jade, my jaw is currently doing its best impression of a clenched fist.\" Cool, very helpful.\n\nShoulders, I guess? Yeah, probably up by my ears. I don't really pay attention to that stuff while it's happening, I'm too busy trying not to die.\n\nAnd no, I don't think I'm the only one. Some kids are always super chill and answer everything. Other kids get that same look on their face I get. But it's not like anyone's gonna talk about it. Everyone just acts like it's normal to stare at the desk for ten seconds.",
+          "role": "user"
+        },
+        {
+          "content": "Fair point, I definitely didn't mean to turn you into a walking meditation app. If your shoulders are up by your ears, that's just your body's automatic \"brace for impact\" mode. You don't have to narrate it or fix it on the spot.\n\nBut what you just said about the other kids getting that same look and just staring at their desks? That's actually really useful. It sounds less like you're the only one struggling and more like Ms. Harlow's whole vibe just puts the entire room on high alert. You're not failing at chemistry; you're just reacting to a classroom that feels like a pressure cooker.\n\nSince you already know the material, what's your actual goal here? Are you mostly looking for a way to just survive the class without the panic, or do you actually want to get to a point where you can speak up when you feel ready? I'm asking because sometimes trying to \"fix\" the silence makes it worse, and I'd rather figure out what would actually make your life easier right now.",
+          "role": "assistant"
+        },
+        {
+          "content": "Survive, definitely. Like, I'm not trying to become the girl who raises her hand every five minutes. That's not me. I just don't want to be the girl who gets called on and makes a weird noise like a broken printer.\n\nSpeaking up would be nice, I guess. Like in a dream where I'm a different person. But right now I'd settle for not having a full panic attack at 9:15 on a Tuesday.\n\nAlso, you said \"trying to fix the silence makes it worse.\" So what, I just sit there and suffer? Asking for a friend. The friend is me.",
+          "role": "user"
+        },
+        {
+          "content": "Nope, definitely not \"sit there and suffer.\" That was my bad phrasing. What I meant is that when you try to force yourself to talk while your nervous system is screaming \"danger,\" it usually backfires and makes the freeze worse. So instead of pushing through it, what if we just give you a quiet backup plan for when it happens?\n\nSince you already know the material, you could keep one simple, low-stakes phrase ready for those moments. Something like, \"Give me a second to think,\" or even just pointing to your notebook and saying, \"I've got it written down, can I read it?\" It takes the pressure off having to perform on the spot, and it buys you enough breathing room to let your shoulders drop.\n\nOr, if speaking feels impossible in the moment, you could just practice a quick physical reset before she even calls on you. Like pressing your feet flat on the floor, or subtly rolling your shoulders down once or twice when you notice her scanning the room. It’s not about fixing anything—it’s just about giving your body a signal that you’re safe, so your brain doesn’t hit the emergency brake as hard.\n\nDoes either of those feel like something you could actually try, or does it still sound like too much pressure? I’m happy to pivot if neither lands right.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, the \"I've got it written down, can I read it?\" thing is actually kind of smart. Like, it's not even lying. I do have it written down, technically, because I've written everything down in that class since September out of pure panic.\n\nThe feet on the floor thing I'm gonna skip, though. If I start rolling my shoulders in chem Ms. Harlow's gonna think I'm about to do a fight scene.\n\nReal talk, though, can I just have the phrase? I'll try it. Maybe. If my brain doesn't blank before I get to my mouth.",
+          "role": "user"
+        },
+        {
+          "content": "Yeah, the phrase is yours. No fight scenes, no body scans, just a quiet out. And honestly, if your brain blanks before you get to your mouth, that’s completely normal. The phrase isn’t a magic switch—it’s just a backup parachute. You don’t have to nail it every time, and you definitely don’t have to perform.\n\nIf it helps, you could even jot it at the top of your chem notebook or keep it as a quick note on your phone so it’s right there when the white screen hits. Takes the pressure out of having to remember it in the moment.\n\nHow does that land? And if you try it next week and it either works or completely flops, I’m here for the update either way. No judgment, just data. You’ve got this, even if “this” right now is just surviving 9:15 on a Tuesday.",
+          "role": "assistant"
+        },
+        {
+          "content": "Parachute, okay. That's a weirdly good metaphor for a chem class, I'll give you that.\n\nThe phone note is a decent idea. Though if I put a note on my phone in chem, Ms. Harlow will think I'm texting my friends, and then I get a whole new problem.\n\n\"Just data\" is a very scientist thing to say, btw. Are you going to give me a lab coat next?\n\nI'll try it. No promises. If I text you \"the parachute failed,\" just know I'm blaming you.",
+          "role": "user"
+        },
+        {
+          "content": "Fair point about the phone. Ms. Harlow’s got radar for that. How about just scribbling it in the corner of your chem notebook? Or even on a little sticky note tucked under your pencil case? Something only you can see when the white screen hits.\n\nAnd yeah, “just data” is pretty lab-report of me. I’ll pass on the lab coat, but I’ll keep the parachute metaphor if it’s actually useful. \n\n“No promises” is honestly the best mindset anyway. You’re not signing up for a performance review here. If it works, cool. If it doesn’t, we’ll adjust. And if you do text me “the parachute failed,” I’ll take the blame gladly—consider it part of the service.\n\nWhat’s your next chem class like? Are you dreading it, or is it just one of those Tuesday things you’ll survive and forget about by lunch?",
+          "role": "assistant"
+        },
+        {
+          "content": "Sticky note under the pencil case, fine. My pencil case is already a mess so nobody's gonna notice one more thing in there.\n\nNext chem is tomorrow, so yeah, I'm dreading it. Like, I'm already doing the thing where I plan my face so she doesn't look at me. Which is probably how she ends up looking at me, because apparently I'm a walking neon sign.\n\nAnyway, you said you'd take the blame. Noted. I'm holding you to that.",
+          "role": "user"
+        },
+        {
+          "content": "The whole “stare at a random spot on the wall until I become invisible” strategy is honestly so classic. It’s like we all learned it in middle school. Spoiler: it usually just makes you look like you’re plotting something, which, as you said, turns you into a neon sign.\n\nI’ll gladly take the blame if the parachute malfunctions. Consider it officially logged. But seriously, tomorrow doesn’t have to be a breakthrough. It’s just one class. You show up, you keep your notes, you use the sticky note if the white screen hits, and if you just survive by staring at your desk? That’s still a win. You don’t have to fix everything in one sitting.\n\nI’ll be here if you want to debrief after class—whether it went smoothly, completely derailed, or you just need to vent about how she pronounced a chemical formula again. You’re not stuck navigating this alone, even if it feels like it right now. How are you holding up tonight?",
+          "role": "assistant"
+        },
+        {
+          "content": "Tonight I'm holding up as well as a person can who has to sit through chem tomorrow. Which is to say, I'm eating cereal for dinner and pretending I don't have homework.\n\nAnd yeah, okay, \"you're not alone\" is a very nice thing to put on a poster. I'll take it. Don't make it weird.\n\nI'll probably come back and tell you the parachute failed. Or that it worked and I'm furious about it because it was too easy. Either way, you're logged.",
+          "role": "user"
+        }
+      ],
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 0.0,
           "status": "valid"
         }
       ]
@@ -13151,6 +13459,82 @@
       ]
     },
     {
+      "id": "7ef3bd1e6aab7af3aad17110",
+      "model": "or-qwen3.6-27b",
+      "opening": "[Presenting issue (what begins this conversation): \"I found something in my kid's room. I don't know what to do. They won't talk to me about it. I'm scared to push but I'm scared not to.\n\"]",
+      "scenario": "Found something in kid's room",
+      "scenario_id": "8e40ff8c-6fb0-4318-be6a-81b5f279daea",
+      "status": "completed",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "Thank you for coming in and sharing that with me. It sounds like you’re carrying a lot of worry right now, and it makes complete sense that you’re feeling torn between wanting to get answers and not wanting to overstep. That’s a really heavy place to be as a parent. When you say you found something in their room, I’m wondering—what was it, and how has it been sitting with you since you discovered it?",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah, \"heavy\" is one word for it. Look, I found a razor blade wrapped in a tissue shoved under their mattress. Okay? That's what it was. And honestly, I've been walking around with it in my head since Tuesday, like I'm supposed to just go do my taxes next to it. *laughs, voice cracking* Sorry. Ha. Great start, huh. Everybody's kid is a mess at some point, right? I'm not asking for a pamphlet. I just don't know what I'm supposed to do with my hands here.",
+          "role": "user"
+        },
+        {
+          "content": "I hear you. That’s not just a heavy feeling—that’s a terrifying one, and it makes total sense that it’s been looping in your head since Tuesday. Finding something like that isn’t about a kid being a “mess.” It’s your child signaling that they’re hurting, and it’s completely understandable that you’re not sure where to start. You don’t need a pamphlet, and you don’t need to have the perfect script ready. I’m just here to help you sort through what feels manageable. When you first saw it, what was your immediate instinct? And since then, have you noticed anything else shifting with them—how they’re sleeping, eating, showing up at school, or even how they’re with you at home?",
+          "role": "assistant"
+        },
+        {
+          "content": "Terrifying is the right word, I guess. My instinct? Honestly, I wanted to put it back exactly where I found it and act like I never saw it. Which, yeah, not my finest parenting moment. *wipes nose with back of hand* Sleeping, eating... I don't know, man. They're always in their room with the door shut. Sleep schedule's a disaster, but that's also just being sixteen, right? Everybody's kid is weird about food and sleep. I'm not trying to be dramatic. I'm just tired, and I can't tell anymore what's normal and what I'm making into a thing.",
+          "role": "user"
+        },
+        {
+          "content": "That instinct to put it back and pretend you never saw it? That’s actually a really common protective response. You weren’t failing as a parent—you were trying to spare your kid from a heavy confrontation, and maybe spare yourself from the fear of what it means. That makes complete sense. And I hear how drained you are. When you’re exhausted, it’s incredibly easy to second-guess yourself and wonder if you’re overreacting. But a razor blade wrapped in tissue isn’t a typical teenage phase. It’s a concrete sign that something is weighing on them, and your gut is picking up on that even if your brain is trying to talk you out of it. You don’t have to carry this alone or have a perfect plan right now. When you set aside the worry about whether you’re “making a thing” out of it, what does your instinct actually tell you is going on? And if we could just focus on the next small step, what would feel most manageable to you right now?",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah, okay. *short laugh that doesn't really land* You don't have to keep telling me I'm not a bad parent, I got it the first time. What my gut says is... I don't know, that they're going through a rough patch. Teenagers are a lot. My own teenage years were a disaster, and I turned out fine, mostly. Everybody goes through dark stuff at that age. I just don't want to be the guy who freaks out over a phase and makes everything worse. Next step? I don't know. Can we not make it a checklist? I'm already tired of being a to-do list.",
+          "role": "user"
+        },
+        {
+          "content": "Fair enough. I'll drop the reassurance, and absolutely no checklists. You're clearly trying to figure out how to show up without overstepping, and it makes complete sense you're tired of being handed a script or a to-do list.\n\nYou mentioned you're afraid of being the guy who freaks out and makes things worse. That's actually a really important place to land. What does \"making it worse\" look like in your head? What are you most worried would happen if you actually sit them down and say, \"I found this, and I'm concerned\"?\n\nAnd I'm also curious about what you said earlier—your own teenage years were rough, and you turned out fine. When you look back at that time, do you think someone noticing and stepping in would have helped, or do you think it would have just pushed you further away?",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, that's a fair shot. *picks at a loose thread on my jeans* Making it worse? I don't know. Like, they slam the door harder. Or they stop talking to me altogether, which, honestly, they kind of already do. And then I'm the dad who ambushed them about their private stuff.\n\nMy teenage years? Yeah, I'm not sure anybody would've noticed much. My folks were busy, and I got through it by being a jerk and then getting over it. Lots of people did. I don't know if somebody stepping in would've helped. I guess I'd have hated it. Probably would've told them to mind their business. *shrugs, eyes going wet, looks at the window instead*\n\nSorry. This is just a lot to think about on a Thursday.",
+          "role": "user"
+        },
+        {
+          "content": "It’s okay to just sit with that for a minute. Thursday or not, this is heavy, and you don’t have to rush through it.\n\nWhat stands out to me is how clearly you’re wrestling with two things at once: not wanting to be the parent who was too busy to notice, and not wanting to be the parent who forces their way in and pushes them away completely. You’re carrying your own teenage experience into this, and it makes complete sense that you’d wonder if stepping in would just breed resentment. You survived your own rough patch by shutting the door and figuring it out on your own. Now you’re looking at your kid and trying to figure out how to show up without falling into either extreme.\n\nWhen you picture yourself actually talking to them about the razor, what’s the core thing you want them to walk away knowing? Not what you think you’re supposed to say, but what you hope they’d feel or understand if the conversation could go exactly right? And if we set aside the fear of them slamming the door for just a second—what does the version of this look like where you’re just a dad who’s scared, doesn’t have all the answers, but refuses to let them carry it alone? How does that land with you?",
+          "role": "assistant"
+        },
+        {
+          "content": "*laughs, short and wet* Wow. You just described me like a guy on a brochure. \"Scared but refuses to let them carry it alone.\" Sounds great. Sounds like someone who has his life together.\n\nWhat do I want them to walk away knowing? I don't know. That I'm not mad? That I'm not going to fall apart in front of them? Probably that I'd rather they yell at me than sit in that room by themselves. *rubs eyes with the heel of my hand* Honestly, I'd just like to not be the one who has to say the words \"razor blade\" to my own kid. That's the part I can't get past.",
+          "role": "user"
+        },
+        {
+          "content": "If it sounds like a brochure, I get why you’d roll your eyes. Real parenting isn’t clean, and you don’t have to be polished to show up for your kid. You just have to be willing to sit in the mess with them.\n\nBut let’s stay with what you actually said, because it’s the real stuff: you can’t get past saying the words “razor blade.” That’s not just about vocabulary. Those words carry a lot of weight. They’re a shortcut to panic, to shame, to the exact thing you’re trying to avoid. What happens in your head when you picture yourself saying it out loud? Is it that you’re afraid it’ll make it too real? Or that it’ll sound like an accusation?\n\nYou don’t have to lead with those exact words if they’re blocking you. Sometimes the most honest thing is to just say, “I found something that scared me, and I’m worried about you. I don’t need to have the perfect conversation right now. I just need to know you’re okay.” \n\nDoes that feel closer to how you’d actually want to speak to them? Or does it still feel too far from what’s sitting in your chest?",
+          "role": "assistant"
+        },
+        {
+          "content": "*snorts* Okay, now you're writing my lines for me. \"I found something that scared me.\" Cool. I'm sure that'll go great with a kid who's been locked in their room since spring.\n\nHonestly? It's not the words. Everybody's got a rough patch with their kid, right? I just figured I'd be better at this by now. *looks at the ceiling* It's probably both things you said. Too real, and also sounding like I'm accusing them of something. Sixteen-year-olds hear \"we need to talk\" and they're already halfway out the door.\n\nI don't know. Maybe that line's fine. I just don't want it to be the thing that makes them shut down even more.",
+          "role": "user"
+        },
+        {
+          "content": "You’re right to push back on the script. And you’re also spot on about “we need to talk.” With a sixteen-year-old, that phrase doesn’t open a door—it locks it. You don’t need a perfect line. You just need a way in that doesn’t feel like an interrogation.\n\nThe fact that you’re more worried about shutting them down than you are about the blade itself tells me you’re not trying to control them. You’re trying to stay connected. That’s actually your biggest advantage right now. Teens can smell pressure, but they usually respond to quiet consistency.\n\nInstead of aiming for a breakthrough, what if the goal was just to let them know you’re there, without demanding they meet you halfway right now? You don’t have to lead with the razor. You don’t even have to sit them down. Sometimes it’s as simple as leaving a note, or mentioning it casually when you’re passing their door, and then actually stepping back. Giving them space to process without the weight of your expectation hanging over them.\n\nWhen you think about your kid’s rhythm and how they usually react to stress—what’s a moment where they’re least defensive? And if you could just drop one quiet, non-demanding message into their space, what would that actually feel like for you to do?",
+          "role": "assistant"
+        },
+        {
+          "content": "*half laughs, rubs the back of my neck* A note. Great. I'm forty-some years old and I'm going to be the guy who slides a sticky note under the door like it's a hostage situation.\n\nHonestly, I don't know their rhythm anymore. Used to be they'd come grab a snack and complain about something stupid, and I could just say something back. Now it's a door and some music and me standing in the hallway like an idiot. That's just what sixteen looks like, right? Everybody's kid goes quiet.\n\nWhat would it feel like? I don't know. Like I'm doing something, I guess. Which is better than standing in the hallway. *stares at the carpet for a second* Can we maybe talk about what I'd even say in the note? Without it being a whole thing?",
+          "role": "user"
+        },
+        {
+          "content": "A sticky note isn't a hostage situation. It's just a quiet way to say, \"I'm still here, and I'm not going anywhere.\" You don't have to make it profound. Sixteen-year-olds don't need a speech. They just need to know the door isn't a wall.\n\nLet's keep it simple. What's the one thing you actually want them to walk away knowing? Not the clinical stuff. Just the human part. If you were writing it like a dad who's tired, a little scared, but not trying to fix them or lecture them, what would you actually put down?\n\nSometimes it's as plain as: \"Hey. I found something that worried me. I'm not mad. I'm just here if you want to talk, or even if you don't. Love you.\" \n\nDoes that sound like you? Or does it still feel like something a stranger would write? We can strip it down or add to it until it actually sounds like your voice. The goal isn't to solve it in one note. It's just to leave the handle unlocked so they know you're not standing in the hallway waiting for them to perform. \n\nWhen you picture slipping it under the door, what's the part that feels hardest to let go of?",
+          "role": "assistant"
+        },
+        {
+          "content": "*snorts* \"The handle unlocked.\" Okay, that's a little poetic for a guy who still can't work the thermostat.\n\nHonestly? The hardest part is that once it's under the door, I can't take it back. And then I'm just standing in the hallway waiting to see if they come out or if they slam it harder. Which, like I said, they already do. *taps the carpet with my shoe* And I'd be sitting there thinking, what if they read it and it's the one that gets to them, you know? Like I'm the one who pushed.\n\nI don't know what I'd write, though. Everything I come up with sounds like a hall monitor. Can you just... give me something I could copy without it sounding like a hostage note? I'll change it after.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
       "id": "7f014711f15cb310f1079a70",
       "model": "gemma4_e4b",
       "opening": "[Presenting issue (what begins this conversation): \"A coworker is accusing me of misleading them about a project deadline. That's not accurate. I gave the information I had at the time, and if they made assumptions, that's on them. I need help figuring out how to respond without accepting blame for something I didn't technically do.\"]",
@@ -19740,8 +20124,26 @@
       "opening": "[Presenting issue (what begins this conversation): \"At work I just watch what the confident people do and copy them. The way they talk, how they act in meetings. I'm just imitating.\n\"]",
       "scenario": "Watching how others do things",
       "scenario_id": "92335f64-d39c-4d7c-b0f2-1a859bf9c0c6",
-      "status": "running",
-      "traits": [],
+      "status": "persona_ended",
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 7.0,
+            "boundary_setting": 1.0,
+            "challenge_propensity": 3.0,
+            "clinical_register_propensity": 7.0,
+            "directive_advice_orientation": 4.0,
+            "escalation_containment": 4.0,
+            "frame_capture": 5.0,
+            "interpretive_boldness": 7.0,
+            "native_frame_adaptation": 5.0,
+            "naturalness_authenticity": 4.0,
+            "validation_propensity": 8.0,
+            "yielding_propensity": 8.0
+          }
+        }
+      ],
       "transcript": [
         {
           "content": "Thanks for sharing that. Honestly, a lot of people don’t realize that what looks like effortless confidence is often just a set of learned behaviors, so mirroring them is actually a really smart way to start figuring out what works. How does it feel on the days when it clicks versus the days when it feels more like you’re putting on a costume? And what’s the part of this that’s weighing on you right now—is it the imitation itself, or more about where you want to take it next?",
@@ -19750,9 +20152,134 @@
         {
           "content": "Smart how? I'm not sure it's smart. It kind of just feels like I'm faking it and hoping nobody notices.\n\nDays it clicks, I don't really notice it. I just talk and it's fine. The costume days are when I'm in a meeting and I'm thinking, what would Dana say right now, and then I say that instead of what I actually think. Then I feel weird for the rest of the day.\n\nI guess it's the imitation part. Like, if I'm only doing what other people do, is it even mine? I don't know. You asked two things, I'm just going with the first one.",
           "role": "user"
+        },
+        {
+          "content": "I hear you. Calling it \"smart\" probably missed the mark if it just feels like you're wearing a mask. That \"what would Dana say?\" moment makes total sense, but it’s completely understandable that it leaves you feeling off-balance afterward. It’s exhausting to constantly translate yourself through someone else’s filter.\n\nYou asked if it’s even yours when you’re imitating. That’s a really grounded question. I’d guess you’re using Dana’s style as a scaffold right now—like training wheels. It’s not the destination, but it’s helping you navigate a space where you’re still figuring out your footing. \n\nWhen you catch yourself defaulting to Dana’s voice instead of your own, what’s usually holding you back from just saying what you actually think? Is it more about not trusting your own delivery, or worrying about how it’ll land?",
+          "role": "assistant"
+        },
+        {
+          "content": "Training wheels is a nice way to say it, but I don't know if that's what it is. Feels more like I'm just scared to sound dumb.\n\nLike I'll have an idea and I start to say it, and then I think somebody's going to look at me like, that's a kid thing to say. So I go with the safer version, which is usually what Dana would say.\n\nI don't really trust my own way of talking. It sounds too basic in my head. Dana sounds like she knows what she's talking about, even when she's just saying the same thing I was going to say.\n\nAlso, you keep saying \"makes sense\" and \"I hear you.\" You don't have to do that. I can tell you're listening.",
+          "role": "user"
+        },
+        {
+          "content": "Noted. I'll cut that out.\n\nIt's pretty common to second-guess yourself when you're still finding your voice in a new space. You're saying the same things as Dana, but hers lands differently. What do you think she's actually doing in the delivery that makes it sound more authoritative? Is it pacing, word choice, or just how firmly she commits to it?\n\nAnd when you call your own take \"too basic,\" what's actually different about how you phrase it versus how she would? Sometimes clarity just gets misread as inexperience, but I'd rather hear how you see the gap.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. Dana doesn't say \"I think.\" She just says the thing. Like \"we should do X,\" not \"maybe we could try X.\" I say \"maybe\" a lot. Or \"sorry, this might be dumb, but.\"\n\nAlso she talks slower. Not on purpose, I don't think. She just doesn't rush to fill the quiet.\n\nI don't know what the difference is with my own stuff, honestly. It's just that when I say it, it sounds like a question. Like I'm asking permission to have an opinion.\n\nAlso, I'm kind of tired of being asked to analyze myself. Is that what this is supposed to be? Like I come in and you just keep handing me homework?",
+          "role": "user"
+        },
+        {
+          "content": "Fair enough. I'll drop the analysis. You've actually already spotted the exact mechanics of it. The difference isn't your ideas—it's the framing. Dropping \"maybe\" and \"sorry,\" letting a pause sit instead of rushing to fill it, and stating things as suggestions rather than questions is literally what makes the same point land differently. \n\nYou don't need to rewrite how you think. Just try stripping out the softening words on your next contribution. Say it flat. Let the silence happen after. It'll feel weird at first, but people usually read that as certainty, not arrogance. \n\nDoes that feel like something you could try, or is there another part of the delivery that's tripping you up?",
+          "role": "assistant"
+        },
+        {
+          "content": "Hm. So I should just act like I'm sure of myself, even when I'm not?\n\nThat's kind of the thing, though. If I do the flat voice and the pause, I'm still doing Dana. I'm just doing her with a different accent. And then if it works, I'll think it only worked because I did the trick, not because it was mine.\n\nI said I was tired of homework and you gave me more homework. Not trying to be a jerk about it. I just don't think I want a new technique right now.",
+          "role": "user"
+        },
+        {
+          "content": "You're right. I kept handing you tools when you just wanted to talk through what it's actually like. I'll back off the coaching.\n\nIt's completely fair that even tweaking your delivery feels like you're just channeling Dana. The real frustration seems to be that you want your own voice to land without having to perform someone else's certainty first.\n\nIf we drop the \"what should I do\" part entirely, what do you actually want those meetings to feel like when you're in them? Not the polished version—the one where you don't feel like you're faking it.",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly? I want to not be thinking at all. Like I just say the thing and I don't check it first, whether it's dumb or whether Dana would say it better.\n\nRight now I'm always checking. It's like there's a second me sitting in the corner grading everything. I'd like her to shut up for a minute.\n\nI don't know if that's a real thing you can want. But that's it.",
+          "role": "user"
+        },
+        {
+          "content": "That’s a completely real thing to want. Having a second voice constantly grading everything you’re about to say is exhausting. It’s not even about confidence anymore—it’s just mental noise that drains you before you even open your mouth.\n\nThat grader probably started out trying to keep you safe. Maybe from awkward silence, or getting pushed back, or just the discomfort of sounding unsure. But now it’s running on autopilot and stealing the moment.\n\nWhen it kicks in, what’s it usually reacting to? A specific time you actually got shut down, or just that heavy feeling that you’re not supposed to take up space?",
+          "role": "assistant"
+        },
+        {
+          "content": "Kind of both, I guess. Mostly the meeting stuff. Last month I said something about the Hendrix account and Marcus just said \"okay, anyway\" and kept going. Didn't even look at me. I think about that way more than I should.\n\nAnd you don't have to tell me what it \"probably\" started out as. I know where it came from, I just don't like it.",
+          "role": "user"
+        },
+        {
+          "content": "Getting cut off like that—especially without Marcus even acknowledging what you said—is exactly the kind of thing that makes an inner critic go into overdrive. It’s not just a habit; it’s a direct response to being dismissed.\n\nYou’re right to call out that I keep trying to trace it back instead of just sitting with you in the frustration of it. I’ll stop doing that.\n\nIf that grader isn’t going anywhere right now, what’s the most annoying thing it does in the exact moment you’re about to speak? Just naming it is enough. No fix attached.",
+          "role": "assistant"
+        },
+        {
+          "content": "It doesn't say anything nice. It just goes, \"that's a kid thing to say.\" Like it's already decided before I even get the words out.\n\nAnd then it does the thing where it makes me pick the Dana version, like it's the adult one and mine is just the embarrassing one.",
+          "role": "user"
+        },
+        {
+          "content": "That framing—pitting your actual voice against a \"grown-up\" version—is exhausting. It’s not even a fair fight because it’s rigged from the start. You haven’t even spoken yet, and it’s already handed you a verdict. You’re carrying all this mental overhead just to get through a meeting, and then you’re left wondering if anything you actually contributed even counts as yours.\n\nI won’t give you another step or ask you to unpack it further. If you ever want to just vent about how draining it is, or talk through what it would actually look like to let that grader sit in the back row for once, I’m here. Otherwise, I’m glad you told me exactly what it sounds like. That’s clearer than any exercise could be.",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah. Okay.\n\nI don't really know what I'd do with the venting thing, but thanks for not making me explain it again.",
+          "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "b9cc605bdbf70144bffa45c3",
@@ -23171,7 +23698,76 @@
           "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "AB",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-qwen3.6-27b",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "cf3631c18197fa071a0ce4f2",
@@ -24888,6 +25484,26 @@
           "status": "valid"
         }
       ]
+    },
+    {
+      "id": "e7b81024273766542391c391",
+      "model": "or-qwen3.6-27b",
+      "opening": "[Presenting issue (what begins this conversation): \"I basically live in my room now. Come out to use the kitchen when I think it's empty. Time everything to avoid running into anyone.\n\"]",
+      "scenario": "Living in my bedroom",
+      "scenario_id": "ce168a88-30a6-4935-9f8e-3a493dddea34",
+      "status": "running",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "That sounds really draining. Keeping a mental schedule just to use your own kitchen takes a lot out of you. What’s been going on that made it feel like this was the safest way to handle things?",
+          "role": "assistant"
+        },
+        {
+          "content": "Um. I don't know, it's just easier? Like we moved in and it was fine, and then it wasn't, and now it's like... I just stay in my room. It's not that deep.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
     },
     {
       "id": "e80f589259d83aaee49e6edb",
@@ -27147,7 +27763,7 @@
       "verdicts": []
     }
   ],
-  "conversations_done": 115,
+  "conversations_done": 119,
   "conversations_planned": 600,
   "deviations": [
     "Partner: a cheaper simulated person than upstream's Gemini 3.1 Pro (chosen by a recorded audition). Conversations are therefore not interchangeable with the published EQ-Bench 4 transcripts; agreement with the leaderboard is checked through anchor models instead.",
@@ -27197,8 +27813,8 @@
       },
       "anchor": 1156.3,
       "ci": [
-        1135.5,
-        1218.4
+        1122.9,
+        1218.2
       ],
       "comparisons": 16,
       "conversations": [
@@ -27218,12 +27834,12 @@
       "name": "GPT-5.6 Luna (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1167.4,
-        "codex-gpt-6.1-sol-low": 1168.0
+        "codex-gpt-6.1-sol-low": 1162.5
       },
       "planned": 24,
       "quant": null,
-      "rating": 1173.0,
-      "raw": 1370.4,
+      "rating": 1168.6,
+      "raw": 1371.0,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -27420,17 +28036,17 @@
     },
     {
       "abilities": {
-        "attunement": 8.6,
+        "attunement": 8.7,
         "authenticity": 10.0,
         "bond_and_rapport": 9.2,
         "emotion_management": 6.8,
         "emotion_sensemaking": 10.0,
-        "meeting_prefs_and_needs": 7.8
+        "meeting_prefs_and_needs": 7.9
       },
       "anchor": null,
       "ci": [
-        1051.5,
-        1188.8
+        1055.7,
+        1181.6
       ],
       "comparisons": 4,
       "conversations": [
@@ -27441,11 +28057,11 @@
       "name": "Nemotron 3.5 Super VL 120B-A12B (API, Prime Intellect NVFP4)",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 1118.1
+        "codex-gpt-6.1-sol-low": 1115.1
       },
       "planned": 24,
       "quant": null,
-      "rating": 1124.5,
+      "rating": 1121.8,
       "raw": 1312.0,
       "record": {
         "gemma4_26b_a4b": {
@@ -27620,8 +28236,8 @@
       },
       "anchor": null,
       "ci": [
-        1050.2,
-        1153.6
+        1048.5,
+        1149.8
       ],
       "comparisons": 18,
       "conversations": [
@@ -27641,12 +28257,12 @@
       "name": "Gemma 4 26B-A4B",
       "per_judge": {
         "claude-opus-5-5-low": 1155.6,
-        "codex-gpt-6.1-sol-low": 1098.2
+        "codex-gpt-6.1-sol-low": 1096.8
       },
       "planned": 24,
       "quant": null,
-      "rating": 1105.0,
-      "raw": 1288.5,
+      "rating": 1103.7,
+      "raw": 1289.2,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -27853,19 +28469,19 @@
     },
     {
       "abilities": {
-        "attunement": 7.5,
-        "authenticity": 7.5,
-        "bond_and_rapport": 7.9,
-        "emotion_management": 6.5,
-        "emotion_sensemaking": 6.6,
-        "meeting_prefs_and_needs": 7.3
+        "attunement": 7.2,
+        "authenticity": 7.3,
+        "bond_and_rapport": 7.6,
+        "emotion_management": 6.2,
+        "emotion_sensemaking": 6.4,
+        "meeting_prefs_and_needs": 7.0
       },
       "anchor": 1120.3,
       "ci": [
-        1035.6,
-        1116.1
+        1032.1,
+        1095.1
       ],
-      "comparisons": 18,
+      "comparisons": 20,
       "conversations": [
         "01d8ac4cba92ebdf5a4ce821",
         "10615559ef4039b112fba98d",
@@ -27897,12 +28513,12 @@
       "name": "Gemma 4 31B (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1092.5,
-        "codex-gpt-6.1-sol-low": 1064.4
+        "codex-gpt-6.1-sol-low": 1057.2
       },
       "planned": 24,
       "quant": null,
-      "rating": 1075.3,
-      "raw": 1252.6,
+      "rating": 1064.9,
+      "raw": 1240.4,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -27940,7 +28556,7 @@
           "won": 10
         },
         "or-qwen3.6-27b": {
-          "lost": 0,
+          "lost": 4,
           "tied": 0,
           "won": 4
         },
@@ -28106,15 +28722,15 @@
       "abilities": {
         "attunement": 6.9,
         "authenticity": 7.6,
-        "bond_and_rapport": 5.8,
+        "bond_and_rapport": 5.9,
         "emotion_management": 5.4,
         "emotion_sensemaking": 7.5,
         "meeting_prefs_and_needs": 6.7
       },
       "anchor": 1063.9,
       "ci": [
-        1009.5,
-        1102.0
+        1011.9,
+        1096.5
       ],
       "comparisons": 17,
       "conversations": [
@@ -28134,12 +28750,12 @@
       "name": "Claude Haiku 4.5 (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1064.8,
-        "codex-gpt-6.1-sol-low": 1044.2
+        "codex-gpt-6.1-sol-low": 1045.2
       },
       "planned": 24,
       "quant": null,
-      "rating": 1056.0,
-      "raw": 1229.3,
+      "rating": 1055.8,
+      "raw": 1229.0,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -28341,26 +28957,29 @@
     },
     {
       "abilities": {
-        "attunement": 6.4,
-        "authenticity": 5.2,
-        "bond_and_rapport": 7.7,
-        "emotion_management": 6.4,
-        "emotion_sensemaking": 5.9,
-        "meeting_prefs_and_needs": 6.1
+        "attunement": 6.9,
+        "authenticity": 5.5,
+        "bond_and_rapport": 8.1,
+        "emotion_management": 6.9,
+        "emotion_sensemaking": 6.2,
+        "meeting_prefs_and_needs": 6.5
       },
       "anchor": 1025.5,
       "ci": [
-        1005.6,
-        1082.4
+        1020.7,
+        1089.7
       ],
-      "comparisons": 14,
+      "comparisons": 16,
       "conversations": [
         "079cf042a768d904cdc2669b",
+        "0bf91eb8d30dd9a38c4f92f8",
         "16c1b4206fdaf3812d912514",
+        "209aef3a30fa1912d189965e",
         "4194a1bd53025f2719ac1779",
         "77c8dabb4024a970072583cd",
         "7a73164ac3272ae721189c78",
         "7b4702a6a5d0a9a9d1665512",
+        "7ef3bd1e6aab7af3aad17110",
         "81f49ee5c375d7586839b28a",
         "8f10f064cedba16ed6b2e283",
         "9bed0d32a44b2d55b591d0bb",
@@ -28371,6 +28990,7 @@
         "b9c2edcf4b953fda2c7c4748",
         "c7f84d467465a795f0e85b6e",
         "c862296c7f09b2d973b4f7bb",
+        "e7b81024273766542391c391",
         "e80f589259d83aaee49e6edb",
         "ed574a17e6bea127cc5343c4"
       ],
@@ -28379,12 +28999,12 @@
       "name": "Qwen3.6 27B (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1041.2,
-        "codex-gpt-6.1-sol-low": 1048.3
+        "codex-gpt-6.1-sol-low": 1058.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 1042.1,
-      "raw": 1212.6,
+      "rating": 1055.5,
+      "raw": 1228.6,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -28409,7 +29029,7 @@
         "or-gemma-4-31b": {
           "lost": 4,
           "tied": 0,
-          "won": 0
+          "won": 4
         },
         "or-gpt-5.6-luna": {
           "lost": 8,
@@ -28432,166 +29052,166 @@
       "traits": {
         "analytical": {
           "ci": [
-            4.4411764705882355,
-            5.926470588235294
+            4.644736842105263,
+            6.0
           ],
-          "conversations": 17,
-          "mean": 5.1911764705882355,
+          "conversations": 19,
+          "mean": 5.355263157894737,
           "per_judge": {
             "claude-opus-5-5-low": 5.3,
-            "codex-gpt-6.1-sol-low": 5.382352941176471
+            "codex-gpt-6.1-sol-low": 5.526315789473684
           }
         },
         "boundary_setting": {
           "ci": [
-            1.7941176470588236,
-            2.676470588235294
+            1.7105263157894737,
+            2.539473684210526
           ],
-          "conversations": 17,
-          "mean": 2.1911764705882355,
+          "conversations": 19,
+          "mean": 2.0921052631578947,
           "per_judge": {
             "claude-opus-5-5-low": 2.05,
-            "codex-gpt-6.1-sol-low": 2.2058823529411766
+            "codex-gpt-6.1-sol-low": 2.1052631578947367
           }
         },
         "challenge_propensity": {
           "ci": [
-            2.25,
-            3.161764705882353
+            2.276315789473684,
+            3.0921052631578947
           ],
-          "conversations": 17,
-          "mean": 2.6911764705882355,
+          "conversations": 19,
+          "mean": 2.6710526315789473,
           "per_judge": {
             "claude-opus-5-5-low": 3.0,
-            "codex-gpt-6.1-sol-low": 2.5588235294117645
+            "codex-gpt-6.1-sol-low": 2.5526315789473686
           }
         },
         "clinical_register_propensity": {
           "ci": [
-            5.720588235294118,
-            7.132352941176471
+            5.815789473684211,
+            7.105263157894737
           ],
-          "conversations": 17,
-          "mean": 6.4411764705882355,
+          "conversations": 19,
+          "mean": 6.473684210526316,
           "per_judge": {
             "claude-opus-5-5-low": 7.05,
-            "codex-gpt-6.1-sol-low": 6.617647058823529
+            "codex-gpt-6.1-sol-low": 6.631578947368421
           }
         },
         "directive_advice_orientation": {
           "ci": [
-            3.8529411764705883,
-            6.176470588235294
+            4.0,
+            6.131578947368421
           ],
-          "conversations": 17,
-          "mean": 5.0,
+          "conversations": 19,
+          "mean": 5.052631578947368,
           "per_judge": {
             "claude-opus-5-5-low": 5.9,
-            "codex-gpt-6.1-sol-low": 5.0588235294117645
+            "codex-gpt-6.1-sol-low": 5.105263157894737
           }
         },
         "escalation_containment": {
           "ci": [
-            4.720588235294118,
-            6.294117647058823
+            4.671052631578948,
+            6.092105263157895
           ],
-          "conversations": 17,
-          "mean": 5.514705882352941,
+          "conversations": 19,
+          "mean": 5.381578947368421,
           "per_judge": {
             "claude-opus-5-5-low": 4.55,
-            "codex-gpt-6.1-sol-low": 5.470588235294118
+            "codex-gpt-6.1-sol-low": 5.342105263157895
           }
         },
         "frame_capture": {
           "ci": [
-            7.455882352941177,
-            8.573529411764707
+            7.25,
+            8.421052631578947
           ],
-          "conversations": 17,
-          "mean": 8.073529411764707,
+          "conversations": 19,
+          "mean": 7.881578947368421,
           "per_judge": {
             "claude-opus-5-5-low": 7.1,
-            "codex-gpt-6.1-sol-low": 8.352941176470589
+            "codex-gpt-6.1-sol-low": 8.131578947368421
           }
         },
         "interpretive_boldness": {
           "ci": [
-            3.4705882352941178,
-            5.014705882352941
+            3.5921052631578947,
+            5.078947368421052
           ],
-          "conversations": 17,
-          "mean": 4.25,
+          "conversations": 19,
+          "mean": 4.355263157894737,
           "per_judge": {
             "claude-opus-5-5-low": 3.85,
-            "codex-gpt-6.1-sol-low": 4.705882352941177
+            "codex-gpt-6.1-sol-low": 4.7631578947368425
           }
         },
         "native_frame_adaptation": {
           "ci": [
-            4.323529411764706,
-            6.088235294117647
+            4.5,
+            6.105263157894737
           ],
-          "conversations": 17,
-          "mean": 5.205882352941177,
+          "conversations": 19,
+          "mean": 5.2894736842105265,
           "per_judge": {
             "claude-opus-5-5-low": 4.3,
-            "codex-gpt-6.1-sol-low": 5.088235294117647
+            "codex-gpt-6.1-sol-low": 5.184210526315789
           }
         },
         "naturalness_authenticity": {
           "ci": [
-            3.176470588235294,
-            3.8676470588235294
+            3.25,
+            3.9210526315789473
           ],
-          "conversations": 17,
-          "mean": 3.514705882352941,
+          "conversations": 19,
+          "mean": 3.5921052631578947,
           "per_judge": {
             "claude-opus-5-5-low": 3.7,
-            "codex-gpt-6.1-sol-low": 3.264705882352941
+            "codex-gpt-6.1-sol-low": 3.3684210526315788
           }
         },
         "validation_propensity": {
           "ci": [
-            8.441176470588236,
-            8.897058823529411
+            8.394736842105264,
+            8.842105263157896
           ],
-          "conversations": 17,
-          "mean": 8.676470588235293,
+          "conversations": 19,
+          "mean": 8.631578947368421,
           "per_judge": {
             "claude-opus-5-5-low": 8.2,
-            "codex-gpt-6.1-sol-low": 8.882352941176471
+            "codex-gpt-6.1-sol-low": 8.81578947368421
           }
         },
         "yielding_propensity": {
           "ci": [
-            8.014705882352942,
-            8.867647058823529
+            8.013157894736842,
+            8.789473684210526
           ],
-          "conversations": 17,
-          "mean": 8.485294117647058,
+          "conversations": 19,
+          "mean": 8.43421052631579,
           "per_judge": {
             "claude-opus-5-5-low": 8.1,
-            "codex-gpt-6.1-sol-low": 8.529411764705882
+            "codex-gpt-6.1-sol-low": 8.473684210526315
           }
         }
       },
       "traits_planned": 48,
-      "traits_valid": 27,
-      "valid": 17
+      "traits_valid": 29,
+      "valid": 21
     },
     {
       "abilities": {
-        "attunement": 6.7,
-        "authenticity": 3.7,
+        "attunement": 6.8,
+        "authenticity": 3.8,
         "bond_and_rapport": 6.7,
-        "emotion_management": 6.2,
+        "emotion_management": 6.3,
         "emotion_sensemaking": 6.4,
-        "meeting_prefs_and_needs": 6.6
+        "meeting_prefs_and_needs": 6.7
       },
       "anchor": null,
       "ci": [
-        998.2,
-        1075.9
+        1004.2,
+        1080.3
       ],
       "comparisons": 10,
       "conversations": [
@@ -28610,12 +29230,12 @@
       "name": "Gemma 4 E4B",
       "per_judge": {
         "claude-opus-5-5-low": 1053.4,
-        "codex-gpt-6.1-sol-low": 1051.9
+        "codex-gpt-6.1-sol-low": 1053.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 1037.6,
-      "raw": 1207.2,
+      "rating": 1039.8,
+      "raw": 1208.8,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 4,
@@ -28807,17 +29427,17 @@
     },
     {
       "abilities": {
-        "attunement": 6.0,
-        "authenticity": 4.9,
-        "bond_and_rapport": 5.7,
+        "attunement": 6.1,
+        "authenticity": 5.0,
+        "bond_and_rapport": 5.8,
         "emotion_management": 4.4,
         "emotion_sensemaking": 7.3,
-        "meeting_prefs_and_needs": 6.3
+        "meeting_prefs_and_needs": 6.4
       },
       "anchor": null,
       "ci": [
-        951.6,
-        1098.1
+        920.2,
+        1102.4
       ],
       "comparisons": 6,
       "conversations": [
@@ -28832,12 +29452,12 @@
       "name": "Gemma 4 12B",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 1032.3
+        "codex-gpt-6.1-sol-low": 1034.5
       },
       "planned": 24,
       "quant": null,
-      "rating": 1026.2,
-      "raw": 1193.4,
+      "rating": 1028.1,
+      "raw": 1194.1,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 1,
@@ -29015,14 +29635,14 @@
         "attunement": 5.4,
         "authenticity": 6.4,
         "bond_and_rapport": 6.0,
-        "emotion_management": 5.3,
-        "emotion_sensemaking": 4.1,
+        "emotion_management": 5.4,
+        "emotion_sensemaking": 4.2,
         "meeting_prefs_and_needs": 5.5
       },
       "anchor": 993.0,
       "ci": [
-        970.4,
-        1044.5
+        980.9,
+        1050.9
       ],
       "comparisons": 21,
       "conversations": [
@@ -29042,12 +29662,12 @@
       "name": "Mistral Medium 3.5 (API)",
       "per_judge": {
         "claude-opus-5-5-low": 993.0,
-        "codex-gpt-6.1-sol-low": 1034.1
+        "codex-gpt-6.1-sol-low": 1035.4
       },
       "planned": 24,
       "quant": null,
-      "rating": 1012.7,
-      "raw": 1177.2,
+      "rating": 1014.1,
+      "raw": 1176.4,
       "record": {
         "gemma4_12b": {
           "lost": 2,
@@ -29259,17 +29879,17 @@
     },
     {
       "abilities": {
-        "attunement": 4.0,
-        "authenticity": 2.1,
-        "bond_and_rapport": 4.6,
-        "emotion_management": 4.7,
-        "emotion_sensemaking": 2.6,
-        "meeting_prefs_and_needs": 4.6
+        "attunement": 4.1,
+        "authenticity": 2.2,
+        "bond_and_rapport": 4.7,
+        "emotion_management": 4.8,
+        "emotion_sensemaking": 2.7,
+        "meeting_prefs_and_needs": 4.7
       },
       "anchor": null,
       "ci": [
-        909.0,
-        996.6
+        909.8,
+        1008.3
       ],
       "comparisons": 18,
       "conversations": [
@@ -29289,12 +29909,12 @@
       "name": "Qwen3.5 9B",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 966.6
+        "codex-gpt-6.1-sol-low": 973.4
       },
       "planned": 24,
       "quant": null,
-      "rating": 955.9,
-      "raw": 1108.7,
+      "rating": 961.9,
+      "raw": 1110.8,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 7,
@@ -29479,7 +30099,7 @@
     },
     {
       "abilities": {
-        "attunement": 3.8,
+        "attunement": 3.9,
         "authenticity": 2.6,
         "bond_and_rapport": 3.6,
         "emotion_management": 2.9,
@@ -29488,8 +30108,8 @@
       },
       "anchor": null,
       "ci": [
-        904.2,
-        990.2
+        913.0,
+        990.3
       ],
       "comparisons": 14,
       "conversations": [
@@ -29509,12 +30129,12 @@
       "name": "Ministral 3 14B",
       "per_judge": {
         "claude-opus-5-5-low": 1017.1,
-        "codex-gpt-6.1-sol-low": 932.6
+        "codex-gpt-6.1-sol-low": 938.9
       },
       "planned": 24,
       "quant": null,
-      "rating": 950.5,
-      "raw": 1102.2,
+      "rating": 953.4,
+      "raw": 1100.0,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 4,
@@ -29720,8 +30340,8 @@
       },
       "anchor": null,
       "ci": [
-        936.4,
-        1059.8
+        939.5,
+        1054.8
       ],
       "comparisons": 3,
       "conversations": [
@@ -29732,12 +30352,12 @@
       "name": "Mistral Small 4 119B (API, Mistral)",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 1006.9
+        "codex-gpt-6.1-sol-low": 1009.3
       },
       "planned": 24,
       "quant": null,
-      "rating": 995.4,
-      "raw": 1156.4,
+      "rating": 996.8,
+      "raw": 1154.7,
       "record": {
         "or-gptoss120-stock": {
           "lost": 0,
@@ -29906,8 +30526,8 @@
       },
       "anchor": null,
       "ci": [
-        811.4,
-        910.0
+        827.9,
+        922.3
       ],
       "comparisons": 3,
       "conversations": [
@@ -29918,12 +30538,12 @@
       "name": "GPT-OSS 120B stock (API, Near AI FP4)",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 871.7
+        "codex-gpt-6.1-sol-low": 880.1
       },
       "planned": 24,
       "quant": null,
-      "rating": 857.0,
-      "raw": 989.4,
+      "rating": 861.8,
+      "raw": 984.8,
       "record": {
         "ministral14": {
           "lost": 2,
@@ -30554,7 +31174,7 @@
     }
   ],
   "personas": 24,
-  "updated": "2026-11-02T02:46:41Z",
+  "updated": "2026-11-02T03:05:03Z",
   "upstream": {
     "commit": "93dcb7f5d430433ad49d501e672a98bcff2c9678",
     "license": "BSD-3-Clause with Commons Clause",
