@@ -6,6 +6,7 @@ test('EQ pages fit viewport and expose persona prompts', async ({page}) => {
   }
   await page.getByText("Tested model's initial instructions", {exact:true}).first().click();
   await expect(page.locator('details[open] pre').first()).toBeVisible();
+  await page.locator('.persona-conversations summary').first().click();
   await page.locator('a[href^="/eq/conversations/"]').first().click();
   await expect(page.getByText('Opening', {exact:true})).toBeVisible();
   await expect(page.getByRole('link', {name:'View persona and initial instructions'})).toBeVisible();
