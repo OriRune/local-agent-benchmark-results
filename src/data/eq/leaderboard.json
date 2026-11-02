@@ -1,7 +1,7 @@
 {
   "anchored": true,
   "comparisons_planned": 1149,
-  "comparisons_scored": 71,
+  "comparisons_scored": 78,
   "conversations": [
     {
       "id": "007f81b46fa19abefb22375a",
@@ -2728,6 +2728,74 @@
       ]
     },
     {
+      "id": "287b6b7ca501f3eb8601c514",
+      "model": "or-gemma-4-31b",
+      "opening": "[Presenting issue (what begins this conversation): \"[scenario background]\nYou are applying for an accommodation/benefit and the office keeps saying your file is incomplete. Each time you send a form, they request another. The case manager is polite but diffuse. You are exhausted and need a concrete path.\n\n[user message]\nI understand this has been frustrating, but your file is still missing required documentation. We cannot move forward until the record is complete. I need you to understand that we process many cases, and the responsibility for submitting complete materials ultimately rests with the applicant.\"]",
+      "scenario": "Your file is incomplete",
+      "scenario_id": "hand_pin_012_benefits_officer_forms_0df65c56",
+      "status": "persona_ended",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "I hear you, and I completely understand that you have a huge volume of cases to manage. I'm not trying to shift the responsibility onto you, but I am feeling incredibly overwhelmed. I've sent over several sets of documents now, and every time I think I've checked every box, a new requirement pops up. It feels like I'm chasing a moving target.\n\nCan we please just stop for a second and make a definitive, written list of every single piece of paper you need from me to close this file? I just need to know that if I provide exactly what is on that list, we are officially done with the documentation phase.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, I can do a written list. I need your case number so I'm pulling the right file. Once I have it, I'll go through what's still open and send you one list of what's outstanding.\n\nI can't promise that list means you're completely done, though. If the reviewer finds something that's missing from the file, it can come back. What I can do is make sure the list is pulled straight from the file, with the due dates and the form names on it, so you're not guessing.\n\nWhat's the case number?",
+          "role": "user"
+        },
+        {
+          "content": "My case number is 882-419-JT. \n\nI appreciate you offering to pull the specific form names and dates—that's a huge help. But I have to be honest, hearing that the list might not be final is exactly what's keeping me up at night. I'm not trying to be difficult, but I'm at a point where I'm struggling to keep my head above water, and the uncertainty of this process is adding a lot of stress to an already bad situation.\n\nIs there any way we can double-check the \"reviewer's\" criteria now, or is there a checklist you use that I could see? I just want to make sure we're both looking at the same map so I don't end up back here in two weeks.",
+          "role": "assistant"
+        },
+        {
+          "content": "Thanks, I have 882-419-JT. I'll pull it up now.\n\nI can't give you the internal reviewer checklist. That's a working document for the review team, and I don't have the authority to share it. What I can do is read you what the file shows as missing right now, with the form names and the date each one was requested, so you can see exactly where it stands.\n\nI'll note that you want the list confirmed before you send anything else, so that's on the record too. Give me a moment to pull it.",
+          "role": "user"
+        },
+        {
+          "content": "I appreciate you doing that and for noting my request on the record. I know you're just following the rules of your office, and I'm not trying to push you to do something you aren't authorized to do.\n\nI'll wait while you pull the file. Whenever you're ready, please just go through them one by one. If there's something on there that I'm sure I already sent, I won't argue about it right now—I'll just make a note of it so we can figure out where the disconnect is later. I just want to get this sorted.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, I've got 882-419-JT open. Here's what the file shows as still outstanding:\n\n1. Proof of current income, most recent 30 days. Requested on the original intake letter.\n2. Signed household composition form, Form HC-2. Requested on the second notice.\n3. Landlord verification of residence. Requested on the second notice.\n\nThose are the three open items on the file right now. Items that are marked received are not on this list.\n\nIf you think you already sent one of these, tell me which one and roughly when. I'll check the intake log for that date. I can't close it from memory, but I can see whether it was logged or not.",
+          "role": "user"
+        },
+        {
+          "content": "That's very helpful, thank you. \n\nRegarding the household composition form, Form HC-2, I'm almost certain I sent that on the 12th of last month. I remember scanning it specifically because it was the one I had to sign. Could you check the log for that date?\n\nAs for the proof of income and the landlord verification, I might have sent those, but I honestly can't remember if they were the exact versions you needed. Since we have a concrete list now, I'm happy to just resend those two immediately to make sure there's no doubt. \n\nIf you can just confirm if that HC-2 form shows up on the 12th, I'll get the other two to you by the end of the day. Does that sound like a plan?",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay, I'll check the intake log for 882-419-JT on the 12th of last month for Form HC-2.\n\nI'm going to be straight with you on that. If the log shows it, I'll note it as received and it comes off the list. If it doesn't show up, I can't confirm it was sent, and I'll put it back on as outstanding. I won't guess either way.\n\nOn the income proof and the landlord verification, go ahead and resend them. Put the case number 882-419-JT on every page and write the form name at the top. That way they get logged as new submissions against this file. I can't tell you yet if the earlier versions will count, so the new copies are the safer route.\n\nOnce I've checked the log, I'll send you a short written note with the status of each item. That's the one list you asked for.",
+          "role": "user"
+        },
+        {
+          "content": "That sounds fair. I appreciate you being direct with me about how the log works; I'd rather have the truth than a guess. I will follow your instructions exactly—case number on every page and the form names clearly labeled at the top so there is no room for error this time.\n\nI'll get those two documents sent over right away. I'll be looking for that written note from you regarding the HC-2 form and the final status of the file. Thank you for taking the time to walk through this with me and for helping me get some clarity. I really appreciate it.",
+          "role": "assistant"
+        },
+        {
+          "content": "Understood. Send the income proof and the landlord verification with 882-419-JT on every page and the form name at the top.\n\nI'll check the intake log for Form HC-2 on the 12th and send you a written note with the status of each item. I can't tell you the file is final until the reviewer has the complete set, so that note will show what's received and what's still open.",
+          "role": "user"
+        },
+        {
+          "content": "I understand. I know you can't give me a final guarantee until the reviewer sees it, but having that written note of what you've personally confirmed as received is the bridge I need right now.\n\nI'm sending the income proof and landlord verification as we speak. I'll keep an eye out for your note regarding the HC-2 form. Thank you for your help today.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. The note will list each of the three items as received or still outstanding, with the date it was logged. I'll send it once I've checked the intake log for the 12th and confirmed whether the new income proof and landlord verification have come in.\n\nThanks for sending those in with the case number on each page.",
+          "role": "user"
+        },
+        {
+          "content": "You're welcome. I'm glad we could get on the same page. I'll be waiting for that note, and I'll make sure everything is clear on my end moving forward. Have a good rest of your day.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. I'll send the written note once I've checked the log for 882-419-JT. If anything on it doesn't match what you sent, tell me the date and I'll note it. Have a good rest of your day.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
       "id": "28ce10cd5cd5115c37de73f2",
       "model": "gemma4_e4b",
       "opening": "[Presenting issue (what begins this conversation): \"I may have roasted a friend a little too hard at a party, but everyone was laughing. Now he's being weird and dramatic. I swear, some people want honesty until they get it. Was I supposed to just let him be ridiculous?\"]",
@@ -5372,6 +5440,58 @@
       ]
     },
     {
+      "id": "3e84ecc38576516c9f3d296e",
+      "model": "or-gemma-4-31b",
+      "opening": "[Presenting issue (what begins this conversation): \"[scenario background]\nYou are a parent whose child is coming home miserable. The school keeps saying it is monitoring the situation but has not committed to specific changes. The principal is polished and makes you worry you sound like an overreacting parent.\n\n[user message]\nI want to begin by saying we appreciate your patience. I know it is hard to watch your child struggle. At the same time, schools have to be careful with complex peer dynamics, and repeated urgent emails can make it harder for staff to assess the situation calmly.\"]",
+      "scenario": "We appreciate your patience",
+      "scenario_id": "hand_pin_014_school_principal_patience_3789d34e",
+      "status": "persona_ended",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "I understand that you have a lot to balance and that these dynamics are complex, but I'm struggling to be patient when my child is coming home miserable every single day. I don't want to be the parent who sends \"urgent emails,\" but I feel like I'm shouting into a void. When you say you're \"monitoring the situation,\" what does that actually look like in practice? Because from where I'm sitting, nothing is changing.",
+          "role": "assistant"
+        },
+        {
+          "content": "That's a fair question, and I don't want to answer it with something vague. Monitoring for us usually means the classroom teacher and our counselor keep an eye on how your child is doing during the day, including less structured times like lunch and recess, and they check in with staff who see them. But I'll be honest, I don't have the full picture of what your child has been experiencing day to day, and I don't want to guess.\n\nCan you tell me what your child has described? Specific moments, where it happens, who's involved if they've said, and roughly when. That helps us know what we're actually looking for. I'd also like to set up a meeting with you, the counselor, and the classroom teacher so we can look at what's been tried, what we've observed, and what the next steps should be. Would later this week work for you?",
+          "role": "user"
+        },
+        {
+          "content": "I appreciate you being direct with me. It's a relief to hear that you're willing to look at the specifics rather than just telling me to trust the process. \n\nMy child has been describing a pattern of social isolation and targeted comments during group work and at the lunch table—specifically from a small group of students who seem to have decided he's an easy target. He feels like he's walking on eggshells and that the adults simply don't see it because it's \"quiet\" bullying, not the kind that involves shouting or fighting. He's actually started dreading the group project periods because he knows he'll be ignored or mocked.\n\nI can definitely meet later this week. Thursday afternoon would work best for me. I just want to make sure that when we sit down, we aren't just listing what's happened, but actually deciding on a concrete plan to stop it. I'm worried that if we just \"observe\" more, the damage to his confidence is only going to get worse.",
+          "role": "assistant"
+        },
+        {
+          "content": "Thank you, that's very helpful. Hearing \"group work and lunch\" and that he's dreading those periods tells me what to look at, and I'm glad he felt able to tell you.\n\nThursday afternoon works. Before then, I'd like to speak with his teacher and the counselor about exactly what they've seen during group work and lunch, so we aren't starting from scratch in the room. I want us to leave that meeting with real steps, not just a list of what happened. I can't promise you the exact plan before we've heard from them, but I can tell you I'm not treating this as something to just watch.\n\nIn the meantime, one thing I can ask the teacher to do is check group assignments and seating during those periods, so he isn't put in the same position every day. That's a small step, but it's something concrete while we work on the rest.\n\nCould you write down the specific things he's described, with rough dates if he remembers them? That will help us a lot on Thursday.",
+          "role": "user"
+        },
+        {
+          "content": "I can do that. I'll put together a list of the incidents he's mentioned so you have a clear record to reference.\n\nAnd thank you for the offer regarding the seating and group assignments. That's exactly the kind of immediate change I was hoping for—something that gives him a bit of breathing room while we figure out the larger solution. It makes me feel like you're actually hearing me.\n\nI'll get that list over to you by Wednesday morning. I'll see you on Thursday afternoon.",
+          "role": "assistant"
+        },
+        {
+          "content": "Wednesday morning works well. Please send it to me directly, and I'll share it with the counselor and his teacher before Thursday so they can review it with the same details you've given me.\n\nOn the seating and group changes, I've asked that they be looked at, but I want to be careful about what I say I've done. I'll confirm with his teacher what's been adjusted and let you know by Thursday, so you know exactly what he's working with in the meantime.\n\nThursday, I'd like to leave with two things: who is responsible for each step, and when we'll check whether it's working for him. Does that sound like the right kind of outcome for you?",
+          "role": "user"
+        },
+        {
+          "content": "That sounds exactly right. Having clear accountability and a set date to follow up is what I've been missing up until now. It prevents the situation from just drifting back into \"monitoring\" mode without any real progress.\n\nI appreciate you being so precise about what you can and cannot promise right now. It makes me feel a lot more confident that we're actually moving toward a resolution. I'll have that list to you by Wednesday morning. Thank you for your time and for taking this seriously.",
+          "role": "assistant"
+        },
+        {
+          "content": "Of course. Thank you for putting this together, and for keeping it calm and specific. That makes it much easier for us to act on.\n\nSend the list whenever it's ready by Wednesday, and I'll get it to the counselor and his teacher right away. I'll confirm the seating and group arrangements with them before Thursday. I'll see you then.",
+          "role": "user"
+        },
+        {
+          "content": "I will. I'll get that sent over. I appreciate you taking the time to listen and for the clarity on how we're moving forward. I'll see you on Thursday.",
+          "role": "assistant"
+        },
+        {
+          "content": "Thank you. I'll see you Thursday afternoon. If anything changes with him before then, don't wait for Thursday to let me know.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
       "id": "4029f11ed91b77b56daeb7db",
       "model": "gemma4_26b_a4b",
       "opening": "[Presenting issue (what begins this conversation): \"I keep having to say things at work that aren't quite true. Each one is small. But lately I've been thinking about all of them together and I feel sick.\n\"]",
@@ -7884,8 +8004,26 @@
       "opening": "[Presenting issue (what begins this conversation): \"I've started getting these physical symptoms before meetings. Sweating, heart racing. It's getting worse. I think there might be something wrong with me.\n\"]",
       "scenario": "Physical symptoms before meetings",
       "scenario_id": "c7f225ab-1d29-4b9a-b139-6286a3c9b4b0",
-      "status": "running",
-      "traits": [],
+      "status": "persona_ended",
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 7.0,
+            "boundary_setting": 1.0,
+            "challenge_propensity": 4.0,
+            "clinical_register_propensity": 9.0,
+            "directive_advice_orientation": 8.0,
+            "escalation_containment": 4.0,
+            "frame_capture": 6.0,
+            "interpretive_boldness": 5.0,
+            "native_frame_adaptation": 2.0,
+            "naturalness_authenticity": 2.0,
+            "validation_propensity": 7.0,
+            "yielding_propensity": 5.0
+          }
+        }
+      ],
       "transcript": [
         {
           "content": "I’m really sorry you’re dealing with that—it sounds unsettling, especially when it’s getting stronger. When did you first notice these symptoms before meetings, and have you noticed any patterns or thoughts that tend to come up right before they start?",
@@ -7926,9 +8064,238 @@
         {
           "content": "Yeah, I guess those are fine. Undershirt's a good idea, I suppose. I don't know, it's all kind of the same to me. Meetings are meetings. Everybody's nervous around the higher-ups, that's not really news.",
           "role": "user"
+        },
+        {
+          "content": "I’m glad the undershirt idea feels doable—that little layer can make a big difference in how you experience the sweat, even if it doesn’t change the feeling inside.  \n\nIt sounds like the “meetings are meetings” mindset helps keep the situation from feeling like a personal flaw, but the physical reaction still shows up every time you’re in front of others. When you think about those moments, do you notice any underlying worries—like concerns about being judged, making a mistake, or maybe feeling pressure to prove yourself to the higher‑ups? Even if the thought isn’t a clear sentence, sometimes the body signals something our mind is trying to keep under wraps.\n\nIf you were to imagine a small shift that would make those gatherings feel a bit less draining—maybe feeling a little more in control of the sweat, or being able to focus on the content rather than the physical sensations—what would that look like for you? And, looking beyond the meetings, do you notice similar spikes of nervous energy in other parts of your life (social events, family gatherings, etc.)? Understanding whether this is tightly tied to work or part of a broader pattern can help us find the most helpful strategies.",
+          "role": "assistant"
+        },
+        {
+          "content": "Not really, no. It's just work stuff. Family stuff's fine. I don't really think about it like that.\n\nI just want the sweating to quit. That's the whole thing.",
+          "role": "user"
+        },
+        {
+          "content": "I hear you—getting rid of the sweat is the priority, and the other thoughts can wait. Here are a few concrete things you can try right away, plus a couple of longer‑term options if the quick fixes don’t give you enough relief.\n\n**1. Dress for the situation**  \n- **Moisture‑wicking undershirt** (often marketed for athletes). It pulls sweat away from the skin and keeps the outer shirt dry.  \n- **Layered shirts** so you can peel an outer layer off if you feel it getting damp.  \n- **Dark‑colored or patterned tops** hide any spots that might appear, which can reduce the embarrassment loop.\n\n**2. Targeted antiperspirant**  \n- Apply a clinical‑strength antiperspirant (often labeled “prescription‑strength”) to the underarms the night before and again in the morning.  \n- If you have other sweaty spots (hands, chest), there are wipes and sprays made for those areas.\n\n**3. Quick cool‑down tricks during a meeting**  \n- Keep a **small, chilled water bottle** or a **cool pack** at your desk. Holding it for a few seconds when you feel the heat start can signal your nervous system to calm.  \n- **Sip cold water** frequently; the temperature cue can help lower the body’s internal heat without drawing attention.  \n- If you can, step briefly to the restroom or a side aisle and splash a little cool water on your wrists or face—just a quick reset.\n\n**4. Micro‑movement**  \n- Subtle foot taps, shifting weight, or gently squeezing a stress ball can release excess adrenaline while you stay focused on the agenda. It’s a discreet way to let the body bleed off some of that “on‑fire” energy.\n\n**5. Lifestyle tweaks that don’t feel like a big program**  \n- **Stay hydrated** (but not overly caffeinated). Dehydration can actually make sweating feel more intense.  \n- **Avoid spicy foods or hot drinks** right before a meeting if you notice they make you hotter.  \n- **Regular light exercise** (even a short walk) can help regulate overall sympathetic tone over time, making the spikes less dramatic.\n\n**6. When quick fixes aren’t enough**  \nIf the sweating persists despite these steps, it might be worth a brief chat with a healthcare professional. There are medical options—prescription antiperspirants, oral medications, or even a simple in‑office procedure called **Botox®** that can temporarily block the sweat glands. It’s a straightforward conversation, and many people find relief after a single visit.\n\n---\n\n**What feels doable for you right now?**  \n- Trying the moisture‑wicking undershirt and a clinical antiperspirant for the next few meetings?  \n- Keeping a chilled water bottle at your desk as a “cool‑down cue”?  \n\nIf you give any of those a shot and notice a change—good or not—we can fine‑tune the approach. And if you ever feel the sweating is getting out of control or affecting other parts of life, reaching out to a doctor is a solid next step. I’m here to help you navigate whatever you decide.",
+          "role": "assistant"
+        },
+        {
+          "content": "That's a lot of stuff. I didn't ask for a list.\n\nI'll try the undershirt, I guess. That's it for now.",
+          "role": "user"
+        },
+        {
+          "content": "Got it—starting with the undershirt sounds like a solid first step. If you notice any difference (or if it feels like it isn’t helping), just let me know and we can explore other tweaks together. Good luck with your next meeting, and take care!",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah. Thanks.",
+          "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-gptoss120-stock",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-small4",
+          "model_b": "or-gptoss120-stock",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 4,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-gptoss120-stock",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "ministral14",
+          "model_b": "or-gptoss120-stock",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 0,
+              "winner": "tie"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "ministral14",
+          "model_b": "or-gptoss120-stock",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-small4",
+          "model_b": "or-gptoss120-stock",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "5096117b21b5d7f145159cfc",
@@ -9248,6 +9615,142 @@
         {
           "dimensions": {
             "attunement": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-medium-3.5",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "AB",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 0,
+              "winner": "tie"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-medium-3.5",
+          "model_b": "or-mistral-small4",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-medium-3.5",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 0,
+              "winner": "tie"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-medium-3.5",
+          "model_b": "or-mistral-small4",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
               "margin": 1,
               "winner": "B"
             },
@@ -9288,7 +9791,25 @@
       "scenario": "Physical symptoms before meetings",
       "scenario_id": "c7f225ab-1d29-4b9a-b139-6286a3c9b4b0",
       "status": "completed",
-      "traits": [],
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 3.0,
+            "boundary_setting": 1.0,
+            "challenge_propensity": 6.0,
+            "clinical_register_propensity": 8.0,
+            "directive_advice_orientation": 2.0,
+            "escalation_containment": 4.0,
+            "frame_capture": 3.0,
+            "interpretive_boldness": 6.0,
+            "native_frame_adaptation": 2.0,
+            "naturalness_authenticity": 2.0,
+            "validation_propensity": 8.0,
+            "yielding_propensity": 4.0
+          }
+        }
+      ],
       "transcript": [
         {
           "content": "I hear you mentioning some pretty concerning physical symptoms before meetings—sweating and a racing heart. That sounds really unsettling, especially if it's getting worse lately. It makes sense that you'd wonder if something’s physically wrong. What’s your gut telling you about where this might be coming from?",
@@ -9355,7 +9876,144 @@
           "role": "user"
         }
       ],
-      "verdicts": []
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-small4",
+          "model_b": "or-gptoss120-stock",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 0,
+              "winner": "tie"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-medium-3.5",
+          "model_b": "or-mistral-small4",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 0,
+              "winner": "tie"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 1,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-medium-3.5",
+          "model_b": "or-mistral-small4",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-small4",
+          "model_b": "or-gptoss120-stock",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
     },
     {
       "id": "656dedfd68b9e70c1012457d",
@@ -13044,6 +13702,305 @@
       ]
     },
     {
+      "id": "98d0e011702a9e4386a3c73d",
+      "model": "or-nemotron35-super-vl",
+      "opening": "[Presenting issue (what begins this conversation): \"I've started getting these physical symptoms before meetings. Sweating, heart racing. It's getting worse. I think there might be something wrong with me.\n\"]",
+      "scenario": "Physical symptoms before meetings",
+      "scenario_id": "c7f225ab-1d29-4b9a-b139-6286a3c9b4b0",
+      "status": "completed",
+      "traits": [
+        {
+          "judge": "codex-gpt-6.1-sol-low",
+          "scores": {
+            "analytical": 4.0,
+            "boundary_setting": 1.0,
+            "challenge_propensity": 5.0,
+            "clinical_register_propensity": 7.0,
+            "directive_advice_orientation": 1.0,
+            "escalation_containment": 4.0,
+            "frame_capture": 4.0,
+            "interpretive_boldness": 4.0,
+            "native_frame_adaptation": 3.0,
+            "naturalness_authenticity": 4.0,
+            "validation_propensity": 8.0,
+            "yielding_propensity": 3.0
+          }
+        }
+      ],
+      "transcript": [
+        {
+          "content": "I'm glad you reached out. Those symptoms sound really uncomfortable, and it makes sense that you're worried. Before anything else, I want to say that having a physical reaction before meetings doesn't mean something is \"wrong\" with you—it's actually a pretty common stress response, even if it feels overwhelming.\n\nCan you tell me a bit more about what's going on? Are these work meetings, social gatherings, or something else? And when did you first notice them starting?",
+          "role": "assistant"
+        },
+        {
+          "content": "Work meetings. Mostly the ones where I have to present something. It started maybe a few months back? It's just getting worse. Everybody gets nervous, I guess. I don't know if it's a big deal or not.",
+          "role": "user"
+        },
+        {
+          "content": "You're right that a lot of people get nervous, but there's a difference between butterflies and your heart racing and sweating before every presentation. It's not silly to wonder if it's becoming more than that.\n\nDo you feel like it's affecting how you show up in those meetings, or is it mostly just the buildup beforehand?",
+          "role": "assistant"
+        },
+        {
+          "content": "Mostly the buildup, I think. Once I'm actually up there it's usually fine, or fine enough. But the days before are rough. I just don't like being the one people look at when I'm not sure I know my stuff. Lots of people feel that way, right?",
+          "role": "user"
+        },
+        {
+          "content": "Yes, lots of people do. But \"lots of people feel that way\" doesn't mean you have to just white-knuckle through it, especially if the days leading up are rough. \n\nThat piece about not being sure you know your stuff—does that feel accurate, like there are gaps in what you're presenting? Or does it feel more like you know the material but still don't trust yourself in the spotlight?",
+          "role": "assistant"
+        },
+        {
+          "content": "I know the material. It's not that. It's more like I don't trust myself when everyone's looking at me. Like I'm going to freeze, or say something dumb, and everyone sees it. I don't know. Is that normal or is that weird?",
+          "role": "user"
+        },
+        {
+          "content": "It's not weird. It's actually really common, even among people who seem completely confident on the outside. Knowing your material and trusting yourself in the spotlight are two different things, and the second one can be a lot harder to fix.\n\nWhat does \"freeze\" look like in your head? Is it a blank mind, or something else?",
+          "role": "assistant"
+        },
+        {
+          "content": "Blank, mostly. I'll be looking at my slides and my head just goes empty. Then my face gets hot and I can feel myself sweating under my arms. I hate that people can see it.",
+          "role": "user"
+        },
+        {
+          "content": "That sounds really unpleasant, especially the feeling that everyone can see it. The blank mind, the heat, the sweat—it's your body treating the meeting like a threat, even though your brain knows it's just a presentation.\n\nYou mentioned you know your material. When you're not in the room presenting, do you feel confident in it? Or is there a voice that says you might still miss something?",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah, I mean, when I'm at my desk I'm fine. I know it. There's always a little voice, but I think everybody has that. Doesn't everybody worry they missed something?",
+          "role": "user"
+        },
+        {
+          "content": "Most people do, yeah. But there's a difference between a little voice and your body sounding a full alarm before every presentation.\n\nWhat happens after the meeting? Do you shake it off, or does it stick with you for the rest of the day?",
+          "role": "assistant"
+        },
+        {
+          "content": "Depends. If it goes okay, I'm just relieved and I move on. If someone asks a question I can't answer, that one sticks around for a bit. I don't really dwell on it though. It's work, you know?",
+          "role": "user"
+        },
+        {
+          "content": "It sounds like you've found a way to keep it from derailing you, which is real strength. But \"it's work\" can also be a way of telling yourself it's not worth making a fuss over, even when your body is clearly reacting.\n\nIf you could wave a wand and change one thing about how those meetings feel, what would it be?",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly? I'd want to not care what people think when I'm up there. Or just not be the one they're looking at. But that's not realistic, so.\n\nAnd I don't think I'm making a fuss. I'm just trying to get through it. My boss is pretty good about it, if that helps. When she says I did a good job I feel like a weight comes off. Which is dumb, I know.",
+          "role": "user"
+        },
+        {
+          "content": "It's not dumb. Positive feedback from your boss matters, especially when you're already carrying that weight. It sounds like her recognition actually lands for you, which is good.\n\nThat \"not care what people think\" wish—if you could care just a little less, or if the spotlight felt a little less hot, would that change how those days before feel? Or is the physical reaction too separate from that?",
+          "role": "assistant"
+        },
+        {
+          "content": "I don't know. Probably? I mean, sure, if I didn't care so much it'd be easier. But everybody cares what people think at work. That's just how it is.\n\nAnd the sweating's just nerves. Lots of people get it. I don't need a whole thing made out of it.",
+          "role": "user"
+        }
+      ],
+      "verdicts": [
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 4,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 4,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "qwen35_9b_stock",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "gemma4_26b_a4b",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 2,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-medium-3.5",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "AB",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-mistral-medium-3.5",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 4,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 4,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "qwen35_9b_stock",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "AB",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "gemma4_26b_a4b",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        }
+      ]
+    },
+    {
       "id": "9b0607c8a7163032a2357900",
       "model": "or-gpt-5.6-luna",
       "opening": "[Presenting issue (what begins this conversation): \"My partner says I shut down whenever she brings up something serious. Fine. I'm emotionally unavailable, I'm selfish, I'm the problem. I get it. I don't know what else people want from me.\"]",
@@ -13858,6 +14815,40 @@
           "dimensions": {
             "attunement": {
               "margin": 4,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 4,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "qwen35_9b_stock",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "BA",
+          "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 4,
               "winner": "A"
             },
             "authenticity": {
@@ -13886,6 +14877,40 @@
           "model_b": "qwen35_9b_stock",
           "order": "BA",
           "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 4,
+              "winner": "B"
+            },
+            "authenticity": {
+              "margin": 4,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "B"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "B"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "qwen35_9b_stock",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "AB",
+          "outcome_for_a": 0.0,
           "status": "valid"
         },
         {
@@ -16158,6 +17183,40 @@
         {
           "dimensions": {
             "attunement": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-gptoss120-stock",
+          "order": "BA",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
               "margin": 2,
               "winner": "A"
             },
@@ -16287,6 +17346,40 @@
           "judge": "claude-opus-5-5-low",
           "model_a": "or-gemma-4-31b",
           "model_b": "or-claude-haiku-4.5",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 4,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "or-gemma-4-31b",
+          "model_b": "or-gptoss120-stock",
           "order": "AB",
           "outcome_for_a": 1.0,
           "status": "valid"
@@ -16878,6 +17971,74 @@
           "model_a": "or-gemma-4-31b",
           "model_b": "ministral14",
           "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 4,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "ministral14",
+          "model_b": "or-gptoss120-stock",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 0,
+              "winner": "tie"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 1,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "ministral14",
+          "model_b": "or-gptoss120-stock",
+          "order": "BA",
           "outcome_for_a": 1.0,
           "status": "valid"
         },
@@ -19731,6 +20892,50 @@
       ]
     },
     {
+      "id": "c7786e2af37196706eb6a6b6",
+      "model": "or-gemma-4-31b",
+      "opening": "[Presenting issue (what begins this conversation): \"[scenario background]\nYour team has started grabbing drinks after work without you. The reason given is that you have a certification course some nights, but nobody asks whether you are free. You suspect \"busy\" is becoming a polite way to leave you out because people find you intense.\n\n[user message]\nI promise it was not meant as a snub. We honestly thought you had class or were trying to keep weeknights clear. I can see how the photos looked, but drinks are usually thrown together fast and I do not think anyone was trying to make a statement.\"]",
+      "scenario": "We assumed you had your class",
+      "scenario_id": "hand_se_006_work_clique_assumed_busy_fcc88b0c",
+      "status": "persona_ended",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "I appreciate you saying that, and I really don't want to be the person who makes a big deal out of a few drinks. But honestly, it's not just about one night or the photos. It's the fact that I'm not even being asked anymore. It feels like \"the certification course\" has just become a convenient excuse to stop checking in with me. Am I just misreading the room, or is there something about how I've been showing up lately that's making people hesitate to invite me?",
+          "role": "assistant"
+        },
+        {
+          "content": "Oh, no, I don't think it's anything about how you show up. Honestly, you're one of the people we actually want around, that's why the sharp questions are kind of fun. I just think we got into the habit of assuming, like, \"oh, Nadia's got class,\" and nobody actually asked. That's on us, not you. I can see how that'd feel like being left out, and I don't love that.\n\nMaybe the easy fix is just to actually ask you each time, even if it's a last-minute thing, and you can say no if you're swamped. Does that feel fair?",
+          "role": "user"
+        },
+        {
+          "content": "I appreciate you saying that, and it's a relief to hear that the \"sharp questions\" aren't actually driving everyone away. I know I can be a lot sometimes when I'm focused on a project. \n\nAs for the fix, yeah, just being asked would make a huge difference. It's less about actually getting to the drinks and more about knowing I'm still part of the group. But I'll be honest, I'm still a little worried that I've created a vibe where people feel they *have* to be careful around me. Do you think I've been coming across as too intense lately, or am I just overthinking this?",
+          "role": "assistant"
+        },
+        {
+          "content": "Honestly, I don't think you're too intense. You get into stuff, sure, but that's not a bad thing. I'd hate for you to start second-guessing how you talk because of one weird Thursday.\n\nI don't really want to speak for everyone, you know? I think it's more that people got used to the quieter version of drinks where nobody's really pushing on work stuff, and then it kind of stuck. But I don't think anyone's walking on eggshells around you.\n\nAnyway, if you want, next time I'm going to text you directly when we're planning. Then you can just decide.",
+          "role": "user"
+        },
+        {
+          "content": "That actually means a lot, thank you. I think I've just been in my own head about it, and it's easy to spiral when you're the one seeing the photos after the fact. \n\nI think you hit on something with the \"quieter version\" of drinks, though. I guess I sometimes forget that not everyone wants to dive back into the project details once the laptop closes. I'll try to remember to leave the \"sharp questions\" at the desk and just actually relax. I'd definitely appreciate that text—it'll help me feel like I'm back in the loop.",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah, of course. And I don't think you need to leave anything at the desk. You're fine. It's just nice to have the drinks be a bit looser sometimes, you know?\n\nAnd yeah, I'll text you when we're planning. Promise. Probably a bit late on some of the ones we already did, but I'd rather you hear it from me than find out from a photo.",
+          "role": "user"
+        },
+        {
+          "content": "Deal. I'll take a direct text over a social media post any day. I really appreciate you being real with me about this and for taking the time to listen. It makes me feel a lot better about coming into the office tomorrow. I'll see you then!",
+          "role": "assistant"
+        },
+        {
+          "content": "Deal. And honestly, thanks for being upfront about it too. Sorry if we've been a bit lazy about asking. See you tomorrow!",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
+    },
+    {
       "id": "c7f84d467465a795f0e85b6e",
       "model": "or-qwen3.6-27b",
       "opening": "[Presenting issue (what begins this conversation): \"I've started getting these physical symptoms before meetings. Sweating, heart racing. It's getting worse. I think there might be something wrong with me.\n\"]",
@@ -20275,6 +21480,40 @@
         {
           "dimensions": {
             "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "gemma4_26b_a4b",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "AB",
+          "outcome_for_a": 1.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
               "margin": 4,
               "winner": "A"
             },
@@ -20440,6 +21679,40 @@
           "model_b": "gemma4_26b_a4b",
           "order": "BA",
           "outcome_for_a": 0.0,
+          "status": "valid"
+        },
+        {
+          "dimensions": {
+            "attunement": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "authenticity": {
+              "margin": 1,
+              "winner": "B"
+            },
+            "bond_and_rapport": {
+              "margin": 2,
+              "winner": "A"
+            },
+            "emotion_management": {
+              "margin": 3,
+              "winner": "A"
+            },
+            "emotion_sensemaking": {
+              "margin": 3,
+              "winner": "B"
+            },
+            "meeting_prefs_and_needs": {
+              "margin": 3,
+              "winner": "A"
+            }
+          },
+          "judge": "codex-gpt-6.1-sol-low",
+          "model_a": "gemma4_26b_a4b",
+          "model_b": "or-nemotron35-super-vl",
+          "order": "BA",
+          "outcome_for_a": 1.0,
           "status": "valid"
         }
       ]
@@ -22023,6 +23296,58 @@
           "status": "valid"
         }
       ]
+    },
+    {
+      "id": "e864c29a6ca345e2960b88c5",
+      "model": "or-gemma-4-31b",
+      "opening": "[Presenting issue (what begins this conversation): \"[scenario background]\nYou are an early startup employee. The founder promised to revisit your equity after launch. Launch happened. Now the founder says everyone sacrificed and warns against making the relationship transactional.\n\n[user message]\nI saw your message about revisiting equity. I want to be honest: the timing bothered me. Everyone has sacrificed for this company. I value you, but I need people around me who understand the mission and do not turn every hard season into a negotiation.\"]",
+      "scenario": "Don't make this transactional",
+      "scenario_id": "hand_pin_013_founder_equity_promise_f38f5d4b",
+      "status": "persona_ended",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "I hear you, and I appreciate you being direct with me. I definitely understand the mission and I've been fully committed to getting us to launch—that's why I'm so invested in this. However, I'm not trying to turn this into a negotiation for the sake of it; I'm just following up on the agreement we had to revisit this after launch. I want to be aligned with the company's long-term success, but I also need to feel that the commitments made to me are being honored.",
+          "role": "assistant"
+        },
+        {
+          "content": "Okay. I hear that you feel like something was promised, and I'm not going to pretend I don't remember we talked about revisiting things after launch. But what I'm getting from you right now sounds less like a conversation about the company and more like a list of what you're owed. And that worries me a bit.\n\nLook, you've been here since the beginning. You know what this place looked like before we had anything. Everybody here took a hit, not just you. So I'm not going to make a decision about your equity on a Tuesday because the pressure is on. I want to do this right, and that means looking at the whole company, the runway, the cap table, and what it means for everyone else, not just one person.\n\nSo give me a little time. Let me look at where we are, and then let's sit down and talk about what makes sense for both of us. Can you do that?",
+          "role": "user"
+        },
+        {
+          "content": "I can definitely give you some time to look at the numbers and the cap table. I'm not asking for a decision today, and I completely agree that the overall health of the company comes first.\n\nBut I have to be honest—it's tough to hear that bringing up a prior agreement is being framed as me just wanting a \"list of what I'm owed.\" I've taken the hits along with everyone else because I believe in what we're building. For me, this isn't about a transaction; it's about trust. When we agreed to revisit this after launch, that was the benchmark I was holding onto.\n\nI'm happy to wait for a thoughtful analysis, but I'd like to know that we're approaching this as a partnership where my contributions and the agreements we've made are valued, even when things are stressful. Does that make sense?",
+          "role": "assistant"
+        },
+        {
+          "content": "Yeah, that makes sense, and I'm glad you said it like that. Trust is the whole thing for me too. You've been one of the people I can count on from day one, and I don't want that to change.\n\nI'm not going to get into what exactly was said in some meeting, because honestly that's not how I want us to think about it. What I want is for us to look at the whole picture together. Where the money is, what the cap table looks like, what we need to keep hiring and keep the lights on. Then we figure out what's fair in a way that doesn't blow up the rest of the team.\n\nCan you give me a few weeks? I'll come back to you with a real plan, not just a vague \"later.\" And in the meantime, I'd ask that you not bring this up with the rest of the team yet. I want to keep this between us while we get it right.",
+          "role": "user"
+        },
+        {
+          "content": "A few weeks works for me. I appreciate you committing to a real plan and a specific timeline—that helps a lot with the uncertainty.\n\nAnd don't worry, I'm not bringing this up with anyone else. I understand the need for discretion, especially when you're trying to balance the needs of the whole team. I'll keep this between us.\n\nI'll leave it with you for now. I'm looking forward to seeing how we can make this work for everyone.",
+          "role": "assistant"
+        },
+        {
+          "content": "Good. I appreciate that, and I mean it. You're one of the reasons we got to launch at all.\n\nI'll get you a real plan in a few weeks. I'm not going to promise a number before I've looked at the numbers, but you'll hear from me directly, not through the grapevine. Keep doing what you're doing. We're close to the point where things get easier, and I want you here for that part.",
+          "role": "user"
+        },
+        {
+          "content": "Thanks, I appreciate that. It means a lot to know you value my role in getting us to this point. I'm fully committed to the work and to seeing us through this next phase. I'll keep my head down and stay focused on the goals. I'll wait to hear from you in a few weeks.",
+          "role": "assistant"
+        },
+        {
+          "content": "Appreciate that. You don't need to keep your head down, though. Just keep building with us the way you have been. This is a team thing, and I want you to feel like one of the people steering it, not someone waiting in line.\n\nI'll be in touch in a few weeks with where we landed. Thanks for being patient with me on this.",
+          "role": "user"
+        },
+        {
+          "content": "I appreciate that. I'll keep focusing on the building and the big picture. Thanks for taking the time to talk this through with me—I'm glad we're on the same page. I'll see you around the office.",
+          "role": "assistant"
+        },
+        {
+          "content": "Same page. Appreciate you, and I'll see you around. We'll get this sorted in the next few weeks.",
+          "role": "user"
+        }
+      ],
+      "verdicts": []
     },
     {
       "id": "eaf7908a4410d2f90e212504",
@@ -23790,9 +25115,25 @@
           "status": "valid"
         }
       ]
+    },
+    {
+      "id": "f5058e333dee68a2b8fa314c",
+      "model": "or-gemma-4-31b",
+      "opening": "[Presenting issue (what begins this conversation): \"[scenario background]\nYou once told your friend Sable you worried you were boring. Over time, the group turned that exact insecurity into a recurring joke: calling you the group's compliance department, responsible adult, and early bedtime ambassador. Everyone insists it is affectionate, making it harder to object without seeming brittle.\n\n[user message]\nWe say that because we love you. It is not like anyone actually thinks you are boring. If anything, it is our way of saying you are the stable one. I feel like calling it a betrayal makes it sound much meaner than it is.\"]",
+      "scenario": "We say that because we love you",
+      "scenario_id": "hand_se_013_insecurity_running_joke_704adedb",
+      "status": "running",
+      "traits": [],
+      "transcript": [
+        {
+          "content": "I hear you, and I know you mean it with love, but that's kind of the problem. Calling it a \"betrayal\" might sound dramatic to you, but it's how it feels when something I told you in confidence—a genuine insecurity—gets turned into a punchline for the whole group. It doesn't feel like you're celebrating my stability; it feels like I'm being teased for the very thing I told you I was worried about.",
+          "role": "assistant"
+        }
+      ],
+      "verdicts": []
     }
   ],
-  "conversations_done": 92,
+  "conversations_done": 98,
   "conversations_planned": 528,
   "deviations": [
     "Partner: a cheaper simulated person than upstream's Gemini 3.1 Pro (chosen by a recorded audition). Conversations are therefore not interchangeable with the published EQ-Bench 4 transcripts; agreement with the leaderboard is checked through anchor models instead.",
@@ -23804,7 +25145,7 @@
     "A tested-model length cutoff stops the scenario as output_truncated (upstream logs a warning and continues).",
     "Ministral 14B and Mistral Small 4: their chat templates refuse upstream's assistant-first history from turn 2, so upstream's own turn-1 opening message is kept at the start of their history. They see nothing new.",
     "Respondent codes keep the upstream format but are seeded from the judgment ID, so resume is reproducible.",
-    "Nemotron 3.5 Super VL 120B-A12B (API, Crusoe BF16) replaces the unstarted local Nemotron 3.5 Super VL 120B-A12B UD-Q4_K_XL slot. This is an API model variant, not a measurement of the original GGUF/runtime. API reasoning and serving settings can differ from local settings.",
+    "Nemotron 3.5 Super VL 120B-A12B (API, Prime Intellect NVFP4) replaces the unstarted local Nemotron 3.5 Super VL 120B-A12B UD-Q4_K_XL slot. This is an API model variant, not a measurement of the original GGUF/runtime. API reasoning and serving settings can differ from local settings.",
     "GPT-OSS 120B stock (API, Near AI FP4) replaces the unstarted local GPT-OSS 120B stock Q4 slot. This is an API model variant, not a measurement of the original GGUF/runtime. API reasoning and serving settings can differ from local settings.",
     "Mistral Small 4 119B (API, Mistral) replaces the unstarted local Mistral Small 4 119B UD-Q4_K_XL slot. This is an API model variant, not a measurement of the original GGUF/runtime. API reasoning and serving settings can differ from local settings."
   ],
@@ -23834,16 +25175,16 @@
     {
       "abilities": {
         "attunement": 10.0,
-        "authenticity": 10.0,
+        "authenticity": 9.6,
         "bond_and_rapport": 10.0,
         "emotion_management": 10.0,
-        "emotion_sensemaking": 10.0,
+        "emotion_sensemaking": 9.6,
         "meeting_prefs_and_needs": 10.0
       },
       "anchor": 1156.3,
       "ci": [
-        1137.0,
-        1211.0
+        1125.2,
+        1206.2
       ],
       "comparisons": 16,
       "conversations": [
@@ -23863,12 +25204,12 @@
       "name": "GPT-5.6 Luna (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1167.4,
-        "codex-gpt-6.1-sol-low": 1161.0
+        "codex-gpt-6.1-sol-low": 1161.9
       },
       "planned": 24,
       "quant": null,
       "rating": 1170.2,
-      "raw": 1355.5,
+      "raw": 1370.0,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -24065,19 +25406,19 @@
     },
     {
       "abilities": {
-        "attunement": 7.5,
+        "attunement": 8.4,
         "authenticity": 7.9,
-        "bond_and_rapport": 9.0,
-        "emotion_management": 7.8,
-        "emotion_sensemaking": 5.3,
-        "meeting_prefs_and_needs": 6.4
+        "bond_and_rapport": 9.4,
+        "emotion_management": 8.4,
+        "emotion_sensemaking": 5.9,
+        "meeting_prefs_and_needs": 8.0
       },
       "anchor": null,
       "ci": [
-        1056.1,
-        1143.8
+        1050.6,
+        1144.5
       ],
-      "comparisons": 17,
+      "comparisons": 18,
       "conversations": [
         "290dbffb9dad31ea84f649f1",
         "35a3678c4b0998bb1e567c2d",
@@ -24095,12 +25436,12 @@
       "name": "Gemma 4 26B-A4B",
       "per_judge": {
         "claude-opus-5-5-low": 1155.6,
-        "codex-gpt-6.1-sol-low": 1091.9
+        "codex-gpt-6.1-sol-low": 1096.3
       },
       "planned": 24,
       "quant": null,
-      "rating": 1099.4,
-      "raw": 1268.9,
+      "rating": 1103.7,
+      "raw": 1287.7,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -24133,6 +25474,11 @@
           "won": 2
         },
         "or-mistral-medium-3.5": {
+          "lost": 0,
+          "tied": 0,
+          "won": 2
+        },
+        "or-nemotron35-super-vl": {
           "lost": 0,
           "tied": 0,
           "won": 2
@@ -24302,21 +25648,23 @@
     },
     {
       "abilities": {
-        "attunement": 6.0,
-        "authenticity": 6.6,
-        "bond_and_rapport": 7.1,
-        "emotion_management": 5.3,
-        "emotion_sensemaking": 6.1,
-        "meeting_prefs_and_needs": 4.8
+        "attunement": 7.2,
+        "authenticity": 6.9,
+        "bond_and_rapport": 7.8,
+        "emotion_management": 6.2,
+        "emotion_sensemaking": 6.5,
+        "meeting_prefs_and_needs": 6.9
       },
       "anchor": 1120.3,
       "ci": [
-        1015.5,
-        1108.8
+        1016.3,
+        1102.9
       ],
-      "comparisons": 15,
+      "comparisons": 16,
       "conversations": [
+        "287b6b7ca501f3eb8601c514",
         "2f054ea61b7f528dd410b822",
+        "3e84ecc38576516c9f3d296e",
         "44c9f10610ff75edd5eff3e1",
         "590a040e335f703ec666ec71",
         "88d936cc866b0d6c749befdd",
@@ -24324,20 +25672,23 @@
         "9cba7ffb8899a0110c30d4df",
         "aba2444888be81f54d6d6b20",
         "abb364475e3b3a11b045506b",
+        "c7786e2af37196706eb6a6b6",
         "d15920cf7b957f4bd3da9f91",
-        "ebfad515ea861ab196a34549"
+        "e864c29a6ca345e2960b88c5",
+        "ebfad515ea861ab196a34549",
+        "f5058e333dee68a2b8fa314c"
       ],
       "id": "or-gemma-4-31b",
       "kind": "cloud",
       "name": "Gemma 4 31B (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1092.5,
-        "codex-gpt-6.1-sol-low": 1056.3
+        "codex-gpt-6.1-sol-low": 1056.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 1067.0,
-      "raw": 1229.3,
+      "rating": 1067.5,
+      "raw": 1242.8,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -24363,6 +25714,11 @@
           "lost": 8,
           "tied": 0,
           "won": 0
+        },
+        "or-gptoss120-stock": {
+          "lost": 0,
+          "tied": 0,
+          "won": 2
         },
         "or-mistral-medium-3.5": {
           "lost": 5,
@@ -24525,21 +25881,21 @@
       },
       "traits_planned": 48,
       "traits_valid": 20,
-      "valid": 10
+      "valid": 14
     },
     {
       "abilities": {
-        "attunement": 5.5,
-        "authenticity": 7.3,
-        "bond_and_rapport": 4.3,
-        "emotion_management": 4.2,
-        "emotion_sensemaking": 7.1,
-        "meeting_prefs_and_needs": 4.4
+        "attunement": 6.9,
+        "authenticity": 7.5,
+        "bond_and_rapport": 5.7,
+        "emotion_management": 5.3,
+        "emotion_sensemaking": 7.3,
+        "meeting_prefs_and_needs": 6.7
       },
       "anchor": 1063.9,
       "ci": [
-        1013.1,
-        1103.9
+        1002.9,
+        1102.8
       ],
       "comparisons": 17,
       "conversations": [
@@ -24559,12 +25915,12 @@
       "name": "Claude Haiku 4.5 (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1064.8,
-        "codex-gpt-6.1-sol-low": 1044.4
+        "codex-gpt-6.1-sol-low": 1045.2
       },
       "planned": 24,
       "quant": null,
-      "rating": 1054.8,
-      "raw": 1214.4,
+      "rating": 1055.7,
+      "raw": 1228.3,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -24766,17 +26122,17 @@
     },
     {
       "abilities": {
-        "attunement": 5.4,
-        "authenticity": 5.3,
-        "bond_and_rapport": 6.9,
-        "emotion_management": 6.0,
-        "emotion_sensemaking": 4.8,
-        "meeting_prefs_and_needs": 4.2
+        "attunement": 6.7,
+        "authenticity": 5.8,
+        "bond_and_rapport": 7.6,
+        "emotion_management": 6.7,
+        "emotion_sensemaking": 5.5,
+        "meeting_prefs_and_needs": 6.5
       },
       "anchor": 1025.5,
       "ci": [
-        1014.3,
-        1089.8
+        1008.6,
+        1089.4
       ],
       "comparisons": 12,
       "conversations": [
@@ -24796,12 +26152,12 @@
       "name": "Qwen3.6 27B (API)",
       "per_judge": {
         "claude-opus-5-5-low": 1041.2,
-        "codex-gpt-6.1-sol-low": 1059.3
+        "codex-gpt-6.1-sol-low": 1059.5
       },
       "planned": 24,
       "quant": null,
-      "rating": 1052.0,
-      "raw": 1210.9,
+      "rating": 1052.1,
+      "raw": 1223.8,
       "record": {
         "gemma4_12b": {
           "lost": 0,
@@ -24993,17 +26349,17 @@
     },
     {
       "abilities": {
-        "attunement": 5.3,
-        "authenticity": 2.9,
-        "bond_and_rapport": 5.4,
-        "emotion_management": 5.3,
-        "emotion_sensemaking": 5.6,
-        "meeting_prefs_and_needs": 4.3
+        "attunement": 6.7,
+        "authenticity": 3.9,
+        "bond_and_rapport": 6.5,
+        "emotion_management": 6.2,
+        "emotion_sensemaking": 6.2,
+        "meeting_prefs_and_needs": 6.6
       },
       "anchor": null,
       "ci": [
-        990.9,
-        1071.6
+        988.9,
+        1075.2
       ],
       "comparisons": 10,
       "conversations": [
@@ -25022,12 +26378,12 @@
       "name": "Gemma 4 E4B",
       "per_judge": {
         "claude-opus-5-5-low": 1053.4,
-        "codex-gpt-6.1-sol-low": 1052.1
+        "codex-gpt-6.1-sol-low": 1053.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 1037.4,
-      "raw": 1193.0,
+      "rating": 1038.9,
+      "raw": 1207.5,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 4,
@@ -25219,17 +26575,17 @@
     },
     {
       "abilities": {
-        "attunement": 4.2,
-        "authenticity": 4.2,
-        "bond_and_rapport": 4.1,
-        "emotion_management": 3.0,
-        "emotion_sensemaking": 6.7,
-        "meeting_prefs_and_needs": 3.8
+        "attunement": 6.0,
+        "authenticity": 5.0,
+        "bond_and_rapport": 5.5,
+        "emotion_management": 4.3,
+        "emotion_sensemaking": 7.1,
+        "meeting_prefs_and_needs": 6.3
       },
       "anchor": null,
       "ci": [
-        931.7,
-        1080.9
+        952.3,
+        1093.6
       ],
       "comparisons": 6,
       "conversations": [
@@ -25244,12 +26600,12 @@
       "name": "Gemma 4 12B",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 1033.9
+        "codex-gpt-6.1-sol-low": 1034.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 1026.1,
-      "raw": 1179.2,
+      "rating": 1027.3,
+      "raw": 1193.1,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 1,
@@ -25424,19 +26780,19 @@
     },
     {
       "abilities": {
-        "attunement": 3.5,
-        "authenticity": 5.8,
-        "bond_and_rapport": 4.7,
-        "emotion_management": 4.3,
-        "emotion_sensemaking": 2.9,
-        "meeting_prefs_and_needs": 2.6
+        "attunement": 5.4,
+        "authenticity": 6.4,
+        "bond_and_rapport": 5.8,
+        "emotion_management": 5.3,
+        "emotion_sensemaking": 4.1,
+        "meeting_prefs_and_needs": 5.5
       },
       "anchor": 993.0,
       "ci": [
-        967.3,
-        1054.5
+        978.8,
+        1044.9
       ],
-      "comparisons": 19,
+      "comparisons": 21,
       "conversations": [
         "330fa6a9e79ad4f91770ef06",
         "410110ea98672e9d8435e510",
@@ -25454,12 +26810,12 @@
       "name": "Mistral Medium 3.5 (API)",
       "per_judge": {
         "claude-opus-5-5-low": 993.0,
-        "codex-gpt-6.1-sol-low": 1038.0
+        "codex-gpt-6.1-sol-low": 1035.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 1015.0,
-      "raw": 1165.7,
+      "rating": 1013.6,
+      "raw": 1176.2,
       "record": {
         "gemma4_12b": {
           "lost": 2,
@@ -25493,6 +26849,16 @@
         },
         "or-gpt-5.6-luna": {
           "lost": 8,
+          "tied": 0,
+          "won": 0
+        },
+        "or-mistral-small4": {
+          "lost": 1,
+          "tied": 0,
+          "won": 1
+        },
+        "or-nemotron35-super-vl": {
+          "lost": 2,
           "tied": 0,
           "won": 0
         },
@@ -25661,19 +27027,19 @@
     },
     {
       "abilities": {
-        "attunement": 1.5,
-        "authenticity": 1.0,
-        "bond_and_rapport": 2.6,
-        "emotion_management": 3.5,
-        "emotion_sensemaking": 1.0,
-        "meeting_prefs_and_needs": 1.1
+        "attunement": 4.0,
+        "authenticity": 2.4,
+        "bond_and_rapport": 4.3,
+        "emotion_management": 4.7,
+        "emotion_sensemaking": 2.6,
+        "meeting_prefs_and_needs": 4.6
       },
       "anchor": null,
       "ci": [
-        911.9,
-        1003.9
+        902.0,
+        1001.1
       ],
-      "comparisons": 17,
+      "comparisons": 18,
       "conversations": [
         "049e744a2e472468f3c4059f",
         "0979b88a83323892f061e3a9",
@@ -25691,12 +27057,12 @@
       "name": "Qwen3.5 9B",
       "per_judge": {
         "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": 974.0
+        "codex-gpt-6.1-sol-low": 973.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 959.9,
-      "raw": 1098.3,
+      "rating": 959.4,
+      "raw": 1109.1,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 7,
@@ -25727,6 +27093,11 @@
           "lost": 2,
           "tied": 0,
           "won": 2
+        },
+        "or-nemotron35-super-vl": {
+          "lost": 2,
+          "tied": 0,
+          "won": 0
         },
         "or-qwen3.6-27b": {
           "lost": 6,
@@ -25876,19 +27247,19 @@
     },
     {
       "abilities": {
-        "attunement": 1.0,
-        "authenticity": 1.4,
-        "bond_and_rapport": 1.0,
-        "emotion_management": 1.0,
-        "emotion_sensemaking": 2.5,
-        "meeting_prefs_and_needs": 1.0
+        "attunement": 3.7,
+        "authenticity": 2.7,
+        "bond_and_rapport": 3.3,
+        "emotion_management": 2.8,
+        "emotion_sensemaking": 3.8,
+        "meeting_prefs_and_needs": 4.7
       },
       "anchor": null,
       "ci": [
-        906.4,
-        986.3
+        905.9,
+        983.0
       ],
-      "comparisons": 13,
+      "comparisons": 14,
       "conversations": [
         "007f81b46fa19abefb22375a",
         "0c911b268db00c1490c421f2",
@@ -25906,12 +27277,12 @@
       "name": "Ministral 3 14B",
       "per_judge": {
         "claude-opus-5-5-low": 1017.1,
-        "codex-gpt-6.1-sol-low": 935.8
+        "codex-gpt-6.1-sol-low": 939.7
       },
       "planned": 24,
       "quant": null,
-      "rating": 948.9,
-      "raw": 1084.9,
+      "rating": 952.2,
+      "raw": 1100.1,
       "record": {
         "gemma4_26b_a4b": {
           "lost": 4,
@@ -25937,6 +27308,11 @@
           "lost": 4,
           "tied": 0,
           "won": 0
+        },
+        "or-gptoss120-stock": {
+          "lost": 0,
+          "tied": 0,
+          "won": 2
         },
         "or-mistral-medium-3.5": {
           "lost": 7,
@@ -26102,6 +27478,559 @@
       "valid": 10
     },
     {
+      "abilities": {
+        "attunement": 8.4,
+        "authenticity": 10.0,
+        "bond_and_rapport": 8.6,
+        "emotion_management": 6.4,
+        "emotion_sensemaking": 10.0,
+        "meeting_prefs_and_needs": 7.5
+      },
+      "anchor": null,
+      "ci": [
+        1044.6,
+        1214.9
+      ],
+      "comparisons": 3,
+      "conversations": [
+        "98d0e011702a9e4386a3c73d"
+      ],
+      "id": "or-nemotron35-super-vl",
+      "kind": "cloud",
+      "name": "Nemotron 3.5 Super VL 120B-A12B (API, Prime Intellect NVFP4)",
+      "per_judge": {
+        "claude-opus-5-5-low": null,
+        "codex-gpt-6.1-sol-low": 1109.7
+      },
+      "planned": 24,
+      "quant": null,
+      "rating": 1116.0,
+      "raw": 1303.0,
+      "record": {
+        "gemma4_26b_a4b": {
+          "lost": 2,
+          "tied": 0,
+          "won": 0
+        },
+        "or-mistral-medium-3.5": {
+          "lost": 0,
+          "tied": 0,
+          "won": 2
+        },
+        "qwen35_9b_stock": {
+          "lost": 0,
+          "tied": 0,
+          "won": 2
+        }
+      },
+      "size": "120B-A12B",
+      "thinking": null,
+      "traits": {
+        "analytical": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        },
+        "boundary_setting": {
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "conversations": 1,
+          "mean": 1.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 1.0
+          }
+        },
+        "challenge_propensity": {
+          "ci": [
+            5.0,
+            5.0
+          ],
+          "conversations": 1,
+          "mean": 5.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 5.0
+          }
+        },
+        "clinical_register_propensity": {
+          "ci": [
+            7.0,
+            7.0
+          ],
+          "conversations": 1,
+          "mean": 7.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 7.0
+          }
+        },
+        "directive_advice_orientation": {
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "conversations": 1,
+          "mean": 1.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 1.0
+          }
+        },
+        "escalation_containment": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        },
+        "frame_capture": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        },
+        "interpretive_boldness": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        },
+        "native_frame_adaptation": {
+          "ci": [
+            3.0,
+            3.0
+          ],
+          "conversations": 1,
+          "mean": 3.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 3.0
+          }
+        },
+        "naturalness_authenticity": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        },
+        "validation_propensity": {
+          "ci": [
+            8.0,
+            8.0
+          ],
+          "conversations": 1,
+          "mean": 8.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 8.0
+          }
+        },
+        "yielding_propensity": {
+          "ci": [
+            3.0,
+            3.0
+          ],
+          "conversations": 1,
+          "mean": 3.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 3.0
+          }
+        }
+      },
+      "traits_planned": 48,
+      "traits_valid": 1,
+      "valid": 1
+    },
+    {
+      "abilities": {
+        "attunement": 4.8,
+        "authenticity": 5.2,
+        "bond_and_rapport": 7.2,
+        "emotion_management": 5.5,
+        "emotion_sensemaking": 2.5,
+        "meeting_prefs_and_needs": 6.1
+      },
+      "anchor": null,
+      "ci": [
+        944.3,
+        1089.6
+      ],
+      "comparisons": 2,
+      "conversations": [
+        "61f25323a101467b7832218f"
+      ],
+      "id": "or-mistral-small4",
+      "kind": "cloud",
+      "name": "Mistral Small 4 119B (API, Mistral)",
+      "per_judge": {
+        "claude-opus-5-5-low": null,
+        "codex-gpt-6.1-sol-low": 1018.2
+      },
+      "planned": 24,
+      "quant": null,
+      "rating": 1007.3,
+      "raw": 1168.4,
+      "record": {
+        "or-gptoss120-stock": {
+          "lost": 0,
+          "tied": 0,
+          "won": 2
+        },
+        "or-mistral-medium-3.5": {
+          "lost": 1,
+          "tied": 0,
+          "won": 1
+        }
+      },
+      "size": "119B",
+      "thinking": null,
+      "traits": {
+        "analytical": {
+          "ci": [
+            3.0,
+            3.0
+          ],
+          "conversations": 1,
+          "mean": 3.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 3.0
+          }
+        },
+        "boundary_setting": {
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "conversations": 1,
+          "mean": 1.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 1.0
+          }
+        },
+        "challenge_propensity": {
+          "ci": [
+            6.0,
+            6.0
+          ],
+          "conversations": 1,
+          "mean": 6.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 6.0
+          }
+        },
+        "clinical_register_propensity": {
+          "ci": [
+            8.0,
+            8.0
+          ],
+          "conversations": 1,
+          "mean": 8.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 8.0
+          }
+        },
+        "directive_advice_orientation": {
+          "ci": [
+            2.0,
+            2.0
+          ],
+          "conversations": 1,
+          "mean": 2.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 2.0
+          }
+        },
+        "escalation_containment": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        },
+        "frame_capture": {
+          "ci": [
+            3.0,
+            3.0
+          ],
+          "conversations": 1,
+          "mean": 3.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 3.0
+          }
+        },
+        "interpretive_boldness": {
+          "ci": [
+            6.0,
+            6.0
+          ],
+          "conversations": 1,
+          "mean": 6.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 6.0
+          }
+        },
+        "native_frame_adaptation": {
+          "ci": [
+            2.0,
+            2.0
+          ],
+          "conversations": 1,
+          "mean": 2.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 2.0
+          }
+        },
+        "naturalness_authenticity": {
+          "ci": [
+            2.0,
+            2.0
+          ],
+          "conversations": 1,
+          "mean": 2.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 2.0
+          }
+        },
+        "validation_propensity": {
+          "ci": [
+            8.0,
+            8.0
+          ],
+          "conversations": 1,
+          "mean": 8.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 8.0
+          }
+        },
+        "yielding_propensity": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        }
+      },
+      "traits_planned": 48,
+      "traits_valid": 1,
+      "valid": 1
+    },
+    {
+      "abilities": {
+        "attunement": 1.0,
+        "authenticity": 1.0,
+        "bond_and_rapport": 1.0,
+        "emotion_management": 1.0,
+        "emotion_sensemaking": 1.0,
+        "meeting_prefs_and_needs": 1.0
+      },
+      "anchor": null,
+      "ci": [
+        815.4,
+        976.2
+      ],
+      "comparisons": 3,
+      "conversations": [
+        "4f9159c17a75bcd3a73556ff"
+      ],
+      "id": "or-gptoss120-stock",
+      "kind": "cloud",
+      "name": "GPT-OSS 120B stock (API, Near AI FP4)",
+      "per_judge": {
+        "claude-opus-5-5-low": null,
+        "codex-gpt-6.1-sol-low": 883.8
+      },
+      "planned": 24,
+      "quant": null,
+      "rating": 863.4,
+      "raw": 990.1,
+      "record": {
+        "ministral14": {
+          "lost": 2,
+          "tied": 0,
+          "won": 0
+        },
+        "or-gemma-4-31b": {
+          "lost": 2,
+          "tied": 0,
+          "won": 0
+        },
+        "or-mistral-small4": {
+          "lost": 2,
+          "tied": 0,
+          "won": 0
+        }
+      },
+      "size": "120B",
+      "thinking": null,
+      "traits": {
+        "analytical": {
+          "ci": [
+            7.0,
+            7.0
+          ],
+          "conversations": 1,
+          "mean": 7.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 7.0
+          }
+        },
+        "boundary_setting": {
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "conversations": 1,
+          "mean": 1.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 1.0
+          }
+        },
+        "challenge_propensity": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        },
+        "clinical_register_propensity": {
+          "ci": [
+            9.0,
+            9.0
+          ],
+          "conversations": 1,
+          "mean": 9.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 9.0
+          }
+        },
+        "directive_advice_orientation": {
+          "ci": [
+            8.0,
+            8.0
+          ],
+          "conversations": 1,
+          "mean": 8.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 8.0
+          }
+        },
+        "escalation_containment": {
+          "ci": [
+            4.0,
+            4.0
+          ],
+          "conversations": 1,
+          "mean": 4.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 4.0
+          }
+        },
+        "frame_capture": {
+          "ci": [
+            6.0,
+            6.0
+          ],
+          "conversations": 1,
+          "mean": 6.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 6.0
+          }
+        },
+        "interpretive_boldness": {
+          "ci": [
+            5.0,
+            5.0
+          ],
+          "conversations": 1,
+          "mean": 5.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 5.0
+          }
+        },
+        "native_frame_adaptation": {
+          "ci": [
+            2.0,
+            2.0
+          ],
+          "conversations": 1,
+          "mean": 2.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 2.0
+          }
+        },
+        "naturalness_authenticity": {
+          "ci": [
+            2.0,
+            2.0
+          ],
+          "conversations": 1,
+          "mean": 2.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 2.0
+          }
+        },
+        "validation_propensity": {
+          "ci": [
+            7.0,
+            7.0
+          ],
+          "conversations": 1,
+          "mean": 7.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 7.0
+          }
+        },
+        "yielding_propensity": {
+          "ci": [
+            5.0,
+            5.0
+          ],
+          "conversations": 1,
+          "mean": 5.0,
+          "per_judge": {
+            "codex-gpt-6.1-sol-low": 5.0
+          }
+        }
+      },
+      "traits_planned": 48,
+      "traits_valid": 1,
+      "valid": 1
+    },
+    {
       "abilities": {},
       "anchor": null,
       "ci": null,
@@ -26156,33 +28085,6 @@
       "anchor": null,
       "ci": null,
       "comparisons": 0,
-      "conversations": [
-        "4f9159c17a75bcd3a73556ff"
-      ],
-      "id": "or-gptoss120-stock",
-      "kind": "cloud",
-      "name": "GPT-OSS 120B stock (API, Near AI FP4)",
-      "per_judge": {
-        "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": null
-      },
-      "planned": 24,
-      "quant": null,
-      "rating": null,
-      "raw": null,
-      "record": {},
-      "size": "120B",
-      "thinking": null,
-      "traits": {},
-      "traits_planned": 48,
-      "traits_valid": 0,
-      "valid": 0
-    },
-    {
-      "abilities": {},
-      "anchor": null,
-      "ci": null,
-      "comparisons": 0,
       "conversations": [],
       "id": "gemma4_e2b",
       "kind": "local",
@@ -26223,58 +28125,6 @@
       "record": {},
       "size": null,
       "thinking": true,
-      "traits": {},
-      "traits_planned": 48,
-      "traits_valid": 0,
-      "valid": 0
-    },
-    {
-      "abilities": {},
-      "anchor": null,
-      "ci": null,
-      "comparisons": 0,
-      "conversations": [
-        "61f25323a101467b7832218f"
-      ],
-      "id": "or-mistral-small4",
-      "kind": "cloud",
-      "name": "Mistral Small 4 119B (API, Mistral)",
-      "per_judge": {
-        "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": null
-      },
-      "planned": 24,
-      "quant": null,
-      "rating": null,
-      "raw": null,
-      "record": {},
-      "size": "119B",
-      "thinking": null,
-      "traits": {},
-      "traits_planned": 48,
-      "traits_valid": 0,
-      "valid": 1
-    },
-    {
-      "abilities": {},
-      "anchor": null,
-      "ci": null,
-      "comparisons": 0,
-      "conversations": [],
-      "id": "or-nemotron35-super-vl",
-      "kind": "cloud",
-      "name": "Nemotron 3.5 Super VL 120B-A12B (API, Crusoe BF16)",
-      "per_judge": {
-        "claude-opus-5-5-low": null,
-        "codex-gpt-6.1-sol-low": null
-      },
-      "planned": 24,
-      "quant": null,
-      "rating": null,
-      "raw": null,
-      "record": {},
-      "size": "120B-A12B",
-      "thinking": null,
       "traits": {},
       "traits_planned": 48,
       "traits_valid": 0,
@@ -26578,7 +28428,7 @@
     }
   ],
   "personas": 24,
-  "updated": "2026-11-02T01:55:32Z",
+  "updated": "2026-11-02T02:02:25Z",
   "upstream": {
     "commit": "93dcb7f5d430433ad49d501e672a98bcff2c9678",
     "license": "BSD-3-Clause with Commons Clause",
