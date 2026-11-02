@@ -1,0 +1,18 @@
+---
+interface Props {rating:number;ci:number[];anchor:number|null;low:number;high:number}
+const {rating,ci,anchor,low,high}=Astro.props;
+const position=(v:number)=>100*(v-low)/(high-low);
+const left=Math.min(...ci), right=Math.max(...ci);
+const description=`Rating ${rating.toFixed(1)}; 95% interval ${left.toFixed(1)}–${right.toFixed(1)}${anchor==null ? '' : `; recorded EQ-Bench score ${anchor.toFixed(1)}`}`;
+---
+<details class="rating-interval">
+  <summary aria-label={description} title={`${description}. Select for exact values.`}>
+    <span class="rating-whisker" aria-hidden="true">
+      <span class="rating-axis"></span>
+      <span class="rating-range" style={`left:${position(left)}%;width:${position(right)-position(left)}%`}></span>
+      {anchor!=null && <span class="rating-anchor" style={`left:${position(anchor)}%`}></span>}
+      <span class="rating-estimate" style={`left:${position(rating)}%`}></span>
+    </span>
+  </summary>
+  <small>95% interval: {left.toFixed(1)}–{right.toFixed(1)}{anchor!=null && <><br/>EQ-Bench: {anchor.toFixed(1)}</>}</small>
+</details>
