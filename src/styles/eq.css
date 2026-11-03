@@ -30,3 +30,17 @@
 
 /* Shared-scale confidence intervals with distinct anchor reference ticks. */
 .eq .rating-interval{margin:5px 0 7px;max-width:100%}.eq .rating-interval summary{list-style:none;cursor:pointer;border-radius:3px;padding:2px 5px}.eq .rating-interval summary::-webkit-details-marker{display:none}.rating-whisker{display:block;position:relative;height:20px;width:100%}.rating-axis{position:absolute;left:0;right:0;top:9px;border-top:1px solid var(--line)}.rating-range{position:absolute;top:8px;height:3px;min-width:1px;background:var(--accent);opacity:.65;border-radius:2px}.rating-estimate{position:absolute;top:5px;transform:translateX(-50%);height:10px;width:10px;border-radius:50%;background:var(--accent);border:2px solid var(--paper)}.rating-anchor{position:absolute;top:1px;transform:translateX(-50%);height:18px;border-left:2px solid var(--warn)}.eq .rating-interval[open] small{padding:4px 0;text-align:left}.interval-key{display:flex;flex-wrap:wrap;gap:8px 18px}.interval-key>span{display:inline-flex;align-items:center;gap:6px}.interval-key-dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}.interval-key-bar{width:24px;height:3px;background:var(--accent);opacity:.65}.interval-key-anchor{height:14px;border-left:2px solid var(--warn)}
+
+/* Distinct sequential scales for ability (performance) and traits (intensity). */
+.eq .heat-key{background:linear-gradient(to right,#f0f9e8,#ccebc5,#a8ddb5,#7bccc4,#4eb3d3,#2b8cbe,#08589e)}
+.eq .trait-key{background:linear-gradient(to right,#f2f0f7,#dadaeb,#bcbddc,#9e9ac8,#807dba,#6a51a3,#4a1486)}
+.eq .trait-board th:first-child{width:26%}.eq .trait-board th{font-size:11px;text-transform:none;letter-spacing:0}.eq .trait-board td{padding:7px}.eq .trait-board .model-cell{font-size:13px}.eq .trait-board .heat-value{padding:9px 2px}.eq .trait-board small{display:block;font-size:10px}.trait-heatmap{margin:24px 0}
+/* One spatial dimension: every judge marker sits on the same rating line. */
+.eq .rating-strip{height:32px;margin:14px 12px 0;background:transparent;border:0;border-radius:0}
+.eq .rating-strip::before{content:'';position:absolute;left:0;right:0;top:15px;border-top:2px solid var(--muted)}
+.eq .rating-dot{top:16px;transform:translate(-50%,-50%);width:10px;height:10px}.eq .rating-dot.current{width:18px;height:18px}
+.rating-axis-labels{display:flex;justify-content:space-between;margin:0 12px;font-size:13px;font-variant-numeric:tabular-nums}.rating-axis-title{text-align:center;font-size:13px;font-weight:650;margin:6px 0}.eq .judge-plot h3{margin:8px 0}.eq .judge-plot>.muted{font-size:13px;margin:4px 0}
+/* One compact opponent row, with counts visible without hovering. */
+.eq .opponent{display:grid;grid-template-columns:minmax(180px,1.4fr) minmax(100px,1fr) 130px;gap:12px;align-items:center;padding:8px 0;font-size:13px}
+.eq .opponent .record-track{height:10px;margin:0}.eq .opponent .metric-context{margin:0;text-align:right;font-variant-numeric:tabular-nums}.eq .opponent .metric-heading{display:block}
+@media(max-width:600px){.eq .opponent{grid-template-columns:minmax(0,1fr) 110px;gap:5px 12px;padding:9px 0}.eq .opponent .metric-heading{grid-column:1/-1}.eq .trait-board tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.eq .trait-board .model-cell{grid-column:1/-1}.eq .trait-board td[data-label]::before{display:block;font-size:11px;min-height:2.8em}.eq .trait-board td{padding:0}.eq .trait-board tr[hidden]{display:none}}

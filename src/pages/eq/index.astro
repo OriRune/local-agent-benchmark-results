@@ -1,4 +1,6 @@
 ---
+import {heatStyle} from '../../lib/eq-heat';
+import TraitHeatmaps from '../../components/eq/TraitHeatmaps.astro';
 import Frame from '../../components/eq/Frame.astro';
 import RatingInterval from '../../components/eq/RatingInterval.astro';
 import { data } from '../../data/eq-data';
@@ -7,8 +9,6 @@ const labels:Record<string,string>={bond_and_rapport:'Rapport',authenticity:'Aut
 const updated=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'UTC'}).format(new Date(data.updated))+' UTC';
 const state=(m:typeof data.models[number])=>m.completion?.summary_status==='ready_for_summary' ? 'complete' : m.comparisons>=4 ? 'provisional' : 'waiting';
 const statusLabels={complete:'Results complete',provisional:'Provisional rating',waiting:'Awaiting judgments'};
-const heatColors=['#440154','#443983','#31688e','#21918c','#35b779','#90d743','#fde725'];
-const heatStyle=(v:number|undefined)=>{if(v==null) return '';const band=Math.min(6,Math.max(0,Math.floor((v-1)/9*7)));return `--heat-bg:${heatColors[band]};--heat-ink:${band<3 ? '#ffffff' : '#111111'}`;};
 const fmt=(n:number|null)=>n==null ? '—' : n.toFixed(1);
 const scaleValues=data.models.flatMap(m=>[m.rating,...(m.ci ?? []),...(data.anchored ? [m.anchor] : [])]).filter((v):v is number=>v!=null && Number.isFinite(v));
 const scaleLow=Math.floor((Math.min(...(scaleValues.length ? scaleValues : [0]))-20)/50)*50;
@@ -27,4 +27,5 @@ return <tr data-search={m.name.toLowerCase()}><td data-sort={ranked ? i+1 : ''} 
 <p data-filter-empty hidden>No models match that search.</p>
 <details class="heat-definitions"><summary>What do the abilities mean?</summary><dl>{data.dimensions.map(d=><div><dt>{labels[d]}</dt><dd>{(definitions as Record<string,string>)[d]}</dd></div>)}</dl></details>
 <p class="footnote">Abilities are rescaled within this field; 10 does not mean perfect. Rows with fewer than four comparisons are pending. Ratings and intervals remain provisional as judgments arrive; missing judgments are not losses. {data.anchored ? 'Ratings are approximately mapped to the EQ-Bench scale using anchors.' : 'Ratings use the raw Bradley–Terry scale.'} Open a model for the full evidence.</p>
+<section id="trait-heatmaps"><h2>Conversational traits</h2><TraitHeatmaps/></section>
 </Frame>

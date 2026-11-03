@@ -1,0 +1,8 @@
+---
+import {data} from '../../data/eq-data';
+import {groups} from '../../data/eq-traits';
+import definitions from '../../data/eq-definitions.json';
+import {heatStyle} from '../../lib/eq-heat';
+---
+<p class="chart-key">Trait heatmaps · 0 (less) <span class="heat-key trait-key" aria-hidden="true"></span> 10 (more). <strong>More is not better.</strong> Traits do not affect ratings. Missing scores are —.</p>
+{groups.map(g=><section class="trait-heatmap"><h3>{g.name}</h3><div class="table-scroll" tabindex="0" role="region" aria-label={g.name}><table class="board trait-board" data-table-label={g.name}><thead><tr><th>Model</th>{g.traits.map(([key,label])=><th data-type="number" title={(definitions as Record<string,string>)[key]}>{label}</th>)}</tr></thead><tbody>{data.models.map(m=><tr data-search={m.name.toLowerCase()}><td class="model-cell" data-sort={m.name}><a href={`/eq/models/${m.id}/#style`}>{m.name}</a><small>{m.traits_valid ?? 0}/{m.traits_planned ?? m.planned*data.judges.length} assessments</small></td>{g.traits.map(([key,label])=>{const v=m.traits?.[key]?.mean;return <td class="heat-cell" data-label={label} data-sort={v ?? ''}><span class="heat-value" style={heatStyle(v,true)} title={`${label}: ${v==null ? 'not scored' : v.toFixed(1)+' / 10'}`}>{v==null ? '—' : v.toFixed(1)}</span></td>})}</tr>)}</tbody></table></div></section>)}
