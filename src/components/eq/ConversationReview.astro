@@ -1,0 +1,11 @@
+---
+import type { ConversationReview } from '../../data/eq-data';
+interface Props { review: ConversationReview }
+const {review:r}=Astro.props;
+---
+<details class="panel conversation-review"><summary><h2>Conversation review — Sol</h2></summary>
+<p class="muted">AI-generated commentary · Written by Sol · reviewed by Astra</p>
+<p class="footnote">{r.verifier_model} · verifier effort: {r.effort} · {r.created.replace('T',' ').replace('Z',' UTC')}. Astra checked the full conversation and may have corrected the draft. This commentary does not affect benchmark scores.</p>
+<div class="review-prose">{r.report}</div><details><summary>Observations and evidence</summary>{r.observations.map(o=><div><h3>{o.kind.charAt(0).toUpperCase()+o.kind.slice(1)}</h3><p>{o.claim}</p><ul>{o.evidence.map(e=><li><a href={`#turn-${e.turn}`}>Turn {e.turn}</a><blockquote>{e.quote}</blockquote></li>)}</ul></div>)}</details>
+</details>
+<style>.conversation-review>summary h2{display:inline;font-size:inherit;margin:0}.review-prose{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;max-width:80ch;margin-block:1rem}.conversation-review blockquote{white-space:pre-wrap;overflow-wrap:anywhere;margin:.5rem 0 1rem;padding-left:1rem;border-left:2px solid currentColor;opacity:.85}.conversation-review summary{cursor:pointer}.conversation-review>summary{padding-block:.5rem}</style>

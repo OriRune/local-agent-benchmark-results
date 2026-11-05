@@ -1,0 +1,37 @@
+import {test,expect} from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+import {readFileSync} from 'node:fs';
+const data=JSON.parse(readFileSync(new URL('../../src/data/eq/leaderboard.json',import.meta.url),'utf8'));
+const conversation=data.conversations.find((c:any)=>c.review);
+const model=data.models.find((m:any)=>m.transcript_analysis);
+test('verified review expands and evidence links resolve to visible messages',async({page})=>{
+  test.skip(!conversation,'No verified conversation review published yet');
+  await page.goto(`/eq/conversations/${conversation.id}/`);
+  const review=page.locator('.conversation-review');
+  await expect(review).toBeVisible();
+  await review.locator(':scope > summary').click();
+  await expect(review).toContainText('Written by Sol · reviewed by Astra');
+  await expect(review.locator('.review-prose')).toHaveText(conversation.review.report);
+  await review.getByText('Observations and evidence',{exact:true}).click();
+  await review.getByRole('link').first().click();
+  const ref=conversation.review.observations[0].evidence[0];
+  await expect(page.locator(`#turn-${ref.turn}`)).toContainText(ref.quote);
+  expect((await new AxeBuilder({page}).include('.conversation-review').analyze()).violations).toEqual([]);
+  await page.setViewportSize({width:390,height:844});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+test('analysis is separate from score summary and links to evidence',async({page})=>{
+  test.skip(!model,'No approved transcript analysis published yet');
+  await page.goto(`/eq/models/${model.id}/`);
+  const panel=page.locator('#transcript-analysis');
+  await expect(panel).toContainText('24 conversations');
+  await expect(panel).toContainText('Transcript evidence only');
+  if(model.completion?.summary_status!=='ready_for_summary') await expect(page.locator('#summary')).toContainText('Waiting for complete results');
+  await panel.locator('details').first().locator('summary').click();
+  const link=panel.getByRole('link').first();
+  const href=await link.getAttribute('href');await link.click();
+  await expect(page).toHaveURL(new RegExp(href!.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'$'));
+  await expect(page.locator(':target')).toBeVisible();
+  await page.goBack();
+  expect((await new AxeBuilder({page}).include('#transcript-analysis').analyze()).violations).toEqual([]);
+});

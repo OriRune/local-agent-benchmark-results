@@ -1,0 +1,14 @@
+---
+import { data, type TranscriptAnalysis } from '../../data/eq-data';
+interface Props { analysis: TranscriptAnalysis }
+const { analysis:a } = Astro.props;
+const title=(id:string)=>data.conversations.find(c=>c.id===id)?.scenario ?? 'Conversation';
+---
+<section class="panel" id="transcript-analysis">
+<h2>Transcript analysis</h2>
+<p class="muted">AI-generated commentary · Synthesized and verified by Astra · {a.model} · {a.effort} effort · {a.coverage} conversations</p>
+<p class="footnote">Based on all {a.coverage} conversation reviews by Sol, individually checked by Astra. Each analysis section was checked against its cited conversations, followed by a separate editorial check. This describes these sampled interactions; it does not change ratings or establish factual accuracy beyond the supplied evidence.</p>
+<p class="footnote">Transcript evidence only. Opponent comparisons and the score-based model summary are separate. Reviewed {a.created.replace('T',' ').replace('Z',' UTC')}.</p>
+{a.sections.map(s=><div class="analysis-section"><h3>{s.heading}</h3><div class="analysis-prose">{s.text}</div><details><summary>Evidence · {s.evidence.length} references</summary><ul>{s.evidence.map(e=><li><a href={`/eq/conversations/${e.conversation}/#turn-${e.turn}`}>{title(e.conversation)} · turn {e.turn}</a><blockquote>{e.quote}</blockquote></li>)}</ul></details></div>)}
+</section>
+<style>.analysis-prose{white-space:pre-wrap;overflow-wrap:anywhere;max-width:80ch;line-height:1.7}.analysis-section{margin-block:1.5rem}.analysis-section blockquote{white-space:pre-wrap;overflow-wrap:anywhere;margin:.5rem 0 1rem;padding-left:1rem;border-left:2px solid currentColor;opacity:.85}.analysis-section summary{margin-top:.75rem}</style>
