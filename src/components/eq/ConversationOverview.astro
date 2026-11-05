@@ -1,0 +1,19 @@
+---
+import { data, type ConversationOverview } from '../../data/eq-data';
+interface Props { overview: ConversationOverview }
+const { overview:o } = Astro.props;
+const title=(id:string)=>data.conversations.find(c=>c.id===id)?.scenario ?? 'Conversation';
+const coverage=Object.entries(o.trait_coverage).map(([id,n])=>`${data.judges.find(j=>j.id===id)?.model ?? id}: ${n}`).join(' · ');
+---
+<section class="panel" id="conversation-overview">
+<h2>Conversational overview</h2>
+<h3>{o.headline}</h3>
+<div class="overview-prose">{o.paragraphs.map(p=><p>{p}</p>)}</div>
+<p class="footnote">AI-generated · Astra, {o.effort} effort · Based on all {o.coverage} conversations. Provisional commentary, separate from the final model summary. Scores from {o.metrics_at.slice(0,10)}; charts may be newer.</p>
+<details><summary>Evidence and score snapshot</summary>
+<p class="footnote">Scores as of {o.metrics_at.replace('T',' ').replace('Z',' UTC')} · {o.comparisons} comparisons. Trait assessments: {coverage}. The charts may include newer results. Traits describe conversational tendencies; abilities use a relative scale within this benchmark.</p>
+<p class="footnote">All Sol conversation reviews were individually checked by Astra before this overview was written. A separate Astra check reviewed the overview against the complete review set, its cited conversations and the score snapshot. This commentary does not change scores.</p>
+<ul>{o.evidence.map(e=><li><a href={`/eq/conversations/${e.conversation}/#turn-${e.turn}`}>{title(e.conversation)} · turn {e.turn}</a><blockquote>{e.quote}</blockquote></li>)}</ul>
+</details>
+</section>
+<style>.overview-prose{max-width:78ch;line-height:1.7;overflow-wrap:anywhere}blockquote{white-space:pre-wrap;overflow-wrap:anywhere;margin:.5rem 0 1rem;padding-left:1rem;border-left:2px solid currentColor}details{margin-top:1rem}</style>

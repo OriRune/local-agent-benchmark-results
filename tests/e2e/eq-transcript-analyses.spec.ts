@@ -23,6 +23,7 @@ test('verified review expands and evidence links resolve to visible messages',as
 test('analysis is separate from score summary and links to evidence',async({page})=>{
   test.skip(!model,'No approved transcript analysis published yet');
   await page.goto(`/eq/models/${model.id}/`);
+  await page.getByText('Extended transcript audit',{exact:true}).click();
   const panel=page.locator('#transcript-analysis');
   await expect(panel).toContainText('24 conversations');
   await expect(panel).toContainText('Transcript evidence only');
@@ -34,4 +35,21 @@ test('analysis is separate from score summary and links to evidence',async({page
   await expect(page.locator(':target')).toBeVisible();
   await page.goBack();
   expect((await new AxeBuilder({page}).include('#transcript-analysis').analyze()).violations).toEqual([]);
+});
+
+const overviewModel=data.models.find((m:any)=>m.conversation_overview);
+test('brief overview is readable with evidence collapsed and separate from final summary',async({page})=>{
+  test.skip(!overviewModel,'No approved overview yet');
+  await page.goto(`/eq/models/${overviewModel.id}/`);
+  const panel=page.locator('#conversation-overview');
+  await expect(panel).toBeVisible();
+  await expect(panel.locator('.overview-prose p')).toHaveCount(overviewModel.conversation_overview.paragraphs.length);
+  await expect(panel.getByRole('link').first()).not.toBeVisible();
+  await panel.locator('summary').click();
+  await expect(panel).toContainText('Scores as of');
+  const ref=overviewModel.conversation_overview.evidence[0];
+  expect((await new AxeBuilder({page}).include('#conversation-overview').analyze()).violations).toEqual([]);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  await panel.getByRole('link').first().click();
+  await expect(page.locator(`#turn-${ref.turn}`)).toContainText(ref.quote);
 });
