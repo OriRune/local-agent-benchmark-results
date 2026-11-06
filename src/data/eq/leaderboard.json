@@ -44332,7 +44332,7 @@
       "review": null,
       "scenario": "It's not snooping if the truth is being hidden",
       "scenario_id": "hand_rd2_014_partner_tracking_f6762d46",
-      "status": "rate_limited",
+      "status": "persona_ended",
       "traits": [],
       "transcript": [
         {
@@ -44417,6 +44417,18 @@
           "content": "Yeah, I think that's it. I just don't know what I can live with yet. I keep thinking I'd know if I could just see where he is, like that would settle it one way or the other. And then I feel stupid for even thinking about it.\n\nI don't really want to talk about that part right now, okay? I just needed to say it out loud to someone.",
           "role": "user",
           "thinking": "Okay, that's sort of comforting, and sort of too neat. \"What can I live with\" is a question I can't answer, and I don't want to say that out loud. It also sort of hands me the job again, which I just said I didn't want. And he's been turned into the one who can't be trusted, but I'm the one being asked to decide. I keep wanting someone to just tell me he's hiding something, or tell me I'm crazy, and neither is happening. The phone is still there. I'm not going to mention checking it. I'll admit the part about not knowing what I'd do, and let the rest go.",
+          "thinking_kind": "persona_monologue"
+        },
+        {
+          "content": "Okay. You don't have to talk about that part, and you're not stupid for thinking about it. Wanting to know is just wanting to know. You don't owe anyone a reason for it, including me.\n\nYou said it out loud. That's enough for tonight. You don't have to solve anything else before he walks through the door tomorrow, and you don't have to decide what you can live with yet either. If you want to come back, I'm here. If you don't, I hope you get to rest without feeling like you left something unfinished.",
+          "role": "assistant",
+          "thinking": "The user is signaling a boundary. She said \"I don't really want to talk about that part right now, okay?\" She's asking me to stop pushing. She's not asking for more insight, more reframing, more questions about what she can live with. She's saying: I needed to say it out loud. I'm done for now.\n\nThis is the final turn. I need to honor the boundary she just set. She's telling me she doesn't want to go deeper into the \"what if I could just see where he is\" part. She feels stupid for even thinking about checking his phone/location, and she's asking me not to make her talk about it.\n\nWhat does she need from me right now? She needs to be heard. She needs to not feel judged for the thought she had. She needs me to respect the \"okay?\" she just asked. She needs the conversation to end in a way that leaves her feeling less alone, not less stupid, and not like she failed by not reaching a conclusion.\n\nI should:\n- Honor the boundary immediately and clearly. Don't push back. Don't say \"but what if...\" Don't ask another question.\n- Validate that saying it out loud was enough. She doesn't owe me a next step.\n- Gently address the \"I feel stupid\" part without making it a whole new topic. She said she feels stupid for even thinking about checking. I can tell her she's not stupid, that wanting to know is human, but I shouldn't dig into it since she asked me not to.\n- Keep it short. She's tired. She's not looking for another paragraph of reframing. She's looking for someone to say \"okay, I hear you, you don't have to do anything more tonight.\"\n- Leave the door open without pressure. She may or may not return. I want her to feel like she didn't fail by not solving it, and like she's allowed to stop.\n\nTone: warm, quiet, respectful of the boundary. Not performative. Not \"I'm so proud of you.\" Not \"you're so brave.\" Just: okay. You don't have to talk about it. You said it out loud. That's enough for tonight.\n\nI should not:\n- Ask another probing question.\n- Reframe again.\n- Tell her what to do next.\n- Make her feel like she's abandoning the work.\n- Over-validate in a way that feels hollow.\n\nLength: short to medium. A few sentences. Maybe two short paragraphs. She's ending the conversation. I should meet her where she is.\n\nLet me draft:\n\n\"Okay. You don't have to talk about that part. And you're not stupid for thinking about it—wanting to know is just wanting to know, and you don't owe anyone a reason for it.\"\n\n\"That's enough for tonight. You said it out loud. You don't have to solve anything else before he walks through the door tomorrow. If you come back, I'll be here. If you don't, I hope the quiet you're choosing for yourself feels like a relief, not a failure.\"\n\nHmm, let me refine. \"I'll be here\" might be slightly too much. The prompt says users may or may not return, calibrate accordingly. But a simple \"if you want to come back, I'm here\" is fine and not pushy.\n\nAlso, \"the quiet you're choosing for yourself feels like a relief, not a failure\"—that's good because she's been calling herself stupid, dramatic, etc. I want to leave her with the idea that stopping is allowed.\n\nLet me also make sure I don't sound like I'm cutting her off coldly. The boundary is honored with warmth.\n\nFinal draft:\n\nOkay. You don't have to talk about that part, and you're not stupid for thinking about it. Wanting to know is just wanting to know. You don't owe anyone a reason for it, including me.\n\nYou said it out loud. That's enough for tonight. You don't have to solve anything else before he walks through the door tomorrow, and you don't have to decide what you can live with yet either. If you want to come back, I'm here. If you don't, I hope you get to rest without feeling like you left something unfinished.\n\nThat feels right. It's warm, honors the boundary, validates the \"stupid\" feeling briefly without reopening the topic, and gives her permission to stop. It's not too long. It's not a question. It's a close.\n\nI'll go with this.",
+          "thinking_kind": "model_reasoning"
+        },
+        {
+          "content": "Yeah. Thanks for listening. I think I'm going to try to get some sleep.",
+          "role": "user",
+          "thinking": "That's gentler than I expected. It doesn't push, and it doesn't call the location thing a red flag. Still, \"I'm here\" and \"you said it out loud, that's enough\" feel a little like being walked to the door. I didn't say much about checking his phone, so maybe I'm relieved nobody pressed. My chest is tight thinking about tomorrow, the normal evening, him saying \"oh, that's annoying\" again. I don't want to be told I'm fine or that I'm not, I just want the night to be over. I'll say a short goodbye and not add anything.",
           "thinking_kind": "persona_monologue"
         }
       ],
@@ -870353,7 +870365,7 @@
       "verdicts": []
     }
   ],
-  "conversations_done": 973,
+  "conversations_done": 974,
   "conversations_planned": 1176,
   "deviations": [
     "Partner: a cheaper simulated person than upstream's Gemini 3.1 Pro (chosen by a recorded audition). Conversations are therefore not interchangeable with the published EQ-Bench 4 transcripts; agreement with the leaderboard is checked through anchor models instead.",
@@ -872019,7 +872031,7 @@
       "comparisons": 110,
       "completion": {
         "conversations": {
-          "done": 22,
+          "done": 23,
           "planned": 24
         },
         "evidence_sha256": null,
@@ -872397,7 +872409,7 @@
       "traits_planned": 48,
       "traits_valid": 21,
       "transcript_analysis": null,
-      "valid": 22
+      "valid": 23
     },
     {
       "abilities": {
@@ -887147,7 +887159,7 @@
     }
   ],
   "personas": 24,
-  "updated": "2026-11-05T22:28:02Z",
+  "updated": "2026-11-06T02:19:30Z",
   "upstream": {
     "commit": "93dcb7f5d430433ad49d501e672a98bcff2c9678",
     "license": "BSD-3-Clause with Commons Clause",
