@@ -9,7 +9,7 @@ const coverage=Object.entries(o.trait_coverage).map(([id,n])=>`${data.judges.fin
 <h2>Conversational overview</h2>
 <h3>{o.headline}</h3>
 <div class="overview-prose">{o.paragraphs.map(p=><p>{p}</p>)}</div>
-<p class="footnote">AI-generated · Astra, {o.effort} effort · Based on all {o.coverage} conversations. Provisional commentary, separate from the final model summary. Scores from {o.metrics_at.slice(0,10)}; charts may be newer.</p>
+<p class="footnote">AI-generated · Astra, {o.effort} effort · Based on {o.coverage} of 24 planned conversations. Provisional commentary, separate from the final model summary. Scores from {o.metrics_at.slice(0,10)}; charts may be newer.</p>
 <details><summary>Evidence and score snapshot</summary>
 <p class="footnote">Scores as of {o.metrics_at.replace('T',' ').replace('Z',' UTC')} · {o.comparisons} comparisons. Trait assessments: {coverage}. The charts may include newer results. Traits describe conversational tendencies; abilities use a relative scale within this benchmark.</p>
 <p class="footnote">All Sol conversation reviews were individually checked by Astra before this overview was written. A separate Astra check reviewed the overview against the complete review set, its cited conversations and the score snapshot. This commentary does not change scores.</p>
